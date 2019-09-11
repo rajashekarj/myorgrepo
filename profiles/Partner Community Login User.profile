@@ -6,9 +6,15 @@
         <field>WildLife__c.Rating__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WildLife__c.Security_Levevl__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>WildLife__c-WildLife Layout</layout>
     </layoutAssignments>
+    <loginHours/>
     <userLicense>Partner Community Login</userLicense>
     <userPermissions>
         <enabled>true</enabled>

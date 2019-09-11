@@ -6,6 +6,7 @@
     </types>
     <types>
         <members>WildLife__c.Rating__c</members>
+        <members>WildLife__c.Security_Levevl__c</members>
         <name>CustomField</name>
     </types>
     <types>

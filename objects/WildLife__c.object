@@ -10,4 +10,14 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>Security_Levevl__c</fullName>
+        <externalId>false</externalId>
+        <label>Security Levevl</label>
+        <length>23</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
 </CustomObject>
