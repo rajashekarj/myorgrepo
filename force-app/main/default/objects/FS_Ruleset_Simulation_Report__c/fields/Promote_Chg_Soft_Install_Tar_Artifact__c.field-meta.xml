@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promote_Chg_Soft_Install_Tar_Artifact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>..</description>
+    <externalId>false</externalId>
+    <label>Promote Chg Soft Install Target Artifact</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

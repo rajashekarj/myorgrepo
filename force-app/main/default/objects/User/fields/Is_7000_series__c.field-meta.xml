@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_7000_series__c</fullName>
+    <description>Removed formula for testing</description>
+    <externalId>false</externalId>
+    <formula>OR(
+Profile.Name = &quot;FET System Admin&quot;, 
+Profile.Name = &quot;FS AC_P&quot;, 
+Profile.Name = &quot;FS Admin PM_P&quot;, 
+Profile.Name = &quot;FS CPO_P&quot;, 
+Profile.Name = &quot;FS PIC_P&quot;, 
+Profile.Name = &quot;FS PM_P&quot;, 
+Profile.Name = &quot;FS Vendor PIC_P&quot;,
+Profile.Name = &quot;FS COM_P&quot;,
+Profile.Name = &quot;FS Sales_P&quot;,
+Profile.Name = &quot;FS SP_P&quot;,
+Profile.Name = &quot;FS Americhip PIC&quot;,
+Profile.Name = &quot;FS Americhip_P&quot;,
+Profile.Name = &quot;FS COM w/sales_P&quot;,
+Profile.Name = &quot;FS NDO_P&quot;,
+Profile.Name = &quot;FS PM (View Only)_P&quot;,
+Profile.Name = &quot;FS Analyst_P&quot;,
+Profile.Name = &quot;FS Artemis_P&quot;,
+Profile.Name = &quot;FS BAST_P&quot;,
+Profile.Name = &quot;FS CDM_P&quot;,
+Profile.Name = &quot;FS Davaco_P&quot;,
+Profile.Name = &quot;FS FSM_P&quot;,
+Profile.Name = &quot;FS FSSS_P&quot;,
+Profile.Name = &quot;FS JCOM_P&quot;,
+Profile.Name = &quot;FS Sales Leadership_P&quot;,
+Profile.Name = &quot;FS Valid Fill Stakeholders_P&quot;,
+Profile.Name = &quot;FS WF Suppliers_P&quot;,
+Profile.Name = &quot;Customer Input Profile&quot;,
+Profile.Name = &quot;CCR Sales Manager- CFV&quot;
+
+)</formula>
+    <label>Is 7000 series?</label>
+    <type>Checkbox</type>
+</CustomField>

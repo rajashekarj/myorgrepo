@@ -1,0 +1,3 @@
+<apex:page controller="FS_RedirectInitialRecordController" action="{!redirectInitalOrder}">
+<apex:pageMessages />
+</apex:page>

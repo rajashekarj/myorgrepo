@@ -1,0 +1,101 @@
+<apex:page standardController="FS_EP_Equipment_Package__c" extensions="FSCopyEPEPToInstallationsSearchExtension" docType="html-5.0">   
+    
+    <apex:includeScript value="/soap/ajax/44.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/44.0/apex.js"/>
+    <script>
+    var profileList=['FS Admin PM_P','FS AC_P','FS PM_P','System Administrator','FET System Admin']; 
+    
+    if(profileList.indexOf('{!$Profile.Name}') == -1 )
+    {
+        alert('{!$Label.FS_Reminder_Message_COM_EQP_TI_Copy_Down}');
+    }
+    
+    </script>
+    <apex:form id="theForm">
+         <apex:pageMessages ></apex:pageMessages>
+        <apex:pageblock id="pbSearch">
+            <table cellpadding="0" cellspacing="0" width="50%">
+                <tr>
+                    <td class="dataCell"><b>Name</b></td></tr>
+                <tr>
+                    <td class="dataCell">
+                        <apex:inputText id="txtSearchOutletACN" value="{!searchOutletName}" />
+                    </td>              
+                    <td class="dataCell">
+                        <apex:commandButton value="Search" reRender="pbId,theForm"  action="{!searchOutlet}"  status="statusSearchOutlet" />
+                    </td>
+                </tr>
+            </table>
+        </apex:pageblock>
+        
+        <apex:pageBlock title="Installations" id="pbId" >
+            <apex:pageBlockButtons location="Bottom">
+                <apex:commandButton value="Copy to Installation" action="{!createEPIP}" reRender="pbId,theForm" status="paginationStatus"/>
+                <apex:commandButton value="Cancel" action="{!cancelEPIP}" />
+            </apex:pageBlockButtons> 
+            <apex:pageBlockTable value="{!wrapperRecordList}" var="inst">
+                <apex:column >
+                    <apex:facet name="header"> 
+                        <input class="parOutClass" onchange="toggleCheck(this)" type="checkbox" /> 
+                    </apex:facet>                   
+                    <apex:inputCheckbox styleClass="{!IF(($Profile.Name='FS COM_P' && (inst.installation.FS_Execution_Plan_Final_Approval_PM__c='Approved')),'NonselectInput','selectInput')}" value="{!inst.isSelected}" disabled="{!IF(($Profile.Name='FS COM_P' && (inst.installation.FS_Execution_Plan_Final_Approval_PM__c='Approved')),true,false)}" />                 
+                </apex:column>
+                <apex:column headerValue="Name">
+                    <apex:outputlabel value="{!inst.installation.Name}"/>
+                </apex:column>
+                <apex:column headerValue="Platform Type/s">
+                    <apex:outputlabel value="{!inst.installation.Type_of_Dispenser_Platform__c}"/>
+                </apex:column>
+                <apex:column headerValue="Outlet">
+                    <apex:outputlabel value="{!inst.installation.FS_Outlet__r.name}"/>
+                </apex:column>
+                <apex:column headerValue="Outlet ACN">
+                    <apex:outputlabel value="{!inst.installation.Outlet_ACN__c}"/>
+                </apex:column>
+                <apex:column headerValue="Outlet Address">
+                    <apex:outputlabel value="{!inst.installation.FS_Outlet_Address__c}"/>
+                </apex:column>
+                <apex:column headerValue="PM Approval Status">
+                    <apex:outputlabel value="{!if(inst.installation.FS_Execution_Plan_Final_Approval_PM__c!=null,inst.installation.FS_Execution_Plan_Final_Approval_PM__c,"Not Approved")}"/>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+            
+            <!-- Action Buttons visible on bottom of page for pagination -->
+            <apex:outputPanel style="text-align:center;" layout="block">
+                <hr/>
+                <table width="100%" >
+                    <tr>
+                        <td align="left" width="33%">
+                            <div id="pagelinkblock" >
+                                <div id="curstate"> {!(pageNumber * pageSize)+1-pageSize}-{!IF((pageNumber * pageSize)>noOfRecords, noOfRecords,(pageNumber * pageSize))} of {!noOfRecords} </div>
+                            </div>
+                        </td>
+                        <td align="center" width="33%" style="vertical-align:middle;white-space:nowrap;">
+                            <apex:commandButton value="|<" reRender="pbId" action="{!first}" disabled="{!NOT(hasPrevious)}" status="paginationStatus"/>
+                            <apex:commandButton value="<" rerender="pbId" action="{!previous}" disabled="{!NOT(hasPrevious)}" status="paginationStatus"/>
+                            <apex:commandButton value=">" rerender="pbId" action="{!next}" disabled="{!NOT(hasNext)}" status="paginationStatus"/>
+                            <apex:commandButton value=">|" rerender="pbId" action="{!last}" disabled="{!NOT(hasNext)}" status="paginationStatus"/>
+                        </td>   
+                        <td align="right" width="33%" style="vertical-align:middle;">
+                            <div id="pagenumber"> Page &nbsp;{!pageNumber} Of {!totalPages}</div>
+                        </td>
+                    </tr>
+                </table> 
+                <apex:actionStatus id="paginationStatus">
+                    <apex:facet name="start">
+                        Please wait...<img src="/img/loading32.gif" style="width: 18px;"/>
+                    </apex:facet>
+                </apex:actionStatus>
+            </apex:outputPanel>
+        </apex:pageBlock>
+        <script>
+        function toggleCheck(id) {
+            var inputList = document.getElementsByClassName('selectInput');
+            for(var i=0;i<inputList.length;i++){                
+                document.getElementsByClassName('selectInput')[i].checked = id.checked;                
+            }
+        }
+        </script>
+    </apex:form>
+</apex:page>

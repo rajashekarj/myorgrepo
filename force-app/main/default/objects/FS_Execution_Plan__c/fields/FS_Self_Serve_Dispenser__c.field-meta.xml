@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Self_Serve_Dispenser__c</fullName>
+    <externalId>false</externalId>
+    <label>9000 Series Dispenser</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46100 : Freestyle GS1 Red</fullName>
+                <default>false</default>
+                <label>46100 : Freestyle GS1 Red</label>
+            </value>
+            <value>
+                <fullName>46101 : Freestyle GS1 Black</fullName>
+                <default>false</default>
+                <label>46101 : Freestyle GS1 Black</label>
+            </value>
+            <value>
+                <fullName>46099 : Freestyle GS1 Silver</fullName>
+                <default>false</default>
+                <label>46099 : Freestyle GS1 Silver</label>
+            </value>
+            <value>
+                <fullName>46127 : Freestyle GS1 Red  - Wood Crate</fullName>
+                <default>false</default>
+                <label>46127 : Freestyle GS1 Red  - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46128 : Freestyle GS1 Black  - Wood Crate</fullName>
+                <default>false</default>
+                <label>46128 : Freestyle GS1 Black  - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46126 : Freestyle GS1 Silver - Wood Crate</fullName>
+                <default>false</default>
+                <label>46126 : Freestyle GS1 Silver - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46130 : Freestyle GS1 Red â€“ Cruise Ship</fullName>
+                <default>false</default>
+                <label>46130 : Freestyle GS1 Red â€“ Cruise Ship</label>
+            </value>
+            <value>
+                <fullName>46293 : Freestyle GS1 Silver - Cruise Ship</fullName>
+                <default>false</default>
+                <label>46293 : Freestyle GS1 Silver - Cruise Ship</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

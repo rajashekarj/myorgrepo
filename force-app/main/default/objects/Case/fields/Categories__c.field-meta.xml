@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categories__c</fullName>
+    <description>List types of issues relevant to case</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please list the types of issues relevant to this case</inlineHelpText>
+    <label>Issue Categories</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>FS_Dispenser_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADA</fullName>
+                <default>false</default>
+                <label>ADA</label>
+            </value>
+            <value>
+                <fullName>Agitation</fullName>
+                <default>false</default>
+                <label>Agitation</label>
+            </value>
+            <value>
+                <fullName>Backroom</fullName>
+                <default>false</default>
+                <label>Backroom</label>
+            </value>
+            <value>
+                <fullName>Brand Pump</fullName>
+                <default>false</default>
+                <label>Brand Pump</label>
+            </value>
+            <value>
+                <fullName>Carbonator</fullName>
+                <default>false</default>
+                <label>Carbonator</label>
+            </value>
+            <value>
+                <fullName>CDM</fullName>
+                <default>false</default>
+                <label>CDM</label>
+            </value>
+            <value>
+                <fullName>CGP</fullName>
+                <default>false</default>
+                <label>CGP</label>
+            </value>
+            <value>
+                <fullName>Cladding</fullName>
+                <default>false</default>
+                <label>Cladding</label>
+            </value>
+            <value>
+                <fullName>Door</fullName>
+                <default>false</default>
+                <label>Door</label>
+            </value>
+            <value>
+                <fullName>Door Switch</fullName>
+                <default>false</default>
+                <label>Door Switch</label>
+            </value>
+            <value>
+                <fullName>Drain</fullName>
+                <default>false</default>
+                <label>Drain</label>
+            </value>
+            <value>
+                <fullName>FCM</fullName>
+                <default>false</default>
+                <label>FCM</label>
+            </value>
+            <value>
+                <fullName>Flavor Pump</fullName>
+                <default>false</default>
+                <label>Flavor Pump</label>
+            </value>
+            <value>
+                <fullName>Flow Control - Water/Soda</fullName>
+                <default>false</default>
+                <label>Flow Control - Water/Soda</label>
+            </value>
+            <value>
+                <fullName>Harness</fullName>
+                <default>false</default>
+                <label>Harness</label>
+            </value>
+            <value>
+                <fullName>HMI</fullName>
+                <default>false</default>
+                <label>HMI</label>
+            </value>
+            <value>
+                <fullName>Ice</fullName>
+                <default>false</default>
+                <label>Ice</label>
+            </value>
+            <value>
+                <fullName>Ice/Drink Dispense Switch</fullName>
+                <default>false</default>
+                <label>Ice/Drink Dispense Switch</label>
+            </value>
+            <value>
+                <fullName>Ice Bin</fullName>
+                <default>false</default>
+                <label>Ice Bin</label>
+            </value>
+            <value>
+                <fullName>Ice Dispense</fullName>
+                <default>false</default>
+                <label>Ice Dispense</label>
+            </value>
+            <value>
+                <fullName>Key Lock</fullName>
+                <default>false</default>
+                <label>Key Lock</label>
+            </value>
+            <value>
+                <fullName>KSM</fullName>
+                <default>false</default>
+                <label>MAC / KSM</label>
+            </value>
+            <value>
+                <fullName>Leak - Drain</fullName>
+                <default>false</default>
+                <label>Leak - Drain</label>
+            </value>
+            <value>
+                <fullName>Leak - Syrup</fullName>
+                <default>false</default>
+                <label>Leak - Syrup</label>
+            </value>
+            <value>
+                <fullName>Leak - Water</fullName>
+                <default>false</default>
+                <label>Leak - Water</label>
+            </value>
+            <value>
+                <fullName>Levers</fullName>
+                <default>false</default>
+                <label>Levers</label>
+            </value>
+            <value>
+                <fullName>Macro Board</fullName>
+                <default>false</default>
+                <label>Macro Board</label>
+            </value>
+            <value>
+                <fullName>Micro Board - Static/Agitated</fullName>
+                <default>false</default>
+                <label>Micro Board - Static/Agitated</label>
+            </value>
+            <value>
+                <fullName>Micro Pump</fullName>
+                <default>false</default>
+                <label>Micro Pump</label>
+            </value>
+            <value>
+                <fullName>Modem/Connectivity</fullName>
+                <default>false</default>
+                <label>Modem/Connectivity</label>
+            </value>
+            <value>
+                <fullName>NNS</fullName>
+                <default>false</default>
+                <label>NNS</label>
+            </value>
+            <value>
+                <fullName>NNS Tray</fullName>
+                <default>false</default>
+                <label>NNS Tray</label>
+            </value>
+            <value>
+                <fullName>Nozzle Assembly</fullName>
+                <default>false</default>
+                <label>Nozzle Assembly</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pour Button</fullName>
+                <default>false</default>
+                <label>Pour Button</label>
+            </value>
+            <value>
+                <fullName>Power Supply</fullName>
+                <default>false</default>
+                <label>Power Supply</label>
+            </value>
+            <value>
+                <fullName>PSM</fullName>
+                <default>false</default>
+                <label>PSM</label>
+            </value>
+            <value>
+                <fullName>QPM</fullName>
+                <default>false</default>
+                <label>Micro Pumps</label>
+            </value>
+            <value>
+                <fullName>RCGP</fullName>
+                <default>false</default>
+                <label>RCGP</label>
+            </value>
+            <value>
+                <fullName>Recirculator Pump</fullName>
+                <default>false</default>
+                <label>Recirculator Pump</label>
+            </value>
+            <value>
+                <fullName>Refrigeration</fullName>
+                <default>false</default>
+                <label>Refrigeration</label>
+            </value>
+            <value>
+                <fullName>RFID</fullName>
+                <default>false</default>
+                <label>RFID</label>
+            </value>
+            <value>
+                <fullName>RFID Antenna Static/Agit</fullName>
+                <default>false</default>
+                <label>RFID Antenna Static/Agit</label>
+            </value>
+            <value>
+                <fullName>Shelf Board</fullName>
+                <default>false</default>
+                <label>Shelf Board</label>
+            </value>
+            <value>
+                <fullName>Smart Carb</fullName>
+                <default>false</default>
+                <label>Smart Carb</label>
+            </value>
+            <value>
+                <fullName>Soda Solenoid</fullName>
+                <default>false</default>
+                <label>Soda Solenoid</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Sweetener Solenoid Value</fullName>
+                <default>false</default>
+                <label>Sweetener Solenoid Value</label>
+            </value>
+            <value>
+                <fullName>Touchscreen</fullName>
+                <default>false</default>
+                <label>Touchscreen</label>
+            </value>
+            <value>
+                <fullName>TTP</fullName>
+                <default>false</default>
+                <label>PTP</label>
+            </value>
+            <value>
+                <fullName>Water Pump</fullName>
+                <default>false</default>
+                <label>Water Pump</label>
+            </value>
+            <value>
+                <fullName>Water Solenoid</fullName>
+                <default>false</default>
+                <label>Water Solenoid</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>ADA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Agitation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Backroom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Door</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Door Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Drain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>KSM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Leak - Drain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Leak - Syrup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Leak - Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Modem/Connectivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>NNS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>NNS Tray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Nozzle Assembly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>PSM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <valueName>QPM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>RCGP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>RFID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Touchscreen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>CGP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Cladding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Flow Control - Water/Soda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>HMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Ice/Drink Dispense Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Ice Bin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Ice Dispense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Key Lock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Levers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Micro Board - Static/Agitated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Micro Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Power Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>RFID Antenna Static/Agit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Sweetener Solenoid Value</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Water Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Carbonator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <valueName>FCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8000 Series</controllingFieldValue>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Shelf Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>Ice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <controllingFieldValue>9100 Series</controllingFieldValue>
+            <valueName>TTP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Brand Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>CDM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Flavor Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>7000 Series</controllingFieldValue>
+            <valueName>Macro Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Pour Button</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Recirculator Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Refrigeration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Smart Carb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Soda Solenoid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2000 Series</controllingFieldValue>
+            <controllingFieldValue>3100 Series</controllingFieldValue>
+            <valueName>Water Solenoid</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

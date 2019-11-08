@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_base_cabinet_or_replacement_counter__c</name>
+    <picklistValues>
+        <masterLabel>-None-</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No, Not at this time</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown â€“ Site assessment will determine</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, Both Self-Serve and Crew Serve</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, Crew Serve Only</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, Self-Serve Only</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Type_of_Relocation__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Relocation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ SP to Store)</fullName>
+                <default>false</default>
+                <label>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ SP to Store)</label>
+            </value>
+            <value>
+                <fullName>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ SP to Store)</fullName>
+                <default>false</default>
+                <label>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ SP to Store)</label>
+            </value>
+            <value>
+                <fullName>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ Same Day)</fullName>
+                <default>false</default>
+                <label>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ Same Day)</label>
+            </value>
+            <value>
+                <fullName>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ Same day)</fullName>
+                <default>false</default>
+                <label>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ Same day)</label>
+            </value>
+            <value>
+                <fullName>Relocation within four walls (Store dispenser(s) on site) - 2 work orders</fullName>
+                <default>false</default>
+                <label>Relocation within four walls (Store dispenser(s) on site) - 2 work orders</label>
+            </value>
+            <value>
+                <fullName>Relocation within four walls (Stored off-site at SP) - 2 work orders</fullName>
+                <default>false</default>
+                <label>Relocation within four walls (Stored off-site at SP) - 2 work orders</label>
+            </value>
+            <value>
+                <fullName>Relocation within four walls (Same day for on-site work) â€“ 1 work order</fullName>
+                <default>false</default>
+                <label>Relocation within four walls (Same day for on-site work) â€“ 1 work order</label>
+            </value>
+            <value>
+                <fullName>Disconnect Reconnect (Store dispenser(s) on site) - 2 work orders</fullName>
+                <default>false</default>
+                <label>Disconnect Reconnect (Store dispenser(s) on site) - 2 work orders</label>
+            </value>
+            <value>
+                <fullName>Disconnect Reconnect (Stored off-site at SP) - 2 work orders</fullName>
+                <default>false</default>
+                <label>Disconnect Reconnect (Stored off-site at SP) - 2 work orders</label>
+            </value>
+            <value>
+                <fullName>Disconnect Reconnect (Same day for on-site work) â€“ 1 work order</fullName>
+                <default>false</default>
+                <label>Disconnect Reconnect (Same day for on-site work) â€“ 1 work order</label>
+            </value>
+            <value>
+                <fullName>New Address</fullName>
+                <default>false</default>
+                <label>New Address</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

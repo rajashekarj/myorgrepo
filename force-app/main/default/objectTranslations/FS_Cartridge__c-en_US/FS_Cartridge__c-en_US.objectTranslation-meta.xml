@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cartridge</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cartridges</value>
+    </caseValues>
+    <layouts>
+        <layout>Cartridge Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>FET Management</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>Available_for_Commercial_use_is_checked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Country_and_Platform_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Reason_for_Deactivating</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Make_Cartridge_Name_NonEditable</name>
+    </validationRules>
+</CustomObjectTranslation>

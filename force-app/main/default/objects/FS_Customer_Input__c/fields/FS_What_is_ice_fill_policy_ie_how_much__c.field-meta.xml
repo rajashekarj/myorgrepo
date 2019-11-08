@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_What_is_ice_fill_policy_ie_how_much__c</fullName>
+    <externalId>false</externalId>
+    <label>What is ice fill policy, i.e., how much</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1/3</fullName>
+                <default>false</default>
+                <label>1/3</label>
+            </value>
+            <value>
+                <fullName>1/2</fullName>
+                <default>false</default>
+                <label>1/2</label>
+            </value>
+            <value>
+                <fullName>3/4</fullName>
+                <default>false</default>
+                <label>3/4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

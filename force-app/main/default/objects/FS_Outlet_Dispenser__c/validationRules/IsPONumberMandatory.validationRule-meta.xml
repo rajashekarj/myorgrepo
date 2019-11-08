@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPONumberMandatory</fullName>
+    <active>true</active>
+    <description>&#39;PO Number&#39; should be a mandatory field when a new OD record is created (New Status)...</description>
+    <errorConditionFormula>AND( RecordType.Name = &#39;BoE Dispenser&#39;, ISPICKVAL( FS_Status__c , &#39;New&#39;), ISBLANK(PO_Number__c),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorMessage>&#39;PO Number&#39; cannot be blank when Status is &#39;New&#39;. Please select a &#39;Shipping Form&#39; that contains a &#39;PO Number&#39;.</errorMessage>
+</ValidationRule>

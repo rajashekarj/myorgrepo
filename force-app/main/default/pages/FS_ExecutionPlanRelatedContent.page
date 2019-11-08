@@ -1,0 +1,45 @@
+<!--*********************************************************************************-->
+<!-- Author       :   Dipika (Appirio Offshore)-->
+<!-- Created Date :   April 9,2013-->
+<!-- Task         :   T-128538
+<!--Description   :   Inline Vf page for Related list of content Files on Execution Plans-->
+<!--*********************************************************************************-->
+<apex:page standardController="FS_Execution_Plan__c" extensions="ExecutionPlanRelatedContent">
+    <apex:form id="frm">
+        <apex:pageBlock id="pb1">
+        <apex:pageMessages />
+        <apex:outputPanel rendered="{!feeditems.size == 0}">No Contents Available</apex:outputPanel>
+<!--        <apex:pageBlockTable id="pbt1" value="{!relatedContenVersionDocuments}" var="content" rendered="{!relatedContenVersionDocuments.size > 0}">-->
+<!--             <apex:column headerValue="Title">-->
+<!--                <a href="/sfc/#version?selectedDocumentId={!content.contentDocumentId}" class="actionLink" onclick="redirectToRecord('{!content.contentDocumentId}' , 'false');return false;">{!content.Title}</a>-->
+<!--            </apex:column>-->
+<!---->
+<!--            <apex:column headerValue="Created Date" value="{!content.CreatedDate}"/>-->
+<!--            <apex:column headerValue="Last Modified Date" value="{!content.LastModifiedDate}"/>-->
+<!--            <apex:column headerValue="Author">-->
+<!--            <a href="/{!content.ownerId}" class="actionLink" onclick="redirectToRecord('{!content.ownerId}' , 'true');return false;">{!content.owner.name}</a>-->
+<!--            </apex:column>-->
+<!--        </apex:pageBlockTable>-->
+        
+  
+        <apex:pageBlockTable id="pbt1" value="{!feeditems}" var="att" rendered="{!feeditems.size > 0}">
+             <apex:column headerValue="Title">
+                <a href="/{!att.Id}" class="actionLink" onclick="redirectToRecord('{!att.id}' , 'true');return false;">{!att.Title}</a>
+            </apex:column>
+
+            <apex:column headerValue="Created Date" value="{!att.CreatedDate}"/>
+            <apex:column headerValue="Last Modified Date" value="{!att.LastModifiedDate}"/>
+            <apex:column headerValue="Owner">
+            </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+    <script>
+            function redirectToRecord(recordId , tempVar){
+            if(tempVar == 'true')
+                window.parent.location.href = '/' + recordId;
+            else
+                window.parent.location.href = '/sfc/#version?selectedDocumentId=' + recordId; 
+            }
+    </script>      
+</apex:page>

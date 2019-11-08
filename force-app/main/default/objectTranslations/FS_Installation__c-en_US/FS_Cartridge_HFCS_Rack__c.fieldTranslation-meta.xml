@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Cartridge_HFCS_Rack__c</name>
+    <picklistValues>
+        <masterLabel>46079: Cartridge/HFCS Backroom Rack</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46246: Freestyle 41â€� Rack with 2 Flat Pans</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46280 : 41â€� Manitowoc Â (Wendy&#39;s Only)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

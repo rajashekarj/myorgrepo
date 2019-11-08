@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Bluebird</label>
+            <name>Bluebird</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Gulfstream</label>
+            <name>Gulfstream</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Gandalf</label>
+            <name>Gandalf</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Topic</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+        <object>Question</object>
+    </objectUsage>
+</DataCategoryGroup>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ICCodeRequiredForManufacturer</fullName>
+    <active>true</active>
+    <description>IC code is required for users with manufacturer profile</description>
+    <errorConditionFormula>AND 
+( 
+Profile.Name = &#39;FET Manufacturer Profile&#39;, 
+ISBLANK(IC_Code__c)
+)</errorConditionFormula>
+    <errorDisplayField>IC_Code__c</errorDisplayField>
+    <errorMessage>Please enter a value</errorMessage>
+</ValidationRule>

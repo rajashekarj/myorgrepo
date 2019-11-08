@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Restrict_SerEscComUsers_Change_Status</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+     OR($Profile.Name = &quot;Service Escalation Community&quot;,
+        $Profile.Name = &quot;Service Escalation Community Plus&quot;
+     ),
+     
+    OR(
+       AND(ISNEW(),TEXT(Status) &lt;&gt;&#39;New&#39;),
+       AND(!ISNEW(),ISCHANGED(Status) )
+
+      )
+
+
+)</errorConditionFormula>
+    <errorMessage>Please don&#39;t change case status manually</errorMessage>
+</ValidationRule>

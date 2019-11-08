@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cokesmart_Payment_Method__c</fullName>
+    <description>Cartridge Fee Payment Method picklist</description>
+    <externalId>false</externalId>
+    <inlineHelpText>â€œ&quot;Payment Term&quot; Invoicing requires Finance Approval from S. Curtis Marshall &amp; Mark Westenfelder.
+
+Warning: When Payment Term eligibility is changed from â€œYesâ€� to â€œNoâ€�, existing â€œPayment Termâ€� methods will need to be updated.â€�</inlineHelpText>
+    <label>Cartridge Fee Payment Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Credit Card</fullName>
+                <default>true</default>
+                <label>Credit Card</label>
+            </value>
+            <value>
+                <fullName>Bank Draft</fullName>
+                <default>false</default>
+                <label>Bank Draft</label>
+            </value>
+            <value>
+                <fullName>Invoice (Payment Terms)</fullName>
+                <default>false</default>
+                <label>Invoice (Payment Terms)</label>
+            </value>
+            <value>
+                <fullName>Distributor billing</fullName>
+                <default>false</default>
+                <label>Distributor billing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

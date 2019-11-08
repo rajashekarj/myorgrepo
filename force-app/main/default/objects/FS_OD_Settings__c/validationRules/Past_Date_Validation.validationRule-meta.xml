@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Past_Date_Validation</fullName>
+    <active>true</active>
+    <description>Not to accept a past date for date/time field</description>
+    <errorConditionFormula>AND( OR ($Profile.Name == $Label.FOT_Operations_Admin
+,$Profile.Name == $Label.FOT_Operations_Analyst), NOW()&gt; DATETIMEVALUE(Debug_Flag_Expiration__c))</errorConditionFormula>
+    <errorDisplayField>Debug_Flag_Expiration__c</errorDisplayField>
+    <errorMessage>Date can not be a past date/time.</errorMessage>
+</ValidationRule>

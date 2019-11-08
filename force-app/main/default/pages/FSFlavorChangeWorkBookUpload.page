@@ -1,0 +1,34 @@
+<apex:page controller="FSFlavorChangeWorkBookUploadController">
+ <style type="text/css">
+    .pbTitle {
+        white-space: nowrap
+    }
+ </style>
+    <script>
+    var profileList=['FS Admin PM_P','FS PM_P','System Administrator','FET System Admin']; 
+    
+    if(profileList.indexOf('{!$Profile.Name}') == -1 )
+    {
+        alert('{!$Label.Flavor_Change_File_Upload_Warning}');
+        history.go(-1);
+    }
+    
+    </script>
+  <apex:form id="formId">
+        <apex:pageBlock title="Workbook Upload for Flavor Change" id="pbId">
+            <apex:pageMessages />
+            <apex:pageBlockSection rendered="{!batchJobId==null}">           
+                <apex:inputFile value="{!csvFileBody}" filename="{!csvFileName}" accept="csv" contentType="text/csv" />
+                  
+                <apex:commandbutton value="Upload" action="{!uploadFile}" />
+            </apex:pageBlockSection>
+            
+              <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Create Flavor Changes" action="{!callBatch}" onclick="return alert('Mass Update has started. You will receive an email about its results after it finishes');" rendered="{!AND(ISNULL(batchJobId),NOT(pageHasErrors),NOT(ISNULL(csvFileName)))}"/>
+                <apex:commandButton value="Back" action="{!backToPrevious}"/>
+              </apex:pageBlockButtons>
+        </apex:pageBlock>
+       <apex:actionFunction name="showUploadButtonMethod"/> 
+    </apex:form>
+    
+</apex:page>

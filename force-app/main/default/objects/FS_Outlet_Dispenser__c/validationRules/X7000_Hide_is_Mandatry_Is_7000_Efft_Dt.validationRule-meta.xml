@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X7000_Hide_is_Mandatry_Is_7000_Efft_Dt</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(ISBlank(Text(FS_7000_Series_Hide_Water_Button_New__c)),Not(isBlank(FS_7000_Series_Hide_Water_Effective_Date__c)), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_7000_Series_Hide_Water_Button_New__c</errorDisplayField>
+    <errorMessage>7000 Series Water Button. is mandatory if we have &#39;7000 Series Hide Water Effective Date&#39;</errorMessage>
+</ValidationRule>

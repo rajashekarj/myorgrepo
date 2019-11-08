@@ -1,0 +1,273 @@
+<apex:page controller="FSCIFNotesController" docType="html-5.0" >
+    <!-- Help Notes-->
+    <head>
+        <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" /> 
+        <c:FSActionStatusElement /> 
+        <apex:stylesheet value="{!URLFOR($Resource.FSCustomerFormCSS, 'FSCustomerFormCSS/Coke_FSCustomerInputFromEdit.css')}"/>      
+        
+        <script>
+        	function onEdit(){
+                 $( "select" ).each(function( i ) {
+                	onchangeCrewServe(this,'Edit');
+                }); 
+            }
+            function onchangeCrewServe(elem, isEdit)
+            {    
+                console.log(elem);
+                var idStr, repidStr, flag, repFlag=false;
+                var crewval = $(elem).val();
+                var lookupid, repLookupId, ctx;
+                
+                console.log('-- elem id ::'+elem.id);
+                
+                if( elem.id.indexOf("doesInstallRO4W") != -1 )
+                {
+                    idStr="[id$=ro4w1],[id$=ro4w2],[id$=ro4w3]";
+                    lookupid="[id$=ro4w1_lkwgt],[id$=ro4w2_lkwgt],[id$=ro4w3_lkwgt]";
+                    
+                    ctx = $(lookupid).closest('tr');
+                    if( crewval.indexOf("Yes") != -1 ){
+                        flag=true;
+                    }   
+                }
+                //Added as part of FET-7.0 FNF 795 -- START -- 
+                if( elem.id.indexOf("doesInstallReplacement") != -1 )
+                {
+                    repidStr="[id$=Replacement1],[id$=Replacement2],[id$=Replacement3]";
+                    repLookupId="[id$=Replacement1_lkwgt],[id$=Replacement2_lkwgt],[id$=Replacement3_lkwgt]";
+                    
+                    ctx = $(repLookupId).closest('tr');
+                    if( crewval.indexOf("Yes") != -1 ){
+                        repFlag=true;
+                    }   
+                }
+                //Added as part of FET-7.0 FNF 795 -- END --
+                $(elem).parents().eq(2).closest('tr').find(idStr).closest('td').find('.errorMessage').css("display","none");
+                if( flag == true ) 
+                {
+			        console.log($(elem).parents().eq(2).closest('tr').find(idStr));
+			        $(elem).parents().eq(2).closest('tr').find(idStr).prop('disabled', false);
+			        $(elem).parents().eq(2).closest('tr').find(lookupid).css("visibility","visible"); 
+			        $(elem).parents().eq(2).closest('tr').find(idStr).closest('td').find('.requiredBlock').css("display","block");
+                    if(isEdit.includes("Edit")){
+                        $(elem).parents().eq(2).closest('tr').find(idStr).closest('td').find('.requiredText').text("If the value provided within the \"Does Install Involve RO4W?\" field = Yes, you must provide a value within RO4W 1. If the value = No, then RO4W 1, 2, & 3 values must be blank.");
+                    }
+                    var ivalue=$(elem).parents().eq(2).closest('tr').find(idStr).attr("value");
+                  	if(ivalue){
+                        $(elem).parents().eq(2).closest('tr').find(idStr).closest('td').find('.requiredText').text("");
+                    }
+                }
+                else
+                {
+			        $(elem).parents().eq(2).closest('tr').find(idStr).prop('disabled', true);
+			        $(elem).parents().eq(2).closest('tr').find(lookupid).css("visibility","hidden"); 
+			        $(elem).parents().eq(2).closest('tr').find(idStr).val("");
+			        $(elem).parents().eq(2).closest('tr').find(idStr).closest('td').find('.requiredBlock').css("display","none");
+                    $(elem).parents().eq(2).closest('tr').find(idStr).closest('td').find('.requiredText').text("");
+                }
+                //Added as part of FET-7.0 FNF 795 -- START --
+                $(elem).parents().eq(2).closest('tr').find(repidStr).closest('td').find('.errorMessage').css("display","none");
+                if( repFlag == true ) 
+                {
+			        console.log($(elem).parents().eq(2).closest('tr').find(repidStr));
+			        $(elem).parents().eq(2).closest('tr').find(repidStr).prop('disabled', false);
+			        $(elem).parents().eq(2).closest('tr').find(repLookupId).css("visibility","visible"); 
+			        $(elem).parents().eq(2).closest('tr').find(repidStr).closest('td').find('.requiredBlock').css("display","block");
+                    if(isEdit.includes("Edit")){
+                        $(elem).parents().eq(2).closest('tr').find(repidStr).closest('td').find('.requiredText').text("If the value provided within the \"Does Install Involve Replacement?\" field = Yes, you must provide a value within Replacement 1. If the value = No, then Replacement 1, 2, & 3 values must be blank.");
+                    }
+                    var ivalue=$(elem).parents().eq(2).closest('tr').find(repidStr).attr("value");
+                  	if(ivalue){
+                        $(elem).parents().eq(2).closest('tr').find(repidStr).closest('td').find('.requiredText').text("");
+                    }
+                }
+                else
+                {
+			        $(elem).parents().eq(2).closest('tr').find(repidStr).prop('disabled', true);
+			        $(elem).parents().eq(2).closest('tr').find(repLookupId).css("visibility","hidden"); 
+			        $(elem).parents().eq(2).closest('tr').find(repidStr).val("");
+			        $(elem).parents().eq(2).closest('tr').find(repidStr).closest('td').find('.requiredBlock').css("display","none");
+                    $(elem).parents().eq(2).closest('tr').find(repidStr).closest('td').find('.requiredText').text("");
+                }
+                //Added as part of FET-7.0 FNF 795 -- END --
+            }
+    	</script>
+    </head>
+    <apex:form id="frm" style="width:120%">
+        
+        <apex:pageMessages ></apex:pageMessages>
+        
+        <apex:pageBlock title="Installations" id="pgBlockInstall">    
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockTable value="{!lstInstallation}" var="inst" styleClass="style">
+                    
+                    <apex:column >
+                        <apex:facet name="header">                         
+                            Installation Name
+                        </apex:facet>
+                        <apex:outputLink value="/{!inst.id}" target="_blank">
+                            <apex:outputField value="{!inst.Name}"/>
+                        </apex:outputLink>                                           
+                    </apex:column> 
+                     <apex:column >
+                        <apex:facet name="header">                         
+                            Outlet Information
+                        </apex:facet>                       
+                      
+                        <apex:outputField value="{!inst.FS_Outlet_Information__c}"/>
+                    </apex:column> 
+                    <apex:column >
+                        <apex:facet name="header">                         
+                            Does Install Involve RO4W?
+                        </apex:facet>
+                        <apex:outputPanel id="output1">
+                        	<apex:outputField value="{!inst.Does_Install_Involve_RO4W__c}" rendered="{!input==false}"/><br></br>
+                                                                   
+                        <apex:inputField id="doesInstallRO4W" value="{!inst.Does_Install_Involve_RO4W__c}" styleClass="deCls56" onchange="onchangeCrewServe(this,'')" rendered="{!input==true}" required="true" />
+                       
+                    	</apex:outputPanel>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">                         
+                            Related RO4W
+                        </apex:facet>
+                        <apex:outputPanel id="output11">
+                        <apex:outputPanel rendered="{!input==false}">
+                        	<table>
+	                        	<tr><td>
+	                        			<apex:outputField value="{!inst.FS_RO4W1__c}" rendered="{!input==false}"/>
+	                        		</td>
+	                        	</tr><tr>
+	                        		<td>
+	                    				<apex:outputField value="{!inst.FS_RO4W2__c}" rendered="{!input==false}"/>
+	                    			</td>
+	                    		</tr><tr>
+	                    			<td>
+	                        			<apex:outputField value="{!inst.FS_RO4W3__c}" rendered="{!input==false}"/>
+	                        		</td>
+	                        	</tr>
+                			</table>
+                			</apex:outputPanel>
+                		</apex:outputPanel>	
+                		<apex:outputPanel id="output12" >
+                			<apex:outputPanel rendered="{!input==true}">	
+                			<table>
+	                        	<tr>
+	                        		<td>
+                                        <div class="requiredInput">
+                                           <div class="requiredBlock"></div>
+                							<apex:inputField id="ro4w1" styleClass="deCls53" value="{!inst.FS_RO4W1__c}" rendered="{!input==true}"/>
+											<p class="requiredText" style="color:red;">                                                
+                                            </p>                                            
+                                        </div>
+                					</td>
+                                    
+                				</tr><tr>
+                					<td>
+                						<apex:inputField id="ro4w2" styleClass="deCls54" value="{!inst.FS_RO4W2__c}" rendered="{!input==true}"/>
+                					</td>
+                				</tr><tr>
+                					<td>
+                						<apex:inputField id="ro4w3" styleClass="deCls55" value="{!inst.FS_RO4W3__c}" rendered="{!input==true}"/>
+                					</td>
+                				</tr>
+                			</table>
+                			</apex:outputPanel>
+            			</apex:outputPanel>
+                    </apex:column>
+                <!--Added as part of FET-7.0 FNF 795 -- START -->
+                <apex:column >
+                        <apex:facet name="header">                         
+                            Does Install Involve Replacement?
+                        </apex:facet>
+                        <apex:outputPanel id="output3">
+                        	<apex:outputField value="{!inst.FS_Does_Install_Involve_a_Replacement__c}" rendered="{!input==false}"/><br></br>
+                                                                   
+                        <apex:inputField id="doesInstallReplacement" value="{!inst.FS_Does_Install_Involve_a_Replacement__c}" styleClass="deCls56" onchange="onchangeCrewServe(this,'')" rendered="{!input==true}" required="true" />
+                       
+                    	</apex:outputPanel>
+                    </apex:column>
+            	<apex:column >
+                        <apex:facet name="header">                         
+                            Related Replacement
+                        </apex:facet>
+                        <apex:outputPanel id="output31">
+                        <apex:outputPanel rendered="{!input==false}">
+                        	<table>
+	                        	<tr><td>
+	                        			<apex:outputField value="{!inst.FS_Replacement_1__c}" rendered="{!input==false}"/>
+	                        		</td>
+	                        	</tr><tr>
+	                        		<td>
+	                    				<apex:outputField value="{!inst.FS_Replacement_2__c}" rendered="{!input==false}"/>
+	                    			</td>
+	                    		</tr><tr>
+	                    			<td>
+	                        			<apex:outputField value="{!inst.FS_Replacement_3__c}" rendered="{!input==false}"/>
+	                        		</td>
+	                        	</tr>
+                			</table>
+                			</apex:outputPanel>
+                		</apex:outputPanel>	
+                		<apex:outputPanel id="output32" >
+                			<apex:outputPanel rendered="{!input==true}">	
+                			<table>
+	                        	<tr>
+	                        		<td>
+                                        <div class="requiredInput">
+                                           <div class="requiredBlock"></div>
+                							<apex:inputField id="Replacement1" styleClass="deCls53" value="{!inst.FS_Replacement_1__c}" rendered="{!input==true}"/>
+											<p class="requiredText" style="color:red;">                                                
+                                            </p>                                            
+                                        </div>
+                					</td>
+                                    
+                				</tr><tr>
+                					<td>
+                						<apex:inputField id="Replacement2" styleClass="deCls54" value="{!inst.FS_Replacement_2__c}" rendered="{!input==true}"/>
+                					</td>
+                				</tr><tr>
+                					<td>
+                						<apex:inputField id="Replacement3" styleClass="deCls55" value="{!inst.FS_Replacement_3__c}" rendered="{!input==true}"/>
+                					</td>
+                				</tr>
+                			</table>
+                			</apex:outputPanel>
+            			</apex:outputPanel>
+                    </apex:column>
+            		<!--Added as part of FET-7.0 FNF 795 -- END -->
+                    <apex:column headerValue="Dispenser Comments" value="{!inst.FS_Dispenser_Comments__c}"/>
+                    
+                    <apex:column headerValue="Ancillary Equipment Needed" value="{!inst.FS_Ancillary_equipment_needed__c}"/>
+                    
+                    <apex:column headerValue="Describe Any Known Construction Needs " value="{!inst.FS_Describe_Any_Known_Construction_Needs__c}"/>
+                    
+                    <apex:column headerValue="Ice maker and water filter comments" value="{!inst.FS_Ice_maker_and_water_filter_comments__c}"/>
+                    
+                    <apex:column headerValue="Product information comments" value="{!inst.FS_Product_Information_Comments__c}"/>                
+                    
+                    <apex:column headerValue="Ancillary Equipment Remain Onsite" value="{!inst.FS_Ancillary_equipment_to_remain_on_site__c}"/>
+                   
+                    <apex:column >
+                        <apex:facet name="header">                         
+                            Training Comments
+                        </apex:facet>
+                        <apex:outputField value="{!inst.FS_OB_Comments__c}" />
+                    </apex:column>
+                    
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="Bottom"> 
+                <apex:outputPanel id="output2">
+                    <apex:commandButton value="Edit" action="{!edit}" reRender="output,output1,output11,output12,output2,output3,output31,output32" rendered="{!input==false}" oncomplete="onEdit()"/>             <!--Modified as Part of FET-7.0 FNF 795-->
+                    <apex:commandButton value="Save" action="{!save}" reRender="output,output1,output11,output12,output2,output3,output31,output32" rendered="{!input==true}" oncomplete="onEdit()" status="counterStatus"/>  <!--Modified as Part of FET-7.0 FNF 795-->
+                    <apex:actionStatus startText=" (saving...)" stopText="" id="counterStatus"/>
+                    <apex:commandButton value="Cancel" rendered="{!input==false}" action="{!cancel}"/>  
+                    <apex:commandButton value="Cancel" rendered="{!input==true}" action="{!cancelSave}"/>
+                </apex:outputPanel>
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>        
+        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bottler_Distributor_handlingInitialOrder</fullName>
+    <active>true</active>
+    <description>Bottler Distributor Initial order required validation rule</description>
+    <errorConditionFormula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR( 
+AND(OR($Profile.Name =&quot;FS NDO_P&quot;,CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;)), 
+ISPICKVAL(FS_Dist_Bottler_Handling_Initial_Order__c,&#39;&#39;), 
+OR(Calculated_Customer_Classification__c=&quot;12&quot;,Calculated_Customer_Classification__c=&quot;13&quot;,Calculated_Customer_Classification__c=&quot;08&quot;) ) , 
+AND(CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;), 
+FS_Final_Delivery_Method__c=&quot;Bottler&quot;,
+FS_Final_Order_Method__c=&quot;Bottler&quot;,ISPICKVAL(FS_Dist_Bottler_Handling_Initial_Order__c,&#39;&#39;))), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Dist_Bottler_Handling_Initial_Order__c</errorDisplayField>
+    <errorMessage>Please enter a value for mandatory field â€œIs Distr/Bottler Handling Initial Order?â€�</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Customers_Ice_Fill_Policy__c</name>
+    <picklistValues>
+        <masterLabel>33%</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>50%</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>66%</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>75%</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

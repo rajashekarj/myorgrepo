@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Questionnaire</fullName>
+    <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+    <columns>FS_What_type_of_install_is_this__c</columns>
+    <columns>FS_Freestyle_dispenser_will_go_where__c</columns>
+    <columns>FS_Is_a_top_mount_ice_maker_planned_Loc__c</columns>
+    <columns>FS_HFCS_sweetener_will_go_where__c</columns>
+    <columns>FS_Are_cabinets_getting_relocated__c</columns>
+    <columns>Is_a_legacy_bar_gun_being_removed_or_ins__c</columns>
+    <columns>FS_Frestyle_7k_only_NNS_sweetnr_wil_go_w__c</columns>
+    <columns>FS_What_type_of_beverage_station_is_this__c</columns>
+    <columns>FS_Is_ths_Sngle_or_Multiple_dispsr_Instl__c</columns>
+    <columns>FS_Water_Booster_will_go_where__c</columns>
+    <columns>FS_Water_Filter_will_go_where__c</columns>
+    <columns>FS_Is_ancillary_equipment_such_Tea_Coffe__c</columns>
+    <columns>FS_Freestyle_7K_Only_Wht_is_dispsr_Confi__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FS_Frestyle_7k_only_NNS_sweetnr_wil_go_w__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <filters>
+        <field>FS_Water_Booster_will_go_where__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <filters>
+        <field>FS_What_type_of_install_is_this__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <filters>
+        <field>FS_Is_ancillary_equipment_such_Tea_Coffe__c</field>
+        <operation>notEqual</operation>
+        <value>Not Applicable,-None-</value>
+    </filters>
+    <filters>
+        <field>Is_a_legacy_bar_gun_being_removed_or_ins__c</field>
+        <operation>notEqual</operation>
+        <value>Not Applicable,-None-</value>
+    </filters>
+    <filters>
+        <field>FS_Frestyle_7k_only_NNS_sweetnr_wil_go_w__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <filters>
+        <field>FS_Is_a_top_mount_ice_maker_planned_Loc__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <filters>
+        <field>FS_HFCS_sweetener_will_go_where__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <filters>
+        <field>FS_What_type_of_beverage_station_is_this__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <filters>
+        <field>FS_Is_ths_Sngle_or_Multiple_dispsr_Instl__c</field>
+        <operation>notEqual</operation>
+        <value>-None-,Not Applicable</value>
+    </filters>
+    <label>Questionnaire</label>
+</ListView>

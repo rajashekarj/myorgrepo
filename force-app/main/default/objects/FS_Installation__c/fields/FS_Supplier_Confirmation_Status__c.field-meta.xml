@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Supplier_Confirmation_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>If( OR(and(Text(FS_Execution_Plan__r.FS_WF_Supplier__c) &lt;&gt;&quot;&quot; , FS_Customer_Confirmation__c =true), FS_Sale_Not_Required__c =true), &quot;Confirmation Complete&quot;, &quot;Pending Confirmation&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Supplier Confirmation Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

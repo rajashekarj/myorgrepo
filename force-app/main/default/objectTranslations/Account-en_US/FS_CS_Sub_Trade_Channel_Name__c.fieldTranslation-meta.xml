@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_CS_Sub_Trade_Channel_Name__c</name>
+    <picklistValues>
+        <masterLabel>Agricultural/Ranching</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airline</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airport</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amusement/Theme Park</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apparel/Accesories</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bakery</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bank/Financial Service</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bar/Tavern</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beauty &amp; Personal Care</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beverage Shop</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Books/Office/News/Tobacco</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bottler</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bottler House Sales</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boutique</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Box Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brewery Wholesaler</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bus Line</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bus Terminal/Station</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business School</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Service</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Butcher Shop</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cafe</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cafeteria</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Campground/Rv Park</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cart/Mobile Food</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Catalog Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caterer</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chain Convenience Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chain Discount Drug Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chain Drug Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chain Supermarket</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cinema/Movie</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinic</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coffee/Tea Shop</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Conventional Independent Drug Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cruise Ship Line</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer-Owned Distribution Organization</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cyber (Internet) Cafe</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cycle Sales &amp; Service</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delicatessen</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delivery Agent</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Department Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Diner</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disco (Alcoholic)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disco (Non-Alcoholic)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dry Cleaner/Laundromat/Shoe Repair</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronic Game Center/Arcade</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronics/A&amp;V/Computer/Photography</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Export</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-All Other</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Asian</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-BBQ</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Family Steak</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Family Style</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Italian</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Mexican</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Other Ethnic</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Pizza</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Seafood</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Steak:Fine &amp; Casual</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FSR-Varied Menu</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fine/Casual Restaurant</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Service Operator/Infeeder</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Service Operator/Vendor</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Frozen Sweets</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gaming Facility</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware/Home-Improvement/Lawn &amp; Garden</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Food Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Delivery</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Furnishing/Appliance</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospital</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hotel/Motel/Resort/Inn</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>House Sales</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ice Skating/Roller Skating/Bowling</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Convenience Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Supermarket</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indoor Exposition/Trade Show</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Industrial/Manufacturing/Mining</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jr./Community College</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kiosk/Food</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kiosk/Newsstand</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liquor/Beer/Wine</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Government</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marine Sales &amp; Services</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maritime Ferry Service</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maritime Freight Shipper</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mass Merchandiser</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mid-scale Family Style Restaurant</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Middle School</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military - Commissary</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military - Exchange</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military - Other</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military - U.S. - Commissary</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military - U.S. - Exchange</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Military - U.S. - Other</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mom &amp; Pop</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>National Government</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nightclub</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursing Home</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other All Others</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Amusement</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Automotive Services</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Bar/Tavern/Licensed Establishment</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Business And Professional Offices</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Business/Trade School</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Cash &amp; Carry Retail</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Club Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other College/University</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Contract Vending &amp; Food Service</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Convenience Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Discount Grocery</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Drug Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Eating &amp; Drinking - Other</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other General Merchandiser</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Government (Non-Military)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Health/Hospital</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Hyper-Merchandiser</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Industrial/Agricultural/Utility</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Leisure</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Liquor/Beer/Wine/Soft Drink</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Local &amp; Traditional Grocery</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Lodging</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Petroleum-Foodmart</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Primary/Secondary School</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Recreation</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Retail Services</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Specialty Food Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Street Vendor</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Superette</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Supermarket</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Transportation</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Wholesale</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outdoor Exposition/Fair</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parade/Festival</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parking Facility</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Police/Prison/Fire</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Postal Service</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary School</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Produce Stand</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pub</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Rest Area</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Transit System</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Utility</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Asian</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Bagel</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Bakery</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Chicken</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Croissant</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Donut</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Hamburger</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Local Food</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Mexican</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Other Fast Food</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Pizza</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Sandwich</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QSR-Seafood</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Railroad</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recreational Park/Beach/Picnic</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Religious/Charitable</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Residential Complex/Community</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retirement Home</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rolling Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary/High School</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship Terminal</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Snack Bar</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Club/Fraternal Organization</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sport Venue</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports/Country Club</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terrace</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Theater</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Third Party Delivery Agent</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade School</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Train Terminal/Station</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Travel Agency</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Traveling Show (Circus/Rodeo)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trucking Freight Service</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Value Discount</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vendor</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Store</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wholesaler</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youth Club/Youth Organization</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Zoo/Museum/Aquarium</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

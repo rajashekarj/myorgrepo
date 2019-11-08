@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" controller="FSInstallRescheduleAuraController">
+        
+    <aura:attribute name="objCnt" type="FSInstallRescheduleAuraController" access="GLOBAL"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <div class="slds-clearfix">
+        <div class="slds-float_right">            
+            <lightning:button aura:id="newButton" variant="neutral" label="New" onclick="{!c.handleClick}" class="slds-hide" />            
+        </div>
+    </div>
+ 
+</aura:component>

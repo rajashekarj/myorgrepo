@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Cokesmart_Registration_Email_Sent__c</name>
+    <picklistValues>
+        <masterLabel>Notification #1 and 2 and 3 sent</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification #1 and 2 sent</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Notification #1 sent</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

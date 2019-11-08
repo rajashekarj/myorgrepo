@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Relocation_Store_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>Relocation Store Detail</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closing of Old Outlet and transfer to New Outlet</fullName>
+                <default>false</default>
+                <label>Closing of Old Outlet and transfer to New Outlet</label>
+            </value>
+            <value>
+                <fullName>Closing of Old Outlet and transfer to Existing Outlet with Freestyle</fullName>
+                <default>false</default>
+                <label>Closing of Old Outlet and transfer to Existing Outlet with Freestyle</label>
+            </value>
+            <value>
+                <fullName>Partial relocation from old outlet and transfer to new outlet</fullName>
+                <default>false</default>
+                <label>Partial relocation from old outlet and transfer to new outlet</label>
+            </value>
+            <value>
+                <fullName>Partial relocation from old outlet and transfer to Existing Outlet with Freestyle</fullName>
+                <default>false</default>
+                <label>Partial relocation from old outlet and transfer to Existing Outlet with Freestyle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Service_Provider_no_longer_needed__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISPICKVAL(FS_Flavor_Change_Header__r.FS_SP_go_out__c, &#39;No&#39;)  , True, False)</formula>
+    <label>Service Provider no longer needed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>user_should_fill_resched_date_or_pending</fullName>
+    <active>true</active>
+    <description>The user can either enter the date or the pending rescheduled checkbox and the system should ensure that at least one of these fields are entered.</description>
+    <errorConditionFormula>AND(NOT( FS_Pending_for_Reschedule__c ), ISNULL( FS_Reschedule_Install_Date__c ) )</errorConditionFormula>
+    <errorMessage>Reschedule Date or Pending Reschedule needs to be selected to save this record</errorMessage>
+</ValidationRule>

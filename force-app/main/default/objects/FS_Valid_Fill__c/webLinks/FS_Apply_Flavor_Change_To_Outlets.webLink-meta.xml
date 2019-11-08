@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Apply_Flavor_Change_To_Outlets</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Apply Valid To Outlets</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+
+var res = sforce.apex.execute(&quot;FSCopyHqToOutletServices&quot;,&quot;copyValidFill&quot;,
+{hqId:&#39;{!Account.Id}&#39;});
+alert(res);</url>
+</WebLink>

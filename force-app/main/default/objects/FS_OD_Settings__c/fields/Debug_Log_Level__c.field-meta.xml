@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debug_Log_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Debug Log Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DataV_Only</fullName>
+                <default>false</default>
+                <label>DataV_Only</label>
+            </value>
+            <value>
+                <fullName>Non_DataV_Only</fullName>
+                <default>false</default>
+                <label>Non_DataV_Only</label>
+            </value>
+            <value>
+                <fullName>All_Log</fullName>
+                <default>false</default>
+                <label>All_Log</label>
+            </value>
+            <value>
+                <fullName>No_Log (default value)</fullName>
+                <default>false</default>
+                <label>No_Log (default value)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

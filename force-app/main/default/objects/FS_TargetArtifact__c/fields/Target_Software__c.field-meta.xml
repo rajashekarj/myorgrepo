@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Software__c</fullName>
+    <description>..</description>
+    <externalId>false</externalId>
+    <formula>if( ISPICKVAL( Target_Id__r.FS_Artifact_Type__c , &#39;Software&#39;) ,   Target_Id__r.Name  , &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Target Software</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

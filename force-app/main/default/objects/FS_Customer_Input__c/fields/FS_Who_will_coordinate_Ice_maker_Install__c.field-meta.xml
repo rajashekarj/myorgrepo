@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Who_will_coordinate_Ice_maker_Install__c</fullName>
+    <externalId>false</externalId>
+    <label>Who will coordinate Ice maker Install</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Project Team</fullName>
+                <default>false</default>
+                <label>Project Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

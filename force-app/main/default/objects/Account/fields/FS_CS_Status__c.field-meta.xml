@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_CS_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(FS_CS_Route_To_Market__c&lt;&gt;&quot;&quot;, OR( Text(FS_Bill_To_Address_same_as_Ship_to_Add__c)=&quot;Yes&quot; ,  AND(FS_CS_Bill_To_Address__c &lt;&gt;&quot;&quot;, FS_CS_Bill_To_City__c&lt;&gt;&quot;&quot; , FS_CS_Bill_To_Zip__c&lt;&gt;&quot;&quot; , FS_CS_State__c &lt;&gt;&quot;&quot;)),  Text(FS_CS_All_Ftn_Removed__c) &lt;&gt;&quot;&quot; ,TEXT(Cokesmart_Payment_Method__c)&lt;&gt;&quot;&quot;),&quot;Complete&quot;,&quot;Not Complete&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product Ordering Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

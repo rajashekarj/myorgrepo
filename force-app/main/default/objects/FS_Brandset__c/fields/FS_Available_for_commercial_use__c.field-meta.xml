@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Available_for_commercial_use__c</fullName>
+    <externalId>false</externalId>
+    <formula>FS_Effective_Start_Date__c &lt;= today() &amp;&amp;(ISNULL(FS_Effective_End_Date__c )|| FS_Effective_End_Date__c &gt;today())</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Available for commercial use</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

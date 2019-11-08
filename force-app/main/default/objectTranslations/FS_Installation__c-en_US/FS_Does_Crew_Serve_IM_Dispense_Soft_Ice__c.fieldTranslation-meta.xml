@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Does_Crew_Serve_IM_Dispense_Soft_Ice__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stop_edit_for_file_record_type</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISNEW()),
+ISPICKVAL(FS_FC_Type__c,&#39;File Upload Flavor Change&#39;), 
+AND(
+NOT($Profile.Name=&#39;System Administrator&#39;),
+NOT($Profile.Name=&#39;FET System Admin&#39;)),
+OR(
+ISCHANGED(FS_AC__c),
+ISCHANGED(FS_Description__c),
+ISCHANGED(FS_PM__c),
+ISCHANGED(FS_Entering_COM__c),
+ISCHANGED(FS_Approved__c),
+ISCHANGED(FS_Requested_Date__c),
+ISCHANGED(FS_SP_Readiness__c),
+ISCHANGED(FS_Add_Flavor_Change_Notes_Comments__c),
+ISCHANGED(FS_Pay_Type__c),
+ISCHANGED(FS_Product_Order_handled_By_txt__c),
+ISCHANGED(Is_customer_switching_back_to_DirectShip__c),
+ISCHANGED(FS_Customer_Readiness__c),
+ISCHANGED(FS_Project_Id__c),
+ISCHANGED(FS_Project_Name__c),
+ISCHANGED(FS_Estimated_FC_Date__c)
+),!FS_isBatch__c 
+)</errorConditionFormula>
+    <errorMessage>You do not have sufficient access to update a record created through the file upload option. Please request help of your FET help support member</errorMessage>
+</ValidationRule>

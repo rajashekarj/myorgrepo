@@ -1,0 +1,93 @@
+<apex:page standardController="FS_Installation__c" extensions="FS_SelectOutletDispenserRemoveRelocate" docType="html-5.0">
+    <style>
+        .headerAlignment{
+        font-size:100%;
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        }
+    </style>
+    <apex:includeScript value="{!URLFOR($Resource.jquerymin)}"  />
+    <apex:form >
+        
+        <apex:pageMessages ></apex:pageMessages>  
+        
+        
+        <apex:pageBlock id="mainpageblock">
+            <apex:outputLabel rendered="{!FS_Installation__c.RecordType.Name==$Label.IP_Replacement_Rec_Type}" styleClass="headerAlignment" value="Select the Replacement Status"/>
+            <apex:outputLabel rendered="{!FS_Installation__c.RecordType.Name==$Label.IP_Relocation_I4W_Rec_Type}" styleClass="headerAlignment" value="Select the Relocation Status"/>
+            <apex:outputLabel rendered="{!FS_Installation__c.RecordType.Name==$Label.IP_Removal_Rec_Type}" styleClass="headerAlignment" value="Select the Removal Status"/>
+            
+            <apex:pageBlockSection >
+                
+                <apex:pageBlockSectionItem >
+                    Disconnect Date: <!--<apex:inputField html-tabindex="-1" value="{!tempOD.Planned_Remove_Date__c }"/>-->
+                    <apex:Input value="{!DisconnectDate}" type="date"/> 
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <!--<apex:commandButton value="Select and Send Activity Date" action="{!DeleteProcess}" reRender="mainpageblock" status="showStatus"/>-->
+                    <apex:commandButton value="Select and Send Activity Date"  action="{!DeleteProcess}"  onclick="isChecked(event)">
+                        <apex:actionSupport event="onclick" rerender="mainpageblock" status="showStatus"/>
+                    </apex:commandButton>
+                    <apex:actionStatus id="showStatus" onstop="afterUpdate()">
+                        <apex:facet name="start">
+                            <img src="/img/loading.gif" title="Please Wait..." />
+                        </apex:facet>
+                    </apex:actionStatus>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            
+            <apex:pageBlockTable value="{!FS_Outlet_Dispensers}" var="c" id="table"> 
+                <apex:column >
+                    <!-- This is our selected Boolean property in our wrapper class -->
+                    <apex:inputCheckbox value="{!c.selected}" styleClass="chkSelected"/>
+                </apex:column>
+                
+                
+                <apex:column headerValue="Outlet Dispenser" >
+                    <apex:outputLink target="_blank" value="/{!c.con.Id}">{!c.con.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="Serial Number/Asset Tag" value="{!c.con.FS_Serial_Number2__c}" />
+                <apex:column headerValue="JDE Equipment Type" value="{!c.con.FS_Equip_Type__c}"/>
+                <apex:column headerValue="Dispenser Type" value="{!c.con.FS_Dispenser_Type2__c}" />
+                <apex:column headerValue="Dispenser Location">
+                    <apex:inputField value="{!c.con.FS_User_Defined_Location__c}" />
+                </apex:column>
+                
+                <apex:column headerValue="Valid Fill" value="{!c.con.FS_Valid_Fill__c}" />
+                <apex:column headerValue="Planned Disconnect Date" value="{!c.con.Planned_Remove_Date__c }" />                
+                <apex:column headerValue="{!IF(FS_Installation__c.RecordType.Name==$Label.IP_Relocation_I4W_Rec_Type,"Relocation Request Submitted",IF(FS_Installation__c.RecordType.Name==$Label.IP_Removal_Rec_Type,"Removal Request Submitted",IF(FS_Installation__c.RecordType.Name==$Label.IP_Replacement_Rec_Type,"Replacement Request Submitted","")))}" value="{!c.con.FS_Removal_Request_Submitted__c}"/>
+                
+                
+                <apex:column />
+                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        
+        
+    </apex:form>
+    <script type="text/javascript">
+    j$ = jQuery.noConflict();
+    
+    function isChecked(e) {
+        if(j$(".chkSelected:checked").length == 0){
+            e.preventDefault();
+            alert('Select at least one '+'{!FS_Installation__c.RecordType.Name}');
+        }
+    }
+    </script>
+    
+    <script>
+    function setFocus() { return false; }
+    
+    function afterUpdate(){ 
+        alert("Un- enrollment request sent successfully");
+        window.top.location="/{!FS_Installation__c.id}";
+        
+        
+    }
+    </script>
+</apex:page>

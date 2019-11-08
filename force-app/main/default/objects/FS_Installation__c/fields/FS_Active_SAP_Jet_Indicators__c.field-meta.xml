@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Active_SAP_Jet_Indicators__c</fullName>
+    <description>Active SAP Jet Indicators</description>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(SUBSTITUTE(IF( INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JT&quot;), &quot;JT;&quot; , NULL)+
+IF( INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JT Crew&quot;), &quot;JT Crew;&quot; , NULL)+
+IF( INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;MV&quot;), &quot;MV;&quot; , NULL)+
+IF( INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JJ&quot;), &quot;JJ;&quot; , NULL)+
+IF( INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JM&quot;), &quot;JM;&quot; , NULL)+
+IF( INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;MT&quot;), &quot;MT;&quot; , NULL)+
+IF( INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JET6&quot;), &quot;JET6;&quot; , NULL)+&quot;.&quot;,&quot;;.&quot;, null),&quot;.&quot;,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Active SAP Jet Indicators</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

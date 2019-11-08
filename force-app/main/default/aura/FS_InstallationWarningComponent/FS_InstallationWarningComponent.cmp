@@ -1,0 +1,30 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,lightning:actionOverride" 
+                	controller="FS_InstallationWarningAuraController" access="global">
+    
+
+    <aura:attribute name="recordId" type="Id" access="GLOBAL"/>    
+    <aura:attribute name="objCnt" type="FS_InstallationWarningAuraController" access="GLOBAL"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="titleValue" type="String" access="GLOBAL"/>
+    
+    <aura:if isTrue="{!and(v.objCnt.displayError,v.objCnt.Installation.RecordType.Name==$Label.c.IP_New_Install_Rec_Type)}">        
+        <div style="display: block;padding:10px" >Error: {!$Label.c.IP_Inline_Brandset_Error}</div>        
+    </aura:if>
+
+    <aura:if isTrue="{!and(v.objCnt.displayError,v.objCnt.Installation.RecordType.Name!=$Label.c.IP_New_Install_Rec_Type)}">                
+        <div style="display: block;padding:10px">Error: {!$Label.c.IP_PIA_Brandset_Error}</div>
+    </aura:if>
+    
+   
+<aura:if isTrue="{!and(v.objCnt.dispSecError,v.objCnt.Installation.RecordType.Name!=$Label.c.IP_New_Install_Rec_Type)}">                
+        <div style="display: block;padding:10px">Error: {!$Label.c.IP_Disp_Sec_Alest1_Error}</div>
+    </aura:if>  
+
+   	<aura:if isTrue="{!v.objCnt.displayErrorSync}">        
+        <div Style="display: block;padding:10px">Error: {!$Label.c.IP_EP_Inline_Platform_Error}</div>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.objCnt.IP_I4W_ReconnectDate}">        
+        <div class="pbError" style="display: block;padding:10px">Error: {!$Label.c.IP_I4W_Reconnect_b4_Disconnect}</div>
+    </aura:if>
+</aura:component>

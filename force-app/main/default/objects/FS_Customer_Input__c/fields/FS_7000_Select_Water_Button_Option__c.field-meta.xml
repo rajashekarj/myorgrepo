@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Select_Water_Button_Option__c</fullName>
+    <externalId>false</externalId>
+    <label>Select Water Button Option (7000 Series)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hide</fullName>
+                <default>false</default>
+                <label>Hide</label>
+            </value>
+            <value>
+                <fullName>Show</fullName>
+                <default>true</default>
+                <label>Show</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

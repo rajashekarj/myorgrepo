@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X8000_9000_INSTALLATIONS</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>FS_Outlet_Information__c</columns>
+    <columns>Overall_Status2__c</columns>
+    <columns>NAME</columns>
+    <columns>FS_Scheduled_Install_Date__c</columns>
+    <columns>FS_Outlet_CS_Status__c</columns>
+    <columns>FS_OB_Info_Status__c</columns>
+    <columns>FS_BrandStatus__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_of_Dispenser_Platform__c</field>
+        <operation>includes</operation>
+        <value>8000,9000</value>
+    </filters>
+    <label>8000 &amp; 9000 Installations</label>
+</ListView>

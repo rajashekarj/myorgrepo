@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlatformType_and_EP_status_check</fullName>
+    <active>true</active>
+    <errorConditionFormula>if(AND(OR(ISPICKVAL(FS_Execution_Plan_Status__c, &#39;Cancelled&#39;),ISPICKVAL(FS_Execution_Plan_Status__c,&#39;Complete&#39;)),ISCHANGED( FS_Platform_Type__c )),true,false)</errorConditionFormula>
+    <errorMessage>You are not allowed to edit the platform type field if the execution plan status has moved to a &quot;Cancelled&quot; or &quot;Complete&quot; state</errorMessage>
+</ValidationRule>

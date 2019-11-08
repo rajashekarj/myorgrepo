@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACT_user_not_allowed_to_Close_SE_Case</fullName>
+    <active>true</active>
+    <description>FACT user not allowed to update status as Complete on SE Case</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName=&#39;North_American_Case&#39;,ISPICKVAL(Status,&quot;Complete&quot;), Owner:Queue.QueueName  = &#39;Freestyle Support&#39;, $Profile.Name = &quot;FS_FACT_BAST_P&quot;)</errorConditionFormula>
+    <errorMessage>FACT user not allowed to Close SE Case.</errorMessage>
+</ValidationRule>

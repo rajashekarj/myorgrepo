@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Type_of_Legal_Document__c</name>
+    <picklistValues>
+        <masterLabel>Exception Document</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Signed Contract</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X7000_Series_Installations</fullName>
+    <columns>Overall_Status2__c</columns>
+    <columns>NAME</columns>
+    <columns>FS_Execution_Plan__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>Outlet_ACN__c</columns>
+    <columns>FS_Outlet_Address__c</columns>
+    <columns>FS_Dispenser_QTY__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type_of_Dispenser_Platform__c</field>
+        <operation>includes</operation>
+        <value>7000</value>
+    </filters>
+    <label>7000 Installations</label>
+</ListView>

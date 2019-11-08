@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Removal</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Removal</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0k/e?CF00N6100000BpOPa={!Account.Name}&amp;CF00N6100000BpOPa_lkid={!Account.Id}&amp; 
+CF00N6100000BpOyB={!Account.Name}&amp;CF00N6100000BpOyB_lkid={!Account.Id}&amp;CF00N6100000BpO5M={!$Setup.Dummy_Execution_Plan_del__c.ExecutionPlan_Name__c}&amp;retURL=%2F{!Account.Id}&amp;RecordType=01261000000SEPC</url>
+</WebLink>

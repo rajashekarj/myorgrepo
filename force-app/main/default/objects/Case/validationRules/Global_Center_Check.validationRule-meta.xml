@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Center_Check</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR
+( 
+  AND
+  (
+   ISPICKVAL(Case_Sub_Category__c, &quot;Mechanical&quot;), 
+   NOT(OR ($User.SE_Level1user__c=true   ,$User.SE_Level2user__c =true))
+  ), 
+  AND
+  ( 
+   OR
+   ( 
+     ISPICKVAL(Case_Category__c,&quot;NPI&quot;),            
+     ISPICKVAL(Case_Category__c, &quot;Connectivity&quot;), 
+     ISPICKVAL(Case_Category__c, &quot;Quality&quot;), 
+     ISPICKVAL( Case_Category__c, &quot;Operations SW/Electrical&quot;)    
+    ),
+    NOT
+    ( 
+     OR
+     ($User.SE_Level1user__c=true ,
+      $User.SE_Level2user__c =true)
+     )
+  ),
+  AND
+ (
+   ISPICKVAL
+   (Case_Sub_Category__c, &quot;SW &amp; Electronics Field Support&quot;) ,
+  NOT
+  ( 
+   OR
+   ($User.SE_Level1user__c=true , 
+    $User.SE_Level2user__c =true ,
+    $User.SE_Level3user__c =true)
+   )
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Case_Category__c</errorDisplayField>
+    <errorMessage>User not allowed to select  Category or Sub Category</errorMessage>
+</ValidationRule>

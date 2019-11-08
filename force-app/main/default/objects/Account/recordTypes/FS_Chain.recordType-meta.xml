@@ -1,0 +1,2557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Chain</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>FS_Chain</compactLayoutAssignment>
+    <label>FS Chain</label>
+    <picklistValues>
+        <picklist>AP_contact_available__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Bottler_Name__c</picklist>
+        <values>
+            <fullName>Coca-Cola Amatil Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coca-Cola Enterprises</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coca-Cola Erfrischungsgetraenke AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coca-Cola Refreshments Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coca-Cola Singapore Beverages</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cokesmart_Payment_Method__c</picklist>
+        <values>
+            <fullName>Bank Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice %28Payment Terms%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Series_Agitated_Brands_Selection__c</picklist>
+        <values>
+            <fullName>Barqs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dr Pepper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pibb</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Series_Statics_Brands_Selection__c</picklist>
+        <values>
+            <fullName>POWERade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raspberry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Active_SAP_Jet_Indicators__c</picklist>
+        <values>
+            <fullName>JJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JT Crew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MV</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Bill_To_Address_same_as_Ship_to_Add__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CCFS_2K_Conversion_Incentive__c</picklist>
+        <values>
+            <fullName>Not Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- 5 store Test Commitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- Commercialization commitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- Region Customer Opportunity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CE_Enabled__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CS_All_Ftn_Removed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CS_Assigned_To_ID__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CS_Sub_Trade_Channel_Name__c</picklist>
+        <values>
+            <fullName>Agricultural%2FRanching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Airport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Amusement%2FTheme Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel%2FAccesories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bakery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank%2FFinancial Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bar%2FTavern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beauty %26 Personal Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beverage Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Books%2FOffice%2FNews%2FTobacco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottler House Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boutique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Box Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brewery Wholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bus Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bus Terminal%2FStation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Butcher Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cafeteria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campground%2FRv Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cart%2FMobile Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalog Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caterer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain Discount Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cinema%2FMovie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coffee%2FTea Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conventional Independent Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cruise Ship Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer-Owned Distribution Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyber %28Internet%29 Cafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cycle Sales %26 Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delicatessen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delivery Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disco %28Alcoholic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disco %28Non-Alcoholic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry Cleaner%2FLaundromat%2FShoe Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic Game Center%2FArcade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics%2FA%26V%2FComputer%2FPhotography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-All Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-BBQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Family Steak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Family Style</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Mexican</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Other Ethnic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Pizza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Seafood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Steak%3AFine %26 Casual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR-Varied Menu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Operator%2FInfeeder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Service Operator%2FVendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frozen Sweets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaming Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hardware%2FHome-Improvement%2FLawn %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health Food Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Furnishing%2FAppliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel%2FMotel%2FResort%2FInn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>House Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice Skating%2FRoller Skating%2FBowling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indoor Exposition%2FTrade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial%2FManufacturing%2FMining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jr%2E%2FCommunity College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kiosk%2FFood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kiosk%2FNewsstand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquor%2FBeer%2FWine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Sales %26 Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maritime Ferry Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maritime Freight Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mass Merchandiser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Middle School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military - Commissary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military - Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military - U%2ES%2E - Commissary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military - U%2ES%2E - Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Military - U%2ES%2E - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mom %26 Pop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nightclub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nursing Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other All Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Amusement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Automotive Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Bar%2FTavern%2FLicensed Establishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Business And Professional Offices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Business%2FTrade School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Cash %26 Carry Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Club Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other College%2FUniversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Contract Vending %26 Food Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Discount Grocery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Eating %26 Drinking - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other General Merchandiser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Government %28Non-Military%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Health%2FHospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Hyper-Merchandiser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Industrial%2FAgricultural%2FUtility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Liquor%2FBeer%2FWine%2FSoft Drink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Local %26 Traditional Grocery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Petroleum-Foodmart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Primary%2FSecondary School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Retail Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Specialty Food Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Street Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Superette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outdoor Exposition%2FFair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parade%2FFestival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parking Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police%2FPrison%2FFire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Postal Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produce Stand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Rest Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Transit System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Bagel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Bakery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Chicken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Croissant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Donut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Hamburger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Local Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Mexican</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Other Fast Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Pizza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Sandwich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR-Seafood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Railroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreational Park%2FBeach%2FPicnic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religious%2FCharitable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Complex%2FCommunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retirement Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rolling Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary%2FHigh School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ship Terminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snack Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Club%2FFraternal Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport Venue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports%2FCountry Club</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terrace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Third Party Delivery Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Train Terminal%2FStation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traveling Show %28Circus%2FRodeo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trucking Freight Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Value Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Youth Club%2FYouth Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zoo%2FMuseum%2FAquarium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CS_Sub_Trade_Channel__c</picklist>
+        <values>
+            <fullName>009 - Chain Discount Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010 - Conventional Independent Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>013 - QSR-Hamburger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>014 - QSR-Pizza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>015 - QSR-Chicken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>016 - QSR-Mexican</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>017 - QSR-Sandwich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>018 - Hotel%2FMotel%2FResort%2FInn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>019 - Military - U%2ES%2E - Commissary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>021 - Military - U%2ES%2E - Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>022 - Military - U%2ES%2E - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>023 - Primary School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>024 - Middle School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>026 - Secondary%2FHigh School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>027 - Cinema%2FMovie</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>028 - Chain Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>033 - Independent Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>101 - Other Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>102 - Chain Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>103 - Independent Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>104 - Other Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>105 - Butcher Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>106 - Bakery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>107 - Delicatessen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>108 - Health Food Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>109 - Produce Stand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>110 - Other Specialty Food Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>111 - Box Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>112 - Other Discount Grocery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>113 - Mom %26 Pop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>115 - Rolling Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>116 - Home Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>117 - Other Local %26 Traditional Grocery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>118 - Liquor%2FBeer%2FWine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>119 - Beverage Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>120 - Other Liquor%2FBeer%2FWine%2FSoft Drink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>121 - Department Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>122 - Home Furnishing%2FAppliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>123 - Apparel%2FAccesories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>124 - Electronics%2FA%26V%2FComputer%2FPhotography</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>125 - Books%2FOffice%2FNews%2FTobacco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>126 - Hardware%2FHome-Improvement%2FLawn %26 Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>127 - Mass Merchandiser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>128 - Catalog Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>129 - Other General Merchandiser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>130 - Chain Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>131 - Other Drug Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>133 - Beauty %26 Personal Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>134 - Dry Cleaner%2FLaundromat%2FShoe Repair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>135 - Bank%2FFinancial Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>136 - Business Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>137 - Parking Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>138 - Travel Agency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>139 - Video Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>140 - Cycle Sales %26 Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>141 - Marine Sales %26 Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>142 - Kiosk%2FNewsstand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>143 - Boutique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 - Other Retail Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>145 - QSR-Donut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>146 - QSR-Croissant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>148 - QSR-Other Fast Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>149 - FSR-All Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>150 - Kiosk%2FFood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>153 - Cart%2FMobile Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>154 - Other Street Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>155 - Nightclub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>156 - Bar%2FTavern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>157 - Pub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>158 - Terrace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>159 - Other Bar%2FTavern%2FLicensed Establishment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>160 - Cafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>161 - Diner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>162 - Snack Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>163 - Coffee%2FTea Shop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>164 - Frozen Sweets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>165 - Cafeteria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>166 - Amusement%2FTheme Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>167 - Recreational Park%2FBeach%2FPicnic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>168 - Zoo%2FMuseum%2FAquarium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>169 - Ice Skating%2FRoller Skating%2FBowling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>170 - Electronic Game Center%2FArcade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>171 - Disco %28Non-Alcoholic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>172 - Disco %28Alcoholic%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>173 - Gaming Facility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>174 - Theater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>175 - Residential Complex%2FCommunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>176 - Religious%2FCharitable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>177 - Social Club%2FFraternal Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>178 - Youth Club%2FYouth Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>179 - Sports%2FCountry Club</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>180 - Outdoor Exposition%2FFair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>181 - Indoor Exposition%2FTrade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>182 - Traveling Show %28Circus%2FRodeo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>183 - Parade%2FFestival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>184 - Other Amusement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>185 - Airport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>186 - Airline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>190 - Railroad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>191 - Train Terminal%2FStation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>192 - Bus Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>193 - Bus Terminal%2FStation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>194 - Trucking Freight Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>195 - Public Transit System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>196 - Public Rest Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>197 - Cruise Ship Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>198 - Ship Terminal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>199 - Maritime Freight Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200 - Maritime Ferry Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>201 - Other Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>202 - Campground%2FRv Park</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>203 - Other Lodging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>205 - Other Primary%2FSecondary School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>206 - Business School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>208 - Trade School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>209 - Other Business%2FTrade School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>210 - Jr%2E%2FCommunity College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>211 - College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>212 - University</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>213 - Other College%2FUniversity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>214 - Military - Commissary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>215 - Military - Exchange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>217 - Military - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>218 - Industrial%2FManufacturing%2FMining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>219 - Agricultural%2FRanching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>220 - Public Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>221 - Other Industrial%2FAgricultural%2FUtility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>222 - National Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>223 - Local Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>224 - Postal Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>225 - Police%2FPrison%2FFire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>226 - Other Government %28Non-Military%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>227 - Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>228 - Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>229 - Nursing Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>230 - Retirement Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>231 - Other Health%2FHospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>232 - Wholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>233 - Customer-Owned Distribution Organization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>234 - Brewery Wholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>235 - Bottler House Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>237 - Export</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>238 - Other Wholesale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>239 - Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>240 - Caterer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>242 - Food Service Operator%2FInfeeder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>243 - Food Service Operator%2FVendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>244 - Other Contract Vending %26 Food Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>245 - Delivery Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>246 - Third Party Delivery Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>248 - Bottler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>249 - House Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>250 - QSR-Local Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>251 - Other Hyper-Merchandiser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>252 - Other Superette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>253 - Other Petroleum-Foodmart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>254 - Other Cash %26 Carry Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>255 - Other Club Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>256 - Other Automotive Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>257 - Other Business And Professional Offices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>258 - Other All Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>259 - Other Eating %26 Drinking - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>260 - Sport Venue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>261 - FSR-Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>264 - FSR-BBQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>265 - FSR-Family Steak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>266 - FSR-Family Style</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>267 - FSR-Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>268 - FSR-Mexican</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>269 - FSR-Other Ethnic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>270 - FSR-Pizza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>271 - FSR-Seafood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>272 - FSR-Steak%3AFine %26 Casual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>273 - FSR-Varied Menu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>274 - QSR-Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>275 - QSR-Bagel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>276 - QSR-Bakery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>277 - QSR-Seafood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>278 - Other Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>279 - Other Leisure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>280 - Cyber %28Internet%29 Cafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>281 - Value Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>283 - Fine%2FCasual Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>284 - Mid-scale Family Style Restaurant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cokesmart_Registration_Email_Sent__c</picklist>
+        <values>
+            <fullName>Notification %231 and 2 and 3 sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notification %231 and 2 sent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notification %231 sent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Confirm_Tax_Exemption_Obtain__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Corporate_VS_Franchise__c</picklist>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Franchise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dist_Cartridge_Delivery_Authorized__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Distributor_Cartridge_Status__c</picklist>
+        <values>
+            <fullName>A - Distributor understands cartridge pick%2Fpack economics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B - Distributor implementing cartridge pick%2Fpack operation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Distributor_Sweetener_Status__c</picklist>
+        <values>
+            <fullName>6 - Distributor Outlet Level Reporting Verified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dr_Pepper_pct__c</picklist>
+        <values>
+            <fullName>%3C 10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3E 20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%25 - 20%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA - Pibb Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_FAV_MIX__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_FSM_Review__c</picklist>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reviewed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Jet2_Indicator__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Jet_Indicator__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_LTO__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Language__c</picklist>
+        <values>
+            <fullName>Afrikaans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arabic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulgarian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catalan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese trad%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Croatian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer reserve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Czech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Danish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dutch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estonian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finnish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greek</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hebrew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hungarian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Icelandic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latvian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lithuanian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norwegian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romanian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbian %28Latin%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovenian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swedish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ukrainian</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Outlet_Sweetener_Status__c</picklist>
+        <values>
+            <fullName>1 - Distributor not contacted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%2E- Distributor informed of installation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Payment_Method__c</picklist>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoice %28Payment Terms%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Payment_Type__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Promo_Enabled__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Recommended_Plant__c</picklist>
+        <values>
+            <fullName>Atlanta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lehigh</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Removing_All_FTN__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requested_Delivery_Method__c</picklist>
+        <values>
+            <fullName>Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requested_Order_Method__c</picklist>
+        <values>
+            <fullName>CokeSmart</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Selling_Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follow Up</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PreSell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presented</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Shipping_Country_Int__c</picklist>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Spicy_Cherry_Agreement_for_this_HQ__c</picklist>
+        <values>
+            <fullName>Dr Pepper%2FDiet Dr Pepper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pibb%2FPibb Zero</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Standard_User_Function__c</picklist>
+        <values>
+            <fullName>Store Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_TOPS_Model_Provided_to_FSM__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Trade_Channel__c</picklist>
+        <values>
+            <fullName>Trade Channel1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Channel2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Type_of_Legal_Document__c</picklist>
+        <values>
+            <fullName>Exception Document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Signed Contract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_VMS_Admin_Function__c</picklist>
+        <values>
+            <fullName>District Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_VMS_All_Ftn_Removed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_VMS_Customer__c</picklist>
+        <values>
+            <fullName>Cokesmart</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_VMS_Payment_Method_del__c</picklist>
+        <values>
+            <fullName>Bank Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_VMS_Standard_Function__c</picklist>
+        <values>
+            <fullName>District Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Valid_Fill__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Vendor_Type__c</picklist>
+        <values>
+            <fullName>*Davaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice Maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumber</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_MFG__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Who_will_install_Water_Filter__c</picklist>
+        <values>
+            <fullName>Approved Filters Already on Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KO Service Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Filter Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_X7000_Series_Brands_Option_Selections__c</picklist>
+        <values>
+            <fullName>0 Static%2F2 Agitated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Static%2F1 Agitated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Customer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Invoice_Delivery_Method__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

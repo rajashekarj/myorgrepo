@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_KO_DOE_Disposition_of_Removed_Equipme__c</fullName>
+    <externalId>false</externalId>
+    <label>KO or DOE/Disposition of Removed Equip</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DOE - Remain on site</fullName>
+                <default>false</default>
+                <label>DOE - Remain on site</label>
+            </value>
+            <value>
+                <fullName>KO - Remove and return to KO warehouse</fullName>
+                <default>false</default>
+                <label>KO - Remove and return to KO warehouse</label>
+            </value>
+            <value>
+                <fullName>DOE - Remove and return to KO warehouse</fullName>
+                <default>false</default>
+                <label>DOE - Remove and return to KO warehouse</label>
+            </value>
+            <value>
+                <fullName>Bottler - Remove</fullName>
+                <default>false</default>
+                <label>Bottler - Remove</label>
+            </value>
+            <value>
+                <fullName>Return to Bottler warehouse</fullName>
+                <default>false</default>
+                <label>Return to Bottler warehouse</label>
+            </value>
+            <value>
+                <fullName>None - New Outlet</fullName>
+                <default>false</default>
+                <label>None - New Outlet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

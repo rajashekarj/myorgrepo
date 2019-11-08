@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Replacement</fullName>
+    <availability>online</availability>
+    <description>new replacement button with VF changes</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>New Replacement</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>window.open(&#39;/apex/FS_SelectInstallationType?id={!Account.Id}&#39;,&#39;_top&#39;);</url>
+</WebLink>

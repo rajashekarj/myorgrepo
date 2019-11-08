@@ -1,0 +1,136 @@
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!--   Page : FSInitiate Execution Plan                                                                                     -->
+<!--   Created By   : Pallavi Sharma (Appiro)                                                                             -->
+<!--   Created Date : 09 - Sep - 2013                                                                                     -->
+<!-------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardController="Account" extensions="FSInitiateExecutionPlanExtension"> 
+  <apex:form id="frmInitiateEP">
+  <apex:actionFunction name="addSelection" action="{!addCurrentSelection}" reRender="frmInitiateEP" status="statusSearchOutlet" />
+  <apex:SectionHeader title="Select Approve Outlets for {!Account.Name}" /> 
+    <!-- Search Block -->
+      <apex:pageblock id="pbSearch">
+       <table cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+           <td class="dataCell"> Outlet ACN </td>
+           <td class="dataCell"> Outlet Name </td>
+           <td class="dataCell"> Outlet City</td>
+           <td class="dataCell"> Outlet State</td> 
+           <td class="dataCell"> </td>
+           <td class="dataCell"> </td>
+         </tr>
+         <tr>
+           <td class="dataCell">
+             <apex:inputText id="txtSearchOutletACN" value="{!searchOutletACN}" />
+           </td>
+           <td class="dataCell">
+             <apex:inputText id="txtSearchOutletName" value="{!searchOutletName}" />
+           </td>
+           <td class="dataCell"> 
+             <apex:inputText id="txtSearchOutletCity" value="{!searchOutletCity}" />
+           </td>
+           <td class="dataCell">
+             <apex:inputText id="txtSearchOutletState" value="{!searchOutletState}" />
+           </td> 
+           <td class="dataCell">
+             <apex:commandButton value="Search" reRender="pbOutlets"  action="{!searchOutlet}"  status="statusSearchOutlet" />
+           </td>
+           
+           <td class="dataCell">
+             <apex:actionStatus id="statusSearchOutlet">
+                 <apex:facet name="start">
+                 <div style="width:100px;">
+                   <div>
+                     <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." /> 
+                     <span class="waitingDescription">Loading...</span>
+                   </div>
+                  </div>
+                  </apex:facet>
+                 <apex:facet name="stop">
+                 <div style="width:100px;">
+                   <div>
+                   </div>
+                  </div> 
+                  </apex:facet>
+               </apex:actionStatus> 
+           </td> 
+         </tr>
+       </table>
+   </apex:pageblock>
+   <!-- End Search Block -->
+    
+   <apex:pageblock id="pbOutlets">
+   <apex:pageMessages />           
+     <apex:pageBlockButtons location="top">
+       <apex:commandButton value="Add Current Selection" reRender="none" onclick="return validateSelection();" />
+       <apex:commandButton value="Finish Selection and Initiate Execution Plan" action="{!finish}" />
+       <apex:commandButton value="Cancel" onClick="window.location.href= '/{!Account.Id}'" reRender="none" />
+    </apex:pageBlockButtons>
+    
+    <apex:pageBlockTable value="{!outletList}" var="wrapper">
+      <apex:column >
+         <apex:facet name="header">
+           <input type="checkbox" onClick="toggleCheck(this);"/>    
+         </apex:facet>
+           <apex:inputCheckbox styleclass="outClass" value="{!wrapper.isChecked}" />
+      </apex:column> 
+      
+      <apex:column headerValue="ACN" value="{!wrapper.outlet.FS_ACN__c}"/>
+      <apex:column headerValue="Outlet Name" value="{!wrapper.outlet.Name}"/>
+      <apex:column headerValue="Outlet Address" value="{!wrapper.outlet.ShippingStreet}"/>
+      <apex:column headerValue="Outlet City" value="{!wrapper.outlet.ShippingCity}"/>
+      <apex:column headerValue="Outlet State" value="{!wrapper.outlet.ShippingState}"/>
+      
+    </apex:pageBlockTable>
+    
+	   
+	   <apex:outputPanel rendered="{!outletList.size > 0}">
+         <hr/>
+         <table width="100%" >
+          <tr>
+           <td align="left" width="33%">
+                <div id="pagelinkblock" >
+                   <div id="curstate"> {!(pageNumber * pageSize)+1-pageSize}-{!IF((pageNumber * pageSize)>noOfRecords, noOfRecords,(pageNumber * pageSize))} of {!noOfRecords} </div>
+                </div>
+           </td>
+           <td align="center" width="33%" style="vertical-align:middle;white-space:nowrap;">
+             <apex:commandButton status="fetchStatus" reRender="pbOutlets" value="|<" action="{!first}" disabled="{!!hasPrevious}" title="First Page"/>
+             <apex:commandButton status="fetchStatus" reRender="pbOutlets" value="<" action="{!previous}" disabled="{!!hasPrevious}" title="Previous Page"/>
+             <apex:commandButton status="fetchStatus" reRender="pbOutlets" value=">" action="{!next}" disabled="{!!hasNext}" title="Next Page"/>
+             <apex:commandButton status="fetchStatus" reRender="pbOutlets" value=">|" action="{!last}" disabled="{!!hasNext}" title="Last Page"/>
+           </td>   
+           <td align="right" width="33%" style="vertical-align:middle;">
+                <div id="pagenumber"> Page &nbsp;{!pageNumber} Of {!totalPages}</div>
+           </td>
+         </tr>
+        </table> 
+    </apex:outputPanel>
+ </apex:pageblock>
+        
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>        
+  <script>
+   function toggleCheck(source){
+     jQuery('.outClass').each(function() {
+       if($(source).attr('checked') == 'checked') {
+         $(this).attr('checked', true);
+       } else {
+         $(this).attr('checked', false);
+       }
+     });
+  }
+  
+  function validateSelection(){
+    //alert('{!numberOfAllSelection}');
+    //if(numberOfselection < 1){
+    //  alert('Please select any Outlet');
+    //  return false;
+    //}
+    if($('input[type=checkbox]:checked.outClass').length == 0){
+      alert('Please select any Outlet');
+      return false;
+    }
+    addSelection();
+  }
+  
+  </script>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsChainIdMandatory</fullName>
+    <active>false</active>
+    <description>&#39;Chain ID&#39; field should be mandatory when the &#39;Status&#39; of the &#39;Outlet Dispenser&#39; is &#39;Assigned to outlet&#39;...</description>
+    <errorConditionFormula>AND(  RecordType.Name = &#39;BoE Dispenser&#39;, ISPICKVAL(FS_Status__c , &#39;Assigned to outlet&#39;) ,  ISBLANK(Chain_ID__c) )</errorConditionFormula>
+    <errorDisplayField>FS_Status__c</errorDisplayField>
+    <errorMessage>&#39;Chain ID&#39; is mandatory when the &#39;Status&#39; is &#39;Assigned to outlet&#39;.</errorMessage>
+</ValidationRule>

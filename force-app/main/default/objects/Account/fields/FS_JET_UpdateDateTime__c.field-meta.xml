@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_JET_UpdateDateTime__c</fullName>
+    <description>This field is using to update the accounts when there is a change on Platform Type/s value on Installation. it will be used in back end purpose so it should not be deleted.</description>
+    <externalId>false</externalId>
+    <label>JET Indicator Account Update Date/Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

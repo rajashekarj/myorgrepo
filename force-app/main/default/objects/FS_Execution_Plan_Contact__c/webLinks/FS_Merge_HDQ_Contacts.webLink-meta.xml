@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Merge_HDQ_Contacts</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Merge HDQ Contacts</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0e/e?CF00N6100000BpOET={!URLENCODE(Account.Name)}&amp;CF00N6100000BpOET_lkid={!Account.Id}&amp;CF00N6100000I7UcU={!URLENCODE(Account.FS_Headquarters__c)}&amp;CF00N6100000I7UcU_lkid={!Account.FS_HeadquartersId__c}&amp;retURL={!Account.Id}</url>
+</WebLink>

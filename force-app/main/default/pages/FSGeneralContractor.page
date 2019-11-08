@@ -1,0 +1,142 @@
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!--   Page : Enter/Edit/View GeneralContractor Info                                                                              -->
+<!--   Created By   : Mohit Parnami (Appiro)                                                                             -->
+<!--   Created Date : 1 - Oct - 2013                                                                                     -->
+<!-------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardController="FS_Execution_Plan__c" extensions="FSGeneralContractorCtrl" >
+    <style>
+        .disabled {
+        user-select : none;
+        -moz-user-select : none;
+        -webkit-user-select : none;
+        color: gray;
+        cursor: pointer;
+        }
+        
+    </style>
+    <apex:form id="form">  
+        
+        <apex:actionstatus id="status">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder" style="top: 74.2px; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." /> 
+                        <span class="waitingDescription">Saving...</span>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionstatus>
+        
+        <apex:actionFunction name="fillDown" action="{!fillDown}" rerender="GeneralContractor" status="myStatus">
+            <apex:param name="myParam" value="" assignTo="{!selectedFillDown}"/>
+        </apex:actionFunction>
+        
+        <apex:pageBlock id="GeneralContractor">    
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons > 
+                <apex:commandButton id="saveButton" value="Save" action="{!saveOutletInfo}" status="status" rendered="{!lstInstallations.size > 0}" reRender="form" />
+                <apex:commandButton id="cancelButton" value="Cancel" reRender="none" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockTable value="{!lstInstallations}" var="outlet">
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">                         
+                        Installation Name
+                    </apex:facet>
+                    <apex:outputLink value="/{!outlet.id}" target="_blank">
+                        <apex:outputField value="{!outlet.name}"/>
+                    </apex:outputLink>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down All" onclick="fillDown('All'); return false;" />
+                        <br/><br/>              
+                        Outlet <br/>Information </apex:facet>
+                    <apex:outputField value="{!outlet.FS_Outlet__r.FS_Outlet_Information__c}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('Coordination'); return false;" />
+                        <br/><br/>                 
+                        Coordination To   <br/>Be Done By </apex:facet>
+                    <apex:InputField value="{!outlet.FS_GC_Coordination_to_be_done_by__c}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('RelatedVendor'); return false;" />
+                        <br/><br/>              
+                        Related <br/>Vendor </apex:facet>
+                    <apex:InputField value="{!outlet.FS_Related_Vendor__c}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor <br/>Type </apex:facet>
+                    <apex:actionRegion >
+                        <apex:outputField value="{!outlet.FS_Related_Vendor__r.FS_Vendor_Type__c}"/>                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor -<br/>CompanyName </apex:facet>
+                    <apex:actionRegion >
+                        <apex:outputField value="{!outlet.FS_Related_Vendor__r.Name}"/>                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor - <br/>Primary Contact </apex:facet>
+                    <apex:actionRegion >
+                        <apex:outputField value="{!outlet.FS_Related_Vendor__r.FS_Vendor_Primary_Contact__c}"/>                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor - Primary<br/> Contact Phone#</apex:facet>
+                    <apex:actionRegion >
+                        <apex:outputField value="{!outlet.FS_Related_Vendor__r.FS_Vendor_Primary_Phone__c}" styleClass="Values" />                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor - Primary Contact<br/>Contact Email Address</apex:facet>
+                    <apex:actionRegion >
+                        <apex:outputField value="{!outlet.FS_Related_Vendor__r.FS_Vendor_Primary_Email__c}" styleClass="Values" />                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor -<br/> Secondary Contact</apex:facet>
+                    <apex:actionRegion >
+                        <apex:outputField value="{!outlet.FS_Related_Vendor__r.FS_Vendor_Secondary_Contact__c}" styleClass="Values" />                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor - Secondary<br/> Contact Phone# </apex:facet>
+                    <apex:actionRegion >
+                        <apex:outputField value="{!outlet.FS_Related_Vendor__r.FS_Vendor_Secondary_Phone__c}" styleClass="Values" />                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">Vendor - Secondary<br/> Contact Email Address </apex:facet>
+                    <apex:actionRegion >
+                        <p>
+                            <apex:outputField value="{!outlet.FS_Related_Vendor__r.FS_Vendor_Secondary_Email__c}"  styleClass="Values"/>
+                            
+                        </p>                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+            
+            <apex:outputPanel rendered="{!lstInstallations.size == 0}">
+                <h2><b> No Record Found </b></h2>
+            </apex:outputPanel>
+            
+        </apex:pageBlock> 
+    </apex:form>    
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_GS1_KO04__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(AND(ISPICKVAL( FS_GS1_New_Spicy_Cherry__c ,&quot;Pibb/Pibb Zero&quot;) , ISPICKVAL( FS_GS1_New_Hide_Show_Water_Button__c , &quot;Hide&quot;) , ISPICKVAL( FS_GS1_New_Hide_Show_Dasani__c , &quot;Show&quot;)),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>KO04</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

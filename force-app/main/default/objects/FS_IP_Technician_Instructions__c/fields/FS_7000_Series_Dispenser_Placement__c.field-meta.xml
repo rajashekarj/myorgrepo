@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Series_Dispenser_Placement__c</fullName>
+    <externalId>false</externalId>
+    <label>Dispenser Placement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Crew Serve</fullName>
+                <default>false</default>
+                <label>Crew Serve</label>
+            </value>
+            <value>
+                <fullName>Self Serve</fullName>
+                <default>false</default>
+                <label>Self Serve</label>
+            </value>
+            <value>
+                <fullName>Self Serve &amp; Crew Serve</fullName>
+                <default>false</default>
+                <label>Self Serve &amp; Crew Serve</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

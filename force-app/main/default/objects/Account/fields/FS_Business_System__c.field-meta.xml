@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Business_System__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(FS_Revenue_Center__c,
+&quot;7-Eleven&quot;,&quot;National Retail&quot;,
+&quot;Convenience Retail&quot;,&quot;National Retail&quot;,
+&quot;Drug Value Channel&quot;,&quot;National Retail&quot;,
+&quot;Kroger&quot;,&quot;National Retail&quot;,
+&quot;Large Store Central&quot;,&quot;National Retail&quot;,
+&quot;Large Store East&quot;,&quot;National Retail&quot;,
+&quot;Large Store Northern Market&quot;,&quot;National Retail&quot;,
+&quot;Large Store West&quot;,&quot;National Retail&quot;,
+&quot;Walmart/Sams&quot;,&quot;National Retail&quot;,
+&quot;Circle K&quot;,&quot;National Retail&quot;,
+&quot;Convenience Retail Central&quot;,&quot;National Retail&quot;,
+&quot;Convenience Retail East&quot;,&quot;National Retail&quot;,
+&quot;Convenience Retail West&quot;,&quot;National Retail&quot;,
+&quot;Large Store Central Dispensed&quot;,&quot;National Retail&quot;,
+&quot;Target&quot;,&quot;National Retail&quot;,
+&quot;Large Store East Dispensed&quot;,&quot;National Retail&quot;,
+&quot;Publix&quot;,&quot;National Retail&quot;,
+&quot;Military Account Group&quot;,&quot;National Retail&quot;,
+&quot;Large Store West Dispensed&quot;,&quot;National Retail&quot;,
+&quot;Safeway&quot;,&quot;National Retail&quot;,
+&quot;Stater Bros&quot;,&quot;National Retail&quot;,
+&quot;Central Region&quot;,&quot;Central Region&quot;,
+&quot;Central Region FSOP&quot;,&quot;Central Region&quot;,
+&quot;Central Region - Independent Bottler&quot;,&quot;Central Region&quot;,
+&quot;East Region&quot;,&quot;East Region&quot;,
+&quot;East Region - Independent Bottler&quot;,&quot;East Region&quot;,
+&quot;West Region&quot;,&quot;West Region&quot;,
+&quot;West Region - Independent Bottler&quot;,&quot;West Region&quot;,
+&quot;McDonalds&quot;,&quot;McDonalds&quot;,
+&quot;National Distribution&quot;,&quot;National Distribution&quot;,
+&quot;Aramark&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;Onsite &amp; NSR&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;National Specialty Retail&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;Compass&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;Healthcare&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;HMS Host&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;NSR Central and West&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;NSR East&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;Onsite - Daly&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;Onsite - Taylor&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;Sodexo&quot;,&quot;Onsite &amp; NSR&quot;,
+&quot;Wendys&quot;,&quot;Wendys&quot;,
+&quot;SPM Airlines&quot;,&quot;SPM&quot;,
+&quot;SPM Strategic Alliances&quot;,&quot;SPM&quot;,
+&quot;Burger King&quot;,&quot;Burger King&quot;,
+&quot;Sonic&quot;,&quot;Sonic&quot;,
+&quot;Subway&quot;,&quot;Subway&quot;,
+&quot;NFSOP Central Zone&quot;,&quot;NFSOP Central Zone&quot;,
+&quot;NFSOP East Zone&quot;,&quot;NFSOP East Zone&quot;,
+&quot;NFSOP West Zone&quot;,&quot;NFSOP West Zone&quot;,
+&quot;no match&quot;,&quot;All Other&quot;,
+&quot;Regions Sales&quot;, &quot;Regions Sales&quot;, &quot;&quot;)</formula>
+    <label>Business System</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

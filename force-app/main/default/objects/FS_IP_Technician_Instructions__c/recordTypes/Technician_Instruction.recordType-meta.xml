@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technician_Instruction</fullName>
+    <active>true</active>
+    <description>Technician_Instructions</description>
+    <label>Technician Instruction</label>
+    <picklistValues>
+        <picklist>FS_7000_Series_Dispenser_Placement__c</picklist>
+        <values>
+            <fullName>Crew Serve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Serve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Serve %26 Crew Serve</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_IM_Dispense_Soft_Ice__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_IM_Make__c</picklist>
+        <values>
+            <fullName>Cornelius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoshizaki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice-O-Matic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manitowoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scotsman</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Installer__c</picklist>
+        <values>
+            <fullName>Davaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WFS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_Coordination_by_Coca_Cola_Req__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_KO_DOE_Disposition_of_Removed_Equipme__c</picklist>
+        <values>
+            <fullName>Bottler - Remove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOE - Remain on site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOE - Remove and return to KO warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KO - Remove and return to KO warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None - New Outlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Bottler warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Location__c</picklist>
+        <values>
+            <fullName>Backroom%2FWall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Place of Existing Filter System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underneath Self-Serve Beverage Counter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Location_of_Syrup_Rack__c</picklist>
+        <values>
+            <fullName>In Place of Legacy Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Left of Legacy Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Right of Legacy Rack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Path__c</picklist>
+        <values>
+            <fullName>Floor Chase Way</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overhead</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Platform_Type__c</picklist>
+        <values>
+            <fullName>6000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9100</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Protocol_for_Existing_Lines__c</picklist>
+        <values>
+            <fullName>Cap legacy line and store future Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discard legacy line after Tee-Joint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discard legacy line completely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry location - no current lines on-site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Comments%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Protocol_for_Existing_Rack__c</picklist>
+        <values>
+            <fullName>Dry Location - No Rack On Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retain and Replace Bottom Shelves</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requirements_IM__c</picklist>
+        <values>
+            <fullName>IM not Present- Install New Ice Maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No action required-Manual Fill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Special Instructions%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove existing IM %26 Relocate to Kitchen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove existing IM and convert to Manual Fill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove existing IM and re-installed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove existing IM prior to install and install new top mount at later date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove existing IM prior to install and install new top mount at time of install</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requirements__c</picklist>
+        <values>
+            <fullName>Action Required - Existing WF Does Not Meet CCFS WF Policy- Approved WF Shipped Prior to Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Action Required - Outlet Not Equipped w%2FWF- Approved WF Shipped Prior to Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Action Required - COM Sending WF to Outlet Prior to Install%2C Approved by COM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Action Required - Existing WF meets CCFS Policy%2C Approved by COM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Top_Off_Button__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Type_of_Line__c</picklist>
+        <values>
+            <fullName>Five Line JET Bundle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reuse Existing Bundle</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Booster_Location__c</picklist>
+        <values>
+            <fullName>Add Shelf%2FMount to Wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28Explain in Comments%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top of HFCS Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top of Legacy Syrup Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underneath Self-Serve Counter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_MFG__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_Supplier__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Who_will_install_Water_Filter__c</picklist>
+        <values>
+            <fullName>Approved Filters Already on Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor %28GC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KO Service Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Filter Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

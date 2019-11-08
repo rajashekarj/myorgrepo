@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSM_Reviewer_Required</fullName>
+    <active>false</active>
+    <description>Chain cannot be edited and saved without assigning FSM.</description>
+    <errorConditionFormula>IF(AND(ShippingCountry = &#39;US&#39;, FS_FSM_Reviewer__c =&quot;&quot;,RecordType.Name = &quot;FS Chain&quot;,NOT(CONTAINS($Label.Exclude_User,$Profile.Name)), NOT(OR($Profile.Name = &quot;System Administrator&quot;, $Profile.Name = &quot;FET System Admin&quot;, $Profile.Name = &quot;FS Admin PM_P&quot;,$Profile.Name = &quot;CCR Sales Manager- CFV&quot;))),TRUE,FALSE)</errorConditionFormula>
+    <errorDisplayField>FS_FSM_Reviewer__c</errorDisplayField>
+    <errorMessage>You must assign an CCFS Reviewer before saving a Chain account.</errorMessage>
+</ValidationRule>

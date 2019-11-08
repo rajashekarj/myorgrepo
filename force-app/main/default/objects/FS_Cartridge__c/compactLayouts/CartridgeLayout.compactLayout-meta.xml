@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CartridgeLayout</fullName>
+    <fields>Name</fields>
+    <fields>FS_Effective_Date__c</fields>
+    <fields>FS_Effective_End_Date__c</fields>
+    <fields>FS_Available_for_commercial_use__c</fields>
+    <label>CartridgeLayout</label>
+</CompactLayout>

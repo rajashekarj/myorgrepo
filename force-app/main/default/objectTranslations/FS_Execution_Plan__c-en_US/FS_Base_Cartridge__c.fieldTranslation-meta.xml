@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Base_Cartridge__c</name>
+    <picklistValues>
+        <masterLabel>46118 : Base for Cartridge Storage and 20gal Booster</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

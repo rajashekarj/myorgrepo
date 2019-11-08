@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COM_Cannot_edit_when_EP_is_Complete</fullName>
+    <active>true</active>
+    <description>The COM user(s) should not be able to make changes to the EP once the Execution Plan Status changes to â€˜Completedâ€™.Â </description>
+    <errorConditionFormula>AND( Name  &lt;&gt; &quot;Do Not Change&quot;, 
+   $Profile.Name = &quot;FS COM_P&quot;,
+   ISPICKVAL(PRIORVALUE(FS_Execution_Plan_Status__c), &quot;Complete&quot;)
+)</errorConditionFormula>
+    <errorMessage>You cannot change Execution Plan record when the status is Complete</errorMessage>
+</ValidationRule>

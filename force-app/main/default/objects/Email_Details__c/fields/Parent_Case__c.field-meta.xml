@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Case__c</fullName>
+    <description>Master-Detail relationship for the holding Case object.</description>
+    <externalId>false</externalId>
+    <label>Parent Case</label>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Case Email Notifications</relationshipLabel>
+    <relationshipName>Email_Details</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

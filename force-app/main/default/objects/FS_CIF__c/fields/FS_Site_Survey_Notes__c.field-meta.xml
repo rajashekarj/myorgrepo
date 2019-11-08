@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Site_Survey_Notes__c</fullName>
+    <description>Used to capture the notes related to the site survey</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Sales or COM users should use this field to give notes related to the site survey</inlineHelpText>
+    <label>Site Survey Notes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

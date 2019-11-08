@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dispenser_by_Country2</fullName>
+    <columns>NAME</columns>
+    <columns>FS_IsActive__c</columns>
+    <columns>FS_Model__c</columns>
+    <columns>FS_Water_Button__c</columns>
+    <columns>FS_Serial_Number2__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>FS_SAP_ID__c</columns>
+    <columns>Outlet_Country__c</columns>
+    <columns>FS_Valid_Fill__c</columns>
+    <columns>Chain_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Outlet_Country__c</field>
+        <operation>equals</operation>
+        <value>IE</value>
+    </filters>
+    <label>Dispenser by Country</label>
+</ListView>

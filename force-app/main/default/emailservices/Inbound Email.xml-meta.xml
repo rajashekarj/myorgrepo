@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServicesFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apexClass>FS_Email_Handler</apexClass>
+    <attachmentOption>All</attachmentOption>
+    <authenticationFailureAction>Discard</authenticationFailureAction>
+    <authorizationFailureAction>Discard</authorizationFailureAction>
+    <errorRoutingAddress>jille@coca-cola.com</errorRoutingAddress>
+    <functionInactiveAction>Bounce</functionInactiveAction>
+    <functionName>Inbound Email</functionName>
+    <isActive>true</isActive>
+    <isAuthenticationRequired>true</isAuthenticationRequired>
+    <isErrorRoutingEnabled>true</isErrorRoutingEnabled>
+    <isTextAttachmentsAsBinary>false</isTextAttachmentsAsBinary>
+    <isTlsRequired>false</isTlsRequired>
+    <overLimitAction>Bounce</overLimitAction>
+</EmailServicesFunction>

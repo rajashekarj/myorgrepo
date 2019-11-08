@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_KO_or_DOE_DispositionofRemovedEquip__c</name>
+    <picklistValues>
+        <masterLabel>DOE - Remain on Site</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DOE - Remove and Return to KO Warehouse</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KO - Remove and Return to KO Warehouse</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None - New Store</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

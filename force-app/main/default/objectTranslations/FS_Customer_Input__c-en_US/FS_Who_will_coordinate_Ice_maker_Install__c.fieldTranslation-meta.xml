@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Who_will_coordinate_Ice_maker_Install__c</name>
+    <picklistValues>
+        <masterLabel>Customer</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Team</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

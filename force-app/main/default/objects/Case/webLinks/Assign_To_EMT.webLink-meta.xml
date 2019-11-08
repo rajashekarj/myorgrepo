@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assign_To_EMT</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Escalate To EMT</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}  
+var caseObj = new sforce.SObject(&quot;Case&quot;);  
+caseObj.id = &#39;{!Case.Id}&#39;;  
+var result = sforce.connection.query(&quot;Select RecordType.Name,Owner.Username from Case where id= &#39;{!Case.Id}&#39;&quot;);  
+var queue_records = result.getArray(&#39;records&#39;); 
+var recordtype = queue_records[0].RecordType.Name;  
+var ownername = queue_records[0].Owner.Username;  
+if(ownername !=&#39;Freestyle Agents US&#39;)  
+{  
+caseObj.Status = &#39;Assigned&#39;;  
+caseObj.Sub_Status__c = &#39;EMT On Hold&#39;;  
+caseObj.Escalated_to_EMT__c = true;  
+sforce.connection.AssignmentRuleHeader = {}  
+sforce.connection.assignmentRuleHeader = {useDefaultRule:true};  
+sforce.connection.emailHeader = {triggerUserEmail:true};  
+var result = sforce.connection.update([caseObj]);  
+if (result[0].success == &#39;false&#39;) {  
+alert(result[0].errors.message);  
+}else{ 
+location.reload(true);  
+}  
+}else{  
+alert (&#39;Case is already assigned to Freestyle Agents US &#39;)  
+}</url>
+</WebLink>

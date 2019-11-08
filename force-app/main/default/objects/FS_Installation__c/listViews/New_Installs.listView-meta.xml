@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Installs</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>Type_of_Dispenser_Platform__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>FS_Outlet_Information__c</columns>
+    <columns>NAME</columns>
+    <columns>FS_Execution_Plan__c</columns>
+    <columns>Overall_Status2__c</columns>
+    <columns>FS_Scheduled_Install_Date__c</columns>
+    <columns>FS_Outlet_CS_Status__c</columns>
+    <columns>FS_OB_Info_Status__c</columns>
+    <columns>FS_BrandStatus__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>FS_Installation__c.FS_New_Install</value>
+    </filters>
+    <label>New Installs</label>
+</ListView>

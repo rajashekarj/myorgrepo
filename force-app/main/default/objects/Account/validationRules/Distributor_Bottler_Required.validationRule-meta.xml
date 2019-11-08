@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distributor_Bottler_Required</fullName>
+    <active>true</active>
+    <description>Distributor/Bottler field is Mandatory</description>
+    <errorConditionFormula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR( 
+AND(OR($Profile.Name =&quot;FS NDO_P&quot;,CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;)), 
+AND(ISBLANK(FS_Distributor__c), ISPICKVAL(FS_Requested_Delivery_Method__c, &quot;Distributor&quot;), 
+OR(Calculated_Customer_Classification__c=&quot;12&quot;,Calculated_Customer_Classification__c=&quot;13&quot;,Calculated_Customer_Classification__c=&quot;08&quot;) 
+) 
+), 
+AND(CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;),
+OR(FS_Final_Delivery_Method__c=&quot;Bottler&quot; ,FS_Final_Delivery_Method__c=&quot;Direct Ship&quot;), 
+FS_Final_Order_Method__c=&quot;Bottler&quot;,OR(ISBLANK(FS_Distributor__c),FS_Distributor__c=&quot;&quot;) 
+)), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Distributor__c</errorDisplayField>
+    <errorMessage>&#39;Distributor/Bottler&#39; is required</errorMessage>
+</ValidationRule>

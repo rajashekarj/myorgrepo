@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reschedule_Reason_4</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF( AND(  FS_ReschedInstallDate4__c &gt;  DATE(1990,01,01)  , TEXT( FS_Reason_for_Reschedule_4__c )=&quot;&quot; ),TRUE,FALSE)</errorConditionFormula>
+    <errorMessage>You must enter a Reason for Reschedule when entering a Reschedule Date.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_TotalPlanned_Self_Serve_Freestyle_Dis__c</fullName>
+    <externalId>false</externalId>
+    <label>Total # Planned 9000S Freestyle Dis</label>
+    <summarizedField>FS_Installation__c.FS_PlannedSelfServeFreestyleDisp__c</summarizedField>
+    <summaryForeignKey>FS_Installation__c.FS_Execution_Plan__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

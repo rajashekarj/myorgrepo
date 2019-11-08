@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Service_Provider__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Service Provider</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The lookup account must be of the &quot;FS Service Provider&quot; recordtype</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Service Provider</value>
+        </filterItems>
+        <infoMessage>Select the Service Provider account that should be linked to the zip code.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>SP Aligned Zips</relationshipLabel>
+    <relationshipName>SP_Aligned_Zips</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

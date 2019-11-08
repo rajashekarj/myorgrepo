@@ -1,0 +1,226 @@
+<apex:page id="pg" standardController="Account" extensions="FSCreateExecutionPlanExtension">
+    <style>
+        .custPopup{
+        background-color: white;
+        border-width: 2px;
+        border-style: solid;
+        z-index: 9997;
+        left: 50%;
+        padding:10px;
+        position: absolute;         
+        width: 700px;
+        margin-left: -320px;
+        top:100px;
+        }
+        .popupBackground{
+        background-color:black;
+        opacity: 0.20;
+        filter: alpha(opacity = 20);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9996;
+        }   
+    </style>
+    
+    <apex:form id="frm">        
+        <!-- Action Function  --> 
+        
+        <apex:actionFunction name="ClosepopupBlock" action="{!closePopup}" reRender="pagemsg,popup"/>
+        <apex:actionfunction name="createPlan" action="{!createExecutionPlan}" reRender="pagemsg,popup" status="statusEP">            
+            <apex:param name="secondParam" assignTo="{!selectedExecutionPlan}" value="" />              
+        </apex:actionfunction>
+        
+        <apex:actionStatus id="statusEP">
+            <apex:facet name="start">
+                <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.20; z-index: 9998; background-color: black;">
+                    &nbsp;
+                </div>
+                <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 9999; margin: 30% 45%">             
+                    <div style="background-color: white;"><img src="/img/loading32.gif"/>&nbsp;&nbsp;&nbsp;<b>Please Wait..</b></div>
+                </div>          
+            </apex:facet>
+        </apex:actionStatus>
+        
+        <apex:SectionHeader title="Create Execution Plan for {!customerInputHQ.Name}" />    
+        
+        <apex:outputpanel id="popup">
+            <apex:outputpanel styleclass="popupBackground" layout="block" rendered="{!displayPopUp}"></apex:outputpanel>
+            <apex:outputpanel styleclass="custPopup" layout="block" rendered="{!displayPopUp}">
+                <div class="loader"></div>              
+                <apex:pageBlock id="btnBlock">                   
+                    <center>Once an Execution Plan has been created, you will no longer be able to edit this CIF. Do you want to proceed?<br/>                                                  
+                        <apex:commandButton reRender="radioId" value="Yes" id="activeIA" styleClass="btn btn-success activeIA " style="margin-right:10px;" html-data-toggle="tooltip" html-data-placement="bottom" html-data-original-title="Please click activate for activating Integration." onClick="createExecutionPlan();"/>                            
+                        <apex:commandButton value="No" reRender="popup" action="{!closePopup}" id="activeIA1"/>                        
+                    </center>
+                </apex:pageBlock>
+            </apex:outputpanel>
+        </apex:outputpanel>
+        
+        <!-- Page Block to display approved Outlets --> 
+        
+        <apex:pageblock id="pgBlockOutlet" >
+            <apex:pageMessages id="pagemsg"/>           
+            <apex:pageBlockSection columns="1" id="dataBlock">                
+                <apex:pageBlockTable value="{!cifListChecked}" var="wrpOutlet">                      
+                    <apex:column headerValue="Outlet" value="{!wrpOutlet.FS_Account__c}"/>
+                    
+                    <apex:column headerValue="Customer Disposition After Review" value="{!wrpOutlet.FS_Customer_s_disposition_after_review__c}"/>
+                    
+                    <apex:column headerValue="Platform 1" value="{!wrpOutlet.FS_Platform1__c}"/>
+                    
+                    <apex:column headerValue="Platform 2" value="{!wrpOutlet.FS_Platform2__c}"/>
+                    
+                    <apex:column headerValue="Platform 3" value="{!wrpOutlet.FS_Platform3__c}"/> 
+                    
+                </apex:pageBlockTable>              
+            </apex:pageBlockSection>
+            <!-- Page Block to display options for Proejct Plan Type  -->       
+            <apex:pageBlock id="pgBlockPlanType">
+                
+                <apex:pageBlockSection id="sectionPlanType" columns="2">
+                    
+                    <apex:pageBlockSectionItem id="secItemPlanType" labelStyle="text-align:left;">
+                        <apex:outputText value="Select Execution Plan Type"/>
+                        <apex:selectList id="selectPlanType" value="{!selectedPlanType}" size="1"  onChange="changePlanType();">
+                            <apex:selectOptions value="{!executionPlanOption}"/>
+                            <!--<apex:actionFunction action="{!searchExistingExecutionPlan}" name="hold" reRender="outExisting" />-->
+
+                        </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem />
+                </apex:pageBlockSection>    
+                
+                <apex:pageBlockSection id="sectionExisting" title="Search for existing Execution Plan" columns="1" >   
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Execution Plan Name" />
+                        <apex:inputText value="{!executionPlanName}"/>
+                    </apex:pageBlockSectionItem> 
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Headquarters Name" />
+                        <apex:inputText value="{!headquarterName}"/> 
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Execution Plan#" />
+                        <apex:inputText value="{!executionPlanNo}"/> 
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockButtons id="buttons" location="bottom">
+                    <apex:commandButton id="btnSearch" value="Search" action="{!searchExistingExecutionPlan}" reRender="outExisting" status="status"/>
+                </apex:pageBlockButtons>
+            </apex:pageBlock>          
+            
+            
+            <!-- Page Block to display existing Execution Plan -->
+            <apex:outputPanel id="outExisting" >
+                <apex:pageBlock id="pgBlockExisting" rendered="{!NOT(ISNULL(lstExecutionPlan)) && lstExecutionPlan.size > 0}">          
+                    <apex:pageBlockSection id="sectionSearchResult" columns="1">
+                        <apex:pageBlockTable value="{!lstExecutionPlan}" var="excPlan" >
+                            <apex:column id="radioId" >
+                                <apex:facet name="header"></apex:facet>
+                                <input type="radio"  name="radioClass" id="{!excPlan.Id}"/>    
+                            </apex:column>
+                            <apex:column />
+                            
+                            <apex:column value="{!excPlan.FS_Execution_Plan__c}"/>  
+                            
+                            <apex:column value="{!excPlan.FS_Execution_Plan_Status__c}"/>
+                            
+                            <apex:column headerValue="Execution Plan Name"> 
+                                <apex:outputLink value="/{!excPlan.Id}" > {!excPlan.Name} </apex:outputLink>
+                            </apex:column>
+                            
+                            <apex:column value="{!excPlan.FS_Execution_Start_Date__c}"/>
+                            
+                            <apex:column value="{!excPlan.FS_Execution_Completion_Date__c}"/>
+                            
+                            <apex:column headerValue="Chain Name" value="{!excPlan.FS_Chain_Name__r.Name}" />
+                            
+                            <apex:column headerValue="Headquarter Name" value="{!excPlan.FS_Headquarters__r.Name}"/>
+                            
+                            <apex:column headerValue="Execution Plan approval status" value="{!excPlan.FS_Execution_Plan_Final_Approval_PMCheck__c}"/>  
+                            
+                            <apex:column headerValue="Execution Plan Creation Date" value="{!excPlan.CreatedDate}"/>
+                        </apex:pageBlockTable>
+                        
+                        <apex:outputPanel rendered="{!NOT(ISNULL(lstExecutionPlan)) && lstExecutionPlan.size == 0}">
+                            <apex:outputText value="No Record Found" />
+                        </apex:outputPanel>
+                        
+                    </apex:pageBlockSection>
+                </apex:pageBlock>
+            </apex:outputPanel>
+            
+            <apex:pageBlockButtons location="bottom">                
+                <apex:commandButton value="Create Plan" reRender="popup" action="{!showPopup}" id="btn1" oncomplete="scrollSomewhere()"/>         
+                <apex:commandButton value="Cancel" onClick="window.location.href= '/apex/FSCustomerInputForm?id={!currentCIFId}&tab=11.Summary'" reRender="none" />
+            </apex:pageBlockButtons>            
+        </apex:pageblock>
+        
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>       
+        <script>
+            $(document).ready(function() {
+            var planType = $('[id$="selectPlanType"]').val();
+            
+            if(planType != 'addExisting' && planType !=  'clone'){
+                $('[id$="sectionExisting"]').hide();
+                $('[id$="pgBlockExisting"]').hide();
+                $('[id$="btnSearch"]').hide();
+            }            
+        });       
+        
+        function scrollSomewhere() {
+            window.scrollTo(0,0);
+        }
+        //Method to check whether any Outlet is selcted or not and whether any Execution Plan is selected if existing.
+        function createExecutionPlan(){              
+            debugger;            
+            var planType = $('[id$="selectPlanType"]').val();
+            
+            if(planType == 'addExisting' || planType ==  'clone'){
+                $('[id$="pgBlockExisting"]').show();
+                var planId = '';
+                var len = $(':radio[name=radioClass]:checked').length;
+                if(len == 0){                    
+                    alert('Please select Execution Plan');
+                    ClosepopupBlock();
+                    $('[id$="pgBlockExisting"]').hide();                    
+                    return;
+                }
+                planId = $(':radio[name=radioClass]:checked').attr('id') ;
+            }
+            if(planType != 'addExisting' && planType !=  'clone'){
+                $('[id$="sectionExisting"]').hide();
+                $('[id$="pgBlockExisting"]').hide();
+                $('[id$="btnSearch"]').hide();
+            }
+            createPlan(planId);            
+        }       
+        
+        //Method to show/hide existing block on changing Execution Plan Type
+        function changePlanType(){
+            var planType = $('[id$="selectPlanType"]').val();            
+            
+            if(planType == 'addExisting' || planType ==  'clone'){
+                
+                $('[id$="sectionExisting"]').show();
+                $('[id$="pgBlockExisting"]').show();
+                $('[id$="btnSearch"]').show();
+                //hold();
+            }
+            else{
+                $('[id$="sectionExisting"]').hide();
+                $('[id$="pgBlockExisting"]').hide();
+                $('[id$="btnSearch"]').hide();
+            } 
+            $('[id$="pgBlockExisting"]').hide();            
+        }
+        </script>
+        
+    </apex:form>
+</apex:page>

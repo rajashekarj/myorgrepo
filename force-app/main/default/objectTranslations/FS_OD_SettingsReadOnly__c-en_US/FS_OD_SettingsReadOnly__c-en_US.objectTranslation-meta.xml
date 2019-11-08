@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OD SettingsReadOnly</value>
+    </caseValues>
+    <layouts>
+        <layout>OD Settings Readonly Layout</layout>
+        <sections>
+            <label/>
+            <section>Compliance Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Current Artifact Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Connectivity Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Health Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Status</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Messages</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>OD RecordID</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Simulation Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Tall_Cup_Kit__c</name>
+    <picklistValues>
+        <masterLabel>141959: Tall Cup Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46717: EXTENDED DRIP TRAY FS7000</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: 6000 Drip Tray Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: For Future use</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

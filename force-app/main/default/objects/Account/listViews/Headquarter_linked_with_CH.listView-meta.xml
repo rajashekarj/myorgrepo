@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Headquarter_linked_with_CH</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>FS_ACN__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>FS_HQ_ACN__c</columns>
+    <columns>FS_Chain_ACN__c</columns>
+    <columns>CCR_KO_Record_Type__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>FS_Chain__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.FS_Headquarters</value>
+    </filters>
+    <filters>
+        <field>FS_ACN__c</field>
+        <operation>notContain</operation>
+        <value>PH</value>
+    </filters>
+    <filters>
+        <field>FS_Chain_ACN__c</field>
+        <operation>contains</operation>
+        <value>CH</value>
+    </filters>
+    <label>Headquarter linked with CH</label>
+</ListView>

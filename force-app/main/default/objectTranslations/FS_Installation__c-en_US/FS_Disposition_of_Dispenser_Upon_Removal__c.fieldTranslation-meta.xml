@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Disposition_of_Dispenser_Upon_Removal__c</name>
+    <picklistValues>
+        <masterLabel>Disconnected and Placed in Backroom</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dispenser Back at Location and Reconnected</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removed and Shipped to New Outlet</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Removed and Taken to SP for Storage</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

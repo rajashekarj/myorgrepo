@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SP_Override_checkbox</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(AND(SP_Override__c=FALSE, FS_Reason_for_Resched__c=&#39;SP has changed&#39;) ,true,false)</errorConditionFormula>
+    <errorDisplayField>SP_Override__c</errorDisplayField>
+    <errorMessage>Service Provider Name Override checkbox should be checked if Reason for reschedule is &#39;SP has changed&#39;</errorMessage>
+</ValidationRule>

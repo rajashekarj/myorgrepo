@@ -1,0 +1,85 @@
+<apex:page standardController="FS_Association_Brandset__c" extensions="FSAssociateBrandsetAccessController" sidebar="false">
+   
+    <apex:form >
+    <apex:actionFunction name="deleteAssBrandset" action="{!deleteAssBrandset}"/>
+	</apex:form>
+    
+      <script>
+    
+    var objectType='{!FS_Association_Brandset__c.FS_Related_Object_type__c}';
+    var ipRecType='{!FS_Association_Brandset__c.FS_IP_RecordType__c}';
+    var curProfile='{!$Profile.Name}';
+    var ipNewInstall='{!$Label.IP_New_Install_Rec_Type}';
+    var odProfilelist=['System Administrator', 'FET System Admin']
+    var accountProfileList=['FS Admin PM_P','FS AC_P','FS PM_P','System Administrator','FET System Admin']; 
+    var ipProfileList = ['FS Admin PM_P','FS AC_P','FS PM_P','System Administrator','FET System Admin'];
+    
+    debugger;
+    if(objectType=='Installation'){
+        var url = window.location.href;
+        if (url.includes('DELETE') || url.includes('delete')){
+            alert('{!$Label.FS_AB_Delete_Error}');
+            history.go(-1);
+            }
+		else if(ipRecType!=ipNewInstall || ipProfileList.indexOf(curProfile)==-1){
+                alert('{!$Label.FS_AB_Edit_Error}');
+                history.go(-1);
+            }
+        else{
+            window.location.href='/{!FS_Association_Brandset__c.Id}/e?nooverride=1&retURL={!FS_Association_Brandset__c.FS_Installation__c}';
+        }
+    }
+    else if(objectType=='HQ'){
+        var url = window.location.href;
+        if (url.includes('DELETE')){
+            deleteAssBrandset();
+        }
+        else if(accountProfileList.indexOf(curProfile)==-1){
+                alert('{!$Label.FS_AB_Edit_Error}');
+                history.go(-1);
+            }
+        else { var HQName = encodeURIComponent('{!FS_Association_Brandset__c.FS_Headquarters__r.name}')
+            window.location.href='/{!FS_Association_Brandset__c.Id}/e?nooverride=1&retURL=%2F{!FS_Association_Brandset__c.FS_Headquarters__c}&CF00N6100000Hf58Y='+HQName+'&CF00N6100000Hf58Y_lkid={!FS_Association_Brandset__c.FS_Headquarters__c}';	}
+    }
+        else if(objectType=='Outlet Dispenser'){
+            var url = window.location.href;
+            if (url.includes('DELETE')){
+                alert('{!$Label.FS_AB_Delete_Error}');
+                history.go(-1);
+            }
+            
+            else if(odProfilelist.indexOf(curProfile)==-1){
+                alert('{!$Label.FS_AB_Edit_Error}');
+                history.go(-1);
+            }
+            else{
+                window.location.href='/{!FS_Association_Brandset__c.Id}/e?nooverride=1&retURL={!FS_Association_Brandset__c.FS_Outlet_Dispenser__c}';
+            }
+        }
+    
+    else {
+        var url = window.location.href;
+        
+        //user click save and new
+        if (url.includes('save_new')){
+            //HQ
+            if (url.includes('CF00N6100000Hf58Y')){
+                var HQName = encodeURIComponent (new URL(url).searchParams.get("CF00N6100000Hf58Y"));
+                
+                window.location.href='/{!$ObjectType.FS_Association_Brandset__c}/e?nooverride=1&CF00N6100000Hf58Y_lkid={!FS_Association_Brandset__c.FS_Headquarters__c}&CF00N6100000Hf58Y='+HQName+'&retURL=%2F{!FS_Association_Brandset__c.FS_Headquarters__c}&saveURL=%2F{!FS_Association_Brandset__c.FS_Headquarters__c}';
+            }
+            //IP and OD
+            else {
+                var parentId= new URL(url).searchParams.get("retURL").slice(-18);
+                alert('{!$Label.FS_AB_Add_Error}');
+                window.location.href='/' + parentId;
+            }
+        }
+        //user click new association brandset on HQ
+        else if(url.includes('CF00N6100000Hf58Y')){
+            var HQName = encodeURIComponent (new URL(url).searchParams.get("CF00N6100000Hf58Y"));
+            window.location.href='/{!$ObjectType.FS_Association_Brandset__c}/e?nooverride=1&CF00N6100000Hf58Y_lkid={!FS_Association_Brandset__c.FS_Headquarters__c}&CF00N6100000Hf58Y='+HQName+'&retURL=%2F{!FS_Association_Brandset__c.FS_Headquarters__c}&saveURL=%2F{!FS_Association_Brandset__c.FS_Headquarters__c}';
+        }
+    }
+    </script>
+</apex:page>

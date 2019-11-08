@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>true</plural>
+        <value>Flavor Change</value>
+    </caseValues>
+    <caseValues>
+        <plural>false</plural>
+        <value>Flavor Change Header</value>
+    </caseValues>
+    <layouts>
+        <layout>Flavor Change Header Chain or HQ Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Important Dates</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Installation Layout</layout>
+        <sections>
+            <label/>
+            <section>CDM Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Date section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>NDO Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>POM Action Complete</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Installation Layout for NDO</layout>
+        <sections>
+            <label/>
+            <section>CDM Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Date section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>NDO Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>POM Action Complete</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Installation Layout for PM</layout>
+        <sections>
+            <label/>
+            <section>CDM Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Date section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>NDO Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>POM Action Complete</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Outlet Layout</layout>
+        <sections>
+            <label/>
+            <section>CDM Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Date section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>NDO Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>POM Action Complete</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Outlet Layout for PM</layout>
+        <sections>
+            <label/>
+            <section>CDM Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Date section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>NDO Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>POM Action Complete</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Outlet Layout for PM and NDO</layout>
+        <sections>
+            <label/>
+            <section>CDM Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Date section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>NDO Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>POM Action Complete</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Header Outlet for NDO</layout>
+        <sections>
+            <label/>
+            <section>CDM Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Date section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>NDO Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>POM Action Complete</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Project Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Project Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label/>
+        <name>FS_FlavorChange_Chain_HQ</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>FS_FlavorChange_Outlet</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>FS_Flavor_Change_Installation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>Cant_change_FS_SP_go_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Cant_change_Pungent_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Locking_Completed_FC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Locking_Record_Type_for_Profiles</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Restrict_Customer_readiness_From_True_To</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Restrict_File_upload_record_from_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Restrict_SP_readiness_From_True_To</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Stop_edit_for_file_record_type</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>FSCreate_FlavorChange_Workflow_HQ</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FSCreate_FlavorChange_Workflow_Install</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FSCreate_FlavorChange_Workflow_Outlet</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Detail_Flavor_Change</name>
+    </webLinks>
+</CustomObjectTranslation>

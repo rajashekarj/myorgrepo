@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_for_Bottler_Ordering_Req</fullName>
+    <active>true</active>
+    <description>Mandatory field validation rule for approved for bottler ordering checkbox</description>
+    <errorConditionFormula>AND(CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;),RecordType.Name = &quot;FS Outlet&quot;, 
+OR(FS_Final_Delivery_Method__c=&quot;Bottler&quot; ,FS_Final_Delivery_Method__c=&quot;Direct Ship&quot;), 
+FS_Final_Order_Method__c=&quot;Bottler&quot;,FS_Approved_Bottler_Order_Delivery__c==False,NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorMessage>Please enter a value for mandatory field â€œApproved for Bottler Ordering?â€�</errorMessage>
+</ValidationRule>

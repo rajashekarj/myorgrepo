@@ -1,0 +1,18 @@
+.THIS .barcodeContainer {
+	width: 100%;
+    height: auto;
+}
+
+.THIS.slds-page-header{
+    background:token(colorBackgroundModalButtonActive);
+}
+
+.THIS .slds-button{
+    background:token(colorBackgroundShade);
+    font-size: 1rem;
+}
+
+.THIS #buttonContainer{
+    margin:0 auto;
+    margin-top:2%;
+}

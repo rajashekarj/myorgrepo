@@ -1,0 +1,58 @@
+<!-- 
+Name	: FOT_Target_Artifact_Datatable
+Description: Target Artifact table custom lightning component
+Owner 	: Infosys
+Date  	: 08/05/2018
+-->
+
+<aura:component implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" controller="FOT_TargetArtifactListController">
+    
+    <!-- Component attributes declaration -->
+    <aura:attribute name="mydata" type="Object"/>
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="sortedBy" type="String" default="Name"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+    <aura:attribute name="renderFilter" type="Boolean" default="false"/>
+    <aura:attribute name="GenreList" type="List" default="[]" description="Genre Picklist Values"/>
+    <aura:attribute name="selectedGenreList" type="List" default="[]" description="Selected Genre Picklist Values"/>
+    <aura:attribute name="DefaultList" type="List" default="[]" description="Default Picklist Values"/>
+    <aura:attribute name="recordTypeList" type="String[]" default="Rollback,Actual"/>
+    
+    <aura:attribute name="rawData" type="Object" description="Stores the currently displayed rows of data"/>
+    <aura:attribute name="activeFilter" type="string" default="all" description="The currently selected actions filter"/>
+    <aura:attribute name="messageFromEvent" type="String"/>
+    <aura:attribute name="recordTypesSelected" type="String[]"/>
+    <aura:attribute name="numEvents" type="Integer" default="0"/>
+    <aura:handler name="toParent" event="c:childToparentEvent" action="{!c.handleComponentEvent}"/>
+    
+    <aura:attribute name="mycolumns" type="List"/>
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <!-- Artifact datatable filter start -->
+    <div class="slds-m-bottom_xx-large">
+        <c:multiSelectFilter label="Filter By RecordType"
+                             errorMessage="Invalid input">
+            <c:multiSelectOption label="Rollback" value="Rollback"/>
+            <c:multiSelectOption label="Actual" value="Actual"/>
+            <c:multiSelectOption label="Target" value="Target"/>
+        </c:multiSelectFilter>
+    </div>
+    <!-- Datatable filter end -->
+    
+    <!-- Target Artifact datatable start -->
+    <lightning:datatable aura:id="ArtifactDT" data="{! v.mydata }" 
+                         columns="{! v.mycolumns }" 
+                         keyField="id" 
+                         hideCheckboxColumn="true"
+                         onsort="{!c.updateColumnSorting}"
+                         sortedBy="{!v.sortedBy}"
+                         sortedDirection="{!v.sortedDirection}"
+                         onheaderaction="{! c.handleHeaderAction }"
+                         />
+    <!-- Datatable End -->
+    
+    <lightning:notificationsLibrary aura:id="notifLib"/><!-- to show the error msg-->
+    
+    
+</aura:component>

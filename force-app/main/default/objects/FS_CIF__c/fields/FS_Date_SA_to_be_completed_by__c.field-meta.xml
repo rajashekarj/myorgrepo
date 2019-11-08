@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Date_SA_to_be_completed_by__c</fullName>
+    <description>Date SA to be completed by</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISPICKVAL(FS_What_type_of_Site_Assessment__c,&quot;SA Not Required - OSM approval required for local market&quot;)) &amp;&amp; (NOT(ISPICKVAL(FS_Perf_Site_Assessment__c,&quot;No&quot;)&amp;&amp; NOT(ISBLANK(TEXT(FS_Perf_Site_Assessment__c))) )),DATEVALUE(FS_Request_submitted_Date_Time__c) + 
+CASE(MOD( DATEVALUE(FS_Request_submitted_Date_Time__c)- DATE(1900,01,07) ,7 ), 0, 12, 1, 14,2,14,3,14,4,14,5,14,13),Null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Date SA to be completed by</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

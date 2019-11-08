@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Survey_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>(If( AND(FS_Davaco_SA_Status__c = &quot;Complete&quot; ,
+TEXT( FS_Survey_Date__c )= &quot;&quot; ,
+FS_Survey_Complete__c =false),&quot;SP Survey Pending&quot;,
+
+(If( AND(FS_Davaco_SA_Status__c = &quot;Complete&quot; ,
+TEXT( FS_Survey_Date__c )&lt;&gt; &quot;&quot; ,
+FS_Survey_Complete__c =false),&quot;SP Survey Scheduled&quot;,
+
+(If( AND(FS_Davaco_SA_Status__c = &quot;Complete&quot; ,
+TEXT( FS_Survey_Date__c )&lt;&gt; &quot;&quot; ,
+FS_Survey_Complete__c),&quot;SP Survey Complete&quot;,&quot;Not Ready&quot;))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Survey Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

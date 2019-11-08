@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_a_legacy_bar_gun_being_removed_or_ins__c</fullName>
+    <description>Is legacy bargun being removed/installed</description>
+    <externalId>false</externalId>
+    <label>Is legacy bargun being removed/installed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No,Not at this time</fullName>
+                <default>false</default>
+                <label>No,Not at this time</label>
+            </value>
+            <value>
+                <fullName>Yes, See comment section</fullName>
+                <default>false</default>
+                <label>Yes, See comment section</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

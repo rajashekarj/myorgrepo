@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TechnicianInstruction_Edit_Privileges_EP</fullName>
+    <active>true</active>
+    <errorConditionFormula>if(NOT(ISNEW()),if(  Execution_Plan__r.FS_Execution_Plan_Final_Approval_PMCheck__c,if(OR($Profile.Name = &quot;FS AC_P&quot;,
+$Profile.Name = &quot;FS PM_P&quot;,
+$Profile.Name = &quot;FS Admin PM_P&quot;,
+$Profile.Name = &quot;FET System Admin&quot;,
+$Profile.Name = &quot;System Administrator&quot;,
+$Profile.Name = &quot;FS FPS_P&quot;),false,true),false),false)</errorConditionFormula>
+    <errorMessage>Technician Instructions(EP) cannot be updated after Execution Plan has been approved. Please Contact your  PM for any necessary edits.</errorMessage>
+</ValidationRule>

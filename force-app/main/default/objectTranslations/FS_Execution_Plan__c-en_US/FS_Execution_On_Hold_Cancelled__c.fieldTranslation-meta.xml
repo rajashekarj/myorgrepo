@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Execution_On_Hold_Cancelled__c</name>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On-Hold</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

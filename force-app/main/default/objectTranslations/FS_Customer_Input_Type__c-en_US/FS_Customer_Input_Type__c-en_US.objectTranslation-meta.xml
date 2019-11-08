@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Input Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Input Types</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Input Type Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Contractor Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Legacy Equipment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Site Assessment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirement: Coke Smart Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirement: Freestyle Equipment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirement: Installation Requirements</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirements: Brands/Hide-Show/Connection Time</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirements: On-Boarding In-Outlet Training Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

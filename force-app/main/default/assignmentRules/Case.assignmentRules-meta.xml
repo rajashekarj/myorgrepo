@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Freestyle</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Global_Center</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Escalated,Validation,Containment</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>Global Center</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>GC on Hold,GC In Progress,GC In Validation,GC In Containment</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <template>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Freestyle_Agents_NON_US</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Non - North American Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>On Hold,New,Assigned,Complete</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>Freestyle Agents NON US</value>
+            </criteriaItems>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Freestyle_Agents_US</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR (3 AND 4) OR (6 AND 7)) AND 5 AND 10) OR (6 AND 8 AND 9)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>North American Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New,On Hold,Assigned,Complete</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Escalated</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>GC Completed</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>Freestyle Agents US</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Assigned</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>FACT Completed</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Connectivity Solution</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>EMT On Hold,EMT In Progress</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>notEqual</operation>
+                <value>FACT On Hold,FACT In Progress</value>
+            </criteriaItems>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Freestyle_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3 OR (8 AND 7))) OR (4 AND 5 AND 6)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Connectivity Solution</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New,Assigned</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>EMT Completed</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>FACT On Hold,FACT In Progress</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Assigned</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>North American Case</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>equals</operation>
+                <value>Freestyle Agents US</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Closed</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Freestyle_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Linkage Management</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.FS_New_Case_Type__c</field>
+                <operation>equals</operation>
+                <value>JDE Linkage Request,JDE Initiated AMOA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>JDE_AMS</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND 2 AND 3 AND 4) OR (1 AND 5 AND 3 AND 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Linkage Management</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.FS_New_Case_Type__c</field>
+                <operation>equals</operation>
+                <value>JDE Initiated AMOA,Account Team Initiated AMOA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Assigned</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.LM_Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>JDE AMS on Hold</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.FS_New_Case_Type__c</field>
+                <operation>equals</operation>
+                <value>JDE Linkage Request</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Freestyle_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Linkage Management</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.FS_New_Case_Type__c</field>
+                <operation>equals</operation>
+                <value>JDE Linkage Request,JDE Initiated AMOA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>Assigned</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.LM_Sub_Status__c</field>
+                <operation>equals</operation>
+                <value>Pending Install</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>JDE_AMS</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Linkage Management</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.FS_New_Case_Type__c</field>
+                <operation>equals</operation>
+                <value>Account Team Initiated AMOA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>null</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

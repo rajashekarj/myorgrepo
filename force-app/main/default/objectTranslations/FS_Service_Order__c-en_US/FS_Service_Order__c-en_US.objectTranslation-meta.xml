@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>Service Order Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Service_Order</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>Customer_Readiness_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_SP_Override_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_SP_Override_Check_8k9k</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>SP_Readiness_Update</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSDistributorCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>FS_ACN__c</fields>
+    <fields>FS_Dist_Cartridge_Delivery_Authorized__c</fields>
+    <fields>Distribution_Sweetener_Status__c</fields>
+    <fields>FS_Distributor_Cartridge_Status__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>FS_ShipAddress__c</fields>
+    <label>FS Distributor Compact Layout</label>
+</CompactLayout>

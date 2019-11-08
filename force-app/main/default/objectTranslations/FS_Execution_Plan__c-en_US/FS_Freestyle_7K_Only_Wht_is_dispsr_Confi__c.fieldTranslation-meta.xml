@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Freestyle_7K_Only_Wht_is_dispsr_Confi__c</name>
+    <picklistValues>
+        <masterLabel>-None-</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown, site assessment will determine optimum location</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>With 4â€� Legs &amp; Drain Pan</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Without 4â€� Legs &amp; Drain Pan</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Without 4â€� Legs &amp; Without Drain Pan (i.e., built-in drain trough)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

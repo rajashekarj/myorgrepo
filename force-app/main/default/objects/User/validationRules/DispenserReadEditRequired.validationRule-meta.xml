@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DispenserReadEditRequired</fullName>
+    <active>true</active>
+    <description>While creating a User with Dispenser Coordinator profile, Dispenser Read/Edit field is required.</description>
+    <errorConditionFormula>AND
+(
+Profile.Name = &#39;FET Dispenser Coorindator Profile&#39;,
+ISPICKVAL(Dispenser_Read_Edit__c , &#39;&#39;)
+)</errorConditionFormula>
+    <errorDisplayField>Dispenser_Read_Edit__c</errorDisplayField>
+    <errorMessage>Please enter a value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_11_Slots_to_Add__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( FS_11_Package_Days_Capacity_1000__c = 10.6, 
+ IF((FS_1_Slots_to_Add__c + FS_11_Slots__c ) &lt;= FS_Slots_Partial_Case__c, FS_11_Slots__c , 0), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>11 Slots to Add</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Location_of_Syrup_Rack_TI_SR2__c</name>
+    <picklistValues>
+        <masterLabel>In Place of Legacy Rack</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Explain in Comments)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To Left of Legacy Rack</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>To Right of Legacy Rack</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

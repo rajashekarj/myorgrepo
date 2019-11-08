@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Brandset3__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Brandset corresponding to Platform 3.</description>
+    <externalId>false</externalId>
+    <label>Brandset 3</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>FS_Brandset__c.FS_Platform_Applicable__c</field>
+            <operation>contains</operation>
+            <valueField>$Source.FS_Platform3__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>FS_Brandset__c.Available_for_Selection__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FS_Brandset__c</referenceTo>
+    <relationshipLabel>CIF_Brandset3</relationshipLabel>
+    <relationshipName>CIF_Brandset3</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

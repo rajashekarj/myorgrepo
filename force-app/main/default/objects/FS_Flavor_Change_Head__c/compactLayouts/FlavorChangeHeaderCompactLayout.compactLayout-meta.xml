@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FlavorChangeHeaderCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>FS_Level__c</fields>
+    <fields>FS_Flavor_Change_Status__c</fields>
+    <fields>FS_Order_method__c</fields>
+    <fields>FS_Delivery_method__c</fields>
+    <fields>FS_CDM_Setup_Complete__c</fields>
+    <fields>FS_POM_Action_Complete__c</fields>
+    <label>FlavorChangeHeaderCompactLayout</label>
+</CompactLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cannot_Change_Reschedule_Installdate6</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(!ISBLANK(PRIORVALUE(FS_ReschedInstallDate6__c)) &amp;&amp; NOT(ISBLANK(FS_ReschedInstallDate6__c)) &amp;&amp; PRIORVALUE(FS_ReschedInstallDate6__c)!=FS_ReschedInstallDate6__c,true,
+IF(!ISBLANK(PRIORVALUE(FS_ReschedInstallDate6__c)) &amp;&amp; ISBLANK(FS_ReschedInstallDate6__c),true,false))</errorConditionFormula>
+    <errorMessage>Please use reschedule Install date 7 to change the date</errorMessage>
+</ValidationRule>

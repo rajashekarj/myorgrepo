@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Vendor_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Vendor Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>*Davaco</fullName>
+                <default>false</default>
+                <label>*Davaco</label>
+            </value>
+            <value>
+                <fullName>Counter</fullName>
+                <default>false</default>
+                <label>Counter</label>
+            </value>
+            <value>
+                <fullName>Electrician</fullName>
+                <default>false</default>
+                <label>Electrician</label>
+            </value>
+            <value>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+                <label>General Contractor</label>
+            </value>
+            <value>
+                <fullName>Ice Maker</fullName>
+                <default>false</default>
+                <label>Ice Maker</label>
+            </value>
+            <value>
+                <fullName>Plumber</fullName>
+                <default>false</default>
+                <label>Plumber</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

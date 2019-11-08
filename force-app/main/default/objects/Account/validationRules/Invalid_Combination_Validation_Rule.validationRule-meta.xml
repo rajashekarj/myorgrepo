@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invalid_Combination_Validation_Rule</fullName>
+    <active>true</active>
+    <description>Validation rules for Invalid selections</description>
+    <errorConditionFormula>AND(RecordType.Name = &quot;FS Outlet&quot;, 
+OR( 
+AND( ISPICKVAL(FS_Requested_Order_Method__c,&quot;CokeSmart&quot;),ISPICKVAL(FS_Requested_Delivery_Method__c,&quot;Bottler&quot;)), 
+AND(ISPICKVAL(FS_Requested_Order_Method__c,&quot;VMS&quot;),ISPICKVAL(FS_Requested_Delivery_Method__c,&quot;Bottler&quot;)), 
+AND(ISPICKVAL(FS_Requested_Order_Method__c,&quot;Distributor&quot;),ISPICKVAL(FS_Requested_Delivery_Method__c,&quot;Direct Ship&quot;)), 
+AND(ISPICKVAL(FS_Requested_Order_Method__c,&quot;Distributor&quot;),ISPICKVAL(FS_Requested_Delivery_Method__c,&quot;Bottler&quot;)), 
+AND(ISPICKVAL(FS_Requested_Order_Method__c,&quot;Bottler&quot;),ISPICKVAL(FS_Requested_Delivery_Method__c,&quot;Distributor&quot;)), 
+AND(ISPICKVAL(FS_Requested_Order_Method__c,&quot;Manual Order&quot;),ISPICKVAL(FS_Requested_Delivery_Method__c,&quot;Distributor&quot;)), 
+AND(ISPICKVAL(FS_Requested_Order_Method__c,&quot;Manual Order&quot;),ISPICKVAL(FS_Requested_Delivery_Method__c,&quot;Bottler&quot;)) 
+),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorMessage>The order and delivery method combination is invalid. Please select again.</errorMessage>
+</ValidationRule>

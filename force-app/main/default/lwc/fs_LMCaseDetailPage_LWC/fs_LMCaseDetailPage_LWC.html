@@ -1,0 +1,345 @@
+<template>
+    <!--Record form starts here-->
+    <!--Lightning form used to display To Account and From Account on the LM case record detail page -->
+    <lightning-record-edit-form object-api-name="Case" record-type-id={LM_Record_Type}
+        record-id={recordId}>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-p-left_small slds-p-top_xx-small">
+                <div class="slds-grid slds-wrap slds-m-top_x-small">
+                    <div class="slds-col slds-size_2-of-2">
+                        <div class="slds-section slds-is-open">
+                            <lightning-card variant="narrow" icon-name="standard:account" title="Account Information">
+                            </lightning-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-grid slds-col slds-size_1-of-1">
+            <div class="slds-grid slds-col slds-size_1-of-2">
+                <div class="slds-col slds-size_6-of-8 toAccountDetailDiv">
+                  
+                    To Account  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a onclick={openAccount} data-id={ToAccount} class="ToAccountStyle">
+                        <lightning-formatted-text value={toAccountName}>
+                        </lightning-formatted-text>
+                    </a>
+                    <br></br>
+                    <table class="slds-table slds-table--bordered slds-table--striped">
+                        <thead>
+                            <th>Serial Number</th>
+                            <th>Outlet Dispenser</th>
+                            <th>Platform Type</th>
+                            <th>Active/Inactive</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody>
+                            <template if:true={ToAccountODDetails}>
+                                <template for:each={ToAccountODDetails} for:item="ToAcnOD">
+                                    <tr key={ToAcnOD.Id}>
+                                        <td>
+                                            <lightning-formatted-text value={ToAcnOD.FS_Serial_Number__c}>
+                                            </lightning-formatted-text>
+                                        </td>
+                                        <td>
+                                            <!-- onclick function 'openOutletDispenserPage' to open Outlet Dispenser record page -->
+                                            <a onclick={openOutletDispenserPage} data-id={ToAcnOD.Id}>
+                                                <lightning-formatted-text value={ToAcnOD.Name}>
+                                                </lightning-formatted-text>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <lightning-formatted-text value={ToAcnOD.FS_Equip_Type__c}>
+                                            </lightning-formatted-text>
+                                        </td>
+                                        <td>
+                                            <div if:true={ToAcnOD.FS_IsActive__c}>
+                                                <lightning-input type="Checkbox" value={ToAcnOD.FS_IsActive__c} checked
+                                                    disabled>
+                                                </lightning-input>
+                                            </div>
+                                            <div if:false={ToAcnOD.FS_IsActive__c}>
+                                                <lightning-input type="Checkbox" value={ToAcnOD.FS_IsActive__c}
+                                                    disabled></lightning-input>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <lightning-formatted-text value={ToAcnOD.FS_Status__c}>
+                                            </lightning-formatted-text>
+                                        </td>
+                                    </tr>
+
+                                </template>
+                            </template>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="slds-col slds-size_1-of-8"></div>
+            </div>
+            <div class="slds-grid slds-col slds-size_1-of-2">
+                <div class="slds-col slds-size_1-of-8"></div>
+                <div class="slds-col slds-size_2-of-8">
+                    <table class="AccountTableHeaders">
+                        <tbody>
+                            <tr>
+                                <th>Account Name</th>
+
+                            </tr>
+                            <tr>
+                                <th> <span>ACN</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>Address</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>City</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>State</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>Country</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>Zip</span></th>
+
+                            </tr>
+                            <tr></tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="slds-col slds-size_5-of-8">
+                    <table>
+                        <tbody>
+                            <template for:each={ToAccountDetails} for:item="ToAcn">
+                                <tr key={ToAcn.Id}>
+
+                                    <td class="padding1">{ToAcn.Name}</td>
+                                </tr>
+                                <tr key={ToAcn.Id}>
+
+                                    <td class="padding1">{ToAcn.Outlet_ACN__c}</td>
+                                </tr>
+                                <tr key={ToAcn.Id}>
+
+                                    <td class="padding1">{ToAcn.ShippingStreet}</td>
+                                </tr>
+                                <tr key={ToAcn.Id}>
+
+                                    <td class="padding1">{ToAcn.ShippingCity}</td>
+                                </tr>
+                                <tr key={ToAcn.Id}>
+
+                                    <td class="padding1">{ToAcn.ShippingState}</td>
+                                </tr>
+                                <tr key={ToAcn.Id}>
+
+                                    <td class="padding1">{ToAcn.ShippingCountry}</td>
+                                </tr>
+                                <tr key={ToAcn.Id}>
+
+                                    <td class="padding1">{ToAcn.ShippingPostalCode}</td>
+                                </tr>
+
+                            </template>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="slds-col slds-size_1-of-8"></div>
+            </div>
+
+        </div>
+        <br></br>
+        <div class="slds-grid slds-col slds-size_1-of-1">
+            <div class="slds-grid slds-col slds-size_1-of-2">
+            </div>
+            <div class="slds-grid slds-col AccountNote">
+                    {TO_ACCOUNT_NOTE}
+            </div>
+        </div>
+        <br>
+
+        <div class="slds-grid slds-col slds-size_1-of-1">
+            <div class="slds-grid slds-col slds-size_1-of-2">
+                <div class="slds-col slds-size_6-of-8 toAccountDetailDiv">
+                    <!--<lightning-output-field field-name="From_Account__c" data-id="fromAccountField"
+                        data-accounttype="fromAccountField"
+                        class="no-outline">
+                    </lightning-output-field>-->
+                    From Account  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a onclick={openAccount} data-id={fromAccount} class="FromAccountStyle">
+                        <lightning-formatted-text value={fromAccountName}>
+                        </lightning-formatted-text>
+                    </a>
+                    <br></br>
+                    <table class="slds-table slds-table--bordered slds-table--striped">
+                        <thead>
+                            <th></th>
+                            <th>Serial Number</th>
+                            <th>Outlet Dispenser</th>
+                            <th>Platform Type</th>
+                            <th>Active/Inactive</th>
+                            <th>Status</th>
+                        </thead>
+                        <tbody>
+                            <template if:true={FromAccountODDetailsCheck}>
+                                <template for:each={FromAccountODDetails} for:item="FromAcnOD">
+                                    <tr key={FromAcnOD.od.Id}>
+                                        <td>
+                                            <div if:true={FromAcnOD.selected}>
+                                                <lightning-input type="Checkbox" data-item={FromAcnOD.od.Id}
+                                                    onchange={getSelectedKey} value={FromAcnOD.selected}
+                                                    data-id="selectedOd" checked disabled></lightning-input>
+                                            </div>
+                                            <div if:false={FromAcnOD.selected}>
+                                                <lightning-input type="Checkbox" data-item={FromAcnOD.od.Id}
+                                                    onchange={getSelectedKey} value={FromAcnOD.selected}
+                                                    data-id="selectedOd" disabled></lightning-input>
+                                            </div>
+
+                                        </td>
+                                        <td>
+                                            <lightning-formatted-text value={FromAcnOD.od.FS_Serial_Number__c}>
+                                            </lightning-formatted-text>
+                                        </td>
+                                        <td>
+                                            <!-- onclick function 'openOutletDispenserPage' to open Outlet Dispenser record page -->
+                                            <a onclick={openOutletDispenserPage} data-id={FromAcnOD.od.Id}>
+                                                <lightning-formatted-text value={FromAcnOD.od.Name}>
+                                                </lightning-formatted-text>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <lightning-formatted-text value={FromAcnOD.od.FS_Equip_Type__c}>
+                                            </lightning-formatted-text>
+                                        </td>
+                                        <td>
+                                            <div if:true={FromAcnOD.od.FS_IsActive__c}>
+                                                <lightning-input type="Checkbox" value={FromAcnOD.od.FS_IsActive__c}
+                                                    checked disabled>
+                                                </lightning-input>
+                                            </div>
+                                            <div if:false={FromAcnOD.od.FS_IsActive__c}>
+                                                <lightning-input type="Checkbox" value={FromAcnOD.od.FS_IsActive__c}
+                                                    disabled>
+                                                </lightning-input>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <lightning-formatted-text value={FromAcnOD.od.FS_Status__c}>
+                                            </lightning-formatted-text>
+                                        </td>
+                                    </tr>
+
+                                </template>
+
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="slds-col slds-size_1-of-8"></div>
+            </div>
+            <div class="slds-grid slds-col slds-size_1-of-2">
+                <div class="slds-col slds-size_1-of-8"></div>
+                <div class="slds-col slds-size_2-of-8">
+                    <table class="AccountTableHeaders">
+                        <tbody>
+                            <tr>
+                                <th><span>Account Name</span></th>
+
+                            </tr>
+                            <tr>
+                                <th> <span>ACN</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>Address</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>City</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>State</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>Country</span></th>
+
+                            </tr>
+                            <tr>
+                                <th><span>Zip</span></th>
+
+                            </tr>
+                            <tr></tr>
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="slds-col slds-size_5-of-8">
+                    <table>
+                        <tbody>
+                            <template for:each={FromAccountDetails} for:item="FromAcn">
+                                <tr key={FromAcn.Id}>
+
+                                    <td class="padding1">{FromAcn.Name}</td>
+                                </tr>
+                                <tr key={FromAcn.Id}>
+
+                                    <td class="padding1">{FromAcn.Outlet_ACN__c}</td>
+                                </tr>
+                                <tr key={FromAcn.Id}>
+
+                                    <td class="padding1">{FromAcn.ShippingStreet}</td>
+                                </tr>
+                                <tr key={FromAcn.Id}>
+
+                                    <td class="padding1">{FromAcn.ShippingCity}</td>
+                                </tr>
+                                <tr key={FromAcn.Id}>
+
+                                    <td class="padding1">{FromAcn.ShippingState}</td>
+                                </tr>
+                                <tr key={FromAcn.Id}>
+
+                                    <td class="padding1">{FromAcn.ShippingCountry}</td>
+                                </tr>
+                                <tr key={FromAcn.Id}>
+
+                                    <td class="padding1">{FromAcn.ShippingPostalCode}</td>
+                                </tr>
+
+                            </template>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <div class="slds-col slds-size_1-of-8"></div>
+            </div>
+        </div>
+        <br></br>
+        <div class="slds-grid slds-col slds-size_1-of-1">
+            <div class="slds-grid slds-col slds-size_1-of-2">
+            </div>
+            <div class="slds-grid slds-col AccountNote">
+                    {FROM_ACCOUNT_NOTE}
+            </div>
+        </div>
+    </lightning-record-edit-form>
+<!-- Record form ends here-->
+
+</template>

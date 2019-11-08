@@ -1,0 +1,177 @@
+<!-- FOT_EditArtifact -->
+<!-- Artifact edit custom lightning component
+	Owner : Anwesh - Infosys
+-->
+
+<aura:component implements="lightning:actionOverride,lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:appHostable" 
+                access="global" controller="FOT_EditArtifactController">
+    
+    <aura:attribute name="artifactEnabled" type="Boolean"/>
+    <aura:attribute name="artifact" type="FS_Artifact__c"/>
+    <aura:attribute name="recordId" type="ID" />
+    <aura:attribute name="recordTypeId" type="ID" />
+    <aura:attribute name="label" type="String"/>
+    <aura:attribute name="artifactTypeValues" type="String[]"/>
+    <aura:attribute name="dependArtifactTypeValues" type="String[]"/>
+    <aura:attribute name="secDependArtifactTypeList" type="String[]" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="isWarning" type="boolean" default="false"/>
+    <aura:attribute name="spinner" type="Boolean" default="false"/>
+    <aura:attribute name="responseMsg" type="String"/>
+    <aura:attribute name="profileAccess" type="String"/>
+    <aura:attribute name="artifactType" type="String"/>
+    <aura:attribute name="artVersionValid" type="Boolean" default="true" />
+    <aura:attribute name="ruleFileName" type="String" default="No File Selected.." />
+    <aura:attribute name="overRideFileName" type="String" default="No File Selected.." />
+   <aura:attribute name="artifactKeyValues" type="string[]" default="Name,FS_Enabled__c,FS_Rank__c,FS_Version__c,FS_Artifact_Type__c,FS_Dependency_Artifact_Type__c,DependancyBreakVersion__c,FS_Dependency_M_in_Version__c,FS_Deployment_Group_Rule__c,FS_Rule__c,FS_Overide_Group_Rule__c,FS_S3Path__c,Settings_Update__c" />
+    <aura:attribute name="artifactInitialValues" type="Map" default="{}" />
+    <aura:attribute name="aftereditartifactValues" type="String[]"/>
+    
+    <aura:attribute name="valuechanged" type="boolean" default="false"/>
+    
+    <aura:attribute name="ruleSetFileContent" type="String"/>
+    <aura:attribute name="overRideRuleSetFileContent" type="String"/>
+    
+    <aura:attribute name="ruleSetFileName" type="String"/>
+    <aura:attribute name="overRideRuleSetFileName" type="String"/>
+    
+    <aura:attribute name="showLoadingSpinner" type="boolean" default="false" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+    <div class="slds-grid slds-grid_pull-padded-medium" style="width:100%">
+        <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth">
+            <!-- spinner -->
+            <aura:if isTrue="{!v.showLoadingSpinner}">
+                <div class="slds-spinner_container">
+                    <lightning:spinner aura:id="spinner" variant="brand" size="medium"/>
+                </div>
+            </aura:if>
+            <!-- end spinner -->
+            <ui:inputText aura:id="recordType" label="Record Type"
+                          value="{!v.artifact.RecordType.Name}" disabled="true"  />
+            
+            <ui:inputCheckbox aura:id="enabled"  label="Enabled"
+                              value="{!v.artifact.FS_Enabled__c}" disabled="true" />
+            
+            <ui:inputText aura:id="name" label="Name" maxlength="80"
+                          value="{!v.artifact.Name}" required="true" disabled="true" />
+            
+            <ui:inputNumber aura:id="rank" label="Rank" maxlength="10"
+                            value="{!v.artifact.FS_Rank__c}" required="true" disabled="true" change="{!c.validateRank}" />
+            
+            <ui:inputText aura:id="version"  label="Version" maxlength="15" change="{!c.checkVersion}"                   
+                          value="{!v.artifact.FS_Version__c}" required="true" disabled="true"/>
+        
+            <label class="uiLabel-left form-element__label uiLabel"> <span>Rule Set</span><br/>
+                <a href="{! '/' + v.artifact.FS_Ruleset__c }">{!v.artifact.FS_Ruleset__r.Name}</a>
+            </label>    
+            <ui:inputText required="true" aura:id="artType" label="Artifact Type"
+                          value="{!v.artifact.FS_Artifact_Type__c}" disabled="true"  />
+
+            <ui:inputSelect multiple="false" class="slds-select" label="Dependency Artifact Type" aura:id="depArtType" value="{!v.artifact.FS_Dependency_Artifact_Type__c}" disabled="true" />  
+       
+            <ui:inputText aura:id="minVersion"  label="Dependency Minimum Version" maxlength="15" change="{!c.checkVersion}"                
+                          value="{!v.artifact.FS_Dependency_M_in_Version__c}" disabled="true"/>
+            
+            <ui:inputText aura:id="breakVersion"  label="Dependency Break Version" maxlength="15" change="{!c.checkVersion}"              
+                          value="{!v.artifact.DependancyBreakVersion__c}" disabled="true" />
+            
+            <ui:inputText aura:id="context"  label="Running Context" value="{!v.artifact.Context__c}" maxlength="255" />
+            
+            <ui:inputSelect label="Second Dependency Artifact Type" value="{!v.artifact.Second_Dependency_Artifact_Type__c}" aura:id="secDepArtifactType">                                        
+                <aura:iteration items="{!v.secDependArtifactTypeList}" var="secDArtType" indexVar="index">                                                
+                    <ui:inputSelectOption text="{!secDArtType}" label="" value="{!v.artifact.Second_Dependency_Artifact_Type__c == secDArtType}"/>
+                </aura:iteration>
+            </ui:inputSelect>
+            
+            <ui:inputText aura:id="secArtifactDepMinVersion"  label="Second Dependency Min Version"  change="{!c.checkVersion}"                   
+                          value="{!v.artifact.Second_Dependency_Min_Version__c}" maxlength="10" />
+            
+            <ui:inputText aura:id="secArtifactDepBrkVersion"  label="Second Dependency Break Version" change="{!c.checkVersion}"                   
+                          value="{!v.artifact.Second_Dependency_Break_Version__c}" maxlength="10"  />
+            
+            <ui:inputTextArea aura:id="groupRule" label="Deployment Group Rule" maxlength="4048" value="{!v.artifact.FS_Deployment_Group_Rule__c}" disabled="true" required="true" rows="3"/>
+            
+            <ui:inputTextArea aura:id="rule" required="true" label="Rule" maxlength="4048" value="{!v.artifact.FS_Rule__c}" rows="5" disabled="true"/> 
+            
+            <div style="display:inline-block;" >
+                <div style="display:inline-block;">
+                    <lightning:input aura:id="fileId" onchange="{!c.handleFilesChange}" type="file" name="file" label="" multiple="false"/> 
+                    <div class="slds-text-body_medium slds-text-color_error">{!v.ruleFileName}</div>
+                </div>
+                <div><lightning:button class="slds-button slds-button--brand" label="Upload Rule File to S3" onclick="{!c.handleUploadToAWS}" variant="neutral"/></div>
+            </div>
+             	<a onclick="{!c.viewRuleFileFromAWS}">View Rule File</a>
+            <br/>
+            
+            <ui:inputTextArea aura:id="overrideRule" label="Override Rule" maxlength="4048" value="{!v.artifact.FS_Overide_Group_Rule__c}" disabled="true" rows="5"/>
+            <div style="display:inline-block;" >
+                <div><lightning:input aura:id="fileIdOverRideRul" onchange="{!c.handleFilesChangeOverRideRule}" type="file" name="file" label="" multiple="false"/></div>
+                <div class="slds-text-body_medium slds-text-color_error">{!v.overRideFileName} </div>
+                <div><lightning:button class="slds-button slds-button--brand" label="Upload Override Rule File to S3" onclick="{!c.handleOverRideRuleUploadToAWS}" variant="neutral"/></div>
+            </div>
+            	<a onclick="{!c.viewOverRideRuleFileFromAWS}" target="_new">View Override Rule File</a>
+            <br/>
+            
+            <ui:inputText aura:id="s3path" label="S3 Path" maxlength="256" value="{!v.artifact.FS_S3Path__c}" disabled="true" change="{!c.S3change}" required="false"/>
+            
+            <ui:inputTextArea aura:id="settings" label="Settings Update" maxlength="5000" value="{!v.artifact.Settings_Update__c}" rows="5" disabled="true" change="{!c.settingsChange}" required="false"/>
+  
+            <br/>
+           <!-- <aura:if isTrue="{!v.artifactType != $Label.c.FOT_Settings}"> -->
+            <ui:inputText aura:id="artUUID"  label="UUID"               
+                          value="{!v.artifact.FS_UUID__c}" disabled="true"/> 
+            <!-- </aura:if> -->
+            <label class="uiLabel-left form-element__label uiLabel"> <span>Created By</span><br/>
+                <a href="{! '/' + v.artifact.CreatedById  }">{!v.artifact.CreatedBy.Name}</a>
+            </label> 
+            <br/>
+            <ui:outputDateTime value="{!v.artifact.CreatedDate}" format="MM/DD/YYYY hh:mm a"/>
+            <br/><br/>
+            <label class="uiLabel-left form-element__label uiLabel"> <span>Last Modified By</span><br/>
+                <a href="{! '/' + v.artifact.LastModifiedById }">{!v.artifact.LastModifiedBy.Name}</a>
+            </label>
+            <br/>
+            <ui:outputDateTime value="{!v.artifact.LastModifiedDate}" format="MM/DD/YYYY hh:mm a"/>
+            <br/>
+            <lightning:notificationsLibrary aura:id="notifLibEdit"/><!-- to show the error msg-->
+            
+            <div class="slds-align_absolute-center slds-m-top_small">
+                <lightning:button variant="neutral" label="Cancel" onclick="{!c.clickCancel}" aura:id="cancelBtn" />
+                <lightning:button variant="brand" label="Save" onclick="{!c.clickSave}" aura:id="saveBtn" disabled="true"/>
+            </div>
+            
+            <!-- Modal popup-->
+            <aura:if isTrue="{!v.isOpen}">
+                
+                <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open ">
+                    <div class="slds-modal__container">
+                        <div class="slds-modal__header">
+                            <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModalEdit}">
+                                X
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="header99" class="slds-text-heading--medium"><aura:unescapedHtml value="{!$Label.c.FOT_Artifact_Validation_Success_Header}" /></h2>
+                        </div>
+                        
+                        <div class="slds-modal__content slds-p-around--medium">
+                            <p><aura:unescapedHtml value="{!v.responseMsg}" />.<b> Click Yes to save the record</b>.
+                            </p>
+                        </div>
+                        
+                        <div class="slds-modal__footer">
+                            <button class="slds-button slds-button--neutral" onclick="{!c.closeModalEdit}" >No</button>
+                            <button class="slds-button slds-button--brand" onclick="{!c.toSaveEdit}">Yes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-backdrop slds-backdrop--open"></div>
+                
+            </aura:if>
+            <!-- Modal popup ends-->
+                    
+        </div>
+    </div>
+    <div aura:id = "files-tabperformace"></div>
+</aura:component>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Activation_Date_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISNEW(),Requested_Accelerated_Market_Activation__c &lt; Today())</errorConditionFormula>
+    <errorDisplayField>Requested_Accelerated_Market_Activation__c</errorDisplayField>
+    <errorMessage>It should not be past date.</errorMessage>
+</ValidationRule>

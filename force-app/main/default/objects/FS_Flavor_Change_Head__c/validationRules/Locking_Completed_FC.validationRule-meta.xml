@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Locking_Completed_FC</fullName>
+    <active>true</active>
+    <description>It does not allow user to modify the status once it is cancelled or closed</description>
+    <errorConditionFormula>OR(ISPICKVAL(PRIORVALUE(FS_Flavor_Change_Status__c),&#39;Complete&#39;),ISPICKVAL(PRIORVALUE(FS_Flavor_Change_Status__c),&#39;Cancelled&#39;))&amp;&amp; ISCHANGED(FS_Flavor_Change_Status__c)</errorConditionFormula>
+    <errorMessage>Status for completed or cancelled records cannot be changed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Level__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(RecordType.Name=&#39;FS Flavor Change Chain HQ&#39;,FS_HQ_Chain__r.RecordType.Name=&#39;FS Chain&#39;),&#39;FS Chain&#39;,
+IF(AND(RecordType.Name=&#39;FS Flavor Change Chain HQ&#39;,FS_HQ_Chain__r.RecordType.Name=&#39;FS Headquarters&#39;),&#39;FS Headquarters&#39;,
+IF(RecordType.Name=&#39;FS Flavor Change Installation&#39;,&#39;FS Installation&#39;,
+IF(RecordType.Name=&#39;FS Flavor Change Outlet&#39;,&#39;FS Outlet&#39;,&#39;&#39;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Level</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

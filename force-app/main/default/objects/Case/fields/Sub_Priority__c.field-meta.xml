@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Priority__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Increase volume of service calls - Operational</fullName>
+                <default>false</default>
+                <label>Increase volume of service calls - Operational</label>
+            </value>
+            <value>
+                <fullName>On-site troubleshooting by service team - Operational</fullName>
+                <default>false</default>
+                <label>On-site troubleshooting by service team - Operational</label>
+            </value>
+            <value>
+                <fullName>Barely operational</fullName>
+                <default>false</default>
+                <label>Barely operational</label>
+            </value>
+            <value>
+                <fullName>Non-Operational</fullName>
+                <default>false</default>
+                <label>Non-Operational</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

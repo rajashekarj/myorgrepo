@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FE_Intake_Steering_Committee_FE_Intake_Idea</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Freestyle Intake Steering Committee</label>
+    <queue>FE_Intake_Steering_Comt_Grp</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

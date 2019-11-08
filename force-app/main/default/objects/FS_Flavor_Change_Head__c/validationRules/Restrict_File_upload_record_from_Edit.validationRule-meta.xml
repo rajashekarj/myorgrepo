@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_File_upload_record_from_Edit</fullName>
+    <active>true</active>
+    <description>Only the admin users should be able to</description>
+    <errorConditionFormula>AND( 
+NOT(ISNEW()), 
+ISPICKVAL(FS_FC_Type__c,&#39;File Upload Flavor Change&#39;), 
+AND( 
+NOT($Profile.Name=&#39;System Administrator&#39;), 
+NOT($Profile.Name=&#39;FET System Admin&#39;),
+NOT($Profile.Name=&#39;FS AC_P&#39;),
+NOT($Profile.Name=&#39;FS PIC_P&#39;),
+NOT($Profile.Name=&#39;FS Admin PM_P&#39;),
+NOT($Profile.Name=&#39;FS PM_P&#39;)),OR( 
+!ISCHANGED(FS_SP_go_out__c), 
+!ISCHANGED(FS_Pungent_Change_Indicator__c)), 
+!FS_isBatch__c 
+)</errorConditionFormula>
+    <errorMessage>You do not have sufficient access to update a record created through the file upload option. Please request help of your FET help support member</errorMessage>
+</ValidationRule>

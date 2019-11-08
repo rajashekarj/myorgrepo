@@ -1,0 +1,19 @@
+<apex:page standardController="FS_Outlet_Dispenser__c"  showHeader="false" sidebar="false">
+    <Script type="text/javascript">
+        var validDisp = {!FS_Outlet_Dispenser__c.FS_IsActive__c ==True}; 
+        var errorstring = "Error:\n"; 
+        var errorfound = false; 
+        if(!validDisp ) { 
+        errorstring += "You are not permitted to initiate a flavor change on an inactive Outlet Dispenser record.\n"; 
+        errorfound = true; 
+        } 
+        
+        
+        if(errorfound) { 
+        alert(errorstring); 
+        } else { 
+         sforce.one.navigateToURL('/apex/FSOutletDispenserFlavorChange?odId={!FS_Outlet_Dispenser__c.Id}');
+        }
+    </Script>
+    
+</apex:page>

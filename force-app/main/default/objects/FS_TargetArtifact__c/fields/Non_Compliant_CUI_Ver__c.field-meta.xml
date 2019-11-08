@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Compliant_CUI_Ver__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( ISPICKVAL( Non_Compliant_Id__r.FS_Artifact_Type__c , &#39;CUI&#39;) , Non_Compliant_Id__r.FS_Version__c , &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NonComp CUI Ver</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

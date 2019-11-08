@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FET_BOE_Default_Outlets</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Is_Default_FET_International_Outlet__c</columns>
+    <columns>FS_ACN__c</columns>
+    <columns>ACCOUNT.ADDRESS2_COUNTRY</columns>
+    <columns>Bottler_Name__c</columns>
+    <columns>FS_Bottler_ACN__c</columns>
+    <columns>Created__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.BoE_Outlet</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>FET INTERNATIONAL OUTLET</value>
+    </filters>
+    <filters>
+        <field>Is_Default_FET_International_Outlet__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>FET BOE Default Outlets</label>
+</ListView>

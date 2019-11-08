@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Dispensers_IC_Code_Description__c</name>
+    <picklistValues>
+        <masterLabel>42117R-8 vlv Drop-in</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45737-Variety Tea Tower</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45847R-Bevariety dispenser 23x23 &quot;12-pack w/ MVU</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45886-Space Saver VTT</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45930-BUNN TDO-N-3.5 TEA URN</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45999-BUNN TB3 Tea Brewer</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46265-Mark IV -BG 10BTN/-8-62036 (10 Button, 6 Carb, 2 Non-Carb, Red, Flow Regulated, 3 Feet)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

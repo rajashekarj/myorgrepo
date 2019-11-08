@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Locking_Record_Type_for_Profiles</fullName>
+    <active>true</active>
+    <description>Locking_Record_Type_for_Profiles</description>
+    <errorConditionFormula>AND(OR($Profile.Name=&#39;FS AC_P&#39;,$Profile.Name=&#39;FS PIC_P&#39;,$Profile.Name=&#39;FS PM_P&#39;),ISCHANGED( RecordTypeId))</errorConditionFormula>
+    <errorMessage>This Profile has been restricted to change Record Type</errorMessage>
+</ValidationRule>

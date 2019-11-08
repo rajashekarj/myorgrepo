@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse_Details_Validation_Rule</fullName>
+    <active>true</active>
+    <description>Warehouse_Details_Validation_Rule</description>
+    <errorConditionFormula>AND( RecordType.DeveloperName = &#39;BoE Dispenser&#39; ,
+NOT(CONTAINS($Profile.Name, $Label.Exclude_User)), 
+OR(
+ISPICKVAL( FS_Status__c , &#39;In Inventory&#39;), 
+ISPICKVAL( FS_Status__c , &#39;Dispenser Delivered&#39;), 
+ISPICKVAL(FS_Status__c , &#39;Assigned to Outlet&#39;) 
+), FS_IsActive__c = true, IF(Warehouse_Details__c==&#39;&#39;, true, false))</errorConditionFormula>
+    <errorDisplayField>Warehouse_Details__c</errorDisplayField>
+    <errorMessage>Warehouse Details Field is Required</errorMessage>
+</ValidationRule>

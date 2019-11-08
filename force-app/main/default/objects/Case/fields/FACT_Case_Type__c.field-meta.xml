@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACT_Case_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Case Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Connectivity Issue</fullName>
+                <default>false</default>
+                <label>Connectivity Issue</label>
+            </value>
+            <value>
+                <fullName>Enrollment Issue</fullName>
+                <default>false</default>
+                <label>Enrollment Issue</label>
+            </value>
+            <value>
+                <fullName>Consumption Issue</fullName>
+                <default>false</default>
+                <label>Consumption Issue</label>
+            </value>
+            <value>
+                <fullName>Alignment Issue</fullName>
+                <default>false</default>
+                <label>Alignment Issue</label>
+            </value>
+            <value>
+                <fullName>Brand Selection</fullName>
+                <default>false</default>
+                <label>Brand Selection</label>
+            </value>
+            <value>
+                <fullName>Relocation / AMOA</fullName>
+                <default>false</default>
+                <label>Relocation / AMOA</label>
+            </value>
+            <value>
+                <fullName>Software / Content</fullName>
+                <default>false</default>
+                <label>Software / Content</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

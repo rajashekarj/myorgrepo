@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllFieldsMandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(Type__c ),
+ISBLANK( Map_Key__c),
+ISBLANK( Map_Value__c )
+)</errorConditionFormula>
+    <errorMessage>All Fields are Mandatory</errorMessage>
+</ValidationRule>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Primary_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Backroom</fullName>
+                <default>false</default>
+                <label>Backroom</label>
+            </value>
+            <value>
+                <fullName>Carb Subsystem</fullName>
+                <default>false</default>
+                <label>Carb Subsystem</label>
+            </value>
+            <value>
+                <fullName>CGP/Airvent</fullName>
+                <default>false</default>
+                <label>CGP/Airvent</label>
+            </value>
+            <value>
+                <fullName>Cold Plate</fullName>
+                <default>false</default>
+                <label>Cold Plate</label>
+            </value>
+            <value>
+                <fullName>Customer Issues</fullName>
+                <default>false</default>
+                <label>Customer Issues</label>
+            </value>
+            <value>
+                <fullName>Drain</fullName>
+                <default>false</default>
+                <label>Drain</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>General Chassis</fullName>
+                <default>false</default>
+                <label>General Chassis</label>
+            </value>
+            <value>
+                <fullName>General Electrical</fullName>
+                <default>false</default>
+                <label>General Electrical</label>
+            </value>
+            <value>
+                <fullName>General Hydraulic</fullName>
+                <default>false</default>
+                <label>General Hydraulic</label>
+            </value>
+            <value>
+                <fullName>Ice Subsystem</fullName>
+                <default>false</default>
+                <label>Ice Subsystem</label>
+            </value>
+            <value>
+                <fullName>Modem/Connectivity</fullName>
+                <default>false</default>
+                <label>Modem/Connectivity</label>
+            </value>
+            <value>
+                <fullName>Nozzle</fullName>
+                <default>false</default>
+                <label>Nozzle</label>
+            </value>
+            <value>
+                <fullName>Product Agitation</fullName>
+                <default>false</default>
+                <label>Product Agitation</label>
+            </value>
+            <value>
+                <fullName>SPM-Micro</fullName>
+                <default>false</default>
+                <label>SPM-Micro</label>
+            </value>
+            <value>
+                <fullName>Valves</fullName>
+                <default>false</default>
+                <label>Valves</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

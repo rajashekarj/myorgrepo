@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Artifact Ruleset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rulesets</value>
+    </caseValues>
+    <layouts>
+        <layout>Artifact Ruleset Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MDM App Artifact Ruleset Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label/>
+        <name>Default</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>FOT_Check_RuleSetName_For_Spaces</name>
+    </validationRules>
+</CustomObjectTranslation>

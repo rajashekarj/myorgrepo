@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Dispenser_Type__c</fullName>
+    <description>FS Dispenser Type</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter dispenser type</inlineHelpText>
+    <label>FS Dispenser Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2000 Series</fullName>
+                <default>false</default>
+                <label>2000 Series</label>
+            </value>
+            <value>
+                <fullName>3100 Series</fullName>
+                <default>false</default>
+                <label>3100 Series</label>
+            </value>
+            <value>
+                <fullName>6000 Series</fullName>
+                <default>false</default>
+                <label>6000 Series</label>
+            </value>
+            <value>
+                <fullName>7000 Series</fullName>
+                <default>false</default>
+                <label>7000 Series</label>
+            </value>
+            <value>
+                <fullName>7100 Series</fullName>
+                <default>false</default>
+                <label>7100 Series</label>
+            </value>
+            <value>
+                <fullName>8000 Series</fullName>
+                <default>false</default>
+                <label>8000 Series</label>
+            </value>
+            <value>
+                <fullName>9000 Series</fullName>
+                <default>false</default>
+                <label>9000 Series</label>
+            </value>
+            <value>
+                <fullName>9100 Series</fullName>
+                <default>false</default>
+                <label>9100 Series</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

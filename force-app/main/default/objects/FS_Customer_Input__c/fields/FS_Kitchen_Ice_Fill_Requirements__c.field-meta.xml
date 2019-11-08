@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Kitchen_Ice_Fill_Requirements__c</fullName>
+    <externalId>false</externalId>
+    <label>What type of ice is used for Manual Fill</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hard</fullName>
+                <default>false</default>
+                <label>Hard</label>
+            </value>
+            <value>
+                <fullName>Approved Soft</fullName>
+                <default>false</default>
+                <label>Approved Soft</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assign_To_FACT</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Escalate To FACT</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+
+var caseObj = new sforce.SObject(&quot;Case&quot;);
+caseObj.id = &#39;{!Case.Id}&#39;; 
+caseObj.Escalated_to_FACT__c = true;
+caseObj.Status = &#39;Assigned&#39;;
+caseObj.Sub_Status__c = &#39;FACT On Hold&#39;;
+sforce.connection.AssignmentRuleHeader = {} 
+sforce.connection.assignmentRuleHeader = {useDefaultRule:true}; 
+sforce.connection.emailHeader = {triggerUserEmail:true}; 
+var result = sforce.connection.update([caseObj]);
+if (result[0].success == &#39;false&#39;) {
+alert(result[0].errors.message);
+}
+else {
+location.reload(true);
+}</url>
+</WebLink>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_TIWF1__c</fullName>
+    <externalId>false</externalId>
+    <label>Requirements WF</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Action Required - Existing WF Does Not Meet CCFS WF Policy- Approved WF Shipped Prior to Install</fullName>
+                <default>false</default>
+                <label>Action Required - Existing WF Does Not Meet CCFS WF Policy- Approved WF Shipped Prior to Install</label>
+            </value>
+            <value>
+                <fullName>Action Required - Outlet Not Equipped w/WF- Approved WF Shipped Prior to Install</fullName>
+                <default>false</default>
+                <label>Action Required - Outlet Not Equipped w/WF- Approved WF Shipped Prior to Install</label>
+            </value>
+            <value>
+                <fullName>No Action Required - COM Sending WF to Outlet Prior to Install, Approved by COM</fullName>
+                <default>false</default>
+                <label>No Action Required - COM Sending WF to Outlet Prior to Install, Approved by COM</label>
+            </value>
+            <value>
+                <fullName>No Action Required - Existing WF meets CCFS Policy, Approved by COM</fullName>
+                <default>false</default>
+                <label>No Action Required - Existing WF meets CCFS Policy, Approved by COM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

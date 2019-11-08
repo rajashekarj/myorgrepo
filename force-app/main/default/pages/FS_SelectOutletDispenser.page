@@ -1,0 +1,117 @@
+<apex:page standardController="FS_Installation__c" extensions="FS_SelectOutletDispenser"  showHeader="false" sidebar="false">
+        
+    <apex:stylesheet value="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/ui-lightness/jquery-ui.css"/>    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" ></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <apex:includeScript value="{!URLFOR($Resource.jquerymin)}"  />
+    
+    <apex:form id="formId"> 
+     
+            
+        <c:FSActionStatusElement ></c:FSActionStatusElement>
+        <apex:pageMessages ></apex:pageMessages>     
+        
+        <apex:pageBlock id="mainpb">
+            
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton id="EditButton" value="Edit"  rendered="{!!editMode && contains(profileString,$Profile.Name)}" reRender="formId,mainpb,pbId2" Action="{!changeMode}"  />
+                <apex:commandButton id="saveButton" value="Save" rendered="{!editMode}" action="{!deleteProcess}" reRender="formId,mainpb,pbId2" status="fetchStatus" />
+                <apex:commandButton id="cancelButton" value="Cancel" rendered="{!editMode}" action="{!cancel}" reRender="formId,mainpb,pbId2" status="fetchStatus"/>
+            </apex:pageBlockButtons>
+            
+            <apex:outputPanel rendered="{!refreshPage}">
+                <script>
+                
+                 window.top.location='/{!FS_Installation__c.id}';
+                </script> 
+            </apex:outputPanel> 
+            
+            <apex:pageBlockTable value="{!FSOutletDispensers}" var="c" id="table">          
+                
+                <apex:column >                    
+                    <apex:inputCheckbox title="{!c.con.FS_Equip_Type__c}" disabled="{!(!c.con.FS_IsActive__c || !editMode || c.isFormLinked)}" value="{!c.selected}" styleClass="chkSelected" />                   
+                </apex:column>            
+                
+                <apex:column headerValue="Outlet Dispenser" >
+                    <apex:outputLink target="_blank" value="/{!c.con.Id}">{!c.con.Name}</apex:outputLink>
+                </apex:column>
+                
+                <apex:column headerValue="JDE Serial Number/Asset Tag" value="{!c.con.FS_Serial_Number2__c}" />
+                
+                <apex:column headerValue="Equipment Type" value="{!c.con.FS_Equip_Type__c}"/>              
+                
+                <apex:column headerValue="Brandset" > 
+                    <apex:outputLink target="_blank" value="/{!associateMap[c.con.Id].FS_Brandset__c}" >{!associateMap[c.con.Id].Brandset_Name__c}</apex:outputLink>
+                </apex:column>
+                
+                <apex:column headerValue="NonBranded Water" value="{!associateMap[c.con.Id].FS_NonBranded_Water__c}" /> 
+                
+                <apex:column headerValue="Valid Fill" value="{!c.con.FS_Valid_Fill__c}" />               
+                
+                <apex:column headerValue="Active (A) / Inactive (I)" value="{!c.con.FS_IsActive__c}"/>
+                
+                <apex:column >                    
+                    <apex:facet name="header">Active Date<img src="/s.gif" class="helpIcon" title="{!$ObjectType.FS_Outlet_Dispenser__c.Fields.FS_Dispenser_Active_Date__c.inlineHelpText}" height="13" width="13" /></apex:facet>                                           
+                    <apex:outputField value="{!c.con.FS_Dispenser_Active_Date__c}"/> 
+                </apex:column>                
+                
+                <apex:column >                    
+                    <apex:facet name="header">InActive Date<img src="/s.gif" class="helpIcon" title="{!$ObjectType.FS_Outlet_Dispenser__c.Fields.FS_Dispenser_Inactive_Date__c.inlineHelpText}" height="13" width="13" /></apex:facet>                                           
+                    <apex:outputField value="{!c.con.FS_Dispenser_Inactive_Date__c}"/> 
+                </apex:column>
+                
+                <apex:column headerValue="Previous Installation">
+                    <apex:outputLink target="_blank" value="/{!c.con.Installation__c}">{!c.con.Installation__r.Name}</apex:outputLink>
+                </apex:column>                
+                
+                <apex:column headerValue="RI4W Transaction" > 
+                    <apex:outputLink target="_blank" value="/{!c.con.Relocated_Installation__c}">{!c.con.Relocated_Installation__r.Name}</apex:outputLink>                    
+                </apex:column>
+                
+                <apex:column > 
+                    <apex:facet name="header">                    
+                        RO4W/Removal/Replacement<br/>Transaction 
+                    </apex:facet>
+                    <apex:outputLink target="_blank" value="/{!c.con.FS_Other_PIA_Installation__c}">{!c.con.FS_Other_PIA_Installation__r.Name}</apex:outputLink>                    
+                </apex:column>   
+                
+                
+                               
+                
+            </apex:pageBlockTable> 
+            
+       
+            
+            
+
+        </apex:pageBlock>     
+        
+      
+        
+    </apex:form>
+    
+    <script type="text/javascript">
+    j$ = jQuery.noConflict();
+    
+    function isChecked(e) {
+        if(j$(".chkSelected:checked").length == 0){
+            e.preventDefault();
+            alert('Select at least one dispenser serial number within the ' +'{!FS_Installation__c.RecordType.Name}'+' Dispenser Information section');
+        }
+    }
+    
+    function checkValue(){ 
+        createPlan();
+        /*var optValue = '{!optionsList}';
+        var recordValue = seleDisp.title;
+        if(optValue.indexOf(recordValue)<0){
+            alert('The platform/s you are trying to select does not match the Platform/s selected on the Platform Type/s field of this transaction. Please select the correct dispenser serial number or first update the Platform Type\'s field value/s');
+            
+            seleDisp.checked  = false;
+        }*/
+    }
+    </script>  
+    
+   
+</apex:page>

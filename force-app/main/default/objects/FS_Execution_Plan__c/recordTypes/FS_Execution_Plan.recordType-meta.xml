@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Execution_Plan</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Execution_Plan_Compact_Layout</compactLayoutAssignment>
+    <description>Standard Execution Plan Page record type</description>
+    <label>Execution Plan</label>
+    <picklistValues>
+        <picklist>FS_7000_IM_Adapter_Kit__c</picklist>
+        <values>
+            <fullName>46412%3A Ice Maker Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46413%3A Lid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Misc_Kits__c</picklist>
+        <values>
+            <fullName>XXXXX%3A Barqs%2FDr%2E Pepper label kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Barqs%2FPibb label kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Soft Ice Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Tall Cup Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_All_Units_Removed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Are_cabinets_getting_relocated__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Base_Cartridge__c</picklist>
+        <values>
+            <fullName>46118 %3A Base for Cartridge Storage and 20gal Booster</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Booster_Shelf__c</picklist>
+        <values>
+            <fullName>43537 %3A Booster Shelf 4%2E4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cancelled_Reasons__c</picklist>
+        <values>
+            <fullName>Credit Restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate EP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiating Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Prep Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unwilling to pay by Credit Card%2FBank Draft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cartridge_HFCS_Rack__c</picklist>
+        <values>
+            <fullName>46079 %3A Cartridge%2FHFCS Backroom Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46246 %3A Freestyle 41%22 Rack with 2 Flat Pans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46280 %3A 41%22 Manitowoc %28Wendy%E2%80%99s Only%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cartridge_Rack_Booster__c</picklist>
+        <values>
+            <fullName>46111 %3A 38%22 Rack with Cartridge Storage%2F20gal Booster</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cartridge_Rack_Only__c</picklist>
+        <values>
+            <fullName>46110 %3A 38%22 Rack with Cartridge Storage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Crew_Serve_Dispenser__c</picklist>
+        <values>
+            <fullName>46102 %3A Freestyle GS2 Crew Serve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46129 %3A Freestyle GS2 Crew Serve - Wood Crate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Customer_Ice_Fill_Spec__c</picklist>
+        <values>
+            <fullName>1%2F2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Davaco_Requirements__c</picklist>
+        <values>
+            <fullName>Davaco%3A New Construction Site Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment %2B Detailed Scope Summary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment %2B GFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Site Assessment Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power House</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Execution_On_Hold_Cancelled__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Execution_Plan_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On-Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_External_Modems__c</picklist>
+        <values>
+            <fullName>46298%3A MultiModem - ATT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46299%3A MultiModem - Verizon</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Freestyle_7K_Only_Wht_is_dispsr_Confi__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Freestyle_dispenser_will_go_where__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>New location %E2%80%93 Explain in comments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same space as legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To the LEFT of legacy unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To the RIGHT of legacy unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown%2C consult with customer to determine optimum location</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Frestyle_7k_only_NNS_sweetnr_wil_go_w__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>FOH -  Underneath dispenser in cabinet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown %E2%80%93 site assessment will determine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_HFCS_sweetener_will_go_where__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>BOH - Existing legacy BIB rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOH - New BIB rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOH -  Underneath dispenser in cabinet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown %E2%80%93 site assessment will determine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Ice_Maker_Company__c</picklist>
+        <values>
+            <fullName>Cornelius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoshizaki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice-O-Matic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manitowoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scotsman</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_a_top_mount_ice_maker_planned_Loc__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No%2C manual fill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C If SA determines adequate ceiling height</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C New ice maker ordered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C Use existing ice-maker if approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_ancillary_equipment_such_Tea_Coffe__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No %E2%80%93 Does not apply to this install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes %E2%80%93 Existing Tea %26 Coffee dispenser%28s%29 will remain in same locations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes %E2%80%93 New Tea %26 Coffee dispensers will be added%2C details provided in project plan</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_equipment_storage_needed_at_the_SP__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_there_a_top_mounted_icemaker__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_ths_Sngle_or_Multiple_dispsr_Instl__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Multiple</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Label_Kits__c</picklist>
+        <values>
+            <fullName>141958%3A Barqs%2FDr%2E Pepper label kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Barqs%2FPibb label kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Lid_IM_Adapter__c</picklist>
+        <values>
+            <fullName>46000 %3A FSIB Red Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46001 %3A FSIB Silver Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46002 %3A FSIB Black Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46004 %3A Hoshizaki Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46005 %3A Hoshizaki Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46006 %3A Hoshizaki Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46007 %3A Scotsman E686 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46008 %3A Scotsman E686 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46009 %3A Scotsman E686 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46010 %3A Scotsman 306%2F456%2F954 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46011 %3A Scotsman 306%2F456%2F954 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46012 %3A Scotsman 306%2F456%2F954 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46013 %3A Manitowoc S422 S322 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46014 %3A Manitowoc S422 S322 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46015 %3A Manitowoc S422 S322 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46016 %3A Mani- IB600C IB800C IB1000C Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46017 %3A Mani- IB600C IB800C IB1000C Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46018 %3A Mani- IB600C IB800C IB1000C Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46032 %3A Ice-O-Matic 520 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46033 %3A Ice-O-Matic 520 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46034 %3A Ice-O-Matic 520 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46371 %3A 30%22 Hoshizaki KMD 850%2F901</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46372 %3A 30%22 Manitowoc 450%2F500%2F606%2F800%2F906</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46375 %3A 30%E2%80%9D IK ICE O 30%E2%80%9D 250%2F406%2F1006</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Manifold__c</picklist>
+        <values>
+            <fullName>46094%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46095%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46096%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46098%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46278%3A Brass Universal Manifold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Misc_Adapter__c</picklist>
+        <values>
+            <fullName>46303 Hoshizaki Funnel Kit for Models%3A KM-280%2C -320%2C -500%2C -501%2C -515%2C -630M%2C -650M %26 -600MAH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46377 %3A Hoshizaki Funnel Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Platform_Type__c</picklist>
+        <values>
+            <fullName>6000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9100</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Post_Installation_Activity__c</picklist>
+        <values>
+            <fullName>Relocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pump_Kit__c</picklist>
+        <values>
+            <fullName>45916 %3A HFCS Pump Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46022 %3A High Altitude Pump Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Rack_A__c</picklist>
+        <values>
+            <fullName>45897 %3A Rack A %2816x18%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Rack_B__c</picklist>
+        <values>
+            <fullName>45898 %3A Rack B %2829x18%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Rack_C__c</picklist>
+        <values>
+            <fullName>45899 %3A Rack C %2841x18%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Rack_D__c</picklist>
+        <values>
+            <fullName>44236%3A 15%E2%80%9D Wide Single  BIB Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44238%3A 28%E2%80%9D Wide Double  BIB Rack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Reason_for_Relocation__c</picklist>
+        <values>
+            <fullName>Closing of Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Regulator__c</picklist>
+        <values>
+            <fullName>45819 %3A CO2 Regulator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Relocation_Store_Detail__c</picklist>
+        <values>
+            <fullName>Closing of Old Outlet and transfer to Existing Outlet with Freestyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closing of Old Outlet and transfer to New Outlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial relocation from old outlet and transfer to Existing Outlet with Freestyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial relocation from old outlet and transfer to new outlet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Replacement_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requirements__c</picklist>
+        <values>
+            <fullName>Action Required - Existing WF Does Not Meet CCFS WF Policy- Approved WF Shipped Prior to Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Action Required - Outlet Not Equipped w%2FWF- Approved WF Shipped Prior to Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Action Required - COM Sending WF to Outlet Prior to Install%2C Approved by COM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Action Required - Existing WF meets CCFS Policy%2C Approved by COM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Responsible_for_Coord_IM_Activity__c</picklist>
+        <values>
+            <fullName>COM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Self_Serve_Dispenser__c</picklist>
+        <values>
+            <fullName>46099 %3A Freestyle GS1 Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46100 %3A Freestyle GS1 Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46101 %3A Freestyle GS1 Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46126 %3A Freestyle GS1 Silver - Wood Crate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46127 %3A Freestyle GS1 Red  - Wood Crate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46128 %3A Freestyle GS1 Black  - Wood Crate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46130 %3A Freestyle GS1 Red %E2%80%93 Cruise Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46293 %3A Freestyle GS1 Silver - Cruise Ship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Shelf_A__c</picklist>
+        <values>
+            <fullName>46065 %3A Slant Shelf 15inch Wide</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Shelf_B__c</picklist>
+        <values>
+            <fullName>46063 %3A Slant Shelf 28inch Wide</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Shelf_C__c</picklist>
+        <values>
+            <fullName>46064 %3A Slant Shelf 41inch Wide</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Soft_Ice_Kit__c</picklist>
+        <values>
+            <fullName>46430%3A Soft Ice Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Tall_Cup_Kit__c</picklist>
+        <values>
+            <fullName>141959%3A Tall Cup Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Top_Off_Button__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Tray_Kit__c</picklist>
+        <values>
+            <fullName>46404 %26 46405 %3A Single %26 Double Tray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46404 %3A Single Tray</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Type_of_Relocation__c</picklist>
+        <values>
+            <fullName>Disconnect Reconnect %28Same day for on-site work%29 %E2%80%93 1 work order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnect Reconnect %28Store dispenser%28s%29 on site%29 - 2 work orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disconnect Reconnect %28Stored off-site at SP%29 - 2 work orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO4Ws %28Dispenser to be moved outside of Primary SP Territory %E2%80%93 SP to Store%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO4Ws %28Dispenser to be moved outside of Primary SP Territory %E2%80%93 Same day%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO4Ws %28Dispenser to be moved within Primary SP Territory %E2%80%93 SP to Store%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO4Ws %28Dispenser to be moved within Primary SP Territory %E2%80%93 Same Day%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relocation within four walls %28Same day for on-site work%29 %E2%80%93 1 work order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relocation within four walls %28Store dispenser%28s%29 on site%29 - 2 work orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relocation within four walls %28Stored off-site at SP%29 - 2 work orders</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Type_of_Removal__c</picklist>
+        <values>
+            <fullName>BK ITP Remodel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of Ownership %28New ACN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OOB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partial Removal %28not replacing with legacy%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-install Legacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Remodel</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Type_of_Replacement__c</picklist>
+        <values>
+            <fullName>Damaged Freestyle Unit%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Freestyle Unit%28s%29-Disaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective Freestyle Unit%28s%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reman Equipment %28CCR OFFICES ONLY%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Updated_Post_Installation_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initiated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Vacuum_Regulator__c</picklist>
+        <values>
+            <fullName>46409 %3A Regulator Vacuum %28Series 7000%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Valid_Fill__c</picklist>
+        <values>
+            <fullName>46245 %3A Valid Fill Conversion Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_WF_Supplier__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Booster__c</picklist>
+        <values>
+            <fullName>43362 %3A Water Booster 2%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46282 %3A Water Booster 4%2E4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Booster_will_go_where__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>BOH - On top of HFCS Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BOH- Near water filter system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOH %E2%80%93 Near Freestyle unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No change - Current location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No water booster required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown %E2%80%93 site assessment will determine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_will_go_where__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>BOH %E2%80%93 Near water supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FOH %E2%80%93 Near Freestyle unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No change - Keep in current location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown %E2%80%93 site assessment will determine</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_What_type_of_beverage_station_is_this__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Both Self %26 Crew Serve %28multiple units%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crew Serve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Serve</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_What_type_of_install_is_this__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Existing outlet - Dispenser swap-out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New construction - New Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remodel %E2%80%93 Reinstall</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Wired_Solution_Required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_X7000_Series_Dispenser__c</picklist>
+        <values>
+            <fullName>46379%3A Extended Splashplate - without Legs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46401%3A Standard Splashplate with Driptray%2C Cuprest and optional leg kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46402%3A SUBWAY Extended Splashplate - without Legs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46403%3A SUBWAY Standard Splashplate with Driptray%2C Cuprest and optional leg kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_backroom_ancillary_equipment_getting__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_base_cabinet_or_replacement_counter__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No%2C Not at this time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown %E2%80%93 Site assessment will determine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C Both Self-Serve and Crew Serve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C Crew Serve Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C Self-Serve Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_a_legacy_bar_gun_being_removed_or_ins__c</picklist>
+        <values>
+            <fullName>-None-</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No%2C Not at this time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes%2C See comment section</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>On_Hold_Reasons__c</picklist>
+        <values>
+            <fullName>Credit Restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiating Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Prep Cost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unwilling to pay by Credit Card%2FBank Draft</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rack_Under_Counter__c</picklist>
+        <values>
+            <fullName>44236%3A 15%E2%80%9D Wide Single BIB Rack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44238%3A 28%E2%80%9D Wide Double BIB Rack</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

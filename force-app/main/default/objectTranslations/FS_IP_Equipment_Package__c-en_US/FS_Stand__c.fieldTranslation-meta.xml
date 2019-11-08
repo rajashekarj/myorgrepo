@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Stand__c</name>
+    <picklistValues>
+        <masterLabel>46449: 7000/7100 Stand (Account Pay)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46449: 7000/7100 Stand (Customer Pay)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46449: FS7000 Stand</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46449: FS7000 Stand (Account Pay)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46449: FS7000 Stand (Customer Pay)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Type_of_Relocation__c</name>
+    <picklistValues>
+        <masterLabel>Disconnect Reconnect (Same day for on-site work) â€“ 1 work order</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnect Reconnect (Store dispenser(s) on site) - 2 work orders</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disconnect Reconnect (Stored off-site at SP) - 2 work orders</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Address</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ SP to Store)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ Same day)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ SP to Store)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ Same Day)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relocation within four walls (Same day for on-site work) â€“ 1 work order</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relocation within four walls (Store dispenser(s) on site) - 2 work orders</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Relocation within four walls (Stored off-site at SP) - 2 work orders</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<apex:page standardController="FS_Execution_Plan__c" extensions="FSExecutionPlanInlineWarningController" 
+           action="{!checkSyncValues}" showHeader="false" sidebar="false" standardStylesheets="true">
+    <style>
+        .pbError{
+            font-weight: bold; 
+            color: #c00;
+            text-align: left;
+        }
+    </style>    
+   <apex:outputPanel rendered="{!displayErrorSync}">        
+        <div class="pbError" style="display: block;">Error: {!$Label.IP_EP_Inline_Platform_Error}</div>
+    </apex:outputPanel>
+</apex:page>

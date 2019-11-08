@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Scheduled_Dispensers__c</fullName>
+    <externalId>false</externalId>
+    <formula>FS_of_7000_Series_Units_being_relocated__c + FS_of_8000_Series_units_being_relocated__c + FS_of_9000_Series_units_being_relocated__c  + FS_Planned_7000_Freestyle_Disp__c + FS_Planned_CrewServe_Freestyle_Disp__c + FS_PlannedSelfServeFreestyleDisp__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Number of Scheduled Dispensers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

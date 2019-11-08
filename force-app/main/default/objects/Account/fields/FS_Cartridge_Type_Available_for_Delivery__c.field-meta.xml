@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cartridge_Type_Available_for_Delivery__c</fullName>
+    <description>this will be of multi select picklist type (values will be 6000 Platform,6050 Platform,7000 Platform, 8000 Platform, 9000 Platform,9100 Platform)</description>
+    <externalId>false</externalId>
+    <label>Cartridge Type Available for Delivery</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>6000 Platform</fullName>
+                <default>false</default>
+                <label>6000 Platform</label>
+            </value>
+            <value>
+                <fullName>7000 Platform</fullName>
+                <default>false</default>
+                <label>7000 Platform</label>
+            </value>
+            <value>
+                <fullName>7100 Platform</fullName>
+                <default>false</default>
+                <label>7100 Platform</label>
+            </value>
+            <value>
+                <fullName>8000 Platform</fullName>
+                <default>false</default>
+                <label>8000 Platform</label>
+            </value>
+            <value>
+                <fullName>9000 Platform</fullName>
+                <default>false</default>
+                <label>9000 Platform</label>
+            </value>
+            <value>
+                <fullName>9100 Platform</fullName>
+                <default>false</default>
+                <label>9100 Platform</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

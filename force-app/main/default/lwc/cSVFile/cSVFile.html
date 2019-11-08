@@ -1,0 +1,10 @@
+<template>
+    <lightning-layout >
+        <div class="slds-p-around_x-large" style="background-color: white">
+            <h1 class="slds-text-heading_small">{messagefromcontroller} </h1>
+            <input type="file" id="fileUpload"  data-id="file"/>
+            <input type="button" id="upload" value="Upload" onclick={Upload} ></input><br>
+            <a href="" data-id="report" style="display: none;font-size: 15px;">Download Report</a>
+        </div>
+    </lightning-layout>
+</template>

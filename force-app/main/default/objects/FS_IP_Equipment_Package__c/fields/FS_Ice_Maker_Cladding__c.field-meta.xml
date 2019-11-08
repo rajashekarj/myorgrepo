@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Ice_Maker_Cladding__c</fullName>
+    <externalId>false</externalId>
+    <label>Ice Maker Cladding</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>XXXXX: Ice Maker Cladding Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: Ice Maker Cladding Kit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: Ice Maker Cladding Kit</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

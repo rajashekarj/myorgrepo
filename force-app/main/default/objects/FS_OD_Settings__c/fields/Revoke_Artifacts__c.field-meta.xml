@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revoke_Artifacts__c</fullName>
+    <defaultValue>&quot;No&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Revoke Artifacts</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>true</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Revoke Now</fullName>
+                <default>false</default>
+                <label>Revoke Now</label>
+            </value>
+            <value>
+                <fullName>Revoke At Next Install</fullName>
+                <default>false</default>
+                <label>Revoke At Next Install</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

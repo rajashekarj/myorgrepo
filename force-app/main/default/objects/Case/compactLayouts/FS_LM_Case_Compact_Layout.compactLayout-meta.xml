@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_LM_Case_Compact_Layout</fullName>
+    <fields>CaseNumber</fields>
+    <fields>FS_New_Case_Type__c</fields>
+    <fields>Status</fields>
+    <fields>LM_Sub_Status__c</fields>
+    <fields>OwnerId</fields>
+    <fields>RecordTypeId</fields>
+    <label>LM Case Compact Layout</label>
+</CompactLayout>

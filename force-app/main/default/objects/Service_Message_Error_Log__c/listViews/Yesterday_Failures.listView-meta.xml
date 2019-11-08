@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yesterday_Failures</fullName>
+    <columns>NAME</columns>
+    <columns>Error_Code__c</columns>
+    <columns>Error_Message__c</columns>
+    <columns>FS_Serial_Number_Asset_Tag__c</columns>
+    <columns>Outlet_Name__c</columns>
+    <columns>Outlet_ACN__c</columns>
+    <columns>Outlet_Dispenser__c</columns>
+    <columns>Request_Message__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Resend__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>YESTERDAY</value>
+    </filters>
+    <label>Yesterday Failures</label>
+</ListView>

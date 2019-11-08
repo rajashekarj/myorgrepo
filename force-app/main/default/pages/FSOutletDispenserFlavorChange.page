@@ -1,0 +1,94 @@
+<apex:page controller="FSOutletDispenserFlavorChange" tabStyle="FS_Outlet_Dispenser__c" sidebar="false">
+  <apex:form id="formId">
+    <style> 
+        .dateFormat{
+           visibility:hidden;
+        }
+    </style>
+    <c:FSActionStatusElement ></c:FSActionStatusElement>
+    
+    <apex:pageMessages /> 
+    
+    <apex:pageblock id="pbId1">
+    <apex:pageBlockButtons location="top">
+           <apex:commandButton value="Back" action="{!backToPrevious}"/>
+    </apex:pageBlockButtons>    
+        <apex:pageblocksection title="List of Platform and Brandsets" columns="6" id="pbsId" collapsible="true">
+          
+        <apex:pageBlockTable value="{!newFlavorChangeData}" var="newFCData" >
+            
+            <apex:column headerValue="Platform" value="{!newFCData.FS_Platform__c}"/>
+            
+            <apex:column headerValue="Current Brandset #" value="{!newFCData.FS_Current_Brandset_Name_txt__c}"/>
+            
+            <apex:column headerValue=" Current Brandset" >
+                <apex:outputField value="{!newFCData.FS_Current_Brandset__c}"/>
+            </apex:column>
+            
+            <apex:column headerValue="New Brandset" > 
+                <apex:inputField value="{!newFCData.FS_New_Brandset__c}" />
+            </apex:column>
+            
+            <apex:column headerValue="Brandset Effective Date" > 
+                <apex:inputField value="{!newFCData.FS_BS_Effective_Date__c}"/>
+            </apex:column>
+            <!--
+            <apex:column headerValue="Hide/Show Dasani" > 
+                <apex:inputField value="{!newFCData.FS_Hide_Show_Dasani__c}"/>
+            </apex:column>
+            
+            <apex:column > 
+             <apex:facet name="header">
+                 Dasani Effective Date
+             </apex:facet>
+                <apex:inputField value="{!newFCData.FS_DA_Effective_Date__c}"/>
+            </apex:column>
+           -->
+             <apex:column headerValue="Non-Branded Water" > 
+                <apex:inputField value="{!newFCData.FS_Hide_Show_Water_Button__c}"/>
+            </apex:column>
+            
+             <apex:column > 
+             <apex:facet name="header">
+                  Non-Branded Water Effective Date
+             </apex:facet>
+                <apex:inputField value="{!newFCData.FS_WA_Effective_Date__c}"/>
+            </apex:column>
+            
+            <apex:column headerValue="Pungent Change Indicator" > 
+                <apex:inputField value="{!newFCData.FS_Pungent_Change_Indicator__c}"/>
+            </apex:column>
+            
+            <apex:column headerValue="SP needs to go out?" > 
+                <apex:inputField value="{!newFCData.FS_SP_go_out__c}"/>
+            </apex:column>
+            
+            <apex:column > 
+            <apex:facet name="header">
+              Requested Date 
+              <img src="/s.gif" class="helpIcon" title="{!$ObjectType.FS_Flavor_Change_Head__c.fields.FS_Requested_Date__c.inlineHelpText}" height="10" width="10" /><br/><br/>
+          
+            </apex:facet>
+             
+             <apex:inputField value="{!newFCData.FS_Flavor_Change_Requested_Date__c}"/>
+            </apex:column>
+            
+            <apex:column headerValue="" style="display:none"> 
+                <apex:inputField value="{!newFCData.FS_Platform__c}" style="display:none"/>
+            </apex:column>
+
+        </apex:pageBlockTable>
+         
+        </apex:pageblocksection>
+
+        <CENTER>
+        <apex:pageBlockButtons location="bottom" >
+            <apex:commandButton value="Save" reRender="pbId1,formId" status="fetchStatus" />
+            <apex:commandButton value="Next Step" action="{!saveFlavorChange}"/>
+        </apex:pageBlockButtons>
+      </CENTER>  
+      
+    </apex:pageBlock> 
+    
+  </apex:form>
+</apex:page>

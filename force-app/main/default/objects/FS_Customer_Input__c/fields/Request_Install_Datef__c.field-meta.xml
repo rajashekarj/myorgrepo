@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Install_Datef__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATEVALUE(RIGHT(TEXT(Requested_Install_Date__c), 4)
+
+&amp;
+IF(Find(&quot;/&quot;,TEXT(Requested_Install_Date__c),Find(&quot;,&quot;,TEXT(Requested_Install_Date__c),1)+1) -Find(&quot;,&quot;,TEXT(Requested_Install_Date__c))-2 = 1, &quot;-0&quot;,&quot;-&quot;)
+&amp;
+MID(TEXT(Requested_Install_Date__c),Find(&quot;,&quot;,TEXT(Requested_Install_Date__c))+2 ,Find(&quot;/&quot;,TEXT(Requested_Install_Date__c),Find(&quot;,&quot;,TEXT(Requested_Install_Date__c),1)+1) -Find(&quot;,&quot;,TEXT(Requested_Install_Date__c))-2)
+
+&amp;
+IF(Find(&quot;/&quot;,TEXT(Requested_Install_Date__c),Find(&quot;/&quot;,TEXT(Requested_Install_Date__c),1)+1) -Find(&quot;/&quot;,TEXT(Requested_Install_Date__c))=2,&quot;-0&quot;,&quot;-&quot;)
+&amp;
+MID(TEXT(Requested_Install_Date__c),Find(&quot;/&quot;,TEXT(Requested_Install_Date__c))+1,Find(&quot;/&quot;,TEXT(Requested_Install_Date__c),Find(&quot;/&quot;,TEXT(Requested_Install_Date__c),1)+1) -Find(&quot;/&quot;,TEXT(Requested_Install_Date__c))-1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Request Install Datef</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

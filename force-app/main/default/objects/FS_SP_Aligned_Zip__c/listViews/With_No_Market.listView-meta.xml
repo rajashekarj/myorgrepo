@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>With_No_Market</fullName>
+    <columns>NAME</columns>
+    <columns>FS_Zip_Code__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Dispenser_Type__c</columns>
+    <columns>FS_Market__c</columns>
+    <columns>FS_Selling_Market_Activation_Date__c</columns>
+    <columns>FS_Selling_Activity_Market__c</columns>
+    <columns>FS_SP_Code__c</columns>
+    <columns>FS_SP_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FS_Zip_Code__c</field>
+        <operation>equals</operation>
+        <value>46940,46936,46034</value>
+    </filters>
+    <label>With No Market</label>
+</ListView>

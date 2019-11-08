@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Final_Delivery_Method__c</fullName>
+    <description>formula</description>
+    <externalId>false</externalId>
+    <formula>IF(OR( 
+AND(Text(FS_Requested_Order_Method__c)= &#39;Bottler&#39;,Text(FS_Requested_Delivery_Method__c)= &#39;Bottler&#39;,FS_Approved_Bottler_Order_Delivery__c=false), 
+AND(Text(FS_Requested_Order_Method__c)= &#39;Distributor&#39;,Text(FS_Requested_Delivery_Method__c)= &#39;Distributor&#39;,TEXT(FS_Approved_for_Distributor_Ordering__c)==&#39;&#39;), 
+AND(OR(Text(FS_Requested_Order_Method__c)= &#39;VMS&#39;,Text(FS_Requested_Order_Method__c)= &#39;Direct Ship&#39;,Text(FS_Requested_Order_Method__c)= &#39;CokeSmart&#39;),Text(FS_Requested_Delivery_Method__c)= &#39;Distributor&#39;,TEXT(FS_Approved_for_Distributor_Ordering__c)==&#39;&#39;), 
+AND(OR(FS_Final_Order_Text_value__c=&#39;VMS&#39;,FS_Final_Order_Text_value__c=&#39;CokeSmart&#39;,FS_Final_Order_Text_value__c=&#39;Distributor&#39;),FS_Final_Delivery_text_value__c=&#39;Distributor&#39;,OR(TEXT(FS_Requested_Order_Method__c)=&#39;VMS&#39;,TEXT(FS_Requested_Order_Method__c)=&#39;CokeSmart&#39;),Text(FS_Requested_Delivery_Method__c)=&#39;Direct Ship&#39;,TEXT(FS_Approved_for_Distributor_Ordering__c)==&#39;&#39;), 
+AND(Text(FS_Requested_Delivery_Method__c)= &#39;Direct Ship&#39;,Text(FS_Requested_Order_Method__c)= &#39;Bottler&#39;,FS_Approved_Bottler_Order_Delivery__c=false), 
+AND(OR(TEXT(FS_Requested_Delivery_Method__c)=&#39;Bottler&#39;,TEXT(FS_Requested_Delivery_Method__c)=&#39;Direct Ship&#39;),Text(FS_Requested_Order_Method__c)=&#39;&#39;,FS_Approved_Bottler_Order_Delivery__c=false), 
+AND(TEXT(FS_Requested_Order_Method__c)=&#39;Bottler&#39;,Text(FS_Requested_Delivery_Method__c)=&#39;&#39;,FS_Approved_Bottler_Order_Delivery__c=false), 
+AND(TEXT(FS_Requested_Order_Method__c)=&#39;Manual Order&#39;,Text(FS_Requested_Delivery_Method__c)=&#39;Direct Ship&#39;, ISPICKVAL(FS_Manual_Order_Approval_Status__c,&#39;Reject&#39;) ), 
+AND(TEXT(FS_Requested_Order_Method__c)=&#39;Manual Order&#39;,Text(FS_Requested_Delivery_Method__c)=&#39;Direct Ship&#39;, ISPICKVAL(FS_Manual_Order_Approval_Status__c,&#39;&#39;) )), 
+FS_Final_Delivery_text_value__c,TEXT(FS_Requested_Delivery_Method__c))</formula>
+    <label>Final Delivery Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Original_Onboarding_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(Overall_Status2__c= &#39;Pending Reschedule&#39;, ISNULL( FS_Scheduled_Install_Date__c), FS_Survey_Install_On_Hold__c = true , AND(ISNULL(FS_NewRemodelOutletOnlyProjectedFireUp__c), FS_Dry_Install__c = true)) , Date(2020, 12, 31), 
+   IF( NOT(ISNULL(FS_Change_Onboarding_Date__c))  , FS_Change_Onboarding_Date__c , 
+        IF( NOT(ISNULL(FS_NewRemodelOutletOnlyProjectedFireUp__c)) , FS_NewRemodelOutletOnlyProjectedFireUp__c +  FS_HowManyDaysAfterInstallOnboarding__c  , 
+                        FS_Scheduled_Install_Date__c + FS_HowManyDaysAfterInstallOnboarding__c )
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Original Onboarding Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

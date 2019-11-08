@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_and_Platform_Mandatory</fullName>
+    <active>true</active>
+    <description>The Cartridges coming from CMS should be associated with at least one country and one platform.</description>
+    <errorConditionFormula>OR(ISBLANK(FS_Platform__c), ISBLANK(FS_Country__c), ISNULL(FS_Platform__c),ISNULL(FS_Country__c))</errorConditionFormula>
+    <errorMessage>Country and Platform fields are required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_US_Dispenser</fullName>
+    <active>false</active>
+    <description>Active_US_Dispenser</description>
+    <errorConditionFormula>AND(RecordType.Name=&#39;BoE Dispenser&#39;,
+
+OR(FS_Outlet__r.ShippingCountry =&quot;US&quot;, FS_Outlet__r.ShippingCountry =&quot;USA&quot;)
+
+  
+)</errorConditionFormula>
+    <errorDisplayField>FS_Outlet__c</errorDisplayField>
+    <errorMessage>The Outlet is Already Assigned to Active US Dispenser&#39;s.</errorMessage>
+</ValidationRule>

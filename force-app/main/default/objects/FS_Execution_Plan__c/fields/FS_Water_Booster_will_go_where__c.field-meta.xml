@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Water_Booster_will_go_where__c</fullName>
+    <externalId>false</externalId>
+    <label>Water Booster will go where?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-None-</fullName>
+                <default>true</default>
+                <label>-None-</label>
+            </value>
+            <value>
+                <fullName>No water booster required</fullName>
+                <default>false</default>
+                <label>No water booster required</label>
+            </value>
+            <value>
+                <fullName>FOH â€“ Near Freestyle unit</fullName>
+                <default>false</default>
+                <label>FOH â€“ Near Freestyle unit</label>
+            </value>
+            <value>
+                <fullName>BOH- Near water filter system</fullName>
+                <default>false</default>
+                <label>BOH- Near water filter system</label>
+            </value>
+            <value>
+                <fullName>BOH - On top of HFCS Rack</fullName>
+                <default>false</default>
+                <label>BOH - On top of HFCS Rack</label>
+            </value>
+            <value>
+                <fullName>No change - Current location</fullName>
+                <default>false</default>
+                <label>No change - Current location</label>
+            </value>
+            <value>
+                <fullName>Unknown â€“ site assessment will determine</fullName>
+                <default>false</default>
+                <label>Unknown â€“ site assessment will determine</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

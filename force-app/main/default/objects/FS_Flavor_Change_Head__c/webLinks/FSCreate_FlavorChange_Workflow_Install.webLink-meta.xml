@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSCreate_FlavorChange_Workflow_Install</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Create Flavor Change Workflow</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)}
+var installStatus=&quot;{!FS_Installation__c.Overall_Status2__c}&quot;;
+var installID=&quot;{!FS_Installation__c.Id}&quot;;
+
+if(installStatus.includes(&quot;SA Complete&quot;)||
+installStatus==&quot;SA Pending&quot; || 
+installStatus==&quot;SA Scheduled&quot; ||
+installStatus==&quot;1 PP Approved&quot; ||
+installStatus==&quot;Ready for Scheduling&quot;||
+installStatus.includes(&quot;Hold&quot;)|| 
+installStatus==&quot;On Hold&quot;||
+installStatus==&quot;Pending Reschedule&quot;||
+installStatus==&quot;Scheduled&quot;){
+window.parent.location.href =&quot;/apex/FSFlavorChangeWorkflowInputPage?parentRecordId=&quot;+installID;
+}else{
+alert(&quot;Flavor change cannot be done for the installations which are Complete/Canceled &quot;);
+}</url>
+</WebLink>

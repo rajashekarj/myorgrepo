@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fav_Mix_Is_manditory_if_FAV_MiX_eff_Dt</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(ISBlank(Text(FS_FAV_MIX_New__c)),Not(isBlank(FS_FAV_MIX_Effective_Date__c)),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_FAV_MIX_New__c</errorDisplayField>
+    <errorMessage>Favorite Mix. is mandatory if you have &#39;Favorite Mix Effective Date&#39;</errorMessage>
+</ValidationRule>

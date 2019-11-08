@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reschedule_Date_Earlier_than_Market_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND( 
+Not(ISNULL(FS_Reschedule_Install_Date__c)),NOT(FS_Installation__r.FS_Market_Activation_override__c), 
+OR(AND(NOT(ISBLANK(TEXT(FS_Installation__r.FS_Platform1__c))),ISNULL(FS_Installation__r.FS_Mrkt_ActiveDate1__c)), 
+AND(NOT(ISBLANK(TEXT(FS_Installation__r.FS_Platform2__c))),ISNULL(FS_Installation__r.FS_Mrkt_ActiveDate2__c)), 
+AND(NOT(ISBLANK(TEXT(FS_Installation__r.FS_Platform3__c))),ISNULL(FS_Installation__r.FS_Mrkt_ActiveDate3__c))) 
+), 
+if( 
+Not(ISNULL(FS_Reschedule_Install_Date__c)), 
+if( AND 
+(OR(FS_Reschedule_Install_Date__c &lt; FS_Installation__r.FS_Mrkt_ActiveDate1__c, 
+FS_Reschedule_Install_Date__c &lt; FS_Installation__r.FS_Mrkt_ActiveDate2__c, 
+FS_Reschedule_Install_Date__c &lt; FS_Installation__r.FS_Mrkt_ActiveDate3__c), 
+NOT(FS_Installation__r.FS_Market_Activation_override__c) 
+), 
+true,false), 
+false))</errorConditionFormula>
+    <errorMessage>One or more platform/s has a market activation date later than the scheduled date provided. You must either remove the platform/s on the parent transaction page layout or change the rescheduled date.</errorMessage>
+</ValidationRule>

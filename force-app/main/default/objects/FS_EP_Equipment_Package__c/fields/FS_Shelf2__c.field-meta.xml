@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Shelf2__c</fullName>
+    <externalId>false</externalId>
+    <label>Shelf 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46065 : Slant Shelf 15inch Wide</fullName>
+                <default>false</default>
+                <label>46065 : Slant Shelf 15inch Wide</label>
+            </value>
+            <value>
+                <fullName>46063 : Slant Shelf 28inch Wide</fullName>
+                <default>false</default>
+                <label>46063 : Slant Shelf 28inch Wide</label>
+            </value>
+            <value>
+                <fullName>46064 : Slant Shelf 41inch Wide</fullName>
+                <default>false</default>
+                <label>46064 : Slant Shelf 41inch Wide</label>
+            </value>
+            <value>
+                <fullName>120700 : 41inch Wide Slant Shelf</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>120700 : 41inch Wide Slant Shelf</label>
+            </value>
+            <value>
+                <fullName>122772 : 28inch Wide Slant Shelf</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>122772 : 28inch Wide Slant Shelf</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

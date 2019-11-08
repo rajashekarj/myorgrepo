@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS7000SeriesBrandOptionSelectionManadato</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(ISBlank(Text(FS_X7000_Series_Brands_Option_Selections__c)),!isBlank(FS_7000_Series_Brand_Selection_EF_Date__c))</errorConditionFormula>
+    <errorDisplayField>FS_X7000_Series_Brands_Option_Selections__c</errorDisplayField>
+    <errorMessage>This is mandatory if &#39;7000 Series Brand Selection Effect Date&#39; Field is filled</errorMessage>
+</ValidationRule>

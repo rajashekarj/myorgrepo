@@ -1,0 +1,15 @@
+<design:component label="2 Column and 1 Header Custom App Page Template">
+    <flexipage:template >
+        
+        <flexipage:region name="top" defaultWidth="MEDIUM" />
+        
+        <flexipage:region name="left" defaultWidth="MEDIUM">               
+            <flexipage:formfactor type="MEDIUM" width="MEDIUM" />
+        </flexipage:region>
+        
+        <flexipage:region name="right" defaultWidth="MEDIUM">               
+            <flexipage:formfactor type="MEDIUM" width="MEDIUM" />
+        </flexipage:region>
+        
+    </flexipage:template>
+</design:component>

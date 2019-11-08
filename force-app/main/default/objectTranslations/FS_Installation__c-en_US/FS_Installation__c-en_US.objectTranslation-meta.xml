@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Installation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Installations</value>
+    </caseValues>
+    <layouts>
+        <layout>FS Relocation (O4W) Layout</layout>
+        <sections>
+            <label/>
+            <section>Brandset Warning Message</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>CDM</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Do Not Change</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Ice Maker Coordination</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Market Activation reason</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PM Team</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Platform Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Relocation (O4W) &amp; Rush Dates</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Relocation (O4W) Dispenser Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Relocation (O4W) Instructions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Service Provider / Market Activation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Specific Project Requirements</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FS Relocation Layout</layout>
+        <sections>
+            <label/>
+            <section>Brandset Warning Message</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>CDM</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Do Not Change</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Ice Maker Coordination</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Market Activation reason</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PM Team</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Platform Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Relocation (I4W) &amp; Rush Dates</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Relocation (I4W) Dispenser Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Relocation (I4W) Instructions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Service Provider / Market Activation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Specific Project Requirements</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FS Removal Layout</layout>
+        <sections>
+            <label/>
+            <section>Brandset Warning Message</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>CDM</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Do Not Change</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Ice Maker Coordination</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Market Activation reason</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PM Team</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Platform Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Removal &amp; Rush Dates</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Removal Dispenser Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Removal Instructions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Service Provider / Market Activation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Specific Project Requirements</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FS Replacement Layout</layout>
+        <sections>
+            <label/>
+            <section>Brandset Warning Message</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>CDM</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Do Not Change</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Ice Maker Coordination</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Market Activation Reason</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PM Team</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Platform Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Replacement &amp; Rush Dates</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Replacement Dispenser Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Replacement Instructions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Service Provider / Market Activation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Specific Project Requirements</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Installation Layout</layout>
+        <sections>
+            <label/>
+            <section>7000 Series Technician Instructions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>8000 Series Portion Control</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>8000 Series Technician Instructions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>9000 Series Technician Instructions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>CCR Contacts</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Equipment Package</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Execution Plan Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Flavor Changes/Wired Solutions</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Contractor Work (Site-Prep)</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Initial Order</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Installation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Installation Contacts</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Inventory Management</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Legacy</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>On-boarding Training (Footprint)</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Outlet Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PIC - Reschedule</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PIC - Survey/Install Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PIC Activities</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>PIC Activity Notes</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>SME Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Site Assessment</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Vendor Confirmation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Install Layout</layout>
+        <sections>
+            <label/>
+            <section>Account Team Members</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Brandset Warning Message</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>CIF Comments/Notes</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>CIF and Execution Plan Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Coordinator Activities</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Coordinator Activities Notes</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Contractor</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Contractor Work (Site-Prep) Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Initial Order and CDM Setup</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Installation &amp; Rush Dates</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Installation Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Market Activation Reason</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Onboarding Training</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Platform Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>SME Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Service Provider / Market Activation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Site Assessment (SA) Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Specific Project Requirements</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label/>
+        <name>FS_New_Install</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Relocation</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Relocation_O4W</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Removal</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Replacement</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>AMOA_Complete_status_cannot_be_reverted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>AssetCompleted_Validation_on_RO4W</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>AssetSubmitted_Validation_on_RO4W</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>CCAST_ReqCompleted_Validation_on_RO4W</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>CCAST_ReqSubmit_Validation_on_RO4W</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>COM_cannot_modify_Platform_New_IP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Case_Required_when_BAST_Initiated_RO4W</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Equip_Booked_Mandatory_for_PIA_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Install_Reconnect_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Original_Install_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Reschedule_Installdate1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Reschedule_Installdate2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Reschedule_Installdate3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Reschedule_Installdate4</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Reschedule_Installdate5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Change_Reschedule_Installdate6</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Use_Date2_before_Date1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Use_Date3_before_Date2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Use_Date4_before_Date3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Use_Date5_before_Date4</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Use_Date6_before_Date5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Cannot_Use_Date7_before_Date6</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Must_Provide_atleast_one_Replace_val</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>IP_Cannot_Modified_when_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>IP_I4W_Pending_Resch</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>IP_I4W_Pending_Resch2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Lock_Outlet_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Make_RecordType_Name_NonEditable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Market_activation_override_Reason_requir</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Must_Provide_atleast_one_RO4W_value</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>OB_Outlet_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>OB_Outlet_Contact_Phone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>OnBoarding_DaysAfterInstall_Dependent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Onboard_Date_Greater_than_Reschedule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Original_Onboarding_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Outlet_Open_Time</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Outlet_info_Summary_complete_EP_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Planned_CrewServe_TopMount_Ice_Makers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>QTY_PumpKit_VacuumRegulator</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>RelocateI4W_Complete_Disposition_Disp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>RelocateO4W_Complete_Error_Scenarios</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Remove_Discon_check_Disposition_Dispen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Reason_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Reason_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Reason_3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Reason_4</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Reason_5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Reason_6</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Reason_7</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>SA_Contact_Preferred_Mode_Communi</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>SP_Override_checkbox</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>S_Cannot_Use_Date4_before_Date3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Site_Assessment_Contact_Phone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Site_Assessment_Contact_Title</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Site_Assessment_Contact_name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Site_Assessment_contact_email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Static_Brand_Vitamin_Water_Pair</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>To_Outlet_Required_on_RO4W_AMOA_Submit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Trainer_field_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Training_Start_Time</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Update_Portion_Control_Package</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Enter_Edit_View_On_Boarding</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Approve_Installation_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Enter_Edit_View_CokeSmart</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Enter_Edit_View_Flavor_Change_Wired_Sol</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Enter_Edit_View_General_Contractor</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Helpful_Notes</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_New_Relocation</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_New_Relocation_O4W</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Send_for_PM_Approval</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Removal</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Replacement</name>
+    </webLinks>
+</CustomObjectTranslation>

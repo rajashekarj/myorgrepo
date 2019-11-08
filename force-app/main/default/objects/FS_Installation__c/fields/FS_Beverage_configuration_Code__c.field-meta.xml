@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Beverage_configuration_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Pibb/Pibb Zero&quot;), &quot;C37&quot;, Null) + 
+IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Dr Pepper/Diet Dr Pepper&quot;), &quot;C38&quot;, Null)+
+IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Pibb/Pibb Zero/Add FUZE/Remove Dasani&quot;), &quot;C37,C76&quot;, Null)+ 
+IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Pibb/Pibb Zero/Add FUZE/Remove Powerade&quot;), &quot;C37,C76&quot;, Null)+ 
+IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Pibb/Pibb Zero/Add FUZE/Remove Vitaminwater&quot;), &quot;C37,C76&quot;, Null)+ 
+IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Dr Pepper/Diet Dr Pepper/Add FUZE/Remove Dasani&quot;), &quot;C38,C76&quot;, Null)+ IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Dr Pepper/Diet Dr Pepper/Add FUZE/Remove Powerade&quot;), &quot;C38,C76&quot;, Null)+ IF(ISPICKVAL(FS_Spicy_Cherry__c, &quot;Dr Pepper/Diet Dr Pepper/Add FUZE/Remove Vitaminwater&quot;), &quot;C38,C76&quot;, Null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Spicy Cherry Brand Codes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

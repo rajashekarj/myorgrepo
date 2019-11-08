@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Bundle__c</fullName>
+    <description>..</description>
+    <externalId>false</externalId>
+    <formula>if( ISPICKVAL( Actual_Id__r.FS_Artifact_Type__c , &#39;Bundle&#39;), Actual_Id__r.Name , &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual Bundle</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

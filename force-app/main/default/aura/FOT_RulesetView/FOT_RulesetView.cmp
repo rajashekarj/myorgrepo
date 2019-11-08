@@ -1,0 +1,32 @@
+<!-- FOT_RulesetView -->
+<!-- Ruleset view custom lightning component
+	Owner : Anwesh - Infosys
+-->
+
+<aura:component implements="lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:appHostable" access="global" >
+
+    <aura:attribute name="isOpen" type="boolean" default="true"/>
+    <aura:attribute name="recordId" type="Id" />
+  
+    <aura:if isTrue="{!v.isOpen}">  
+   <!--###### MODAL BOX Start From Here ######-->
+
+      <div role="dialog" tabindex="-1" aria-labelledby="header99" class="slds-modal slds-fade-in-open ">
+        <div class="slds-modal__container ">
+          <div class="slds-modal__header">
+            <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModel}">
+            X
+            <span class="slds-assistive-text">Close</span>
+            </button>
+          </div >
+            <div class="slds-modal__content slds-p-around--medium">
+          		<force:recordView recordId="{!v.recordId}"/>
+                <button class="slds-button slds-button--neutral slds-float_right" onclick="{!c.closeModel}" >Close</button>
+            </div>
+        </div>
+      </div>
+      <div class="slds-backdrop slds-backdrop--open"></div>
+      <!--###### MODAL BOX Part END Here ######-->
+      </aura:if>
+  
+</aura:component>

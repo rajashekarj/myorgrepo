@@ -1,0 +1,316 @@
+<apex:page standardController="FS_Outlet_Dispenser__c" extensions="FET_OutletAssignmentCtrl" tabStyle="FS_Outlet_Dispenser__c">
+    <apex:form id="frm">
+        <apex:sectionHeader title="Outlet Dispenser Edit" subtitle="New Outlet Dispenser"/>
+
+        <apex:pageBlock id="editPB" title="Outlet Dispenser Edit">
+         
+            <apex:pageBlockButtons id="editButtons" location="both" rendered="true">
+            <apex:commandButton id="saveBtn" value="Save" action="{!save}" />
+            <!--<apex:commandButton id="saveNewBtn" value="Save & New" action="{!saveAndNew}" />-->
+            <apex:commandButton id="cancelBtn" value="Cancel" action="{!cancel}" immediate="true"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageMessages />
+            
+            <apex:pageBlockSection title="Information" columns="2" collapsible="false">
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Outlet" for="Outlet_name"/>
+                    <!--<apex:inputfield value="{!cloneOutletDispenser.FS_Outlet__c}" id="Outlet_name" required="true"/>-->
+                    <apex:inputfield value="{!outletRef.FS_Outlet__c}" id="Outlet_name" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+             <!--Message display pop -->   
+            <apex:outputPanel id="tstpopup">
+            <apex:outputPanel rendered="{!displayPopUp}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp}" styleClass="custPopup" layout="block">
+                <center><b>{!$Label.Enrolled_Assign_to_Outlet}<br/><br/><br/></b></center>
+            <center> <apex:commandButton value="OK" action="{!redirectPopup}" /> </center>
+            </apex:outputPanel>
+            </apex:outputPanel>
+                
+             <!--Message display pop -->   
+            <apex:outputPanel id="tstpopup1">
+            <apex:outputPanel rendered="{!displayPopUp1}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp1}" styleClass="custPopup" layout="block">
+                <c><b>{!$Label.Assigned_to_new_Outlet}<br/><br/><br/></b></c>
+            <center> <apex:commandButton value="OK" action="{!redirectPopup}" /> </center>
+            </apex:outputPanel>
+            </apex:outputPanel>    
+             
+             
+            <apex:outputPanel id="tstpopup2">
+            <apex:outputPanel rendered="{!displayPopUp2}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp2}" styleClass="custPopup" layout="block">
+                <c><b>{!$Label.Assigned_Delete_Assign}<br/><br/><br/></b></c>
+            <center> <apex:commandButton value="OK" action="{!removeAssignToOutlet}"/> 
+            &nbsp;&nbsp; <apex:commandButton value="Cancel" action="{!redirectPopup}"/>
+            </center>
+            </apex:outputPanel>
+            </apex:outputPanel>    
+               
+             <!--Message display pop -->   
+            <apex:outputPanel id="tstpopup3">
+            <apex:outputPanel rendered="{!displayPopUp3}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp3}" styleClass="custPopup" layout="block">
+                <c><b>{!$Label.Activate_existing_outlet}<br/><br/><br/></b></c>
+            <center> <apex:commandButton value="OK" action="{!redirectPopup}" /> </center>
+            </apex:outputPanel>
+            </apex:outputPanel>        
+                
+         <!--        <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Outlet" for="Shipping_Form_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Shipping_Form__c}" id="Shipping_Form_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Install Date Missed" for="Install_Date_Missed_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Install_Date_Missed__c}" id="Install_Date_Missed_name" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Serial Number/Asset Tag" for="FS_Serial_Number2_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Serial_Number2__c}" id="FS_Serial_Number2_name"/>
+                </apex:pageBlockSectionItem> <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Ownership" for="Ownership_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Ownership_Type__c}" id="Ownership_name" required="true"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Active (A) / Inactive (I)" for="FS_IsActive_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_IsActive__c}" id="FS_IsActive_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Record Type" for="RecordType_name"/>
+                    <apex:outputfield value="{!cloneOutletDispenser.RecordType.Name}" id="RecordType_name"/>
+                </apex:pageBlockSectionItem>     
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Dispenser Information" columns="2" collapsible="false">
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Warehouse Country" for="Warehouse_Country_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Warehouse_Country__c}" id="Warehouse_Country_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Warehouse Name" for="Warehouse_Name_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Warehouse_Name__c}" id="Warehouse_Name_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Status" for="FS_Status_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Status__c}" id="FS_Status_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Actual Installed Date" for="FS_Date_Installed2_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Date_Installed2__c}" id="FS_Date_Installed2_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Platform" for="FS_Model_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Model__c}" id="FS_Model_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Country" for="Country_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Country__c}" id="Country_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Planned Install Date" for="FS_Planned_Install_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Planned_Install_Date__c}" id="FS_Planned_Install_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Brand Set" for="Brand_Set_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Brand_Set__c}" id="Brand_Set_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Planned Removal date" for="Brand_Set_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Planned_Remove_Date__c}" id="Planned_Remove_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Valid Fill" for="FS_Valid_Fill_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Valid_Fill__c}" id="FS_Valid_Fill_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="8000/9000 Series Water button" for="FS_Water_Button_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Water_Button__c}" id="FS_Water_Button_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Dasani" for="FS_Dasani_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Dasani__c}" id="FS_Dasani_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Favorite Mix" for="FS_FAV_MIX_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_FAV_MIX__c}" id="FS_FAV_MIX_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Spicy Cherry" for="FS_Spicy_Cherry_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Spicy_Cherry__c}" id="FS_Spicy_Cherry_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Promotion Enabled" for="FS_Promo_Enabled_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Promo_Enabled__c}" id="FS_Promo_Enabled_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Enable Consumer Engagement" for="FS_CE_Enabled_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_CE_Enabled__c}" id="FS_CE_Enabled_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Re-Manufactured" for="Re_Manufactured_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Re_Manufactured__c}" id="Re_Manufactured_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Limited Time Offer" for="FS_LTO_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_LTO__c}" id="FS_LTO_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Dispenser Notes" for="Dispenser_Notes_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Dispenser_Notes__c}" id="Dispenser_Notes_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Removed/Returned Date" for="Removed_Returned_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.Removed_Returned_Date__c}" id="Removed_Returned_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Dispenser Type" for="FSInt_Dispenser_Type_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FSInt_Dispenser_Type__c}" id="FSInt_Dispenser_Type_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem>
+                            
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Post Install Attributes" columns="2" collapsible="false">
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Enable Consumer Engagement." for="FS_CE_Enabled_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_CE_Enabled_New__c}" id="FS_CE_Enabled_New_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="CE Enabled Effective Date" for="FS_CE_Enabled_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_CE_Enabled_Effective_Date__c}" id="FS_CE_Enabled_Effective_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Favorite Mix." for="FS_FAV_MIX_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_FAV_MIX_New__c}" id="FS_FAV_MIX_New_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Favorite Mix Effective Date" for="FS_FAV_MIX_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_FAV_MIX_Effective_Date__c}" id="FS_FAV_MIX_Effective_Date_name"/>
+                </apex:pageBlockSectionItem> <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Limited Time Offer." for="FS_LTO_New__c_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_LTO_New__c}" id="FS_LTO_New__c_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Limited Time Offer Effective Date" for="FS_LTO_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_LTO_Effective_Date__c}" id="FS_LTO_Effective_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Promotion Enabled." for="FS_Promo_Enabled_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Promo_Enabled_New__c}" id="FS_Promo_Enabled_New_name"/>
+                </apex:pageBlockSectionItem>  
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Promo Enabled Effective Date" for="FS_Promo_Enabled_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Promo_Enabled_Effective_Date__c}" id="FS_Promo_Enabled_Effective_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="8000/9000 Series Water button" for="FS_Water_Button_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Water_Button_New__c}" id="FS_Water_Button_New_name"/>
+                </apex:pageBlockSectionItem>      
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Hide Water Effective Date" for="FS_Water_Hide_Show_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Water_Hide_Show_Effective_Date__c}" id="FS_Water_Hide_Show_Effective_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="7000 Series Water Button." for="FS_7000_Series_Hide_Water_Button_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_7000_Series_Hide_Water_Button_New__c}" id="FS_7000_Series_Hide_Water_Button_New_name"/>
+                </apex:pageBlockSectionItem>  
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="7000 Series Hide Water Effective Date" for="FS_7000_Series_Hide_Water_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_7000_Series_Hide_Water_Effective_Date__c}" id="FS_7000_Series_Hide_Water_Effective_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Dasani." for="FS_Dasani_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Dasani_New__c}" id="FS_Dasani_New_name"/>
+                </apex:pageBlockSectionItem>     
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Valid Fill Settings Effective Date" for="FS_Valid_Fill_Settings_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Valid_Fill_Settings_Effective_Date__c}" id="FS_Valid_Fill_Settings_Effective_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Valid Fill." for="FS_Valid_Fill_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Valid_Fill_New__c}" id="FS_Valid_Fill_New_name"/>
+                </apex:pageBlockSectionItem>  
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Spicy Cherry Effective Date" for="FS_Spicy_Cherry_Effective_Date_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Spicy_Cherry_Effective_Date__c}" id="FS_Spicy_Cherry_Effective_Date_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Spicy Cherry." for="FS_Spicy_Cherry_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_Spicy_Cherry_New__c}" id="FS_Spicy_Cherry_New_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="7000 Series Brands Option Selections." for="FS_7000_Series_Brands_Selection_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_7000_Series_Brands_Selection_New__c}" id="FS_7000_Series_Brands_Selection_New_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="7000 Series Static Brands Selections." for="FS_7000_Series_Static_Selection_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_7000_Series_Static_Selection_New__c}" id="FS_7000_Series_Static_Selection_New_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="7000 Series Agitated Brands Selections." for="FS_7000_Series_Agitated_Selections_New_name"/>
+                    <apex:inputfield value="{!cloneOutletDispenser.FS_7000_Series_Agitated_Selections_New__c}" id="FS_7000_Series_Agitated_Selections_New_name"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                </apex:pageBlockSectionItem>    -->    
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+  <style type="text/css">
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            text-align:center;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 500px;
+            margin-left: -250px;
+            top:100px; 
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+        
+        .closeButton {
+            margin-left: -250px;
+            position: absolute;
+        }
+
+
+    </style>      
+    
+</apex:page>

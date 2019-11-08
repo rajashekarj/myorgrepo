@@ -1,0 +1,5 @@
+<apex:page standardController="FS_Outlet_Dispenser__c" extensions="FETIntDefaultAccountController" action="{!setOutletAccountDefault}">
+
+{!FS_Outlet_Dispenser__c.name}
+
+</apex:page>

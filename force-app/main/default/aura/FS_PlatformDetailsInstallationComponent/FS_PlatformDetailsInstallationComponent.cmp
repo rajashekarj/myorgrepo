@@ -1,0 +1,176 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,lightning:actionOverride" 
+                controller="FS_PlatformDetailsInstallationAura" access="global">
+    <aura:attribute name="recordId" type="Id" access="GLOBAL"/>    
+    <aura:attribute name="objCnt" type="FS_Installation__c[]" access="GLOBAL"/>
+    <aura:attribute name="Wrapper" type="FS_PlatformDetailsInstallationAura[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="FS_DispRequested1_Helptext" type="String" access="GLOBAL"/> 
+    <aura:attribute name="FS_DispOrder1_Helptext" type="String" access="GLOBAL"/> 
+    <aura:attribute name="titleValue" type="String" access="GLOBAL"/>
+
+    <div class="slds-media">
+        <div class="slds-media__body">
+            <div class="slds-page-header__name">
+                <div class="slds-page-header__name-title">
+                    <h1>
+                        <span class="slds-page-header__title slds-truncate" title="Platform Details">Platform Details</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br/>
+    <div class="slds-box">
+        <table class="slds-table slds-table_bordered  slds-table_cell-buffer slds-table_fixed-layout">
+            <thead>
+                <tr class="slds-text-heading_label">
+                    <th scope="col" width="10%" style="font-size: .70rem"><div class="slds-truncate" title="Platforms">Platforms<br/></div></th>
+                    <th scope="col" width="10%" style="font-size: .70rem"><div class="slds-truncate" title="Platform Type">Platform <br/>Type</div></th>
+                    <aura:if isTrue="{!v.Wrapper[0].Rectypename==$Label.c.IP_New_Install_Rec_Type}">
+                        <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="No. of Dispensers Requested">No. of Dispensers <br/>Requested
+                            <lightning:helptext
+                                                content="{!v.FS_DispRequested1_Helptext}" class="customIcon"/>
+                            </div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!(v.Wrapper[0].Rectypename==$Label.c.IP_Replacement_Rec_Type)}">
+                        <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="No. of Dispensers to Remove">No. of Dispensers<br/> to Remove
+                            <lightning:helptext
+                                                content="{!$Label.c.IP_No_Dispenser_Remove_Disconnect}" class="customIcon"/>
+                            </div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.Wrapper[0].Rectypename==$Label.c.IP_Removal_Rec_Type}">
+                        <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="No. of Dispensers to Remove">No. of Dispensers<br/> to Remove
+                            <lightning:helptext
+                                                content="{!$Label.c.IP_No_Dispenser_Remove_Disconnect}" class="customIcon"/>
+                            </div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.Wrapper[0].Rectypename==$Label.c.IP_Relocation_O4W_Rec_Type}">
+                        <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="No. of Dispensers to Remove">No. of Dispensers<br/> to Remove
+                            <lightning:helptext
+                                                content="{!$Label.c.IP_No_Dispenser_Remove_Disconnect}" class="customIcon"/>
+                            </div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!(v.Wrapper[0].Rectypename==$Label.c.IP_Relocation_I4W_Rec_Type)}">
+                        <th scope="col" width="20%" style="font-size: .70rem"><div class="slds-truncate" title="No of Dispensers to Disconnect and Reconnect">No of Dispensers<br/> to Disconnect and Reconnect
+                            <lightning:helptext
+                                                content="{!$Label.c.IP_No_Dispenser_Remove_Disconnect}" class="customIcon"/>
+                            </div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.Wrapper[0].Rectypename==$Label.c.IP_Replacement_Rec_Type}">
+                        <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="No. of Dispensers to Order">No. of Dispensers<br/> to Order
+                            <lightning:helptext
+                                                content="{!v.FS_DispOrder1_Helptext}" class="customIcon"/>
+                            </div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!v.Wrapper[0].Rectypename==$Label.c.IP_New_Install_Rec_Type}">
+                        <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="No. of Dispensers to Order">No. of Dispensers<br/> to Order
+                            <lightning:helptext
+                                                content="{!v.FS_DispOrder1_Helptext}" class="customIcon"/>
+                            </div>
+                        </th>
+                    </aura:if>
+                    
+                    <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="Market Activation Date">Market Activation<br/>Date</div></th>
+                    <th scope="col" width="15%" style="font-size: .70rem"><div class="slds-truncate" title="Market Activation Override?">Market Activation<br/> Override?</div></th>
+                    
+                    <aura:if isTrue="{!(v.Wrapper[0].Rectypename==$Label.c.IP_Relocation_I4W_Rec_Type)}">
+                        <th scope="col" width="20%" style="font-size: .70rem"><div class="slds-truncate" title="# Planned Top Mount Ice Makers Requested"># Planned Top Mount<br/> Ice Makers Requested</div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!(v.Wrapper[0].Rectypename==$Label.c.IP_Replacement_Rec_Type)}">
+                        <th scope="col" width="20%" style="font-size: .70rem"><div class="slds-truncate" title="# Planned Top Mount Ice Makers Requested"># Planned Top Mount<br/> Ice Makers Requested</div>
+                        </th>
+                    </aura:if>
+                    
+                    <aura:if isTrue="{!(v.Wrapper[0].Rectypename==$Label.c.IP_New_Install_Rec_Type)}">
+                        <th scope="col" width="20%" style="font-size: .70rem"><div class="slds-truncate" title="# Planned Top Mount Ice Makers Requested"># Planned Top Mount<br/> Ice Makers Requested</div>
+                        </th>
+                    </aura:if>
+                    
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.Wrapper}" var="ins" >
+                    <tr>
+                        <th scope="row"><div class="slds-truncate" title="Platforms">{!ins.name}</div></th>
+                        <td><div class="slds-truncate" title="Platform Type">{!ins.install.FS_Platform1__c}</div></td>
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_New_Install_Rec_Type}">
+                            <td><div class="slds-truncate" title="No. of Dispensers Requested">{!ins.install.FS_DispRequested1__c}</div></td>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_Replacement_Rec_Type}">
+                            <td><div class="slds-truncate" title="No. of Dispensers to Remove">{!ins.install.FS_DispRequested1__c}</div></td>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_Removal_Rec_Type}">
+                            <td><div class="slds-truncate" title="No. of Dispensers to Remove">{!ins.install.FS_DispRequested1__c}</div></td>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_Relocation_O4W_Rec_Type}">
+                            <td><div class="slds-truncate" title="No. of Dispensers to Remove">{!ins.install.FS_DispRequested1__c}</div></td>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!(ins.Rectypename==$Label.c.IP_Relocation_I4W_Rec_Type)}">
+                            <th scope="col"><div class="slds-truncate" title="No of Dispensers to Disconnect and Reconnect">{!ins.install.FS_DispRequested1__c}</div></th>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_Replacement_Rec_Type}">
+                            <th scope="col"><div class="slds-truncate" title="No. of Dispensers to Order">{!ins.install.FS_DispOrder1__c}</div>
+                            </th>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_New_Install_Rec_Type}">
+                            <th scope="col"><div class="slds-truncate" title="No. of Dispensers to Order">{!ins.install.FS_DispOrder1__c}</div>
+                            </th>
+                        </aura:if>
+                        
+                        
+                        <td><div class="slds-truncate" title="Market Activation Date" >
+                            <ui:outputDate value="{!ins.install.FS_Mrkt_ActiveDate1__c}" format="MM/dd/yyyy"/>
+                            </div></td>
+                        
+                        <td><div class="slds-truncate" title="Market Activation Override?" style="align: center">
+                            <ui:outputCheckbox value="{!ins.install.FS_Market_Activation_override__c}" />
+                            </div>
+                        </td>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_Relocation_I4W_Rec_Type}">
+                            <th scope="col"><div class="slds-truncate" title="# Planned Top Mount Ice Makers Requested">{!ins.install.FS_DispOrder2__c}</div>
+                            </th>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_Replacement_Rec_Type}">
+                            <th scope="col"><div class="slds-truncate" title="# Planned Top Mount Ice Makers Requested">{!ins.install.FS_DispOrder2__c}</div>
+                            </th>
+                        </aura:if>
+                        
+                        <aura:if isTrue="{!ins.Rectypename==$Label.c.IP_New_Install_Rec_Type}">
+                            <th scope="col"><div class="slds-truncate" title="# Planned Top Mount Ice Makers Requested">{!ins.install.FS_DispOrder2__c}</div>
+                            </th>
+                        </aura:if>
+                        
+                    </tr>
+                    <!--   </aura:iteration> -->
+                </aura:iteration> 
+                
+            </tbody>
+        </table>
+    </div>
+    <br/>
+    <br/>
+</aura:component>

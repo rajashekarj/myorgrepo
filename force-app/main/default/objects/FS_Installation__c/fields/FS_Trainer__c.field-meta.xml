@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Trainer__c</fullName>
+    <description>Trainer</description>
+    <externalId>false</externalId>
+    <label>Trainer</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COM</fullName>
+                <default>false</default>
+                <label>COM</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Not Needed / 2nd Install</fullName>
+                <default>false</default>
+                <label>Not Needed / 2nd Install</label>
+            </value>
+            <value>
+                <fullName>Not needed(used for 2nd disp in loc)</fullName>
+                <default>false</default>
+                <label>Not needed(used for 2nd disp in loc)</label>
+            </value>
+            <value>
+                <fullName>Service Provider</fullName>
+                <default>false</default>
+                <label>Service Provider</label>
+            </value>
+            <value>
+                <fullName>EcoSure</fullName>
+                <default>false</default>
+                <label>EcoSure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

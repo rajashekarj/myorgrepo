@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_7000_Dispensers__c</fullName>
+    <externalId>false</externalId>
+    <label># of 7000 Dispensers</label>
+    <summaryFilterItems>
+        <field>FS_Outlet_Dispenser__c.FS_Equip_Type__c</field>
+        <operation>equals</operation>
+        <value>7000</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>FS_Outlet_Dispenser__c.FS_Status__c</field>
+        <operation>equals</operation>
+        <value>Enrolled, Hibernate, Wakeup, Winterized</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>FS_Outlet_Dispenser__c.FS_IsActive__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>FS_Outlet_Dispenser__c.FS_Outlet__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

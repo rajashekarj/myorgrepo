@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Brand_Selection_Change__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to track if values in 7000 Series Agitated Brands Selections,7000 Series Brands Option Selections and 7000 Series Static Brands Selections changed</description>
+    <externalId>false</externalId>
+    <label>7000 Brand Selection Change</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

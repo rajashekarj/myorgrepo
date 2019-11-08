@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Current_Hide_Show_Water_Button__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(FS_Outlet_HQ_Chain__r.FS_of_Hide_Water_Changes__c &gt; 0,&quot;Hide&quot;,
+IF(FS_Outlet_HQ_Chain__r.FS_of_Hide_Water_Changes__c &gt; 0,&quot;Show&quot;,
+IF( AND (FS_Outlet_HQ_Chain__r.FS_of_Hide_Water_Changes__c &gt; 0, FS_Outlet_HQ_Chain__r.FS_of_Hide_Water_Changes__c &gt; 0),&quot;Hide and Show are Present&quot;,&quot;&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Current Hide/Show Water Button</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

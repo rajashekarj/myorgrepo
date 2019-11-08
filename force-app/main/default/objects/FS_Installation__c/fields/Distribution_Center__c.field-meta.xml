@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribution_Center__c</fullName>
+    <externalId>false</externalId>
+    <formula>FS_Outlet__r.FS_Distributor__r.Name &amp; br()
+&amp; FS_Outlet__r.FS_Distributor__r.ShippingStreet &amp; br()
+&amp; FS_Outlet__r.FS_Distributor__r.ShippingCity &amp; &quot;, &quot; &amp; FS_Outlet__r.FS_Distributor__r.ShippingState  &amp;&quot; &quot;&amp;FS_Outlet__r.FS_Distributor__r.ShippingPostalCode</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Distribution Center</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

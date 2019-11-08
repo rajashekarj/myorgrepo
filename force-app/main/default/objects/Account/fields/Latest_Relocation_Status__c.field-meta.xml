@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Relocation_Status__c</fullName>
+    <description>Status of Post Install Relocation installing Dispenser on this New Outlet</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Post Install Relocation Status for this new Outlet.</inlineHelpText>
+    <label>Latest Relocation Status</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

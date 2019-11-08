@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_CPO_to_select_Distributor</fullName>
+    <active>true</active>
+    <description>â€˜Distributorâ€™ value on the field â€˜Cartridge Ordering Method fieldâ€™ and hid it for POM / CPO profile user.</description>
+    <errorConditionFormula>AND(RecordType.Name = &quot;FS Outlet&quot;, ISPICKVAL(FS_VMS_Customer__c,&#39;Distributor&#39;), $Profile.Name=&#39;FS CPO_P&#39;,(TEXT(PRIORVALUE(FS_VMS_Customer__c)) &lt;&gt; Text(FS_VMS_Customer__c)), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_VMS_Customer__c</errorDisplayField>
+    <errorMessage>You are not authorized to select Distributor.</errorMessage>
+</ValidationRule>

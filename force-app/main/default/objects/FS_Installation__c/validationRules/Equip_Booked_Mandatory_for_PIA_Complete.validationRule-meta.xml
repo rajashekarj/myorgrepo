@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equip_Booked_Mandatory_for_PIA_Complete</fullName>
+    <active>true</active>
+    <description>Equipment Booked check box should be checked , if post install activity check box is getting checked for Replacement and removal records</description>
+    <errorConditionFormula>if( 
+AND(NOT(CONTAINS($Profile.Name, $Label.Exclude_User)), 
+OR(RecordType.Name=$Label.IP_Removal_Rec_Type,RecordType.Name=$Label.IP_Replacement_Rec_Type), 
+FS_Activity_Complete__c, 
+OR(NOT(FS_Equipment_Booked__c), 
+FS_Install_Doc__c=&quot;&quot;) 
+),true,false)</errorConditionFormula>
+    <errorMessage>Please ensure there is an appropriate value against the following fields: â€˜Equip Activity Enteredâ€™ and &quot;Work Order #&quot; in order to move the status to &quot;Complete&quot;.</errorMessage>
+</ValidationRule>

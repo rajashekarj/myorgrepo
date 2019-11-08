@@ -1,0 +1,31 @@
+<!--*********************************************************************************-->
+<!-- Author       :   Dipika (Appirio Offshore)-->
+<!-- Created Date :   April 9,2013-->
+<!-- Task         :   T-128538
+<!--Description   :   Inline Vf page for Related list of content Files on Installations-->
+<!--*********************************************************************************-->
+<apex:page standardController="FS_Installation__c" extensions="InstallationRelatedContact">
+    <apex:form id="frm">
+        <apex:pageBlock id="pb1">
+        <apex:pageMessages />
+        
+        <apex:pageBlockTable id="pbt1" value="{!Con}" var="cnt" rendered="{!con.size > 0}">
+             <apex:column headerValue="Name">
+                <a href="/{!cnt.Id}" class="actionLink" onclick="redirectToRecord('{!cnt.id}' , 'true');return false;">{!cnt.FS_Contact_Name__c}</a>
+                </apex:column>
+              <apex:column headerValue="Phone" value="{!cnt.FS_Phone__c}"/>
+              <apex:column headerValue="Email" value="{!cnt.FS_Email__c}"/>
+              <apex:column headerValue="Role" value="{!cnt.FS_Execution_Plan_Role__c}"/>
+           
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+    <script>
+            function redirectToRecord(recordId , tempVar){
+            if(tempVar == 'true')
+                window.parent.location.href = '/' + recordId;
+            else
+                window.parent.location.href = '/sfc/#version?selectedDocumentId=' + recordId; 
+            }
+    </script>      
+</apex:page>

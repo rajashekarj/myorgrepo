@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Must_Provide_atleast_one_RO4W_value</fullName>
+    <active>true</active>
+    <description>If the value provided within the &quot;Does Install Involve RO4W?&quot; field = Yes, you must provide a value within RO4W 1. If the value = No, then RO4W 1, 2, &amp; 3 values must be blank.</description>
+    <errorConditionFormula>OR(IF(AND( ISPICKVAL(Does_Install_Involve_RO4W__c, &#39;YES&#39;) ,  ISBLANK( FS_RO4W1__c )) , true, false), AND(ISPICKVAL( Does_Install_Involve_RO4W__c , &#39;NO&#39;), 
+OR(NOT(ISBLANK(FS_RO4W1__c)),NOT(ISBLANK(FS_RO4W2__c)),NOT(ISBLANK(FS_RO4W3__c))))) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorMessage>If the value provided within the &quot;Does Install Involve RO4W?&quot; field = Yes, you must provide a value within RO4W 1. If the value = No, then RO4W 1, 2, &amp; 3 values must be blank.</errorMessage>
+</ValidationRule>

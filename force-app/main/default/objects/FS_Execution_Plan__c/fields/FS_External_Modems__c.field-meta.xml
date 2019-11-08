@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_External_Modems__c</fullName>
+    <externalId>false</externalId>
+    <label>External Modems</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46299: MultiModem - Verizon</fullName>
+                <default>false</default>
+                <label>46299: MultiModem - Verizon</label>
+            </value>
+            <value>
+                <fullName>46298: MultiModem - ATT</fullName>
+                <default>false</default>
+                <label>46298: MultiModem - ATT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

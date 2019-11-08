@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cancel_PostInstal</fullName>
+    <availability>online</availability>
+    <description>Cancel at Installation</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Cancel</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)}
+
+var ArrayIds={!GETRECORDIDS($ObjectType.FS_Post_Install_Marketing__c)};
+if(ArrayIds.length==0)
+alert(&quot;No Post Install Marketing Record is selected to cancel&quot;);
+else if(ArrayIds.length&gt;1)
+alert(&quot;You can&#39;t select more than one Post Install Marketing record&quot;);
+else if(ArrayIds.length==1){
+var r = confirm(&quot;Do you want to Cancel this  Post Install Marketing record&quot;);
+if (r == true) {
+var res = sforce.apex.execute(&quot;FSCancelPostInstallActivity&quot;,&quot;FSCancelPostInsMrkt&quot;, 
+{cancelId:ArrayIds[0]});
+alert(res);
+document.location.reload(true);
+}
+}</url>
+</WebLink>

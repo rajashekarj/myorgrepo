@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Valid_Fill__c</name>
+    <picklistValues>
+        <masterLabel>00000 - email billing@validfill.com to order kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46245 : Valid Fill Conversion Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,196 @@
+<!--
+/**************************************************************************************
+LWC JS File         : fs_LMCaseCustomButtons_LWC
+Function            : This HTML is created to display LM case custom buttons.
+Author              : Infosys
+Modification Log    :
+* Developer         : Date             Description
+* ----------------------------------------------------------------------------                 
+* Sai            9/25/2019         Based on the status,case type and logged in user profile custom buttons will display on the LM case record page.
+                                   This LWC component is used inside an auracomponent 'FS_LMCaseCustomButtons' and placed on the
+                                   LM case detail lightning page       
+*************************************************************************************/-->
+<template>
+  <!-- Note message on the LM case record page-->
+  <span class="InlineEditMessage">{INLINE_EDIT_MESSAGE}</span>
+  <!--LM Case Custom buttons starts here-->
+  <div class="slds-align_absolute-center slds-m-top_small" style="display:-webkit-box; ">
+    <lightning-button class="slds-button" label="Edit" variant="neutral" onclick={navigateToEditComponent}>
+    </lightning-button>
+    <lightning-button class="slds-button" label="Delete" variant="neutral" onclick={openDeleteCaseConfirmModal}>
+    </lightning-button>
+    <template if:true={buttonAMSFlag}>
+      <lightning-button class="slds-button" label="Escalate to AMS" variant="neutral" onclick={escalateToAMS}
+        disabled={isEscalateToAMSButtonDisabled}>
+      </lightning-button>
+    </template>
+    <template if:true={buttonSalesSupportFlag}>
+      <lightning-button class="slds-button" label="Escalate to Sales Support" variant="neutral"
+        onclick={EscalatetoSalesSupport} disabled={isEscalateToSalesButtonDisabled}>
+      </lightning-button>
+    </template>
+    <template if:true={buttonFactFlag}>
+      <lightning-button class="slds-button" label="Escalate to FACT" variant="neutral" onclick={EscalatetoFACT}
+        disabled={isEscalateToFACTButtonDisabled}>
+      </lightning-button>
+    </template>
+    <template if:true={buttonRSSFlag}>
+      <lightning-button class="slds-button" label="Escalate to RSS" variant="neutral" onclick={escalateToRSS}
+        disabled={isEscalateToRSSButtonDisabled}>
+      </lightning-button>
+    </template>
+    <template if:true={buttonInstallBaseFlag}>
+      <lightning-button class="slds-button" label="Escalate to Install Base" variant="neutral"
+        onclick={Escalatetoinstall} disabled={isEscalateToInstallButtonDisabled}></lightning-button>
+    </template>
+    <lightning-button class="slds-button" label="Create FACT Case" variant="neutral"
+      onclick={openDispensersSelectPopup}></lightning-button>
+    <br>
+    <!--LM Case Custom buttons ends here-->
+  </div>
+<!--Create Connectivity solution fact case modal popup starts here-->
+  <template if:true={createFactModalPopup}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+      aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+      <div class="slds-modal__container modal-lg">
+        <!-- modal header start -->
+        <header class="slds-modal__header">
+          <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+            onclick={closeModal}>
+            <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small">
+            </lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2 id="modal-heading-02" class="slds-text-heading_medium slds-hyphenate">Dispensers List
+          </h2>
+        </header>
+        <!-- modal body start -->
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-5">
+          <table class="slds-table slds-table--bordered slds-table--striped">
+            <thead>
+              <th></th>
+              <th>Outlet Dispensers Name</th>
+              <th>Status</th>
+              <th>MDM Registered Date</th>
+              <th>JDE Serial Number/Asset Tag</th>
+              <th>Equipment Type</th>
+              <th>Active (A) / Inactive (I)</th>
+            </thead>
+            <tbody>
+              <template if:true={OutletDispensersFactList}>
+                <template for:each={OutletDispensersFactList} for:item="Odlist">
+                  <tr key={Odlist.Id}>
+                    <td>
+                      <lightning-input type="Radio" name="selectedOd" data-item={Odlist.Id} data-id="selectedOd">
+                      </lightning-input>
+                    </td>
+                    <td>
+                      <lightning-formatted-text value={Odlist.Name}>
+                      </lightning-formatted-text>
+                    </td>
+                    <td>
+                      <lightning-formatted-text value={Odlist.FS_Status__c}>
+                      </lightning-formatted-text>
+                    </td>
+                    <td>
+                      <lightning-formatted-text value={Odlist.FS_Date_Status__c}>
+                      </lightning-formatted-text>
+                    </td>
+                    <td>
+                      <lightning-formatted-text value={Odlist.FS_Serial_Number2__c}>
+                      </lightning-formatted-text>
+                    </td>
+                    <td>
+                      <lightning-formatted-text value={Odlist.FS_Equip_Type__c}>
+                      </lightning-formatted-text>
+                    </td>
+                    <td>
+                      <div if:true={Odlist.FS_IsActive__c}>
+                        <lightning-input type="Checkbox" value={Odlist.FS_IsActive__c} checked disabled>
+                        </lightning-input>
+                      </div>
+                      <div if:false={Odlist.FS_IsActive__c}>
+                        <lightning-input type="Checkbox" value={Odlist.FS_IsActive__c} disabled>
+                        </lightning-input>
+                      </div>
+                    </td>
+                  </tr>
+                </template>
+              </template>
+            </tbody>
+          </table>
+        </div>
+        <!-- modal body ends -->
+        <!-- modal footer start-->
+        <footer class="slds-modal__footer">
+          <button class="slds-button slds-button_neutral" onclick={closeModal}>Cancel</button>
+          <button class="slds-button slds-button_brand" onclick={openFactCase}>Continue</button>
+        </footer>
+        <!-- modal footer ends-->
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+<!--Create Connectivity solution fact case modal popup starts here-->
+
+  <!--Modal for delete Non LM case starts here -->
+
+  <template if:true={deleteCaseModal}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+      aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+      <div class="slds-modal__container">
+        <!-- modal header start -->
+        <header class="slds-modal__header">
+          <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+            onclick={closeDeleteCaseModal}>
+            <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small">
+            </lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2 id="modal-heading-03" class="slds-text-heading_medium slds-hyphenate">Delete Case
+          </h2>
+        </header>
+        <!-- modal header ends -->
+        <!-- modal body start -->
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-3">
+          <center> Are you sure you want to delete this Case?</center>
+        </div>
+        <!-- modal body ends -->
+        <!-- modal footer start-->
+        <footer class="slds-modal__footer">
+          <button class="slds-button slds-button--neutral" onclick={closeDeleteCaseModal}>Cancel</button>
+          &nbsp;&nbsp;
+          <button class="slds-button slds-button_brand" onclick={navigateToDeleteCase}
+            disabled={isPopupSubmitButtonDisabled}>Delete</button>
+        </footer>
+        <!-- modal footer ends-->
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+   <!--Modal for delete Non LM case ends here -->
+ <!--Modal for custom alert messages starts here -->
+   <template if:true={openAlertModal}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+       <div class="slds-modal__container alertModalContainer">
+          <!-- modal header start -->
+          <header class="slds-modal__header alertModalHeader">
+            <h2 id="modal-heading-01" class="alertModalHeaderText">Error</h2>
+         </header>
+          <!-- modal header ends -->
+          <!-- modal body start -->
+          <div class="slds-modal__content slds-p-around_medium alertMessageText" id="modal-content-id-1">
+              {alertMesssage}
+          </div>
+           <!-- modal body ends -->
+          <!-- modal footer start-->
+          <footer class="slds-modal__footer alertModalFooter">
+             <button class="slds-button slds-button_neutral" onclick={closeAlertModalMethod}>Close</button>
+          </footer>
+          <!-- modal footer ends-->
+       </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+ </template>
+  <!--Modal for custom alert messages starts here -->
+</template>

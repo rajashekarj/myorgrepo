@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Booster_Shelf__c</fullName>
+    <externalId>false</externalId>
+    <label>Booster Shelf</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>43537 : Booster Shelf 4.4</fullName>
+                <default>false</default>
+                <label>43537 : Booster Shelf 4.4</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

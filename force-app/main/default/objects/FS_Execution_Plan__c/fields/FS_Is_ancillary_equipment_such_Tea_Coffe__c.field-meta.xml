@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Is_ancillary_equipment_such_Tea_Coffe__c</fullName>
+    <externalId>false</externalId>
+    <label>ancillary equipment Tea&amp;Coffee removed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-None-</fullName>
+                <default>true</default>
+                <label>-None-</label>
+            </value>
+            <value>
+                <fullName>No â€“ Does not apply to this install</fullName>
+                <default>false</default>
+                <label>No â€“ Does not apply to this install</label>
+            </value>
+            <value>
+                <fullName>Yes â€“ Existing Tea &amp; Coffee dispenser(s) will remain in same locations</fullName>
+                <default>false</default>
+                <label>Yes â€“ Existing Tea &amp; Coffee dispenser(s) will remain in same locations</label>
+            </value>
+            <value>
+                <fullName>Yes â€“ New Tea &amp; Coffee dispensers will be added, details provided in project plan</fullName>
+                <default>false</default>
+                <label>Yes â€“ New Tea &amp; Coffee dispensers will be added, details provided in project plan</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Self_Serve_Top_Mount_Ice_maker_Mdl_no__c</fullName>
+    <defaultValue>true</defaultValue>
+    <externalId>false</externalId>
+    <label>9000 Series Top-Mount Ice-maker Model no</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

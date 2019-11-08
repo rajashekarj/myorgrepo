@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bottler_YD_Number_Req_Outlet</fullName>
+    <active>true</active>
+    <description>Bottler YD Number Required on Outlet</description>
+    <errorConditionFormula>AND(CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;),RecordType.Name = &quot;FS Outlet&quot;, 
+FS_Final_Delivery_Method__c=&quot;Bottler&quot; , 
+FS_Final_Order_Method__c=&quot;Bottler&quot;,OR(ISBLANK(FS_Bottler_YD_Number_formula__c),FS_Bottler_YD_Number_formula__c=&quot;&quot;,FS_Bottler_YD_Number_formula__c=null), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorMessage>Please enter a value for mandatory field &#39;Bottler YD Number&#39; of the Distributor/Bottlerâ€™</errorMessage>
+</ValidationRule>

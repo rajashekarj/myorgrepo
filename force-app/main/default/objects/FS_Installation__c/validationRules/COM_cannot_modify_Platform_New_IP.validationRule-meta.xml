@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COM_cannot_modify_Platform_New_IP</fullName>
+    <active>true</active>
+    <description>COM profile user cannot modify the Platform type/s field on New install record.</description>
+    <errorConditionFormula>AND( NOT(ISNEW()),ISCHANGED(Type_of_Dispenser_Platform__c),$Profile.Name= &#39;FS COM_P&#39;, RecordType.Name = &#39;New Install&#39;)</errorConditionFormula>
+    <errorMessage>You do not have sufficient permissions to edit the &#39;Platform Type/s&#39; field</errorMessage>
+</ValidationRule>

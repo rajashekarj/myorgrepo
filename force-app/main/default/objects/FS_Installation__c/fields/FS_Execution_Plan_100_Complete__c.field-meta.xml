@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Execution_Plan_100_Complete__c</fullName>
+    <externalId>false</externalId>
+    <formula>If( FS_Install_Complete__c,true, 
+
+If( AND( FS_Execution_Plan__r.FS_Related_Chain__r.Name &lt;&gt;&quot;Jack In The Box&quot; , 
+FS_Outlet_CS_Status__c =&quot;Complete&quot;, 
+FS_OB_Info_Status__c =&quot;Complete&quot; ,  
+FS_BrandStatus__c=&quot;Complete&quot; , 
+ISPICKVAL(FS_Execution_Plan_Final_Approval_PM__c,&#39;Approved&#39;)),true,false))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Execution Plan 100% Complete?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Disposition_of_Dispenser_Upon_Removal__c</fullName>
+    <description>Disposition of Dispenser Upon Removal</description>
+    <externalId>false</externalId>
+    <label>Disposition of Dispenser Upon Removal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Removed and Taken to SP for Storage</fullName>
+                <default>false</default>
+                <label>Removed and Taken to SP for Storage</label>
+            </value>
+            <value>
+                <fullName>Disconnected and Placed in Backroom</fullName>
+                <default>false</default>
+                <label>Disconnected and Placed in Backroom</label>
+            </value>
+            <value>
+                <fullName>Removed and Shipped to New Outlet</fullName>
+                <default>false</default>
+                <label>Removed and Shipped to New Outlet</label>
+            </value>
+            <value>
+                <fullName>Dispenser Back at Location and Reconnected</fullName>
+                <default>false</default>
+                <label>Dispenser Back at Location and Reconnected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

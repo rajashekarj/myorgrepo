@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Initial Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Initial Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>FS_Initial Order Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Intial Order Override</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>SAP Material</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Initial Order Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Install</layout>
+        <sections>
+            <label/>
+            <section>Brandset Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Notes</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label/>
+        <name>New_Install</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>Fields_to_be_locked_if_Order_Processed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Update_Customer_Support_Notes</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Sap_Material_Summary</name>
+    </webLinks>
+</CustomObjectTranslation>

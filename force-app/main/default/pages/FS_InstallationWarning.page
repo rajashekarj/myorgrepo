@@ -1,0 +1,32 @@
+<apex:page standardController="FS_Installation__c" extensions="FS_InstallationWarningController" 
+         action="{!checkBrandsetAndSyncValues}" showHeader="false" sidebar="false" standardStylesheets="true">
+    <style>
+        .pbError{
+            font-weight: bold; 
+            color: #c00;
+            text-align: left;
+        }
+    </style>
+    <apex:outputPanel rendered="{!if(AND(displayError,FS_Installation__c.RecordType.Name==$Label.IP_New_Install_Rec_Type),true,false) }">        
+        <div class="pbError" style="display: block;" >Error: {!$Label.IP_Inline_Brandset_Error}</div>        
+    </apex:outputPanel>
+
+    <apex:outputPanel rendered="{!if(AND(displayError,FS_Installation__c.RecordType.Name!=$Label.IP_New_Install_Rec_Type),true,false) }">                
+        <div class="pbError" style="display: block;">Error: {!$Label.IP_PIA_Brandset_Error}</div>
+    </apex:outputPanel>
+  
+<!--   Commenting as part of  FNF-747 change : to remove the warning message for all PIA records-->
+<!--    <apex:outputPanel rendered="{!if(AND(dispSecError,FS_Installation__c.RecordType.Name!=$Label.IP_New_Install_Rec_Type),true,false) }">                
+        <div class="pbError" style="display: block;">Error: {!$Label.IP_Disp_Sec_Alest1_Error}</div>
+    </apex:outputPanel>-->
+
+  
+   <apex:outputPanel rendered="{!displayErrorSync}">        
+        <div class="pbError" style="display: block;">Error: {!$Label.IP_EP_Inline_Platform_Error}</div>
+    </apex:outputPanel>
+    
+    <apex:outputPanel rendered="{!IP_I4W_ReconnectDate}">        
+        <div class="pbError" style="display: block;">Error: {!$Label.IP_I4W_Reconnect_b4_Disconnect}</div>
+    </apex:outputPanel>
+    
+</apex:page>

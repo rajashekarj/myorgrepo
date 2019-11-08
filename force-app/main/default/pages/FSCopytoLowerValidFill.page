@@ -1,0 +1,35 @@
+<apex:page standardController="FS_Valid_Fill__c" extensions="FSCopytoLower_Cancel_ValidFill_Extension" recordSetVar="FS_Valid_Fill__c">
+    <apex:includeScript value="/soap/ajax/44.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/44.0/apex.js"/>
+    
+    <script>
+    var ArrayIds={!validFillCount};  
+    
+    if({!NOT(CONTAINS($Label.FS_Copy_Down_Valid_Fill_Profile_List,$Profile.Name))}) 
+        alert('{!$Label.FS_Warning_message_validfill_copydown}');
+    
+    else if(ArrayIds==0)
+        alert("No Valid  Fill is selected to copy");
+        
+        else if(ArrayIds>1)
+            alert("You cant select more than one Valid Fill record");
+            
+            else if(ArrayIds==1){
+                var r = confirm("Do you want to Copy this Valid Fill  record");            
+                
+                if (r == true) {
+                    sforce.connection.sessionId='{!$Api.Session_Id}';
+                    
+                    try{
+                        var res = sforce.apex.execute("FSCopyPostInstallActivity","ChaintoHqValidFill",
+                                                      {recId:'{!accId}',vfid:'{!validFillId}',Obj:'Account'});
+                        alert(res);
+                    }
+                    catch (e){
+                        alert(e);
+                    }
+                }
+            }
+    sforce.one.back(true);
+    </script>    
+</apex:page>

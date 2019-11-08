@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RollbackId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>..</description>
+    <externalId>false</externalId>
+    <label>Rollback Id</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>FS_TargetArtifact__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Rollback</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FS_TargetArtifact__c</referenceTo>
+    <relationshipLabel>TargetArtifacts (RollbackId)</relationshipLabel>
+    <relationshipName>RollbackArtifacts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" controller="FS_NonLMCaseController" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.init}"/>  
+	<aura:attribute type="boolean" default="false" name="isCommunity"></aura:attribute>
+    <lightning:workspaceAPI aura:id="workspace" />
+    <lightning:navigationItemAPI aura:id="navigationItemAPI"/>
+    <aura:attribute type="boolean" default="false" name="navigateToCaseHomePageFlag"></aura:attribute>
+    <aura:attribute type="String" name="communitySiteId"></aura:attribute>
+	<c:fs_NonLMCaseCustomButtons_LWC recordId="{!v.recordId}" communitySiteId="{!v.communitySiteId}" ondeleteLmCase="{!c.closeFocusedTab}" onopenEditPage="{!c.openEdit}"></c:fs_NonLMCaseCustomButtons_LWC>
+    <aura:if isTrue="{!v.navigateToCaseHomePageFlag}">
+        <c:fs_CaseRecordNavigation_LWC  navigateToCaseHomePageFlag="{!v.navigateToCaseHomePageFlag}"/>
+    </aura:if>
+</aura:component>

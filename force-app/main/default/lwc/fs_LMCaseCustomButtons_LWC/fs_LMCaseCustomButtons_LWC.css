@@ -1,0 +1,29 @@
+.modal-lg {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 70rem;
+    min-width: 20rem;
+}
+.InlineEditMessage{
+    color:red;align-self: center;font-weight: bold;
+    /*display:-webkit-box;-webkit-box-pack:end;*/
+    font-size: 15px;
+}
+.alertModalHeaderText{
+    float: left;
+    font-weight: bold;
+    font-size: large;
+}
+.alertModalFooter{
+    border-top: none !important;
+    background-color: white;
+}
+.alertModalHeader{
+    background-color: #fb5e5e;
+}
+.alertModalContainer{
+    max-width: 30% !important;
+}
+.alertMessageText{
+    font-size: medium;
+}

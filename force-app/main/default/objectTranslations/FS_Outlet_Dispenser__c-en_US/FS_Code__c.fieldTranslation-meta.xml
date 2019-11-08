@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Code__c</name>
+    <picklistValues>
+        <masterLabel>46099 : Freestyle GS1 Silver</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46100 : Freestyle GS1 Red</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46101 : Freestyle GS1 Black</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46102: Freestyle GS2 Crew Serve</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46126 : Freestyle GS1 Silver - Wood Crate</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46127 : Freestyle GS1 Red - Wood Crate</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46128 : Freestyle GS1 Black - Wood Crate</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46129: Freestyle GS2 Crew Serve - Wood Crate</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46130 : Freestyle GS1 Red - Cruise Ship</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46293 : Freestyle GS1 Silver - Cruise Ship</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46379: Extended Splashplate - without Legs</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46401: Standard Splashplate with Driptray, Cuprest and optional leg kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46402 : SUBWAY Extended Splashplate - without Legs *</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46403: SUBWAY Standard Splashplate with Driptray, Cuprest and optional leg kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46749: 7100 Red Standard Splashplate with Driptray, Cuprest and optional legs</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: 7100 Black Standard Splashplate with Driptray, Cuprest and optional legs</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: Freestyle 6000 McDonalds  M-series</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

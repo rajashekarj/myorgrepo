@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Valid Fill</value>
+    </caseValues>
+    <layouts>
+        <layout>7000</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information-DO NOT CHANGE</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid FIll Request</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Confirmation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Execution - PM Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>8000</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information-DO NOT CHANGE</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid FIll Request</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Confirmation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Execution - PM Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>8000 &amp; 9000</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information-DO NOT CHANGE</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid FIll Request</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Confirmation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Execution - PM Team</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>9000</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information-DO NOT CHANGE</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Confirmation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Execution - PM Team</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Request</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>9100</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information-DO NOT CHANGE</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Confirmation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Execution - PM Team</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Request</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vailid Fill Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid FIll Request</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Confirmation</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Valid Fill Execution - PM Team</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label/>
+        <name>X7000_Series</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>X8000_9000_Series</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>X8000_Series</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>X9000_Series</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>X9100_Series</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>ValidFillEffDateMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>ValidFillMandatory</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Cancel</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Copy_to_Lower_levels_Install</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Copy_to_lower_Levels_Acc</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Apply_Flavor_Change_To_Outlets</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Valid_Fill_OD</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Valid_Fill_acc</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Valid_Fill_ins</name>
+    </webLinks>
+</CustomObjectTranslation>

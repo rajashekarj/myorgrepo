@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Soft_Ice_Misc_Adapter__c</fullName>
+    <description>Soft Ice / Misc Adapter</description>
+    <externalId>false</externalId>
+    <label>Soft Ice / Misc Adapter</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46303 Hoshizaki Funnel Kit for Models: KM-280, -320, -500, -501, -515, -630M, -650M &amp; -600MAH</fullName>
+                <default>false</default>
+                <label>46303 Hoshizaki Funnel Kit for Models: KM-280, -320, -500, -501, -515, -630M, -650M &amp; -600MAH</label>
+            </value>
+            <value>
+                <fullName>46377 : Hoshizaki Funnel Kit</fullName>
+                <default>false</default>
+                <label>46377 : Hoshizaki Funnel Kit</label>
+            </value>
+            <value>
+                <fullName>46468: IM FUNNEL ADAPTER KIT HS-5201</fullName>
+                <default>false</default>
+                <label>46468: IM FUNNEL ADAPTER KIT HS-5201</label>
+            </value>
+            <value>
+                <fullName>46487: HOSH KM-650 SUPPLEMENTAL KIT</fullName>
+                <default>false</default>
+                <label>46487: HOSH KM-650 SUPPLEMENTAL KIT</label>
+            </value>
+            <value>
+                <fullName>46712: KIT FREESTYLE 7000 SOFT ICE</fullName>
+                <default>false</default>
+                <label>46712: KIT FREESTYLE 7000 SOFT ICE</label>
+            </value>
+            <value>
+                <fullName>46430: KIT FREESTYLE 7000 SOFT ICE</fullName>
+                <default>false</default>
+                <label>46430: KIT FREESTYLE 7000 SOFT ICE</label>
+            </value>
+            <value>
+                <fullName>XXXXX: For Future Use</fullName>
+                <default>false</default>
+                <label>XXXXX: For Future Use</label>
+            </value>
+            <value>
+                <fullName>XXXXX: Kit Freestyle 7100 Soft Ice</fullName>
+                <default>false</default>
+                <label>XXXXX: Kit Freestyle 7100 Soft Ice</label>
+            </value>
+            <value>
+                <fullName>46728: Kit Freestyle 9100 Soft Ice</fullName>
+                <default>false</default>
+                <label>46728: Kit Freestyle 9100 Soft Ice</label>
+            </value>
+            <value>
+                <fullName>46303: Hoshizaki Funnel Kit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46303: Hoshizaki Funnel Kit</label>
+            </value>
+            <value>
+                <fullName>46430: Soft Ice Kit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46430: Soft Ice Kit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>46712: KIT FREESTYLE 7000 SOFT ICE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46303 Hoshizaki Funnel Kit for Models: KM-280, -320, -500, -501, -515, -630M, -650M &amp; -600MAH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46377 : Hoshizaki Funnel Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46468: IM FUNNEL ADAPTER KIT HS-5201</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46487: HOSH KM-650 SUPPLEMENTAL KIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46728: Kit Freestyle 9100 Soft Ice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: For Future Use</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>XXXXX: Kit Freestyle 7100 Soft Ice</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

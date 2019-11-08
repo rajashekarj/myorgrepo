@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Series_Agitated_Brand_Selection__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( INCLUDES(FS_Instalation_Process__r.FS_7000_Series_Agitated_Brands_Selection__c, &quot;Barqs&quot;), &quot;Barqs;&quot;,&quot;&quot;) 
+&amp;
+IF( INCLUDES(FS_Instalation_Process__r.FS_7000_Series_Agitated_Brands_Selection__c, &quot;Pibb&quot;), &quot;Pibb;&quot;,&quot;&quot;) 
+&amp;
+IF( INCLUDES(FS_Instalation_Process__r.FS_7000_Series_Agitated_Brands_Selection__c, &quot;Dr Pepper&quot;), &quot;Dr Pepper&quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>7000 Series Agitated Brand Selections</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

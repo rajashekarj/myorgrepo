@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Int_Cartridges</fullName>
+    <columns>NAME</columns>
+    <columns>FS_Platform__c</columns>
+    <columns>FS_Brand__c</columns>
+    <columns>FS_Country__c</columns>
+    <columns>FS_SAP_MaterialId__c</columns>
+    <columns>FS_FET_Name__c</columns>
+    <columns>FS_FET_SAP_Material_Id__c</columns>
+    <columns>FS_Description__c</columns>
+    <columns>FS_Airwatch_Flag__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FS_Platform__c</field>
+        <operation>includes</operation>
+        <value>7000,8000,9000</value>
+    </filters>
+    <filters>
+        <field>FS_Country__c</field>
+        <operation>excludes</operation>
+        <value>US</value>
+    </filters>
+    <label>Int Cartridges</label>
+</ListView>

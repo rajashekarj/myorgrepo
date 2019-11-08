@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Resolution_Type__c</fullName>
+    <description>Created for FACT Cases</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Resolution Type when Status is changed to Closed</inlineHelpText>
+    <label>Resolution Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Booster</fullName>
+                <default>false</default>
+                <label>Booster</label>
+            </value>
+            <value>
+                <fullName>Dispenser Enrolled</fullName>
+                <default>false</default>
+                <label>Dispenser Enrolled</label>
+            </value>
+            <value>
+                <fullName>Enrolled to wrong ACN Number</fullName>
+                <default>false</default>
+                <label>Enrolled to wrong ACN Number</label>
+            </value>
+            <value>
+                <fullName>External Modem</fullName>
+                <default>false</default>
+                <label>External Modem</label>
+            </value>
+            <value>
+                <fullName>Flavor Change</fullName>
+                <default>false</default>
+                <label>Flavor Change</label>
+            </value>
+            <value>
+                <fullName>Hide/Show Water</fullName>
+                <default>false</default>
+                <label>Hide/Show Water</label>
+            </value>
+            <value>
+                <fullName>Manual Software Update</fullName>
+                <default>false</default>
+                <label>Manual Software Update</label>
+            </value>
+            <value>
+                <fullName>No Signal-Needs Hardwire</fullName>
+                <default>false</default>
+                <label>No Signal-Needs Hardwire</label>
+            </value>
+            <value>
+                <fullName>OTA Update Needed</fullName>
+                <default>false</default>
+                <label>OTA Update Needed</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Re-linkage and Enrollment</fullName>
+                <default>false</default>
+                <label>Re-linkage and Enrollment</label>
+            </value>
+            <value>
+                <fullName>Reporting with Wrong SAP Number</fullName>
+                <default>false</default>
+                <label>Reporting with Wrong SAP Number</label>
+            </value>
+            <value>
+                <fullName>Serial Number Exception</fullName>
+                <default>false</default>
+                <label>Serial Number Exception</label>
+            </value>
+            <value>
+                <fullName>Custom USB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Custom USB</label>
+            </value>
+            <value>
+                <fullName>Retrigger OTA Updates</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Retrigger OTA Updates</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Booster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Dispenser Enrolled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Enrolled to wrong ACN Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>External Modem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Flavor Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Hide/Show Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Manual Software Update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>No Signal-Needs Hardwire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>OTA Update Needed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Re-linkage and Enrollment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Reporting with Wrong SAP Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closed</controllingFieldValue>
+            <valueName>Serial Number Exception</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

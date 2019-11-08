@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PIAs</fullName>
+    <columns>NAME</columns>
+    <columns>FS_Post_Installation_Activity__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>Overall_Status2__c</columns>
+    <columns>Type_of_Dispenser_Platform__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>FS_Installation__c.Relocation_O4W,FS_Installation__c.Relocation,FS_Installation__c.Removal,FS_Installation__c.Replacement</value>
+    </filters>
+    <label>PIAs</label>
+</ListView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Misc_Kits__c</fullName>
+    <externalId>false</externalId>
+    <label>7000 Misc Kits</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>XXXXX: Barqs/Dr. Pepper label kit</fullName>
+                <default>false</default>
+                <label>XXXXX: Barqs/Dr. Pepper label kit</label>
+            </value>
+            <value>
+                <fullName>XXXXX: Barqs/Pibb label kit</fullName>
+                <default>false</default>
+                <label>XXXXX: Barqs/Pibb label kit</label>
+            </value>
+            <value>
+                <fullName>XXXXX: Soft Ice Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: Soft Ice Kit</label>
+            </value>
+            <value>
+                <fullName>XXXXX: Tall Cup Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: Tall Cup Kit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

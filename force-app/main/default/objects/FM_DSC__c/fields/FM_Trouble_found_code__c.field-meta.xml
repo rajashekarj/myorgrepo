@@ -1,0 +1,1290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Trouble_found_code__c</fullName>
+    <externalId>false</externalId>
+    <label>Trouble found</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FM_Tertiary_Code__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Leaking</fullName>
+                <default>false</default>
+                <label>Leaking</label>
+            </value>
+            <value>
+                <fullName>Creeping Pressure</fullName>
+                <default>false</default>
+                <label>Creeping Pressure</label>
+            </value>
+            <value>
+                <fullName>Leak</fullName>
+                <default>false</default>
+                <label>Leak</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Out Of CO2</fullName>
+                <default>false</default>
+                <label>Out Of CO2</label>
+            </value>
+            <value>
+                <fullName>Pressures Out Of Spec</fullName>
+                <default>false</default>
+                <label>Pressures Out Of Spec</label>
+            </value>
+            <value>
+                <fullName>Empty</fullName>
+                <default>false</default>
+                <label>Empty</label>
+            </value>
+            <value>
+                <fullName>Broken</fullName>
+                <default>false</default>
+                <label>Broken</label>
+            </value>
+            <value>
+                <fullName>Kinked</fullName>
+                <default>false</default>
+                <label>Kinked</label>
+            </value>
+            <value>
+                <fullName>Not working</fullName>
+                <default>false</default>
+                <label>Not working</label>
+            </value>
+            <value>
+                <fullName>Tank/Bladder</fullName>
+                <default>false</default>
+                <label>Tank/Bladder</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>Procon Pump</fullName>
+                <default>false</default>
+                <label>Procon Pump</label>
+            </value>
+            <value>
+                <fullName>Pressure Switch</fullName>
+                <default>false</default>
+                <label>Pressure Switch</label>
+            </value>
+            <value>
+                <fullName>Low Pressure</fullName>
+                <default>false</default>
+                <label>Low Pressure</label>
+            </value>
+            <value>
+                <fullName>Clogged</fullName>
+                <default>false</default>
+                <label>Clogged</label>
+            </value>
+            <value>
+                <fullName>Leaking Tank</fullName>
+                <default>false</default>
+                <label>Leaking Tank</label>
+            </value>
+            <value>
+                <fullName>Probe Not Working</fullName>
+                <default>false</default>
+                <label>Probe Not Working</label>
+            </value>
+            <value>
+                <fullName>Out of Calibration</fullName>
+                <default>false</default>
+                <label>Out of Calibration</label>
+            </value>
+            <value>
+                <fullName>Will Not Prime</fullName>
+                <default>false</default>
+                <label>Will Not Prime</label>
+            </value>
+            <value>
+                <fullName>Overfilling</fullName>
+                <default>false</default>
+                <label>Overfilling</label>
+            </value>
+            <value>
+                <fullName>Cracked</fullName>
+                <default>false</default>
+                <label>Cracked</label>
+            </value>
+            <value>
+                <fullName>Loose</fullName>
+                <default>false</default>
+                <label>Loose</label>
+            </value>
+            <value>
+                <fullName>Customer Not Orientating Package Correctly</fullName>
+                <default>false</default>
+                <label>Customer Not Orientating Package Correctly</label>
+            </value>
+            <value>
+                <fullName>Customer Unaware On How To Change Out Packages</fullName>
+                <default>false</default>
+                <label>Customer Unaware On How To Change Out Packages</label>
+            </value>
+            <value>
+                <fullName>Expired Product</fullName>
+                <default>false</default>
+                <label>Expired Product</label>
+            </value>
+            <value>
+                <fullName>Leaking Product</fullName>
+                <default>false</default>
+                <label>Leaking Product</label>
+            </value>
+            <value>
+                <fullName>Out Of Product</fullName>
+                <default>false</default>
+                <label>Out Of Product</label>
+            </value>
+            <value>
+                <fullName>Wrong Product Fitting</fullName>
+                <default>false</default>
+                <label>Wrong Product Fitting</label>
+            </value>
+            <value>
+                <fullName>Missing key</fullName>
+                <default>false</default>
+                <label>Missing key</label>
+            </value>
+            <value>
+                <fullName>No Power To Unit</fullName>
+                <default>false</default>
+                <label>No Power To Unit</label>
+            </value>
+            <value>
+                <fullName>Ice Maker Issue</fullName>
+                <default>false</default>
+                <label>Ice Maker Issue</label>
+            </value>
+            <value>
+                <fullName>Not Filling Ice</fullName>
+                <default>false</default>
+                <label>Not Filling Ice</label>
+            </value>
+            <value>
+                <fullName>Wrong Ice Type</fullName>
+                <default>false</default>
+                <label>Wrong Ice Type</label>
+            </value>
+            <value>
+                <fullName>Not Cleaning/Maintain Unit</fullName>
+                <default>false</default>
+                <label>Not Cleaning/Maintain Unit</label>
+            </value>
+            <value>
+                <fullName>Outlet Main Drain Clogged</fullName>
+                <default>false</default>
+                <label>Outlet Main Drain Clogged</label>
+            </value>
+            <value>
+                <fullName>Broken/Loose</fullName>
+                <default>false</default>
+                <label>Broken/Loose</label>
+            </value>
+            <value>
+                <fullName>Missing</fullName>
+                <default>false</default>
+                <label>Missing</label>
+            </value>
+            <value>
+                <fullName>No Power</fullName>
+                <default>false</default>
+                <label>No Power</label>
+            </value>
+            <value>
+                <fullName>Not Connecting/Ethernet</fullName>
+                <default>false</default>
+                <label>Not Connecting/Ethernet</label>
+            </value>
+            <value>
+                <fullName>Software Issue</fullName>
+                <default>false</default>
+                <label>Software Issue</label>
+            </value>
+            <value>
+                <fullName>Bad Image On Screen</fullName>
+                <default>false</default>
+                <label>Bad Image On Screen</label>
+            </value>
+            <value>
+                <fullName>Touchscreen Sensitivity</fullName>
+                <default>false</default>
+                <label>Touchscreen Sensitivity</label>
+            </value>
+            <value>
+                <fullName>Missing Images/Screens</fullName>
+                <default>false</default>
+                <label>Missing Images/Screens</label>
+            </value>
+            <value>
+                <fullName>Back light out/Dark</fullName>
+                <default>false</default>
+                <label>Back light out/Dark</label>
+            </value>
+            <value>
+                <fullName>Screen Locks Up</fullName>
+                <default>false</default>
+                <label>Screen Locks Up</label>
+            </value>
+            <value>
+                <fullName>Stuck On Low Memory Screen</fullName>
+                <default>false</default>
+                <label>Stuck On Low Memory Screen</label>
+            </value>
+            <value>
+                <fullName>Dispenser Locks Up</fullName>
+                <default>false</default>
+                <label>Dispenser Locks Up</label>
+            </value>
+            <value>
+                <fullName>No Power 28VDC</fullName>
+                <default>false</default>
+                <label>No Power 28VDC</label>
+            </value>
+            <value>
+                <fullName>No Power 5VDC</fullName>
+                <default>false</default>
+                <label>No Power 5VDC</label>
+            </value>
+            <value>
+                <fullName>No Power Carb System</fullName>
+                <default>false</default>
+                <label>No Power Carb System</label>
+            </value>
+            <value>
+                <fullName>No Power Ice System</fullName>
+                <default>false</default>
+                <label>No Power Ice System</label>
+            </value>
+            <value>
+                <fullName>No Power Micro Agit 8</fullName>
+                <default>false</default>
+                <label>No Power Micro Agit 8</label>
+            </value>
+            <value>
+                <fullName>No Power Micro Static 13</fullName>
+                <default>false</default>
+                <label>No Power Micro Static 13</label>
+            </value>
+            <value>
+                <fullName>No Power Macro</fullName>
+                <default>false</default>
+                <label>No Power Macro</label>
+            </value>
+            <value>
+                <fullName>No Power RFID</fullName>
+                <default>false</default>
+                <label>No Power RFID</label>
+            </value>
+            <value>
+                <fullName>Off Line</fullName>
+                <default>false</default>
+                <label>Off Line</label>
+            </value>
+            <value>
+                <fullName>No Power to Pump</fullName>
+                <default>false</default>
+                <label>No Power to Pump</label>
+            </value>
+            <value>
+                <fullName>Damaged Connector</fullName>
+                <default>false</default>
+                <label>Damaged Connector</label>
+            </value>
+            <value>
+                <fullName>Tripping Breaker</fullName>
+                <default>false</default>
+                <label>Tripping Breaker</label>
+            </value>
+            <value>
+                <fullName>Damaged Connector/Cable</fullName>
+                <default>false</default>
+                <label>Damaged Connector/Cable</label>
+            </value>
+            <value>
+                <fullName>Damaged</fullName>
+                <default>false</default>
+                <label>Damaged</label>
+            </value>
+            <value>
+                <fullName>Out Of Alignment</fullName>
+                <default>false</default>
+                <label>Out Of Alignment</label>
+            </value>
+            <value>
+                <fullName>Cracked/Damaged</fullName>
+                <default>false</default>
+                <label>Cracked/Damaged</label>
+            </value>
+            <value>
+                <fullName>Unit Not Leveled</fullName>
+                <default>false</default>
+                <label>Unit Not Leveled</label>
+            </value>
+            <value>
+                <fullName>Warped/Bent</fullName>
+                <default>false</default>
+                <label>Warped/Bent</label>
+            </value>
+            <value>
+                <fullName>No Power To Nodes Going Offline</fullName>
+                <default>false</default>
+                <label>No Power To Nodes Going Offline</label>
+            </value>
+            <value>
+                <fullName>Sensor Not Working</fullName>
+                <default>false</default>
+                <label>Sensor Not Working</label>
+            </value>
+            <value>
+                <fullName>Unit Shorting Out</fullName>
+                <default>false</default>
+                <label>Unit Shorting Out</label>
+            </value>
+            <value>
+                <fullName>Stuck</fullName>
+                <default>false</default>
+                <label>Stuck</label>
+            </value>
+            <value>
+                <fullName>Shaft Seal Leaking</fullName>
+                <default>false</default>
+                <label>Shaft Seal Leaking</label>
+            </value>
+            <value>
+                <fullName>Ice Jammed</fullName>
+                <default>false</default>
+                <label>Ice Jammed</label>
+            </value>
+            <value>
+                <fullName>Installed Incorrectly</fullName>
+                <default>false</default>
+                <label>Installed Incorrectly</label>
+            </value>
+            <value>
+                <fullName>Auger Broken</fullName>
+                <default>false</default>
+                <label>Auger Broken</label>
+            </value>
+            <value>
+                <fullName>Foreign Object In Bin</fullName>
+                <default>false</default>
+                <label>Foreign Object In Bin</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Scraping</fullName>
+                <default>false</default>
+                <label>Ice Bin Scraping</label>
+            </value>
+            <value>
+                <fullName>Losser Retainer</fullName>
+                <default>false</default>
+                <label>Losser Retainer</label>
+            </value>
+            <value>
+                <fullName>Customer Bypass</fullName>
+                <default>false</default>
+                <label>Customer Bypass</label>
+            </value>
+            <value>
+                <fullName>Component Broken</fullName>
+                <default>false</default>
+                <label>Component Broken</label>
+            </value>
+            <value>
+                <fullName>Cotter Pin Missing</fullName>
+                <default>false</default>
+                <label>Cotter Pin Missing</label>
+            </value>
+            <value>
+                <fullName>Out Of Position</fullName>
+                <default>false</default>
+                <label>Out Of Position</label>
+            </value>
+            <value>
+                <fullName>Dirty Ice Lever</fullName>
+                <default>false</default>
+                <label>Dirty Ice Lever</label>
+            </value>
+            <value>
+                <fullName>Spring Detached From Ice Lever</fullName>
+                <default>false</default>
+                <label>Spring Detached From Ice Lever</label>
+            </value>
+            <value>
+                <fullName>Damaged Cable</fullName>
+                <default>false</default>
+                <label>Damaged Cable</label>
+            </value>
+            <value>
+                <fullName>Ice Flow Adjustment</fullName>
+                <default>false</default>
+                <label>Ice Flow Adjustment</label>
+            </value>
+            <value>
+                <fullName>Coil Dirty</fullName>
+                <default>false</default>
+                <label>Coil Dirty</label>
+            </value>
+            <value>
+                <fullName>Poor/No Signal</fullName>
+                <default>false</default>
+                <label>Poor/No Signal</label>
+            </value>
+            <value>
+                <fullName>Color/Flavor Carryover</fullName>
+                <default>false</default>
+                <label>Color/Flavor Carryover</label>
+            </value>
+            <value>
+                <fullName>Missing/Loose</fullName>
+                <default>false</default>
+                <label>Missing/Loose</label>
+            </value>
+            <value>
+                <fullName>Nozzle Light Out</fullName>
+                <default>false</default>
+                <label>Nozzle Light Out</label>
+            </value>
+            <value>
+                <fullName>Noisey</fullName>
+                <default>false</default>
+                <label>Noisey</label>
+            </value>
+            <value>
+                <fullName>Not Agitating</fullName>
+                <default>false</default>
+                <label>Not Agitating</label>
+            </value>
+            <value>
+                <fullName>Broken/Worn</fullName>
+                <default>false</default>
+                <label>Broken/Worn</label>
+            </value>
+            <value>
+                <fullName>Out of adjustment</fullName>
+                <default>false</default>
+                <label>Out of adjustment</label>
+            </value>
+            <value>
+                <fullName>Bearings Broken</fullName>
+                <default>false</default>
+                <label>Bearings Broken</label>
+            </value>
+            <value>
+                <fullName>False Sold-Out</fullName>
+                <default>false</default>
+                <label>False Sold-Out</label>
+            </value>
+            <value>
+                <fullName>Unable To Pump</fullName>
+                <default>false</default>
+                <label>Unable To Pump</label>
+            </value>
+            <value>
+                <fullName>Failed Open</fullName>
+                <default>false</default>
+                <label>Failed Open</label>
+            </value>
+            <value>
+                <fullName>Failed Closed</fullName>
+                <default>false</default>
+                <label>Failed Closed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ice Lever Switch</controllingFieldValue>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <controllingFieldValue>Solenoid Yoke</controllingFieldValue>
+            <controllingFieldValue>BIB Connector</controllingFieldValue>
+            <controllingFieldValue>Door Switch</controllingFieldValue>
+            <controllingFieldValue>Grounding Cable</controllingFieldValue>
+            <controllingFieldValue>Agitation Harness</controllingFieldValue>
+            <controllingFieldValue>Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Static Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Agit Harness</controllingFieldValue>
+            <controllingFieldValue>Macro Board Harness</controllingFieldValue>
+            <controllingFieldValue>HMI Harness</controllingFieldValue>
+            <controllingFieldValue>PSM to KSM</controllingFieldValue>
+            <controllingFieldValue>Power Cable Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <controllingFieldValue>Power Cable Static Harness</controllingFieldValue>
+            <controllingFieldValue>Agitation Tower</controllingFieldValue>
+            <controllingFieldValue>Static Tower</controllingFieldValue>
+            <controllingFieldValue>Soda Tubing</controllingFieldValue>
+            <controllingFieldValue>Water Tubing</controllingFieldValue>
+            <controllingFieldValue>Agitation Motor</controllingFieldValue>
+            <controllingFieldValue>Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Divider</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Lid Switch</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Yoke Cotter Pin</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Yoke Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <valueName>Broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Lever Switch</controllingFieldValue>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <controllingFieldValue>Solenoid Yoke</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Yoke Cotter Pin</controllingFieldValue>
+            <valueName>Out Of Position</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Cable</controllingFieldValue>
+            <controllingFieldValue>S4</controllingFieldValue>
+            <controllingFieldValue>S5</controllingFieldValue>
+            <controllingFieldValue>S6</controllingFieldValue>
+            <controllingFieldValue>S7</controllingFieldValue>
+            <controllingFieldValue>S8</controllingFieldValue>
+            <controllingFieldValue>S9</controllingFieldValue>
+            <controllingFieldValue>S10</controllingFieldValue>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <controllingFieldValue>S11</controllingFieldValue>
+            <controllingFieldValue>Solenoid Yoke</controllingFieldValue>
+            <controllingFieldValue>S12</controllingFieldValue>
+            <controllingFieldValue>Modem/Connectivity</controllingFieldValue>
+            <controllingFieldValue>S13</controllingFieldValue>
+            <controllingFieldValue>Inner Nozzle</controllingFieldValue>
+            <controllingFieldValue>Nozzle Body</controllingFieldValue>
+            <controllingFieldValue>Nozzle Tip</controllingFieldValue>
+            <controllingFieldValue>Motor</controllingFieldValue>
+            <controllingFieldValue>Water Filters</controllingFieldValue>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <controllingFieldValue>A1</controllingFieldValue>
+            <controllingFieldValue>Carb Probe</controllingFieldValue>
+            <controllingFieldValue>Pressure Relief</controllingFieldValue>
+            <controllingFieldValue>Tubing</controllingFieldValue>
+            <controllingFieldValue>CGP</controllingFieldValue>
+            <controllingFieldValue>Airvent</controllingFieldValue>
+            <controllingFieldValue>Inlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Outlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Water Lines</controllingFieldValue>
+            <controllingFieldValue>CO2 Regulator</controllingFieldValue>
+            <controllingFieldValue>Water Booster</controllingFieldValue>
+            <controllingFieldValue>BIB Changeout</controllingFieldValue>
+            <controllingFieldValue>Cassette/BIB Product</controllingFieldValue>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <controllingFieldValue>Ice Supply</controllingFieldValue>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>Cup Rest</controllingFieldValue>
+            <controllingFieldValue>Drip Tray</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain Plug</controllingFieldValue>
+            <controllingFieldValue>Main Drain</controllingFieldValue>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <controllingFieldValue>Power Supply</controllingFieldValue>
+            <controllingFieldValue>Gaskets</controllingFieldValue>
+            <controllingFieldValue>Hinge</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Cover</controllingFieldValue>
+            <controllingFieldValue>Legs</controllingFieldValue>
+            <controllingFieldValue>Product Door</controllingFieldValue>
+            <controllingFieldValue>Side Skins</controllingFieldValue>
+            <controllingFieldValue>Trim</controllingFieldValue>
+            <controllingFieldValue>Door Switch</controllingFieldValue>
+            <controllingFieldValue>Grounding Cable</controllingFieldValue>
+            <controllingFieldValue>Agitation Harness</controllingFieldValue>
+            <controllingFieldValue>Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Static Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Agit Harness</controllingFieldValue>
+            <controllingFieldValue>Macro Board Harness</controllingFieldValue>
+            <controllingFieldValue>HMI Harness</controllingFieldValue>
+            <controllingFieldValue>PSM to KSM</controllingFieldValue>
+            <controllingFieldValue>Power Cable FCM Harness</controllingFieldValue>
+            <controllingFieldValue>Power Cable Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <controllingFieldValue>Agitation Tower</controllingFieldValue>
+            <controllingFieldValue>Static Tower</controllingFieldValue>
+            <controllingFieldValue>Soda Tubing</controllingFieldValue>
+            <controllingFieldValue>Water Tubing</controllingFieldValue>
+            <controllingFieldValue>Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Auger</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Auger Retainer</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Liner</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Lid Switch</controllingFieldValue>
+            <controllingFieldValue>A2</controllingFieldValue>
+            <controllingFieldValue>A3</controllingFieldValue>
+            <controllingFieldValue>A4</controllingFieldValue>
+            <controllingFieldValue>A5</controllingFieldValue>
+            <controllingFieldValue>A6</controllingFieldValue>
+            <controllingFieldValue>A7</controllingFieldValue>
+            <controllingFieldValue>A8</controllingFieldValue>
+            <controllingFieldValue>S1</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <controllingFieldValue>S3</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Yoke Cotter Pin</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <controllingFieldValue>Ice Lever</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Cable</controllingFieldValue>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <valueName>Damaged Cable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Cable</controllingFieldValue>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <valueName>Ice Flow Adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S4</controllingFieldValue>
+            <controllingFieldValue>S5</controllingFieldValue>
+            <controllingFieldValue>S6</controllingFieldValue>
+            <controllingFieldValue>S7</controllingFieldValue>
+            <controllingFieldValue>S8</controllingFieldValue>
+            <controllingFieldValue>S9</controllingFieldValue>
+            <controllingFieldValue>S10</controllingFieldValue>
+            <controllingFieldValue>S11</controllingFieldValue>
+            <controllingFieldValue>S12</controllingFieldValue>
+            <controllingFieldValue>S13</controllingFieldValue>
+            <controllingFieldValue>Water Filters</controllingFieldValue>
+            <controllingFieldValue>A1</controllingFieldValue>
+            <controllingFieldValue>Pressure Relief</controllingFieldValue>
+            <controllingFieldValue>Tubing</controllingFieldValue>
+            <controllingFieldValue>CGP</controllingFieldValue>
+            <controllingFieldValue>Airvent</controllingFieldValue>
+            <controllingFieldValue>Inlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Outlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Water Lines</controllingFieldValue>
+            <controllingFieldValue>Back Block</controllingFieldValue>
+            <controllingFieldValue>Soda Water</controllingFieldValue>
+            <controllingFieldValue>Backflow preventer</controllingFieldValue>
+            <controllingFieldValue>Water</controllingFieldValue>
+            <controllingFieldValue>HFCS</controllingFieldValue>
+            <controllingFieldValue>HFCS Supply</controllingFieldValue>
+            <controllingFieldValue>BIB Connector</controllingFieldValue>
+            <controllingFieldValue>Vacuum Regulator</controllingFieldValue>
+            <controllingFieldValue>Water Booster</controllingFieldValue>
+            <controllingFieldValue>Water Supply</controllingFieldValue>
+            <controllingFieldValue>A2</controllingFieldValue>
+            <controllingFieldValue>A3</controllingFieldValue>
+            <controllingFieldValue>A4</controllingFieldValue>
+            <controllingFieldValue>A5</controllingFieldValue>
+            <controllingFieldValue>A6</controllingFieldValue>
+            <controllingFieldValue>A7</controllingFieldValue>
+            <controllingFieldValue>A8</controllingFieldValue>
+            <controllingFieldValue>S1</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <controllingFieldValue>S3</controllingFieldValue>
+            <valueName>Leaking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S4</controllingFieldValue>
+            <controllingFieldValue>S5</controllingFieldValue>
+            <controllingFieldValue>S6</controllingFieldValue>
+            <controllingFieldValue>S7</controllingFieldValue>
+            <controllingFieldValue>S8</controllingFieldValue>
+            <controllingFieldValue>S9</controllingFieldValue>
+            <controllingFieldValue>S10</controllingFieldValue>
+            <controllingFieldValue>S11</controllingFieldValue>
+            <controllingFieldValue>S12</controllingFieldValue>
+            <controllingFieldValue>S13</controllingFieldValue>
+            <controllingFieldValue>Inner Nozzle</controllingFieldValue>
+            <controllingFieldValue>Nozzle Body</controllingFieldValue>
+            <controllingFieldValue>Nozzle Tip</controllingFieldValue>
+            <controllingFieldValue>Water Filters</controllingFieldValue>
+            <controllingFieldValue>A1</controllingFieldValue>
+            <controllingFieldValue>Inlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Outlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Water Lines</controllingFieldValue>
+            <controllingFieldValue>Cup Rest</controllingFieldValue>
+            <controllingFieldValue>Drip Tray</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain Plug</controllingFieldValue>
+            <controllingFieldValue>Main Drain</controllingFieldValue>
+            <controllingFieldValue>Agitation Tower</controllingFieldValue>
+            <controllingFieldValue>Static Tower</controllingFieldValue>
+            <controllingFieldValue>Soda Tubing</controllingFieldValue>
+            <controllingFieldValue>Water Tubing</controllingFieldValue>
+            <controllingFieldValue>A2</controllingFieldValue>
+            <controllingFieldValue>A3</controllingFieldValue>
+            <controllingFieldValue>A4</controllingFieldValue>
+            <controllingFieldValue>A5</controllingFieldValue>
+            <controllingFieldValue>A6</controllingFieldValue>
+            <controllingFieldValue>A7</controllingFieldValue>
+            <controllingFieldValue>A8</controllingFieldValue>
+            <controllingFieldValue>S1</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <controllingFieldValue>S3</controllingFieldValue>
+            <valueName>Clogged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S4</controllingFieldValue>
+            <controllingFieldValue>S5</controllingFieldValue>
+            <controllingFieldValue>S6</controllingFieldValue>
+            <controllingFieldValue>S7</controllingFieldValue>
+            <controllingFieldValue>S8</controllingFieldValue>
+            <controllingFieldValue>S9</controllingFieldValue>
+            <controllingFieldValue>S10</controllingFieldValue>
+            <controllingFieldValue>S11</controllingFieldValue>
+            <controllingFieldValue>S12</controllingFieldValue>
+            <controllingFieldValue>S13</controllingFieldValue>
+            <controllingFieldValue>A1</controllingFieldValue>
+            <controllingFieldValue>A2</controllingFieldValue>
+            <controllingFieldValue>A3</controllingFieldValue>
+            <controllingFieldValue>A4</controllingFieldValue>
+            <controllingFieldValue>A5</controllingFieldValue>
+            <controllingFieldValue>A6</controllingFieldValue>
+            <controllingFieldValue>A7</controllingFieldValue>
+            <controllingFieldValue>A8</controllingFieldValue>
+            <controllingFieldValue>S1</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <controllingFieldValue>S3</controllingFieldValue>
+            <valueName>False Sold-Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>S4</controllingFieldValue>
+            <controllingFieldValue>S5</controllingFieldValue>
+            <controllingFieldValue>S6</controllingFieldValue>
+            <controllingFieldValue>S7</controllingFieldValue>
+            <controllingFieldValue>S8</controllingFieldValue>
+            <controllingFieldValue>S9</controllingFieldValue>
+            <controllingFieldValue>S10</controllingFieldValue>
+            <controllingFieldValue>S11</controllingFieldValue>
+            <controllingFieldValue>S12</controllingFieldValue>
+            <controllingFieldValue>S13</controllingFieldValue>
+            <controllingFieldValue>A1</controllingFieldValue>
+            <controllingFieldValue>A2</controllingFieldValue>
+            <controllingFieldValue>A3</controllingFieldValue>
+            <controllingFieldValue>A4</controllingFieldValue>
+            <controllingFieldValue>A5</controllingFieldValue>
+            <controllingFieldValue>A6</controllingFieldValue>
+            <controllingFieldValue>A7</controllingFieldValue>
+            <controllingFieldValue>A8</controllingFieldValue>
+            <controllingFieldValue>S1</controllingFieldValue>
+            <controllingFieldValue>S2</controllingFieldValue>
+            <controllingFieldValue>S3</controllingFieldValue>
+            <valueName>Unable To Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <controllingFieldValue>Front Cladding/Cup</controllingFieldValue>
+            <controllingFieldValue>Hinge</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Cover</controllingFieldValue>
+            <controllingFieldValue>Legs</controllingFieldValue>
+            <controllingFieldValue>Product Door</controllingFieldValue>
+            <controllingFieldValue>Side Skins</controllingFieldValue>
+            <controllingFieldValue>Trim</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Auger</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Ice Bin Liner</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <controllingFieldValue>Ice Lever</controllingFieldValue>
+            <valueName>Out Of Alignment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <controllingFieldValue>Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Ice Bin Liner</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <valueName>Ice Jammed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Auger</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Auger Retainer</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Liner</controllingFieldValue>
+            <valueName>Auger Broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <controllingFieldValue>Solenoid Yoke</controllingFieldValue>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Yoke Cotter Pin</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <valueName>Component Broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid Coil</controllingFieldValue>
+            <valueName>Coil Dirty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modem/Connectivity</controllingFieldValue>
+            <controllingFieldValue>CDM</controllingFieldValue>
+            <valueName>Not Connecting/Ethernet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modem/Connectivity</controllingFieldValue>
+            <valueName>Poor/No Signal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inner Nozzle</controllingFieldValue>
+            <controllingFieldValue>Nozzle Body</controllingFieldValue>
+            <controllingFieldValue>Nozzle Tip</controllingFieldValue>
+            <valueName>Color/Flavor Carryover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inner Nozzle</controllingFieldValue>
+            <controllingFieldValue>Nozzle Body</controllingFieldValue>
+            <controllingFieldValue>Nozzle Tip</controllingFieldValue>
+            <valueName>Missing/Loose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inner Nozzle</controllingFieldValue>
+            <controllingFieldValue>Nozzle Body</controllingFieldValue>
+            <controllingFieldValue>Nozzle Tip</controllingFieldValue>
+            <valueName>Nozzle Light Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Motor</controllingFieldValue>
+            <controllingFieldValue>Tower</controllingFieldValue>
+            <valueName>Noisey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Motor</controllingFieldValue>
+            <valueName>Not Agitating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Linkage</controllingFieldValue>
+            <valueName>Broken/Worn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Linkage</controllingFieldValue>
+            <valueName>Out of adjustment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tower</controllingFieldValue>
+            <valueName>Bearings Broken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <controllingFieldValue>Tubing</controllingFieldValue>
+            <valueName>Leaking Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carb Probe</controllingFieldValue>
+            <controllingFieldValue>Tubing</controllingFieldValue>
+            <controllingFieldValue>Airvent</controllingFieldValue>
+            <valueName>Probe Not Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tubing</controllingFieldValue>
+            <controllingFieldValue>BIB Hose</controllingFieldValue>
+            <controllingFieldValue>Agitation Tower</controllingFieldValue>
+            <controllingFieldValue>Static Tower</controllingFieldValue>
+            <controllingFieldValue>Soda Tubing</controllingFieldValue>
+            <controllingFieldValue>Water Tubing</controllingFieldValue>
+            <valueName>Kinked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CGP</controllingFieldValue>
+            <controllingFieldValue>Vacuum Regulator</controllingFieldValue>
+            <controllingFieldValue>Touchscreen</controllingFieldValue>
+            <controllingFieldValue>Carb Fill</controllingFieldValue>
+            <controllingFieldValue>Flow Meters</controllingFieldValue>
+            <controllingFieldValue>Power Supply</controllingFieldValue>
+            <controllingFieldValue>RFID Reader</controllingFieldValue>
+            <controllingFieldValue>RFID Agit Antenna</controllingFieldValue>
+            <controllingFieldValue>RFID Static Antenna</controllingFieldValue>
+            <valueName>Not working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CGP</controllingFieldValue>
+            <controllingFieldValue>Soda Water</controllingFieldValue>
+            <controllingFieldValue>Water</controllingFieldValue>
+            <valueName>Out of Calibration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CGP</controllingFieldValue>
+            <valueName>Will Not Prime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Airvent</controllingFieldValue>
+            <valueName>Overfilling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Outlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Water Lines</controllingFieldValue>
+            <valueName>Cracked</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Outlet Fittings</controllingFieldValue>
+            <controllingFieldValue>Water Lines</controllingFieldValue>
+            <valueName>Loose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soda Water</controllingFieldValue>
+            <controllingFieldValue>Water</controllingFieldValue>
+            <controllingFieldValue>HFCS</controllingFieldValue>
+            <valueName>Failed Open</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soda Water</controllingFieldValue>
+            <controllingFieldValue>Water</controllingFieldValue>
+            <controllingFieldValue>HFCS</controllingFieldValue>
+            <valueName>Failed Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO2 Regulator</controllingFieldValue>
+            <valueName>Creeping Pressure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO2 Regulator</controllingFieldValue>
+            <controllingFieldValue>Cup Rest</controllingFieldValue>
+            <controllingFieldValue>Drip Tray</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain Plug</controllingFieldValue>
+            <controllingFieldValue>Main Drain</controllingFieldValue>
+            <controllingFieldValue>Agitation Tower</controllingFieldValue>
+            <controllingFieldValue>Static Tower</controllingFieldValue>
+            <controllingFieldValue>Soda Tubing</controllingFieldValue>
+            <controllingFieldValue>Water Tubing</controllingFieldValue>
+            <valueName>Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO2 Supply</controllingFieldValue>
+            <valueName>Out Of CO2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO2 Supply</controllingFieldValue>
+            <valueName>Pressures Out Of Spec</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HFCS Supply</controllingFieldValue>
+            <valueName>Empty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Booster</controllingFieldValue>
+            <valueName>Tank/Bladder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Booster</controllingFieldValue>
+            <valueName>Motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Booster</controllingFieldValue>
+            <valueName>Procon Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Booster</controllingFieldValue>
+            <valueName>Pressure Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Supply</controllingFieldValue>
+            <valueName>Low Pressure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BIB Changeout</controllingFieldValue>
+            <valueName>Customer Not Orientating Package Correctly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BIB Changeout</controllingFieldValue>
+            <valueName>Customer Unaware On How To Change Out Packages</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cassette/BIB Product</controllingFieldValue>
+            <valueName>Expired Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cassette/BIB Product</controllingFieldValue>
+            <valueName>Leaking Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cassette/BIB Product</controllingFieldValue>
+            <controllingFieldValue>Ice Supply</controllingFieldValue>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Out Of Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cassette/BIB Product</controllingFieldValue>
+            <valueName>Wrong Product Fitting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <valueName>Missing key</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <controllingFieldValue>Cup Rest</controllingFieldValue>
+            <controllingFieldValue>Drip Tray</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain Plug</controllingFieldValue>
+            <controllingFieldValue>Main Drain</controllingFieldValue>
+            <controllingFieldValue>Gaskets</controllingFieldValue>
+            <controllingFieldValue>Hinge</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Cover</controllingFieldValue>
+            <controllingFieldValue>Legs</controllingFieldValue>
+            <controllingFieldValue>Side Skins</controllingFieldValue>
+            <controllingFieldValue>Trim</controllingFieldValue>
+            <valueName>Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <controllingFieldValue>Gaskets</controllingFieldValue>
+            <controllingFieldValue>Hinge</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Cover</controllingFieldValue>
+            <controllingFieldValue>Legs</controllingFieldValue>
+            <controllingFieldValue>Side Skins</controllingFieldValue>
+            <controllingFieldValue>Trim</controllingFieldValue>
+            <valueName>Cracked/Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <controllingFieldValue>Hinge</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Cover</controllingFieldValue>
+            <controllingFieldValue>Legs</controllingFieldValue>
+            <controllingFieldValue>Side Skins</controllingFieldValue>
+            <valueName>Unit Not Leveled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <controllingFieldValue>Hinge</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Cover</controllingFieldValue>
+            <controllingFieldValue>Legs</controllingFieldValue>
+            <controllingFieldValue>Side Skins</controllingFieldValue>
+            <controllingFieldValue>Trim</controllingFieldValue>
+            <valueName>Warped/Bent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>No Power To Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Supply</controllingFieldValue>
+            <valueName>Ice Maker Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Supply</controllingFieldValue>
+            <valueName>Not Filling Ice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Supply</controllingFieldValue>
+            <valueName>Wrong Ice Type</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Not Cleaning/Maintain Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Outlet Main Drain Clogged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cup Rest</controllingFieldValue>
+            <controllingFieldValue>Drip Tray</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Drain Plug</controllingFieldValue>
+            <controllingFieldValue>Main Drain</controllingFieldValue>
+            <valueName>Broken/Loose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDM</controllingFieldValue>
+            <controllingFieldValue>RFID Reader</controllingFieldValue>
+            <valueName>No Power</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDM</controllingFieldValue>
+            <controllingFieldValue>HMI</controllingFieldValue>
+            <valueName>Software Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <valueName>Bad Image On Screen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <valueName>Missing Images/Screens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <valueName>Back light out/Dark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Touchscreen</controllingFieldValue>
+            <valueName>Touchscreen Sensitivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI</controllingFieldValue>
+            <valueName>Screen Locks Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI</controllingFieldValue>
+            <valueName>Stuck On Low Memory Screen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI</controllingFieldValue>
+            <valueName>Dispenser Locks Up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KSM</controllingFieldValue>
+            <valueName>No Power 28VDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KSM</controllingFieldValue>
+            <valueName>No Power 5VDC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KSM</controllingFieldValue>
+            <valueName>No Power Carb System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KSM</controllingFieldValue>
+            <valueName>No Power Ice System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KSM</controllingFieldValue>
+            <valueName>No Power Micro Agit 8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KSM</controllingFieldValue>
+            <valueName>No Power Micro Static 13</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Macro Board</controllingFieldValue>
+            <controllingFieldValue>Agit 8 Brd</controllingFieldValue>
+            <controllingFieldValue>Static 13 Brd</controllingFieldValue>
+            <valueName>Off Line</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agit 8 Brd</controllingFieldValue>
+            <controllingFieldValue>Static 13 Brd</controllingFieldValue>
+            <valueName>No Power to Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agit 8 Brd</controllingFieldValue>
+            <controllingFieldValue>Static 13 Brd</controllingFieldValue>
+            <valueName>Damaged Connector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Supply</controllingFieldValue>
+            <controllingFieldValue>Agitation Motor</controllingFieldValue>
+            <valueName>Tripping Breaker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFID Agit Antenna</controllingFieldValue>
+            <controllingFieldValue>RFID Static Antenna</controllingFieldValue>
+            <valueName>Damaged Connector/Cable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Front Cladding/Cup</controllingFieldValue>
+            <controllingFieldValue>Product Door</controllingFieldValue>
+            <valueName>Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Door Switch</controllingFieldValue>
+            <controllingFieldValue>Grounding Cable</controllingFieldValue>
+            <controllingFieldValue>Agitation Harness</controllingFieldValue>
+            <controllingFieldValue>Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Static Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Agit Harness</controllingFieldValue>
+            <controllingFieldValue>Macro Board Harness</controllingFieldValue>
+            <controllingFieldValue>HMI Harness</controllingFieldValue>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <valueName>No Power To Nodes Going Offline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Door Switch</controllingFieldValue>
+            <controllingFieldValue>Grounding Cable</controllingFieldValue>
+            <controllingFieldValue>Agitation Harness</controllingFieldValue>
+            <controllingFieldValue>Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Static Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Agit Harness</controllingFieldValue>
+            <controllingFieldValue>Macro Board Harness</controllingFieldValue>
+            <controllingFieldValue>HMI Harness</controllingFieldValue>
+            <controllingFieldValue>Power Cable Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <controllingFieldValue>Power Cable Static Harness</controllingFieldValue>
+            <valueName>Sensor Not Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Door Switch</controllingFieldValue>
+            <controllingFieldValue>Grounding Cable</controllingFieldValue>
+            <controllingFieldValue>Agitation Harness</controllingFieldValue>
+            <controllingFieldValue>Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Static Harness</controllingFieldValue>
+            <controllingFieldValue>Micro Agit Harness</controllingFieldValue>
+            <controllingFieldValue>Macro Board Harness</controllingFieldValue>
+            <controllingFieldValue>HMI Harness</controllingFieldValue>
+            <controllingFieldValue>PSM to KSM</controllingFieldValue>
+            <controllingFieldValue>Power Cable Main Power Harness</controllingFieldValue>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <valueName>Unit Shorting Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitation Tower</controllingFieldValue>
+            <controllingFieldValue>Static Tower</controllingFieldValue>
+            <controllingFieldValue>Soda Tubing</controllingFieldValue>
+            <controllingFieldValue>Water Tubing</controllingFieldValue>
+            <valueName>Stuck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitation Motor</controllingFieldValue>
+            <valueName>Shaft Seal Leaking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Lower Chute</controllingFieldValue>
+            <controllingFieldValue>Ice Gate Upper Chute</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <valueName>Installed Incorrectly</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Auger</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Auger Retainer</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Liner</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <valueName>Foreign Object In Bin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Auger</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Auger Retainer</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Liner</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <valueName>Ice Bin Scraping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Auger</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Auger Retainer</controllingFieldValue>
+            <controllingFieldValue>Ice Bin Liner</controllingFieldValue>
+            <valueName>Losser Retainer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Lid Switch</controllingFieldValue>
+            <valueName>Customer Bypass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate Yoke Cotter Pin</controllingFieldValue>
+            <controllingFieldValue>Yoke</controllingFieldValue>
+            <valueName>Cotter Pin Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Lever</controllingFieldValue>
+            <valueName>Dirty Ice Lever</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Lever</controllingFieldValue>
+            <valueName>Spring Detached From Ice Lever</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

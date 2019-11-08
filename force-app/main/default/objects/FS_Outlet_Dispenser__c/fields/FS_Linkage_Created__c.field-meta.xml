@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Linkage_Created__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Designates which system created the linkage</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Yes, if linkage was created by Device Management System. No, if linkage was created by Asset Management System (JDE).</inlineHelpText>
+    <label>Linkage Created</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

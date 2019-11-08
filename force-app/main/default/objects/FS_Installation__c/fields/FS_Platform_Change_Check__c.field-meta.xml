@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Platform_Change_Check__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Platform Change Checkbox. This field is used to drive the overall status from the back end based on the Platform Type/s sync between EP and IP. 
+This should not be deleted.</description>
+    <externalId>false</externalId>
+    <label>Platform Change Check?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

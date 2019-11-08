@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Other_Legacy_Equipment__c</fullName>
+    <externalId>false</externalId>
+    <label>Other</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>41571-Regulator Legacy II</fullName>
+                <default>false</default>
+                <label>41571-Regulator Legacy II</label>
+            </value>
+            <value>
+                <fullName>45991-Bevariety pump deck w/ 100&#39; harness</fullName>
+                <default>false</default>
+                <label>45991-Bevariety pump deck w/ 100&#39; harness</label>
+            </value>
+            <value>
+                <fullName>46253-Bevariety icemaker adapter kit (Scotsman EH-222)</fullName>
+                <default>false</default>
+                <label>46253-Bevariety icemaker adapter kit (Scotsman EH-222)</label>
+            </value>
+            <value>
+                <fullName>43536-Carbonator / Bevariety Pump Deck Shelf</fullName>
+                <default>false</default>
+                <label>43536-Carbonator / Bevariety Pump Deck Shelf</label>
+            </value>
+            <value>
+                <fullName>46280-Freestyle/Bevariety hybrid rack (includes pumps)</fullName>
+                <default>false</default>
+                <label>46280-Freestyle/Bevariety hybrid rack (includes pumps)</label>
+            </value>
+            <value>
+                <fullName>45819-Regulator, Bevariety</fullName>
+                <default>false</default>
+                <label>45819-Regulator, Bevariety</label>
+            </value>
+            <value>
+                <fullName>46098-Manifold</fullName>
+                <default>false</default>
+                <label>46098-Manifold</label>
+            </value>
+            <value>
+                <fullName>45080-15x22 Ice Tainer</fullName>
+                <default>false</default>
+                <label>45080-15x22 Ice Tainer</label>
+            </value>
+            <value>
+                <fullName>44621 Leg Assembly for 15x22 Ice Tainer</fullName>
+                <default>false</default>
+                <label>44621 Leg Assembly for 15x22 Ice Tainer</label>
+            </value>
+            <value>
+                <fullName>45278-Auto Fill Station (Duke or Stoelting 118/218/318)</fullName>
+                <default>false</default>
+                <label>45278-Auto Fill Station (Duke or Stoelting 118/218/318)</label>
+            </value>
+            <value>
+                <fullName>45768-Auto Fill Station (Stoelting 157/257</fullName>
+                <default>false</default>
+                <label>45768-Auto Fill Station (Stoelting 157/257</label>
+            </value>
+            <value>
+                <fullName>44610-Drop In 23x23 cabinet stand</fullName>
+                <default>false</default>
+                <label>44610-Drop In 23x23 cabinet stand</label>
+            </value>
+            <value>
+                <fullName>41568-Carbonator</fullName>
+                <default>false</default>
+                <label>41568-Carbonator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

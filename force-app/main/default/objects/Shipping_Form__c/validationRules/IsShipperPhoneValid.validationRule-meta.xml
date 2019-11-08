@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsShipperPhoneValid</fullName>
+    <active>true</active>
+    <description>It checks if the &#39;Shipper Phone&#39; field is in the standard format or the international format.</description>
+    <errorConditionFormula>IF (FS_Shipper_Phone__c == &quot;&quot; , 
+	NULL,
+	IF (  NOT(BEGINS(FS_Shipper_Phone__c, &quot;+&quot;) ),
+	IF ((REGEX(FS_Shipper_Phone__c, &quot;\\D*?(\\d\\D*?){10}&quot;)),NULL,TRUE),
+	IF ( (LEN(FS_Shipper_Phone__c)&lt;10 || LEN(FS_Shipper_Phone__c)&gt;15),
+	TRUE,
+	IF ( ISNUMBER(RIGHT(FS_Shipper_Phone__c,   LEN(FS_Shipper_Phone__c)-1  )),
+	NULL,
+	TRUE
+	)
+	)
+	)
+	)</errorConditionFormula>
+    <errorMessage>Please input a correctly formatted Shipper Phone Number.</errorMessage>
+</ValidationRule>

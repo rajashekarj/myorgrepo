@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cannot_Use_Date3_before_Date2</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF( AND(ISCHANGED(FS_ReschedInstallDate3__c), ISBLANK(FS_ReschedInstallDate2__c)), true, false )</errorConditionFormula>
+    <errorMessage>You cannot use Rescheduled Install Date 3 before Rescheduled Install Date 2.</errorMessage>
+</ValidationRule>

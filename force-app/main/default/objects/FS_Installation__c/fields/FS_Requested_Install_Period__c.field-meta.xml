@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Requested_Install_Period__c</fullName>
+    <externalId>false</externalId>
+    <label>Requested Install Period</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Week of January 7</fullName>
+                <default>false</default>
+                <label>Week of January 7</label>
+            </value>
+            <value>
+                <fullName>Week of January 14</fullName>
+                <default>false</default>
+                <label>Week of January 14</label>
+            </value>
+            <value>
+                <fullName>Week of January 21</fullName>
+                <default>false</default>
+                <label>Week of January 21</label>
+            </value>
+            <value>
+                <fullName>Week of January 28</fullName>
+                <default>false</default>
+                <label>Week of January 28</label>
+            </value>
+            <value>
+                <fullName>Week of February 4</fullName>
+                <default>false</default>
+                <label>Week of February 4</label>
+            </value>
+            <value>
+                <fullName>Week of February 11</fullName>
+                <default>false</default>
+                <label>Week of February 11</label>
+            </value>
+            <value>
+                <fullName>Week of February 18</fullName>
+                <default>false</default>
+                <label>Week of February 18</label>
+            </value>
+            <value>
+                <fullName>Week of February 25</fullName>
+                <default>false</default>
+                <label>Week of February 25</label>
+            </value>
+            <value>
+                <fullName>Week of March 4</fullName>
+                <default>false</default>
+                <label>Week of March 4</label>
+            </value>
+            <value>
+                <fullName>Week of March 11</fullName>
+                <default>false</default>
+                <label>Week of March 11</label>
+            </value>
+            <value>
+                <fullName>Week of March 18</fullName>
+                <default>false</default>
+                <label>Week of March 18</label>
+            </value>
+            <value>
+                <fullName>Week of March 25</fullName>
+                <default>false</default>
+                <label>Week of March 25</label>
+            </value>
+            <value>
+                <fullName>Week of April 1</fullName>
+                <default>false</default>
+                <label>Week of April 1</label>
+            </value>
+            <value>
+                <fullName>Week of April 8</fullName>
+                <default>false</default>
+                <label>Week of April 8</label>
+            </value>
+            <value>
+                <fullName>Week of April 15</fullName>
+                <default>false</default>
+                <label>Week of April 15</label>
+            </value>
+            <value>
+                <fullName>Week of April 22</fullName>
+                <default>false</default>
+                <label>Week of April 22</label>
+            </value>
+            <value>
+                <fullName>Week of April 29</fullName>
+                <default>false</default>
+                <label>Week of April 29</label>
+            </value>
+            <value>
+                <fullName>Week of May 6</fullName>
+                <default>false</default>
+                <label>Week of May 6</label>
+            </value>
+            <value>
+                <fullName>Week of May 13</fullName>
+                <default>false</default>
+                <label>Week of May 13</label>
+            </value>
+            <value>
+                <fullName>Week of May 20</fullName>
+                <default>false</default>
+                <label>Week of May 20</label>
+            </value>
+            <value>
+                <fullName>Week of May 27</fullName>
+                <default>false</default>
+                <label>Week of May 27</label>
+            </value>
+            <value>
+                <fullName>Week of June 3</fullName>
+                <default>false</default>
+                <label>Week of June 3</label>
+            </value>
+            <value>
+                <fullName>Week of June 10</fullName>
+                <default>false</default>
+                <label>Week of June 10</label>
+            </value>
+            <value>
+                <fullName>Week of June 17</fullName>
+                <default>false</default>
+                <label>Week of June 17</label>
+            </value>
+            <value>
+                <fullName>Week of June 24</fullName>
+                <default>false</default>
+                <label>Week of June 24</label>
+            </value>
+            <value>
+                <fullName>Week of July 1</fullName>
+                <default>false</default>
+                <label>Week of July 1</label>
+            </value>
+            <value>
+                <fullName>Week of July 8</fullName>
+                <default>false</default>
+                <label>Week of July 8</label>
+            </value>
+            <value>
+                <fullName>Week of July 15</fullName>
+                <default>false</default>
+                <label>Week of July 15</label>
+            </value>
+            <value>
+                <fullName>Week of July 22</fullName>
+                <default>false</default>
+                <label>Week of July 22</label>
+            </value>
+            <value>
+                <fullName>Week of July 29</fullName>
+                <default>false</default>
+                <label>Week of July 29</label>
+            </value>
+            <value>
+                <fullName>Week of August 5</fullName>
+                <default>false</default>
+                <label>Week of August 5</label>
+            </value>
+            <value>
+                <fullName>Week of August 12</fullName>
+                <default>false</default>
+                <label>Week of August 12</label>
+            </value>
+            <value>
+                <fullName>Week of August 19</fullName>
+                <default>false</default>
+                <label>Week of August 19</label>
+            </value>
+            <value>
+                <fullName>Week of August 26</fullName>
+                <default>false</default>
+                <label>Week of August 26</label>
+            </value>
+            <value>
+                <fullName>Week of September 2</fullName>
+                <default>false</default>
+                <label>Week of September 2</label>
+            </value>
+            <value>
+                <fullName>Week of September 9</fullName>
+                <default>false</default>
+                <label>Week of September 9</label>
+            </value>
+            <value>
+                <fullName>Week of September 16</fullName>
+                <default>false</default>
+                <label>Week of September 16</label>
+            </value>
+            <value>
+                <fullName>Week of September 23</fullName>
+                <default>false</default>
+                <label>Week of September 23</label>
+            </value>
+            <value>
+                <fullName>Week of September 30</fullName>
+                <default>false</default>
+                <label>Week of September 30</label>
+            </value>
+            <value>
+                <fullName>Week of October 7</fullName>
+                <default>false</default>
+                <label>Week of October 7</label>
+            </value>
+            <value>
+                <fullName>Week of October 14</fullName>
+                <default>false</default>
+                <label>Week of October 14</label>
+            </value>
+            <value>
+                <fullName>Week of October 21</fullName>
+                <default>false</default>
+                <label>Week of October 21</label>
+            </value>
+            <value>
+                <fullName>Week of October 28</fullName>
+                <default>false</default>
+                <label>Week of October 28</label>
+            </value>
+            <value>
+                <fullName>Week of November 4</fullName>
+                <default>false</default>
+                <label>Week of November 4</label>
+            </value>
+            <value>
+                <fullName>Week of November 11</fullName>
+                <default>false</default>
+                <label>Week of November 11</label>
+            </value>
+            <value>
+                <fullName>Week of November 18</fullName>
+                <default>false</default>
+                <label>Week of November 18</label>
+            </value>
+            <value>
+                <fullName>Week of November 25</fullName>
+                <default>false</default>
+                <label>Week of November 25</label>
+            </value>
+            <value>
+                <fullName>Week of December 2</fullName>
+                <default>false</default>
+                <label>Week of December 2</label>
+            </value>
+            <value>
+                <fullName>Week of December 9</fullName>
+                <default>false</default>
+                <label>Week of December 9</label>
+            </value>
+            <value>
+                <fullName>Week of December 16</fullName>
+                <default>false</default>
+                <label>Week of December 16</label>
+            </value>
+            <value>
+                <fullName>Week of December 23</fullName>
+                <default>false</default>
+                <label>Week of December 23</label>
+            </value>
+            <value>
+                <fullName>Week of December 30</fullName>
+                <default>false</default>
+                <label>Week of December 30</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

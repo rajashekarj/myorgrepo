@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Who_will_install_Water_Filter__c</fullName>
+    <externalId>false</externalId>
+    <label>Water Filter Installer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Davaco</fullName>
+                <default>false</default>
+                <label>Davaco</label>
+            </value>
+            <value>
+                <fullName>KO Service Provider</fullName>
+                <default>false</default>
+                <label>KO Service Provider</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>General Contractor (GC)</fullName>
+                <default>false</default>
+                <label>General Contractor (GC)</label>
+            </value>
+            <value>
+                <fullName>Water Filter Supplier</fullName>
+                <default>false</default>
+                <label>Water Filter Supplier</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Approved Filters Already on Site</fullName>
+                <default>false</default>
+                <label>Approved Filters Already on Site</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,71 @@
+<!-- 
+============================================================
+Descripton: Read 'Serial Number/Bar code' from the uploaded image
+Class Name: BarcodeScannerComp
+Created on: 23rd Aug 2017
+Modified on:
+Author:Infosys
+============================================================ 
+-->
+<!-- BarcodeScannerComp -->
+<aura:component access="GLOBAL" extensible="false" implements="flexipage:availableForAllPageTypes,force:appHostable,force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="FetchODList">
+    <!-- <ltng:require styles="/resource/barcodeScanner/slds221.min.css" /> -->
+    <ltng:require styles="{!$Resource.barcodeScanner + '/slds221.min.css'}"/>
+    
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="barCode" type="String" default="" access="GLOBAL" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="objClassController" type="FetchODList"/>
+    <aura:attribute name="listNull" type="Boolean" default="false"/>
+    
+    <lightning:spinner aura:id="_spinner" variant="brand" size="large" class="slds-hide"/>
+    <div class="slds-page-header" >
+        <h1 class="slds-page-header__title slds-truncate slds-align_absolute-center" title="Barcode Scanning Utility">Barcode Scanning Utility</h1>
+    </div>
+    
+    <div>
+        <div class="slds-grid slds-m-around--small slds-hide" >
+            <input aura:id="uploadBarcode" type="file" multiple="false" accept="image/*" onchange="{!c.uploadBarcode}"/>
+        </div>
+        <div class="slds-grid slds-m-around--small slds-size--1-of-2" id="buttonContainer" >
+            <lightning:button class="slds-col--padded slds-size--1-of-1" variant="neutral" label="Scan Barcode" onclick="{!c.scanBarCode}" />
+        </div>
+        <div class="slds-grid slds-m-around--small slds-box slds-theme--default slds-hide" aura:id="_barCodeImageContainer">
+            <img aura:id="barCodeImage" class="barcodeContainer" src=""/>
+        </div>
+        <div class="slds-text-heading--small slds-text-align--center slds-hide" aura:id="_barCode">
+            Code: {!v.barCode}
+        </div>
+        <iframe src="/resource/barcodeScanner/quaggajs.html" style="width:100%;" aura:id="_quaggaFrame" frameborder="0" class="slds-hide" ></iframe>
+    </div>
+    
+    
+    <!-- <aura:iteration items="{!v.ODList}" var="odval"> -->
+    <aura:iteration items="{!v.objClassController.listOutlets}" var="odval">
+        <article class="slds-tile">
+            <div class="slds-tile__detail slds-text-body_small slds-size_5-of-5">
+                <dl class="slds-size_5-of-5 slds-list_horizontal slds-wrap slds-p-around_medium slds-border_top ">                    
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate slds-size_3-of-5" title="Serial Number">Serial #</dt>
+                    <dd class="slds-item_detail slds-truncate slds-size_2-of-5" title="Serial Number">
+                        <!-- <ui:outputURL value="{!'/'+odval.Id}" label="{!odval.FS_Serial_Number2__c}"/> -->
+                        <div class="slds-truncate" title="Serial Number"><a href="{!'/one/one.app?#/sObject/'+ odval.Id + '/view'}" target="_self">{!odval.FS_Serial_Number2__c}</a></div>
+                    </dd>                    
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate slds-size_3-of-5" title="ACN Number">ACN </dt>
+                    <dd class="slds-item_detail slds-truncate slds-size_2-of-5" title="ACN Number">{!odval.FS_ACN_NBR__c}</dd>
+                    <dt class="slds-item_label slds-text-color_weak slds-truncate slds-size_3-of-5" title="Platform Type">Platform </dt>
+                    <dd class="slds-item_detail slds-truncate slds-size_2-of-5" title="Platform Type">{!odval.FS_Equip_Type__c}</dd>
+                </dl>
+            </div>
+        </article>        
+    </aura:iteration>
+    <br></br>
+    
+    <aura:if isTrue="{!v.listNull}">
+        <!-- Please enter correct serial number. -->            
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+            <span class="slds-assistive-text">Error Message</span>
+            <h2> {!v.objClassController.errString}</h2>
+        </div>            
+    </aura:if>
+    
+</aura:component>

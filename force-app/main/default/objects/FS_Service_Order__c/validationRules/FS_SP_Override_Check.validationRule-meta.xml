@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_SP_Override_Check</fullName>
+    <active>true</active>
+    <description>on changing service provider without checking the Service provider override checkbox on Service order detail page.</description>
+    <errorConditionFormula>IF(AND(PRIORVALUE(FS_Service_Provider__c)!=FS_Service_Provider__c,AND(NOT(FS_Service_Provider_override__c),!ISNEW()) ),true,false)</errorConditionFormula>
+    <errorMessage>To Change &#39;Service Provider&#39; , you have to check &#39;Service Provider Override&#39; Checkbox</errorMessage>
+</ValidationRule>

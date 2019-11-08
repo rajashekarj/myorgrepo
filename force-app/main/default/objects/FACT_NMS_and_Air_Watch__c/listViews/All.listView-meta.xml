@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>FACT_Serial_Number_ACN__c</columns>
+    <columns>FACT_Serial_Number__c</columns>
+    <columns>FACT_ACN_Corrected__c</columns>
+    <columns>FACT_PlatformType__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

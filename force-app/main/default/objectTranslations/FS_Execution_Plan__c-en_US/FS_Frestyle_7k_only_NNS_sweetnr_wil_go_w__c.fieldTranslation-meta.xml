@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Frestyle_7k_only_NNS_sweetnr_wil_go_w__c</name>
+    <picklistValues>
+        <masterLabel>-None-</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FOH -  Underneath dispenser in cabinet</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown â€“ site assessment will determine</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

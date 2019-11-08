@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Relocation_Store_Detail__c</name>
+    <picklistValues>
+        <masterLabel>Closing of Old Outlet and transfer to Existing Outlet with Freestyle</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing of Old Outlet and transfer to New Outlet</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial relocation from old outlet and transfer to Existing Outlet with Freestyle</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Partial relocation from old outlet and transfer to new outlet</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

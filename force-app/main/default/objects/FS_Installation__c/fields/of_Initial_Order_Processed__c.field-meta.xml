@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Initial_Order_Processed__c</fullName>
+    <externalId>false</externalId>
+    <label># of Initial Order Processed</label>
+    <summaryFilterItems>
+        <field>FS_Initial_Order__c.FS_Order_Processed__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>FS_Initial_Order__c.FS_Installation__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remove_Discon_check_Disposition_Dispen</fullName>
+    <active>true</active>
+    <description>validation error message should display when Remove/Disconnect Complete checked and Disposition of Dispenser Upon Removal not having &quot;Removed and taken to SP for Storage&quot; or &quot;Disconnected and placed in Backroom&quot; values</description>
+    <errorConditionFormula>if(AND(RecordType.Name=$Label.IP_Relocation_I4W_Rec_Type,ISChanged(FS_Relocation_from_old_outlet_to_SP_is__c),FS_Relocation_from_old_outlet_to_SP_is__c,OR(TEXT(FS_Disposition_of_Dispenser_Upon_Removal__c)= &quot;&quot;,NOT(OR(TEXT(FS_Disposition_of_Dispenser_Upon_Removal__c)= &quot;Removed and taken to SP for Storage&quot;,TEXT(FS_Disposition_of_Dispenser_Upon_Removal__c)= &quot;Disconnected and placed in Backroom&quot;)))),true,false) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorMessage>You must select an appropriate value within the &quot;Disposition of Dispenser Upon Removal&quot; field in order to proceed</errorMessage>
+</ValidationRule>

@@ -1,0 +1,34 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:hasSObjectName,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,lightning:actionOverride,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" access="global" >
+
+     <lightning:workspaceAPI aura:id="workspace" />
+           <aura:attribute name="openRecordTypeSelectionPage" type="Boolean" default="false"/>
+    <aura:attribute name="message" type="String" default="Close Not Clicked"/>
+     <aura:attribute name="recTypeId" type="Integer" />
+     <aura:attribute name="listId" type="Integer" />
+       <aura:attribute name="lmRecordPageId" type="Integer" />
+     <aura:attribute name="LMAndnonLMnavigation" type="Boolean" default="false"/>
+    <aura:attribute name="lmCaseCreate" type="Boolean" default="false"/>
+    <aura:attribute name="opnLmRecordPageForNonConsoleApp" type="Boolean" default="false"/>
+    <div class="slds-clearfix">
+        <div class="slds-float_right">
+             <lightning:button label="New" title="Create Case" onclick="{! c.callRecordSelectionPage }"/>
+        </div>
+    </div>
+  
+      
+    <aura:if isTrue="{!v.openRecordTypeSelectionPage}">
+        <c:fs_CaseRecordTypeSelection_LWC onopenNonLmCase="{!c.createNonLmCases}" onopenLmInParentTab="{!c.createLmCase}" oncloseTab="{!c.closeFocusedTab}"/>  
+    </aura:if>
+    <aura:if isTrue="{!v.LMAndnonLMnavigation}">
+         <c:fs_CaseRecordNavigation_LWC SelectedValueId="{!v.recTypeId}" recentlyUsedCaseListViewId="{!v.listId}" openLmRecordPage="{!v.opnLmRecordPageForNonConsoleApp}" caseRecordId="{!v.lmRecordPageId}"/>
+    </aura:if>
+    <!-- LM and Non LM case navigation ends here-->
+    
+    <!-- LM case navigation starts here-->
+    <aura:if isTrue="{!v.lmCaseCreate}">
+        <c:fs_LMCaseCreateAndEdit_LWC oncloseTabbb="{!c.closeFocusedTab}" onopenCaseRecordPage="{!c.openLMCaseRecordPage}"/>
+    </aura:if>
+  	 <!-- LM case navigation starts here-->
+                         
+    
+</aura:component>

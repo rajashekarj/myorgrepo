@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Select_Site_assessment_contact__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Used to select the Site assessment outlet contact name</description>
+    <externalId>false</externalId>
+    <label>Site Assessment Contact Name</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Contact not found or incomplete.</errorMessage>
+        <filterItems>
+            <field>Contact.Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Headquarters</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.FS_Headquarters__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Contact.FS_Contact_Info_Complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Email</field>
+            <operation>notEqual</operation>
+            <value/>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Phone</field>
+            <operation>notEqual</operation>
+            <value/>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>CIF (Select Site assessment contact)</relationshipLabel>
+    <relationshipName>CIFDUjK</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

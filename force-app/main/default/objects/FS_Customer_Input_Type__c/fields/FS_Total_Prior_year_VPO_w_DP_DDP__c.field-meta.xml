@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Total_Prior_year_VPO_w_DP_DDP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Total Prior year VPO w/DP-DDP</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

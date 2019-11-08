@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>Revoke_Artifacts__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revoke At Next Install</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revoke Now</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

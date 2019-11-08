@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>TIMBASURVEYS__Timba_Surveys</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Timba Surveys</label>
+    <logo>TIMBASURVEYS__TimbaSurveysData/TIMBASURVEYS__Timba_Surveys_By_altimetrik.png</logo>
+    <tabs>TIMBASURVEYS__Timba_Surveys</tabs>
+    <tabs>TIMBASURVEYS__SF1_Timba_Surveys</tabs>
+    <tabs>TIMBASURVEYS__TimbaSurveys_CP</tabs>
+    <tabs>TIMBASURVEYS__SurveyQuestion__c</tabs>
+    <tabs>TIMBASURVEYS__SurveyTheme__c</tabs>
+    <tabs>Warehouse_Details__c</tabs>
+</CustomApplication>

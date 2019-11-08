@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Flavor Change file upload  Columns that has the sequence of csv header&#39;s corresponding field API of respective sobject API  in Freestyle.</description>
+    <label>FlavorChangeFileColumnDetails</label>
+    <pluralLabel>FlavorChangeFileColumnDetails</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

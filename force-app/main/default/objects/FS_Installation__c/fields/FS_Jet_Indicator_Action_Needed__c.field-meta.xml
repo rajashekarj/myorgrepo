@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Jet_Indicator_Action_Needed__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(OR(RecordType.Name = $Label.IP_Replacement_Rec_Type,
+RecordType.Name = $Label.IP_Relocation_I4W_Rec_Type),&#39;Not Applicable&#39;,
+if(RecordType.Name &lt;&gt; &#39;New Install&#39;,
+SUBSTITUTE(SUBSTITUTE(if(AND(INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JT&quot;), INCLUDES(Type_of_Dispenser_Platform__c,&#39;9000&#39;), CONTAINS(FS_Outlet__r.FS_JetIndicator_ActionNeeded_PIA__c,&#39;Remove JT1&#39;)),&#39;Remove JT; &#39;,&#39;&#39;)+
+if(AND(INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JT Crew&quot;), INCLUDES(Type_of_Dispenser_Platform__c,&#39;8000&#39;), CONTAINS(FS_Outlet__r.FS_JetIndicator_ActionNeeded_PIA__c,&#39;Remove JT Crew&#39;)),&#39;Remove JT Crew; &#39;,&#39;&#39;)+
+if(AND(INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;MV&quot;), INCLUDES(Type_of_Dispenser_Platform__c,&#39;7000&#39;), CONTAINS(FS_Outlet__r.FS_JetIndicator_ActionNeeded_PIA__c,&#39;Remove MV&#39;)),&#39;Remove MV; &#39;,&#39;&#39;)+
+if(AND(INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JJ&quot;), INCLUDES(Type_of_Dispenser_Platform__c,&#39;9100&#39;), CONTAINS(FS_Outlet__r.FS_JetIndicator_ActionNeeded_PIA__c,&#39;Remove JJ&#39;)),&#39;Remove JJ; &#39;,&#39;&#39;)+
+if(AND(INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JM&quot;), INCLUDES(Type_of_Dispenser_Platform__c,&#39;6000&#39;), CONTAINS(FS_Outlet__r.FS_JetIndicator_ActionNeeded_PIA__c,&#39;Remove JM&#39;)),&#39;Remove JM; &#39;,&#39;&#39;)+
+if(AND(INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;MT&quot;), INCLUDES(Type_of_Dispenser_Platform__c,&#39;7100&#39;), CONTAINS(FS_Outlet__r.FS_JetIndicator_ActionNeeded_PIA__c,&#39;Remove MT&#39;)),&#39;Remove MT; &#39;,&#39;&#39;)+
+if(AND(INCLUDES( FS_Outlet__r.FS_Active_SAP_Jet_Indicators__c  , &quot;JET6&quot;), INCLUDES(Type_of_Dispenser_Platform__c,&#39;6050&#39;), CONTAINS(FS_Outlet__r.FS_JetIndicator_ActionNeeded_PIA__c,&#39;Remove JET6&#39;)),&#39;Remove JET6; &#39;,&#39;&#39;)+&quot;.&quot;,&quot;; .&quot;, null),&quot;.&quot;,null), if(Overall_Status2__c=&#39;Complete&#39;,FS_Jet_Indicator_Action_Needed_IP__c,FS_Outlet__r.FS_Jet_Indicator_Action_Needed__c)))</formula>
+    <label>Jet Indicator Action Needed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

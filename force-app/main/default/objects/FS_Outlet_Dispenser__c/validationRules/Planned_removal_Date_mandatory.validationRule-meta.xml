@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Planned_removal_Date_mandatory</fullName>
+    <active>true</active>
+    <description>Planned_removal_Date_mandatory</description>
+    <errorConditionFormula>AND( RecordType.Name = &#39;BoE Dispenser&#39;, ISPICKVAL(FS_Status__c , &#39;Removed from Outlet&#39;), ISBLANK(  Planned_Remove_Date__c ),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>Planned_Remove_Date__c</errorDisplayField>
+    <errorMessage>Planned Removal Date Is Mandatory</errorMessage>
+</ValidationRule>

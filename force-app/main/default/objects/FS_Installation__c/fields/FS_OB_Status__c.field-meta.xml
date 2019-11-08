@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_OB_Status__c</fullName>
+    <description>Freestyle Onboarding Status field</description>
+    <externalId>false</externalId>
+    <label>Onboarding Activity Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Trainer__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Order</fullName>
+                <default>false</default>
+                <label>New Order</label>
+            </value>
+            <value>
+                <fullName>Schedule Confirmed</fullName>
+                <default>false</default>
+                <label>Schedule Confirmed</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Incomplete Attempt</fullName>
+                <default>false</default>
+                <label>Incomplete Attempt</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>EcoSure</controllingFieldValue>
+            <valueName>New Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EcoSure</controllingFieldValue>
+            <controllingFieldValue>COM</controllingFieldValue>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Schedule Confirmed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EcoSure</controllingFieldValue>
+            <controllingFieldValue>COM</controllingFieldValue>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EcoSure</controllingFieldValue>
+            <controllingFieldValue>COM</controllingFieldValue>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Incomplete Attempt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EcoSure</controllingFieldValue>
+            <controllingFieldValue>COM</controllingFieldValue>
+            <controllingFieldValue>Customer</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

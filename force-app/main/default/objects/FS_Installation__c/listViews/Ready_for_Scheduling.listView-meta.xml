@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ready_for_Scheduling</fullName>
+    <columns>NAME</columns>
+    <columns>Outlet_ACN__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>FS_Outlet_Information__c</columns>
+    <columns>FS_Equipment_Booked__c</columns>
+    <columns>FS_JDE_Doc__c</columns>
+    <columns>FS_Execution_Plan__c</columns>
+    <columns>FS_Original_Install_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Overall_Status2__c</field>
+        <operation>contains</operation>
+        <value>Ready for Scheduling</value>
+    </filters>
+    <label>Ready for Scheduling</label>
+    <sharedTo>
+        <role>FS_AC</role>
+        <role>FS_Admin_PM</role>
+        <role>FS_PIC</role>
+        <role>FS_PM</role>
+        <role>FS_PM_View_Only</role>
+        <role>FS_Vendor_PIC</role>
+    </sharedTo>
+</ListView>

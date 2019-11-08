@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_of_Self_Serve_Installations__c</fullName>
+    <externalId>false</externalId>
+    <label># of 9000 Series installations</label>
+    <summarizedField>FS_Installation__c.FS_Eq_SS_Dispenser_QTY__c</summarizedField>
+    <summaryForeignKey>FS_Installation__c.FS_Execution_Plan__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_General_Contractor_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Construction Company</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4 D Foods</fullName>
+                <default>false</default>
+                <label>4 D Foods</label>
+            </value>
+            <value>
+                <fullName>ADC</fullName>
+                <default>false</default>
+                <label>ADC</label>
+            </value>
+            <value>
+                <fullName>AJ Development</fullName>
+                <default>false</default>
+                <label>AJ Development</label>
+            </value>
+            <value>
+                <fullName>Ameritech Services</fullName>
+                <default>false</default>
+                <label>Ameritech Services</label>
+            </value>
+            <value>
+                <fullName>B3 Construction</fullName>
+                <default>false</default>
+                <label>B3 Construction</label>
+            </value>
+            <value>
+                <fullName>Berkeley Dogs</fullName>
+                <default>false</default>
+                <label>Berkeley Dogs</label>
+            </value>
+            <value>
+                <fullName>BGR</fullName>
+                <default>false</default>
+                <label>BGR</label>
+            </value>
+            <value>
+                <fullName>Black Forest Ventures</fullName>
+                <default>false</default>
+                <label>Black Forest Ventures</label>
+            </value>
+            <value>
+                <fullName>Blvd. Cinemas</fullName>
+                <default>false</default>
+                <label>Blvd. Cinemas</label>
+            </value>
+            <value>
+                <fullName>Boardwalk Fries</fullName>
+                <default>false</default>
+                <label>Boardwalk Fries</label>
+            </value>
+            <value>
+                <fullName>Bridgeman Foods</fullName>
+                <default>false</default>
+                <label>Bridgeman Foods</label>
+            </value>
+            <value>
+                <fullName>Brownbuilld</fullName>
+                <default>false</default>
+                <label>Brownbuilld</label>
+            </value>
+            <value>
+                <fullName>Cafe Rio</fullName>
+                <default>false</default>
+                <label>Cafe Rio</label>
+            </value>
+            <value>
+                <fullName>CB Summer Construction Co.</fullName>
+                <default>false</default>
+                <label>CB Summer Construction Co.</label>
+            </value>
+            <value>
+                <fullName>Chris Williams</fullName>
+                <default>false</default>
+                <label>Chris Williams</label>
+            </value>
+            <value>
+                <fullName>Clark Contractors</fullName>
+                <default>false</default>
+                <label>Clark Contractors</label>
+            </value>
+            <value>
+                <fullName>Columbia Construction</fullName>
+                <default>false</default>
+                <label>Columbia Construction</label>
+            </value>
+            <value>
+                <fullName>Cosi - Construction Manager</fullName>
+                <default>false</default>
+                <label>Cosi - Construction Manager</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <label>Customer</label>
+            </value>
+            <value>
+                <fullName>Dairy Queen - Corporate Stores</fullName>
+                <default>false</default>
+                <label>Dairy Queen - Corporate Stores</label>
+            </value>
+            <value>
+                <fullName>Dan Lowe Contractor</fullName>
+                <default>false</default>
+                <label>Dan Lowe Contractor</label>
+            </value>
+            <value>
+                <fullName>Davaco</fullName>
+                <default>false</default>
+                <label>Davaco</label>
+            </value>
+            <value>
+                <fullName>Davaco - Dallas</fullName>
+                <default>false</default>
+                <label>Davaco - Dallas</label>
+            </value>
+            <value>
+                <fullName>Davaco - Larry Denman</fullName>
+                <default>false</default>
+                <label>Davaco - Larry Denman</label>
+            </value>
+            <value>
+                <fullName>David Mitchell, Inc.</fullName>
+                <default>false</default>
+                <label>David Mitchell, Inc.</label>
+            </value>
+            <value>
+                <fullName>Deck With</fullName>
+                <default>false</default>
+                <label>Deck With</label>
+            </value>
+            <value>
+                <fullName>Dedica Group</fullName>
+                <default>false</default>
+                <label>Dedica Group</label>
+            </value>
+            <value>
+                <fullName>Devier Design Build LLC</fullName>
+                <default>false</default>
+                <label>Devier Design Build LLC</label>
+            </value>
+            <value>
+                <fullName>DGC</fullName>
+                <default>false</default>
+                <label>DGC</label>
+            </value>
+            <value>
+                <fullName>DMS Construction</fullName>
+                <default>false</default>
+                <label>DMS Construction</label>
+            </value>
+            <value>
+                <fullName>Don Leslie</fullName>
+                <default>false</default>
+                <label>Don Leslie</label>
+            </value>
+            <value>
+                <fullName>Dos Coyotes</fullName>
+                <default>false</default>
+                <label>Dos Coyotes</label>
+            </value>
+            <value>
+                <fullName>Earl Hecklin Construction</fullName>
+                <default>false</default>
+                <label>Earl Hecklin Construction</label>
+            </value>
+            <value>
+                <fullName>Eric Wadsworth</fullName>
+                <default>false</default>
+                <label>Eric Wadsworth</label>
+            </value>
+            <value>
+                <fullName>FCI - Food Concepts Inc</fullName>
+                <default>false</default>
+                <label>FCI - Food Concepts Inc</label>
+            </value>
+            <value>
+                <fullName>First Choice Maintenance</fullName>
+                <default>false</default>
+                <label>First Choice Maintenance</label>
+            </value>
+            <value>
+                <fullName>Fort McDowell Facilities</fullName>
+                <default>false</default>
+                <label>Fort McDowell Facilities</label>
+            </value>
+            <value>
+                <fullName>Fourteen Foods</fullName>
+                <default>false</default>
+                <label>Fourteen Foods</label>
+            </value>
+            <value>
+                <fullName>Frank Esposito</fullName>
+                <default>false</default>
+                <label>Frank Esposito</label>
+            </value>
+            <value>
+                <fullName>Freeman Reiff Construction LLC</fullName>
+                <default>false</default>
+                <label>Freeman Reiff Construction LLC</label>
+            </value>
+            <value>
+                <fullName>Giant Eagle</fullName>
+                <default>false</default>
+                <label>Giant Eagle</label>
+            </value>
+            <value>
+                <fullName>Granberry Properties</fullName>
+                <default>false</default>
+                <label>Granberry Properties</label>
+            </value>
+            <value>
+                <fullName>Grumles</fullName>
+                <default>false</default>
+                <label>Grumles</label>
+            </value>
+            <value>
+                <fullName>Halo Burger â€“ VP of Operations</fullName>
+                <default>false</default>
+                <label>Halo Burger â€“ VP of Operations</label>
+            </value>
+            <value>
+                <fullName>Harrell Inc</fullName>
+                <default>false</default>
+                <label>Harrell Inc</label>
+            </value>
+            <value>
+                <fullName>Hilton Chicago</fullName>
+                <default>false</default>
+                <label>Hilton Chicago</label>
+            </value>
+            <value>
+                <fullName>Hilton Worldwide</fullName>
+                <default>false</default>
+                <label>Hilton Worldwide</label>
+            </value>
+            <value>
+                <fullName>HITT</fullName>
+                <default>false</default>
+                <label>HITT</label>
+            </value>
+            <value>
+                <fullName>IDL Worldwide</fullName>
+                <default>false</default>
+                <label>IDL Worldwide</label>
+            </value>
+            <value>
+                <fullName>Interstate Construction Inc.</fullName>
+                <default>false</default>
+                <label>Interstate Construction Inc.</label>
+            </value>
+            <value>
+                <fullName>JAMS Restaurants LLC</fullName>
+                <default>false</default>
+                <label>JAMS Restaurants LLC</label>
+            </value>
+            <value>
+                <fullName>JBS Allphase Construction</fullName>
+                <default>false</default>
+                <label>JBS Allphase Construction</label>
+            </value>
+            <value>
+                <fullName>Jenkins Construction INC</fullName>
+                <default>false</default>
+                <label>Jenkins Construction INC</label>
+            </value>
+            <value>
+                <fullName>Jody Carter construction</fullName>
+                <default>false</default>
+                <label>Jody Carter construction</label>
+            </value>
+            <value>
+                <fullName>Jose Medena</fullName>
+                <default>false</default>
+                <label>Jose Medena</label>
+            </value>
+            <value>
+                <fullName>JSR Contruction Services</fullName>
+                <default>false</default>
+                <label>JSR Contruction Services</label>
+            </value>
+            <value>
+                <fullName>JWL Management</fullName>
+                <default>false</default>
+                <label>JWL Management</label>
+            </value>
+            <value>
+                <fullName>Lal Construction</fullName>
+                <default>false</default>
+                <label>Lal Construction</label>
+            </value>
+            <value>
+                <fullName>Malone Construction</fullName>
+                <default>false</default>
+                <label>Malone Construction</label>
+            </value>
+            <value>
+                <fullName>Nandoâ€™s</fullName>
+                <default>false</default>
+                <label>Nandoâ€™s</label>
+            </value>
+            <value>
+                <fullName>National Contracting Group</fullName>
+                <default>false</default>
+                <label>National Contracting Group</label>
+            </value>
+            <value>
+                <fullName>Northern Builders</fullName>
+                <default>false</default>
+                <label>Northern Builders</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PaceSetter</fullName>
+                <default>false</default>
+                <label>PaceSetter</label>
+            </value>
+            <value>
+                <fullName>Palace Entertainment</fullName>
+                <default>false</default>
+                <label>Palace Entertainment</label>
+            </value>
+            <value>
+                <fullName>Pizza Factory Corp</fullName>
+                <default>false</default>
+                <label>Pizza Factory Corp</label>
+            </value>
+            <value>
+                <fullName>Plamondon Enterprises</fullName>
+                <default>false</default>
+                <label>Plamondon Enterprises</label>
+            </value>
+            <value>
+                <fullName>Platinum LLC</fullName>
+                <default>false</default>
+                <label>Platinum LLC</label>
+            </value>
+            <value>
+                <fullName>Pride Commercial Appliance Services</fullName>
+                <default>false</default>
+                <label>Pride Commercial Appliance Services</label>
+            </value>
+            <value>
+                <fullName>Pride Plumbing</fullName>
+                <default>false</default>
+                <label>Pride Plumbing</label>
+            </value>
+            <value>
+                <fullName>Quick Servant Co.</fullName>
+                <default>false</default>
+                <label>Quick Servant Co.</label>
+            </value>
+            <value>
+                <fullName>Rhodes 101 Stop</fullName>
+                <default>false</default>
+                <label>Rhodes 101 Stop</label>
+            </value>
+            <value>
+                <fullName>Ryan Construction</fullName>
+                <default>false</default>
+                <label>Ryan Construction</label>
+            </value>
+            <value>
+                <fullName>Shakeyâ€™s Brea</fullName>
+                <default>false</default>
+                <label>Shakeyâ€™s Brea</label>
+            </value>
+            <value>
+                <fullName>Singer Equipment Company</fullName>
+                <default>false</default>
+                <label>Singer Equipment Company</label>
+            </value>
+            <value>
+                <fullName>St. Joseph Facilities</fullName>
+                <default>false</default>
+                <label>St. Joseph Facilities</label>
+            </value>
+            <value>
+                <fullName>Stampede Management Howard Oâ€™Brien</fullName>
+                <default>false</default>
+                <label>Stampede Management Howard Oâ€™Brien</label>
+            </value>
+            <value>
+                <fullName>Sunnybuilt Construction Co</fullName>
+                <default>false</default>
+                <label>Sunnybuilt Construction Co</label>
+            </value>
+            <value>
+                <fullName>Sunseri &amp; Associates</fullName>
+                <default>false</default>
+                <label>Sunseri &amp; Associates</label>
+            </value>
+            <value>
+                <fullName>Terry Clements Construction</fullName>
+                <default>false</default>
+                <label>Terry Clements Construction</label>
+            </value>
+            <value>
+                <fullName>The Wendyâ€™s Company</fullName>
+                <default>false</default>
+                <label>The Wendyâ€™s Company</label>
+            </value>
+            <value>
+                <fullName>Trayce Bush Contractor</fullName>
+                <default>false</default>
+                <label>Trayce Bush Contractor</label>
+            </value>
+            <value>
+                <fullName>Turner Construction</fullName>
+                <default>false</default>
+                <label>Turner Construction</label>
+            </value>
+            <value>
+                <fullName>T Weeks Construction Co.</fullName>
+                <default>false</default>
+                <label>T Weeks Construction Co.</label>
+            </value>
+            <value>
+                <fullName>Ultimate Construction</fullName>
+                <default>false</default>
+                <label>Ultimate Construction</label>
+            </value>
+            <value>
+                <fullName>University of AZ Facilities</fullName>
+                <default>false</default>
+                <label>University of AZ Facilities</label>
+            </value>
+            <value>
+                <fullName>Venture Construction</fullName>
+                <default>false</default>
+                <label>Venture Construction</label>
+            </value>
+            <value>
+                <fullName>Walgreens Ice Maker Co.</fullName>
+                <default>false</default>
+                <label>Walgreens Ice Maker Co.</label>
+            </value>
+            <value>
+                <fullName>Wasserstorm Co.</fullName>
+                <default>false</default>
+                <label>Wasserstorm Co.</label>
+            </value>
+            <value>
+                <fullName>Wegmans</fullName>
+                <default>false</default>
+                <label>Wegmans</label>
+            </value>
+            <value>
+                <fullName>Welcome To Moeâ€™s</fullName>
+                <default>false</default>
+                <label>Welcome To Moeâ€™s</label>
+            </value>
+            <value>
+                <fullName>Wen Choo Choo</fullName>
+                <default>false</default>
+                <label>Wen Choo Choo</label>
+            </value>
+            <value>
+                <fullName>Wendelk-James Huber</fullName>
+                <default>false</default>
+                <label>Wendelk-James Huber</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s-Blane Barnes</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s-Blane Barnes</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s Food Systems Inc.</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s Food Systems Inc.</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s Harrell Queen</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s Harrell Queen</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s International</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s International</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s International Gary Bogo</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s International Gary Bogo</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s International-Tommy Morgan</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s International-Tommy Morgan</label>
+            </value>
+            <value>
+                <fullName>Wendyâ€™s of Bowling Green-Jim Holleman</fullName>
+                <default>false</default>
+                <label>Wendyâ€™s of Bowling Green-Jim Holleman</label>
+            </value>
+            <value>
+                <fullName>Wilcox Construction</fullName>
+                <default>false</default>
+                <label>Wilcox Construction</label>
+            </value>
+            <value>
+                <fullName>Z-Burger</fullName>
+                <default>false</default>
+                <label>Z-Burger</label>
+            </value>
+            <value>
+                <fullName>H&amp;K</fullName>
+                <default>false</default>
+                <label>H&amp;K</label>
+            </value>
+            <value>
+                <fullName>Facility Solutions</fullName>
+                <default>false</default>
+                <label>Facility Solutions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

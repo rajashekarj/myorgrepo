@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_LTO__c</fullName>
+    <description>LTOs</description>
+    <externalId>false</externalId>
+    <label>Limited Time Offer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Share a Coke</fullName>
+                <default>false</default>
+                <label>Share a Coke</label>
+            </value>
+            <value>
+                <fullName>LTO2</fullName>
+                <default>false</default>
+                <label>LTO2</label>
+            </value>
+            <value>
+                <fullName>LTO3</fullName>
+                <default>false</default>
+                <label>LTO3</label>
+            </value>
+            <value>
+                <fullName>No LTO</fullName>
+                <default>false</default>
+                <label>No LTO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

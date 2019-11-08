@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Artifact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Artifacts</value>
+    </caseValues>
+    <layouts>
+        <layout>Artifact Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>FS_Dry_Run</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>FS_Published</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>S3PathIsRequired</name>
+    </validationRules>
+</CustomObjectTranslation>

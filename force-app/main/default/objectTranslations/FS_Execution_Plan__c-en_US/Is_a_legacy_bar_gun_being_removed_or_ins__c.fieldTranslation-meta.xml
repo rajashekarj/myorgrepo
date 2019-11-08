@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>Is_a_legacy_bar_gun_being_removed_or_ins__c</name>
+    <picklistValues>
+        <masterLabel>-None-</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No, Not at this time</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Applicable</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes, See comment section</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

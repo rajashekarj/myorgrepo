@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelocateO4W_Complete_Error_Scenarios</fullName>
+    <active>true</active>
+    <description>validation error message should display when on Relocation O4W,Post Install Activity checked and any one of list scenarios satisfy condition..</description>
+    <errorConditionFormula>if(AND(RecordType.Name=$Label.IP_Relocation_O4W_Rec_Type,FS_Activity_Complete__c,OR(TEXT(FS_Disposition_of_Dispenser_Upon_Removal__c)= &quot;&quot;,NOT(TEXT(FS_Disposition_of_Dispenser_Upon_Removal__c)= &quot;Removed and Shipped to New Outlet&quot;),NOT(TEXT(FS_Asset_Tracking_Form_AMOA_Status__c)=&quot;Complete&quot;),FS_Install_Doc__c=&quot;&quot;)
+),true,false) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorMessage>Please ensure there is an appropriate value against the following fields: &quot;Disposition of Dispenser Upon Removal&quot;, &quot;Asset Tracking Form (AMOA) Status&quot; and &quot;Work Order #&quot; in order to move the status to &quot;Complete&quot;.</errorMessage>
+</ValidationRule>

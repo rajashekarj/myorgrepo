@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Distributor_Sweetener_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Distributor Sweetener Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1- DAE or Activation Lead Introduction to Freestyle</fullName>
+                <default>false</default>
+                <label>1- DAE or Activation Lead Introduction to Freestyle</label>
+            </value>
+            <value>
+                <fullName>2 - Distributor in agreement to stock/ship sweeteners</fullName>
+                <default>false</default>
+                <label>2 - Distributor in agreement to stock/ship sweeteners</label>
+            </value>
+            <value>
+                <fullName>3 - Distributor is setup and sweeteners available</fullName>
+                <default>false</default>
+                <label>3 - Distributor is setup and sweeteners available</label>
+            </value>
+            <value>
+                <fullName>4 - Confirmed order capability for new outlet</fullName>
+                <default>false</default>
+                <label>4 - Confirmed order capability for new outlet</label>
+            </value>
+            <value>
+                <fullName>5 - Order placed by customer and received by DC</fullName>
+                <default>false</default>
+                <label>5 - Order placed by customer and received by DC</label>
+            </value>
+            <value>
+                <fullName>6 - Distributor Outlet Level Reporting Verified</fullName>
+                <default>false</default>
+                <label>6 - Distributor Outlet Level Reporting Verified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

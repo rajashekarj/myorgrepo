@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Quantity_Fields_mandatory</fullName>
+    <active>true</active>
+    <description>Making Quantity fields mandatory</description>
+    <errorConditionFormula>if(AND(ISBLANK(FS_Tall_Cup_Kit_QTY__c), NOT(ISBLANK(TEXT(FS_Tall_Cup_Kit__c)))),true,
+
+if(AND(ISBLANK(FS_Ice_Maker_Cladding_QTY__c), NOT(ISBLANK(TEXT(FS_Ice_Maker_Cladding__c)))),true,
+
+if(AND(ISBLANK(FS_Coke_Pump_QTY__c), NOT(ISBLANK(TEXT(FS_Coke_Pump__c)))),true,
+
+if(AND(ISBLANK(FS_Boost_Installation_Kit_M_Series_QTY__c), NOT(ISBLANK(TEXT(FS_Boost_Installation_Kit_M_Series__c)))),true,
+
+if(AND(ISBLANK(FS_Boost_NNS_Tray_M_Series_QTY__c), NOT(ISBLANK(TEXT(FS_Boost_NNS_Tray_M_Series__c)))),true,
+
+if(AND(ISBLANK(FS_Boost_Tri_CGP_M_Series_QTY__c), NOT(ISBLANK(TEXT(FS_Boost_Tri_CGP_M_Series__c)))),true,
+
+if(AND(ISBLANK(FS_Misc_Kit_M_Series_QTY__c), NOT(ISBLANK(TEXT(FS_Misc_Kit_M_Series__c)))),true,
+
+if(AND(ISBLANK(FS_Label_kits_QTY__c), NOT(ISBLANK(TEXT(FS_Label_kits__c)))),true,
+
+if(AND(ISBLANK(FS_Pump_Kit_QTY__c), NOT(ISBLANK(TEXT(FS_Pump_Kit__c)))),true,
+
+if(AND(ISBLANK(FS_Vacuum_Regulator_QTY__c), NOT(ISBLANK(TEXT(FS_Vacuum_Regulator__c)))),true,
+
+if(AND(ISBLANK(FS_Rack1_QTY__c), NOT(ISBLANK(TEXT(FS_Rack1__c)))),true,
+
+if(AND(ISBLANK(FS_Rack2_QTY__c), NOT(ISBLANK(TEXT(FS_Rack2__c)))),true,
+
+if(AND(ISBLANK(FS_Rack3_QTY__c), NOT(ISBLANK(TEXT(FS_Rack3__c)))),true,
+
+if(AND(ISBLANK(FS_External_Modems_QTY__c),NOT(ISBLANK(TEXT(FS_External_Modems__c)))),true,
+
+if(AND(ISBLANK(FS_Shelf1_QTY__c), NOT(ISBLANK(TEXT(FS_Shelf1__c)))),true,
+
+if(AND(ISBLANK(FS_Shelf2_QTY__c), NOT(ISBLANK(TEXT(FS_Shelf2__c)))),true,
+
+if(AND(ISBLANK(FS_Water_Filter_QTY__c), NOT(ISBLANK(TEXT(FS_Water_Filter__c)))),true,
+
+if(AND(ISBLANK(FS_Water_Filter_2_QTY__c), NOT(ISBLANK(TEXT(FS_Water_Filter_2__c)))),true,
+
+if(AND(ISBLANK(FS_Regulator_QTY__c), NOT(ISBLANK(TEXT(FS_Regulator__c)))),true,
+
+if(AND(ISBLANK(FS_Water_Booster_QTY__c), NOT(ISBLANK(TEXT(FS_Water_Booster__c)))),true,
+
+if(AND(ISBLANK(FS_Booster_Shelf_QTY__c), NOT(ISBLANK(TEXT(FS_Booster_Shelf__c)))),true,
+
+if(AND(ISBLANK(FS_Manifold_QTY__c), NOT(ISBLANK(TEXT(FS_Manifold__c)))),true,
+
+if(AND(ISBLANK(FS_Valid_Fill_QTY__c), NOT(ISBLANK(TEXT(FS_Valid_Fill__c)))),true,
+
+if(AND(ISBLANK(X30_Ice_Maker_Shroud_QTY__c),NOT(ISBLANK(TEXT(X30_Ice_Maker_Shroud__c)))),true,
+
+if(AND(ISBLANK(FS_Soft_Ice_Misc_Adapter_QTY__c), NOT(ISBLANK(TEXT(FS_Soft_Ice_Misc_Adapter__c)))),true,
+
+if(AND(ISBLANK(FS_LID_IM_Adapter1_QTY__c), NOT(ISBLANK(TEXT(FS_LID_IM_Adapter1__c)))),true,
+
+if(AND(ISBLANK(FS_LID_IM_Adapter2_QTY__c), NOT(ISBLANK(TEXT(FS_LID_IM_Adapter2__c)))),true,
+
+if(AND(ISBLANK(FS_Extended_Splash_QTY__c), NOT(ISBLANK(TEXT(FS_Extended_Splash__c)))),true,
+
+if(AND(ISBLANK(FS_X4LC_NNS_Tray_QTY__c), NOT(ISBLANK(TEXT(FS_X4LC_NNS_Tray__c)))),true,
+
+if(AND(ISBLANK(FS_X4LC_RCGP_Module_s_QTY__c), NOT(ISBLANK(TEXT(FS_X4LC_RCGP_Module_s__c)))),true,
+
+if(AND(ISBLANK(FS_X4LC_RCGP_Installation_Kit_QTY__c), NOT(ISBLANK(TEXT(FS_X4LC_RCGP_Installation_Kit__c)))),true,
+
+if(AND(ISBLANK(FS_Dispenser_QTY__c), NOT(ISBLANK(TEXT(FS_Dispenser_Series_IC_code__c)))),true,
+
+if(AND(ISBLANK(FS_Stand_QTY__c), NOT(ISBLANK(TEXT(FS_Stand__c)))),true,false)))))))))))))))))))))))))))))))))</errorConditionFormula>
+    <errorMessage>please review all the fields and ensure that quantity is present if a value has been specified</errorMessage>
+</ValidationRule>

@@ -1,0 +1,122 @@
+<!-- 
+Page Name	 : FSCopyEPIPAccountTeamInfo 
+Version	     : 1.0 
+Function	 : Apex Page for Copy down of Account team Info from EP to selected IP   
+Modification Log    :
+* Developer         :    Date              Description
+* ----------------------------------------------------------------------------                 
+* Venkat    FET 5.2        	09/05/2018          Original Version- FFET- 1272
+-->
+
+<apex:page standardController="FS_Execution_Plan__c" extensions="FSCopyEPIPAccountTeamInfoExtension" docType="html-5.0">   
+   <apex:includeScript value="/soap/ajax/44.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/44.0/apex.js"/>
+    <script>
+    if({!CONTAINS($Profile.Name, $Label.FS_Copy_Down_EPIP_Warning_Profiles_List)})
+    {
+        alert('{!$Label.FS_Reminder_Message_Com_for_Copy_Down}');
+    }
+    </script>
+    
+    <apex:form id="theForm">
+        <apex:pageMessages ></apex:pageMessages>
+        
+        <apex:pageblock id="pbSearch">
+            <table cellpadding="0" cellspacing="0" width="50%">
+                <tr>
+                    <td class="dataCell"><b>Name</b></td></tr>
+                <tr>
+                    <td class="dataCell">
+                        <apex:inputText id="txtSearchOutletACN" value="{!searchInstallName}" />
+                    </td>              
+                    <td class="dataCell">
+                        <apex:commandButton value="Search" reRender="pbId,theForm"  action="{!searchOutlet}" status="statusEP" />
+                    </td>
+                </tr>
+            </table>
+        </apex:pageblock>
+        
+        <apex:pageBlock title="Installations" id="pbId" >
+            <apex:pageBlockButtons location="Bottom">
+                <apex:commandButton value="Copy Account Team Info to Installations" action="{!copyEPIPAccountTeam}" reRender="pbId,theForm" status="statusEP" styleClass="btn btn-success activeIA "/>
+                <apex:commandButton value="Cancel" action="{!cancelEPIP}" />
+            </apex:pageBlockButtons> 
+            <apex:pageBlockTable value="{!wrapperRecordList}" var="inst">
+                <apex:column >
+                    <apex:facet name="header"> 
+                        <input class="parOutClass" onchange="toggleCheck(this)" type="checkbox" /> 
+                    </apex:facet>                   
+                    <apex:inputCheckbox styleClass="{!IF((Contains($Profile.Name, $Label.FS_Copy_Down_EPIP_Warning_Profiles_List) && (inst.installation.FS_Execution_Plan_Final_Approval_PM__c='Approved')),'NonselectInput','selectInput')}" value="{!inst.isSelected}" disabled="{!IF((Contains($Profile.Name, $Label.FS_Copy_Down_EPIP_Warning_Profiles_List) && (inst.installation.FS_Execution_Plan_Final_Approval_PM__c='Approved')),true,false)}" />                 
+                </apex:column>
+                <apex:column headerValue="Name">
+                    <apex:outputlabel value="{!inst.installation.Name}"/>
+                </apex:column>
+                <apex:column headerValue="Transaction Status">
+                    <apex:outputlabel value="{!inst.installation.Overall_Status2__c}"/>
+                </apex:column>
+                <apex:column headerValue="Platform Type/s">
+                    <apex:outputlabel value="{!inst.installation.Type_of_Dispenser_Platform__c}"/>
+                </apex:column>
+                <apex:column headerValue="Outlet">
+                    <apex:outputlabel value="{!inst.installation.FS_Outlet__r.name}"/>
+                </apex:column>
+                <apex:column headerValue="Outlet ACN">
+                    <apex:outputlabel value="{!inst.installation.Outlet_ACN__c}"/>
+                </apex:column>
+                <apex:column headerValue="Outlet Address">
+                    <apex:outputlabel value="{!inst.installation.FS_Outlet_Address__c}"/>
+                </apex:column>
+                <apex:column headerValue="PM Approval Status">
+                    <apex:outputlabel value="{!if(inst.installation.FS_Execution_Plan_Final_Approval_PM__c!=null,inst.installation.FS_Execution_Plan_Final_Approval_PM__c,"Not Approved")}"/>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+            
+            <!-- Action Buttons visible on bottom of page for pagination -->
+            <apex:outputPanel style="text-align:center;" layout="block">
+                <hr/>
+                <table width="100%" >
+                    <tr>
+                        <td align="left" width="33%">
+                            <div id="pagelinkblock" >
+                                <div id="curstate"> {!(pageNumber * pageSize)+1-pageSize}-{!IF((pageNumber * pageSize)>noOfRecords, noOfRecords,(pageNumber * pageSize))} of {!noOfRecords} </div>
+                            </div>
+                        </td>
+                        <td align="center" width="33%" style="vertical-align:middle;white-space:nowrap;">
+                            <apex:commandButton value="|<" reRender="pbId" action="{!first}" disabled="{!NOT(hasPrevious)}" status="paginationStatus"/>
+                            <apex:commandButton value="<" rerender="pbId" action="{!previous}" disabled="{!NOT(hasPrevious)}" status="paginationStatus"/>
+                            <apex:commandButton value=">" rerender="pbId" action="{!next}" disabled="{!NOT(hasNext)}" status="paginationStatus"/>
+                            <apex:commandButton value=">|" rerender="pbId" action="{!last}" disabled="{!NOT(hasNext)}" status="paginationStatus"/>
+                        </td>   
+                        <td align="right" width="33%" style="vertical-align:middle;">
+                            <div id="pagenumber"> Page &nbsp;{!pageNumber} Of {!totalPages}</div>
+                        </td>
+                    </tr>
+                </table> 
+                <apex:actionStatus id="paginationStatus">
+                    <apex:facet name="start">
+                        Please wait...<img src="/img/loading32.gif" style="width: 18px;"/>
+                    </apex:facet>
+                </apex:actionStatus>
+                <apex:actionStatus id="statusEP">
+                    <apex:facet name="start">
+                        <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.20; z-index: 9998; background-color: black;">
+                            &nbsp;
+                        </div>
+                        <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 9999; margin: 30% 45%">             
+                            <div style="background-color: white;"><img src="/img/loading32.gif"/>&nbsp;&nbsp;&nbsp;<b>Please Wait..</b></div>
+                        </div>          
+                    </apex:facet>
+                </apex:actionStatus>
+            </apex:outputPanel>
+        </apex:pageBlock>
+        <script>
+        function toggleCheck(id) {
+            var inputList = document.getElementsByClassName('selectInput');
+            for(var i=0;i<inputList.length;i++){                
+                document.getElementsByClassName('selectInput')[i].checked = id.checked;                
+            }
+        }
+        </script>
+    </apex:form>
+</apex:page>

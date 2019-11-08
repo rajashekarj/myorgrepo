@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SE_Level1user__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>to use in validation rule for enahncement1</description>
+    <externalId>false</externalId>
+    <label>Level1user</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

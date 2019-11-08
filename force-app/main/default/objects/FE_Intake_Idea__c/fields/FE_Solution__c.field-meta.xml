@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FE_Solution__c</fullName>
+    <description>so users understand how to describe their idea.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Succinct description of how the idea will solve the problem</inlineHelpText>
+    <label>Solution</label>
+    <length>750</length>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Support</fullName>
+    <columns>FS_ACN_Install_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>FS_Dry_Install__c</columns>
+    <columns>FS_Order_Processed__c</columns>
+    <columns>FS_OverallStatus__c</columns>
+    <columns>FS_Installation__c</columns>
+    <columns>FS_Outlet_Information__c</columns>
+    <columns>FS_CPO_Notes__c</columns>
+    <columns>FS_InstallNotesComments__c</columns>
+    <columns>FS_Payment_Method__c</columns>
+    <columns>FS_Payment_Method_SetUp__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FS_Order_Processed__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Customer Support View</label>
+</ListView>

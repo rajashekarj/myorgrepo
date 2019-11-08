@@ -1,0 +1,24 @@
+<!--
+* Date         : 28/06/2019
+* Developer    : Infosys
+* Purpose      : Used in VF Template 'SP Planner Notification'
+                 To Display OD serial no under PIAs.
+*=================================================================================================================
+*                                 Upate History
+*                                 ---------------
+*   Date        Developer       Tag   Description
+*============+================+=====+=============================================================================
+* 28/06/2019 | Infosys |     | Initial Version                                         
+*===========+=================+=====+=============================================================================
+*/ -->
+
+
+<apex:component controller="FSSPPlannerEmailHelperController" access="global">
+    
+    <apex:attribute name="PlatformType" description="Platform type from association brandset" assignTo="{!platform}" type="String"/>
+    <apex:attribute name="InstallationRec" description="Installation ID" assignTo="{!installationId}" type="String"/>
+    <apex:attribute name="IPRecordType" description="RecordType of Installation" assignTo="{!recordType}" type="String"/>
+    
+    <td style="border: 1px solid black;" colspan = "2">{!ODSerialNo}</td>
+    
+</apex:component>

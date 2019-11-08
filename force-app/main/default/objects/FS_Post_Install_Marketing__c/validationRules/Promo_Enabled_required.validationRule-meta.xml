@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promo_Enabled_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(TEXT(FS_Promo_Enabled__c)), 
+!(ISBLANK(FS_Promo_Enabled_Effective_Date__c)) 
+)</errorConditionFormula>
+    <errorDisplayField>FS_Promo_Enabled__c</errorDisplayField>
+    <errorMessage>This field is mandatory if &#39;FET Promo Enabled Effective Date&#39; is provided.</errorMessage>
+</ValidationRule>

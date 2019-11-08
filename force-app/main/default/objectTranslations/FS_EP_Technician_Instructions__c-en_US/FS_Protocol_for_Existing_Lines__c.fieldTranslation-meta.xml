@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Protocol_for_Existing_Lines__c</name>
+    <picklistValues>
+        <masterLabel>Cap legacy line and store future Use</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discard legacy line after Tee-Joint</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Discard legacy line completely</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dry location - no current lines on-site</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Explain in Comments)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

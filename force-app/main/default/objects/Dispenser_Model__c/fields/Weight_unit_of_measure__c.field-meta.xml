@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weight_unit_of_measure__c</fullName>
+    <externalId>false</externalId>
+    <label>Weight unit of measure</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>lbs</fullName>
+                <default>false</default>
+                <label>lbs</label>
+            </value>
+            <value>
+                <fullName>kgs</fullName>
+                <default>false</default>
+                <label>kgs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

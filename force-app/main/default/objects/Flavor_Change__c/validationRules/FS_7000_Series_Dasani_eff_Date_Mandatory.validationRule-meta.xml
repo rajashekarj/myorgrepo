@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Series_Dasani_eff_Date_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(!IsBlank(Text(FS_7000_New_Hide_Show_Dasani__c)),IsBlank(FS_7000_New_Hide_Show_Dasani_Effct_Date__c))</errorConditionFormula>
+    <errorDisplayField>FS_7000_New_Hide_Show_Dasani_Effct_Date__c</errorDisplayField>
+    <errorMessage>&#39;New Hide/Show Dasani Effective Date&#39; is required if you have values in &#39;New Hide/Show Dasani&#39;</errorMessage>
+</ValidationRule>

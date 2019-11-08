@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_RO4W3__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>RO4W 3</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W)</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FS_Installation__c</referenceTo>
+    <relationshipLabel>RO4W 3</relationshipLabel>
+    <relationshipName>RO4W3I</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

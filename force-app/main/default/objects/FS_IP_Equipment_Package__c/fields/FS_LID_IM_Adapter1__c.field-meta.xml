@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_LID_IM_Adapter1__c</fullName>
+    <externalId>false</externalId>
+    <label>LID/IM Adapter 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46412: Ice Maker Adapter Kit</fullName>
+                <default>false</default>
+                <label>46412: Ice Maker Adapter Kit</label>
+            </value>
+            <value>
+                <fullName>46413: Lid</fullName>
+                <default>false</default>
+                <label>46413: Lid</label>
+            </value>
+            <value>
+                <fullName>46000 : FSIB Red Lid</fullName>
+                <default>false</default>
+                <label>46000 : FSIB Red Lid</label>
+            </value>
+            <value>
+                <fullName>46001 : FSIB Silver Lid</fullName>
+                <default>false</default>
+                <label>46001 : FSIB Silver Lid</label>
+            </value>
+            <value>
+                <fullName>46002 : FSIB Black Lid</fullName>
+                <default>false</default>
+                <label>46002 : FSIB Black Lid</label>
+            </value>
+            <value>
+                <fullName>46004 : Hoshizaki Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46004 : Hoshizaki Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46005 : Hoshizaki Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46005 : Hoshizaki Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46006 : Hoshizaki Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46006 : Hoshizaki Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46007 : Scotsman E686 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46007 : Scotsman E686 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46008 : Scotsman E686 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46008 : Scotsman E686 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46009 : Scotsman E686 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46009 : Scotsman E686 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46010 : Scotsman 306/456/954 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46010 : Scotsman 306/456/954 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46011 : Scotsman 306/456/954 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46011 : Scotsman 306/456/954 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46012 : Scotsman 306/456/954 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46012 : Scotsman 306/456/954 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46013 : Manitowoc S422 S322 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46013 : Manitowoc S422 S322 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46014 : Manitowoc S422 S322 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46014 : Manitowoc S422 S322 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46015 : Manitowoc S422 S322 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46015 : Manitowoc S422 S322 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46016 : Mani- IB600C IB800C IB1000C Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46016 : Mani- IB600C IB800C IB1000C Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46017 : Mani- IB600C IB800C IB1000C Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46017 : Mani- IB600C IB800C IB1000C Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46018 : Mani- IB600C IB800C IB1000C Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46018 : Mani- IB600C IB800C IB1000C Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46032 : Ice-O-Matic 520 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46032 : Ice-O-Matic 520 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46033 : Ice-O-Matic 520 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46033 : Ice-O-Matic 520 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46034 : Ice-O-Matic 520 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46034 : Ice-O-Matic 520 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46371 : 30&quot; Hoshizaki KMD 850/901</fullName>
+                <default>false</default>
+                <label>46371 : 30&quot; Hoshizaki KMD 850/901</label>
+            </value>
+            <value>
+                <fullName>46372 : 30&quot; Manitowoc 450/500/606/800/906</fullName>
+                <default>false</default>
+                <label>46372 : 30&quot; Manitowoc 450/500/606/800/906</label>
+            </value>
+            <value>
+                <fullName>46375 : 30â€� IK ICE O 30â€� 250/406/1006</fullName>
+                <default>false</default>
+                <label>46375 : 30â€� IK ICE O 30â€� 250/406/1006</label>
+            </value>
+            <value>
+                <fullName>46382 : KIT IM ADPT SCOTTS 30&quot; C0830/C1030</fullName>
+                <default>false</default>
+                <label>46382 : KIT IM ADPT SCOTTS 30&quot; C0830/C1030</label>
+            </value>
+            <value>
+                <fullName>46419: IK MAN 30&quot; DUAL EVAP</fullName>
+                <default>false</default>
+                <label>46419: IK MAN 30&quot; DUAL EVAP</label>
+            </value>
+            <value>
+                <fullName>46465 : KIT IM ADPT HOSHIZAKI KMS-1122 SLVR</fullName>
+                <default>false</default>
+                <label>46465 : KIT IM ADPT HOSHIZAKI KMS-1122 SLVR</label>
+            </value>
+            <value>
+                <fullName>46466 : KIT IM ADPT HOSHIZAKI KMS-1122 RED</fullName>
+                <default>false</default>
+                <label>46466 : KIT IM ADPT HOSHIZAKI KMS-1122 RED</label>
+            </value>
+            <value>
+                <fullName>46467 : KIT IM ADPT HOSHIZAKI KMS-1122 BLK</fullName>
+                <default>false</default>
+                <label>46467 : KIT IM ADPT HOSHIZAKI KMS-1122 BLK</label>
+            </value>
+            <value>
+                <fullName>46673 : 9100 Red Manual Fill Kit</fullName>
+                <default>false</default>
+                <label>46673 : 9100 Red Manual Fill Kit</label>
+            </value>
+            <value>
+                <fullName>46674 : 9100 Black Manual Fill Kit</fullName>
+                <default>false</default>
+                <label>46674 : 9100 Black Manual Fill Kit</label>
+            </value>
+            <value>
+                <fullName>46675 : 9100 Gray Manual Fill Kit</fullName>
+                <default>false</default>
+                <label>46675 : 9100 Gray Manual Fill Kit</label>
+            </value>
+            <value>
+                <fullName>46670 : 9100 Red IK 22&quot;</fullName>
+                <default>false</default>
+                <label>46670 : 9100 Red IK 22&quot;</label>
+            </value>
+            <value>
+                <fullName>46671 : 9100 Black IK 22&quot;</fullName>
+                <default>false</default>
+                <label>46671 : 9100 Black IK 22&quot;</label>
+            </value>
+            <value>
+                <fullName>46672 : 9100 Gray IK 22&quot;</fullName>
+                <default>false</default>
+                <label>46672 : 9100 Gray IK 22&quot;</label>
+            </value>
+            <value>
+                <fullName>TBD#7: 9100 Red IK 30&quot;</fullName>
+                <default>false</default>
+                <label>TBD#7: 9100 Red IK 30&quot;</label>
+            </value>
+            <value>
+                <fullName>TBD#8: 9100 Black IK 30&quot;</fullName>
+                <default>false</default>
+                <label>TBD#8: 9100 Black IK 30&quot;</label>
+            </value>
+            <value>
+                <fullName>TBD#9: 9100 Gray IK 30&quot;</fullName>
+                <default>false</default>
+                <label>TBD#9: 9100 Gray IK 30&quot;</label>
+            </value>
+            <value>
+                <fullName>TBD#10: 9100 Red IK Soft Ice</fullName>
+                <default>false</default>
+                <label>TBD#10: 9100 Red IK Soft Ice</label>
+            </value>
+            <value>
+                <fullName>TBD#11: 9100 Black IK Soft Ice</fullName>
+                <default>false</default>
+                <label>TBD#11: 9100 Black IK Soft Ice</label>
+            </value>
+            <value>
+                <fullName>TBD#12: 9100 Gray IK Soft Ice</fullName>
+                <default>false</default>
+                <label>TBD#12: 9100 Gray IK Soft Ice</label>
+            </value>
+            <value>
+                <fullName>TBD: M-ABS Ice Maker Adapter Kit including manual fill lid</fullName>
+                <default>false</default>
+                <label>TBD: M-ABS Ice Maker Adapter Kit including manual fill lid</label>
+            </value>
+            <value>
+                <fullName>46632: LOW PROFILE IM ADAPTER</fullName>
+                <default>false</default>
+                <label>46632: LOW PROFILE IM ADAPTER</label>
+            </value>
+            <value>
+                <fullName>46701: LID</fullName>
+                <default>false</default>
+                <label>46701: LID</label>
+            </value>
+            <value>
+                <fullName>46730 : Dark Gray 22&quot; IM Kit</fullName>
+                <default>false</default>
+                <label>46730 : Dark Gray 22&quot; IM Kit</label>
+            </value>
+            <value>
+                <fullName>46729 : Dark Gray Manual Fill Lid</fullName>
+                <default>false</default>
+                <label>46729 : Dark Gray Manual Fill Lid</label>
+            </value>
+            <value>
+                <fullName>XXXXX: ED 300 Ice Dispenser/ IM Adapter Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: ED 300 Ice Dispenser/ IM Adapter Kit</label>
+            </value>
+            <value>
+                <fullName>XXXXX: ED250 Ice Dispenser/ IM Adapter Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: ED250 Ice Dispenser/ IM Adapter Kit</label>
+            </value>
+            <value>
+                <fullName>46752: Standard Ice Maker Adapter Kit</fullName>
+                <default>false</default>
+                <label>46752: Standard Ice Maker Adapter Kit</label>
+            </value>
+            <value>
+                <fullName>46753: Low Profile IM Adapter Kit</fullName>
+                <default>false</default>
+                <label>46753: Low Profile IM Adapter Kit</label>
+            </value>
+            <value>
+                <fullName>46750: Manual Fill Lid Kit</fullName>
+                <default>false</default>
+                <label>46750: Manual Fill Lid Kit</label>
+            </value>
+            <value>
+                <fullName>46751: Follett Manual Fill Lid Kit</fullName>
+                <default>false</default>
+                <label>46751: Follett Manual Fill Lid Kit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>46412: Ice Maker Adapter Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>46632: LOW PROFILE IM ADAPTER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>46701: LID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46000 : FSIB Red Lid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46001 : FSIB Silver Lid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46002 : FSIB Black Lid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46004 : Hoshizaki Door, Silver Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46005 : Hoshizaki Door, Red Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46006 : Hoshizaki Door, Black Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46007 : Scotsman E686 Door, Silver Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46008 : Scotsman E686 Door, Red Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46009 : Scotsman E686 Door, Black Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46010 : Scotsman 306/456/954 Door, Silver Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46011 : Scotsman 306/456/954 Door, Red Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46012 : Scotsman 306/456/954 Door, Black Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46013 : Manitowoc S422 S322 Door, Silver Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46014 : Manitowoc S422 S322 Door, Red Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46015 : Manitowoc S422 S322 Door, Black Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46016 : Mani- IB600C IB800C IB1000C Door, Silver Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46017 : Mani- IB600C IB800C IB1000C Door, Red Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46018 : Mani- IB600C IB800C IB1000C Door, Black Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46032 : Ice-O-Matic 520 Door, Silver Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46033 : Ice-O-Matic 520 Door, Red Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46034 : Ice-O-Matic 520 Door, Black Shrouds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46371 : 30&quot; Hoshizaki KMD 850/901</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46372 : 30&quot; Manitowoc 450/500/606/800/906</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46375 : 30â€� IK ICE O 30â€� 250/406/1006</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46382 : KIT IM ADPT SCOTTS 30&quot; C0830/C1030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46419: IK MAN 30&quot; DUAL EVAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46465 : KIT IM ADPT HOSHIZAKI KMS-1122 SLVR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46466 : KIT IM ADPT HOSHIZAKI KMS-1122 RED</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46467 : KIT IM ADPT HOSHIZAKI KMS-1122 BLK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46673 : 9100 Red Manual Fill Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46674 : 9100 Black Manual Fill Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46675 : 9100 Gray Manual Fill Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46670 : 9100 Red IK 22&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46671 : 9100 Black IK 22&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46672 : 9100 Gray IK 22&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>TBD#7: 9100 Red IK 30&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>TBD#8: 9100 Black IK 30&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>TBD#9: 9100 Gray IK 30&quot;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>TBD#10: 9100 Red IK Soft Ice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>TBD#11: 9100 Black IK Soft Ice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>TBD#12: 9100 Gray IK Soft Ice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46730 : Dark Gray 22&quot; IM Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46729 : Dark Gray Manual Fill Lid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: ED 300 Ice Dispenser/ IM Adapter Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: ED250 Ice Dispenser/ IM Adapter Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46752: Standard Ice Maker Adapter Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46753: Low Profile IM Adapter Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46750: Manual Fill Lid Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46751: Follett Manual Fill Lid Kit</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

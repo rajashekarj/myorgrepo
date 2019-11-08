@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Field72</label>
+    <protected>false</protected>
+    <values>
+        <field>CSV_Field__c</field>
+        <value xsi:type="xsd:string">SA Contact Email</value>
+    </values>
+    <values>
+        <field>Error_Message__c</field>
+        <value xsi:type="xsd:string">NA</value>
+    </values>
+    <values>
+        <field>Field_API__c</field>
+        <value xsi:type="xsd:string">FS_Select_Site_assessment_contact__c</value>
+    </values>
+    <values>
+        <field>Mapping_Type__c</field>
+        <value xsi:type="xsd:string">UpperCase</value>
+    </values>
+    <values>
+        <field>Mapping_Validation__c</field>
+        <value xsi:type="xsd:string">Mapping</value>
+    </values>
+</CustomMetadata>

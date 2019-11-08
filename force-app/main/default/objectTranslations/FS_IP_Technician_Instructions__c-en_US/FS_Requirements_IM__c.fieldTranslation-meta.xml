@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Requirements_IM__c</name>
+    <picklistValues>
+        <masterLabel>IM not Present- Install New Ice Maker</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No action required-Manual Fill</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Explain in Special Instructions)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove existing IM &amp; Relocate to Kitchen</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove existing IM and convert to Manual Fill</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove existing IM and re-installed</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove existing IM prior to install and install new top mount at later date</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove existing IM prior to install and install new top mount at time of install</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Program_Fee_Payment_Method__c</fullName>
+    <description>Program Fee Payment Method</description>
+    <externalId>false</externalId>
+    <inlineHelpText>&quot;&quot;Payment Term&quot; Invoicing requires Finance Approval from S. Curtis Marshall 
+Warning: When Payment Term eligibility is changed from &quot;Yes&quot; to &quot;No&quot;, existing &quot;Payment Term&quot; methods will need to be updated.&quot;</inlineHelpText>
+    <label>Program Fee Payment Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Payment_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bank Draft</fullName>
+                <default>false</default>
+                <label>Bank Draft</label>
+            </value>
+            <value>
+                <fullName>Credit Card</fullName>
+                <default>false</default>
+                <label>Credit Card</label>
+            </value>
+            <value>
+                <fullName>Invoice (Payment Terms)</fullName>
+                <default>false</default>
+                <label>Invoice (Payment Terms)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Bank Draft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <controllingFieldValue>No</controllingFieldValue>
+            <valueName>Credit Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yes</controllingFieldValue>
+            <valueName>Invoice (Payment Terms)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

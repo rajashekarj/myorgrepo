@@ -1,0 +1,40 @@
+<!--
+*=================================================================================================================
+* Date         : 31-12-2018
+* Developer    : Goutham Rapolu
+* Purpose      : FSUploadFile Visualforce Page for uploading attachment to FILE object.
+*=================================================================================================================
+*                                 Update History
+*                                 ---------------
+*   Date        Developer       Tag   Description
+*============+================+=====+=============================================================================
+* 31-12-2018 | Goutham Rapolu |     | Initial Version ( Used in Create CIF functionality - FSCustomerInputForm )                      
+*===========+=================+=====+=============================================================================
+*
+-->
+
+<apex:page controller="FSUploadFileController" lightningStylesheets="True" showHeader="true">
+    <apex:slds />
+    <apex:pagemessages />
+    <html>
+     <body onload="resizeTo(600,400);">
+       <apex:form >
+           <br/>
+            <header class="header-section">
+                <div class="headersection-tagline">
+                    <div class="container">
+                        <div class="tagline-left" style="text-align:center;font-size: 25px;">Upload File</div>
+                    </div>
+                </div>
+            </header>
+            <div style="text-align:center;">
+                <br/><br/><br/>
+                <apex:inputFile value="{!file}" fileName="{!fname}"/>
+                <br/><br/><br/><br/>
+                <apex:commandbutton styleclass="slds-button slds-button_brand" action="{!upload}" value="Upload" />
+                <apex:commandbutton immediate="true" onClick="window.close();" value="Cancel" />
+            </div>
+        </apex:form>
+        </body>
+    </html>
+</apex:page>

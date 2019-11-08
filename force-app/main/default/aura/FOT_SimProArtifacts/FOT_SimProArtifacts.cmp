@@ -1,0 +1,115 @@
+<!-- FOT_SimProArtifact -->
+<!-- Ruleset Simulate and Promote buttons lightning component
+ Owner : Infosys
+-->
+
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global"  controller="FOT_SimProArtifactController">
+    <aura:attribute name="recordId" type="ID" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="isSimulate" type="boolean" default="false"/>
+    <aura:attribute name="conPromote" type="boolean" default="false"/>
+    <aura:attribute name="spinner" type="Boolean" default="false"/>
+    <aura:attribute name="simProStatusChk" type="Boolean" default="false" />
+    <aura:attribute name="responseMsg" type="String"/>
+    <aura:attribute name="textArea" type="String"/>
+    <aura:attribute name="hashCode" type="String"/>
+    <aura:attribute name="ruleSetName" type="String"/>
+    <aura:attribute name="ruleSet" type="sObject"/>
+    <aura:attribute name="profileName" type="String"/>
+    <aura:attribute name="enableRulesetMap" type="map" default="{checkSimulate:false,checkPromote:false}" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <lightning:notificationsLibrary aura:id="notifLibEdit"/> 
+    
+    <!-- <aura:if isTrue="{!v.simProStatusChk}">       
+        <div id="simProStatusNote" class="slds-p-around_x-small  marquee" style="display:-webkit-box;-webkit-box-pack:end;float:left;" >
+            <p><b>Note ::</b> Ruleset view will refresh after every 5 seconds, till Simulate and/or Promote status changes to either 'Successful' or 'Failure'.</p>
+        </div>
+    </aura:if> -->
+    
+    <div id="SimPromoteButtons" oncontextmenu="return false;" class="slds-align_absolute-center slds-m-top_small" style="display:-webkit-box;-webkit-box-pack:end; ">
+        <aura:if isTrue="{! (v.profileName == $Label.c.FOT_Operations_Admin || v.profileName == $Label.c.FOT_System_Administrator) }">
+            <lightning:button variant="neutral" label="New Artifact" iconName="utility:new" onclick="{!c.newArtifact}" aura:id="newArtBtn"/>
+        </aura:if>
+        <lightning:button variant="neutral" label="Simulate" disabled="true" onclick="{!c.clickSimulate}" aura:id="simulateBtn" />
+        <lightning:button variant="neutral" label="Promote" disabled="true" onclick="{!c.clickPromote}" aura:id="promoteBtn"/>
+        <lightning:button variant="neutral" label="Refresh" iconName="utility:refresh" disabled="false" onclick="{!c.clickRefreshView}" aura:id="refreshviewBtn"/>
+        
+    </div>
+    
+    
+    <!-- spinner -->
+    <aura:if isTrue="{!v.spinner}">
+        <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <lightning:spinner aura:id="spinner" variant="brand" size="medium"/>
+        </div>
+    </aura:if>
+    <!-- end spinner -->
+    <!-- Modal popup-->
+    <aura:if isTrue="{!v.isOpen}">
+        <aura:if isTrue="{!v.spinner}">
+            <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+                <lightning:spinner aura:id="spinner" variant="brand" size="medium"/>
+            </div>
+        </aura:if>
+        <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open " >
+            <div class="slds-modal__container" style="top:20%; max-height:85%; ">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeProModalEdit}">
+                        X
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="header99" class="slds-text-heading--medium">Ruleset  Promote</h2>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium" >
+                    <b><aura:unescapedHtml value="{!v.responseMsg}" /></b>
+                    <div class="slds-box slds-theme_default" style="max-height:15rem; overflow:scroll;">
+                        <aura:unescapedHtml value="{!v.textArea}" />
+                        
+                    </div>
+                </div>
+                
+                
+                <div class="slds-modal__footer">
+                    
+                    <lightning:button variant="neutral" onclick="{!c.closeProModalEdit}" aura:id="proBtn" />
+                    <lightning:button variant="neutral" onclick="{!c.clickPromoteContinue}" aura:id="promConBtn" />
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+        
+    </aura:if>
+    <!-- Model Popup for Promote -->
+    
+    <!-- Modal popup for simulate-->
+    <aura:if isTrue="{!v.isSimulate}">
+        <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open ">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeSimModalEdit}">
+                        X
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="header99" class="slds-text-heading--medium">Ruleset Simulate</h2>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium">
+                    <!-- <p><b>{!v.responseMsg}</b></p><br/> -->
+                    <b><aura:unescapedHtml value="{!v.responseMsg}" /></b><br/><br/>
+                    <div id="popuptext" class="slds-p-around_x-small" >
+                        <p>Please close this popup and refresh the Ruleset page to check the simulation status.</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button--neutral" onclick="{!c.closeSimModalEdit}">Close</button>                    
+                </div>
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>
+    </aura:if>
+    <!-- Model popup for simulate ends-->
+</aura:component>

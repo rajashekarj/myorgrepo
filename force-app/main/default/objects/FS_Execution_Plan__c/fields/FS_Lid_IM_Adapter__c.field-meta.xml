@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Lid_IM_Adapter__c</fullName>
+    <externalId>false</externalId>
+    <label>Lid/IM Adapter</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46001 : FSIB Silver Lid</fullName>
+                <default>false</default>
+                <label>46001 : FSIB Silver Lid</label>
+            </value>
+            <value>
+                <fullName>46000 : FSIB Red Lid</fullName>
+                <default>false</default>
+                <label>46000 : FSIB Red Lid</label>
+            </value>
+            <value>
+                <fullName>46002 : FSIB Black Lid</fullName>
+                <default>false</default>
+                <label>46002 : FSIB Black Lid</label>
+            </value>
+            <value>
+                <fullName>46004 : Hoshizaki Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46004 : Hoshizaki Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46005 : Hoshizaki Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46005 : Hoshizaki Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46006 : Hoshizaki Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46006 : Hoshizaki Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46007 : Scotsman E686 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46007 : Scotsman E686 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46008 : Scotsman E686 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46008 : Scotsman E686 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46009 : Scotsman E686 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46009 : Scotsman E686 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46010 : Scotsman 306/456/954 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46010 : Scotsman 306/456/954 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46011 : Scotsman 306/456/954 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46011 : Scotsman 306/456/954 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46012 : Scotsman 306/456/954 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46012 : Scotsman 306/456/954 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46013 : Manitowoc S422 S322 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46013 : Manitowoc S422 S322 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46014 : Manitowoc S422 S322 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46014 : Manitowoc S422 S322 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46015 : Manitowoc S422 S322 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46015 : Manitowoc S422 S322 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46016 : Mani- IB600C IB800C IB1000C Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46016 : Mani- IB600C IB800C IB1000C Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46017 : Mani- IB600C IB800C IB1000C Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46017 : Mani- IB600C IB800C IB1000C Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46018 : Mani- IB600C IB800C IB1000C Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46018 : Mani- IB600C IB800C IB1000C Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46032 : Ice-O-Matic 520 Door, Silver Shrouds</fullName>
+                <default>false</default>
+                <label>46032 : Ice-O-Matic 520 Door, Silver Shrouds</label>
+            </value>
+            <value>
+                <fullName>46033 : Ice-O-Matic 520 Door, Red Shrouds</fullName>
+                <default>false</default>
+                <label>46033 : Ice-O-Matic 520 Door, Red Shrouds</label>
+            </value>
+            <value>
+                <fullName>46034 : Ice-O-Matic 520 Door, Black Shrouds</fullName>
+                <default>false</default>
+                <label>46034 : Ice-O-Matic 520 Door, Black Shrouds</label>
+            </value>
+            <value>
+                <fullName>46371 : 30&quot; Hoshizaki KMD 850/901</fullName>
+                <default>false</default>
+                <label>46371 : 30&quot; Hoshizaki KMD 850/901</label>
+            </value>
+            <value>
+                <fullName>46372 : 30&quot; Manitowoc 450/500/606/800/906</fullName>
+                <default>false</default>
+                <label>46372 : 30&quot; Manitowoc 450/500/606/800/906</label>
+            </value>
+            <value>
+                <fullName>46375 : 30â€� IK ICE O 30â€� 250/406/1006</fullName>
+                <default>false</default>
+                <label>46375 : 30â€� IK ICE O 30â€� 250/406/1006</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

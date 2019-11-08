@@ -1,0 +1,9 @@
+<apex:page standardController="CIF_Header__c">
+    <table>
+        <tr>
+            <td > </td><td>
+                <p style="color:red; align:center; padding:right"> <b>While reparenting a CIF to a new HDQ where all related outlets are now linked to the new HDQ and an EP was previously created, you will be required to also relink the existing EP to the new HDQ. In addition, you will be required to reselect all contacts in the CIF as contacts are associated at the HDQ level.</b></p>
+            </td>
+        </tr>
+    </table>
+</apex:page>

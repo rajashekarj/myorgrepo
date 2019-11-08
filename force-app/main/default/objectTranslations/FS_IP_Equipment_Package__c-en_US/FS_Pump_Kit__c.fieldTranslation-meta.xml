@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Pump_Kit__c</name>
+    <picklistValues>
+        <masterLabel>45916 : HFCS Pump Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45916: Flojet HFCS G55 pump kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46022 : High Altitude Pump Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD: Flojet G55 M Series DKO-HFCS 2 pump kit</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

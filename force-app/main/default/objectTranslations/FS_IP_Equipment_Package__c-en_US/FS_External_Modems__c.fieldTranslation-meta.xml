@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_External_Modems__c</name>
+    <picklistValues>
+        <masterLabel>46473 : 3G Verizon</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46475 : 3G AT&amp;T</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46475 : 4G AT&amp;T</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46530 : 4G Verizon</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46537: 4G Verizon w/ Switch</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

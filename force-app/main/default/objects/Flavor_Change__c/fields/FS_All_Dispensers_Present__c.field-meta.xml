@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_All_Dispensers_Present__c</fullName>
+    <externalId>false</externalId>
+    <formula>If( FS_Total_Number_of_Dispensers__c &gt; FS_Outlet_HQ_Chain__r.FS_of_Installations__c ,&quot;No.  Please add additional dispenser(s).&quot;,
+If(FS_Total_Number_of_Dispensers__c &lt; FS_Outlet_HQ_Chain__r.FS_of_Installations__c,&quot;Extra dispenser(s) is/are present.  Please confirm.&quot;,&quot;Yes&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>All Dispensers Present??</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

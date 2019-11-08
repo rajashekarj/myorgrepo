@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Execution Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Execution Plans</value>
+    </caseValues>
+    <layouts>
+        <layout>Execution Plan Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FS Execution Plan Layout</layout>
+        <sections>
+            <label/>
+            <section>Account Team Members</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Attachments</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Checklist/Execution Plan Approval</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Contacts</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Execution Plan</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Execution Plan Summary</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Scope of Work</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Warning Message</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>FS_Execution_Plan</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>COM_Cannot_edit_when_EP_is_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>PlatformType_and_EP_status_check</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Create_Customer_Input</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Copy_Account_Team_Info_to_Installations</name>
+    </webLinks>
+</CustomObjectTranslation>

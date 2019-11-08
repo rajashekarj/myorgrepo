@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Planned_CrewServe_TopMount_Ice_Makers</fullName>
+    <active>true</active>
+    <errorConditionFormula>(RecordType.Name=$Label.IP_Relocation_I4W_Rec_Type) &amp;&amp;
+(AND(!ISPICKVAL(FS_Davaco_Requirements__c, &#39;SA Not Required - OSM approval required for local market&#39; ),!ISBLANK(TEXT(FS_Davaco_Requirements__c)))  &amp;&amp;   
+ISBLANK(FS_Planned_SelfServe_TopMount_Ice_Makers__c)) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorDisplayField>FS_Planned_SelfServe_TopMount_Ice_Makers__c</errorDisplayField>
+    <errorMessage>You must enter a value when choosing a valid site assessment type.</errorMessage>
+</ValidationRule>

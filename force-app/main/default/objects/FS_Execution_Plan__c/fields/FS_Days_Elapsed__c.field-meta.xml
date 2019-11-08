@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Days_Elapsed__c</fullName>
+    <description>Average Days Elapsed</description>
+    <externalId>false</externalId>
+    <formula>if(AND(FS_of_Installations__c &lt;&gt; 0,(FS_of_Installations__c - FS_of_Installations_Cancelled__c) &lt;&gt; 0), (FS_Sum_of_Days_Elapsed__c /  (FS_of_Installations__c - FS_of_Installations_Cancelled__c) ),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This represents the average days between when the CIF Disposition under the related CIF&#39;s was converted to  &quot;approved by customer&quot; and the COM requests approval for one or all outlets</inlineHelpText>
+    <label>Average Days Elapsed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

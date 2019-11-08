@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Execution_Plan_Role__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Primary Contact&quot;), &quot;Primary Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Secondary Contact&quot;), &quot;Secondary Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Accounts Payable Contact&quot;), &quot;Accounts Payable Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Site Assessment Contact&quot;), &quot;Site Assessment Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Secondary Site Assessment Contact&quot;), &quot;Secondary Site Assessment Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Contractor Contact&quot;), &quot;Contractor Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;On-Board Training Contact&quot;), &quot;On-Board Training Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Installation Contact&quot;), &quot;Installation Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Coke Smart Admin User&quot;), &quot;Coke Smart Admin User;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Coke Smart Standard User&quot;), &quot;Coke Smart Standard User;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;VMS Admin User&quot;), &quot;VMS Admin User;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;VMS Standard User&quot;), &quot;VMS Standard User;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Order Confirmation Contact&quot;), &quot;Order Confirmation Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Shipment Confirmation Contact&quot;), &quot;Shipment Confirmation Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Credit Confirmation Contact&quot;), &quot;Credit Confirmation Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Water Filter Contact&quot;), &quot;Water Filter Contact;&quot;,&quot;&quot;) &amp; 
+IF( INCLUDES(FS_Execution_Plan_Contact__r.FS_Execution_Plan_Role__c , &quot;Other&quot;), &quot;Other&quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Contact Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

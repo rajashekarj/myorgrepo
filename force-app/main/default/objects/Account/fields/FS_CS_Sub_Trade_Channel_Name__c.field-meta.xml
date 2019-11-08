@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_CS_Sub_Trade_Channel_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Trade Channel Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chain Discount Drug Store</fullName>
+                <default>false</default>
+                <label>Chain Discount Drug Store</label>
+            </value>
+            <value>
+                <fullName>Conventional Independent Drug Store</fullName>
+                <default>false</default>
+                <label>Conventional Independent Drug Store</label>
+            </value>
+            <value>
+                <fullName>QSR-Hamburger</fullName>
+                <default>false</default>
+                <label>QSR-Hamburger</label>
+            </value>
+            <value>
+                <fullName>QSR-Pizza</fullName>
+                <default>false</default>
+                <label>QSR-Pizza</label>
+            </value>
+            <value>
+                <fullName>QSR-Chicken</fullName>
+                <default>false</default>
+                <label>QSR-Chicken</label>
+            </value>
+            <value>
+                <fullName>QSR-Mexican</fullName>
+                <default>false</default>
+                <label>QSR-Mexican</label>
+            </value>
+            <value>
+                <fullName>QSR-Sandwich</fullName>
+                <default>false</default>
+                <label>QSR-Sandwich</label>
+            </value>
+            <value>
+                <fullName>Hotel/Motel/Resort/Inn</fullName>
+                <default>false</default>
+                <label>Hotel/Motel/Resort/Inn</label>
+            </value>
+            <value>
+                <fullName>Military - U.S. - Commissary</fullName>
+                <default>false</default>
+                <label>Military - U.S. - Commissary</label>
+            </value>
+            <value>
+                <fullName>Military - U.S. - Exchange</fullName>
+                <default>false</default>
+                <label>Military - U.S. - Exchange</label>
+            </value>
+            <value>
+                <fullName>Military - U.S. - Other</fullName>
+                <default>false</default>
+                <label>Military - U.S. - Other</label>
+            </value>
+            <value>
+                <fullName>Primary School</fullName>
+                <default>false</default>
+                <label>Primary School</label>
+            </value>
+            <value>
+                <fullName>Middle School</fullName>
+                <default>false</default>
+                <label>Middle School</label>
+            </value>
+            <value>
+                <fullName>Secondary/High School</fullName>
+                <default>false</default>
+                <label>Secondary/High School</label>
+            </value>
+            <value>
+                <fullName>Cinema/Movie</fullName>
+                <default>false</default>
+                <label>Cinema/Movie</label>
+            </value>
+            <value>
+                <fullName>Chain Supermarket</fullName>
+                <default>false</default>
+                <label>Chain Supermarket</label>
+            </value>
+            <value>
+                <fullName>Independent Supermarket</fullName>
+                <default>false</default>
+                <label>Independent Supermarket</label>
+            </value>
+            <value>
+                <fullName>Other Supermarket</fullName>
+                <default>false</default>
+                <label>Other Supermarket</label>
+            </value>
+            <value>
+                <fullName>Chain Convenience Store</fullName>
+                <default>false</default>
+                <label>Chain Convenience Store</label>
+            </value>
+            <value>
+                <fullName>Independent Convenience Store</fullName>
+                <default>false</default>
+                <label>Independent Convenience Store</label>
+            </value>
+            <value>
+                <fullName>Other Convenience Store</fullName>
+                <default>false</default>
+                <label>Other Convenience Store</label>
+            </value>
+            <value>
+                <fullName>Butcher Shop</fullName>
+                <default>false</default>
+                <label>Butcher Shop</label>
+            </value>
+            <value>
+                <fullName>Bakery</fullName>
+                <default>false</default>
+                <label>Bakery</label>
+            </value>
+            <value>
+                <fullName>Delicatessen</fullName>
+                <default>false</default>
+                <label>Delicatessen</label>
+            </value>
+            <value>
+                <fullName>Health Food Store</fullName>
+                <default>false</default>
+                <label>Health Food Store</label>
+            </value>
+            <value>
+                <fullName>Produce Stand</fullName>
+                <default>false</default>
+                <label>Produce Stand</label>
+            </value>
+            <value>
+                <fullName>Other Specialty Food Store</fullName>
+                <default>false</default>
+                <label>Other Specialty Food Store</label>
+            </value>
+            <value>
+                <fullName>Box Store</fullName>
+                <default>false</default>
+                <label>Box Store</label>
+            </value>
+            <value>
+                <fullName>Other Discount Grocery</fullName>
+                <default>false</default>
+                <label>Other Discount Grocery</label>
+            </value>
+            <value>
+                <fullName>Mom &amp; Pop</fullName>
+                <default>false</default>
+                <label>Mom &amp; Pop</label>
+            </value>
+            <value>
+                <fullName>Rolling Store</fullName>
+                <default>false</default>
+                <label>Rolling Store</label>
+            </value>
+            <value>
+                <fullName>Home Delivery</fullName>
+                <default>false</default>
+                <label>Home Delivery</label>
+            </value>
+            <value>
+                <fullName>Other Local &amp; Traditional Grocery</fullName>
+                <default>false</default>
+                <label>Other Local &amp; Traditional Grocery</label>
+            </value>
+            <value>
+                <fullName>Liquor/Beer/Wine</fullName>
+                <default>false</default>
+                <label>Liquor/Beer/Wine</label>
+            </value>
+            <value>
+                <fullName>Beverage Shop</fullName>
+                <default>false</default>
+                <label>Beverage Shop</label>
+            </value>
+            <value>
+                <fullName>Other Liquor/Beer/Wine/Soft Drink</fullName>
+                <default>false</default>
+                <label>Other Liquor/Beer/Wine/Soft Drink</label>
+            </value>
+            <value>
+                <fullName>Department Store</fullName>
+                <default>false</default>
+                <label>Department Store</label>
+            </value>
+            <value>
+                <fullName>Home Furnishing/Appliance</fullName>
+                <default>false</default>
+                <label>Home Furnishing/Appliance</label>
+            </value>
+            <value>
+                <fullName>Apparel/Accesories</fullName>
+                <default>false</default>
+                <label>Apparel/Accesories</label>
+            </value>
+            <value>
+                <fullName>Electronics/A&amp;V/Computer/Photography</fullName>
+                <default>false</default>
+                <label>Electronics/A&amp;V/Computer/Photography</label>
+            </value>
+            <value>
+                <fullName>Books/Office/News/Tobacco</fullName>
+                <default>false</default>
+                <label>Books/Office/News/Tobacco</label>
+            </value>
+            <value>
+                <fullName>Hardware/Home-Improvement/Lawn &amp; Garden</fullName>
+                <default>false</default>
+                <label>Hardware/Home-Improvement/Lawn &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>Mass Merchandiser</fullName>
+                <default>false</default>
+                <label>Mass Merchandiser</label>
+            </value>
+            <value>
+                <fullName>Catalog Store</fullName>
+                <default>false</default>
+                <label>Catalog Store</label>
+            </value>
+            <value>
+                <fullName>Other General Merchandiser</fullName>
+                <default>false</default>
+                <label>Other General Merchandiser</label>
+            </value>
+            <value>
+                <fullName>Chain Drug Store</fullName>
+                <default>false</default>
+                <label>Chain Drug Store</label>
+            </value>
+            <value>
+                <fullName>Other Drug Store</fullName>
+                <default>false</default>
+                <label>Other Drug Store</label>
+            </value>
+            <value>
+                <fullName>Beauty &amp; Personal Care</fullName>
+                <default>false</default>
+                <label>Beauty &amp; Personal Care</label>
+            </value>
+            <value>
+                <fullName>Dry Cleaner/Laundromat/Shoe Repair</fullName>
+                <default>false</default>
+                <label>Dry Cleaner/Laundromat/Shoe Repair</label>
+            </value>
+            <value>
+                <fullName>Bank/Financial Service</fullName>
+                <default>false</default>
+                <label>Bank/Financial Service</label>
+            </value>
+            <value>
+                <fullName>Business Service</fullName>
+                <default>false</default>
+                <label>Business Service</label>
+            </value>
+            <value>
+                <fullName>Parking Facility</fullName>
+                <default>false</default>
+                <label>Parking Facility</label>
+            </value>
+            <value>
+                <fullName>Travel Agency</fullName>
+                <default>false</default>
+                <label>Travel Agency</label>
+            </value>
+            <value>
+                <fullName>Video Store</fullName>
+                <default>false</default>
+                <label>Video Store</label>
+            </value>
+            <value>
+                <fullName>Cycle Sales &amp; Service</fullName>
+                <default>false</default>
+                <label>Cycle Sales &amp; Service</label>
+            </value>
+            <value>
+                <fullName>Marine Sales &amp; Services</fullName>
+                <default>false</default>
+                <label>Marine Sales &amp; Services</label>
+            </value>
+            <value>
+                <fullName>Kiosk/Newsstand</fullName>
+                <default>false</default>
+                <label>Kiosk/Newsstand</label>
+            </value>
+            <value>
+                <fullName>Boutique</fullName>
+                <default>false</default>
+                <label>Boutique</label>
+            </value>
+            <value>
+                <fullName>Other Retail Services</fullName>
+                <default>false</default>
+                <label>Other Retail Services</label>
+            </value>
+            <value>
+                <fullName>QSR-Donut</fullName>
+                <default>false</default>
+                <label>QSR-Donut</label>
+            </value>
+            <value>
+                <fullName>QSR-Croissant</fullName>
+                <default>false</default>
+                <label>QSR-Croissant</label>
+            </value>
+            <value>
+                <fullName>QSR-Other Fast Food</fullName>
+                <default>false</default>
+                <label>QSR-Other Fast Food</label>
+            </value>
+            <value>
+                <fullName>FSR-All Other</fullName>
+                <default>false</default>
+                <label>FSR-All Other</label>
+            </value>
+            <value>
+                <fullName>Kiosk/Food</fullName>
+                <default>false</default>
+                <label>Kiosk/Food</label>
+            </value>
+            <value>
+                <fullName>Cart/Mobile Food</fullName>
+                <default>false</default>
+                <label>Cart/Mobile Food</label>
+            </value>
+            <value>
+                <fullName>Other Street Vendor</fullName>
+                <default>false</default>
+                <label>Other Street Vendor</label>
+            </value>
+            <value>
+                <fullName>Nightclub</fullName>
+                <default>false</default>
+                <label>Nightclub</label>
+            </value>
+            <value>
+                <fullName>Bar/Tavern</fullName>
+                <default>false</default>
+                <label>Bar/Tavern</label>
+            </value>
+            <value>
+                <fullName>Pub</fullName>
+                <default>false</default>
+                <label>Pub</label>
+            </value>
+            <value>
+                <fullName>Terrace</fullName>
+                <default>false</default>
+                <label>Terrace</label>
+            </value>
+            <value>
+                <fullName>Other Bar/Tavern/Licensed Establishment</fullName>
+                <default>false</default>
+                <label>Other Bar/Tavern/Licensed Establishment</label>
+            </value>
+            <value>
+                <fullName>Cafe</fullName>
+                <default>false</default>
+                <label>Cafe</label>
+            </value>
+            <value>
+                <fullName>Diner</fullName>
+                <default>false</default>
+                <label>Diner</label>
+            </value>
+            <value>
+                <fullName>Snack Bar</fullName>
+                <default>false</default>
+                <label>Snack Bar</label>
+            </value>
+            <value>
+                <fullName>Coffee/Tea Shop</fullName>
+                <default>false</default>
+                <label>Coffee/Tea Shop</label>
+            </value>
+            <value>
+                <fullName>Frozen Sweets</fullName>
+                <default>false</default>
+                <label>Frozen Sweets</label>
+            </value>
+            <value>
+                <fullName>Cafeteria</fullName>
+                <default>false</default>
+                <label>Cafeteria</label>
+            </value>
+            <value>
+                <fullName>Amusement/Theme Park</fullName>
+                <default>false</default>
+                <label>Amusement/Theme Park</label>
+            </value>
+            <value>
+                <fullName>Recreational Park/Beach/Picnic</fullName>
+                <default>false</default>
+                <label>Recreational Park/Beach/Picnic</label>
+            </value>
+            <value>
+                <fullName>Zoo/Museum/Aquarium</fullName>
+                <default>false</default>
+                <label>Zoo/Museum/Aquarium</label>
+            </value>
+            <value>
+                <fullName>Ice Skating/Roller Skating/Bowling</fullName>
+                <default>false</default>
+                <label>Ice Skating/Roller Skating/Bowling</label>
+            </value>
+            <value>
+                <fullName>Electronic Game Center/Arcade</fullName>
+                <default>false</default>
+                <label>Electronic Game Center/Arcade</label>
+            </value>
+            <value>
+                <fullName>Disco (Non-Alcoholic)</fullName>
+                <default>false</default>
+                <label>Disco (Non-Alcoholic)</label>
+            </value>
+            <value>
+                <fullName>Disco (Alcoholic)</fullName>
+                <default>false</default>
+                <label>Disco (Alcoholic)</label>
+            </value>
+            <value>
+                <fullName>Gaming Facility</fullName>
+                <default>false</default>
+                <label>Gaming Facility</label>
+            </value>
+            <value>
+                <fullName>Theater</fullName>
+                <default>false</default>
+                <label>Theater</label>
+            </value>
+            <value>
+                <fullName>Residential Complex/Community</fullName>
+                <default>false</default>
+                <label>Residential Complex/Community</label>
+            </value>
+            <value>
+                <fullName>Religious/Charitable</fullName>
+                <default>false</default>
+                <label>Religious/Charitable</label>
+            </value>
+            <value>
+                <fullName>Social Club/Fraternal Organization</fullName>
+                <default>false</default>
+                <label>Social Club/Fraternal Organization</label>
+            </value>
+            <value>
+                <fullName>Youth Club/Youth Organization</fullName>
+                <default>false</default>
+                <label>Youth Club/Youth Organization</label>
+            </value>
+            <value>
+                <fullName>Sports/Country Club</fullName>
+                <default>false</default>
+                <label>Sports/Country Club</label>
+            </value>
+            <value>
+                <fullName>Outdoor Exposition/Fair</fullName>
+                <default>false</default>
+                <label>Outdoor Exposition/Fair</label>
+            </value>
+            <value>
+                <fullName>Indoor Exposition/Trade Show</fullName>
+                <default>false</default>
+                <label>Indoor Exposition/Trade Show</label>
+            </value>
+            <value>
+                <fullName>Traveling Show (Circus/Rodeo)</fullName>
+                <default>false</default>
+                <label>Traveling Show (Circus/Rodeo)</label>
+            </value>
+            <value>
+                <fullName>Parade/Festival</fullName>
+                <default>false</default>
+                <label>Parade/Festival</label>
+            </value>
+            <value>
+                <fullName>Other Amusement</fullName>
+                <default>false</default>
+                <label>Other Amusement</label>
+            </value>
+            <value>
+                <fullName>Airport</fullName>
+                <default>false</default>
+                <label>Airport</label>
+            </value>
+            <value>
+                <fullName>Airline</fullName>
+                <default>false</default>
+                <label>Airline</label>
+            </value>
+            <value>
+                <fullName>Railroad</fullName>
+                <default>false</default>
+                <label>Railroad</label>
+            </value>
+            <value>
+                <fullName>Train Terminal/Station</fullName>
+                <default>false</default>
+                <label>Train Terminal/Station</label>
+            </value>
+            <value>
+                <fullName>Bus Line</fullName>
+                <default>false</default>
+                <label>Bus Line</label>
+            </value>
+            <value>
+                <fullName>Bus Terminal/Station</fullName>
+                <default>false</default>
+                <label>Bus Terminal/Station</label>
+            </value>
+            <value>
+                <fullName>Trucking Freight Service</fullName>
+                <default>false</default>
+                <label>Trucking Freight Service</label>
+            </value>
+            <value>
+                <fullName>Public Transit System</fullName>
+                <default>false</default>
+                <label>Public Transit System</label>
+            </value>
+            <value>
+                <fullName>Public Rest Area</fullName>
+                <default>false</default>
+                <label>Public Rest Area</label>
+            </value>
+            <value>
+                <fullName>Cruise Ship Line</fullName>
+                <default>false</default>
+                <label>Cruise Ship Line</label>
+            </value>
+            <value>
+                <fullName>Ship Terminal</fullName>
+                <default>false</default>
+                <label>Ship Terminal</label>
+            </value>
+            <value>
+                <fullName>Maritime Freight Shipper</fullName>
+                <default>false</default>
+                <label>Maritime Freight Shipper</label>
+            </value>
+            <value>
+                <fullName>Maritime Ferry Service</fullName>
+                <default>false</default>
+                <label>Maritime Ferry Service</label>
+            </value>
+            <value>
+                <fullName>Other Transportation</fullName>
+                <default>false</default>
+                <label>Other Transportation</label>
+            </value>
+            <value>
+                <fullName>Campground/Rv Park</fullName>
+                <default>false</default>
+                <label>Campground/Rv Park</label>
+            </value>
+            <value>
+                <fullName>Other Lodging</fullName>
+                <default>false</default>
+                <label>Other Lodging</label>
+            </value>
+            <value>
+                <fullName>Other Primary/Secondary School</fullName>
+                <default>false</default>
+                <label>Other Primary/Secondary School</label>
+            </value>
+            <value>
+                <fullName>Business School</fullName>
+                <default>false</default>
+                <label>Business School</label>
+            </value>
+            <value>
+                <fullName>Trade School</fullName>
+                <default>false</default>
+                <label>Trade School</label>
+            </value>
+            <value>
+                <fullName>Other Business/Trade School</fullName>
+                <default>false</default>
+                <label>Other Business/Trade School</label>
+            </value>
+            <value>
+                <fullName>Jr./Community College</fullName>
+                <default>false</default>
+                <label>Jr./Community College</label>
+            </value>
+            <value>
+                <fullName>College</fullName>
+                <default>false</default>
+                <label>College</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>Other College/University</fullName>
+                <default>false</default>
+                <label>Other College/University</label>
+            </value>
+            <value>
+                <fullName>Military - Commissary</fullName>
+                <default>false</default>
+                <label>Military - Commissary</label>
+            </value>
+            <value>
+                <fullName>Military - Exchange</fullName>
+                <default>false</default>
+                <label>Military - Exchange</label>
+            </value>
+            <value>
+                <fullName>Military - Other</fullName>
+                <default>false</default>
+                <label>Military - Other</label>
+            </value>
+            <value>
+                <fullName>Industrial/Manufacturing/Mining</fullName>
+                <default>false</default>
+                <label>Industrial/Manufacturing/Mining</label>
+            </value>
+            <value>
+                <fullName>Agricultural/Ranching</fullName>
+                <default>false</default>
+                <label>Agricultural/Ranching</label>
+            </value>
+            <value>
+                <fullName>Public Utility</fullName>
+                <default>false</default>
+                <label>Public Utility</label>
+            </value>
+            <value>
+                <fullName>Other Industrial/Agricultural/Utility</fullName>
+                <default>false</default>
+                <label>Other Industrial/Agricultural/Utility</label>
+            </value>
+            <value>
+                <fullName>National Government</fullName>
+                <default>false</default>
+                <label>National Government</label>
+            </value>
+            <value>
+                <fullName>Local Government</fullName>
+                <default>false</default>
+                <label>Local Government</label>
+            </value>
+            <value>
+                <fullName>Postal Service</fullName>
+                <default>false</default>
+                <label>Postal Service</label>
+            </value>
+            <value>
+                <fullName>Police/Prison/Fire</fullName>
+                <default>false</default>
+                <label>Police/Prison/Fire</label>
+            </value>
+            <value>
+                <fullName>Other Government (Non-Military)</fullName>
+                <default>false</default>
+                <label>Other Government (Non-Military)</label>
+            </value>
+            <value>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+                <label>Hospital</label>
+            </value>
+            <value>
+                <fullName>Clinic</fullName>
+                <default>false</default>
+                <label>Clinic</label>
+            </value>
+            <value>
+                <fullName>Nursing Home</fullName>
+                <default>false</default>
+                <label>Nursing Home</label>
+            </value>
+            <value>
+                <fullName>Retirement Home</fullName>
+                <default>false</default>
+                <label>Retirement Home</label>
+            </value>
+            <value>
+                <fullName>Other Health/Hospital</fullName>
+                <default>false</default>
+                <label>Other Health/Hospital</label>
+            </value>
+            <value>
+                <fullName>Wholesaler</fullName>
+                <default>false</default>
+                <label>Wholesaler</label>
+            </value>
+            <value>
+                <fullName>Customer-Owned Distribution Organization</fullName>
+                <default>false</default>
+                <label>Customer-Owned Distribution Organization</label>
+            </value>
+            <value>
+                <fullName>Brewery Wholesaler</fullName>
+                <default>false</default>
+                <label>Brewery Wholesaler</label>
+            </value>
+            <value>
+                <fullName>Bottler House Sales</fullName>
+                <default>false</default>
+                <label>Bottler House Sales</label>
+            </value>
+            <value>
+                <fullName>Export</fullName>
+                <default>false</default>
+                <label>Export</label>
+            </value>
+            <value>
+                <fullName>Other Wholesale</fullName>
+                <default>false</default>
+                <label>Other Wholesale</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+            <value>
+                <fullName>Caterer</fullName>
+                <default>false</default>
+                <label>Caterer</label>
+            </value>
+            <value>
+                <fullName>Food Service Operator/Infeeder</fullName>
+                <default>false</default>
+                <label>Food Service Operator/Infeeder</label>
+            </value>
+            <value>
+                <fullName>Food Service Operator/Vendor</fullName>
+                <default>false</default>
+                <label>Food Service Operator/Vendor</label>
+            </value>
+            <value>
+                <fullName>Other Contract Vending &amp; Food Service</fullName>
+                <default>false</default>
+                <label>Other Contract Vending &amp; Food Service</label>
+            </value>
+            <value>
+                <fullName>Delivery Agent</fullName>
+                <default>false</default>
+                <label>Delivery Agent</label>
+            </value>
+            <value>
+                <fullName>Third Party Delivery Agent</fullName>
+                <default>false</default>
+                <label>Third Party Delivery Agent</label>
+            </value>
+            <value>
+                <fullName>Bottler</fullName>
+                <default>false</default>
+                <label>Bottler</label>
+            </value>
+            <value>
+                <fullName>House Sales</fullName>
+                <default>false</default>
+                <label>House Sales</label>
+            </value>
+            <value>
+                <fullName>QSR-Local Food</fullName>
+                <default>false</default>
+                <label>QSR-Local Food</label>
+            </value>
+            <value>
+                <fullName>Other Hyper-Merchandiser</fullName>
+                <default>false</default>
+                <label>Other Hyper-Merchandiser</label>
+            </value>
+            <value>
+                <fullName>Other Superette</fullName>
+                <default>false</default>
+                <label>Other Superette</label>
+            </value>
+            <value>
+                <fullName>Other Petroleum-Foodmart</fullName>
+                <default>false</default>
+                <label>Other Petroleum-Foodmart</label>
+            </value>
+            <value>
+                <fullName>Other Cash &amp; Carry Retail</fullName>
+                <default>false</default>
+                <label>Other Cash &amp; Carry Retail</label>
+            </value>
+            <value>
+                <fullName>Other Club Store</fullName>
+                <default>false</default>
+                <label>Other Club Store</label>
+            </value>
+            <value>
+                <fullName>Other Automotive Services</fullName>
+                <default>false</default>
+                <label>Other Automotive Services</label>
+            </value>
+            <value>
+                <fullName>Other Business And Professional Offices</fullName>
+                <default>false</default>
+                <label>Other Business And Professional Offices</label>
+            </value>
+            <value>
+                <fullName>Other All Others</fullName>
+                <default>false</default>
+                <label>Other All Others</label>
+            </value>
+            <value>
+                <fullName>Other Eating &amp; Drinking - Other</fullName>
+                <default>false</default>
+                <label>Other Eating &amp; Drinking - Other</label>
+            </value>
+            <value>
+                <fullName>Sport Venue</fullName>
+                <default>false</default>
+                <label>Sport Venue</label>
+            </value>
+            <value>
+                <fullName>FSR-Asian</fullName>
+                <default>false</default>
+                <label>FSR-Asian</label>
+            </value>
+            <value>
+                <fullName>FSR-BBQ</fullName>
+                <default>false</default>
+                <label>FSR-BBQ</label>
+            </value>
+            <value>
+                <fullName>FSR-Family Steak</fullName>
+                <default>false</default>
+                <label>FSR-Family Steak</label>
+            </value>
+            <value>
+                <fullName>FSR-Family Style</fullName>
+                <default>false</default>
+                <label>FSR-Family Style</label>
+            </value>
+            <value>
+                <fullName>FSR-Italian</fullName>
+                <default>false</default>
+                <label>FSR-Italian</label>
+            </value>
+            <value>
+                <fullName>FSR-Mexican</fullName>
+                <default>false</default>
+                <label>FSR-Mexican</label>
+            </value>
+            <value>
+                <fullName>FSR-Other Ethnic</fullName>
+                <default>false</default>
+                <label>FSR-Other Ethnic</label>
+            </value>
+            <value>
+                <fullName>FSR-Pizza</fullName>
+                <default>false</default>
+                <label>FSR-Pizza</label>
+            </value>
+            <value>
+                <fullName>FSR-Seafood</fullName>
+                <default>false</default>
+                <label>FSR-Seafood</label>
+            </value>
+            <value>
+                <fullName>FSR-Steak:Fine &amp; Casual</fullName>
+                <default>false</default>
+                <label>FSR-Steak:Fine &amp; Casual</label>
+            </value>
+            <value>
+                <fullName>FSR-Varied Menu</fullName>
+                <default>false</default>
+                <label>FSR-Varied Menu</label>
+            </value>
+            <value>
+                <fullName>QSR-Asian</fullName>
+                <default>false</default>
+                <label>QSR-Asian</label>
+            </value>
+            <value>
+                <fullName>QSR-Bagel</fullName>
+                <default>false</default>
+                <label>QSR-Bagel</label>
+            </value>
+            <value>
+                <fullName>QSR-Bakery</fullName>
+                <default>false</default>
+                <label>QSR-Bakery</label>
+            </value>
+            <value>
+                <fullName>QSR-Seafood</fullName>
+                <default>false</default>
+                <label>QSR-Seafood</label>
+            </value>
+            <value>
+                <fullName>Other Recreation</fullName>
+                <default>false</default>
+                <label>Other Recreation</label>
+            </value>
+            <value>
+                <fullName>Other Leisure</fullName>
+                <default>false</default>
+                <label>Other Leisure</label>
+            </value>
+            <value>
+                <fullName>Cyber (Internet) Cafe</fullName>
+                <default>false</default>
+                <label>Cyber (Internet) Cafe</label>
+            </value>
+            <value>
+                <fullName>Value Discount</fullName>
+                <default>false</default>
+                <label>Value Discount</label>
+            </value>
+            <value>
+                <fullName>Fine/Casual Restaurant</fullName>
+                <default>false</default>
+                <label>Fine/Casual Restaurant</label>
+            </value>
+            <value>
+                <fullName>Mid-scale Family Style Restaurant</fullName>
+                <default>false</default>
+                <label>Mid-scale Family Style Restaurant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

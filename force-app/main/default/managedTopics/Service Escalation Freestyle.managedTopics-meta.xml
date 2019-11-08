@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Featured:FS 3100</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>FS 3100</name>
+        <parentName/>
+        <position>0</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Featured:FS 7000</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>FS 7000</name>
+        <parentName/>
+        <position>1</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Featured:FS 7100</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>FS 7100</name>
+        <parentName/>
+        <position>2</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Featured:FS 9000/8000</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>FS 9000/8000</name>
+        <parentName/>
+        <position>3</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Featured:FS 9100</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>FS 9100</name>
+        <parentName/>
+        <position>4</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Navigational:All</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>All</name>
+        <parentName/>
+        <position>0</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Navigational:FS 3100</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FS 3100</name>
+        <parentName/>
+        <position>1</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Navigational:FS 7000</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FS 7000</name>
+        <parentName/>
+        <position>2</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Navigational:FS 7100</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FS 7100</name>
+        <parentName/>
+        <position>3</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Navigational:FS 9000/8000</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FS 9000/8000</name>
+        <parentName/>
+        <position>4</position>
+        <topicDescription/>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Service Escalation Freestyle.Navigational:FS 9100</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FS 9100</name>
+        <parentName/>
+        <position>5</position>
+        <topicDescription/>
+    </managedTopic>
+</ManagedTopics>

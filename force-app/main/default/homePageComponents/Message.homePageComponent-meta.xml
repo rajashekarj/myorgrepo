@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <body>&lt;div class=&quot;feedcommenttext&quot;&gt;&lt;br&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-family: tahoma,geneva,sans-serif;&quot;&gt;&lt;span style=&quot;background-color: #FFFF00;&quot;&gt;The system is currently down for &lt;/span&gt;&lt;b&gt;&lt;span style=&quot;background-color: #FFFF00;&quot;&gt;FET 4.1&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;background-color: #FFFF00;&quot;&gt; Deployment Activities. All notifications and system integration feeds into or out of FET have been disabled (i.e., SAP, Air Watch, CMS, etc.).. Please &lt;/span&gt;&lt;b&gt;&lt;span style=&quot;background-color: #FFFF00;&quot;&gt;DO NOT MAKE ANY CHANGES&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;background-color: #FFFF00;&quot;&gt; as they will not carry over to our production environment on 8/28&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;</body>
+    <pageComponentType>htmlArea</pageComponentType>
+    <width>wide</width>
+</HomePageComponent>

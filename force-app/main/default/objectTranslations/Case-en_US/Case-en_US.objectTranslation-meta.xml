@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Case Feed Layout</layout>
+        <layoutType>CaseInteraction</layoutType>
+        <sections>
+            <label/>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label/>
+            <section>Airwatch and Connectivity Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>HIdden</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>JDE Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Legacy History (Dasani)</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Modem Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout Portal</layout>
+        <sections>
+            <label/>
+            <section>Airwatch and Connectivity Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>HIdden</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>JDE Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Legacy History (Dasani)</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Modem Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout community</layout>
+        <sections>
+            <label/>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>HIdden</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Issue Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FACT Dispenser Selection</layout>
+        <sections>
+            <label/>
+            <section>Hidden Section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Issue Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FACT Dispenser Solution</layout>
+        <sections>
+            <label/>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Airwatch and Connectivity Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser and FET Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Hidden section</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>JDE Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Modem Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Outlet Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LinkageManagement Layout</layout>
+        <sections>
+            <label/>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Hidden Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non US Case</layout>
+        <sections>
+            <label/>
+            <section>Airwatch and Connectivity Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>HIdden</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Issue Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>JDE Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Legacy History (Dasani)</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Modem Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>FACT_Connectivity_Solution</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Linkage_Management</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Non_North_American_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>North_American_Case</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage/>
+        <name>Case_Owner_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Case_Status_Closed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Case_SubStatus_Value_to_None</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FACT_user_not_allowed_to_Close_SE_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Restrict_SerEscComUsers_Change_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Global_Center_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Resolution_Comments</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Add_Dispenser</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Assign_To_EMT</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Assign_To_FACT</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Escalate</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Select_Account_Team_member</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>TIMBASURVEYS__Send_Survey_Case</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>TIMBASURVEYS__Send_Survey_To_Selected</name>
+    </webLinks>
+</CustomObjectTranslation>

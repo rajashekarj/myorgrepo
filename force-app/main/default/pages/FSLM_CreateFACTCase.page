@@ -1,0 +1,62 @@
+<apex:page standardController="Case" extensions="FSLM_CreateFACTCaseController" showHeader="false" sidebar="false">
+    <html>
+        <apex:form >
+            <apex:outputPanel >
+                <apex:pageBlock title="Dispenser List">               
+                    <div id="chkBxs">
+                        <apex:outputtext rendered="{!if(isRender, true, false)}" style="color:black;" value="There are no Dispensers associated with this Customer"/>
+                        <apex:pageBlockTable value="{!selectDispensersWrapper}" var="dis">                            
+                            <apex:column >
+                                <input type="radio" name="selection" value="{!dis.checked}" title="{!dis.dispenser.Name}"/>
+                            </apex:column>
+                            
+                            <apex:column value="{!dis.dispenser.Name}"/>                            
+                            <apex:column value="{!dis.dispenser.FS_Status__c }" id="rd1"/>
+                            <apex:column value="{!dis.dispenser.FS_Date_Status__c}"/>
+                            <apex:column value="{!dis.dispenser.FS_Serial_Number2__c }"/>
+                            <apex:column value="{!dis.dispenser.FS_Equip_Type__c}"/>  
+                            <apex:column value="{!dis.dispenser.FS_IsActive__c}"/>
+                        </apex:pageBlockTable>
+                    </div>
+         
+                    <apex:pageBlockButtons location="bottom">
+                        <apex:commandButton value="Continue" onclick="javascript:createFACTcase();" rerender="none" />            
+                        <apex:commandButton value="Cancel" onclick="window.close();" rerender="none"/>
+                    </apex:pageBlockButtons>
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:form>
+        
+
+        <script type="text/javascript">  
+      
+            var zpls="";            
+            //Pass the checkbox name to the function
+            function createFACTcase() 
+            {
+                    var inputs = document.getElementById("chkBxs").getElementsByTagName("input");                                       
+                    var staticLabel1 = '{!$Label.LM_Case_Field_LK_ID}';
+                    var staticLabel2 = '{!$Label.LM_Case_Field_ID}';
+                    var staticLabel3 = '{!$Label.OD_Reference_Field_ID}';
+                	var staticLabel4 = '{!$Label.LM_Case_RecordType_ID}';
+                    for (var i=0; i<inputs.length; i++) 
+                    {
+                    // And stick the checked ones onto an array...
+                    if (inputs[i].checked) 
+                    {                          
+                        zpls=zpls+inputs[i].title;
+                        //alert(zpls);
+                        //window.opener.location.href="/500/e?RecordType=01261000000SIQZ&CF00N1F000001GFZp_lkid={!Case.Id}&CF00N1F000001GFZp={!Case.CaseNumber}&CF00N6100000I6HqB='"+zpls+"'&ent=Case&nooverride=1";
+                        window.open('/500/e?RecordType='+staticLabel4+'&'+staticLabel1+'={!Case.Id}&'+staticLabel2+'={!Case.CaseNumber}&'+staticLabel3+'='+zpls+'&ent=Case&nooverride=1');
+                        window.top.close();
+                        }
+                    }
+                    if(!zpls)
+                    {
+                        alert('Please select at least one dispenser');
+                        return false;
+                    }          
+           }                    
+        </script>
+    </html>
+</apex:page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Flavor_Change</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Flavor Change</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/setup/ui/recordtypeselect.jsp?ent=01I61000000uTU7&amp;00N6100000BpN8Y={!Account.Id}&amp;retURL=%2F{!Account.Id}%3Fnooverride%3D1&amp;save_new_url=%2F{!$ObjectType.Flavor_Change__c}%2Fe%3FCF00N6100000BpN8S_lkid%3D{!Account.Id}%26retURL%3D%252F{!Account.Id}%253Fnooverride%253D1</url>
+</WebLink>

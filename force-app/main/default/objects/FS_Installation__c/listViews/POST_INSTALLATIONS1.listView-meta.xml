@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POST_INSTALLATIONS1</fullName>
+    <columns>FS_Revenue_Center__c</columns>
+    <columns>Type_of_Dispenser_Platform__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Does_Install_Involve_RO4W__c</columns>
+    <columns>Overall_Status2__c</columns>
+    <columns>FS_Active_SAP_Jet_Indicators__c</columns>
+    <columns>FS_Asset_Tracking_Form_AMOA_Submitted__c</columns>
+    <columns>FS_Asset_Tracking_Form_AMOA_Complete__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>FS_Installation__c.Relocation_O4W</value>
+    </filters>
+    <filters>
+        <field>Overall_Status2__c</field>
+        <operation>notEqual</operation>
+        <value>cancelled</value>
+    </filters>
+    <label>RO4W</label>
+    <sharedTo>
+        <group>CCAST_FACT</group>
+    </sharedTo>
+</ListView>

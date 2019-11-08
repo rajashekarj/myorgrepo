@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Execution_Plan_Final_Approval_PMCheck__c</fullName>
+    <description>it will become TRUE when all installations are approved</description>
+    <externalId>false</externalId>
+    <formula>IF( AND(FS_of_Installations__c&gt;0,(FS_Installations_approved_by_PM__c + FS_of_Installations_Cancelled__c) = FS_of_Installations__c) ,true,false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>All Execution Plan Final Approval (PM)</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

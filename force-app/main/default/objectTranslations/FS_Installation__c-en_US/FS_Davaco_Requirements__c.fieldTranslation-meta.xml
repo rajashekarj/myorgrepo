@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Davaco_Requirements__c</name>
+    <picklistValues>
+        <masterLabel>New Construction SA - Proceed w/Scheduling</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Site Assessment-Required</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rush - Site Assess + GFE Bid proposal (traditional)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rush - Site Assessment Only (Survey Only)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rush â€“ New Construction SA â€“ Proceed w/Scheduling</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Not Required</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Not Required - OSM approval required for local market</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Assess + GFE bid proposal (traditional)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Assessment Only (survey only)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

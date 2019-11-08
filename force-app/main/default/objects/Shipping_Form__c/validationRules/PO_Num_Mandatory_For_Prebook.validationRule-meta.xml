@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Num_Mandatory_For_Prebook</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(FS_Status__c, &#39;Ready for Pre-Book&#39;) , ISBLANK( FS_PO_Number__c ) )</errorConditionFormula>
+    <errorDisplayField>FS_PO_Number__c</errorDisplayField>
+    <errorMessage>PO Number is mandatory when status is &#39;Ready for Pre-Book&#39;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Required_when_BAST_Initiated_RO4W</fullName>
+    <active>true</active>
+    <description>User should populate Case# when Did BAST Initiated RO4W as Yes</description>
+    <errorConditionFormula>AND(NOT(CONTAINS($Label.Exclude_User,$Profile.Name)),TEXT(FS_Did_BAST_initiate_this_RO4W__c)=&quot;Yes&quot;,ISBLANK(FS_Freestyle_Support_Tool_Case__c) )</errorConditionFormula>
+    <errorDisplayField>FS_Freestyle_Support_Tool_Case__c</errorDisplayField>
+    <errorMessage>Please provide the &#39;Freestyle Support Tool&#39; Case#</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>Exit_Type__c</name>
+    <picklistValues>
+        <masterLabel>46435 : FS7000 DRIPTRAY KIT</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46437 : FS7000 EXT SPLASH KIT</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_SubStatus_Value_to_None</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND( RecordType.DeveloperName = &#39;FACT_Connectivity_Solution&#39;, Owner:Queue.QueueName = &#39;Freestyle Agents US&#39;, ISPICKVAL( Status , &#39;Assigned&#39;),  ISBLANK( TEXT( Sub_Status__c ) ) ),
+AND( RecordType.DeveloperName = &#39;North_American_Case&#39;, Owner:Queue.QueueName = &#39;Freestyle Support&#39;, ISPICKVAL( Status , &#39;Assigned&#39;),  OR(ISBLANK( TEXT( Sub_Status__c ) ),  ISPICKVAL(Sub_Status__c , &#39;In Progress&#39;) ) )
+)</errorConditionFormula>
+    <errorMessage>Please select a valid Sub Status value.</errorMessage>
+</ValidationRule>

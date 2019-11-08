@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freestyle_Agents_NON_US_GS_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>On Hold,Escalated,New,Assigned</value>
+    </filters>
+    <label>Global Center Non US Escalated</label>
+    <queue>Global_Center</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

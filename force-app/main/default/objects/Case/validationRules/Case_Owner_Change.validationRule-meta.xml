@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Owner_Change</fullName>
+    <active>true</active>
+    <description>Case cannot be reassigned to a User</description>
+    <errorConditionFormula>ISCHANGED(OwnerId )</errorConditionFormula>
+    <errorMessage>Please do not change the owner manually</errorMessage>
+</ValidationRule>

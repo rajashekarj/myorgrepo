@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Water_Booster_Location_TI_CSWB1__c</fullName>
+    <externalId>false</externalId>
+    <label>Water Booster Location (8000 Series)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Underneath Self-Serve Counter</fullName>
+                <default>false</default>
+                <label>Underneath Self-Serve Counter</label>
+            </value>
+            <value>
+                <fullName>Top of HFCS Rack</fullName>
+                <default>false</default>
+                <label>Top of HFCS Rack</label>
+            </value>
+            <value>
+                <fullName>Add Shelf/Mount to Wall</fullName>
+                <default>false</default>
+                <label>Add Shelf/Mount to Wall</label>
+            </value>
+            <value>
+                <fullName>Top of Legacy Syrup Rack</fullName>
+                <default>false</default>
+                <label>Top of Legacy Syrup Rack</label>
+            </value>
+            <value>
+                <fullName>Other (Explain in Comments)</fullName>
+                <default>false</default>
+                <label>Other (Explain in Comments)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

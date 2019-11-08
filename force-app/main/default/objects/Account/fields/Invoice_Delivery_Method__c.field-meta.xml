@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Delivery_Method__c</fullName>
+    <description>When selecting â€œEmailâ€� as your delivery method you are required to enter one or more email addresses.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When selecting â€œEmailâ€� as your delivery method you are required to enter one or more email addresses.</inlineHelpText>
+    <label>Invoice Delivery Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mail</fullName>
+                <default>false</default>
+                <label>Mail</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

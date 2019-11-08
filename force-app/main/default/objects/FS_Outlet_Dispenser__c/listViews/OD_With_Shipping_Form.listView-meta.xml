@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OD_With_Shipping_Form</fullName>
+    <columns>NAME</columns>
+    <columns>Serial_Number_Hyperlink__c</columns>
+    <columns>FS_Status__c</columns>
+    <columns>Shipping_Form__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>FS_Outlet_Dispenser__c.BoE_Dispenser</value>
+    </filters>
+    <filters>
+        <field>Shipping_Form__c</field>
+        <operation>equals</operation>
+        <value>4.23.19_19NAMG0101-0068788_Belgium</value>
+    </filters>
+    <label>OD With Shipping Form</label>
+</ListView>

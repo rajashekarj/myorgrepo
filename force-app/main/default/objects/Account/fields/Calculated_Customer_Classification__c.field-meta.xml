@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calculated_Customer_Classification__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(Text(FS_Requested_Order_Method__c)=&quot;CokeSmart&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Direct Ship&quot;,FS_Final_Delivery_text_value__c=&quot;Distributor&quot;,ISPICKVAL(FS_Approved_for_Distributor_Ordering__c,&#39;Yes&#39;)), &quot;05&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;CokeSmart&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Direct Ship&quot;,NOT(FS_Final_Delivery_text_value__c=&quot;Distributor&quot;)), &quot;05&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;CokeSmart&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Distributor&quot;,ISPICKVAL(FS_Approved_for_Distributor_Ordering__c,&#39;Yes&#39;)), &quot;08&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;VMS&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Direct Ship&quot;,FS_Final_Delivery_text_value__c=&quot;Distributor&quot;,ISPICKVAL(FS_Approved_for_Distributor_Ordering__c,&#39;Yes&#39;)), &quot;10&quot;,
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;VMS&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Direct Ship&quot;,NOT(FS_Final_Delivery_text_value__c=&quot;Distributor&quot;)), &quot;10&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;VMS&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Distributor&quot;,ISPICKVAL(FS_Approved_for_Distributor_Ordering__c,&#39;Yes&#39;)), &quot;12&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;Manual Order&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Direct Ship&quot;, ISPICKVAL(FS_Manual_Order_Approval_Status__c,&#39;Approve&#39;)), &quot;02&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;Distributor&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Distributor&quot;,ISPICKVAL(FS_Approved_for_Distributor_Ordering__c,&#39;Yes&#39;)), &quot;13&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;Bottler&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Bottler&quot;, FS_Approved_Bottler_Order_Delivery__c=true), &quot;00&quot;, 
+IF(AND(Text(FS_Requested_Order_Method__c)=&quot;Bottler&quot;,text(FS_Requested_Delivery_Method__c)= &quot;Direct Ship&quot;, FS_Approved_Bottler_Order_Delivery__c=true), &quot;01&quot;,Calculated_Customer_Classification_Text__c))))))))))</formula>
+    <label>Calculated Customer Classification</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

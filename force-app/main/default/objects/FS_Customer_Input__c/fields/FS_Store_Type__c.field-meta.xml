@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Store_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Installation Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Traditional Freestyle Install</fullName>
+                <default>false</default>
+                <label>Traditional Freestyle Install</label>
+            </value>
+            <value>
+                <fullName>New Store (AM Install)</fullName>
+                <default>false</default>
+                <label>New Store (AM Install)</label>
+            </value>
+            <value>
+                <fullName>New Store (PM Install)</fullName>
+                <default>false</default>
+                <label>New Store (PM Install)</label>
+            </value>
+            <value>
+                <fullName>Remodel (AM Install)</fullName>
+                <default>false</default>
+                <label>Remodel (AM Install)</label>
+            </value>
+            <value>
+                <fullName>Remodel (PM Install)</fullName>
+                <default>false</default>
+                <label>Remodel (PM Install)</label>
+            </value>
+            <value>
+                <fullName>T5 Traditional Freestyle</fullName>
+                <default>false</default>
+                <label>T5 Traditional Freestyle</label>
+            </value>
+            <value>
+                <fullName>T1 New Restaurant or ITP</fullName>
+                <default>false</default>
+                <label>T1 New Restaurant or ITP</label>
+            </value>
+            <value>
+                <fullName>T2 Scrape or ITP Remodel</fullName>
+                <default>false</default>
+                <label>T2 Scrape or ITP Remodel</label>
+            </value>
+            <value>
+                <fullName>T4 Dining Room Remodel</fullName>
+                <default>false</default>
+                <label>T4 Dining Room Remodel</label>
+            </value>
+            <value>
+                <fullName>T3 Drink Station Remodel</fullName>
+                <default>false</default>
+                <label>T3 Drink Station Remodel</label>
+            </value>
+            <value>
+                <fullName>Dry Outlet</fullName>
+                <default>false</default>
+                <label>Dry Outlet</label>
+            </value>
+            <value>
+                <fullName>New Construction</fullName>
+                <default>false</default>
+                <label>New Construction</label>
+            </value>
+            <value>
+                <fullName>Brick &amp; Mortar</fullName>
+                <default>false</default>
+                <label>Brick &amp; Mortar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

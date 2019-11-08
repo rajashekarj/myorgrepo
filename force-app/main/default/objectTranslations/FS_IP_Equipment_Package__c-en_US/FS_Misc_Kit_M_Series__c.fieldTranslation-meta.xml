@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Misc_Kit_M_Series__c</name>
+    <picklistValues>
+        <masterLabel>XXXX: M-Series Installation Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

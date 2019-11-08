@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FC_7000_Series_Brnd_sel_effdt_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(OR(!ISBlank(FS_7000_Series_Statics_Brands_Selection__c), !ISBlank(FS_7000_Series_Agitated_Brands_Selection__c)),isBlank(FS_7000_Series_Brand_Selection_EF_Date__c))</errorConditionFormula>
+    <errorDisplayField>FS_7000_Series_Brand_Selection_EF_Date__c</errorDisplayField>
+    <errorMessage>This is mandatory if &#39;7000 Series Brands Option Selections&#39; Fields is filled</errorMessage>
+</ValidationRule>

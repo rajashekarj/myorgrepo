@@ -1,0 +1,48 @@
+<apex:page standardController="FS_Installation__c" extensions="FSPlatformDetailsInstallationExtension" showHeader="false" sidebar="false">
+    <apex:form id="frmId">
+        
+        <apex:pageBlock id="pbId">
+            
+            <apex:pageblockTable value="{!platformList}" var="install" >
+                
+                <apex:column headervalue="Platforms" value="{!install}" />                       
+                
+                <apex:column headervalue="Platform Type" value="{!mapInstallRecords[install].FS_Platform1__c}"/>
+                
+                <apex:column rendered="{!FS_Installation__c.RecordType.Name==$Label.IP_New_Install_Rec_Type}">                    
+                    <apex:facet name="header">No. of Dispensers Requested<img src="/s.gif" class="helpIcon" title="{!$ObjectType.FS_Installation__c.Fields.FS_DispRequested1__c.inlineHelpText}" height="13" width="13" /></apex:facet>                                           
+                    <apex:outputField value="{!mapInstallRecords[install].FS_DispRequested1__c}"/> 
+                </apex:column> 
+                
+                <apex:column rendered="{!if(OR(FS_Installation__c.RecordType.Name==$Label.IP_Replacement_Rec_Type,FS_Installation__c.RecordType.Name==$Label.IP_Removal_Rec_Type,FS_Installation__c.RecordType.Name==$Label.IP_Relocation_O4W_Rec_Type),true,false)}" >                                        
+                    <apex:facet name="header">No. of Dispensers to Remove<img src="/s.gif" class="helpIcon" title="{!$Label.IP_No_Dispenser_Remove_Disconnect}" height="13" width="13" /></apex:facet>                                        
+                    <apex:outputField value="{!mapInstallRecords[install].FS_DispRequested1__c}"/> 
+                </apex:column>
+                
+                <apex:column rendered="{!FS_Installation__c.RecordType.Name==$Label.IP_Relocation_I4W_Rec_Type}">                   
+                    <apex:facet name="header">No of Dispensers to Disconnect and Reconnect<img src="/s.gif" class="helpIcon" title="{!$Label.IP_No_Dispenser_Remove_Disconnect}" height="13" width="13" /></apex:facet>                       
+                    <apex:outputField value="{!mapInstallRecords[install].FS_DispRequested1__c}"/> 
+                </apex:column>
+                
+                <apex:column rendered="{!if(OR(FS_Installation__c.RecordType.Name==$Label.IP_Replacement_Rec_Type,FS_Installation__c.RecordType.Name==$Label.IP_New_Install_Rec_Type),true,false)}">
+                    <apex:facet name="header">No. of Dispensers to Order<img src="/s.gif" class="helpIcon" title="{!$ObjectType.FS_Installation__c.Fields.FS_DispOrder1__c.inlineHelpText}" height="13" width="13" /></apex:facet>                                                              
+                    <apex:outputField value="{!mapInstallRecords[install].FS_DispOrder1__c}"/>
+                </apex:column>
+                
+                <apex:column headervalue="Market Activation Date">  
+                    <apex:outputField value="{!mapInstallRecords[install].FS_Mrkt_ActiveDate1__c}"/>                                           
+                </apex:column>
+                
+                <apex:column headervalue="Market Activation Override?">                    
+                    <apex:outputField value="{!mapInstallRecords[install].FS_Market_Activation_override__c}"/>              
+                </apex:column>
+                
+                <apex:column headervalue="# Planned Top Mount Ice Makers Requested" rendered="{!if(OR(FS_Installation__c.RecordType.Name==$Label.IP_Relocation_I4W_Rec_Type,FS_Installation__c.RecordType.Name==$Label.IP_Replacement_Rec_Type,FS_Installation__c.RecordType.Name==$Label.IP_New_Install_Rec_Type),true,false)}">                    
+                    <apex:outputField value="{!mapInstallRecords[install].FS_DispOrder2__c}"/> 
+                </apex:column>            
+                
+            </apex:pageblockTable>           
+        </apex:pageBlock>        
+        
+    </apex:form>
+</apex:page>

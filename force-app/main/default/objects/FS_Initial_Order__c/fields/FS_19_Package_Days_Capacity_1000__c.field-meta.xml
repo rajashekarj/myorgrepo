@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_19_Package_Days_Capacity_1000__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(CONTAINS(FS_SpicyCherry__c, &quot;Pibb&quot;  ) ,30.611486,
+If(Contains(FS_SpicyCherry__c, &quot;Pepper&quot;) ,32.569577,0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>19 Package # Days Capacity (1000)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

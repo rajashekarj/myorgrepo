@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Requested_Channel__c</fullName>
+    <externalId>false</externalId>
+    <label>Requested Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>QSR - Quick Serve Restaurant</fullName>
+                <default>false</default>
+                <label>QSR - Quick Serve Restaurant</label>
+            </value>
+            <value>
+                <fullName>FSR - Full Serve Restaurant</fullName>
+                <default>false</default>
+                <label>FSR - Full Serve Restaurant</label>
+            </value>
+            <value>
+                <fullName>Fast Casual Restaurant</fullName>
+                <default>false</default>
+                <label>Fast Casual Restaurant</label>
+            </value>
+            <value>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+                <label>Supermarket</label>
+            </value>
+            <value>
+                <fullName>CR - Convenience Retail</fullName>
+                <default>false</default>
+                <label>CR - Convenience Retail</label>
+            </value>
+            <value>
+                <fullName>College/University</fullName>
+                <default>false</default>
+                <label>College/University</label>
+            </value>
+            <value>
+                <fullName>Health/Hospital</fullName>
+                <default>false</default>
+                <label>Health/Hospital</label>
+            </value>
+            <value>
+                <fullName>Workplace</fullName>
+                <default>false</default>
+                <label>Workplace</label>
+            </value>
+            <value>
+                <fullName>Amusement/Rec/Leisure</fullName>
+                <default>false</default>
+                <label>Amusement/Rec/Leisure</label>
+            </value>
+            <value>
+                <fullName>Cinema/Movie</fullName>
+                <default>false</default>
+                <label>Cinema/Movie</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

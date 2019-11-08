@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_7000_Series_Site_Assessment_For_Profi</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( FS_Site_Assessment_Required__c , &#39;Service Provider: Site Assessment Only (7000 Series Only)&#39;), OR(  $Profile.Name = &#39;FS Americhip PIC&#39;, $Profile.Name = &#39;FS CDM_P&#39;, $Profile.Name = &#39;FS COM_P&#39;, $Profile.Name = &#39;FS JCOM_P&#39;, $Profile.Name = &#39;FS NDO_P&#39;, $Profile.Name = &#39;FS Sales_P&#39;, $Profile.Name = &#39;FS Sales Leadership_P&#39;))</errorConditionFormula>
+    <errorMessage>This is not a valid Site Assessment for your user</errorMessage>
+</ValidationRule>

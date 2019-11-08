@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dist_Cartridge_Delivery_Authorized_Val</fullName>
+    <active>true</active>
+    <description>&#39;Dist. Cartridge Authorized value is required. Validate distributor field is populated with a distributor approved for cartridge handling&#39;</description>
+    <errorConditionFormula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR( 
+AND(OR($Profile.Name =&quot;FS NDO_P&quot;,CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;)), 
+OR(FS_Dist_Cartridge_Delivery_Auth_Outlet__c=&quot;&quot;,ISBLANK(FS_Dist_Cartridge_Delivery_Auth_Outlet__c)), 
+OR(Calculated_Customer_Classification__c=&quot;12&quot;,Calculated_Customer_Classification__c=&quot;13&quot;,Calculated_Customer_Classification__c=&quot;08&quot;))), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorMessage>Please enter a value for mandatory   field :&quot;Dist Cartridge Delivery Authorized&quot; of the &quot;Distributor/Bottler&quot;</errorMessage>
+</ValidationRule>

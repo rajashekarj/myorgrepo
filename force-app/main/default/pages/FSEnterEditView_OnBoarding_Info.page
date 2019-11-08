@@ -1,0 +1,142 @@
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!--   Page : Enter/Edit/View On-Boarding Info                                                                            -->
+<!--   Created By   : Pallavi Sharma (Appiro)                                                                             -->
+<!--   Created Date : 18 - Sep - 2013                                                                                     -->
+<!-------------------------------------------------------------------------------------------------------------------------->
+<apex:page Controller="FSEnterEditViewOnBoardingInfoController">
+    <apex:form >        
+        <apex:actionstatus id="status">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder" style="top: 74.2px; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." /> 
+                        <span class="waitingDescription">Saving...</span>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionstatus>
+        
+        <apex:actionFunction name="fillDown" action="{!fillDown}" rerender="OnBoarding" status="myStatus">
+            <apex:param name="myParam" value="" assignTo="{!selectedFillDown}"/>
+        </apex:actionFunction>
+        
+        <apex:pageBlock mode="inlineEdit" id="OnBoarding">
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:pageBlockButtons >
+                <apex:commandButton id="saveButton" value="Save" action="{!saveInstallation}" status="status" rendered="{!lstInstallation.size > 0}"/>
+                <apex:commandButton id="cancelButton" value="Cancel" reRender="none" action="{!cancel}" />
+            
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockTable border="1" style="border-color:#E0E3E5; "  value="{!lstInstallation}" var="install" rendered="{!lstInstallation.size > 0}">
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down All" onclick="fillDown('All'); return false;" />
+                        <br/><br/>
+                        Installation Name
+                    </apex:facet>         
+                    <apex:outputLink value="/{!install.id}" target="_blank">
+                        <apex:outputField value="{!install.name}"/>
+                    </apex:outputLink>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">                        
+                        <br/><br/><br/>
+                        Outlet Information
+                    </apex:facet>
+                    <div style="width:200px; display:block;">
+                        <apex:outputField value="{!install.FS_Outlet_Information__c}"/>
+                    </div>
+                </apex:column>      
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('Trainer'); return false;" />
+                        <br/><br/>
+                        Trainer
+                    </apex:facet>        
+                    <apex:actionRegion >
+                        <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:InputField value="{!install.FS_Trainer__c}" />
+                        </div>    
+                    </apex:actionRegion>  
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('OnboardingContact'); return false;" />
+                        <br/><br/>
+                        Onboarding Training Contact
+                    </apex:facet>          
+                    <apex:actionRegion >
+                        <apex:InputField value="{!install.Onboarding_Training_Contact__c}" />                        
+                    </apex:actionRegion>  
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('SecondaryContact'); return false;" />
+                        <br/><br/>            
+                        Secondary Onboarding Contact</apex:facet>
+                    <apex:actionRegion >
+                        <apex:InputField value="{!install.FS_OB_Secondary_Contact__c}" />                        
+                    </apex:actionRegion>  
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('StartTime'); return false;" />
+                        <br/><br/>            
+                        Training Start Time</apex:facet>
+                    <apex:actionRegion >
+                        <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:InputField value="{!install.FS_Training_Start_Time__c}" />
+                        </div>    
+                    </apex:actionRegion>  
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('OpenTime'); return false;" />
+                        <br/><br/>             
+                        Outlet Open Time</apex:facet>
+                    <apex:actionRegion >
+                        <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:InputField value="{!install.Outlet_Open_Time__c}" />
+                        </div>    
+                    </apex:actionRegion>  
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('NoofDays'); return false;" />
+                        <br/><br/>             
+                        How Many Days  <br/>After Install will<br/> Onboarding Occur <br/> (Zero if same day)</apex:facet>
+                    <apex:actionRegion >
+                        <apex:InputField value="{!install.FS_HowManyDaysAfterInstallOnboarding__c}" />                        
+                    </apex:actionRegion>  
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('Comments'); return false;" />
+                        <br/><br/>             
+                        Onboarding Comments	
+                    </apex:facet>
+                    <apex:actionRegion >
+                        <apex:InputField value="{!install.FS_OB_Comments__c}" />                
+                    </apex:actionRegion>  
+                </apex:column>
+            </apex:pageBlockTable>
+            
+            <apex:outputPanel rendered="{!lstInstallation.size == 0}">
+                <h2><b> No Record Found </b></h2>
+            </apex:outputPanel>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

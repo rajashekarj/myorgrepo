@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cancel_Flavour_Change</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Cancel</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)}
+
+var ArrayIds={!GETRECORDIDS($ObjectType.Flavor_Change__c)};
+if(ArrayIds.length==0)
+alert(&quot;No Post Flavor Change  Record is selected to cancel&quot;);
+else if(ArrayIds.length&gt;1)
+alert(&quot;You can&#39;t select more than one Flavor Change  record&quot;);
+else if(ArrayIds.length==1){
+var r = confirm(&quot;Do you want to Cancel this  Flavor Change  record&quot;);
+if (r == true) {
+var res = sforce.apex.execute(&quot;FSCancelPostInstallActivity&quot;,&quot;FSCancelFlavourChange&quot;, 
+{cancelId:ArrayIds[0]}); 
+
+alert(res);
+document.location.reload(true);
+}
+}</url>
+</WebLink>

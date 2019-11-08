@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACT_Connectivity_Solution</fullName>
+    <active>true</active>
+    <businessProcess>Connectivity Solution</businessProcess>
+    <compactLayoutAssignment>FS_Connectivity_Solution_Panel</compactLayoutAssignment>
+    <description>CCAST record Type</description>
+    <label>Connectivity Solution</label>
+    <picklistValues>
+        <picklist>FACT_Active_Inactive_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Case_Type__c</picklist>
+        <values>
+            <fullName>Alignment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand Selection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connectivity Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumption Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrollment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relocation %2F AMOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software %2F Content</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Dispenser_Category__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Modem_Type__c</picklist>
+        <values>
+            <fullName>Ethernet Connected Modem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USB Connected Modem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Valid_FIll__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dispenser_Type__c</picklist>
+        <values>
+            <fullName>7000 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8000 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9000 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9100 Series</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_New_Case_Type__c</picklist>
+        <values>
+            <fullName>JDE Initiated AMOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JDE Linkage Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Resolution_Type__c</picklist>
+        <values>
+            <fullName>Booster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispenser Enrolled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrolled to wrong ACN Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Modem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flavor Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hide%2FShow Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Software Update</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Signal-Needs Hardwire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTA Update Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-linkage and Enrollment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reporting with Wrong SAP Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serial Number Exception</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Global_Center_Esca__c</picklist>
+        <values>
+            <fullName>Quality %26 Compliance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LM_Sub_Status__c</picklist>
+        <values>
+            <fullName>Account Team on Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance on Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JDE AMS on Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JDE Install Base Notified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Install</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Chatter Answers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SW_Issue_Categories__c</picklist>
+        <values>
+            <fullName>CMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Status__c</picklist>
+        <values>
+            <fullName>EMT Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMT In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMT On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Sample Cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

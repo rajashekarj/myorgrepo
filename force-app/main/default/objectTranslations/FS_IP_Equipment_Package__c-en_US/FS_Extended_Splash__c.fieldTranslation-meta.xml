@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Extended_Splash__c</name>
+    <picklistValues>
+        <masterLabel>147368: Black Extended Splash Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46719: BLACK EXTENDED SPLASH KIT</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: Black Extended Splash Kit, 7100</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: Red Extended Splash Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: Red Extended Splash Kit, 7100</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

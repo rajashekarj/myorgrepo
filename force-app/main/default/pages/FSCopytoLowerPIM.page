@@ -1,0 +1,26 @@
+<apex:page standardController="FS_Post_Install_Marketing__c" extensions="FSCopytoLower_Cancel_PIM_Extension" recordSetVar="FS_Post_Install_Marketing__c">
+    <apex:includeScript value="/soap/ajax/44.0/connection.js"/>
+    <apex:includeScript value="/soap/ajax/44.0/apex.js"/>
+    
+    <script>
+    var ArrayIds={!pimCount};   
+    if(ArrayIds==0)
+        alert("No Post Install Marketing Record is selected to copy");
+    else if(ArrayIds>1)
+        alert("You can't select more than one Post Install Marketing record");
+    else if(ArrayIds==1){
+            var r = confirm("Do you want to Copy this Post Install Marketing record");            
+            if (r == true) {
+                sforce.connection.sessionId='{!$Api.Session_Id}';
+                try{
+                var res = sforce.apex.execute("FSCopyPostInstallActivity","ChaintoHqMarketing",
+                                              {recId:'{!accId}',pmid:'{!pimId}',Obj:'Account'});
+                alert(res);
+                }catch (e){
+                	alert(e);
+                }
+            }
+        }
+    sforce.one.back(true);
+    </script>    
+</apex:page>

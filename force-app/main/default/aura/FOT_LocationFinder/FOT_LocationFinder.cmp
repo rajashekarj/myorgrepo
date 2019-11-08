@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<iframe src="{!'/apex/FOT_LocationFinderPage?Id=' + v.recordId }" width="100%" height="1000px;" frameBorder="0"/>
+</aura:component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cancelled_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Cancelled Reasons</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Product Cost</fullName>
+                <default>false</default>
+                <label>Product Cost</label>
+            </value>
+            <value>
+                <fullName>Site Prep Cost</fullName>
+                <default>false</default>
+                <label>Site Prep Cost</label>
+            </value>
+            <value>
+                <fullName>Negotiating Contract</fullName>
+                <default>false</default>
+                <label>Negotiating Contract</label>
+            </value>
+            <value>
+                <fullName>Unwilling to pay by Credit Card/Bank Draft</fullName>
+                <default>false</default>
+                <label>Unwilling to pay by Credit Card/Bank Draft</label>
+            </value>
+            <value>
+                <fullName>Credit Restrictions</fullName>
+                <default>false</default>
+                <label>Credit Restrictions</label>
+            </value>
+            <value>
+                <fullName>Duplicate EP</fullName>
+                <default>false</default>
+                <label>Duplicate EP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

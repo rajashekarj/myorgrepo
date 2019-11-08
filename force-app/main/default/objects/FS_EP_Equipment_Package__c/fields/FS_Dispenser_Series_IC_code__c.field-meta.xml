@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Dispenser_Series_IC_code__c</fullName>
+    <externalId>false</externalId>
+    <label>Dispenser Series IC Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46401: Standard Splashplate with Driptray, Cuprest and optional leg kit</fullName>
+                <default>false</default>
+                <label>46401: Standard Splashplate with Driptray, Cuprest and optional leg kit</label>
+            </value>
+            <value>
+                <fullName>46403: SUBWAY Standard Splashplate with Driptray, Cuprest and optional leg kit</fullName>
+                <default>false</default>
+                <label>46403: SUBWAY Standard Splashplate with Driptray, Cuprest and optional leg kit</label>
+            </value>
+            <value>
+                <fullName>46102: Freestyle GS2 Crew Serve</fullName>
+                <default>false</default>
+                <label>46102: Freestyle GS2 Crew Serve</label>
+            </value>
+            <value>
+                <fullName>46100 : Freestyle GS1 Red</fullName>
+                <default>false</default>
+                <label>46100 : Freestyle GS1 Red</label>
+            </value>
+            <value>
+                <fullName>46101 : Freestyle GS1 Black</fullName>
+                <default>false</default>
+                <label>46101 : Freestyle GS1 Black</label>
+            </value>
+            <value>
+                <fullName>46099 : Freestyle GS1 Silver</fullName>
+                <default>false</default>
+                <label>46099 : Freestyle GS1 Silver</label>
+            </value>
+            <value>
+                <fullName>46130 : Freestyle GS1 Red - Cruise Ship</fullName>
+                <default>false</default>
+                <label>46130 : Freestyle GS1 Red - Cruise Ship</label>
+            </value>
+            <value>
+                <fullName>46294 : Freestyle GS1 Silver - Cruise Ship</fullName>
+                <default>false</default>
+                <label>46294 : Freestyle GS1 Silver - Cruise Ship</label>
+            </value>
+            <value>
+                <fullName>46667 : FS9100 Red</fullName>
+                <default>false</default>
+                <label>46667 : FS9100 Red</label>
+            </value>
+            <value>
+                <fullName>46668 : FS9100 Black</fullName>
+                <default>false</default>
+                <label>46668 : FS9100 Black</label>
+            </value>
+            <value>
+                <fullName>46669 : FS9100 Gray</fullName>
+                <default>false</default>
+                <label>46669 : FS9100 Gray</label>
+            </value>
+            <value>
+                <fullName>46379: Extended Splashplate - without Legs</fullName>
+                <default>false</default>
+                <label>46379: Extended Splashplate - without Legs</label>
+            </value>
+            <value>
+                <fullName>46402 : SUBWAY Extended Splashplate - without Legs *</fullName>
+                <default>false</default>
+                <label>46402 : SUBWAY Extended Splashplate - without Legs *</label>
+            </value>
+            <value>
+                <fullName>46708R : BRIDGE GS1 Red</fullName>
+                <default>false</default>
+                <label>46708R : BRIDGE GS1 Red</label>
+            </value>
+            <value>
+                <fullName>46709R : BRIDGE GS1 Silver</fullName>
+                <default>false</default>
+                <label>46709R : BRIDGE GS1 Silver</label>
+            </value>
+            <value>
+                <fullName>46710R : BRIDGE GS1 Black</fullName>
+                <default>false</default>
+                <label>46710R : BRIDGE GS1 Black</label>
+            </value>
+            <value>
+                <fullName>TBD : Freestyle 6000 M-series Gray</fullName>
+                <default>false</default>
+                <label>TBD : Freestyle 6000 M-series Gray</label>
+            </value>
+            <value>
+                <fullName>TBD : Freestyle 6050 M-series</fullName>
+                <default>false</default>
+                <label>TBD : Freestyle 6050 M-series</label>
+            </value>
+            <value>
+                <fullName>46731 : FS9100 Dark Gray</fullName>
+                <default>false</default>
+                <label>46731 : FS9100 Dark Gray</label>
+            </value>
+            <value>
+                <fullName>XXXXX: Freestyle 6000 McDonalds  M-series</fullName>
+                <default>false</default>
+                <label>XXXXX: Freestyle 6000 McDonalds  M-series</label>
+            </value>
+            <value>
+                <fullName>46749: 7100 Red Standard Splashplate with Driptray, Cuprest and optional legs</fullName>
+                <default>false</default>
+                <label>46749: 7100 Red Standard Splashplate with Driptray, Cuprest and optional legs</label>
+            </value>
+            <value>
+                <fullName>XXXXX: 7100 Black Standard Splashplate with Driptray, Cuprest and optional legs</fullName>
+                <default>false</default>
+                <label>XXXXX: 7100 Black Standard Splashplate with Driptray, Cuprest and optional legs</label>
+            </value>
+            <value>
+                <fullName>45904 : FSIB_Silver(No longer available as of MAR 2012)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45904 : FSIB_Silver(No longer available as of MAR 2012)</label>
+            </value>
+            <value>
+                <fullName>45906 : FSIB_Red(No longer available as of MAR 2012)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45906 : FSIB_Red(No longer available as of MAR 2012)</label>
+            </value>
+            <value>
+                <fullName>45908 : FSIB_Black(No longer available as of MAR 2012)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>45908 : FSIB_Black(No longer available as of MAR 2012)</label>
+            </value>
+            <value>
+                <fullName>46048 : CCFS Crew Serve 1 Nozzle(No longer available as of MAR 2012)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46048 : CCFS Crew Serve 1 Nozzle(No longer available as of MAR 2012)</label>
+            </value>
+            <value>
+                <fullName>46101 Freestyle GS1 Black</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46101 Freestyle GS1 Black</label>
+            </value>
+            <value>
+                <fullName>46102 : Freestyle GS2 Crew Serve</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46102 : Freestyle GS2 Crew Serve</label>
+            </value>
+            <value>
+                <fullName>46102 : Freestyle GS2 Â Crew Serve</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46102 : Freestyle GS2 Â Crew Serve</label>
+            </value>
+            <value>
+                <fullName>46102: Freestyle GS2  Crew Serve</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46102: Freestyle GS2  Crew Serve</label>
+            </value>
+            <value>
+                <fullName>46126 : Freestyle GS1 Silver - Wood Crate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46126 : Freestyle GS1 Silver - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46127 : Freestyle GS1 Red - Wood Crate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46127 : Freestyle GS1 Red - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46128 : Freestyle GS1 Black  - Wood Crate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46128 : Freestyle GS1 Black  - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46128 : Freestyle GS1 Black - Wood Crate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46128 : Freestyle GS1 Black - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46129: Freestyle GS2 Crew Serve - Wood Crate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46129: Freestyle GS2 Crew Serve - Wood Crate</label>
+            </value>
+            <value>
+                <fullName>46130 : Freestyle GS1 Red â€“ Cruise Ship</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46130 : Freestyle GS1 Red â€“ Cruise Ship</label>
+            </value>
+            <value>
+                <fullName>46293 : Freestyle GS1 Silver - Cruise Ship</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46293 : Freestyle GS1 Silver - Cruise Ship</label>
+            </value>
+            <value>
+                <fullName>46443: FS7000 BASE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46443: FS7000 BASE</label>
+            </value>
+            <value>
+                <fullName>TBD#13: FS9100 Red</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD#13: FS9100 Red</label>
+            </value>
+            <value>
+                <fullName>TBD#14: FS9100 Black</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD#14: FS9100 Black</label>
+            </value>
+            <value>
+                <fullName>TBD#15: FS9100 Gray</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD#15: FS9100 Gray</label>
+            </value>
+            <value>
+                <fullName>XXXXX: 7100 Red Standard Splashplate with Driptray, Cuprest and optional legs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>XXXXX: 7100 Red Standard Splashplate with Driptray, Cuprest and optional legs</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>46401: Standard Splashplate with Driptray, Cuprest and optional leg kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>46403: SUBWAY Standard Splashplate with Driptray, Cuprest and optional leg kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <valueName>46102: Freestyle GS2 Crew Serve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46100 : Freestyle GS1 Red</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46101 : Freestyle GS1 Black</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46099 : Freestyle GS1 Silver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46130 : Freestyle GS1 Red - Cruise Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46294 : Freestyle GS1 Silver - Cruise Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46708R : BRIDGE GS1 Red</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46709R : BRIDGE GS1 Silver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <valueName>46710R : BRIDGE GS1 Black</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46667 : FS9100 Red</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46668 : FS9100 Black</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46669 : FS9100 Gray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <valueName>46731 : FS9100 Dark Gray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: Freestyle 6000 McDonalds  M-series</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46749: 7100 Red Standard Splashplate with Driptray, Cuprest and optional legs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>XXXXX: 7100 Black Standard Splashplate with Driptray, Cuprest and optional legs</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

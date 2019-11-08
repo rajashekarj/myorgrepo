@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Valid_Fill_ins</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Valid Fill</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/setup/ui/recordtypeselect.jsp?ent=01I61000000uTU6&amp;00N6100000BpOX1={!FS_Installation__c.Id}&amp;retURL=%2F{!FS_Installation__c.Id}%3Fnooverride%3D1&amp;save_new_url=%2F{!$ObjectType.FS_Valid_Fill__c}%2Fe%3FCF00N6100000BpOWp%3D1%252F4%2BLB%2BGIANT%2BBURGER%2BEXPRESS%26CF00Ni000000CLN5H_lkid%3D001i000000X0BKF%26retURL%3D%252F{!FS_Installation__c.Id}%253Fnooverride%253D1</url>
+</WebLink>

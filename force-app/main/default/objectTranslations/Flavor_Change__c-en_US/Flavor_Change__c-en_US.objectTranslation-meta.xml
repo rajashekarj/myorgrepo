@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Flavor Change</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Flavor Changes</value>
+    </caseValues>
+    <layouts>
+        <layout>Flavor Change Layout</layout>
+        <sections>
+            <label/>
+            <section>7000 Series Present</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>7000 Series Requests</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>8000 Series Requests</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>9000 Series Requests</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Model(s) Present</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Flavor Change Instructions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flavor Change Layout Admin</layout>
+        <sections>
+            <label/>
+            <section>7000 Series Requests</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>8000 Series Requests</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>9000 Series Requests</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Model(s) Present</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Flavor Change Instructions</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>FC_7000_Series_Brnd_sel_effdt_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FC_7000_Series_Wtr_btn_efdt_Reqrd_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS7000SeriesBrandOptionSelectionManadato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_7000_NewHideShowWaterButtonMandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_7000_Series_Dasani_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_7000_Series_Dasani_eff_Date_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Static_Brand_Vitamin_Water_Pair</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Apply_Flavor_Change_To_Outlets</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Copy_to_Lower_levels_Install</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Copy_to_lower_levels_Acc</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Cancel_Flavour_Change</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Flavor_Change</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Flavor_Change_INS</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Flavor_Change_OD</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Day_AM_or_Night_PM_Installation__c</fullName>
+    <externalId>false</externalId>
+    <label>Day or Night Install?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Day â€“ typically 8am start time</fullName>
+                <default>false</default>
+                <label>Day â€“ typically 8am start time</label>
+            </value>
+            <value>
+                <fullName>Night â€“ typically 10pm start time</fullName>
+                <default>false</default>
+                <label>Night â€“ typically 10pm start time</label>
+            </value>
+            <value>
+                <fullName>Early AM â€“ typically 5am or 6am start time</fullName>
+                <default>false</default>
+                <label>Early AM â€“ typically 5am or 6am start time</label>
+            </value>
+            <value>
+                <fullName>Day</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Day</label>
+            </value>
+            <value>
+                <fullName>Early_AM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Early_AM</label>
+            </value>
+            <value>
+                <fullName>Night</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Night</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

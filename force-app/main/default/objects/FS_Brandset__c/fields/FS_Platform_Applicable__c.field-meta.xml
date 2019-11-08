@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Platform_Applicable__c</fullName>
+    <description>This field will have reference to implement look up filter criteria because of limitation to implement look up filter with multi-select picklist field</description>
+    <externalId>false</externalId>
+    <formula>IF(INCLUDES( FS_Platform__c , &quot;6000&quot;), &quot;6000;&quot;, NULL)  +
+IF(INCLUDES( FS_Platform__c , &quot;6050&quot;), &quot;6050;&quot;, NULL)  +
+IF(INCLUDES( FS_Platform__c , &quot;7000&quot;), &quot;7000;&quot;, NULL)  + 
+IF(INCLUDES( FS_Platform__c , &quot;7100&quot;), &quot;7100;&quot;, NULL)  +
+IF(INCLUDES( FS_Platform__c , &quot;8000&quot;), &quot;8000;&quot;, NULL)  + 
+IF(INCLUDES( FS_Platform__c , &quot;9000&quot;), &quot;9000;&quot;, NULL)  +
+IF(INCLUDES( FS_Platform__c , &quot;9100&quot;), &quot;9100;&quot;, NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Platform Applicable</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LTO_is_mandatory_if_LTO_Date_Selected</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(TEXT( FS_LTO_New__c)),
+!(ISBLANK(FS_LTO_Effective_Date__c)), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_LTO_New__c</errorDisplayField>
+    <errorMessage>Limited Time Offer. is mandatory if we have &#39;Limited Time Offer Effective Date&#39;</errorMessage>
+</ValidationRule>

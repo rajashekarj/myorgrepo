@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Water_Filter__c</fullName>
+    <externalId>false</externalId>
+    <label>Water Filter 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>45863: WF COMPLETE SYSTEM-IC600</fullName>
+                <default>false</default>
+                <label>45863: WF COMPLETE SYSTEM-IC600</label>
+            </value>
+            <value>
+                <fullName>46286: WF Cartridge Single Head</fullName>
+                <default>false</default>
+                <label>46286: WF Cartridge Single Head</label>
+            </value>
+            <value>
+                <fullName>46290: WF 20 inch</fullName>
+                <default>false</default>
+                <label>46290: WF 20 inch</label>
+            </value>
+            <value>
+                <fullName>46381: WF11K16H22W6D-SW260 PLUS</fullName>
+                <default>false</default>
+                <label>46381: WF11K16H22W6D-SW260 PLUS</label>
+            </value>
+            <value>
+                <fullName>46364: WF cartridge &amp; 46248: WF connection kit â€“ 3M</fullName>
+                <default>false</default>
+                <label>46364: WF cartridge &amp; 46248: WF connection kit â€“ 3M</label>
+            </value>
+            <value>
+                <fullName>45625: WF housing, 45270: WF &amp; 45624: Control Feeder - Everpure</fullName>
+                <default>false</default>
+                <label>45625: WF housing, 45270: WF &amp; 45624: Control Feeder - Everpure</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

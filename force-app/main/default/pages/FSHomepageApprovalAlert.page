@@ -1,0 +1,80 @@
+<apex:page controller="FSHomePageAlerts" action="{!tasksList}" lightningStylesheets="true">
+    <apex:actionstatus id="statusPagingAllSec">
+        <apex:facet name="start">
+            <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb; height:100%;opacity:0.5;width:100%;">
+                <div class="waitingHolder" style="top: 50%; width: 91px;">
+                    <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                    <span class="waitingDescription">Loading..........</span>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionstatus>
+    <apex:form >
+        <apex:pageBlock title="{!if($User.UIThemeDisplayed == 'Theme2' || $User.UIThemeDisplayed == 'Theme3','Alerts','')}" id="pbALerts">
+            <apex:pageBlockTable value="{!setlstTask}" var="task">
+                <apex:column headerValue="Related To" >                    
+                    <apex:outputLink value="/{!task.whatid}" rendered="{!if((contains(task.subject,'FC APV STS Updated') || contains(task.subject,'FC SCHDLD date needed') || contains(task.subject,'FC Closeout needed') || contains(task.subject,'FC Readiness needed') || contains(task.subject,'FC Rejected')),true,false)}">
+                        {!task.what.name}
+                    </apex:outputLink>
+                    <apex:outputLink value="/{!task.whatid}" rendered="{!if(task.subject=='IP Ready for Schd',true,false)}">
+                        {!task.what.name}
+                    </apex:outputLink>
+                    <apex:outputLink value="/{!executionMap[task.whatId]}" rendered="{!if(task.subject=='EP APV Requested',true,false)}">
+                        {!executionPlanMap[task.whatId]}
+                    </apex:outputLink>
+                    <apex:outputLink value="/{!cifHeader[task.whatid]}" rendered="{!if(task.subject=='Survey Approved',true,false)}">
+                        {!executionPlanMap[task.whatId]}
+                    </apex:outputLink>
+                    <apex:outputLink value="/{!cifHeader[task.whatid]}" rendered="{!if(task.subject=='Survey Results Back',true,false)}">
+                        {!davacoMap[task.whatId]}
+                    </apex:outputLink>
+                    <apex:outputLink value="/{!task.whatid}" rendered="{!if(task.subject=='EP Created',true,false)}">
+                        {!davacoMap[task.whatId]}
+                    </apex:outputLink>                    
+                </apex:column>
+                
+                <apex:column headerValue="Subject">
+                    <apex:outputLink value="/{!task.Id}" >
+                        {!task.subject}
+                    </apex:outputLink>                    
+                </apex:column> 
+                
+                <apex:column headerValue="Action" >                    
+                    <apex:outputText value="{!task.FS_Action__c}" />
+                </apex:column> 
+                
+                <apex:column headerValue="Created Date" value="{!task.CreatedDate}">
+                    <apex:facet name="header">
+                        <apex:commandLink action="{!sortByCreatedDate}" 
+                                          reRender="pbALerts" status="statusPagingAllSec">Created Date
+                        </apex:commandLink>
+                    </apex:facet>
+                </apex:column>  
+                
+            </apex:pageBlockTable>
+            
+            <div class="paginator">
+                <apex:panelgrid id="gridPaging" columns="3" width="100%" columnclasses="left, center, right">
+                    <apex:panelgroup >
+                        <span class="selectorTarget"><strong>{!LNumberPN}-{!UNumberPN} Total of {!RecordCountPN} records</strong></span>
+                        <span>  </span>                                         
+                    </apex:panelgroup>
+                    
+                    <apex:panelgroup >                        
+                        <apex:commandButton styleClass="slds-button slds-button--brand slds-button--neutral slds-not-selected" value="<<" action="{!firstPN}" disabled="{!!hasFirstPN}" status="statusPagingAllSec"/>
+                        <apex:commandButton value="<" action="{!previousPN}" disabled="{!!hasPreviousPN}" status="statusPagingAllSec"/>
+                        <apex:commandButton value=">" action="{!nextPN}" disabled="{!!hasNextPN}" status="statusPagingAllSec"/>
+                        <apex:commandButton value=">>" action="{!lastPN}" disabled="{!!hasLastPN}" status="statusPagingAllSec"/>
+                    </apex:panelgroup>
+                    
+                    <apex:panelgroup >                        
+                        <span class="selectorTarget"><strong> Page {!PageNumberPN} of {!PageCountPN}</strong></span>
+                    </apex:panelgroup>
+                </apex:panelgrid> 
+            </div>
+            <br/>
+            <br/>
+            <br/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

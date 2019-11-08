@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Migration_Ext_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Field created by H.Whitacre 9/19/13 for Data Migration. This field will be used as a unique external-id while migrating User records. THIS FIELD CAN BE DELETED AFTER GO-LIVE WHENEVER WE ARE FINISHED WITH MIGRATION.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>DATA MIGRATION ONLY! - Unique external id for use while migrating users.</inlineHelpText>
+    <label>Migration Ext ID</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

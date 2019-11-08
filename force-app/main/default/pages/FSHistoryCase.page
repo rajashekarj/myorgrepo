@@ -1,0 +1,32 @@
+<!--*********************************************************************************-->
+<!-- Author       :   Modified by J-F Ille-->
+<!-- Created Date :   June 20,2016-->
+<!--Description   :   Inline Vf page for HIstory Tracking items on Service Escalation Cases-->
+<!--*********************************************************************************-->
+<apex:page standardController="Case" extensions="FSHistoryTracking">
+    <apex:form id="hti">
+        <apex:pageBlock id="pb1">
+        <apex:pageMessages />
+        
+        <apex:pageBlockTable id="pbt1" value="{!HistoryItems}" var="item" rendered="{!HistoryItems.size > 0}">
+             <apex:column headerValue="Date">
+                 <apex:outputField value=" {!item.CreatedDate}" /> 
+                
+              </apex:column>                
+              <apex:column headerValue="User">
+                  <a href="/{!item.CreatedById}" class="actionLink" onclick="redirectToRecord('{!item.CreatedById}' , 'true');return false;">{!item.CreatedBy.Name}</a>
+               </apex:column>
+              <apex:column headerValue="Action" value="{!item.Field__c}"/>
+           
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+    <script>
+            function redirectToRecord(recordId , tempVar){
+            if(tempVar == 'true')
+                window.parent.location.href = '/' + recordId;
+            else
+                window.parent.location.href = '/sfc/#version?selectedDocumentId=' + recordId; 
+            }
+    </script>      
+</apex:page>

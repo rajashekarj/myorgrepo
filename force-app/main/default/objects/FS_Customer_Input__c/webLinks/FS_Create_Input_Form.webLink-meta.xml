@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Create_Input_Form</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>New Customer Input Form</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/apex.js&quot;)}
+
+var res = sforce.apex.execute(&quot;FSHQPageServices&quot;,&quot;createCustomerInput&quot;,
+{hqId:&#39;{!Account.Id}&#39;});
+
+if(res == &#39;success&#39; ){
+  window.location.href = &quot;/apex/FSCustomerInputFieldSelection?id={!Account.Id}&quot;;
+}
+else{
+  alert(res);
+}</url>
+</WebLink>

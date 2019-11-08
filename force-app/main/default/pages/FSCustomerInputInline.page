@@ -1,0 +1,24 @@
+<!--  ************************************************************************************************* 
+Created By   : Vandana Kumari (Appiro JDC)
+Date         : Oct 08th, 2014
+Modified By  : Vandana Kumari 20th October, 2014 Ref - T-326930 :Should not be able to create CIF at the HQ level without entering a Primary contact
+******************************************************************************************************** -->
+
+<apex:page StandardController="Account" extensions="FSCustomeInputInlineController">
+
+    <apex:form >
+    
+        <c:FSCIRelated_List p_objectName="CIF_Header__c"
+          p_fieldsCSV="Name,FS_Status__c,CreatedById,CreatedDate,LastModifiedById,LastModifiedDate"
+          p_pageSize="5" 
+          p_parentFieldId="{!Account.Id}" 
+          p_parentFieldName="FS_HQ__c" 
+          p_orderByFieldName="CreatedDate" 
+          p_sortDirection="desc"
+          p_actionToInvoke="{!createNewCustomerInput}"
+          p_title=" " 
+          p_returnUrl="{!PageUrl}"/>
+          
+      </apex:form>  
+      
+</apex:page>

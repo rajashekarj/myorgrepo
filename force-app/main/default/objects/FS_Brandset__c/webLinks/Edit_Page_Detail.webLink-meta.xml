@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Page_Detail</fullName>
+    <availability>online</availability>
+    <description>To Edit a Brandset</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Edit Page Detail</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{! URLFOR($Action.FS_Brandset__c.Edit,FS_Brandset__c.Id, 
+[retURL=URLFOR($Action.FS_Brandset__c.View,FS_Brandset__c.Id)],true)}</url>
+</WebLink>

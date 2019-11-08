@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Default Brandset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Default Brandsets</value>
+    </caseValues>
+    <layouts>
+        <layout>Assigned Brandsets Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HQ Association Brandset</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information (Do not change)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IP Association Brandset</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OD Association Brandset</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label/>
+        <name>HQ_Association_Brandset</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>IP_Association_Brandset</name>
+    </recordTypes>
+    <recordTypes>
+        <label/>
+        <name>OD_Association_Brandset</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

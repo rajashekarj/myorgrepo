@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outlet_info_Summary_complete_EP_Approval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(FS_Outlet_CS_Status__c &lt;&gt; &#39;Complete&#39;, 
+FS_OB_Info_Status__c &lt;&gt; &#39;Complete&#39;, 
+FS_BrandStatus__c &lt;&gt; &#39;Complete&#39;), AND(ISCHANGED(FS_Execution_Plan_Final_Approval_PM__c),ISPICKVAL(FS_Execution_Plan_Final_Approval_PM__c,&#39;Approved&#39;))) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorDisplayField>FS_Execution_Plan_Final_Approval_PM__c</errorDisplayField>
+    <errorMessage>You cannot approve the EP unless every related section within the Outlet Info Summary shows to be complete by Outlet/Install</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Count_Total_number_of_Dispensaries__c</fullName>
+    <externalId>false</externalId>
+    <label>Count Total number of Dispensers</label>
+    <summaryFilterItems>
+        <field>FS_Outlet_Dispenser__c.FS_IsActive__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>FS_Outlet_Dispenser__c.FS_Outlet__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

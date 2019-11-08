@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Outlet_Field</fullName>
+    <active>true</active>
+    <description>Lock_Outlet_Field</description>
+    <errorConditionFormula>AND(ISCHANGED(FS_Outlet__c),$Profile.Name&lt;&gt;&#39;System Administrator&#39;,$Profile.Name&lt;&gt;&#39;FET System Admin&#39;)&amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorMessage>You do not have sufficient privileges to edit the Outlet against this record.</errorMessage>
+</ValidationRule>

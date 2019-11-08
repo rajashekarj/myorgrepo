@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Is_a_top_mount_ice_maker_planned_Loc__c</fullName>
+    <externalId>false</externalId>
+    <label>top-mount ice-maker planned for location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-None-</fullName>
+                <default>true</default>
+                <label>-None-</label>
+            </value>
+            <value>
+                <fullName>No, manual fill</fullName>
+                <default>false</default>
+                <label>No, manual fill</label>
+            </value>
+            <value>
+                <fullName>Yes, Use existing ice-maker if approved</fullName>
+                <default>false</default>
+                <label>Yes, Use existing ice-maker if approved</label>
+            </value>
+            <value>
+                <fullName>Yes, New ice maker ordered</fullName>
+                <default>false</default>
+                <label>Yes, New ice maker ordered</label>
+            </value>
+            <value>
+                <fullName>Yes, If SA determines adequate ceiling height</fullName>
+                <default>false</default>
+                <label>Yes, If SA determines adequate ceiling height</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

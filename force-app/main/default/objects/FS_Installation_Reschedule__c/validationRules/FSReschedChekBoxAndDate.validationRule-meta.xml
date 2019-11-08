@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSReschedChekBoxAndDate</fullName>
+    <active>true</active>
+    <description>reschedule date can&#39;t be selected the same record where pending reschedule is checked</description>
+    <errorConditionFormula>IF( AND( FS_Pending_for_Reschedule__c , NOT( ISNULL( FS_Reschedule_Install_Date__c ) ) ) , true, false)</errorConditionFormula>
+    <errorMessage>Reschedule date can&#39;t be selected on the same record where pending reschedule is checked</errorMessage>
+</ValidationRule>

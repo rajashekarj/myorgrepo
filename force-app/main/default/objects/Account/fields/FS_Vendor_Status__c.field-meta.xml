@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Vendor_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR (FS_Vendor_Primary_Contact__c = &quot;&quot;,
+ FS_Vendor_Primary_Email__c = &quot;&quot;,
+ FS_Vendor_Primary_Phone__c = &quot;&quot;),&quot;Not Complete&quot;,&quot;Complete&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Vendor Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

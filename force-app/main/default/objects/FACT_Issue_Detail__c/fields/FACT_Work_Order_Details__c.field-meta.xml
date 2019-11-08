@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FACT_Work_Order_Details__c</fullName>
+    <description>Field for storing Work Order Reference Detail value.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Work Order or Project details</inlineHelpText>
+    <label>Work Order Reference Details</label>
+    <length>131072</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dispenser_Model_Details</fullName>
+    <columns>NAME</columns>
+    <columns>Dispenser_Type__c</columns>
+    <columns>IC_Code__c</columns>
+    <columns>IC_Code_Description__c</columns>
+    <columns>Series__c</columns>
+    <columns>Weight__c</columns>
+    <columns>Weight_unit_of_measure__c</columns>
+    <columns>Dimensions__c</columns>
+    <columns>Dimension_unit_of_measure__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>Dispenser Model - Details</label>
+</ListView>

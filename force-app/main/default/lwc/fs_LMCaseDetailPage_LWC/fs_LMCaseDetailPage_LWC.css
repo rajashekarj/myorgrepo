@@ -1,0 +1,25 @@
+.no-outline:focus {
+    outline: none;
+}
+.padding1{
+    padding: 1%;
+}
+.AccountTableHeaders > tbody > tr > th {
+    padding:3% !important;
+}
+.AccountTableRows {
+    padding:3% !important;
+}
+.AccountNote{
+    padding-left: 6.5%;
+    font-weight: bold;
+}
+.toAccountDetailDiv{
+    margin-left: 2%;
+}
+.ToAccountStyle{
+    margin-left: 13%;
+}
+.FromAccountStyle{
+    margin-left: 10%;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Reason_for_Deactivating</fullName>
+    <active>true</active>
+    <description>Please Enter the reason for inactivation as Effective End Date is selected.</description>
+    <errorConditionFormula>AND( NOT( ISNULL( FS_Effective_End_Date__c ) ) , ISBLANK( FS_Reason_for_Deactivating__c ))</errorConditionFormula>
+    <errorDisplayField>FS_Reason_for_Deactivating__c</errorDisplayField>
+    <errorMessage>Please Enter the reason for inactivation as Commercial End Date is selected.</errorMessage>
+</ValidationRule>

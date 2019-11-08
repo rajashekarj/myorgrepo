@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Type_of_Removal__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Removal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OOB</fullName>
+                <default>false</default>
+                <label>OOB</label>
+            </value>
+            <value>
+                <fullName>Partial Removal (not replacing with legacy)</fullName>
+                <default>false</default>
+                <label>Partial Removal (not replacing with legacy)</label>
+            </value>
+            <value>
+                <fullName>Competitive</fullName>
+                <default>false</default>
+                <label>Competitive</label>
+            </value>
+            <value>
+                <fullName>Re-install Legacy</fullName>
+                <default>false</default>
+                <label>Re-install Legacy</label>
+            </value>
+            <value>
+                <fullName>Change of Ownership (New ACN)</fullName>
+                <default>false</default>
+                <label>Change of Ownership (New ACN)</label>
+            </value>
+            <value>
+                <fullName>Store Remodel</fullName>
+                <default>false</default>
+                <label>Store Remodel</label>
+            </value>
+            <value>
+                <fullName>BK ITP Remodel</fullName>
+                <default>false</default>
+                <label>BK ITP Remodel</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

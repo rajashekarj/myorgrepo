@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Static_Brand_Vitamin_Water_Pair</fullName>
+    <active>true</active>
+    <description>throw an error if below combination is not selected 
+1.	Vitamin Water &amp; hi-c 
+2.	Vitamin Water &amp; Raspberry</description>
+    <errorConditionFormula>AND(INCLUDES(FS_7000_Series_Statics_Brands_Selection__c	, &#39;Vitamin Water&#39;),NOT( OR(INCLUDES(FS_7000_Series_Statics_Brands_Selection__c, &#39;Hi-C&#39;) ,INCLUDES(FS_7000_Series_Statics_Brands_Selection__c, &#39;Raspberry&#39;),INCLUDES(FS_7000_Series_Statics_Brands_Selection__c, &#39;Fuze&#39;)))) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorDisplayField>FS_7000_Series_Statics_Brands_Selection__c</errorDisplayField>
+    <errorMessage>Vitamin Water cannot be selected with POWERade.</errorMessage>
+</ValidationRule>

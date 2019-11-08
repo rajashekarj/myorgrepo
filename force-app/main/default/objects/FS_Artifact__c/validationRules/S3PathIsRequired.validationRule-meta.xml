@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>S3PathIsRequired</fullName>
+    <active>true</active>
+    <description>If Artifact Type is &quot;Software&quot; or &quot;Bundle&quot; then S3Path is required</description>
+    <errorConditionFormula>AND( OR(ISPICKVAL( FS_Artifact_Type__c , &quot;Software&quot;) ,ISPICKVAL( FS_Artifact_Type__c , &quot;Bundle&quot;)) ,
+OR(AND(ISBLANK( FS_S3Path__c ),ISBLANK( Settings_Update__c )),AND(NOT(ISBLANK( FS_S3Path__c )),NOT(ISBLANK( Settings_Update__c ))),AND(ISBLANK( FS_S3Path__c ),NOT(ISBLANK( Settings_Update__c)))))</errorConditionFormula>
+    <errorDisplayField>FS_Artifact_Type__c</errorDisplayField>
+    <errorMessage>&quot;S3Path&quot; is required and &quot;Settings Update&quot; should be blank, if Artifact Type is &quot;Software&quot; or &quot;Bundle&quot;</errorMessage>
+</ValidationRule>

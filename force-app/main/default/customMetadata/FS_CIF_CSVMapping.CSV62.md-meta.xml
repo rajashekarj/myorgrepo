@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Field62</label>
+    <protected>false</protected>
+    <values>
+        <field>CSV_Field__c</field>
+        <value xsi:type="xsd:string">What type of ice is used for Manual Fill?</value>
+    </values>
+    <values>
+        <field>Error_Message__c</field>
+        <value xsi:type="xsd:string">Type of ICE is not entered</value>
+    </values>
+    <values>
+        <field>Field_API__c</field>
+        <value xsi:type="xsd:string">FS_Kitchen_Ice_Fill_Requirements__c</value>
+    </values>
+    <values>
+        <field>Mapping_Type__c</field>
+        <value xsi:type="xsd:string">Other</value>
+    </values>
+    <values>
+        <field>Mapping_Validation__c</field>
+        <value xsi:type="xsd:string">Both</value>
+    </values>
+</CustomMetadata>

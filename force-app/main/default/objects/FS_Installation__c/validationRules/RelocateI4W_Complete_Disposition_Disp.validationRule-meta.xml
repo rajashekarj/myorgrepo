@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelocateI4W_Complete_Disposition_Disp</fullName>
+    <active>true</active>
+    <description>validation error message should display when on Relocation ,Post Install Activity checked and Disposition of Dispenser Upon Removal not equal to Dispenser back at location and reconnected value</description>
+    <errorConditionFormula>if(AND( 
+RecordType.Name=$Label.IP_Relocation_I4W_Rec_Type,FS_Activity_Complete__c, 
+OR(TEXT(FS_Disposition_of_Dispenser_Upon_Removal__c)= &quot;&quot;,NOT(TEXT(FS_Disposition_of_Dispenser_Upon_Removal__c)= &quot;Dispenser back at location and reconnected&quot;),FS_Install_Doc__c=&quot;&quot;)),true,false) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorMessage>Please ensure there is an appropriate value against the following fields: â€˜Disposition of Dispenser Upon Removalâ€™ and â€˜Work Order #â€™ in order to move the status to â€˜Completeâ€™.</errorMessage>
+</ValidationRule>

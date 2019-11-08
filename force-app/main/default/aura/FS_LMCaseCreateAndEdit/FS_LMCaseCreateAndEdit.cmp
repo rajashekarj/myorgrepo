@@ -1,0 +1,13 @@
+<aura:component implements="lightning:isUrlAddressable,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride" access="global" >
+	<aura:handler name="init" value="{!this}" action="{!c.init}"/>  
+     <lightning:workspaceAPI aura:id="workspace" />
+    <aura:handler name="change" value="{!v.pageReference}" action="{!c.reInit}" />
+	<aura:attribute type="String" name="recordId"/>
+	 <aura:attribute name="nonLMnavigation" type="Boolean" default="false"/>
+	 <aura:attribute name="opnLmRecordPageForNonConsoleApp" type="Boolean" default="false"/>
+	 <aura:attribute name="lmRecordPageId" type="Integer" />
+    <c:fs_LMCaseCreateAndEdit_LWC  recordId="{!v.recordId}" oncloseTabbb="{!c.closeFocusedTab}"  onsaveforEdit="{!c.closeFocusedTab}" onopenCaseRecordPage="{!c.openLMCaseRecordPage}"/>
+    	<aura:if isTrue="{!v.nonLMnavigation}">
+         <c:fs_CaseRecordNavigation_LWC  openLmRecordPage="{!v.opnLmRecordPageForNonConsoleApp}" caseRecordId="{!v.lmRecordPageId}"/>
+    </aura:if>
+</aura:component>

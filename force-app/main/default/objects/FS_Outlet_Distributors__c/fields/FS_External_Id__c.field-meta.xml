@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_External_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Combination of Outlet ACN, pipe and Distributor ACN
+ACN must be of 10 char (with leading zeros)</description>
+    <externalId>true</externalId>
+    <inlineHelpText>OutletACN|DistributorACN
+ACN size must be 10 with leading Zeros.</inlineHelpText>
+    <label>External Id</label>
+    <length>50</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

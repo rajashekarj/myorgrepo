@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Center_Esca__c</fullName>
+    <externalId>false</externalId>
+    <label>Global Center Escalation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Non Field Repairable</fullName>
+                <default>false</default>
+                <label>Non Field Repairable</label>
+            </value>
+            <value>
+                <fullName>Not Valid Escalation</fullName>
+                <default>false</default>
+                <label>Not Valid Escalation</label>
+            </value>
+            <value>
+                <fullName>Parts Inquiry</fullName>
+                <default>false</default>
+                <label>Parts Inquiry</label>
+            </value>
+            <value>
+                <fullName>Software</fullName>
+                <default>false</default>
+                <label>Software</label>
+            </value>
+            <value>
+                <fullName>Trending Issue</fullName>
+                <default>false</default>
+                <label>Trending Issue</label>
+            </value>
+            <value>
+                <fullName>Quality &amp; Compliance</fullName>
+                <default>false</default>
+                <label>Quality &amp; Compliance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

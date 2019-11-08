@@ -1,0 +1,379 @@
+<apex:page controller="FSFlavorChangeWorkflowController" tabStyle="{!IF(sObjectType<>null,sObjectType,"Account")}" sidebar="false">
+
+ <apex:form id="formId">
+    <style> 
+        .dateFormat{
+                    visibility:hidden;
+        }
+        .pbTitle {
+                    white-space: nowrap
+        }
+        .availableCheckBox{ }
+        .selectedCheckBox{ }
+        
+    </style>
+  
+    <c:FSActionStatusElement ></c:FSActionStatusElement>
+    <apex:actionFunction name="fillDown" action="{!fillDown}" rerender="pbId3,formId" status="fetchStatus">
+        <apex:param name="firstValue" value="" assignTo="{!selectedFillDown}"/>
+    </apex:actionFunction>
+    
+    <apex:pageMessages /> 
+    <apex:pageBlock title="Search Outlets" id="pbId1" rendered="{!!toggleScreen}">
+      <apex:pageMessage summary="<b>Note 1: </b>If you are selecting a large number of outlets, please use the file upload method to avoid a large number of email notifications/ home alerts.<br><br><b>Note 2: </b>Multiple brandsets within one outlet is not commercially approved.<br><br><b>Note 3: </b>Please ensure the order and delivery method are present on each of the outlets selected below, otherwise the flavor change workflow will not work." 
+                            severity="info" strength="3" escape="false" />
+        <!--<apex:pageMessage summary="<b>Note 2: </b>Multiple brandsets within one outlet is not commercially approved." 
+                            severity="info" strength="3" escape="false" />
+        <apex:pageMessage summary="<b>Note 3: </b>Please ensure the order and delivery method are present on each of the outlets selected below, otherwise the flavor change workflow will not work." 
+                          severity="info" strength="3" escape="false" />-->
+                                          
+      <apex:pageblocksection id="searchOutletSection">
+      
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Outlet Name :</apex:outputLabel>
+                <apex:inputText value="{!searchName}" onkeypress="return keyPressCall(event);"></apex:inputText>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Outlet City :</apex:outputLabel>
+                <apex:inputText value="{!searchCity}" onkeypress="return keyPressCall(event);"></apex:inputText>
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Outlet ACN <img src="/s.gif" class="helpIcon" title="{!$ObjectType.Account.fields.Outlet_ACN__c.inlineHelpText}" height="10" width="10" rows="4" cols="50"/> :</apex:outputLabel>
+                <apex:inputTextArea value="{!searchAcn}"></apex:inputTextArea>
+            </apex:pageBlockSectionItem>
+            
+             <apex:pageBlockSectionItem >
+                <apex:outputLabel >Outlet State :</apex:outputLabel>
+                <apex:inputText value="{!searchState}" onkeypress="return keyPressCall(event);"></apex:inputText>
+            </apex:pageBlockSectionItem>
+            
+        </apex:pageblocksection>
+        <apex:pageBlockButtons location="top">
+           <apex:commandButton value="Cancel"  action="{!URLFOR("/"+parentRecordId)}" />
+        </apex:pageBlockButtons>
+      
+        <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="Cancel"  action="{!URLFOR("/"+parentRecordId)}" />
+            <apex:commandButton value="Search" status="fetchStatus" reRender="formId,pbId1" action="{!search}" oncomplete="unCheckAllOrNone('MasterChkBox1');unCheckAllOrNone('MasterChkBox2');"/>
+        </apex:pageBlockButtons>
+        
+    </apex:pageBlock>
+    
+    <apex:pageBlock id="pbId2" rendered="{!!toggleScreen}">
+      <apex:pageblockSection columns="2">
+        <apex:pageBlock title="List of Available Outlets">
+           <apex:commandButton rendered="{!availableOutletsList.size!=0}" status="fetchStatus"  value="Add Outlets" oncomplete="checkIfOutletToAddIsSelected();"/>
+           
+           <apex:outputText rendered="{!availableOutletsList.size=0}"> No Outlet records to display</apex:outputText>
+           <apex:actionRegion > 
+           <apex:pageBlockTable rendered="{!availableOutletsList.size!=0}" width="250%" value="{!availableOutletsList}" var="outletWrp" id="searchOutletTable" columns="6">
+                 <apex:column > 
+                    <apex:facet name="header">
+                       <c:FSCheckAllOrNone pTagId="MasterChkBox1"/> <!--VF Component to select all or no records-->
+                    </apex:facet>     
+                    <apex:inputCheckbox styleClass="availableCheckBox" value="{!outletWrp.selected}" onclick="unCheckAllOrNone('MasterChkBox1')"/>  
+                    
+                 </apex:column>
+                 <apex:column style="width:300px" headervalue="Name" value="{!outletWrp.outletRecord.Name}"/>  
+                 <apex:column style="width:150px" headervalue="Outlet ACN" value="{!outletWrp.outletRecord.FS_ACN__c}"/>  
+                 <apex:column style="width:800px" headervalue="Outlet Address" value="{!outletWrp.outletRecord.shippingstreet}, {!outletWrp.outletRecord.shippingcity}, {!outletWrp.outletRecord.shippingstate}, {!outletWrp.outletRecord.shippingcountry}, {!outletWrp.outletRecord.shippingpostalcode}"/>
+                 <apex:column style="width:150px" headervalue="Order Method" value="{!outletWrp.outletRecord.FS_Final_Order_Method__c}"/> 
+                 <apex:column style="width:150px" headervalue="Delivery Method" value="{!outletWrp.outletRecord.FS_Final_Delivery_Method__c}"/> 
+            </apex:pageBlockTable>
+           
+           <!--Pagination Section Start-->
+                 <apex:panelGrid columns="6" rendered="{!availableOutletsList.size!=0}"> 
+                   Total Records: {!paginatorAvailable.TotalResultsize}
+                   <apex:commandButton status="fetchStatus" reRender="pbId2,searchOutletTable" value="First" action="{!availableFirst}" disabled="{!AvailableDisablePrevious}"  title="First Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/> 
+                   <apex:commandButton status="fetchStatus" reRender="pbId2,searchOutletTable" value="Previous"  action="{!availablePrevious}" disabled="{!AvailableDisablePrevious}"  title="Previous Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/>
+                   <apex:commandButton status="fetchStatus" reRender="pbId2,searchOutletTable" value="Next" action="{!availableNext}" disabled="{!AvailableDisableNext}" title="Next Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/> 
+                   <apex:commandButton status="fetchStatus" reRender="pbId2,searchOutletTable" value="Last"  action="{!availableEnd}" disabled="{!AvailableDisableNext}" title="Last Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/>
+                   <apex:outputText >
+                      Showing Page: {!paginatorAvailable.PageNumber} of {!paginatorAvailable.totalPages} <br></br> 
+                   </apex:outputText>
+                </apex:panelGrid>
+                <!--Pagination Section End-->
+           </apex:actionRegion>      
+                <apex:actionFunction name="addSelectedOutletsMethod" action="{!addOutlets}" status="fetchStatus" reRender="formId" oncomplete="unCheckAllOrNone('MasterChkBox1');unCheckAllOrNone('MasterChkBox2');"/>
+       </apex:pageBlock>
+       
+      <apex:pageBlock title="List of Selected Outlets" id="pbId3">
+         <apex:commandButton rendered="{!selectedOutletsList.size!=0}"  status="fetchStatus"  value="Remove Outlets" oncomplete="checkIfOutletToRemoveIsSelected();"/>
+         
+         <apex:outputText rendered="{!selectedOutletsList.size=0}">No selected Outlet records to display</apex:outputText>
+         
+         <apex:actionRegion > 
+          <apex:pageblockTable rendered="{!selectedOutletsList.size!=0}" value="{!selectedOutletsList}" var="outletWrp" id="selectedOutletTable" columns="6">
+              <apex:column >
+                <apex:facet name="header">
+                    <c:FSCheckAllOrNone pTagId="MasterChkBox2"/>
+                </apex:facet>
+                <apex:inputCheckbox styleClass="selectedCheckBox" value="{!outletWrp.selected}" onclick="unCheckAllOrNone('MasterChkBox2')"/>
+              </apex:column>
+    
+            <apex:column style="width:300px" headerValue="Name" value="{!outletWrp.outletRecord.Name}"/>
+            <apex:column style="width:150px" headerValue="Outlet ACN" value="{!outletWrp.outletRecord.FS_ACN__c}" />
+            <apex:column style="width:800px" headerValue="Outlet Address" value="{!outletWrp.outletRecord.Shippingstreet}, {!outletWrp.outletRecord.Shippingcity}, {!outletWrp.outletRecord.Shippingstate}, {!outletWrp.outletRecord.Shippingcountry}, {!outletWrp.outletRecord.Shippingpostalcode}"/>
+            <apex:column style="width:150px" headervalue="Order Method" value="{!outletWrp.outletRecord.FS_Final_Order_Method__c}"/> 
+            <apex:column style="width:150px" headervalue="Delivery Method" value="{!outletWrp.outletRecord.FS_Final_Delivery_Method__c}"/> 
+          </apex:pageblockTable>
+          <!--Pagination Section Start-->
+             <apex:panelGrid columns="6" rendered="{!selectedOutletsList.size!=0}"> 
+               Total Records: {!paginatorSelected.TotalResultsize}
+               <apex:commandButton status="fetchStatus" reRender="pbId3,selectedOutletTable" value="First" action="{!selectedFirst}" disabled="{!SelectedDisablePrevious}"  title="First Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/> 
+               <apex:commandButton status="fetchStatus" reRender="pbId3,selectedOutletTable" value="Previous"  action="{!selectedPrevious}" disabled="{!SelectedDisablePrevious}"  title="Previous Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/>
+               <apex:commandButton status="fetchStatus" reRender="pbId3,selectedOutletTable" value="Next" action="{!selectedNext}" disabled="{!SelectedDisableNext}" title="Next Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/> 
+               <apex:commandButton status="fetchStatus" reRender="pbId3,selectedOutletTable" value="Last"  action="{!selectedEnd}" disabled="{!SelectedDisableNext}" title="Last Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/>
+               <apex:outputText >
+                  Showing Page: {!paginatorSelected.PageNumber} of {!paginatorSelected.totalPages} <br></br> 
+               </apex:outputText>
+            </apex:panelGrid>
+          <!--Pagination Section End-->
+          </apex:actionRegion>
+          <apex:actionFunction name="removeSelectedOutletsMethod" action="{!removeOutlets}" status="fetchStatus" reRender="formId" oncomplete="unCheckAllOrNone('MasterChkBox1');unCheckAllOrNone('MasterChkBox2');"/>          
+      </apex:pageBlock>
+      
+        
+      </apex:pageblocksection>
+      
+      <apex:pageBlock >
+        <CENTER>
+          <apex:commandButton value="Next Step" reRender="formId" action="{!showBrandsets}" status="fetchStatus"/>  
+        </CENTER>
+      </apex:pageBlock>
+        
+    </apex:pageBlock>
+    
+    <apex:pageblock id="pbId3" rendered="{!toggleScreen}">
+      <apex:pageBlockButtons location="top">
+           <apex:commandButton value="Back" action="{!backToPrevious}"/>
+      </apex:pageBlockButtons>
+                
+      <apex:pageblocksection title="List of Platform and Brandsets" columns="6" id="pbsId" >  
+        <apex:pageBlockTable value="{!newFlavorChangeData}" var="newFCData">
+             <apex:column headerValue="Platform" value="{!newFCData.FS_Platform__c}"/>
+             <apex:column headerValue="Current Brandset #" value="{!newFCData.FS_Current_Brandset_Name_txt__c}"/>
+             <apex:column headerValue=" Current Brandset" >
+                <apex:outputField value="{!newFCData.FS_Current_Brandset__c}"/>
+             </apex:column>
+             <apex:column headerValue="New Brandset" > 
+                <apex:inputField value="{!newFCData.FS_New_Brandset__c}" onchange="brandsetDetails({!newFCData.FS_New_Brandset__c});return false;"/>
+             </apex:column>
+             <apex:column >
+                <apex:facet name="header">
+                    Brandset Effective Date<br/><br/>
+                    <input type="button" value="Copy Down" onclick="fillDown('BrandsetEffectiveDate'); return false;"></input>
+                </apex:facet> 
+                    
+                <apex:actionRegion >    
+                  <apex:inputField value="{!newFCData.FS_BS_Effective_Date__c}"/>
+                </apex:actionRegion>
+                
+             </apex:column>
+            <!--
+             <apex:column > 
+                <apex:facet name="header">
+                    Hide/Show Dasani<br/><br/>
+                    <input type="button" value="Copy Down" onclick="fillDown('Dasani'); return false;"></input>
+                </apex:facet>
+                <apex:actionRegion >   
+                 <apex:inputField value="{!newFCData.FS_Hide_Show_Dasani__c}"/>
+                </apex:actionRegion>
+             </apex:column>
+             
+             <apex:column > 
+               <apex:facet name="header">
+                    Dasani Effective Date<br/><br/>
+                    <input type="button" value="Copy Down" onclick="fillDown('DasaniEffectiveDate'); return false;"></input>
+                </apex:facet> 
+              
+             <apex:actionRegion >    
+                <apex:inputField value="{!newFCData.FS_DA_Effective_Date__c}"/>
+             </apex:actionRegion>   
+             </apex:column>
+           -->
+             <apex:column > 
+                <apex:facet name="header">
+                    Non-Branded Water<br/><br/>
+                    <input type="button" value="Copy Down" onclick="fillDown('WaterButton'); return false;"></input>
+                </apex:facet>
+                <apex:actionRegion >    
+                 <apex:inputField value="{!newFCData.FS_Hide_Show_Water_Button__c}"/>
+                </apex:actionRegion> 
+             </apex:column>
+            
+             <apex:column > 
+             
+             <apex:facet name="header">
+                    Non-Branded Water Effective Date<br/><br/>
+                    <input type="button" value="Copy Down" onclick="fillDown('WaterEffectiveDate'); return false;"></input>
+              </apex:facet> 
+              
+             <apex:actionRegion >   
+                <apex:inputField value="{!newFCData.FS_WA_Effective_Date__c}"/>
+             </apex:actionRegion> 
+               
+             </apex:column>
+            
+             <apex:column > 
+                <apex:facet name="header">
+                    Pungent Change Indicator<br/><br/>
+                    <input type="button" value="Copy Down" onclick="fillDown('PungentIndicator'); return false;"></input>
+                </apex:facet>
+                <apex:actionRegion >  
+                  <apex:inputField value="{!newFCData.FS_Pungent_Change_Indicator__c}"/>
+                </apex:actionRegion> 
+             </apex:column>
+            
+             <apex:column > 
+               <apex:facet name="header">
+                    SP needs to go out?<br/><br/>
+                    <input type="button" value="Copy Down" onclick="fillDown('ServiceProvider'); return false;"></input>
+                </apex:facet>
+                <apex:actionRegion >  
+                 <apex:inputField value="{!newFCData.FS_SP_go_out__c}"/>
+                </apex:actionRegion> 
+             </apex:column>
+            
+             <apex:column > 
+                <apex:facet name="header">
+                  Requested Date 
+                  <img src="/s.gif" class="helpIcon" title="{!$ObjectType.FS_Flavor_Change_Head__c.fields.FS_Requested_Date__c.inlineHelpText}" height="10" width="10" /><br/><br/>
+                  <input type="button" value="Copy Down" onclick="fillDown('RequestedDate'); return false;"></input>
+                </apex:facet>
+                  
+                <apex:actionRegion >  
+                 <apex:inputField value="{!newFCData.FS_Flavor_Change_Requested_Date__c}"/>
+                </apex:actionRegion> 
+                
+             </apex:column>
+           
+            <apex:column headerValue="" style="display:none"> 
+                <apex:inputField value="{!newFCData.FS_Platform__c}" style="display:none"/>
+            </apex:column>
+           
+        </apex:pageBlockTable>
+      </apex:pageblocksection>
+       
+      <CENTER>
+        <apex:pageBlockButtons location="bottom" >
+            <apex:commandButton value="Save" reRender="pbId3,formId" status="fetchStatus" />
+            <apex:commandButton value="Next Step" action="{!saveFlavorChange}" reRender="pbId3,formId" status="fetchStatus"/>
+        </apex:pageBlockButtons>
+      </CENTER>  
+                
+    </apex:pageBlock>
+    
+    <script>
+           
+           <!--Outlet Addition Functions Start------------------------------------------->
+            function checkIfOutletToAddIsSelected() {
+              <!--get all the checkbox reference from list of selected Outlets-->
+              var checker=document.getElementsByClassName('availableCheckBox');
+              <!--Counter to track number of checkbox selected-->
+              var countOfSelectedRecords= 0;
+              for (var i = 0; i < checker.length; i++) {
+                if(checker[i].checked){
+                   countOfSelectedRecords++;
+                }
+              };
+              
+              <!--Criteria when selected or not selected-->
+              if(countOfSelectedRecords==0){
+                alert('In order to utilize the "Add" functionality, you should select some Outlets');
+              }
+              else{
+                 <!--Call action function-->
+                 addSelectedOutletsMethod();
+              }
+            }
+            
+           <!--Outlet Addition Functions End-------------------------------------------> 
+           
+           
+           <!--Outlet Removal Functions Start------------------------------------------->
+            function checkIfOutletToRemoveIsSelected() {
+              <!--get all the checkbox reference from list of selected Outlet-->
+              var checker=document.getElementsByClassName('selectedCheckBox');
+              <!--Counter to track number of checkbox selected-->
+              var countOfSelectedRecords= 0;
+              for (var i = 0; i < checker.length; i++) {
+                if(checker[i].checked){
+                   countOfSelectedRecords++;
+                }
+              };
+              
+              <!--Criteria when selected or not selected-->
+              if(countOfSelectedRecords==0){
+                alert('In order to utilize the "Remove" functionality, you should select some Outlets');
+              }
+              else{
+                 confirmRemoveOutlets();
+              }
+            }
+            
+            function confirmRemoveOutlets() {
+             
+              var proceed=confirm('Are you sure you would like to remove the selected outlet/s?');
+                if(proceed) {
+                   <!--Call action function-->
+                   removeSelectedOutletsMethod();
+                }
+                unCheckAllOrNone('MasterChkBox2');
+            }
+           <!--Outlet Removal Functions End-------------------------------------------> 
+           
+           function unCheckAllOrNone(masterCheckBoxId) {
+              if(masterCheckBoxId=='MasterChkBox1'){
+                 stateOfMasterCheckBox(masterCheckBoxId,'availableCheckBox');
+              }
+              else{
+                 stateOfMasterCheckBox(masterCheckBoxId,'selectedCheckBox');
+              }  
+                
+           }
+            
+            function stateOfMasterCheckBox(masterCheckBoxId,checkBoxType) {
+              // Find parent table
+                var container = document.getElementById(masterCheckBoxId);
+                
+                // Switch all checkboxes
+                var inputs = container.getElementsByTagName("input");
+                for (var i = 0; i < inputs.length; i++) {
+                    var input = inputs.item(i);
+                    var checker=document.getElementsByClassName(checkBoxType);
+                    <!--Counter to track number of checkbox selected-->
+                      var countOfSelectedRecords= 0;
+                      var countOfCheckboxesDisplayed= 0;
+                      for (var i = 0; i < checker.length; i++) {
+                        countOfCheckboxesDisplayed++;
+                        if(checker[i].checked){
+                           countOfSelectedRecords++;
+                        }
+                      };
+                      if(countOfSelectedRecords==countOfCheckboxesDisplayed){
+                        input.checked = true;
+                      }
+                      else{
+                        input.checked = false;
+                      }
+                    
+                }
+            }
+          </script>
+          
+          
+ </apex:form>
+ <!--Javascript to handle onkeypress event for Enter key-->
+    <script type='text/javascript'>
+        function keyPressCall(ev)  {
+            if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+                return false;
+             } else {
+                  return true;
+             }
+         }
+   </script>
+</apex:page>

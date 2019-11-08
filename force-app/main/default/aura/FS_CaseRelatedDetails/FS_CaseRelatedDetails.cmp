@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasSObjectName,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,lightning:actionOverride,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" access="global">
+    <aura:attribute name="recordId" type="Id"/>
+    <!-- invoking fs_CaseRelatedDetailsForCommunities_LWC LWC component for displaying LM Case Record Details in Lightning Communities -->
+  	<c:fs_CaseRelatedDetailsForCommunities_LWC  recordId="{!v.recordId}"/>  
+</aura:component>

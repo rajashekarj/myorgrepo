@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Install_Reconnect_Date_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>If(FS_Relocation_from_old_outlet_to_SP_is__c,FS_Scheduled_Install_Date__c,NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Install/Reconnect Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

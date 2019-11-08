@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Brandset_Number__c</fullName>
+    <description>Brandset number</description>
+    <displayFormat>B-{0000}</displayFormat>
+    <externalId>true</externalId>
+    <label>Brandset#</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

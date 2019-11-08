@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Stores HTTP status code to that are to be retried for Outlet Dispenser callout</description>
+    <enableFeeds>false</enableFeeds>
+    <label>HttpStatusCodes</label>
+    <visibility>Public</visibility>
+</CustomObject>

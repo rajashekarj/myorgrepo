@@ -1,0 +1,26 @@
+<!--*********************************************************************************-->
+<!-- Author       :   Modified by J-F Ille-->
+<!-- Created Date :   January 20,2016-->
+<!--Description   :   Inline Vf page for HIstory Tracking items on SAPInitialOrder-->
+<!--*********************************************************************************-->
+<apex:page ></apex:page>
+<!--<apex:page >
+    <apex:form id="hti">
+        <apex:pageBlock id="pb1">
+        <apex:pageMessages />
+        
+        <apex:pageBlockTable id="pbt1" value="{!HistoryItems}" var="item" rendered="{!HistoryItems.size > 0}">
+             <apex:column headerValue="Date">
+                 <apex:outputField value=" {!item.CreatedDate}" /> 
+                
+              </apex:column>                
+              <apex:column headerValue="User">
+                  <a href="/{!item.CreatedById}" class="actionLink" onclick="redirectToRecord('{!item.CreatedById}' , 'true');return false;">{!item.CreatedBy.Name}</a>
+               </apex:column>
+              <apex:column headerValue="Action" value="{!item.Field__c}"/>
+           
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+        
+</apex:page>-->

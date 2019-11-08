@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_is_required</fullName>
+    <active>true</active>
+    <description>The user should always provide a reason.</description>
+    <errorConditionFormula>ISPICKVAL( FS_Reason_for_Reschedule__c , &#39;&#39;)</errorConditionFormula>
+    <errorDisplayField>FS_Reason_for_Reschedule__c</errorDisplayField>
+    <errorMessage>Reason for Reschedule should be provided to save this record</errorMessage>
+</ValidationRule>

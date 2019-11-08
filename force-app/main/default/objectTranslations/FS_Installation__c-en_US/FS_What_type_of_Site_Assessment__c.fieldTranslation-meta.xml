@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_What_type_of_Site_Assessment__c</name>
+    <picklistValues>
+        <masterLabel>New Construction SA - Proceed w/Scheduling</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SA Not Required - OSM approval required for local market</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Assess + GFE bid proposal (traditional)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Assessment Only (survey only)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

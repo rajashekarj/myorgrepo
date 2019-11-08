@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QTY_PumpKit_VacuumRegulator</fullName>
+    <active>true</active>
+    <description>Validation that will force user to enter a QTY for Vacuum Regulator field if the Vacuum regulator field if populated. The Quantity of Vacuum Regulator should be derived from the Qty of Pump Kit.</description>
+    <errorConditionFormula>IF(OR(ISPICKVAL(FS_Platform_Type__c, &#39;7000&#39;), ISPICKVAL(FS_Platform_Type__c, &#39;7100&#39;)), 
+IF(ISPICKVAL(FS_Vacuum_Regulator__c, &#39;46409 : Regulator Vacuum (Series 7000)&#39;), 
+
+IF(AND( ISBLANK(FS_Vacuum_Regulator_QTY__c) , ISBLANK(FS_Pump_Kit_QTY__c) ), false, 
+
+IF(AND( ISBLANK(FS_Vacuum_Regulator_QTY__c) , NOT(ISBLANK(FS_Pump_Kit_QTY__c))), true, 
+ 
+				IF(FS_Vacuum_Regulator_QTY__c != FS_Pump_Kit_QTY__c, true, false) ) ),false), false)</errorConditionFormula>
+    <errorDisplayField>FS_Vacuum_Regulator_QTY__c</errorDisplayField>
+    <errorMessage>The Quantity of Vacuum Regulator should be same as Quantity of Pump Kit.</errorMessage>
+</ValidationRule>

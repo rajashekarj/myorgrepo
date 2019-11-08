@@ -1,0 +1,58 @@
+<apex:page controller="FSEPSendPMApprovalController">    
+    <apex:form id="form">        
+        <apex:pageMessages ></apex:pageMessages>        
+        <apex:pageBlock title="Send Installation for PM Approval" id="pgBlockInstall">
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockTable value="{!installWrapperList}" var="install">
+                    
+                    <apex:column >
+                        <apex:facet name="header" > 
+                            Select All<br/>
+                            <input class='selectInput' onchange="toggleCheck(this)" type="checkbox" />
+                        </apex:facet>
+                        <apex:inputCheckbox styleClass="{!if(install.installation.FS_Ready_For_PM_Approval__c,'NonSelectInput','selectInput')}" disabled="{!install.installation.FS_Ready_For_PM_Approval__c}" value="{!install.isChecked}"/>
+                    </apex:column>                    
+                    
+                    <apex:column headerValue="Name" >
+                        <apex:outputLink value="/{!install.installation.id}" target="_blank">
+                            <apex:outputField value="{!install.installation.name}"/>
+                        </apex:outputLink>
+                    </apex:column>                    
+                    
+                    <apex:column headerValue="Platform Type/s" value="{!install.installation.Type_of_Dispenser_Platform__c}" /> 				
+                    
+                    <apex:column headerValue="Outlet" value="{!install.installation.FS_Outlet__c}" />                    
+                    
+                    <apex:column headerValue="Ready for PM approval" value="{!install.installation.FS_Ready_For_PM_Approval__c}"/>        
+                    
+                    <apex:column headerValue="Reason for PM Installation Rejection">
+                        <apex:outputField value="{!install.installation.FS_Reason_for_Installation_Rejection__c}" />
+                    </apex:column>
+                    
+                    <apex:column headerValue="Execution Plan Final Approval (PM)" value="{!install.installation.FS_Execution_Plan_Final_Approval_PM__c}"/>
+                </apex:pageBlockTable>          
+            </apex:pageBlockSection>
+            
+            <div align="center">  
+                <apex:outputPanel style="text-align: center">
+                    <apex:commandButton value="Send For PM Approval" action="{!sendForApproval}" disabled="{!conditionCheck}" />
+                    <apex:commandButton value="Cancel" action="{!cancel}" />
+                </apex:outputPanel>
+            </div>
+            
+            <apex:outputPanel rendered="{!conditionCheck}">
+                <apex:outputLabel style="color:red;font-weight:bold;">No Records to display</apex:outputLabel>
+            </apex:outputPanel>
+            
+        </apex:pageBlock>    
+    </apex:form>
+    
+    <script>
+    function toggleCheck(id) {
+        var inputList = document.getElementsByClassName('selectInput');
+        for(var i=0;i<inputList.length;i++)
+            document.getElementsByClassName('selectInput')[i].checked = id.checked;
+    }        
+    </script>
+    
+</apex:page>

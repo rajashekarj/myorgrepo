@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Outlet_Dispensers</fullName>
+    <availability>online</availability>
+    <description>Add Outlet dispenser</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Add Outlet Dispensers</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a1a/e?CF00N3C000000KfLj={!Case.CaseNumber}&amp;CF00N3C000000KfLj_lkid={!Case.Id}&amp;CF00N3C000000KfM8={!Case.Account}&amp;CF00N3C000000KfM8_lkid={!Case.AccountId}&amp;saveURL={!Case.Id}</url>
+</WebLink>

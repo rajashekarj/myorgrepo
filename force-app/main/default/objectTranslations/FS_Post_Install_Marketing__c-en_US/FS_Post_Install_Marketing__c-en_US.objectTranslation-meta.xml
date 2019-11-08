@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Post Install Marketing</value>
+    </caseValues>
+    <layouts>
+        <layout>Post Install Marketing Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Information-DO NOT CHANGE</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Marketing Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>Enable_CE_Effective_Date_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Enable_Consumer_Engagement_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Fav_mix_effective_date_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Favorite_Mix_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>LTO_Date_is_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>LTO_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Promo_Enabled_effective_date_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Promo_Enabled_required</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Cancel_PIM</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Copy_to_Lower_Level</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Copy_to_Lower_levels_Install</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Copy_to_lower_levels_Acc</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Cancel_PostInstal</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Post_Install_Marketing_Acc</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Post_Install_Marketing_Ins</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>New_Post_Install_Marketing_OD</name>
+    </webLinks>
+</CustomObjectTranslation>

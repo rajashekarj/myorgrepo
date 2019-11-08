@@ -1,0 +1,24 @@
+<apex:page standardController="FS_Outlet_Dispenser__c" extensions="FSFlavorChangeOD">
+<apex:form >
+    <apex:pageMessages />
+    <apex:pageBlock >
+     
+        <apex:outputPanel layout="block" style="overflow:auto;width:1000px;height:100px" >
+            <apex:pageBlockTable var="flavorChange" value="{!FlavorChanges}" title="Flavor Changes">
+                <apex:column headerValue="Flavor Change Name">
+                <apex:outputLink value="/{!flavorChange.id}"  target="_parent"> {!flavorChange.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="Brandset Name">
+                <apex:outputLink value="/{!flavorChange.FS_New_Brandset__c}"  target="_parent"> {!flavorChange.FS_New_Brandset__r.name}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="Brandset Number" value="{!flavorChange.FS_New_Brandset__r.FS_Brandset_Number__c}"/>
+                <apex:column headerValue="Effective Date" value="{!flavorChange.FS_BS_Effective_Date__c}"/>
+                <!--<apex:column headerValue="Hide/Show Dasani" value="{!flavorChange.FS_Hide_Show_Dasani__c}"/>-->
+                <!--<apex:column headerValue="Dasani Effective Date" value="{!flavorChange.FS_DA_Effective_Date__c}"/>-->
+                <apex:column headerValue="Non Branded Water" value="{!flavorChange.FS_Hide_Show_Water_Button__c}"/>
+                <apex:column headerValue="Non Branded Water Effective Date" value="{!flavorChange.FS_WA_Effective_Date__c}"/>
+            </apex:pageBlockTable>
+            </apex:outputPanel>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

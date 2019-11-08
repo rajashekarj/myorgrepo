@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fav_mix_effective_date_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(!ISBLANK(TEXT(FS_FAV_MIX__c)),
+(ISBLANK(FS_FAV_MIX_Effective_Date__c))
+)</errorConditionFormula>
+    <errorDisplayField>FS_FAV_MIX_Effective_Date__c</errorDisplayField>
+    <errorMessage>This field is mandatory if &#39;Favorite Mix&#39;  is selected.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_X7000_Series_Dispenser_c__c</name>
+    <picklistValues>
+        <masterLabel>46379: Extended Splashplate - without Legs</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46401: Standard Splashplate with Driptray, Cuprest and optional leg kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46402: SUBWAY Extended Splashplate - without Legs</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46403: SUBWAY Standard Splashplate with Driptray, Cuprest and optional leg kit</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

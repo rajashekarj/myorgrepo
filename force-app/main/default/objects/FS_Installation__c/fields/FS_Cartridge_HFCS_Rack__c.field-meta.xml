@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cartridge_HFCS_Rack__c</fullName>
+    <externalId>false</externalId>
+    <label>Cartridge/HFCS Rack</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46079: Cartridge/HFCS Backroom Rack</fullName>
+                <default>false</default>
+                <label>46079: Cartridge/HFCS Backroom Rack</label>
+            </value>
+            <value>
+                <fullName>46246: Freestyle 41â€� Rack with 2 Flat Pans</fullName>
+                <default>false</default>
+                <label>46246: Freestyle 41â€� Rack with 2 Flat Pans</label>
+            </value>
+            <value>
+                <fullName>46280 : 41â€� Manitowoc Â (Wendy&#39;s Only)</fullName>
+                <default>false</default>
+                <label>46280 : 41â€� Manitowoc Â (Wendy&#39;s Only)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

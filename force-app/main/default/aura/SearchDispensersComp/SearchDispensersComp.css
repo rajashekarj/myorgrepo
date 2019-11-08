@@ -1,0 +1,21 @@
+.THIS .customwidth{
+    width:70% !important;
+}
+.THIS.slds-page-header{
+    background:token(colorBackgroundModalButtonActive);
+}
+.THIS .slds-button{
+    background:token(colorBackgroundShade);
+}
+.THIS .fontsizestyle{
+    font-size:14px;
+}
+
+.THIS .oneHeader .forceHeaderLayout>.bRight{
+    background-color:blue;
+}
+
+.THIS .slds-table_bordered, .THIS .slds-table--bordered{
+	margin:0.5rem;
+	width:96%;
+}

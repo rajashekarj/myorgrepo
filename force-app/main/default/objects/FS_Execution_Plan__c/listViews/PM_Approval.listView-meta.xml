@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PM_Approval</fullName>
+    <columns>FS_Back_up_COM__c</columns>
+    <columns>FS_Ready_for_PM_approval_Checked_Date__c</columns>
+    <columns>FS_Execution_Plan__c</columns>
+    <columns>NAME</columns>
+    <columns>FS_FPS__c</columns>
+    <columns>FS_Chain_Name__c</columns>
+    <columns>FS_Headquarters__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FS_outlets_pending_PM_action__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>FS_Execution_Plan_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled,On-Hold,Complete</value>
+    </filters>
+    <label>Installations Ready for PM Approval</label>
+    <sharedTo>
+        <role>FS_AC</role>
+        <role>FS_Customer_Support</role>
+        <role>FS_PM</role>
+    </sharedTo>
+</ListView>

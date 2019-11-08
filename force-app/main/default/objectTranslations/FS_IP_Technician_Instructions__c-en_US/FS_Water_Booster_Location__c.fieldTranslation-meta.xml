@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Water_Booster_Location__c</name>
+    <picklistValues>
+        <masterLabel>Add Shelf/Mount to Wall</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Explain in Comments)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top of HFCS Rack</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Top of Legacy Syrup Rack</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Underneath Self-Serve Counter</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

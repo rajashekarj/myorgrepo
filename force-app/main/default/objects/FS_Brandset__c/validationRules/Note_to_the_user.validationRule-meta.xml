@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_to_the_user</fullName>
+    <active>true</active>
+    <description>if the user selects a brandset available for selection prior to the brandset being available for commercial use, the system should show a message to the user that the brandset is not commercially available.</description>
+    <errorConditionFormula>FS_Effective_Start_Date__c &lt; FS_Date_Brandset_is_available_for_Select__c</errorConditionFormula>
+    <errorDisplayField>FS_Date_Brandset_is_available_for_Select__c</errorDisplayField>
+    <errorMessage>Date Brandset is available for Selection cannot be after Effective Start Date.</errorMessage>
+</ValidationRule>

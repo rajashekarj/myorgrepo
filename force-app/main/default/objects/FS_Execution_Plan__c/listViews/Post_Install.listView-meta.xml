@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Post_Install</fullName>
+    <columns>FS_Post_Installation_Activity__c</columns>
+    <columns>FS_Updated_Post_Installation_Status__c</columns>
+    <columns>NAME</columns>
+    <columns>FS_Doc__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>FS_Scheduled_Activity_Date__c</columns>
+    <columns>FS_Scheduled_Installation_Time__c</columns>
+    <columns>FS_PIC__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FS_Post_Installation_Activity__c</field>
+        <operation>equals</operation>
+        <value>Removal,Relocation,Replacement</value>
+    </filters>
+    <filters>
+        <field>FS_Updated_Post_Installation_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Cancelled</value>
+    </filters>
+    <label>Post Install Activities</label>
+    <sharedTo>
+        <role>FS_AC</role>
+        <role>FS_Admin_PM</role>
+        <role>FS_PIC</role>
+        <role>FS_PM</role>
+        <role>FS_PM_View_Only</role>
+        <role>FS_Vendor_PIC</role>
+    </sharedTo>
+</ListView>

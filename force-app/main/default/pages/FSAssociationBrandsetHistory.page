@@ -1,0 +1,3 @@
+<apex:page id="pageId" standardController="FS_Association_Brandset__c" sidebar="false" showHeader="false">
+  <apex:relatedList list="Histories" id="historyList"/>
+</apex:page>

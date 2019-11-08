@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OD_Settings_Timestamp__c</fullName>
+    <description>Last Date and Time the OD settings changed for this Dispenser. When OD settings change a call to the Device management System is made.</description>
+    <externalId>false</externalId>
+    <label>OD Settings Timestamp</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

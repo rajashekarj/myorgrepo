@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outlet_Delivery_Days_Validation</fullName>
+    <active>true</active>
+    <description>outlet delivery days field is mandatory</description>
+    <errorConditionFormula>AND(OR($Profile.Name =&quot;FS NDO_P&quot;,CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;)),RecordType.Name = &quot;FS Outlet&quot;, 
+AND(Calculated_Customer_Classification__c=&quot;12&quot;, 
+OR(FS_Outlet_Delivery_Days__c=&quot;&quot;,ISBLANK(FS_Outlet_Delivery_Days__c)) 
+), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Outlet_Delivery_Days__c</errorDisplayField>
+    <errorMessage>&#39;Outlet Delivery Days&#39; is required</errorMessage>
+</ValidationRule>

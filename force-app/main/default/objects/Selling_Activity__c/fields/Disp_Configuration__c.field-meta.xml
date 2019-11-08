@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disp_Configuration__c</fullName>
+    <externalId>false</externalId>
+    <label>Disp. Configuration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Drip Tray/Standard Splash plate/Legs</fullName>
+                <default>false</default>
+                <label>Drip Tray/Standard Splash plate/Legs</label>
+            </value>
+            <value>
+                <fullName>Extended Splash plate no legs</fullName>
+                <default>false</default>
+                <label>Extended Splash plate no legs</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

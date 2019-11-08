@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Status_Closed</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND( RecordType.DeveloperName = &#39;FACT_Connectivity_Solution&#39;, Owner:Queue.QueueName = &#39;Freestyle Agents US&#39;, ISPICKVAL( Status , &#39;Closed&#39;), $Profile.Name = &quot;FS_FACT_BAST_P&quot;),
+AND( RecordType.DeveloperName = &#39;North_American_Case&#39;, Owner:Queue.QueueName = &#39;Freestyle Support&#39;, ISPICKVAL( Status , &#39;Complete&#39;),OR($Profile.Name = &quot;FET SE Dispenser Coordinator Profile&quot;,$Profile.Name = &quot;Service Escalation Agent&quot;,$Profile.Name = &quot;FS SE CPO_P&quot;,$Profile.Name = &quot;FS SE PM (View Only)_P&quot;))
+)</errorConditionFormula>
+    <errorMessage>The case creator cannot re-assign an escalated case. The escalated group must re-assign the case.</errorMessage>
+</ValidationRule>

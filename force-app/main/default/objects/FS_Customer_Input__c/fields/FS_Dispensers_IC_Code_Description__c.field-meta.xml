@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Dispensers_IC_Code_Description__c</fullName>
+    <externalId>false</externalId>
+    <label>Dispensers (IC Code &amp; Description)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>45737-Variety Tea Tower</fullName>
+                <default>false</default>
+                <label>45737-Variety Tea Tower</label>
+            </value>
+            <value>
+                <fullName>45886-Space Saver VTT</fullName>
+                <default>false</default>
+                <label>45886-Space Saver VTT</label>
+            </value>
+            <value>
+                <fullName>42117R-8 vlv Drop-in</fullName>
+                <default>false</default>
+                <label>42117R-8 vlv Drop-in</label>
+            </value>
+            <value>
+                <fullName>45847R-Bevariety dispenser 23x23 &quot;12-pack w/ MVU</fullName>
+                <default>false</default>
+                <label>45847R-Bevariety dispenser 23x23 &quot;12-pack w/ MVU</label>
+            </value>
+            <value>
+                <fullName>46265-Mark IV -BG 10BTN/-8-62036 (10 Button, 6 Carb, 2 Non-Carb, Red, Flow Regulated, 3 Feet)</fullName>
+                <default>false</default>
+                <label>46265-Mark IV -BG 10BTN/-8-62036 (10 Button, 6 Carb, 2 Non-Carb, Red, Flow Regulated, 3 Feet)</label>
+            </value>
+            <value>
+                <fullName>45999-BUNN TB3 Tea Brewer</fullName>
+                <default>false</default>
+                <label>45999-BUNN TB3 Tea Brewer</label>
+            </value>
+            <value>
+                <fullName>45930-BUNN TDO-N-3.5 TEA URN</fullName>
+                <default>false</default>
+                <label>45930-BUNN TDO-N-3.5 TEA URN</label>
+            </value>
+            <value>
+                <fullName>42117-Drop In 23x23 100 lb. bin, 8 LEV SS FLX SS</fullName>
+                <default>false</default>
+                <label>42117-Drop In 23x23 100 lb. bin, 8 LEV SS FLX SS</label>
+            </value>
+            <value>
+                <fullName>41568-Drop In 23x23 100 lb. bin, 8 LEV SS FLX SS â€“ Value Line</fullName>
+                <default>false</default>
+                <label>41568-Drop In 23x23 100 lb. bin, 8 LEV SS FLX SS â€“ Value Line</label>
+            </value>
+            <value>
+                <fullName>43021-Drop In 23x23 100 lb. bin, 8 LEV PC FLX SS</fullName>
+                <default>false</default>
+                <label>43021-Drop In 23x23 100 lb. bin, 8 LEV PC FLX SS</label>
+            </value>
+            <value>
+                <fullName>41580-Drop In 23x23 100 lb. bin, 8 LEV PC FLX SS â€“ Value Line</fullName>
+                <default>false</default>
+                <label>41580-Drop In 23x23 100 lb. bin, 8 LEV PC FLX SS â€“ Value Line</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

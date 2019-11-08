@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidFillMandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK( TEXT(Valid_Fill_Request_Approval_Status__c)),
+!ISBLANK(FS_Valid_Fill_Effective_Date__c))</errorConditionFormula>
+    <errorDisplayField>Valid_Fill_Request_Approval_Status__c</errorDisplayField>
+    <errorMessage>This Field is mandatory if you have &#39;Valid Fill Effective Date&#39;</errorMessage>
+</ValidationRule>

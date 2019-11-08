@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make_Cartridge_Name_NonEditable</fullName>
+    <active>true</active>
+    <description>To Make Cartridge name non- editable for Users other than Cartridge API Users</description>
+    <errorConditionFormula>AND(ISCHANGED(Name),$Profile.Name &lt;&gt;&#39;Cartridge API User&#39;)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Only Cartridge API Users can change the Cartridge Name</errorMessage>
+</ValidationRule>

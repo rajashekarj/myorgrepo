@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Series_Static_Brands_Selections__c</fullName>
+    <description>rename the existing fields like spicy cherry, still and agitaged fields to &quot;Spicy cherry airwatch attribute&quot; and so on
+move these fields to the system info section or in a different section that can be collapsed</description>
+    <externalId>false</externalId>
+    <label>7000 Series Static Brands AW Attribute</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>POWERade</fullName>
+                <default>false</default>
+                <label>POWERade</label>
+            </value>
+            <value>
+                <fullName>Raspberry</fullName>
+                <default>false</default>
+                <label>Raspberry</label>
+            </value>
+            <value>
+                <fullName>Hi-C</fullName>
+                <default>false</default>
+                <label>Hi-C</label>
+            </value>
+            <value>
+                <fullName>Fuze</fullName>
+                <default>false</default>
+                <label>Fuze</label>
+            </value>
+            <value>
+                <fullName>Vitamin Water</fullName>
+                <default>false</default>
+                <label>Vitamin Water</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

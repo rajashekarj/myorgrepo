@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Cannot_Change_Install_Reconnect_Date</fullName>
+    <active>true</active>
+    <description>Validation Rule to restrict user changing Install/Reconnect date on Replacement</description>
+    <errorConditionFormula>IF(NOT(CONTAINS($Profile.Name, $Label.Exclude_User)) &amp;&amp; RecordType.Name=$Label.IP_Relocation_I4W_Rec_Type &amp;&amp; FS_Relocation_from_old_outlet_to_SP_is__c &amp;&amp; !ISBLANK(PRIORVALUE(FS_Install_Reconnect_Date__c)) &amp;&amp; PRIORVALUE(FS_Install_Reconnect_Date__c)!=FS_Install_Reconnect_Date__c,true,false)</errorConditionFormula>
+    <errorDisplayField>FS_Install_Reconnect_Date__c</errorDisplayField>
+    <errorMessage>Please use rescheduled section to change the date</errorMessage>
+</ValidationRule>

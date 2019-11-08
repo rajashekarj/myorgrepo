@@ -1,0 +1,2954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ACCESS_IS_CREATABLE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCESS_IS_CREATABLE</shortDescription>
+        <value>isCreatable</value>
+    </labels>
+    <labels>
+        <fullName>ACCESS_IS_DELETABLE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCESS_IS_DELETABLE</shortDescription>
+        <value>isDeletable</value>
+    </labels>
+    <labels>
+        <fullName>ACCESS_IS_UNDELETABLE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCESS_IS_UNDELETABLE</shortDescription>
+        <value>isUndeletable</value>
+    </labels>
+    <labels>
+        <fullName>ACCESS_IS_UPDATEABLE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCESS_IS_UPDATEABLE</shortDescription>
+        <value>isUpdateable</value>
+    </labels>
+    <labels>
+        <fullName>AW_Support_Mail_ID</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AW Support Mail ID</shortDescription>
+        <value>saikrishnateja.r@infosys.com</value>
+    </labels>
+    <labels>
+        <fullName>Activate_existing_outlet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Activate existing outlet</shortDescription>
+        <value>Outlet dispenser with the same outlet  already exists . Activated the same.</value>
+    </labels>
+    <labels>
+        <fullName>Agitated_Brand_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Agitated Brand 1</shortDescription>
+        <value>Dr Pepper</value>
+    </labels>
+    <labels>
+        <fullName>Agitated_Brand_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Agitated Brand 2</shortDescription>
+        <value>Barqs</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_Delete_Assign</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assigned-Delete-Assign</shortDescription>
+        <value>Currently OD is in Assigned to Outlet Status, So Remove from Outlet will happen first before Assigning to a New Outlet.</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_to_Outlet</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assigned to Outlet</shortDescription>
+        <value>Assigned to Outlet</value>
+    </labels>
+    <labels>
+        <fullName>Assigned_to_new_Outlet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assigned to new Outlet</shortDescription>
+        <value>Outlet Dispenser Assigned to New Outlet</value>
+    </labels>
+    <labels>
+        <fullName>CCNA_Disp_Record_type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CCNA Dispenser Record type</shortDescription>
+        <value>CCNA Dispenser</value>
+    </labels>
+    <labels>
+        <fullName>CHAIN_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CHAIN_RECORD_TYPE</shortDescription>
+        <value>FS Chain</value>
+    </labels>
+    <labels>
+        <fullName>CIF_workbook_upload_error_2</fullName>
+        <categories>CIF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CIF workbook upload error 2</shortDescription>
+        <value>KB.  The max size limit is 470 KB. Please reduce the size of the file</value>
+    </labels>
+    <labels>
+        <fullName>Close</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>CloseTaskError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used when a FACT case with open task is tried to close</shortDescription>
+        <value>All tasks must be closed before closing the case</value>
+    </labels>
+    <labels>
+        <fullName>DeselectAgitated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DeselectAgitated</shortDescription>
+        <value>Please De-Select Agitated Brands</value>
+    </labels>
+    <labels>
+        <fullName>DeselectStatic</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DeselectStatic</shortDescription>
+        <value>Please De-Select Static Brands</value>
+    </labels>
+    <labels>
+        <fullName>Dispenser_has_been_select_for_remove</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dispenser has been select for remove</shortDescription>
+        <value>dispenser has been selected for Removal</value>
+    </labels>
+    <labels>
+        <fullName>Dispenser_with_serial_no</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dispenser with serial no</shortDescription>
+        <value>This dispenser has been confirmed as removed from the assigned outlet.  Please delete the existing enrollment for the dispenser listed in the subject line and confirm when it is complete.Â </value>
+    </labels>
+    <labels>
+        <fullName>EMAIL_TO_JDE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMAIL_TO_JDE</shortDescription>
+        <value>Email Notification To JDE Install Base</value>
+    </labels>
+    <labels>
+        <fullName>EMAIL_TO_RSS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMAIL_TO_RSS</shortDescription>
+        <value>Email Notification To RSS</value>
+    </labels>
+    <labels>
+        <fullName>EP_PlatformType_Sync_Error</fullName>
+        <categories>Execution Plan Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EP_PlatformType_Sync_Error</shortDescription>
+        <value>You must ensure to make the same similar platform changes on the related Installations in order to move the install forward into a scheduled status. You must also ensure that the platform combination adheres to commercial policies. Please check the â€˜Platform change approved?â€™ checkbox to proceed</value>
+    </labels>
+    <labels>
+        <fullName>EmailSubjectForFinance</fullName>
+        <categories>This value is used to check the subject Line for keyword Finance</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailSubjectForFinance</shortDescription>
+        <value>Finance</value>
+    </labels>
+    <labels>
+        <fullName>EmailSubjectForJDE</fullName>
+        <categories>This value is used to check the subject Line for keyword JDE</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EmailSubjectForJDE</shortDescription>
+        <value>JDE</value>
+    </labels>
+    <labels>
+        <fullName>Email_Subject</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Subject</shortDescription>
+        <value>This is an autogenerated mail.</value>
+    </labels>
+    <labels>
+        <fullName>Email_notification_sent_to_AW</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email notification sent to AW</shortDescription>
+        <value>An auto generated email has been sent to Air Watch. You should expect the confirmation from Air Watch after the record has been deleted.</value>
+    </labels>
+    <labels>
+        <fullName>Enrolled_Assign_to_Outlet</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrolled Assign to Outlet</shortDescription>
+        <value>This dispenser is already assigned to an outlet. Please choose Remove from outlet option.</value>
+    </labels>
+    <labels>
+        <fullName>Enrolleed</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrolleed</shortDescription>
+        <value>Enrolled</value>
+    </labels>
+    <labels>
+        <fullName>Exclude_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exclude User</shortDescription>
+        <value>API User,MDM API User</value>
+    </labels>
+    <labels>
+        <fullName>FETCOMPROFILES</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Names of FET COM Profiles</shortDescription>
+        <value>FET System Admin,FS AC_P,FS Admin PM_P,FS PM_P,System Administrator, FS Sales_P,FS COM_P,FS JCOM_P,FS COM w/sales_P,FS Sales Leadership_P,FS SE COM w/sales_P</value>
+    </labels>
+    <labels>
+        <fullName>FETProfiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>List of FET Profiles who can create Dispensers</shortDescription>
+        <value>&#39;FET Dispenser Coorindator Profile&#39;,&#39;FET SE Dispenser Coordinator Profile&#39;,&#39;System Administrator&#39;,&#39;API User&#39;</value>
+    </labels>
+    <labels>
+        <fullName>FET_NMSConnector</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FET NMSConnector</shortDescription>
+        <value>NMSConnector</value>
+    </labels>
+    <labels>
+        <fullName>FOT_APIError_40X</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_APIError_40X</shortDescription>
+        <value>An authorization exception has occurred in the integration layer. Please escalate to the integration support team. Error Code: 40X.</value>
+    </labels>
+    <labels>
+        <fullName>FOT_APIError_500</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_APIError_500</shortDescription>
+        <value>An unspecified integration server error has occurred. Please try again. If the issue persists escalate to the integration support team for assistance. Error Code: 500.</value>
+    </labels>
+    <labels>
+        <fullName>FOT_ArtifactValidation_Url</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT ArtifactValidation Url</shortDescription>
+        <value>https://gqec3qowsk.execute-api.us-east-1.amazonaws.com/prod/dev2-ccfs-firm-A5-artifacts-validate</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Artifact_Deactivation_Warning_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Artifact Deactivation Warning Header</shortDescription>
+        <value>Artifact Deactivation Warning</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Artifact_Deactivation_Warning_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Artifact Deactivation Warning Message</shortDescription>
+        <value>&lt;p&gt;To proceed with artifact deactivation click &lt;b&gt;Continue&lt;/b&gt;  or &lt;b&gt;Cancel&lt;/b&gt;. &lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Artifact_Validation_Success_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Artifact Validation Success Header</shortDescription>
+        <value>Artifact Validation Success</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Authorization_Value</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_Authorization_Value</shortDescription>
+        <value>Basic Z2F0ZVdheToyMDE3Q29jYSU=</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Bundle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Bundle</shortDescription>
+        <value>Bundle</value>
+    </labels>
+    <labels>
+        <fullName>FOT_CreateArtifact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_CreateArtifact</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>FOT_DryRun</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_DryRun</shortDescription>
+        <value>Dry Run</value>
+    </labels>
+    <labels>
+        <fullName>FOT_FDA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT FDA</shortDescription>
+        <value>FDA</value>
+    </labels>
+    <labels>
+        <fullName>FOT_FinalPromote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_FinalPromote</shortDescription>
+        <value>FinalPromote</value>
+    </labels>
+    <labels>
+        <fullName>FOT_MDM_Read_only</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT MDM Read only</shortDescription>
+        <value>MDM Read only</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Operations_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Operations Admin</shortDescription>
+        <value>Ops Admin</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Operations_Analyst</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Operations Analyst</shortDescription>
+        <value>Ops Analyst</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Promote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_Promote</shortDescription>
+        <value>Promote</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Promote_ConError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_Promote_ConError</shortDescription>
+        <value>Multiple simulate or promote requests are in progress, please try after some time.</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Published</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_Published</shortDescription>
+        <value>Published</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Published_Artifact_Delete_Warning_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Published Artifact Delete Warning Message</shortDescription>
+        <value>Published record can&#39;t be deleted...</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Rank_Length_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Rank Length Error</shortDescription>
+        <value>Maximum length of Rank field is 10 digits only...</value>
+    </labels>
+    <labels>
+        <fullName>FOT_RoundingRules</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT RoundingRules</shortDescription>
+        <value>RoundingRules</value>
+    </labels>
+    <labels>
+        <fullName>FOT_RuleSet_Value_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT RuleSet Value Error Message</shortDescription>
+        <value>Please enter a value for Ruleset Type.</value>
+    </labels>
+    <labels>
+        <fullName>FOT_S3_Access_Key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT S3 Access Key</shortDescription>
+        <value>AKIAJR5FDQNKCGQ5IVLA</value>
+    </labels>
+    <labels>
+        <fullName>FOT_S3_Bucket</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT S3 Bucket</shortDescription>
+        <value>ccfs-fleet-managment-dev1</value>
+    </labels>
+    <labels>
+        <fullName>FOT_S3_Bucket_Folder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT S3 Bucket Folder</shortDescription>
+        <value>ArtifactRules</value>
+    </labels>
+    <labels>
+        <fullName>FOT_S3_Bucket_Region</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT S3 Bucket Region</shortDescription>
+        <value>us-east-1</value>
+    </labels>
+    <labels>
+        <fullName>FOT_S3_Secret_Key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT S3 Secret Key</shortDescription>
+        <value>jKCaLbxB8P5rmEc85+KztpMw4AgQcLecCwGk4iIm</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Settings</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Settings</shortDescription>
+        <value>Settings</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Settings_Update_Required_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Settings Update Required Message</shortDescription>
+        <value>Settings Update is required if Artifact Type is Settings.</value>
+    </labels>
+    <labels>
+        <fullName>FOT_SimProInProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_SimProInProgress</shortDescription>
+        <value>In progress</value>
+    </labels>
+    <labels>
+        <fullName>FOT_SimProRequestSentStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_SimProRequestSentStatus</shortDescription>
+        <value>Request sent to Rules Engine</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Simulate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_Simulate</shortDescription>
+        <value>Simulate</value>
+    </labels>
+    <labels>
+        <fullName>FOT_SoftwareInstall</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT SoftwareInstall</shortDescription>
+        <value>Software</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Success_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_Success_Code</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>FOT_System_Administrator</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT System Administrator</shortDescription>
+        <value>System Administrator</value>
+    </labels>
+    <labels>
+        <fullName>FOT_Updated_By</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT Updated By</shortDescription>
+        <value>FOT</value>
+    </labels>
+    <labels>
+        <fullName>FOT_VersionErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT VersionErrorMessage</shortDescription>
+        <value>Please enter only numeric values for version field(s) and ensure that it does not start or end with &#39;.&#39;</value>
+    </labels>
+    <labels>
+        <fullName>FOT_WebCallTimeOut</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FOT_WebCallTimeOut</shortDescription>
+        <value>120000</value>
+    </labels>
+    <labels>
+        <fullName>FSCaseEscalateToSalesSupportCCAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FSCaseEscalateToSalesSupportCCAddress</shortDescription>
+        <value>jeharris@coca-cola.com</value>
+    </labels>
+    <labels>
+        <fullName>FSCaseEscalateToSalesSupportToAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FSCaseEscalateToSalesSupportToAddress</shortDescription>
+        <value>jeharris@coca-cola.com</value>
+    </labels>
+    <labels>
+        <fullName>FS_7000_HFCS_Sweetener_location</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>7000 HFCS/Sweetener location</shortDescription>
+        <value>7000 HFCS/Sweetener location</value>
+    </labels>
+    <labels>
+        <fullName>FS_AB_Add_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AB Add Error</shortDescription>
+        <value>You do not have permission to create a new record</value>
+    </labels>
+    <labels>
+        <fullName>FS_AB_Delete_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AB Delete Error</shortDescription>
+        <value>You do not have permission to delete the record</value>
+    </labels>
+    <labels>
+        <fullName>FS_AB_Edit_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AB Edit Error</shortDescription>
+        <value>You do not have permission to edit the record</value>
+    </labels>
+    <labels>
+        <fullName>FS_AMOA_Naming_Convention</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_AMOA_Naming_Convention</shortDescription>
+        <value>The AMOA attachment naming convention is not correct. Please use this format : &quot;AMOA From &lt;10 digit From ACN&gt; to &lt;10 digit To ACN&gt;&quot;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ancillary_equipment_needed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ancillary equipment needed</shortDescription>
+        <value>Ancillary equipment needed</value>
+    </labels>
+    <labels>
+        <fullName>FS_Assessment_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Assessment_Not_Entered</shortDescription>
+        <value>Site Assessment Requirements are not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Asset_Tracking_Form_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Asset Tracking Form Status</shortDescription>
+        <value>This status is automatically updated. Contact FET System Admin in case of issues</value>
+    </labels>
+    <labels>
+        <fullName>FS_Attach_AMOA_error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Attach_AMOA_error</shortDescription>
+        <value>You can select this option only after you have attached the AMOA form</value>
+    </labels>
+    <labels>
+        <fullName>FS_Bill_To_Phone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Bill_To_Phone</shortDescription>
+        <value>Bill-To Phone</value>
+    </labels>
+    <labels>
+        <fullName>FS_Bill_To_State</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Bill_To_State</shortDescription>
+        <value>Bill-To State</value>
+    </labels>
+    <labels>
+        <fullName>FS_Bill_To_ZIP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Bill_To_ZIP</shortDescription>
+        <value>Bill-To ZIP</value>
+    </labels>
+    <labels>
+        <fullName>FS_Bottler_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bottler Name</shortDescription>
+        <value>Bottler Name</value>
+    </labels>
+    <labels>
+        <fullName>FS_Bottler_State</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bottler State</shortDescription>
+        <value>Bottler State</value>
+    </labels>
+    <labels>
+        <fullName>FS_Brandset_1_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Brandset_1_Not_Entered</shortDescription>
+        <value>Brandset 1 is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_CCASTEmailId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_CCASTEmailId</shortDescription>
+        <value>ccastfreestylesupport@coca-cola.com.invalid</value>
+    </labels>
+    <labels>
+        <fullName>FS_CIF_Summary_Help_Text</fullName>
+        <categories>CIF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CIF Summary Help Text</shortDescription>
+        <value>1. &quot;In-Progress&quot; = any outlet still open not &#39;Cancelled&#39; or &#39;Not Approved&#39; tied to this CIF,  2. 
+&quot;Closed - Cancelled or Not Approved&quot; = all outlets tied to this CIF with a customer disposition of &#39;Cancelled&#39; or &#39;Not Approved&#39;,  3. 
+&quot;Closed - Converted to EP&quot; = one or more outlets that has moved forward to the EP creation process.</value>
+    </labels>
+    <labels>
+        <fullName>FS_CIF_workbook_upload_error</fullName>
+        <categories>CIF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CIF workbook upload error 1</shortDescription>
+        <value>The workbook you are attempting to upload is</value>
+    </labels>
+    <labels>
+        <fullName>FS_Cartridge_Payment_Method</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cartridge Payment Method</shortDescription>
+        <value>Cartridge Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>FS_Case_If_initiated_by_BAST</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Case_If_initiated_by_BAST</shortDescription>
+        <value>You can only edit this field if the case was initiated by the BAST Team.</value>
+    </labels>
+    <labels>
+        <fullName>FS_Case_Inline_Edit_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Inline Edit Message</shortDescription>
+        <value>Note: Please use edit button to make changes to the case. Do not use the Inline edit option/feature.</value>
+    </labels>
+    <labels>
+        <fullName>FS_Case_no_not_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Case_no_not_Valid</shortDescription>
+        <value>The Case# that you provided is not valid. Please correct the Case# and save again</value>
+    </labels>
+    <labels>
+        <fullName>FS_Channel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Channel</shortDescription>
+        <value>Channel</value>
+    </labels>
+    <labels>
+        <fullName>FS_Color_of_9000</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Color of 9000</shortDescription>
+        <value>Color of 9000</value>
+    </labels>
+    <labels>
+        <fullName>FS_Contact_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Contact_Not_Found</shortDescription>
+        <value>Contact not found or incomplete;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Contact_Tool_Tip</fullName>
+        <categories>CIF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS Contact Tool Tip</shortDescription>
+        <value>Please ensure all contacts have phone and email.</value>
+    </labels>
+    <labels>
+        <fullName>FS_Contractor_Coordination_done_by</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contractor Coordination done by</shortDescription>
+        <value>Contractor Coordination done by</value>
+    </labels>
+    <labels>
+        <fullName>FS_Contractor_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Contractor_Not_Entered</shortDescription>
+        <value>Contractor Coordinator done by is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Copy_Down_EPIP_Warning_Profiles_List</fullName>
+        <categories>Execution Plan Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Copy Down EPIP Warning Profiles List</shortDescription>
+        <value>FS COM_P</value>
+    </labels>
+    <labels>
+        <fullName>FS_Copy_Down_Valid_Fill_Profile_List</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Copy Down Valid Fill Profile List</shortDescription>
+        <value>System Administrator , FS_FACT_AMS_P , FS_FACT_BAST_P ,   System Administrator Read Only , FET System Admin , FS PM_P , FS Admin PM_P , FS AC_P</value>
+    </labels>
+    <labels>
+        <fullName>FS_Create_Fact_case_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Fact case alert message</shortDescription>
+        <value>You are not authorized to create a FACT Case</value>
+    </labels>
+    <labels>
+        <fullName>FS_Crew_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Crew_Not_Entered</shortDescription>
+        <value>Crew Serve is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Crew_Serve</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crew Serve</shortDescription>
+        <value>Crew Serve</value>
+    </labels>
+    <labels>
+        <fullName>FS_Customer_s_Ice_Fill_Policy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer\&#39;s Ice Fill Policy</shortDescription>
+        <value>Customer\&#39;s Ice Fill Policy</value>
+    </labels>
+    <labels>
+        <fullName>FS_DRY_ACCOUNT</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DRY ACCOUNT</shortDescription>
+        <value>DRY ACCOUNT</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dasani_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dasani 1</shortDescription>
+        <value>Dasani 1</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dasani_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dasani 2</shortDescription>
+        <value>Dasani 2</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dasani_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dasani 3</shortDescription>
+        <value>Dasani 3</value>
+    </labels>
+    <labels>
+        <fullName>FS_Day</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Day</shortDescription>
+        <value>Day</value>
+    </labels>
+    <labels>
+        <fullName>FS_Day_NIght_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Day_NIght_Not_Entered</shortDescription>
+        <value>Day or Night Install is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Day_typically_8am_start_time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Day â€“ typically 8am start time</shortDescription>
+        <value>Day â€“ typically 8am start time</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dey_Account_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Dey_Account_Not_Entered</shortDescription>
+        <value>DRY ACCOUNT is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_DispenserSection_Empty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_DispenserSection_Empty</shortDescription>
+        <value>This outlet has no dispensers associated with it. Please check that this is the right outlet to initiate a PIA against. If you&#39;re sure this is the right outlet, please contact FET Help to complete this transaction.</value>
+    </labels>
+    <labels>
+        <fullName>FS_DispenserSection_Not_Empty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_DispenserSection_Not_Empty</shortDescription>
+        <value>You must first select the appropriate dispenser/s associated with this transaction before moving forward</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dispenser_comments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Dispenser comments</shortDescription>
+        <value>Dispenser comments</value>
+    </labels>
+    <labels>
+        <fullName>FS_Disposition_of_Current_BIB_Pump</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Disposition of Current BIB Pump</shortDescription>
+        <value>Disposition of Current BIB Pump</value>
+    </labels>
+    <labels>
+        <fullName>FS_Disposition_of_Current_BIB_Rack</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Disposition of Current BIB Rack</shortDescription>
+        <value>Disposition of Current BIB Rack</value>
+    </labels>
+    <labels>
+        <fullName>FS_Disposition_of_current_Fountain_Equipment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Disposition of current Fountain Equipment</shortDescription>
+        <value>Disposition of current Fountain Equipment</value>
+    </labels>
+    <labels>
+        <fullName>FS_DistributorCity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DistributorCity</shortDescription>
+        <value>DistributorCity</value>
+    </labels>
+    <labels>
+        <fullName>FS_Distributor_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Distributor Name</shortDescription>
+        <value>Distributor Name</value>
+    </labels>
+    <labels>
+        <fullName>FS_Distributor_State</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Distributor State</shortDescription>
+        <value>Distributor State</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dristibutor_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Dristibutor_Not_Entered</shortDescription>
+        <value>Distributor Name is not found;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dristributor_City_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Dristributor_City_Not_Entered</shortDescription>
+        <value>DistributorCity is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dristributor_Name_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Dristributor_Name_Not_Entered</shortDescription>
+        <value>Distributor Name is not found;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Dristributor_State_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Dristributor_State_Not_Entered</shortDescription>
+        <value>Distributor State is not found;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Duplicate_AB_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate AB Error</shortDescription>
+        <value>You can default a brandset for a single platform type only once</value>
+    </labels>
+    <labels>
+        <fullName>FS_EMT_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EMT alert message</shortDescription>
+        <value>Case is already assigned to Freestyle Agents US</value>
+    </labels>
+    <labels>
+        <fullName>FS_Early_AM</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Early AM</shortDescription>
+        <value>Early AM</value>
+    </labels>
+    <labels>
+        <fullName>FS_Early_AM_typically_5am_or_6am_start_time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Early AM â€“ typically 5am or 6am start time</shortDescription>
+        <value>Early AM â€“ typically 5am or 6am start time</value>
+    </labels>
+    <labels>
+        <fullName>FS_Equipment_Install</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Equipment Install</shortDescription>
+        <value>Equipment Install</value>
+    </labels>
+    <labels>
+        <fullName>FS_Escalate_to_AMS_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate to AMS alert message</shortDescription>
+        <value>Case is already assigned to JDE AMS</value>
+    </labels>
+    <labels>
+        <fullName>FS_Escalate_to_FACT_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate to FACT alert message</shortDescription>
+        <value>Case is already assigned to CCAST</value>
+    </labels>
+    <labels>
+        <fullName>FS_Escalate_to_Install_base_team_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate to Install base team alert message</shortDescription>
+        <value>Case is already assigned to Install Base Team</value>
+    </labels>
+    <labels>
+        <fullName>FS_Escalate_to_RSS_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate to RSS alert message</shortDescription>
+        <value>Case is already assigned to RSS</value>
+    </labels>
+    <labels>
+        <fullName>FS_Estimated_Gallons</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Estimated Gallons</shortDescription>
+        <value>Estimated Gallons</value>
+    </labels>
+    <labels>
+        <fullName>FS_FTN_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_FTN_Not_Entered</shortDescription>
+        <value>Remove All FTN (Legacy) Serve Dispensers? is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_File_Upload_Error_Under_RO4W</fullName>
+        <categories>Installation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File Upload Error Under RO4W</shortDescription>
+        <value>You are not allowed to upload files to this section</value>
+    </labels>
+    <labels>
+        <fullName>FS_From_Account_mandatory_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>From Account mandatory alert message</shortDescription>
+        <value>Please select a value for the From Account</value>
+    </labels>
+    <labels>
+        <fullName>FS_General_Contractor_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_General_Contractor_Not_Entered</shortDescription>
+        <value>General Contractor is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Geocode_Endpoint_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Geocode Endpoint URL</shortDescription>
+        <value>https://maps.googleapis.com/maps/api/geocode/json?address=</value>
+    </labels>
+    <labels>
+        <fullName>FS_Halo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Halo Burger</shortDescription>
+        <value>Halo Burger</value>
+    </labels>
+    <labels>
+        <fullName>FS_Halo_Burger</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Halo_Burger</shortDescription>
+        <value>Halo Burger â€“ VP of Operations</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Fill_Method</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ice Fill Method</shortDescription>
+        <value>Ice Fill Method</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Maker_Installation_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Ice_Maker_Installation_Not_Entered</shortDescription>
+        <value>ICE maker Installation coordinator is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Maker_Installer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ice Maker Installer</shortDescription>
+        <value>Ice Maker Installer</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Maker_Installer_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Ice_Maker_Installer_Not_Entered</shortDescription>
+        <value>Ice Maker Installer is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Maker_Model</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ice Maker Model</shortDescription>
+        <value>Ice Maker Model</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Maker_Model_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Ice_Maker_Model_Not_Entered</shortDescription>
+        <value>Ice Maker Model is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Maker_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Ice_Maker_Not_Entered</shortDescription>
+        <value>Top Mounted Ice Maker Manufacturer is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_Type_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Ice_Type_Not_Entered</shortDescription>
+        <value>Type of ICE is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ice_maker_and_water_filter_comments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ice maker and water filter comments</shortDescription>
+        <value>Ice maker and water filter comments</value>
+    </labels>
+    <labels>
+        <fullName>FS_Install_Date_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Install_Date_Not_Entered</shortDescription>
+        <value>Install Date is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Install_Reschedule_Create_Access_Profiles</fullName>
+        <categories>Reschedule Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Install Reschedule Create Access Profiles</shortDescription>
+        <value>FET System Admin,FS AC_P,FS Admin PM_P,FS CDM_P,FS CPO_P,FS FPS_P,FS NDO_P,FS PIC_P,FS PM_P,Integration Profile,Premier Support User,System Administrator</value>
+    </labels>
+    <labels>
+        <fullName>FS_Install_Reschedule_Prevention_Error_Message</fullName>
+        <categories>Installation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Install Reschedule Prevention Error Message</shortDescription>
+        <value>This action cannot be performed. Please schedule the record before attempting to reschedule it</value>
+    </labels>
+    <labels>
+        <fullName>FS_Installation_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Installation_Not_Entered</shortDescription>
+        <value>Installation Type is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Installation_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Installation Type</shortDescription>
+        <value>Installation Type</value>
+    </labels>
+    <labels>
+        <fullName>FS_Keyword</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS Keyword</shortDescription>
+        <value>From:</value>
+    </labels>
+    <labels>
+        <fullName>FS_LM_case_detail_page_from_account_note</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LM case detail page from account note</shortDescription>
+        <value>NOTE: Dispenser selection is not required.</value>
+    </labels>
+    <labels>
+        <fullName>FS_LM_case_detail_page_to_account_note</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LM case detail page to account note</shortDescription>
+        <value>NOTE: Dispenser list will auto-populate as dispensers get re-linked.</value>
+    </labels>
+    <labels>
+        <fullName>FS_Line_Installation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Line Installation</shortDescription>
+        <value>Line Installation</value>
+    </labels>
+    <labels>
+        <fullName>FS_Mail_To_City</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Mail_To_City</shortDescription>
+        <value>Mail-To City</value>
+    </labels>
+    <labels>
+        <fullName>FS_Mail_To_State</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Mail_To_State</shortDescription>
+        <value>Mail-To State</value>
+    </labels>
+    <labels>
+        <fullName>FS_Mail_To_Street_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Mail_To_Street_Address</shortDescription>
+        <value>Mail-To Street Address</value>
+    </labels>
+    <labels>
+        <fullName>FS_Mail_To_ZIP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Mail_To_ZIP</shortDescription>
+        <value>Mail-To ZIP</value>
+    </labels>
+    <labels>
+        <fullName>FS_Moe</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Moe</shortDescription>
+        <value>Welcome To Moeâ€™s</value>
+    </labels>
+    <labels>
+        <fullName>FS_Nando</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Nando</shortDescription>
+        <value>Nandoâ€™s</value>
+    </labels>
+    <labels>
+        <fullName>FS_Nando_s</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Nandoâ€™s</shortDescription>
+        <value>Nandoâ€™s</value>
+    </labels>
+    <labels>
+        <fullName>FS_Night</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Night</shortDescription>
+        <value>Night</value>
+    </labels>
+    <labels>
+        <fullName>FS_Night_typically_10pm_start_time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Night â€“ typically 10pm start time</shortDescription>
+        <value>Night â€“ typically 10pm start time</value>
+    </labels>
+    <labels>
+        <fullName>FS_On_Boarding_Days_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_On_Boarding_Days_Not_Entered</shortDescription>
+        <value>On-Boarding - Days after Install is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_On_Boarding_Days_after_Install</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>On-Boarding - Days after Install</shortDescription>
+        <value>On-Boarding - Days after Install</value>
+    </labels>
+    <labels>
+        <fullName>FS_On_Boarding_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_On_Boarding_Not_Entered</shortDescription>
+        <value>On-Boarding Trainer is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_On_Boarding_Trainer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>On-Boarding Trainer</shortDescription>
+        <value>On-Boarding Trainer</value>
+    </labels>
+    <labels>
+        <fullName>FS_OutLet_Open_Time_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_OutLet_Open_Time_Not_Entered</shortDescription>
+        <value>Outlet Open Time is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Outlet_Active</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Outlet_Active</shortDescription>
+        <value>This Outlet has an Active IP/ CIF and cannot be selected</value>
+    </labels>
+    <labels>
+        <fullName>FS_Outlet_Contact_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Outlet_Contact_Name</shortDescription>
+        <value>Outlet Contact Name</value>
+    </labels>
+    <labels>
+        <fullName>FS_Outlet_Dispenser_trigger_IsActive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Outlet Dispenser trigger IsActive</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>FS_Outlet_Null</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Outlet_Null</shortDescription>
+        <value>The outlet was not found or is not available for use</value>
+    </labels>
+    <labels>
+        <fullName>FS_Outlet_Open_Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Outlet Open Time</shortDescription>
+        <value>Outlet Open Time</value>
+    </labels>
+    <labels>
+        <fullName>FS_Outlet_Phone_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Outlet_Phone_Number</shortDescription>
+        <value>Outlet Phone Number</value>
+    </labels>
+    <labels>
+        <fullName>FS_Ownership_of_current_Fountain_Equipment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ownership of current Fountain Equipment</shortDescription>
+        <value>Ownership of current Fountain Equipment</value>
+    </labels>
+    <labels>
+        <fullName>FS_Payment_Term_Help_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Term Help Text</shortDescription>
+        <value>â€œ&quot;Payment Term&quot; Invoicing requires Finance Approval from S. Curtis Marshall &amp; Mark Westenfelder.
+
+Warning: When Payment Term eligibility is changed from â€œYesâ€� to â€œNoâ€�, existing â€œPayment Termâ€� methods will need to be updated.â€�</value>
+    </labels>
+    <labels>
+        <fullName>FS_Pepper_Mix</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pepper Mix</shortDescription>
+        <value>Pepper Mix</value>
+    </labels>
+    <labels>
+        <fullName>FS_Pepper_Not_Found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Pepper_Not_Found</shortDescription>
+        <value>Pepper Mix is not found;</value>
+    </labels>
+    <labels>
+        <fullName>FS_PerformSearch_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_PerformSearch_Limit</shortDescription>
+        <value>limit 25</value>
+    </labels>
+    <labels>
+        <fullName>FS_Periods_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Periods_Not_Entered</shortDescription>
+        <value>Installation Period is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_PlatForm_Type_Mismatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Platform_Mismatch</shortDescription>
+        <value>The selected dispenser/s does not match the platform type indicated in the PIA record, please select the correct dispenser/s</value>
+    </labels>
+    <labels>
+        <fullName>FS_Please_list_any_ancillary_equipment_to_remain_on_site</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please list any ancillary equipment to remain on-site</shortDescription>
+        <value>Please list any ancillary equipment to remain on-site</value>
+    </labels>
+    <labels>
+        <fullName>FS_Portion_Control_Setting</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Portion Control Setting</shortDescription>
+        <value>Portion Control Setting</value>
+    </labels>
+    <labels>
+        <fullName>FS_Product_Billing_Set_Up</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Billing Set Up</shortDescription>
+        <value>Product Billing Set Up</value>
+    </labels>
+    <labels>
+        <fullName>FS_Product_Comments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Comments</shortDescription>
+        <value>Product Comments</value>
+    </labels>
+    <labels>
+        <fullName>FS_Program_Fee_Payment_Method</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Program Fee Payment Method</shortDescription>
+        <value>Program Fee Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>FS_Projected_Fire_Up</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Projected Fire-Up</shortDescription>
+        <value>Projected Fire-Up</value>
+    </labels>
+    <labels>
+        <fullName>FS_Projected_Opening</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Projected Opening</shortDescription>
+        <value>Projected Opening</value>
+    </labels>
+    <labels>
+        <fullName>FS_Quantity_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Quantity_Not_Entered</shortDescription>
+        <value>No dispenser platform and corresponding Quantity is entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Reminder_Message_COM_EQP_TI_Copy_Down</fullName>
+        <categories>Execution Plan</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reminder Message COM EQP_TI Copy Down</shortDescription>
+        <value>Any changes to the equipment package and technician instructions that you are cascading to the installations will only be copied to those outlets/ installations that have not yet been approved by a PM. If you require a change to an equipment package or technician instructions on an installation that has already been approved, please contact your PM</value>
+    </labels>
+    <labels>
+        <fullName>FS_Reminder_Message_Com_for_Copy_Down</fullName>
+        <categories>Executionn Plan Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reminder Message Com for Copy Down</shortDescription>
+        <value>Reminder: You canâ€™t copy account team info to an installation record if the Project Manager has provided PM Approval for that record. If you require a change to an installation record please contact your PM.</value>
+    </labels>
+    <labels>
+        <fullName>FS_Reminder_message_on_SP_Planner_for_New_Install</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS Reminder message on SP Planner for New Install</shortDescription>
+        <value>Reminder: Please remember to enroll the dispenser after installation</value>
+    </labels>
+    <labels>
+        <fullName>FS_Reminder_message_on_SP_Planner_for_PIA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS Reminder message on SP Planner for PIA</shortDescription>
+        <value>Reminder: Please remember to un-enroll the dispenser before removing it</value>
+    </labels>
+    <labels>
+        <fullName>FS_Remove_All_FTN_Legacy_Serve_Dispensers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove All FTN (Legacy) Serve Dispensers?</shortDescription>
+        <value>Remove All FTN (Legacy) Serve Dispensers?</value>
+    </labels>
+    <labels>
+        <fullName>FS_Request_Cartridge_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Request_Cartridge_Not_Entered</shortDescription>
+        <value>Requested Cartridge Order Method is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Requested_Cartridge_Order_Method</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Requested Cartridge Order Method</shortDescription>
+        <value>Requested Cartridge Order Method</value>
+    </labels>
+    <labels>
+        <fullName>FS_Requested_training_start_time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Requested training start time</shortDescription>
+        <value>Requested training start time</value>
+    </labels>
+    <labels>
+        <fullName>FS_Selling_Acitvitys_Account_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS Selling Acitvitys Account ID</shortDescription>
+        <value>CF00N6100000BpOXO_lkid</value>
+    </labels>
+    <labels>
+        <fullName>FS_Shakey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Shakey</shortDescription>
+        <value>Shakeyâ€™s Brea</value>
+    </labels>
+    <labels>
+        <fullName>FS_Shakey_s_Brea</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Shakeyâ€™s Brea</shortDescription>
+        <value>Shakeyâ€™s Brea</value>
+    </labels>
+    <labels>
+        <fullName>FS_Site_Assessment_Requirements</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Site Assessment Requirements</shortDescription>
+        <value>Site Assessment Requirements</value>
+    </labels>
+    <labels>
+        <fullName>FS_Stampede</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Stampede</shortDescription>
+        <value>Stampede Management Howard Oâ€™Brien</value>
+    </labels>
+    <labels>
+        <fullName>FS_Stampede_Management_Howard_O_Brien</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Stampede Management Howard Oâ€™Brien</shortDescription>
+        <value>Stampede Management Howard Oâ€™Brien</value>
+    </labels>
+    <labels>
+        <fullName>FS_System_Profile_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS System Admin Profile Id</shortDescription>
+        <value>00e61000000zfrH</value>
+    </labels>
+    <labels>
+        <fullName>FS_The_Wendy_s_Company</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The Wendyâ€™s Company</shortDescription>
+        <value>The Wendyâ€™s Company</value>
+    </labels>
+    <labels>
+        <fullName>FS_Time_to_call_home</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Time to call home</shortDescription>
+        <value>Time to call home</value>
+    </labels>
+    <labels>
+        <fullName>FS_Top_Mounted_Ice_Maker_Manufacturer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Top Mounted Ice Maker Manufacturer</shortDescription>
+        <value>Top Mounted Ice Maker Manufacturer</value>
+    </labels>
+    <labels>
+        <fullName>FS_Top_Mounted_Ice_Makers_7000</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription># Top-Mounted Ice Makers (7000)</shortDescription>
+        <value># Top-Mounted Ice Makers (7000)</value>
+    </labels>
+    <labels>
+        <fullName>FS_Top_Mounted_Ice_Makers_9000</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription># Top-Mounted Ice Makers (9000)</shortDescription>
+        <value># Top-Mounted Ice Makers (9000)</value>
+    </labels>
+    <labels>
+        <fullName>FS_Top_Off_Feature</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Top-Off Feature</shortDescription>
+        <value>Top-Off Feature</value>
+    </labels>
+    <labels>
+        <fullName>FS_Training_Comments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Training Comments</shortDescription>
+        <value>Training Comments</value>
+    </labels>
+    <labels>
+        <fullName>FS_Training_Start_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Training_Start_Not_Entered</shortDescription>
+        <value>Requested training start time is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_ValidFill_Option</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ValidFill Option</shortDescription>
+        <value>ValidFill Option</value>
+    </labels>
+    <labels>
+        <fullName>FS_Warning_message_validfill_copydown</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Warning message validfill copydown</shortDescription>
+        <value>You do not have permission to perform this action. Please contact your Project Manager or Account Coordinator for assistance</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Button_Option_9000</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Water Button Option 9000</shortDescription>
+        <value>Water Button Option 9000</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Filter_Installer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Water Filter Installer</shortDescription>
+        <value>Water Filter Installer</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Filter_Manufacturer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Water Filter Manufacturer</shortDescription>
+        <value>Water Filter Manufacturer</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Filter_Model</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Water Filter Model #</shortDescription>
+        <value>Water Filter Model #</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Filter_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Water_Filter_Not_Entered</shortDescription>
+        <value>Is an approved Water Filter installed? is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Installer_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Water_Installer_Not_Entered</shortDescription>
+        <value>Water Filter Installer is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Manufacture_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Water_Manufacture_Not_Entered</shortDescription>
+        <value>Water Filter Manufacturer is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Water_Model_Not_Entered</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Water_Model_Not_Entered</shortDescription>
+        <value>Water Filter Model # is not entered;</value>
+    </labels>
+    <labels>
+        <fullName>FS_Week_of</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Week of</shortDescription>
+        <value>Week of</value>
+    </labels>
+    <labels>
+        <fullName>FS_Week_of_dot</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Week of...</shortDescription>
+        <value>Week of...</value>
+    </labels>
+    <labels>
+        <fullName>FS_Welcome_To_Moe_s</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Welcome To Moeâ€™s</shortDescription>
+        <value>Welcome To Moeâ€™s</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy</shortDescription>
+        <value>Wendyâ€™s</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_Blane</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy_Blane</shortDescription>
+        <value>Wendyâ€™s-Blane Barnes</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_Bowling</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy_Bowling</shortDescription>
+        <value>Wendyâ€™s of Bowling Green-Jim Holleman</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_Company</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy_Company</shortDescription>
+        <value>The Wendyâ€™s Company</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_Food</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy_Food</shortDescription>
+        <value>Wendyâ€™s Food Systems Inc.</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_Harrell</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy_Harrell</shortDescription>
+        <value>Wendyâ€™s Harrell Queen</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_International</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy_International</shortDescription>
+        <value>Wendyâ€™s International</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_Tommy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FS_Wendy_Tommy</shortDescription>
+        <value>Wendyâ€™s International-Tommy Morgan</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s</shortDescription>
+        <value>Wendyâ€™s</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s_Blane_Barnes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s-Blane Barnes</shortDescription>
+        <value>Wendyâ€™s-Blane Barnes</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s_Food_Systems_Inc</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s Food Systems Inc.</shortDescription>
+        <value>Wendyâ€™s Food Systems Inc.</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s_Harrell_Queen</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s Harrell Queen</shortDescription>
+        <value>Wendyâ€™s Harrell Queen</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s_International</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s International</shortDescription>
+        <value>Wendyâ€™s International</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s_International_Gary_Bogo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s International Gary Bogo</shortDescription>
+        <value>Wendyâ€™s International Gary Bogo</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s_International_Tommy_Morgan</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s International-Tommy Morgan</shortDescription>
+        <value>Wendyâ€™s International-Tommy Morgan</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wendy_s_of_Bowling_Green_Jim_Holleman</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wendyâ€™s of Bowling Green-Jim Holleman</shortDescription>
+        <value>Wendyâ€™s of Bowling Green-Jim Holleman</value>
+    </labels>
+    <labels>
+        <fullName>FS_What_type_of_ice_is_used_for_Manual_Fill</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>What type of ice is used for Manual Fill?</shortDescription>
+        <value>What type of ice is used for Manual Fill?</value>
+    </labels>
+    <labels>
+        <fullName>FS_Who_will_coordinate_Ice_Maker_install</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Who will coordinate Ice Maker install?</shortDescription>
+        <value>Who will coordinate Ice Maker install?</value>
+    </labels>
+    <labels>
+        <fullName>FS_Who_will_provide_ice_maker</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Who will provide ice maker</shortDescription>
+        <value>Who will provide ice maker</value>
+    </labels>
+    <labels>
+        <fullName>FS_Wired_Solutions_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wired Solutions Required</shortDescription>
+        <value>Wired Solutions Required</value>
+    </labels>
+    <labels>
+        <fullName>FS_Yes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>FS_Yes_approved_water_filter_is_installed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yes â€“ approved water filter is installed</shortDescription>
+        <value>Yes â€“ approved water filter is installed</value>
+    </labels>
+    <labels>
+        <fullName>FS_case_account_error_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case account error alert message</shortDescription>
+        <value>From Account and To Account must not be the same</value>
+    </labels>
+    <labels>
+        <fullName>FS_case_escalation_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case escalation alert message</shortDescription>
+        <value>Cases can be escalated only once.</value>
+    </labels>
+    <labels>
+        <fullName>FS_case_sub_status_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case sub status alert message</shortDescription>
+        <value>Please select a valid Sub-status for the selected Case type</value>
+    </labels>
+    <labels>
+        <fullName>FS_closed_case_cannot_be_escalated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Closed case cannot be escalated</shortDescription>
+        <value>A closed case cannot be escalated</value>
+    </labels>
+    <labels>
+        <fullName>FS_cup_name_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cup name 1</shortDescription>
+        <value>cup name 1</value>
+    </labels>
+    <labels>
+        <fullName>FS_cup_name_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cup name 2</shortDescription>
+        <value>cup name 2</value>
+    </labels>
+    <labels>
+        <fullName>FS_cup_name_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cup name 3</shortDescription>
+        <value>cup name 3</value>
+    </labels>
+    <labels>
+        <fullName>FS_cup_name_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cup name 4</shortDescription>
+        <value>cup name 4</value>
+    </labels>
+    <labels>
+        <fullName>FS_cup_name_5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cup name 5</shortDescription>
+        <value>cup name 5</value>
+    </labels>
+    <labels>
+        <fullName>FS_cup_name_6</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cup name 6</shortDescription>
+        <value>cup name 6</value>
+    </labels>
+    <labels>
+        <fullName>FS_escalate_to_GC_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate to GC alert message</shortDescription>
+        <value>Global Center Escalation Reason field is mandatory to escalate.</value>
+    </labels>
+    <labels>
+        <fullName>FS_escalate_to_sales_support_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Escalate to sales support alert message</shortDescription>
+        <value>You should select both the To and From ACNs in order to click this button</value>
+    </labels>
+    <labels>
+        <fullName>FS_fl_oz_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fl oz 1</shortDescription>
+        <value>fl oz 1</value>
+    </labels>
+    <labels>
+        <fullName>FS_fl_oz_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fl oz 2</shortDescription>
+        <value>fl oz 2</value>
+    </labels>
+    <labels>
+        <fullName>FS_fl_oz_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fl oz 3</shortDescription>
+        <value>fl oz 3</value>
+    </labels>
+    <labels>
+        <fullName>FS_fl_oz_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fl oz 4</shortDescription>
+        <value>fl oz 4</value>
+    </labels>
+    <labels>
+        <fullName>FS_fl_oz_5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fl oz 5</shortDescription>
+        <value>fl oz 5</value>
+    </labels>
+    <labels>
+        <fullName>FS_fl_oz_6</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fl oz 6</shortDescription>
+        <value>fl oz 6</value>
+    </labels>
+    <labels>
+        <fullName>FS_insufficient_access_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Insufficient access alert message</shortDescription>
+        <value>insufficient access rights on object id</value>
+    </labels>
+    <labels>
+        <fullName>FS_select_atleast_one_dispenser_alert_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select atleast one dispenser alert message</shortDescription>
+        <value>Please select atleast one dispenser.</value>
+    </labels>
+    <labels>
+        <fullName>FS_size_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>size 1</shortDescription>
+        <value>size 1</value>
+    </labels>
+    <labels>
+        <fullName>FS_size_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>size 2</shortDescription>
+        <value>size 2</value>
+    </labels>
+    <labels>
+        <fullName>FS_size_3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>size 3</shortDescription>
+        <value>size 3</value>
+    </labels>
+    <labels>
+        <fullName>FS_size_4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>size 4</shortDescription>
+        <value>size 4</value>
+    </labels>
+    <labels>
+        <fullName>FS_size_5</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>size 5</shortDescription>
+        <value>size 5</value>
+    </labels>
+    <labels>
+        <fullName>FS_size_6</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>size 6</shortDescription>
+        <value>size 6</value>
+    </labels>
+    <labels>
+        <fullName>Flavor_Change_File_Upload_Warning</fullName>
+        <categories>Flavor Change header</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Flavor Change File Upload Warning</shortDescription>
+        <value>The file upload functionality cannot be accessed by your Profile</value>
+    </labels>
+    <labels>
+        <fullName>FlavourChangeERRMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FlavourChangeERRMessage</shortDescription>
+        <value>Once the Outlet Dispenser record is linked with Installation, you must follow the Post Install Flavor Change Process</value>
+    </labels>
+    <labels>
+        <fullName>ForbiddenFiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ForbiddenFiles</shortDescription>
+        <value>EXE,MSI,JAR,TAR</value>
+    </labels>
+    <labels>
+        <fullName>GeoCodeAPIKey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GeoCodeAPIKey</shortDescription>
+        <value>AIzaSyDJHuKdpy4jyDFt8yJP-riUNjo3wXlwZd0</value>
+    </labels>
+    <labels>
+        <fullName>Google_Geocode_api_key_value</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Google Geocode api key value</shortDescription>
+        <value>AIzaSyClDGVxZOaRLbYxwhg3AnC3OxYZU7tBKkY</value>
+    </labels>
+    <labels>
+        <fullName>HQ_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HQ_RECORD_TYPE</shortDescription>
+        <value>FS Headquarters</value>
+    </labels>
+    <labels>
+        <fullName>INCLUDE_INACTIVE_DISPENSERS_FOR_NMS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INCLUDE INACTIVE DISPENSERS FOR NMS</shortDescription>
+        <value>FALSE</value>
+    </labels>
+    <labels>
+        <fullName>INTERNATIONAL_OUTLET_RECORD_TYPE</fullName>
+        <categories>FET</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INTERNATIONAL OUTLET RECORD TYPE</shortDescription>
+        <value>BoE Outlet</value>
+    </labels>
+    <labels>
+        <fullName>INT_OD_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INTERNATIONAL OUTLET DISPENSER RECORD TYPE</shortDescription>
+        <value>BoE Dispenser</value>
+    </labels>
+    <labels>
+        <fullName>IP_Brandset_Commercial_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Brandset_Commercial_Error</shortDescription>
+        <value>Please be aware that the brandset commercial approval date is later than the scheduled date provided. Please change the date or check the &#39;Ignore brandset commercial approval date&#39; to proceed</value>
+    </labels>
+    <labels>
+        <fullName>IP_Disp_Sec_Alest1_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Disp_Sec_Alest1_Error</shortDescription>
+        <value>An appropriate dispenser serial number/s within the dispenser information section must be selected. The dispensers selected must match the dispenser platform value/s within the Dispenser Platform Type/s field in order to move the status forward.</value>
+    </labels>
+    <labels>
+        <fullName>IP_Disp_Sec_Cancel_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Disp_Sec_Cancel_Error</shortDescription>
+        <value>You must deselect all dispensers within the dispenser information section in order to cancel this transaction and make those dispensers available again</value>
+    </labels>
+    <labels>
+        <fullName>IP_EP_Inline_Platform_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_EP_Inline_Platform_Error</shortDescription>
+        <value>You must ensure the Platforms match between EP and IP</value>
+    </labels>
+    <labels>
+        <fullName>IP_Excluding_Status</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Excluding_Status</shortDescription>
+        <value>Cancelled, Complete</value>
+    </labels>
+    <labels>
+        <fullName>IP_I4W_Reconnect_b4_Disconnect</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP I4W Reconnect b4 Disconnect</shortDescription>
+        <value>The Initially Install/Reconnect Date cannot be earlier than the last Remove/Disconnect scheduled date provided. You must provide a new Rescheduled Date Greater than the current scheduled date or create a Pending Rescheduled record for this transaction</value>
+    </labels>
+    <labels>
+        <fullName>IP_I4W_Reschedule_Error</fullName>
+        <categories>Install Reschedule Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP I4W Reschedule Error</shortDescription>
+        <value>You cannot provide Reschedule date or Pending Reschedule once a Install/Reconnect Complete check box is checked. Please uncheck the Install/Reconnect Complete check box to proceed</value>
+    </labels>
+    <labels>
+        <fullName>IP_Inline_Brandset_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Inline_Brandset_Error</shortDescription>
+        <value>You must ensure that a Brandset and a NonBranded Water disposition is provided (within the Selected Brandsets related list section) when a new platform has been introduced or switched out for another</value>
+    </labels>
+    <labels>
+        <fullName>IP_New_Install_Rec_Type</fullName>
+        <categories>Installation Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_New_Install_Rec_Type</shortDescription>
+        <value>New Install</value>
+    </labels>
+    <labels>
+        <fullName>IP_No_Dispenser_Remove_Disconnect</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_No_Dispenser_Remove_Disconnect</shortDescription>
+        <value>This reflects the quantity of selected dispensers we plan to execute this transaction against</value>
+    </labels>
+    <labels>
+        <fullName>IP_PIA_Brandset_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_PIA_Brandset_Error</shortDescription>
+        <value>You must ensure that a Brandset and a NonBranded Water disposition is provided against the OD Record you have selected in order to fulfill the mandatory field requirement within the brandset related list section.</value>
+    </labels>
+    <labels>
+        <fullName>IP_PlatformType_Sync_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_PlatformType_Sync_Error</shortDescription>
+        <value>You must ensure to make the same similar platform changes on the related EP in order to move the install forward into a scheduled status. You must also ensure that the platform combination adheres to commercial policies.Please check the â€˜Platform change approved?â€™ checkbox to proceed</value>
+    </labels>
+    <labels>
+        <fullName>IP_Platform_Date_Error</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Platform_Date_Error</shortDescription>
+        <value>One or more platform/s has a market activation date later than the scheduled date provided. You must either remove the platform/s or change the scheduled date.</value>
+    </labels>
+    <labels>
+        <fullName>IP_Relocation_I4W_Rec_Type</fullName>
+        <categories>Installation Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Relocation_I4W_Rec_Type</shortDescription>
+        <value>Relocation (I4W)</value>
+    </labels>
+    <labels>
+        <fullName>IP_Relocation_O4W_Rec_Type</fullName>
+        <categories>Installation Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Relocation_O4W_Rec_Type</shortDescription>
+        <value>Relocation (O4W)</value>
+    </labels>
+    <labels>
+        <fullName>IP_Removal_Rec_Type</fullName>
+        <categories>Installation Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Removal_Rec_Type</shortDescription>
+        <value>Removal</value>
+    </labels>
+    <labels>
+        <fullName>IP_Replacement_Rec_Type</fullName>
+        <categories>Installation Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Replacement_Rec_Type</shortDescription>
+        <value>Replacement</value>
+    </labels>
+    <labels>
+        <fullName>IP_Rush_Reason_Error_Message</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IP_Rush_Reason_Error_Message</shortDescription>
+        <value>This transaction is now considered a Rush. Please select a Rush Reason.</value>
+    </labels>
+    <labels>
+        <fullName>Improper_status</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Improper status</shortDescription>
+        <value>Please select Dispenser with Valid Status for International OD.</value>
+    </labels>
+    <labels>
+        <fullName>Initial_Scheduled_Date_update_error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Initial Scheduled Date update error</shortDescription>
+        <value>Please use rescheduled section to change the date</value>
+    </labels>
+    <labels>
+        <fullName>Installation_Status</fullName>
+        <categories>Installation Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Installation_Status</shortDescription>
+        <value>Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>Integration_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Integration User</shortDescription>
+        <value>Integration</value>
+    </labels>
+    <labels>
+        <fullName>LM_Case_Field_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LM  Case Field_ID</shortDescription>
+        <value>CF00N6100000IIlPj</value>
+    </labels>
+    <labels>
+        <fullName>LM_Case_Field_LK_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LM  Case Field LK_ID</shortDescription>
+        <value>CF00N6100000IIlPj_lkid</value>
+    </labels>
+    <labels>
+        <fullName>LM_Case_RecordType_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LM_Case_RecordType_ID</shortDescription>
+        <value>01261000000SIQY</value>
+    </labels>
+    <labels>
+        <fullName>Mail_ID_for_NotificationForMultipleMatch_Installations_OD1</fullName>
+        <categories>FET 4.1</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mail ID for NotificationForMultipleMatch Installations-OD</shortDescription>
+        <value>akhilalex@coca-cola.com</value>
+    </labels>
+    <labels>
+        <fullName>Mail_ID_for_NotificationForMultipleMatch_Installations_OD2</fullName>
+        <categories>FET 4.1</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mail ID for NotificationForMultipleMatch Installations-OD</shortDescription>
+        <value>jeharris@coca-cola.com</value>
+    </labels>
+    <labels>
+        <fullName>Mail_ID_for_NotificationForMultipleMatch_Installations_OD3</fullName>
+        <categories>FET 4.1</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mail ID for NotificationForMultipleMatch Installations-OD</shortDescription>
+        <value>vikas.patel01@infosys.com</value>
+    </labels>
+    <labels>
+        <fullName>NewLine</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewLine</shortDescription>
+        <value>-
+-</value>
+    </labels>
+    <labels>
+        <fullName>NoMatchingDispensers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoMatchingDispensers</shortDescription>
+        <value>No matching dispensers found.</value>
+    </labels>
+    <labels>
+        <fullName>NoStatic2Agitated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoStatic2Agitated</shortDescription>
+        <value>0 Static/2 Agitated</value>
+    </labels>
+    <labels>
+        <fullName>OD_Enrolled_Status</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OD_Enrolled_Status</shortDescription>
+        <value>Enrolled</value>
+    </labels>
+    <labels>
+        <fullName>OD_Hibernation_Winterization</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OD Hibernation/Winterization</shortDescription>
+        <value>Winterized
+Hibernate</value>
+    </labels>
+    <labels>
+        <fullName>OD_Reference_Field_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OD Reference Field ID</shortDescription>
+        <value>CF00N6100000I6HqB</value>
+    </labels>
+    <labels>
+        <fullName>OD_Register_Status</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OD_Register_Status</shortDescription>
+        <value>Enrolled ,Winterized ,Wakeup</value>
+    </labels>
+    <labels>
+        <fullName>OD_Rough_Stock_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OD_Rough_Stock_Status</shortDescription>
+        <value>Rough Stock</value>
+    </labels>
+    <labels>
+        <fullName>OD_Unenrolled_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OD_Unenrolled_Status</shortDescription>
+        <value>Unenrolled</value>
+    </labels>
+    <labels>
+        <fullName>OD_Unregister_status</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OD_Unregister_status</shortDescription>
+        <value>New,Booking Complete, Dispenser Pickup,Dispenser Delivered,In Inventory</value>
+    </labels>
+    <labels>
+        <fullName>OLE_ScannerTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OLE_ScannerText</shortDescription>
+        <value>&lt;SCANNING NOTIFICATION&gt;
+
+The shipment has been delivered!</value>
+    </labels>
+    <labels>
+        <fullName>OUTLET_RECORD_TYPE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OUTLET_RECORD_TYPE</shortDescription>
+        <value>FS Outlet</value>
+    </labels>
+    <labels>
+        <fullName>OWEmailAddressId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Id of Organization-Wide Email Addresses (freestylecustomerservice@coca-cola.com)</shortDescription>
+        <value>0D2610000008SDC</value>
+    </labels>
+    <labels>
+        <fullName>OneAgitatedError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OneAgitatedError</shortDescription>
+        <value>Please Select an Agitated Brand</value>
+    </labels>
+    <labels>
+        <fullName>OnlyOneAgitatedError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OnlyOneAgitatedError</shortDescription>
+        <value>Please Select Only One Agitated Brands</value>
+    </labels>
+    <labels>
+        <fullName>OnlyTwoAgitatedError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OnlyTwoAgitatedError</shortDescription>
+        <value>Please Select Only two Agitated Brands</value>
+    </labels>
+    <labels>
+        <fullName>OnlyTwoStaticError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OnlyTwoStaticError</shortDescription>
+        <value>Please Select Only Two Static Brands</value>
+    </labels>
+    <labels>
+        <fullName>OrgAdminEmail</fullName>
+        <categories>Apex Error Logger</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Admin Email who need to be notified in case of critical errors</shortDescription>
+        <value>akhilalex@coca-cola.com</value>
+    </labels>
+    <labels>
+        <fullName>Outlet_Dispenser_In_Activated</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Outlet Dispenser In-Activated</shortDescription>
+        <value>This dispenser has been unassigned from this outlet.</value>
+    </labels>
+    <labels>
+        <fullName>Outlet_dispenser_removed_from_outlet</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Outlet dispenser removed from outlet</shortDescription>
+        <value>This Dispenser has been unassigned from the Outlet. An autogenerated request has been sent to Air Watch.</value>
+    </labels>
+    <labels>
+        <fullName>Query_Limit_Batch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Query_Limit_Batch</shortDescription>
+        <value>2000</value>
+    </labels>
+    <labels>
+        <fullName>Remove_Outlet_VF_text</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove Outlet VF text</shortDescription>
+        <value>Are you sure you want to remove?  You must confirm the dispenser is out of outlet before performing this action.</value>
+    </labels>
+    <labels>
+        <fullName>Removed_from_Outlet</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Removed from Outlet</shortDescription>
+        <value>Removed from Outlet</value>
+    </labels>
+    <labels>
+        <fullName>Reset_Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reset Search</shortDescription>
+        <value>Reset Search</value>
+    </labels>
+    <labels>
+        <fullName>Routing_Email_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Routing Email Address</shortDescription>
+        <value>inbound_email@2glvd26mg8xzjy9as1vdytrvn3fovighr26cxca7olu39v8ofg.0m-1x5leae.cs65.apex.sandbox.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>RushInstNotifyMailBody</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RushInstNotifyMailBody</shortDescription>
+        <value>Please check Davaco order entered and provide JDE Doc# and Work Order# for the CIF -</value>
+    </labels>
+    <labels>
+        <fullName>RushInstNotifyMailBodyHrs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RushInstNotifyMailBodyHrs</shortDescription>
+        <value>within 24 hours</value>
+    </labels>
+    <labels>
+        <fullName>RushInstNotifySubject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RushInstNotifySubject</shortDescription>
+        <value>Rush Site Assessment Requested â€“</value>
+    </labels>
+    <labels>
+        <fullName>RushNewConstructionSA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RushNewConstructionSA</shortDescription>
+        <value>Rush â€“ New Construction SA â€“ Proceed w/Scheduling</value>
+    </labels>
+    <labels>
+        <fullName>RushSiteAssessGFEBidProposal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RushSiteAssessGFEBidProposal</shortDescription>
+        <value>Rush - Site Assess + GFE Bid proposal (traditional)</value>
+    </labels>
+    <labels>
+        <fullName>RushSiteAssessmentOnly</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RushSiteAssessmentOnly</shortDescription>
+        <value>Rush - Site Assessment Only (Survey Only)</value>
+    </labels>
+    <labels>
+        <fullName>SAP_Service_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAP Service_User</shortDescription>
+        <value>integration@coca-cola.com.fet</value>
+    </labels>
+    <labels>
+        <fullName>SP_error_message_on_Installation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SP error message on Installation</shortDescription>
+        <value>To Enter &#39;Default Service Provider Name&#39; manually you have to check &#39;Service Provider Name Override&#39; Checkbox</value>
+    </labels>
+    <labels>
+        <fullName>SearchDispenserWarning</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SearchDispenserWarning</shortDescription>
+        <value>Please check entered serial number, either it is blank or invalid.</value>
+    </labels>
+    <labels>
+        <fullName>Search_criteria</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search criteria</shortDescription>
+        <value>Search criteria</value>
+    </labels>
+    <labels>
+        <fullName>Select_Active_Dispenser</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Active Dispenser</shortDescription>
+        <value>Please Select Active Dispenser.</value>
+    </labels>
+    <labels>
+        <fullName>SetCCAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetCCAddress</shortDescription>
+        <value>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>Smart_Account_Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Smart Account Search</shortDescription>
+        <value>Smart Account Search</value>
+    </labels>
+    <labels>
+        <fullName>Smart_Contact_Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Smart Contact Search</shortDescription>
+        <value>Smart Contact Search</value>
+    </labels>
+    <labels>
+        <fullName>Smart_Lead_Search</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Smart Lead Search</shortDescription>
+        <value>Smart Lead Search</value>
+    </labels>
+    <labels>
+        <fullName>StandardCaseURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StandardCaseURL</shortDescription>
+        <value>/500/e?retURL=%2F500%2Fo&amp;RecordType=</value>
+    </labels>
+    <labels>
+        <fullName>TO_INCLUDE_ALL_OUTLETS_FOR_PLACEHOLDER_CHAIN_HQ</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TO INCLUDE ALL OUTLETS FOR PLACEHOLDER CHAIN HQ</shortDescription>
+        <value>TRUE</value>
+    </labels>
+    <labels>
+        <fullName>TwoAgitatedError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TwoAgitatedError</shortDescription>
+        <value>Please Select Two Agitated Brands</value>
+    </labels>
+    <labels>
+        <fullName>TwoStatic1Agitated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TwoStatic1Agitated</shortDescription>
+        <value>2 Static/1 Agitated</value>
+    </labels>
+    <labels>
+        <fullName>TwoStaticError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TwoStaticError</shortDescription>
+        <value>Please Select Two Static Brands</value>
+    </labels>
+    <labels>
+        <fullName>USER_NAME</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>USER_NAME</shortDescription>
+        <value>Freestyle Administrator</value>
+    </labels>
+    <labels>
+        <fullName>USER_POFILE_FET_ADMIN</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>USER_POFILE_FET_ADMIN</shortDescription>
+        <value>FET Admin</value>
+    </labels>
+    <labels>
+        <fullName>UnableToReadBarcode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UnableToReadBarcode</shortDescription>
+        <value>Unable to read the barcode, please upload a clear image with proper brightness and contrast.</value>
+    </labels>
+    <labels>
+        <fullName>WF_List_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WF List Required</shortDescription>
+        <value>Is List of Approved Water Filter Suppliers Required?</value>
+    </labels>
+    <labels>
+        <fullName>Wakeup</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wakeup</shortDescription>
+        <value>Wakeup</value>
+    </labels>
+    <labels>
+        <fullName>Winterized</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Winterized</shortDescription>
+        <value>Winterized</value>
+    </labels>
+    <labels>
+        <fullName>a_series</fullName>
+        <categories>FET International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>a series</shortDescription>
+        <value>a Series</value>
+    </labels>
+    <labels>
+        <fullName>fs_approved_water_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs approved water error</shortDescription>
+        <value>Is an approved Water Filter installed? is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_brandset_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs brandset error</shortDescription>
+        <value>The corresponding Brandset has not been provided for its respective Platform type</value>
+    </labels>
+    <labels>
+        <fullName>fs_contact_not_found_CIF</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs contact not found CIF</shortDescription>
+        <value>Contact not found or incomplete</value>
+    </labels>
+    <labels>
+        <fullName>fs_contract_coord_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs contract coord error</shortDescription>
+        <value>Contractor Coordinator done by is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_crew_serve_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs crew serve error</shortDescription>
+        <value>Crew Serve is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_cust_disp_cancelled</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs cust disp cancelled</shortDescription>
+        <value>The record could not be updated because the customer disposition has been made Cancelled or Not Approved</value>
+    </labels>
+    <labels>
+        <fullName>fs_day_night_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs day night error</shortDescription>
+        <value>Day or Night Install is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_dist_city_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs dist city error</shortDescription>
+        <value>DistributorCity is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_dist_state_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs dist state error</shortDescription>
+        <value>Distributor State is not found</value>
+    </labels>
+    <labels>
+        <fullName>fs_distributor_name_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs distributor name error</shortDescription>
+        <value>Distributor Name is not found</value>
+    </labels>
+    <labels>
+        <fullName>fs_dry_account_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs dry account error</shortDescription>
+        <value>DRY ACCOUNT is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_general_cont_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs general cont error</shortDescription>
+        <value>General Contractor is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_ice_make_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs ice make error</shortDescription>
+        <value>Ice Maker Installer is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_ice_make_install_coord_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs ice make install coord error</shortDescription>
+        <value>ICE maker Installation coordinator is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_ice_make_model_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs ice make model error</shortDescription>
+        <value>Ice Maker Model is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_install_date_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs install date error</shortDescription>
+        <value>Install Date is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_install_period_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs install period error</shortDescription>
+        <value>Installation Period is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_install_type_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs install type error</shortDescription>
+        <value>Installation Type is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_on_boarding_days_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs on boarding days error</shortDescription>
+        <value>On-Boarding - Days after Install is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_onboard_trainer_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs onboard trainer error</shortDescription>
+        <value>On-Boarding Trainer is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_outlet_has_CIF</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs outlet has CIF</shortDescription>
+        <value>This Outlet has an Active IP/ CIF and cannot be selected</value>
+    </labels>
+    <labels>
+        <fullName>fs_outlet_not_found</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs outlet not found</shortDescription>
+        <value>The outlet was not found or is not available for use</value>
+    </labels>
+    <labels>
+        <fullName>fs_outlet_open_time_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs outlet open time error</shortDescription>
+        <value>Outlet Open Time is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_platform_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs platform error</shortDescription>
+        <value>You must select at least one Platform for each outlet.</value>
+    </labels>
+    <labels>
+        <fullName>fs_quantity_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs quantity error</shortDescription>
+        <value>The corresponding quantity has not been provided for its respective Platform type</value>
+    </labels>
+    <labels>
+        <fullName>fs_remove_FTN_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs remove FTN error</shortDescription>
+        <value>Remove All FTN (Legacy) Serve Dispensers? is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_request_cart_order_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs request cart order error</shortDescription>
+        <value>Requested Cartridge Order Method is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_request_training_time_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs request training time error</shortDescription>
+        <value>Requested training start time is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_site_assess_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs site assess error</shortDescription>
+        <value>Site Assessment Requirements are not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_top_mount_manufact_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs top mount manufact error</shortDescription>
+        <value>Top Mounted Ice Maker Manufacturer is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_type_of_Ice_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs type of Ice error</shortDescription>
+        <value>Type of ICE is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_water_filter_install_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs water filter install error</shortDescription>
+        <value>Water Filter Installer is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_water_filter_model_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs water filter model error</shortDescription>
+        <value>Water Filter Model # is not entered</value>
+    </labels>
+    <labels>
+        <fullName>fs_water_manufact_error</fullName>
+        <categories>CIF workbook Vlaidations</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fs water manufact error</shortDescription>
+        <value>Water Filter Manufacturer is not entered</value>
+    </labels>
+    <labels>
+        <fullName>has_been_selected_for_assigned_to_outlet</fullName>
+        <categories>FET-International</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>has been selected for assigned to outlet</shortDescription>
+        <value>has been selected for assigned to outlet.</value>
+    </labels>
+    <labels>
+        <fullName>recordChunkSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>recordChunkSize</shortDescription>
+        <value>50</value>
+    </labels>
+</CustomLabels>

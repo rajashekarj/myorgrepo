@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Spicy_Cherry_Effective_Date_Comandatory</fullName>
+    <active>true</active>
+    <description>Spicy Cherry and Spicy Cherry Effective Date are Co Mandatory</description>
+    <errorConditionFormula>AND(!ISBLANK(TEXT( FS_Spicy_Cherry_New__c )),
+(ISBLANK(FS_Spicy_Cherry_Effective_Date__c)), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Spicy_Cherry_Effective_Date__c</errorDisplayField>
+    <errorMessage>Spicy Cherry Effective Date is Co Mandatory if Spicy Cherry is selected</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brands_Selected__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(FS_Equip_Type__c == &#39;7000&#39;,   
+IF(INCLUDES(FS_7000_Series_Agitated_Brands_Selection__c, &#39;Barqs&#39;), &#39;Barqs &#39;, &#39;&#39;) +  IF(INCLUDES(FS_7000_Series_Agitated_Brands_Selection__c, &#39;Pibb&#39;), &#39;Pibb &#39;, &#39;&#39;) + IF(INCLUDES(FS_7000_Series_Agitated_Brands_Selection__c, &#39;Dr Pepper&#39;), &#39;Dr Pepper &#39;, &#39;&#39;) +  IF(INCLUDES(FS_7000_Series_Static_Brands_Selections__c, &#39;Hi-C / Vitamin Water&#39;), &#39;Hi-C / Vitamin Water &#39;, &#39;&#39;) +  
+IF(INCLUDES(FS_7000_Series_Static_Brands_Selections__c, &#39;POWERade&#39;), &#39;POWERade &#39;, &#39;&#39;) +  IF(INCLUDES(FS_7000_Series_Static_Brands_Selections__c, &#39;Raspberry&#39;), &#39;Raspberry &#39;, &#39;&#39;),  
+
+  
+ Text(FS_Spicy_Cherry__c ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Brands Selected</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

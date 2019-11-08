@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BrandSelectionEffectiveDateCoMandatory</fullName>
+    <active>true</active>
+    <description>BrandSelectionEffectiveDateCoMandatory</description>
+    <errorConditionFormula>AND(!ISBLANK(TEXT( FS_7000_Series_Brands_Selection_New__c)),
+(ISBLANK(FS_Brand_Selection_Value_Effective_Date__c )),
+NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Brand_Selection_Value_Effective_Date__c</errorDisplayField>
+    <errorMessage>This field is mandatory if Brand Selection is selected</errorMessage>
+</ValidationRule>

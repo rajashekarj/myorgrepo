@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X8000_Units_Removed__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(FS_Platform1__c) == &#39;8000&#39;, FS_DispRequested1__c, IF(TEXT(FS_Platform2__c) == &#39;8000&#39;, FS_DispRequested2__c, IF(TEXT(FS_Platform3__c) == &#39;8000&#39;, FS_DispRequested3__c, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>8000 Units Removed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

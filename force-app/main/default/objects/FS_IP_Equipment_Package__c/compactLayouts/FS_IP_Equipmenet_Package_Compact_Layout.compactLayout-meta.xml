@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_IP_Equipmenet_Package_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>FS_Dispenser_Series_IC_code__c</fields>
+    <fields>FS_LID_IM_Adapter1__c</fields>
+    <fields>FS_External_Modems__c</fields>
+    <fields>FS_Water_Booster__c</fields>
+    <fields>FS_Regulator__c</fields>
+    <fields>FS_Water_Filter__c</fields>
+    <label>IP Equipmenet Package Compact Layout</label>
+</CompactLayout>

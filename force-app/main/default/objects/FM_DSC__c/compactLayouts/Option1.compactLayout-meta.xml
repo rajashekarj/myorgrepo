@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Option1</fullName>
+    <fields>FM_serial_ACN__c</fields>
+    <fields>FM_Platform__c</fields>
+    <fields>Name</fields>
+    <label>Option1</label>
+</CompactLayout>

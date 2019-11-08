@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Available_for_Commercial_use_is_checked</fullName>
+    <active>true</active>
+    <description>Cartridge can either be available for commercial use OR archived, not both</description>
+    <errorConditionFormula>FS_Available_for_commercial_use__c==TRUE &amp;&amp; FS_IsCartridge_Archived__c == TRUE</errorConditionFormula>
+    <errorDisplayField>FS_IsCartridge_Archived__c</errorDisplayField>
+    <errorMessage>Cartridge cannot be archived when the Available for Commercial Use is checked</errorMessage>
+</ValidationRule>

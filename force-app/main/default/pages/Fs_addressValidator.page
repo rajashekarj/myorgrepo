@@ -1,0 +1,84 @@
+<apex:page id="page" standardController="Account" extensions="FS_AddressValidationExtension" sidebar="false" showHeader="false">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0UpueaI6hhhgbc-6oHeWKZJwRagfGm6E&libraries=places"></script>
+    <script type="text/javascript"> 
+        
+        function initializeField() {        
+        var input = document.getElementById('page:form:pb:pbs:field');           
+        var autocomplete = new google.maps.places.Autocomplete(input);         	
+    }
+    
+    google.maps.event.addDomListener(window, 'load', initializeField); 
+    
+    </script> 
+    
+    <apex:stylesheet value="{!$Resource.AddressValidationStyle}"/>
+    <apex:form id="form">   
+        
+        
+        
+        
+        <apex:pageBlock id="pb"  >
+            <apex:pageBlockSection >
+                <apex:pageMessages id="addressId"></apex:pageMessages>	                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="pbs" columns="2">
+                <apex:inputText id="field" value="{!readAddress}" label="Address" style="width: 500px; height: 25px" styleClass="wide-input" >  
+                    
+                </apex:inputText>
+            </apex:pageBlockSection>
+            <apex:pageblocksection columns="1"  >
+                <apex:map width="100%" height="200px" mapType="roadmap" zoomLevel="16" center="{latitude:{!lat},longitude:{!lon}}" id="mapid">
+                    <apex:mapMarker title="{!Account.Name}" position="{latitude: {!lat}, longitude: {!lon}}" id="markerId"/>
+                </apex:map>
+                
+                <apex:outputText ></apex:outputText>
+            </apex:pageblocksection>            
+            <apex:pageBlockSection columns="2"  >
+                <apex:outputText id="field1" value="{!Account.FS_Shipping_Street_Int__c }"/>
+                <apex:outputText id="field11" value="{!lat}" label="Lattitude"> </apex:outputText>
+                <apex:outputText id="field3" value="{!Account.FS_Shipping_City_Int__c}"/>
+                <apex:outputText id="field12" value="{!lon}" label="Longitude"> </apex:outputText>
+                <apex:outputText id="field5" value="{!Account.FS_Shipping_State_Province_INT__c}"/>
+                <apex:outputText id="field8" value="{!Account.FS_Is_Address_Validated__c }"/>              
+                <apex:outputText id="field7" value="{!Account.FS_Shipping_Zip_Postal_Code_Int__c }"/>
+                <apex:outputText id="field10" value="{!Account.FS_Address_Validated_On__c }"/>              
+                <apex:outputText id="field9" value="{!Account.FS_Shipping_Country_Int__c }" />
+                <apex:outputField id="field13" value="{!Account.Phone }" >
+                    <div class="mouseOverInfoOuter" id="searchInvoiceHelper" onfocus="addMouseOver(this)" onmouseover="addMouseOver(this)" tabindex="0">
+                        <img src="/s.gif" alt="" class="helpIcon" />
+                        <div class="mouseOverInfo" id="searchInvoiceHelperText" style="display: none; opacity: -0.19999999999999996; left: 16px;">
+                            <div class="body">Enter Phone number in this format:000-000-0000</div>
+                        </div>
+                    </div>
+                    <apex:inlineEditSupport event="ondblClick" />
+                </apex:outputField>
+                <apex:outputText ></apex:outputText>
+                <apex:outputField id="field14" value="{!Account.Fax }">
+                    <div class="mouseOverInfoOuter" id="searchInvoiceHelper" onfocus="addMouseOver(this)" onmouseover="addMouseOver(this)" tabindex="0">
+                        <img src="/s.gif" alt="" class="helpIcon" />
+                        <div class="mouseOverInfo" id="searchInvoiceHelperText" style="display: none; opacity: -0.19999999999999996; left: 16px;">
+                            <div class="body">Enter Fax in this format:000-000-0000</div>
+                        </div>
+                    </div>
+                    <apex:inlineEditSupport event="ondblClick" />
+                </apex:outputField>
+                <!-- <apex:outputText id="field2" />
+<apex:outputText id="field4" />            
+<apex:outputText id="field6" /> -->              
+                
+            </apex:pageBlockSection>
+            <apex:outputPanel rendered="{!refreshPage}">
+                <script>                
+                 window.top.location='/{!Account.id}';
+                </script> 
+            </apex:outputPanel> 
+            <apex:pageBlockButtons >
+                <!--<apex:commandButton id="EditButton" value="Edit" rendered="{!!editMode}" action="{!changeMode}" reRender="pbId" status="fetchStatus"/>-->
+                <apex:commandButton value="Validate" action="{!validate}" reRender="field11,field12,addressId,mapid"/>
+                <apex:commandButton value="Save" action="{!save}" />
+                <apex:commandButton action="{!doCancel}" value="Cancel" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>   
+    
+</apex:page>

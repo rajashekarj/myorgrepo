@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LM_Sub_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>JDE AMS on Hold</fullName>
+                <default>false</default>
+                <label>JDE AMS on Hold</label>
+            </value>
+            <value>
+                <fullName>Account Team on Hold</fullName>
+                <default>false</default>
+                <label>Account Team on Hold</label>
+            </value>
+            <value>
+                <fullName>Finance on Hold</fullName>
+                <default>false</default>
+                <label>Finance on Hold</label>
+            </value>
+            <value>
+                <fullName>Pending Install</fullName>
+                <default>false</default>
+                <label>Pending Install</label>
+            </value>
+            <value>
+                <fullName>JDE Install Base Notified</fullName>
+                <default>false</default>
+                <label>JDE Install Base Notified</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>JDE AMS on Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>Account Team on Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>Finance on Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>Pending Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>JDE Install Base Notified</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

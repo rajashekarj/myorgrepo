@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_CY_Total_Plan__c</fullName>
+    <externalId>false</externalId>
+    <formula>FS_CY_Apr__c + FS_CY_Aug__c+FS_CY_Dec__c+FS_CY_Feb__c+FS_CY_Jan__c+FS_CY_Jul__c+FS_CY_Jun__c+FS_CY_Mar__c+FS_CY_May__c+FS_CY_Nov__c+FS_CY_Oct__c+FS_CY_Sep__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CY Plan Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

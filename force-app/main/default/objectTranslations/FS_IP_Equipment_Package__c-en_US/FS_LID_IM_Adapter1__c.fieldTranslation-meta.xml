@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_LID_IM_Adapter1__c</name>
+    <picklistValues>
+        <masterLabel>46000 : FSIB Red Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46001 : FSIB Silver Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46002 : FSIB Black Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46004 : Hoshizaki Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46005 : Hoshizaki Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46006 : Hoshizaki Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46007 : Scotsman E686 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46008 : Scotsman E686 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46009 : Scotsman E686 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46010 : Scotsman 306/456/954 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46011 : Scotsman 306/456/954 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46012 : Scotsman 306/456/954 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46013 : Manitowoc S422 S322 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46014 : Manitowoc S422 S322 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46015 : Manitowoc S422 S322 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46016 : Mani- IB600C IB800C IB1000C Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46017 : Mani- IB600C IB800C IB1000C Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46018 : Mani- IB600C IB800C IB1000C Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46032 : Ice-O-Matic 520 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46033 : Ice-O-Matic 520 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46034 : Ice-O-Matic 520 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46371 : 30&quot; Hoshizaki KMD 850/901</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46372 : 30&quot; Manitowoc 450/500/606/800/906</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46375 : 30â€� IK ICE O 30â€� 250/406/1006</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46382 : KIT IM ADPT SCOTTS 30&quot; C0830/C1030</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46412: Ice Maker Adapter Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46413: Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46419: IK MAN 30&quot; DUAL EVAP</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46465 : KIT IM ADPT HOSHIZAKI KMS-1122 SLVR</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46466 : KIT IM ADPT HOSHIZAKI KMS-1122 RED</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46467 : KIT IM ADPT HOSHIZAKI KMS-1122 BLK</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46632: LOW PROFILE IM ADAPTER</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46670 : 9100 Red IK 22&quot;</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46671 : 9100 Black IK 22&quot;</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46672 : 9100 Gray IK 22&quot;</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46673 : 9100 Red Manual Fill Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46674 : 9100 Black Manual Fill Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46675 : 9100 Gray Manual Fill Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46701: LID</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46729 : Dark Gray Manual Fill Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46730 : Dark Gray 22&quot; IM Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46750: Manual Fill Lid Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46751: Follett Manual Fill Lid Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46752: Standard Ice Maker Adapter Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46753: Low Profile IM Adapter Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD#10: 9100 Red IK Soft Ice</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD#11: 9100 Black IK Soft Ice</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD#12: 9100 Gray IK Soft Ice</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD#7: 9100 Red IK 30&quot;</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD#8: 9100 Black IK 30&quot;</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD#9: 9100 Gray IK 30&quot;</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TBD: M-ABS Ice Maker Adapter Kit including manual fill lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: ED 300 Ice Dispenser/ IM Adapter Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: ED250 Ice Dispenser/ IM Adapter Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

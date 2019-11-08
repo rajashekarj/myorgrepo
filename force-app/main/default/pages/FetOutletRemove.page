@@ -1,0 +1,108 @@
+<apex:page standardController="FS_Outlet_Dispenser__c" extensions="Fet_RemoveFromOutlet" tabStyle="FS_Outlet_Dispenser__c">
+
+    <apex:form id="frm">
+        <apex:sectionHeader title="Outlet Dispenser Remove" subtitle="Remove Outlet Dispenser"/>
+
+        <apex:pageBlock id="editPB" title="Outlet Dispenser Remove">
+            <apex:pageBlockSection ><br></br></apex:pageBlockSection>
+            <apex:outputLabel style="font-size:11pt;font-weight:bold;" value="{!$Label.Remove_Outlet_VF_text}"  ></apex:outputLabel>
+            <apex:pageBlockButtons id="removeButtons" location="both" rendered="true">
+            <apex:commandButton id="Remove" value="Remove" action="{!remove}" />
+            <apex:commandButton id="cancelBtn" value="Cancel" action="{!cancel}" immediate="true"/>
+            </apex:pageBlockButtons>
+            
+            
+            <!-- For Display Message IF -->
+            <apex:outputPanel id="tstpopup">
+            <apex:outputPanel rendered="{!displayPopUp}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp}" styleClass="custPopup" layout="block">
+                <c><b>{!$Label.Outlet_Dispenser_In_Activated}<br/><br/><br/></b></c>
+            <center><apex:commandButton value="OK" action="{!redirectPopup}" styleClass="okButton "/></center>
+            </apex:outputPanel>
+            </apex:outputPanel>
+
+            <!-- For Display Message Else IF -->
+            <apex:outputPanel id="tstpopup1">
+            <apex:outputPanel rendered="{!displayPopUp1}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp1}" styleClass="custPopup" layout="block">
+                <c><b>{!$Label.Outlet_dispenser_removed_from_outlet}<br/><br/><br/></b></c>
+            <center><apex:commandButton value="OK" action="{!redirectPopup}" styleClass="okButton "/></center>
+            </apex:outputPanel>
+            </apex:outputPanel>
+            
+            <!-- For Display Message Else -->
+            <apex:outputPanel id="tstpopup2">
+            <apex:outputPanel rendered="{!displayPopUp2}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp2}" styleClass="custPopup" layout="block">
+                <center><b>{!$Label.Email_notification_sent_to_AW}<br/><br/><br/></b></center>
+            <center><apex:commandButton value="OK" action="{!redirectPopup}" styleClass="okButton "/></center>
+            </apex:outputPanel>
+            </apex:outputPanel>
+            
+             <apex:outputPanel id="tstpopup3">
+            <apex:outputPanel rendered="{!displayPopUp3}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp3}" styleClass="custPopup" layout="block">
+                <center><b>{!$Label.Select_Active_Dispenser}<br/><br/><br/></b></center>
+            <center><apex:commandButton value="OK" action="{!redirectPopup}" styleClass="okButton "/></center>
+            </apex:outputPanel>
+            </apex:outputPanel>
+            
+            <apex:outputPanel id="tstpopup4">
+            <apex:outputPanel rendered="{!displayPopUp4}" styleClass="popupBackground" layout="block"/>
+            <apex:outputPanel rendered="{!displayPopUp4}" styleClass="custPopup" layout="block">
+                <center><b>{!$Label.Improper_status}<br/><br/><br/></b></center>
+            <center><apex:commandButton value="OK" action="{!redirectPopup}" styleClass="okButton "/></center>
+            </apex:outputPanel>
+            </apex:outputPanel>
+            <apex:pageMessages />
+            <apex:pageBlockSection ><br></br> </apex:pageBlockSection>
+            <apex:pageBlockSection title="Information" columns="2" collapsible="false">    
+                <apex:outputField value="{!outletRef.FS_Outlet__c}"/>
+                <apex:outputField value="{!outletRef.RecordType.Name}"/>  
+                <apex:outputField value="{!outletRef.Shipping_Form__c}"/>
+                <apex:outputField value="{!outletRef.Ownership_Type__c}"/>
+                <apex:outputField value="{!outletRef.FS_Serial_Number2__c}"/>
+                <apex:outputField value="{!outletRef.FS_Status__c}"/>       
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+    
+<style type="text/css">
+        .custPopup{
+            background-color: white;
+            border-width: 2px;
+            border-style: solid;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            text-align:center;
+            /* These are the 3 css properties you will need to change so the popup 
+            displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can add 
+            the height property for a fixed size pop up if you want.*/
+            width: 500px;
+            margin-left: -250px;
+            top:100px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+        
+        .okButton {
+            float: center;
+        }
+
+
+    </style>    
+    
+</apex:page>

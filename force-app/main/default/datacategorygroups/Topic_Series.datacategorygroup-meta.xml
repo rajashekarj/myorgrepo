@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>FS 7000</label>
+            <name>FS_7000</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FS 7100</label>
+            <name>FS_7100</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FS 9100</label>
+            <name>FS_9100</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FS 9000/8000</label>
+            <name>FS_9000_8000</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FS 3100</label>
+            <name>FS_3100</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Topic Series</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

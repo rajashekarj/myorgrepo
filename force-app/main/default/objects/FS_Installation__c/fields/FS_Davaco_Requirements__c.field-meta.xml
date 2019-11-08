@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Davaco_Requirements__c</fullName>
+    <externalId>false</externalId>
+    <label>What type of Site Assessment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Construction SA - Proceed w/Scheduling</fullName>
+                <default>false</default>
+                <label>New Construction SA - Proceed w/Scheduling</label>
+            </value>
+            <value>
+                <fullName>SA Not Required - OSM approval required for local market</fullName>
+                <default>false</default>
+                <label>SA Not Required - OSM approval required for local market</label>
+            </value>
+            <value>
+                <fullName>Site Assess + GFE bid proposal (traditional)</fullName>
+                <default>false</default>
+                <label>Site Assess + GFE bid proposal (traditional)</label>
+            </value>
+            <value>
+                <fullName>Site Assessment Only (survey only)</fullName>
+                <default>false</default>
+                <label>Site Assessment Only (survey only)</label>
+            </value>
+            <value>
+                <fullName>Rush â€“ New Construction SA â€“ Proceed w/Scheduling</fullName>
+                <default>false</default>
+                <label>Rush â€“ New Construction SA â€“ Proceed w/Scheduling</label>
+            </value>
+            <value>
+                <fullName>Rush - Site Assess + GFE Bid proposal (traditional)</fullName>
+                <default>false</default>
+                <label>Rush - Site Assess + GFE Bid proposal (traditional)</label>
+            </value>
+            <value>
+                <fullName>Rush - Site Assessment Only (Survey Only)</fullName>
+                <default>false</default>
+                <label>Rush - Site Assessment Only (Survey Only)</label>
+            </value>
+            <value>
+                <fullName>No Site Assessment-Required</fullName>
+                <default>false</default>
+                <label>No Site Assessment-Required</label>
+            </value>
+            <value>
+                <fullName>SA Not Required</fullName>
+                <default>false</default>
+                <label>SA Not Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

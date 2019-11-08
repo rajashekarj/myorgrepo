@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Protocol_for_Existing_Rack_TI_CSSR1__c</fullName>
+    <externalId>false</externalId>
+    <label>Protocol for Existing Rack</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Remove</fullName>
+                <default>false</default>
+                <label>Remove</label>
+            </value>
+            <value>
+                <fullName>Retain and Replace Bottom Shelves</fullName>
+                <default>false</default>
+                <label>Retain and Replace Bottom Shelves</label>
+            </value>
+            <value>
+                <fullName>Other (Explain in Comments)</fullName>
+                <default>false</default>
+                <label>Other (Explain in Comments)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

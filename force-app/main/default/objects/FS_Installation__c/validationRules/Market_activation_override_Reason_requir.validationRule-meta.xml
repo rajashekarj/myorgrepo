@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_activation_override_Reason_requir</fullName>
+    <active>true</active>
+    <description>Market activation override required</description>
+    <errorConditionFormula>AND(isChanged( FS_Market_Activation_override__c ),isBlank( FS_Market_Activation_Override_Reason__c))&amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorDisplayField>FS_Market_Activation_Override_Reason__c</errorDisplayField>
+    <errorMessage>This is required whenever  Market Activation Override is &#39;checked&#39; or &#39;unchecked&#39;</errorMessage>
+</ValidationRule>

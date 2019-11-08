@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Requirements_TI_CSIM1__c</name>
+    <picklistValues>
+        <masterLabel>No action required - Manual Fill</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (Explain in Comments)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove legacy IM &amp; Relocate to Kitchen</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove legacy IM and convert to Manual Fill</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

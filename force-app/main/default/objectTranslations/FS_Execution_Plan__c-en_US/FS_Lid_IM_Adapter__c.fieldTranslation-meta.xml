@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Lid_IM_Adapter__c</name>
+    <picklistValues>
+        <masterLabel>46000 : FSIB Red Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46001 : FSIB Silver Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46002 : FSIB Black Lid</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46004 : Hoshizaki Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46005 : Hoshizaki Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46006 : Hoshizaki Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46007 : Scotsman E686 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46008 : Scotsman E686 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46009 : Scotsman E686 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46010 : Scotsman 306/456/954 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46011 : Scotsman 306/456/954 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46012 : Scotsman 306/456/954 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46013 : Manitowoc S422 S322 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46014 : Manitowoc S422 S322 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46015 : Manitowoc S422 S322 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46016 : Mani- IB600C IB800C IB1000C Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46017 : Mani- IB600C IB800C IB1000C Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46018 : Mani- IB600C IB800C IB1000C Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46032 : Ice-O-Matic 520 Door, Silver Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46033 : Ice-O-Matic 520 Door, Red Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46034 : Ice-O-Matic 520 Door, Black Shrouds</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46371 : 30&quot; Hoshizaki KMD 850/901</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46372 : 30&quot; Manitowoc 450/500/606/800/906</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46375 : 30â€� IK ICE O 30â€� 250/406/1006</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

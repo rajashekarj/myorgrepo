@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_SAP_ACN_Combined_Id__c</fullName>
+    <description>Created 10/15/2013 by H.Whitacre to support Coke decision to uniquely identify Account records by the combination of SAP ID and ACN#. Field will store both id&#39;s with vertical pipe in between, as &lt;SAP_ID&gt;|&lt;ACN#&gt;, for example &quot;1000123|85999888&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Unique external identifier for Account. Concatenate the SAP ID + vertical pipe+ ACN#. For example: &quot;10002253|1035347&quot;. If either is blank, you must still supply the vertical pipe.</inlineHelpText>
+    <label>SAP ACN Combined Id</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

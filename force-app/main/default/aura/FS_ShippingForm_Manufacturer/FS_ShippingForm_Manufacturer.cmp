@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,lightning:actionOverride"
+                controller="FS_ShippingForm_ManufacturerController" access="global">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div class="slds-clearfix">
+        <div class="slds-float_right">
+            <lightning:button variant="neutral" label="Notify Coordinator" onclick="{!c.handle_Notify_Coordinator }" />
+            <lightning:button variant="neutral" label="Send for Pre-Book" onclick="{!c.handle_Send_for_PreBook }" />
+        </div>
+    </div>
+</aura:component>

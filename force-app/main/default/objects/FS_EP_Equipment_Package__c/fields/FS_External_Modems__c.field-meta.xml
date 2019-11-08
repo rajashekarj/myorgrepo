@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_External_Modems__c</fullName>
+    <externalId>false</externalId>
+    <label>External Modems</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46530 : 4G Verizon</fullName>
+                <default>false</default>
+                <label>46530 : 4G Verizon</label>
+            </value>
+            <value>
+                <fullName>46537: 4G Verizon w/ Switch</fullName>
+                <default>false</default>
+                <label>46537: 4G Verizon w/ Switch</label>
+            </value>
+            <value>
+                <fullName>46475 : 4G AT&amp;T</fullName>
+                <default>false</default>
+                <label>46475 : 4G AT&amp;T</label>
+            </value>
+            <value>
+                <fullName>46473 : 3G Verizon</fullName>
+                <default>false</default>
+                <label>46473 : 3G Verizon</label>
+            </value>
+            <value>
+                <fullName>46475 : 3G AT&amp;T</fullName>
+                <default>false</default>
+                <label>46475 : 3G AT&amp;T</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

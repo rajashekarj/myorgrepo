@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Protocol_for_Existing_Rack_TI_CSSR1__c</name>
+    <picklistValues>
+        <masterLabel>Other (Explain in Comments)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Remove</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retain and Replace Bottom Shelves</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

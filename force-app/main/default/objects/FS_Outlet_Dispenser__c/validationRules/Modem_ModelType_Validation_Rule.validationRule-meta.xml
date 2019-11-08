@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modem_ModelType_Validation_Rule</fullName>
+    <active>true</active>
+    <description>Modem Model/Type should be External when External Modem fields are entered on OD</description>
+    <errorConditionFormula>IF(AND((FS_Modem_ESN_Ext__c!=&#39;&#39; || IOT_Unique_ID_Ext__c != &#39;&#39; || FS_Data_Provider__c !=&#39;&#39; || FS_Asset_number_Ext__c !=&#39;&#39;),NOT(ISPICKVAL(Modem_Model_Type__c,&#39;External&#39;)),NOT(CONTAINS($Profile.Name, $Label.Exclude_User))),true,false)</errorConditionFormula>
+    <errorDisplayField>Modem_Model_Type__c</errorDisplayField>
+    <errorMessage>Modem Model/Type should be External</errorMessage>
+</ValidationRule>

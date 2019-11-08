@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Reason_for_Reschedule__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Reschedule</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3rd Party Vendor &quot;&quot;No-Show&quot;&quot;</fullName>
+                <default>false</default>
+                <label>3rd Party Vendor &quot;&quot;No-Show&quot;&quot;</label>
+            </value>
+            <value>
+                <fullName>BK Site-prep/Cabinet Delay</fullName>
+                <default>false</default>
+                <label>BK Site-prep/Cabinet Delay</label>
+            </value>
+            <value>
+                <fullName>Construction Incomplete</fullName>
+                <default>false</default>
+                <label>Construction Incomplete</label>
+            </value>
+            <value>
+                <fullName>Customer not Ready</fullName>
+                <default>false</default>
+                <label>Customer not Ready</label>
+            </value>
+            <value>
+                <fullName>Customer Request New Date</fullName>
+                <default>false</default>
+                <label>Customer Request New Date</label>
+            </value>
+            <value>
+                <fullName>Equipment Damaged during transit</fullName>
+                <default>false</default>
+                <label>Equipment Damaged during transit</label>
+            </value>
+            <value>
+                <fullName>Equipment not Received by SP</fullName>
+                <default>false</default>
+                <label>Equipment not Received by SP</label>
+            </value>
+            <value>
+                <fullName>FPRS Not Available</fullName>
+                <default>false</default>
+                <label>FPRS Not Available</label>
+            </value>
+            <value>
+                <fullName>General Contractor No Show</fullName>
+                <default>false</default>
+                <label>General Contractor No Show</label>
+            </value>
+            <value>
+                <fullName>General Contractor Permit Issue</fullName>
+                <default>false</default>
+                <label>General Contractor Permit Issue</label>
+            </value>
+            <value>
+                <fullName>HFCS not available at Warehouse</fullName>
+                <default>false</default>
+                <label>HFCS not available at Warehouse</label>
+            </value>
+            <value>
+                <fullName>HFCS not on-site</fullName>
+                <default>false</default>
+                <label>HFCS not on-site</label>
+            </value>
+            <value>
+                <fullName>Market Activation Date Changed</fullName>
+                <default>false</default>
+                <label>Market Activation Date Changed</label>
+            </value>
+            <value>
+                <fullName>Natural Disaster</fullName>
+                <default>false</default>
+                <label>Natural Disaster</label>
+            </value>
+            <value>
+                <fullName>NNS not available at Distributor</fullName>
+                <default>false</default>
+                <label>NNS not available at Distributor</label>
+            </value>
+            <value>
+                <fullName>NNS not on-site</fullName>
+                <default>false</default>
+                <label>NNS not on-site</label>
+            </value>
+            <value>
+                <fullName>No Signed Contract</fullName>
+                <default>false</default>
+                <label>No Signed Contract</label>
+            </value>
+            <value>
+                <fullName>Product Cartridges Not On-Site</fullName>
+                <default>false</default>
+                <label>Product Cartridges Not On-Site</label>
+            </value>
+            <value>
+                <fullName>Sales/COM Request</fullName>
+                <default>false</default>
+                <label>Sales/COM Request</label>
+            </value>
+            <value>
+                <fullName>Site-Prep Contract not Signed</fullName>
+                <default>false</default>
+                <label>Site-Prep Contract not Signed</label>
+            </value>
+            <value>
+                <fullName>SP Capacity</fullName>
+                <default>false</default>
+                <label>SP Capacity</label>
+            </value>
+            <value>
+                <fullName>SP Did not Inform PM of Time/Date Change</fullName>
+                <default>false</default>
+                <label>SP Did not Inform PM of Time/Date Change</label>
+            </value>
+            <value>
+                <fullName>SP has changed</fullName>
+                <default>false</default>
+                <label>SP has changed</label>
+            </value>
+            <value>
+                <fullName>SP No Show</fullName>
+                <default>false</default>
+                <label>SP No Show</label>
+            </value>
+            <value>
+                <fullName>Coordinator error</fullName>
+                <default>false</default>
+                <label>Coordinator error</label>
+            </value>
+            <value>
+                <fullName>Platform Change</fullName>
+                <default>false</default>
+                <label>Platform Change</label>
+            </value>
+            <value>
+                <fullName>PIC Error</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PIC Error</label>
+            </value>
+            <value>
+                <fullName>SP Unable to Perform</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SP Unable to Perform</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

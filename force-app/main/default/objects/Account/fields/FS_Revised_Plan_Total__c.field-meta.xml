@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Revised_Plan_Total__c</fullName>
+    <externalId>false</externalId>
+    <formula>FS_Revised_Apr__c+FS_Revised_Aug__c+FS_Revised_Dec__c+FS_Revised_Feb__c+FS_Revised_Jan__c+FS_Revised_Jul__c+FS_Revised_Jun__c+FS_Revised_Mar__c+FS_Revised_May__c+FS_Revised_Nov__c+FS_Revised_Oct__c+FS_Revised_Sep__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Revised Plan Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

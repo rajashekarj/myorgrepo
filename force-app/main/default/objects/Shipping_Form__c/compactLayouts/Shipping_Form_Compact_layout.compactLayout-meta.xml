@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Form_Compact_layout</fullName>
+    <fields>Unique_Shipping_Name__c</fields>
+    <fields>FS_Number_of_dispensers_ready__c</fields>
+    <fields>FS_PO_Number__c</fields>
+    <fields>FS_Status__c</fields>
+    <fields>FS_Shipper_Name__c</fields>
+    <fields>FS_date_ready__c</fields>
+    <label>Shipping Form Compact layout</label>
+</CompactLayout>

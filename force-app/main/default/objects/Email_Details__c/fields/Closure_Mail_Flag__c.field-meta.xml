@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closure_Mail_Flag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox for mentioning whether Case Closure email has sent or not.</description>
+    <externalId>false</externalId>
+    <label>Case Closure Email Sent</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,3037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_NFS_Input_Record</fullName>
+    <active>true</active>
+    <label>NFS Customer Input</label>
+    <picklistValues>
+        <picklist>FS_7000_Select_Water_Button_Option__c</picklist>
+        <values>
+            <fullName>Hide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Series_Agitated_Brands_Selection__c</picklist>
+        <values>
+            <fullName>Barqs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dr Pepper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pibb</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Series_Brands_Option_Selections__c</picklist>
+        <values>
+            <fullName>0 Static%2F2 Agitated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Static%2F1 Agitated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Series_Ice_Fill_Requirements__c</picklist>
+        <values>
+            <fullName>Manual FIll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top Mount Ice Maker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Series_Statics_Brands_Selection__c</picklist>
+        <values>
+            <fullName>Hi-C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POWERade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Raspberry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_7000_Series_Top_Mnt_Ice_Maker_Instld__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Admin_User_Function__c</picklist>
+        <values>
+            <fullName>Store Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Ancillary_equipment_to_remain__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Variety Tea Towers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_BillToAddressSameAsShipToAddress__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CCFS_2K_Conversion_Incentive__c</picklist>
+        <values>
+            <fullName>Not Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- 5 store test commitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- Commercialization commitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes- Region Customer Opportunity</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_CS_Sub_Trade_Channel__c</picklist>
+        <values>
+            <fullName>Convenience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QSR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theatre</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cartridge_Delivery_Method__c</picklist>
+        <values>
+            <fullName>DC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cartridge_order_method__c</picklist>
+        <values>
+            <fullName>Bottler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coke Smart</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Cartridge_payment_method__c</picklist>
+        <values>
+            <fullName>Bank Draft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Term</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Color_of_self_serve_units__c</picklist>
+        <values>
+            <fullName>Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Contractor_Coordination_to_be_done_by__c</picklist>
+        <values>
+            <fullName>COM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Copy_Contact_from_HQ__c</picklist>
+        <values>
+            <fullName>Bill Jones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>John Smith</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maria Garcia</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Current_Fountain_Equipment_Ownership__c</picklist>
+        <values>
+            <fullName>Bottler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dealer Owned %28DOE%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy CCNA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dasani_Buttons__c</picklist>
+        <values>
+            <fullName>Hide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Davaco_Requirements__c</picklist>
+        <values>
+            <fullName>Davaco%3A New Construction Site Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment %2B Detailed Scope Summary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment %2B GFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Site Assessment Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power House</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Day_AM_or_Night_PM_Installation__c</picklist>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dispenser_Action__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dispenser_Qty__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dispensers_IC_Code_Description__c</picklist>
+        <values>
+            <fullName>41568-Drop In 23x23 100 lb%2E bin%2C 8 LEV SS FLX SS %E2%80%93 Value Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41580-Drop In 23x23 100 lb%2E bin%2C 8 LEV PC FLX SS %E2%80%93 Value Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42117-Drop In 23x23 100 lb%2E bin%2C 8 LEV SS FLX SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42117R-8 vlv Drop-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43021-Drop In 23x23 100 lb%2E bin%2C 8 LEV PC FLX SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45737-Variety Tea Tower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45847R-Bevariety dispenser 23x23 %2212-pack w%2F MVU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45886-Space Saver VTT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45930-BUNN TDO-N-3%2E5 TEA URN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45999-BUNN TB3 Tea Brewer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46265-Mark IV -BG 10BTN%2F-8-62036 %2810 Button%2C 6 Carb%2C 2 Non-Carb%2C Red%2C Flow Regulated%2C 3 Feet%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Disposition_of_Current_BIB_rack__c</picklist>
+        <values>
+            <fullName>Leave on-site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Bottler warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to KO warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Disposition_of_Current_Equipment__c</picklist>
+        <values>
+            <fullName>Leave on-site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Bottler warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to KO warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_IndicateDispositionOfCurrentBIBPump__c</picklist>
+        <values>
+            <fullName>Leave on-site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to Bottler warehouse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Return to KO warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_InstallationContactPreferredModeComm__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Installation_Contact_Same_As__c</picklist>
+        <values>
+            <fullName>Admin Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None %28New Contact%29</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Onboard Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Assessment Contact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Invoice_Customer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_Scndry_Site_Asesment_Cnct__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_an_approved_Water_Filter_Installed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_legacy_equipment_required__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_this_a_VMS_Customer__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Is_thr_Secondary_Site_Assessment_Cnct__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Kitchen_Ice_Fill_Requirements__c</picklist>
+        <values>
+            <fullName>Approved Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Kitchen_Ice_Maker_Installed__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Kitchen_Type_of_Ice__c</picklist>
+        <values>
+            <fullName>Approved Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_List_of_approved_Ice_Makers_Mfrs__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_List_of_approved_Water_Filter_Mfrs__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Number_7000_unit__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Number_crew_serve_unit__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Number_self_serve_units__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_OB_Trainer__c</picklist>
+        <values>
+            <fullName>COM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Footprint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Needed %2F 2nd Install</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_On_Boarding_Days_after_Install__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_On_boarding_time_requested__c</picklist>
+        <values>
+            <fullName>1%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Other_Action__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Other_Legacy_Equipment__c</picklist>
+        <values>
+            <fullName>41568-Carbonator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41571-Regulator Legacy II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43536-Carbonator %2F Bevariety Pump Deck Shelf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44610-Drop In 23x23 cabinet stand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44621 Leg Assembly for 15x22 Ice Tainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45080-15x22 Ice Tainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45278-Auto Fill Station %28Duke or Stoelting 118%2F218%2F318%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45768-Auto Fill Station %28Stoelting 157%2F257</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45819-Regulator%2C Bevariety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45991-Bevariety pump deck w%2F 100%27 harness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46098-Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46253-Bevariety icemaker adapter kit %28Scotsman EH-222%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46280-Freestyle%2FBevariety hybrid rack %28includes pumps%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Other_Qty__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Outlet_Type__c</picklist>
+        <values>
+            <fullName>Dry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Ownership_Type__c</picklist>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Franchise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Independent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pibb_or_Dr_Pepper__c</picklist>
+        <values>
+            <fullName>Dr Pepper%2FDiet Dr Pepper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pibb%2FPibb Zero</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Provide_Mfg_7K_Top_Mounted_Ice_Maker__c</picklist>
+        <values>
+            <fullName>Cornelius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoshizaki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice-O-Matic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manitowoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scotsman</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pump_Action__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remove</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pump_Qty__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pumps__c</picklist>
+        <values>
+            <fullName>43972-PUMP BIB INST 4 PUMP KIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44221-PUMP BIB INST 1 PUMP KIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44233-PUMP BIB INST 2 PUMP KIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45220-Slush pump</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_RemoveAllFTNLegacyServeDispensers__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requested_Cartridge_Order_Method__c</picklist>
+        <values>
+            <fullName>Bottler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CokeSmart</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requested_Delivery_Method__c</picklist>
+        <values>
+            <fullName>Bottler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Requested_Install_Period__c</picklist>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of April 16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of April 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of April 23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of April 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of April 9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of August 13</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of August 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of August 27</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of August 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of December 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of December 17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of December 24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of December 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of December 31</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of February 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of February 19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of February 26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of February 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of January 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of January 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of January 22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of January 29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of January 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of July 16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of July 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of July 23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of July 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of July 9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of June 11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of June 18</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of June 25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of June 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of March 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of March 19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of March 26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of March 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of May 14</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of May 21</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of May 28</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of May 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of November 12</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of November 19</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of November 26</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of November 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of October 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of October 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of October 22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of October 29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of October 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of September 10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of September 17</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of September 24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Week of September 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_SA_Contact_Preferred_Mode_Communi__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Sec_Site_Assessment_Cnct_Title__c</picklist>
+        <values>
+            <fullName>Construction Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director Ops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VP Ops</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Secondary_Contractor_Contact__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same As Above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Select_On_Boarding_Start_Time__c</picklist>
+        <values>
+            <fullName>1%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A00 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9%3A30 PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Select_designation_for_OB_Packet__c</picklist>
+        <values>
+            <fullName>Other address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outlet</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Select_provider_for_OB_Packet__c</picklist>
+        <values>
+            <fullName>Account Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artemis</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Self_Serve_Ice_Fill_Requirements__c</picklist>
+        <values>
+            <fullName>Manual FIll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top Mount Ice Maker</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Self_Serve_Top_Mnt_Ice_Maker_Instld__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Self_Serve_Top_Mount_Ice_maker_MFG__c</picklist>
+        <values>
+            <fullName>Cornelius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoshizaki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice-O-Matic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manitowoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Scotsman</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Self_Serve_Type_of_Ice__c</picklist>
+        <values>
+            <fullName>Approved Soft</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Site_Assessment_Contact_Title__c</picklist>
+        <values>
+            <fullName>Construction Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Director Ops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VP Ops</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Site_Assessment_Required__c</picklist>
+        <values>
+            <fullName>Davaco%3A New Construction Site Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment %2B Detailed Scope Summary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment %2B GFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco%3A Site Assessment Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Site Assessment Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power House</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Standard_User_Function__c</picklist>
+        <values>
+            <fullName>Store Employee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Store Owner</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Store_Type__c</picklist>
+        <values>
+            <fullName>Brick %26 Mortar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dry Outlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Store %28AM Install%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Store %28PM Install%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remodel %28AM Install%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remodel %28PM Install%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1 New Restaurant or ITP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2 Scrape or ITP Remodel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T3 Drink Station Remodel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T4 Dining Room Remodel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T5 Traditional Freestyle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Traditional Freestyle Install</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_SwitchingFromCompetitorToCocaCola__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Team_co_req_Ice_maker_Installation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Top_off_feature_on_for_carbnated_prod__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Button_9000_Series__c</picklist>
+        <values>
+            <fullName>Hide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Button__c</picklist>
+        <values>
+            <fullName>Hide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_MFG__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_Supplier_7000__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_Supplier_9000__c</picklist>
+        <values>
+            <fullName>3M%2FCuno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AJ Antunes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecolab</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selecto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_What_is_ice_fill_policy_ie_how_much__c</picklist>
+        <values>
+            <fullName>1%2F2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1%2F3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2F4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_WhoWillPerformRequiredIceMakerWork__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice Maker Manufacturer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Who_will_coordinate_Ice_maker_Install__c</picklist>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Who_will_install_Water_Filter__c</picklist>
+        <values>
+            <fullName>Approved Filters Already on Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Davaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Contractor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KO Service Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Filter Supplier</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_WillDavacoCoordinateSiteAssessment__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Will_Freestyle_backroom_be_Same_Local__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Will_Freestyle_units_be_same_local__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_kitchen_Ice_maker_MFG__c</picklist>
+        <values>
+            <fullName>Cornelius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Follett</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hoshizaki</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice-O-Matic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manitowoc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scotsman</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Requested_Install_Date__c</picklist>
+        <values>
+            <fullName>Friday%2C 1%2F16%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 1%2F2%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 1%2F23%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 1%2F30%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 1%2F9%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 10%2F10%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 10%2F17%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 10%2F24%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 10%2F3%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 10%2F31%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 11%2F14%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 11%2F21%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 11%2F28%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 11%2F7%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 12%2F12%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 12%2F19%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 12%2F26%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 12%2F5%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 2%2F13%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 2%2F20%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 2%2F27%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 2%2F6%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 3%2F6%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 9%2F19%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friday%2C 9%2F26%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 1%2F12%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 1%2F19%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 1%2F26%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 1%2F5%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 10%2F13%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 10%2F20%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 10%2F27%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 10%2F6%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 11%2F10%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 11%2F17%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 11%2F24%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 11%2F3%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 12%2F1%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 12%2F15%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 12%2F22%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 12%2F29%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 12%2F8%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 2%2F16%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 2%2F2%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 2%2F23%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 2%2F9%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 3%2F2%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 3%2F9%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 9%2F15%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 9%2F22%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monday%2C 9%2F29%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 1%2F11%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 1%2F18%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 1%2F25%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 1%2F4%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 10%2F12%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 10%2F19%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 10%2F26%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 10%2F5%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 11%2F16%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 11%2F2%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 11%2F23%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 11%2F30%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 11%2F9%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 12%2F14%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 12%2F21%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 12%2F28%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 12%2F7%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 2%2F1%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 2%2F15%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 2%2F22%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 2%2F8%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 3%2F1%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 3%2F8%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 9%2F14%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 9%2F21%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sunday%2C 9%2F28%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 1%2F1%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 1%2F15%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 1%2F22%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 1%2F29%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 1%2F8%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 10%2F16%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 10%2F2%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 10%2F23%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 10%2F30%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 10%2F9%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 11%2F13%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 11%2F20%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 11%2F27%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 11%2F6%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 12%2F11%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 12%2F18%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 12%2F25%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 12%2F4%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 2%2F12%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 2%2F19%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 2%2F26%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 2%2F5%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 3%2F5%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 9%2F18%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thursday%2C 9%2F25%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 1%2F13%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 1%2F20%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 1%2F27%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 1%2F6%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 10%2F14%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 10%2F21%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 10%2F28%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 10%2F7%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 11%2F11%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 11%2F18%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 11%2F25%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 11%2F4%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 12%2F16%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 12%2F2%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 12%2F23%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 12%2F30%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 12%2F9%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 2%2F10%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 2%2F17%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 2%2F24%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 2%2F3%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 3%2F3%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 9%2F16%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 9%2F23%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuesday%2C 9%2F30%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 1%2F14%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 1%2F21%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 1%2F28%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 1%2F7%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 10%2F1%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 10%2F15%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 10%2F22%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 10%2F29%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 10%2F8%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 11%2F12%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 11%2F19%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 11%2F26%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 11%2F5%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 12%2F10%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 12%2F17%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 12%2F24%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 12%2F3%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 12%2F31%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 2%2F11%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 2%2F18%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 2%2F25%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 2%2F4%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 3%2F4%2F2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 9%2F17%2F2014</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wednesday%2C 9%2F24%2F2014</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Standard_Contact_Same_As__c</picklist>
+        <values>
+            <fullName>Admin Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-boarding Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Assessment Contact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

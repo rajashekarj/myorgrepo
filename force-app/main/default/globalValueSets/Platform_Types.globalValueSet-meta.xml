@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>3100</fullName>
+        <default>false</default>
+        <label>3100</label>
+    </customValue>
+    <customValue>
+        <fullName>6000</fullName>
+        <default>false</default>
+        <label>6000</label>
+    </customValue>
+    <customValue>
+        <fullName>7000</fullName>
+        <default>false</default>
+        <label>7000</label>
+    </customValue>
+    <customValue>
+        <fullName>7100</fullName>
+        <default>false</default>
+        <label>7100</label>
+    </customValue>
+    <customValue>
+        <fullName>8000</fullName>
+        <default>false</default>
+        <label>8000</label>
+    </customValue>
+    <customValue>
+        <fullName>9000</fullName>
+        <default>false</default>
+        <label>9000</label>
+    </customValue>
+    <customValue>
+        <fullName>9100</fullName>
+        <default>false</default>
+        <label>9100</label>
+    </customValue>
+    <masterLabel>Platform Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timed_Out_Errors</fullName>
+    <columns>NAME</columns>
+    <columns>Error_Code__c</columns>
+    <columns>Error_Message__c</columns>
+    <columns>ServiceName__c</columns>
+    <columns>FS_Serial_Number_Asset_Tag__c</columns>
+    <columns>Outlet_Dispenser__c</columns>
+    <columns>Outlet_ACN__c</columns>
+    <columns>Outlet_Name__c</columns>
+    <columns>Request_Message__c</columns>
+    <columns>Resend__c</columns>
+    <columns>Resend_Counter__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Error_Message__c</field>
+        <operation>contains</operation>
+        <value>Exceeded maximum time allotted for callout (120000 ms),Read timed out</value>
+    </filters>
+    <filters>
+        <field>Resend__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Timed Out Errors</label>
+</ListView>

@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,lightning:actionOverride" 
+                access="global" controller="FSInstallationRelatedButtonsController">
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="epid" type="id" />
+    <div class="slds-clearfix">
+        <div class="slds-float_right">
+            <lightning:button variant="neutral" label="New Relocation (I4W)" onclick="{!c.handleClickI4W }" />
+            <lightning:button variant="neutral" label="New Relocation (O4W)" onclick="{!c.handleClickO4W }" />
+            <lightning:button variant="neutral" label="New Removal" onclick="{!c.handleClickRemove }" /> 
+            <lightning:button variant="neutral" label="New Replacement" onclick="{!c.handleClickReplace }" /> <!--Modified as part of FET-7.0 FNF 795-->
+        </div>
+    </div>
+</aura:component>

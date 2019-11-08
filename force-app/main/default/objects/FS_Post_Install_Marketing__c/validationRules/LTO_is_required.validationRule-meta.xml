@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LTO_is_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISBLANK(TEXT(FS_LTO__c)),
+(!ISBLANK(FS_LTO_Effective_Date__c)))</errorConditionFormula>
+    <errorDisplayField>FS_LTO__c</errorDisplayField>
+    <errorMessage>&#39;FET Limited Time Offer &#39; is  required if  we have &#39;Limited Time Offer Effective date &#39;</errorMessage>
+</ValidationRule>

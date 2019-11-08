@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IP_I4W_Pending_Resch</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.Name = $Label.IP_Relocation_I4W_Rec_Type
+&amp;&amp; FS_Pending_for_Reschedule__c
+&amp;&amp; FS_relocation_new_outlet_Complete__c
+&amp;&amp; FS_Relocation_from_old_outlet_to_SP_is__c &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorMessage>You are not allowed to check the Install/Reconnect Complete check box while this transaction is in Pending Reschedule status. Please update the status by providing a new Rescheduled date.</errorMessage>
+</ValidationRule>

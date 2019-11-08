@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Dual_Flavor_Check__c</fullName>
+    <externalId>false</externalId>
+    <formula>If( AND( FS_Self_Serve_Present__c ,FS_Crew_Serve_Present__c ,  FS_All_Fields_Entered__c , FS_Dasani_Check__c , FS_Pibb_Pepper_Check__c , FS_Water_Check__c),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dual Flavor Check</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

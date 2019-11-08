@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Previous_original_onboarding_date__c</fullName>
+    <description>It holds the previous original date. Not to be displayed in any page layout. This is used only in sending an email to footprint when onboarding date changes.</description>
+    <externalId>false</externalId>
+    <label>Previous original onboarding date</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

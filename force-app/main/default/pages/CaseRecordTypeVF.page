@@ -1,0 +1,33 @@
+<apex:page standardcontroller="Case" extensions="CaseRecordTypeCtrl" >
+<apex:form id="TheForm">
+     <apex:sectionHeader title="New Case" subtitle="Select Case Record Type"/>
+    	<apex:pageBlock >
+         <apex:pageBlockSection >
+             <apex:pageBlockSectionItem >
+                 <b>
+                    Select Case Record Type
+                 </b>                
+             </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+     <apex:pageBlockSection >
+     <apex:pageBlockSectionItem >          
+     <apex:outputLabel value="Record Type of new record"></apex:outputLabel>
+   	 <apex:selectList value="{!strRecordType}" multiselect="false" size="1">        
+     <apex:selectOptions value="{!RecordTypesNames}"/>      
+     </apex:selectList>
+	 </apex:pageBlockSectionItem>
+     </apex:pageBlockSection>
+    <apex:pageBlockButtons location="bottom">
+     <apex:commandButton value="Continue" action="{!redirectToNewVFPage}"/> 
+     <apex:commandButton value="Cancel" action="{!Cancel}"/>
+    </apex:pageBlockButtons>
+    <br></br>
+     <br></br>
+      <br></br>
+        <apex:pageBlockTable value="{!ListVaria}" var="recod" columns="2">            
+        <apex:column headerValue="Record Type Label"  value="{!recod.RecName}" />
+        <apex:column headerValue="Description" value="{!recod.RecDesc}" />
+        </apex:pageBlockTable>
+ </apex:pageBlock>
+</apex:form>
+</apex:page>

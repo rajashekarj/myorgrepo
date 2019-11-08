@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Brandset</fullName>
+    <fields>Name</fields>
+    <fields>FS_Effective_Start_Date__c</fields>
+    <fields>FS_Effective_End_Date__c</fields>
+    <fields>FS_Available_for_commercial_use__c</fields>
+    <label>FS Brandset</label>
+</CompactLayout>

@@ -1,0 +1,32 @@
+<!-- 
+Name	: FOT_OD_SettingsReadOnlyView
+Description: OD settings readonly object view custom lightning component
+Owner 	: Infosys
+Date  	: 08/05/2018
+--> 
+
+<aura:component implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" controller="FOT_ODSettingsController">
+    <aura:attribute name="odSettings" type="FS_OD_SettingsReadOnly__c" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="ODSettingEditableRecordId" type="Id" />
+    <aura:attribute name="editClick" type="boolean" />
+    <aura:attribute name="spinner" type="Boolean" default="false"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:handler name="onSaveSuccess" event="force:recordSaveSuccess" action="{!c.handleSaveSuccess}"/>
+    
+    <!-- Spinner start -->
+    <aura:if isTrue="{!v.spinner}">
+        <div class="slds-spinner_container">
+            <lightning:spinner aura:id="spinner" variant="brand" size="medium"/>
+        </div>
+    </aura:if>
+    <!-- Spinner End -->
+    
+    <!-- Standard OD settings readonly object record view -->
+    <div aura:id="odreadDiv" class="slds-hide">
+        <force:recordView recordId="{!v.ODSettingEditableRecordId}"/>
+    </div>
+    
+</aura:component>

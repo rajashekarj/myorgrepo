@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HIO</fullName>
+                <default>false</default>
+                <label>HIO</label>
+            </value>
+            <value>
+                <fullName>STA Request</fullName>
+                <default>false</default>
+                <label>STA Request</label>
+            </value>
+            <value>
+                <fullName>FSGC</fullName>
+                <default>false</default>
+                <label>FSGC</label>
+            </value>
+            <value>
+                <fullName>Connectivity</fullName>
+                <default>false</default>
+                <label>Connectivity</label>
+            </value>
+            <value>
+                <fullName>Agent Proactive</fullName>
+                <default>false</default>
+                <label>Agent Proactive</label>
+            </value>
+            <value>
+                <fullName>Questions/Inquires</fullName>
+                <default>false</default>
+                <label>Questions/Inquires</label>
+            </value>
+            <value>
+                <fullName>FA Testing</fullName>
+                <default>false</default>
+                <label>FA Testing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

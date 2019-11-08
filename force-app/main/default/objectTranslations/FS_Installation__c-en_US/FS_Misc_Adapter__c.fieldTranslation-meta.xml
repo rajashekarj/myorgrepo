@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Misc_Adapter__c</name>
+    <picklistValues>
+        <masterLabel>46303 Hoshizaki Funnel Kit for Models: KM-280, -320, -500, -501, -515, -630M, -650M &amp; -600MAH</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46377 : Hoshizaki Funnel Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

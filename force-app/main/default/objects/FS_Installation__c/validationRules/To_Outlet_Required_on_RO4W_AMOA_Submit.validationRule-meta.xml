@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>To_Outlet_Required_on_RO4W_AMOA_Submit</fullName>
+    <active>true</active>
+    <description>To Outlet is Mandatory when AMOA status changed to Submitted / Completed under RO4W</description>
+    <errorConditionFormula>AND(OR(TEXT(FS_Asset_Tracking_Form_AMOA_Status__c)=&quot;Submitted&quot;,TEXT(FS_Asset_Tracking_Form_AMOA_Status__c)=&quot;Complete&quot;), ISBLANK( FS_To_Outlet_Name__c))</errorConditionFormula>
+    <errorDisplayField>FS_To_Outlet_Name__c</errorDisplayField>
+    <errorMessage>Please select the &#39;To ACN&#39; before submitting for AMOA</errorMessage>
+</ValidationRule>

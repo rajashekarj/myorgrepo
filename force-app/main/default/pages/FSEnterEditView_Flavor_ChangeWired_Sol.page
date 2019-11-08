@@ -1,0 +1,104 @@
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!--   Page : Enter/Edit/View Flavor Change/Wired Sol                                                                     -->
+<!--   Created By   : Pallavi Sharma (Appiro)                                                                             -->
+<!--   Created Date : 17 - Sep - 2013
+<!--   Modified By  : Harshita Khandelwal 17-12-2014 Ref:T-341592
+<!--   Modified By  : Venkata for FET 4.0 Project																			      -->
+<!-------------------------------------------------------------------------------------------------------------------------->
+<apex:page Controller="FSEnterEditViewFlavorChangeWiredSolCtrl">
+    
+    <apex:form >  
+        
+        <apex:actionstatus id="status">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder" style="top: 74.2px; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                        <span class="waitingDescription">Saving...</span>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionstatus>   
+        
+        <apex:pageBlock mode="inlineEdit" id="FlavorChange">
+            <!-- <apex:pageMessages /> -->
+            <apex:repeat value="{!errorList}" var="error">
+                <apex:outputLabel style="color:red;font-weight:bold;">{!error}</apex:outputLabel><br/>
+            </apex:repeat>
+            <br/>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton id="saveButton" value="Save" action="{!saveInstallation}"  rerender="FlavorChange" status="status" rendered="{!lstInstallation.size > 0}"/>
+                <apex:commandButton id="cancelButton" value="Cancel" reRender="none" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockTable border="1" style="border-color:#E0E3E5; "  value="{!lstInstallation}" var="install" rendered="{!lstInstallation.size > 0}">
+                
+                <apex:column headerValue="Installation Name">
+                    <apex:outputLink value="/{!install.id}" target="_blank">
+                        <apex:outputField value="{!install.name}"/>
+                    </apex:outputLink>
+                </apex:column>
+                
+                <apex:column headerValue="Status">
+                    <apex:outputText value="{!install.FS_BrandStatus__c}"/>
+                </apex:column>
+                
+                <apex:column headerValue="Outlet Information" >
+                    <div style="width:200px; display:block;"> <apex:outputField value="{!install.FS_Outlet_Information__c}"/></div>
+                </apex:column>
+                
+                <apex:column headerValue="Platforms">                    
+                    <apex:datatable value="{!install.Account_Brandsets__r}" var="brandset">
+                        <apex:column >
+                           <apex:outputText value="{!brandset.FS_Platforms__c}" />
+                        </apex:column>
+                    </apex:datatable>
+                </apex:column>
+                
+                <apex:column headerValue="Platform Type">
+                    <apex:datatable value="{!install.Account_Brandsets__r}" var="brand">
+                        <apex:column >
+                            <apex:outputText value="{!brand.FS_Platform__c}" />             
+                        </apex:column>
+                    </apex:datatable>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:facet name="header">
+                        Brandset
+                        <img src="/s.gif" class="helpIcon" title="Please ensure you follow commercial policies as it relates to brandsets allowed in one given outlet" height="13" width="13" />
+                    </apex:facet>
+                    <apex:datatable value="{!install.Account_Brandsets__r}" var="brand">
+                        <apex:column >
+                            <apex:outputPanel >
+                                <div class="requiredInput" style="left: 0px;height: inherit;">
+                                    <div class="requiredBlock" style="left: -4px;"></div>
+                                    <apex:InputField value="{!brand.FS_Brandset__c}"/> 
+                                </div>
+                            </apex:outputPanel>
+                        </apex:column>
+                    </apex:datatable>  
+                </apex:column>
+                
+                <apex:column headerValue="NonBranded Water">
+                    <apex:datatable value="{!install.Account_Brandsets__r}" var="brand">
+                        <apex:column >
+                            <apex:outputPanel >
+                                <div class="requiredInput" style="left: 0px;height: inherit;">
+                                    <div class="requiredBlock" style="left: -4px;"></div>
+                                    <apex:InputField value="{!brand.FS_NonBranded_Water__c}"/> 
+                                </div>
+                            </apex:outputPanel>
+                        </apex:column> 
+                    </apex:datatable>
+                </apex:column>                 
+                
+            </apex:pageBlockTable>            
+            <apex:outputPanel rendered="{!lstInstallation.size == 0}">
+                <h2><b> No Record Found </b></h2>
+            </apex:outputPanel>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

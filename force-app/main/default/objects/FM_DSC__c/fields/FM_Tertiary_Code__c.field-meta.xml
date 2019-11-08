@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Tertiary_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Tertiary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FM_Secondary_Code__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Backflow preventer</fullName>
+                <default>false</default>
+                <label>Backflow preventer</label>
+            </value>
+            <value>
+                <fullName>CO2 Regulator</fullName>
+                <default>false</default>
+                <label>CO2 Regulator</label>
+            </value>
+            <value>
+                <fullName>CO2 Supply</fullName>
+                <default>false</default>
+                <label>CO2 Supply</label>
+            </value>
+            <value>
+                <fullName>HFCS Supply</fullName>
+                <default>false</default>
+                <label>HFCS Supply</label>
+            </value>
+            <value>
+                <fullName>BIB Connector</fullName>
+                <default>false</default>
+                <label>BIB Connector</label>
+            </value>
+            <value>
+                <fullName>BIB Hose</fullName>
+                <default>false</default>
+                <label>BIB Hose</label>
+            </value>
+            <value>
+                <fullName>Vacuum Regulator</fullName>
+                <default>false</default>
+                <label>Vacuum Regulator</label>
+            </value>
+            <value>
+                <fullName>Water Booster</fullName>
+                <default>false</default>
+                <label>Water Booster</label>
+            </value>
+            <value>
+                <fullName>Water Supply</fullName>
+                <default>false</default>
+                <label>Water Supply</label>
+            </value>
+            <value>
+                <fullName>Water Filters</fullName>
+                <default>false</default>
+                <label>Water Filters</label>
+            </value>
+            <value>
+                <fullName>Tank</fullName>
+                <default>false</default>
+                <label>Tank</label>
+            </value>
+            <value>
+                <fullName>Carb Probe</fullName>
+                <default>false</default>
+                <label>Carb Probe</label>
+            </value>
+            <value>
+                <fullName>Pressure Relief</fullName>
+                <default>false</default>
+                <label>Pressure Relief</label>
+            </value>
+            <value>
+                <fullName>Tubing</fullName>
+                <default>false</default>
+                <label>Tubing</label>
+            </value>
+            <value>
+                <fullName>CGP</fullName>
+                <default>false</default>
+                <label>CGP</label>
+            </value>
+            <value>
+                <fullName>Airvent</fullName>
+                <default>false</default>
+                <label>Airvent</label>
+            </value>
+            <value>
+                <fullName>Inlet Fittings</fullName>
+                <default>false</default>
+                <label>Inlet Fittings</label>
+            </value>
+            <value>
+                <fullName>Outlet Fittings</fullName>
+                <default>false</default>
+                <label>Outlet Fittings</label>
+            </value>
+            <value>
+                <fullName>Water Lines</fullName>
+                <default>false</default>
+                <label>Water Lines</label>
+            </value>
+            <value>
+                <fullName>BIB Changeout</fullName>
+                <default>false</default>
+                <label>BIB Changeout</label>
+            </value>
+            <value>
+                <fullName>Cassette/BIB Product</fullName>
+                <default>false</default>
+                <label>Cassette/BIB Product</label>
+            </value>
+            <value>
+                <fullName>Lock</fullName>
+                <default>false</default>
+                <label>Lock</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Ice Supply</fullName>
+                <default>false</default>
+                <label>Ice Supply</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Cup Rest</fullName>
+                <default>false</default>
+                <label>Cup Rest</label>
+            </value>
+            <value>
+                <fullName>Drip Tray</fullName>
+                <default>false</default>
+                <label>Drip Tray</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Drain</fullName>
+                <default>false</default>
+                <label>Ice Bin Drain</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Drain Plug</fullName>
+                <default>false</default>
+                <label>Ice Bin Drain Plug</label>
+            </value>
+            <value>
+                <fullName>Main Drain</fullName>
+                <default>false</default>
+                <label>Main Drain</label>
+            </value>
+            <value>
+                <fullName>CDM</fullName>
+                <default>false</default>
+                <label>CDM</label>
+            </value>
+            <value>
+                <fullName>Display</fullName>
+                <default>false</default>
+                <label>Display</label>
+            </value>
+            <value>
+                <fullName>Touchscreen</fullName>
+                <default>false</default>
+                <label>Touchscreen</label>
+            </value>
+            <value>
+                <fullName>HMI</fullName>
+                <default>false</default>
+                <label>HMI</label>
+            </value>
+            <value>
+                <fullName>KSM</fullName>
+                <default>false</default>
+                <label>KSM</label>
+            </value>
+            <value>
+                <fullName>Carb Fill</fullName>
+                <default>false</default>
+                <label>Carb Fill</label>
+            </value>
+            <value>
+                <fullName>Flow Meters</fullName>
+                <default>false</default>
+                <label>Flow Meters</label>
+            </value>
+            <value>
+                <fullName>Macro Board</fullName>
+                <default>false</default>
+                <label>Macro Board</label>
+            </value>
+            <value>
+                <fullName>Agit 8 Brd</fullName>
+                <default>false</default>
+                <label>Agit 8 Brd</label>
+            </value>
+            <value>
+                <fullName>Static 13 Brd</fullName>
+                <default>false</default>
+                <label>Static 13 Brd</label>
+            </value>
+            <value>
+                <fullName>Power Supply</fullName>
+                <default>false</default>
+                <label>Power Supply</label>
+            </value>
+            <value>
+                <fullName>RFID Reader</fullName>
+                <default>false</default>
+                <label>RFID Reader</label>
+            </value>
+            <value>
+                <fullName>RFID Agit Antenna</fullName>
+                <default>false</default>
+                <label>RFID Agit Antenna</label>
+            </value>
+            <value>
+                <fullName>RFID Static Antenna</fullName>
+                <default>false</default>
+                <label>RFID Static Antenna</label>
+            </value>
+            <value>
+                <fullName>Front Cladding/Cup</fullName>
+                <default>false</default>
+                <label>Front Cladding/Cup</label>
+            </value>
+            <value>
+                <fullName>Gaskets</fullName>
+                <default>false</default>
+                <label>Gaskets</label>
+            </value>
+            <value>
+                <fullName>Hinge</fullName>
+                <default>false</default>
+                <label>Hinge</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Cover</fullName>
+                <default>false</default>
+                <label>Ice Bin Cover</label>
+            </value>
+            <value>
+                <fullName>Legs</fullName>
+                <default>false</default>
+                <label>Legs</label>
+            </value>
+            <value>
+                <fullName>Product Door</fullName>
+                <default>false</default>
+                <label>Product Door</label>
+            </value>
+            <value>
+                <fullName>Side Skins</fullName>
+                <default>false</default>
+                <label>Side Skins</label>
+            </value>
+            <value>
+                <fullName>Trim</fullName>
+                <default>false</default>
+                <label>Trim</label>
+            </value>
+            <value>
+                <fullName>Door Switch</fullName>
+                <default>false</default>
+                <label>Door Switch</label>
+            </value>
+            <value>
+                <fullName>Grounding Cable</fullName>
+                <default>false</default>
+                <label>Grounding Cable</label>
+            </value>
+            <value>
+                <fullName>Agitation Harness</fullName>
+                <default>false</default>
+                <label>Agitation Harness</label>
+            </value>
+            <value>
+                <fullName>Main Power Harness</fullName>
+                <default>false</default>
+                <label>Main Power Harness</label>
+            </value>
+            <value>
+                <fullName>Micro Static Harness</fullName>
+                <default>false</default>
+                <label>Micro Static Harness</label>
+            </value>
+            <value>
+                <fullName>Micro Agit Harness</fullName>
+                <default>false</default>
+                <label>Micro Agit Harness</label>
+            </value>
+            <value>
+                <fullName>Macro Board Harness</fullName>
+                <default>false</default>
+                <label>Macro Board Harness</label>
+            </value>
+            <value>
+                <fullName>HMI Harness</fullName>
+                <default>false</default>
+                <label>HMI Harness</label>
+            </value>
+            <value>
+                <fullName>PSM to KSM</fullName>
+                <default>false</default>
+                <label>PSM to KSM</label>
+            </value>
+            <value>
+                <fullName>Power Cable FCM Harness</fullName>
+                <default>false</default>
+                <label>Power Cable FCM Harness</label>
+            </value>
+            <value>
+                <fullName>Power Cable Main Power Harness</fullName>
+                <default>false</default>
+                <label>Power Cable Main Power Harness</label>
+            </value>
+            <value>
+                <fullName>Power Cable</fullName>
+                <default>false</default>
+                <label>Power Cable</label>
+            </value>
+            <value>
+                <fullName>Power Cable Static Harness</fullName>
+                <default>false</default>
+                <label>Power Cable Static Harness</label>
+            </value>
+            <value>
+                <fullName>Agitation Tower</fullName>
+                <default>false</default>
+                <label>Agitation Tower</label>
+            </value>
+            <value>
+                <fullName>Static Tower</fullName>
+                <default>false</default>
+                <label>Static Tower</label>
+            </value>
+            <value>
+                <fullName>Soda Tubing</fullName>
+                <default>false</default>
+                <label>Soda Tubing</label>
+            </value>
+            <value>
+                <fullName>Water Tubing</fullName>
+                <default>false</default>
+                <label>Water Tubing</label>
+            </value>
+            <value>
+                <fullName>Agitation Motor</fullName>
+                <default>false</default>
+                <label>Agitation Motor</label>
+            </value>
+            <value>
+                <fullName>Lower Chute</fullName>
+                <default>false</default>
+                <label>Lower Chute</label>
+            </value>
+            <value>
+                <fullName>Upper Chute</fullName>
+                <default>false</default>
+                <label>Upper Chute</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Auger</fullName>
+                <default>false</default>
+                <label>Ice Bin Auger</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Auger Retainer</fullName>
+                <default>false</default>
+                <label>Ice Bin Auger Retainer</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Liner</fullName>
+                <default>false</default>
+                <label>Ice Bin Liner</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Divider</fullName>
+                <default>false</default>
+                <label>Ice Bin Divider</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Upper Chute</fullName>
+                <default>false</default>
+                <label>Ice Bin Upper Chute</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Lid Switch</fullName>
+                <default>false</default>
+                <label>Ice Bin Lid Switch</label>
+            </value>
+            <value>
+                <fullName>Ice Gate Auger</fullName>
+                <default>false</default>
+                <label>Ice Gate Auger</label>
+            </value>
+            <value>
+                <fullName>Ice Gate Ice Bin Liner</fullName>
+                <default>false</default>
+                <label>Ice Gate Ice Bin Liner</label>
+            </value>
+            <value>
+                <fullName>Ice Gate Lower Chute</fullName>
+                <default>false</default>
+                <label>Ice Gate Lower Chute</label>
+            </value>
+            <value>
+                <fullName>Ice Gate</fullName>
+                <default>false</default>
+                <label>Ice Gate</label>
+            </value>
+            <value>
+                <fullName>Ice Gate Upper Chute</fullName>
+                <default>false</default>
+                <label>Ice Gate Upper Chute</label>
+            </value>
+            <value>
+                <fullName>Ice Gate Yoke Cotter Pin</fullName>
+                <default>false</default>
+                <label>Ice Gate Yoke Cotter Pin</label>
+            </value>
+            <value>
+                <fullName>Ice Gate Yoke Lower Chute</fullName>
+                <default>false</default>
+                <label>Ice Gate Yoke Lower Chute</label>
+            </value>
+            <value>
+                <fullName>Yoke</fullName>
+                <default>false</default>
+                <label>Yoke</label>
+            </value>
+            <value>
+                <fullName>Ice Lever</fullName>
+                <default>false</default>
+                <label>Ice Lever</label>
+            </value>
+            <value>
+                <fullName>Ice Lever Switch</fullName>
+                <default>false</default>
+                <label>Ice Lever Switch</label>
+            </value>
+            <value>
+                <fullName>Solenoid Cable</fullName>
+                <default>false</default>
+                <label>Solenoid Cable</label>
+            </value>
+            <value>
+                <fullName>Solenoid Coil</fullName>
+                <default>false</default>
+                <label>Solenoid Coil</label>
+            </value>
+            <value>
+                <fullName>Solenoid Yoke</fullName>
+                <default>false</default>
+                <label>Solenoid Yoke</label>
+            </value>
+            <value>
+                <fullName>Modem/Connectivity</fullName>
+                <default>false</default>
+                <label>Modem/Connectivity</label>
+            </value>
+            <value>
+                <fullName>Inner Nozzle</fullName>
+                <default>false</default>
+                <label>Inner Nozzle</label>
+            </value>
+            <value>
+                <fullName>Nozzle Body</fullName>
+                <default>false</default>
+                <label>Nozzle Body</label>
+            </value>
+            <value>
+                <fullName>Nozzle Tip</fullName>
+                <default>false</default>
+                <label>Nozzle Tip</label>
+            </value>
+            <value>
+                <fullName>Motor</fullName>
+                <default>false</default>
+                <label>Motor</label>
+            </value>
+            <value>
+                <fullName>Linkage</fullName>
+                <default>false</default>
+                <label>Linkage</label>
+            </value>
+            <value>
+                <fullName>Tower</fullName>
+                <default>false</default>
+                <label>Tower</label>
+            </value>
+            <value>
+                <fullName>A1</fullName>
+                <default>false</default>
+                <label>A1</label>
+            </value>
+            <value>
+                <fullName>A2</fullName>
+                <default>false</default>
+                <label>A2</label>
+            </value>
+            <value>
+                <fullName>A3</fullName>
+                <default>false</default>
+                <label>A3</label>
+            </value>
+            <value>
+                <fullName>A4</fullName>
+                <default>false</default>
+                <label>A4</label>
+            </value>
+            <value>
+                <fullName>A5</fullName>
+                <default>false</default>
+                <label>A5</label>
+            </value>
+            <value>
+                <fullName>A6</fullName>
+                <default>false</default>
+                <label>A6</label>
+            </value>
+            <value>
+                <fullName>A7</fullName>
+                <default>false</default>
+                <label>A7</label>
+            </value>
+            <value>
+                <fullName>A8</fullName>
+                <default>false</default>
+                <label>A8</label>
+            </value>
+            <value>
+                <fullName>S1</fullName>
+                <default>false</default>
+                <label>S1</label>
+            </value>
+            <value>
+                <fullName>S2</fullName>
+                <default>false</default>
+                <label>S2</label>
+            </value>
+            <value>
+                <fullName>S3</fullName>
+                <default>false</default>
+                <label>S3</label>
+            </value>
+            <value>
+                <fullName>S4</fullName>
+                <default>false</default>
+                <label>S4</label>
+            </value>
+            <value>
+                <fullName>S5</fullName>
+                <default>false</default>
+                <label>S5</label>
+            </value>
+            <value>
+                <fullName>S6</fullName>
+                <default>false</default>
+                <label>S6</label>
+            </value>
+            <value>
+                <fullName>S7</fullName>
+                <default>false</default>
+                <label>S7</label>
+            </value>
+            <value>
+                <fullName>S8</fullName>
+                <default>false</default>
+                <label>S8</label>
+            </value>
+            <value>
+                <fullName>S9</fullName>
+                <default>false</default>
+                <label>S9</label>
+            </value>
+            <value>
+                <fullName>S10</fullName>
+                <default>false</default>
+                <label>S10</label>
+            </value>
+            <value>
+                <fullName>S11</fullName>
+                <default>false</default>
+                <label>S11</label>
+            </value>
+            <value>
+                <fullName>S12</fullName>
+                <default>false</default>
+                <label>S12</label>
+            </value>
+            <value>
+                <fullName>S13</fullName>
+                <default>false</default>
+                <label>S13</label>
+            </value>
+            <value>
+                <fullName>Back Block</fullName>
+                <default>false</default>
+                <label>Back Block</label>
+            </value>
+            <value>
+                <fullName>Soda Water</fullName>
+                <default>false</default>
+                <label>Soda Water</label>
+            </value>
+            <value>
+                <fullName>Water</fullName>
+                <default>false</default>
+                <label>Water</label>
+            </value>
+            <value>
+                <fullName>HFCS</fullName>
+                <default>false</default>
+                <label>HFCS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <valueName>Power Cable FCM Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <valueName>Power Cable Main Power Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <valueName>Power Cable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Cable</controllingFieldValue>
+            <valueName>Power Cable Static Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingredient Tubing</controllingFieldValue>
+            <valueName>Agitation Tower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ingredient Tubing</controllingFieldValue>
+            <valueName>Static Tower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Soda Tubing</controllingFieldValue>
+            <valueName>Soda Tubing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Tubing</controllingFieldValue>
+            <valueName>Water Tubing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitation Motor</controllingFieldValue>
+            <valueName>Agitation Motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Lower Chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Chute</controllingFieldValue>
+            <valueName>Upper Chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin</controllingFieldValue>
+            <valueName>Ice Bin Auger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin</controllingFieldValue>
+            <valueName>Ice Bin Auger Retainer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin</controllingFieldValue>
+            <valueName>Ice Bin Liner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin</controllingFieldValue>
+            <valueName>Ice Bin Divider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin</controllingFieldValue>
+            <valueName>Ice Bin Upper Chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Lid Switch</controllingFieldValue>
+            <valueName>Ice Bin Lid Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <valueName>Ice Gate Auger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <valueName>Ice Gate Ice Bin Liner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <valueName>Ice Gate Lower Chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <valueName>Ice Gate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate</controllingFieldValue>
+            <valueName>Ice Gate Upper Chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate Yoke</controllingFieldValue>
+            <valueName>Ice Gate Yoke Cotter Pin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate Yoke</controllingFieldValue>
+            <valueName>Ice Gate Yoke Lower Chute</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Gate Yoke</controllingFieldValue>
+            <valueName>Yoke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inlet Fittings</controllingFieldValue>
+            <valueName>Inlet Fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Lever</controllingFieldValue>
+            <valueName>Ice Lever</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Lever</controllingFieldValue>
+            <valueName>Ice Lever Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outlet Fittings</controllingFieldValue>
+            <valueName>Outlet Fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid</controllingFieldValue>
+            <valueName>Solenoid Cable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid</controllingFieldValue>
+            <valueName>Solenoid Coil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solenoid</controllingFieldValue>
+            <valueName>Solenoid Yoke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Lines</controllingFieldValue>
+            <valueName>Water Lines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modem/Connectivity</controllingFieldValue>
+            <valueName>Modem/Connectivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BIB Changeout</controllingFieldValue>
+            <valueName>BIB Changeout</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Inner Nozzle</controllingFieldValue>
+            <valueName>Inner Nozzle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cassette/BIB Product</controllingFieldValue>
+            <valueName>Cassette/BIB Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nozzle Body</controllingFieldValue>
+            <valueName>Nozzle Body</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Door</controllingFieldValue>
+            <controllingFieldValue>Lock</controllingFieldValue>
+            <valueName>Lock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nozzle Tip</controllingFieldValue>
+            <valueName>Nozzle Tip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Supply</controllingFieldValue>
+            <valueName>Ice Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cup Rest</controllingFieldValue>
+            <valueName>Cup Rest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Backflow preventer</controllingFieldValue>
+            <valueName>Backflow preventer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO2 Supply/Regulator</controllingFieldValue>
+            <valueName>CO2 Regulator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CO2 Supply/Regulator</controllingFieldValue>
+            <valueName>CO2 Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HFCS Supply</controllingFieldValue>
+            <valueName>HFCS Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HFCS Supply</controllingFieldValue>
+            <valueName>BIB Connector</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HFCS Supply</controllingFieldValue>
+            <valueName>BIB Hose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HFCS Supply</controllingFieldValue>
+            <valueName>Vacuum Regulator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Supply</controllingFieldValue>
+            <valueName>Water Booster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Supply</controllingFieldValue>
+            <valueName>Water Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Water Supply</controllingFieldValue>
+            <valueName>Water Filters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tank</controllingFieldValue>
+            <valueName>Tank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carb Probe</controllingFieldValue>
+            <valueName>Carb Probe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pressure Relief</controllingFieldValue>
+            <valueName>Pressure Relief</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tubing</controllingFieldValue>
+            <valueName>Tubing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CGP/Airvent</controllingFieldValue>
+            <valueName>CGP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CGP/Airvent</controllingFieldValue>
+            <valueName>Airvent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Motor</controllingFieldValue>
+            <valueName>Motor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tower</controllingFieldValue>
+            <valueName>Tower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agitated</controllingFieldValue>
+            <valueName>A8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Static</controllingFieldValue>
+            <valueName>S13</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drip Tray</controllingFieldValue>
+            <valueName>Drip Tray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>Back Block</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>Soda Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>Water</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Drain</controllingFieldValue>
+            <valueName>Ice Bin Drain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drip Valve</controllingFieldValue>
+            <valueName>HFCS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Drain Plug</controllingFieldValue>
+            <valueName>Ice Bin Drain Plug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Main Drain</controllingFieldValue>
+            <valueName>Main Drain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDM</controllingFieldValue>
+            <valueName>CDM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Display</controllingFieldValue>
+            <valueName>Display</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HMI</controllingFieldValue>
+            <valueName>HMI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>KSM</controllingFieldValue>
+            <valueName>KSM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Macro Board</controllingFieldValue>
+            <valueName>Carb Fill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Macro Board</controllingFieldValue>
+            <valueName>Flow Meters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Macro Board</controllingFieldValue>
+            <valueName>Macro Board</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Micro Board</controllingFieldValue>
+            <valueName>Agit 8 Brd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Micro Board</controllingFieldValue>
+            <valueName>Static 13 Brd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Power Supply</controllingFieldValue>
+            <valueName>Power Supply</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFID</controllingFieldValue>
+            <valueName>RFID Reader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFID</controllingFieldValue>
+            <valueName>RFID Agit Antenna</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RFID</controllingFieldValue>
+            <valueName>RFID Static Antenna</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Front Cladding/Cup</controllingFieldValue>
+            <valueName>Front Cladding/Cup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gaskets</controllingFieldValue>
+            <valueName>Gaskets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hinge</controllingFieldValue>
+            <valueName>Hinge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ice Bin Cover</controllingFieldValue>
+            <valueName>Ice Bin Cover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Legs</controllingFieldValue>
+            <valueName>Legs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Door</controllingFieldValue>
+            <valueName>Product Door</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Side Skins</controllingFieldValue>
+            <valueName>Side Skins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trim</controllingFieldValue>
+            <valueName>Trim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Door Switch</controllingFieldValue>
+            <valueName>Door Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grounding Cable</controllingFieldValue>
+            <valueName>Grounding Cable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Harness</controllingFieldValue>
+            <valueName>Agitation Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Harness</controllingFieldValue>
+            <valueName>Main Power Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Harness</controllingFieldValue>
+            <valueName>Micro Static Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Harness</controllingFieldValue>
+            <valueName>Micro Agit Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Harness</controllingFieldValue>
+            <valueName>Macro Board Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Harness</controllingFieldValue>
+            <valueName>HMI Harness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Harness</controllingFieldValue>
+            <valueName>PSM to KSM</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

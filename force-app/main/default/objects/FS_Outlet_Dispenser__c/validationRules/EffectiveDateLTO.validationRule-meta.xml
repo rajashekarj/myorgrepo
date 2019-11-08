@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EffectiveDateLTO</fullName>
+    <active>true</active>
+    <description>LTO and LTO Effective Date are co mandatory. Please select LTO value for Post Install</description>
+    <errorConditionFormula>AND(!ISBLANK(TEXT( FS_LTO_New__c )),
+(ISBLANK(FS_LTO_Effective_Date__c)),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_LTO_Effective_Date__c</errorDisplayField>
+    <errorMessage>LTO Effective Date is Mandatory if LTO is selcted.</errorMessage>
+</ValidationRule>

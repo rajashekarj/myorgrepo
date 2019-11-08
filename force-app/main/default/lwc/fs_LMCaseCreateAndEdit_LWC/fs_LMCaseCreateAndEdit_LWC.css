@@ -1,0 +1,83 @@
+.slds-theme_shade, .slds-theme--shade {
+    background-color: rgb(232, 229, 222);
+}
+.DispenserTable{
+    border: 1px solid #e0e3e5;
+    border-collapse: collapse;
+}
+.DispenserTable>tbody>tr>td {
+    border: 1px solid #e0e3e5;
+    border-collapse: collapse;
+}
+.DispenserTable>thead>tr>th{
+    border: 1px solid #e0e3e5 !important;
+    border-collapse: collapse;
+}
+.DispenserTable>td {
+    border: 1px solid #e0e3e5 !important;
+    border-collapse: collapse;
+}
+.DispenserTable>th {
+    border: 1px solid #e0e3e5 !important;
+    border-collapse: collapse;
+}
+.DispenserTable > th :nth-child(even){
+    background-color: #f2f2f2;
+}
+.modal-lg {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 70rem;
+    min-width: 20rem;
+}
+.AccountTableHeaders > tbody > tr > th {
+    padding:3% !important;
+}
+.AccountTableRows {
+    padding:3% !important;
+}
+.THIS label.slds-form-element__label {
+    display: none;
+}
+.marginleft13{
+    margin-left: 13%;
+}
+.marginleft1{
+    margin-left: 1%;
+}
+.caseOwnerFieldGrid{
+    padding-bottom: 2%;
+}
+.AccountNote{
+    padding-left: 6.5%;
+    font-weight: bold;
+}
+.padding1per{
+    padding:1%;
+}
+.alertModalHeaderText{
+    float: left;
+    font-weight: bold;
+    font-size: large;
+}
+.alertModalFooter{
+    border-top: none !important;
+    background-color: white;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.alertModalHeader{
+    background-color: #fb5e5e;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.alertModalContainer{
+    max-width: 30% !important;
+}
+.alertMessageText{
+    font-size: medium;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}

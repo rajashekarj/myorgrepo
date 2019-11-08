@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Accounts_Chain_and_HQ</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>FS_Chain_ACN__c</columns>
+    <columns>FS_Chain__c</columns>
+    <columns>FS_Headquarters__c</columns>
+    <columns>FS_HQ_ACN__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.FS_Chain,Account.FS_Headquarters</value>
+    </filters>
+    <label>My Accounts Chain and HQ</label>
+</ListView>

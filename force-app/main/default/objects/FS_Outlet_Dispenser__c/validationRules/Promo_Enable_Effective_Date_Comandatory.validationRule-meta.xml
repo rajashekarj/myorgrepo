@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promo_Enable_Effective_Date_Comandatory</fullName>
+    <active>true</active>
+    <description>Promo Enabled and Promo Enabled Effective Date are Co Mandatory</description>
+    <errorConditionFormula>AND(!ISBLANK(TEXT( FS_Promo_Enabled_New__c )),
+(ISBLANK(FS_Promo_Enabled_Effective_Date__c )),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Promo_Enabled_Effective_Date__c</errorDisplayField>
+    <errorMessage>Promo Enabled Effective Date is mandatory if Promo Enabled is selected</errorMessage>
+</ValidationRule>

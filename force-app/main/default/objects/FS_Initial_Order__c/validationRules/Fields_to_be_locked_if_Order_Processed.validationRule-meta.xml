@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fields_to_be_locked_if_Order_Processed</fullName>
+    <active>true</active>
+    <description>Once the order processed check box is checked.  Individual cartridge overrides ( only for 8000/ 9000 overrides ) can&#39;t be updated</description>
+    <errorConditionFormula>IF( AND(RecordType.Name=&#39;8000 OR 9000 Series&#39;,FS_Order_Processed__c =true),
+OR(ISCHANGED(FS_1_Override__c),ISCHANGED( FS_2_Override__c),ISCHANGED( FS_3_Override__c),ISCHANGED( FS_4_Override__c),
+ISCHANGED( FS_5_Override__c),ISCHANGED( FS_6_Override__c),ISCHANGED( FS_7_Override__c),ISCHANGED( FS_8_Override__c),
+ISCHANGED( FS_9_Override__c),ISCHANGED( FS_10_Override__c),ISCHANGED( FS_11_Override__c),ISCHANGED( FS_12_Override__c),
+ISCHANGED( FS_13_Override__c),ISCHANGED( FS_14_Override__c),ISCHANGED( FS_15_Override__c),ISCHANGED( FS_16_Override__c),
+ISCHANGED( FS_17_Override__c),ISCHANGED( FS_18_Override__c),ISCHANGED( FS_19_Override__c),ISCHANGED( FS_20_Override__c),
+ISCHANGED( FS_21_Override__c),ISCHANGED( FS_22_Override__c),ISCHANGED( FS_23_Override__c),ISCHANGED( FS_24_Override__c),
+ISCHANGED( FS_25_Override__c),ISCHANGED( FS_26_Override__c)),false)</errorConditionFormula>
+    <errorMessage>The selected field / fields can&#39;t be updated once order is processed.</errorMessage>
+</ValidationRule>

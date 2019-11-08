@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Brandset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brandsets</value>
+    </caseValues>
+    <layouts>
+        <layout>Brandset Layout</layout>
+        <sections>
+            <label/>
+            <section>Knowledge Docs/Tools</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>FS_Reason_for_Deactivating</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Note_to_the_user</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Edit_Page_Detail</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Edit_Cartridges</name>
+    </webLinks>
+</CustomObjectTranslation>

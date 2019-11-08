@@ -1,0 +1,4 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false">
+    <apex:outputLink value="/servlet/servlet.FileDownload?file=0150S00000055Iv" id="theLink">Mass Upload Dispenser Template</apex:outputLink>
+
+</apex:page>

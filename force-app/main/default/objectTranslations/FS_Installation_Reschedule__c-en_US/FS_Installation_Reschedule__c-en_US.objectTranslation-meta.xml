@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Reschedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reschedules</value>
+    </caseValues>
+    <layouts>
+        <layout>Installation Reschedule Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>FSReschedChekBoxAndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Ignore_Brandset_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reason_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Reschedule_Date_Earlier_than_Market_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Restrict_Reschedule_When_IP_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Rush_Install_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>SP_Override_checkbox_Reschedule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>user_should_fill_resched_date_or_pending</name>
+    </validationRules>
+</CustomObjectTranslation>

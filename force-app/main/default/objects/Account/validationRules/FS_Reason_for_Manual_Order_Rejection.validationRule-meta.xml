@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Reason_for_Manual_Order_Rejection</fullName>
+    <active>true</active>
+    <description>When user rejects the Manual Order, the user should also enter the rejection reasons in the â€˜Manual Order Rejection Reasonâ€™ field...</description>
+    <errorConditionFormula>And(NOT(CONTAINS($Profile.Name, $Label.Exclude_User)), ISPICKVAL(FS_Manual_Order_Approval_Status__c, &#39;Reject&#39;), ISBLANK(FS_Manual_Order_Rejection_Reason__c),!isNew())</errorConditionFormula>
+    <errorDisplayField>FS_Manual_Order_Rejection_Reason__c</errorDisplayField>
+    <errorMessage>Please enter the reason for rejection as Reject is selected in the Manual Order Approval Status</errorMessage>
+</ValidationRule>

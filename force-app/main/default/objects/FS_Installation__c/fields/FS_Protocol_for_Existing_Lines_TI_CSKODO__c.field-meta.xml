@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Protocol_for_Existing_Lines_TI_CSKODO__c</fullName>
+    <externalId>false</externalId>
+    <label>Protocol for Existing Lines</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Discard legacy line completely</fullName>
+                <default>false</default>
+                <label>Discard legacy line completely</label>
+            </value>
+            <value>
+                <fullName>Discard legacy line after Tee-Joint</fullName>
+                <default>false</default>
+                <label>Discard legacy line after Tee-Joint</label>
+            </value>
+            <value>
+                <fullName>Cap legacy line and store future Use</fullName>
+                <default>false</default>
+                <label>Cap legacy line and store future Use</label>
+            </value>
+            <value>
+                <fullName>Other (Explain in Comments)</fullName>
+                <default>false</default>
+                <label>Other (Explain in Comments)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

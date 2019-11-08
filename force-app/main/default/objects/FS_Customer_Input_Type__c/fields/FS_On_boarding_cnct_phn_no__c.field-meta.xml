@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_On_boarding_cnct_phn_no__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Provide On-Boarding Contact Phone Number</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

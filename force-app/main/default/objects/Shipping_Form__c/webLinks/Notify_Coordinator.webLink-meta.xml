@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notify_Coordinator</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Notify Coordinator</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/10.0/apex.js&quot;)}
+
+var result = sforce.apex.execute(&quot;WebServiceHelper&quot;,&quot;shippingFormGenerationNotification&quot;, {id:&quot;{!Shipping_Form__c.Id}&quot;});
+
+if(result == &#39;Success&#39;){
+  alert(&#39;Your email has been sent to the coordinator.&#39;);
+}else{
+  alert(&#39;Error in sending email to coordinator&#39;);
+}</url>
+</WebLink>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_OB_Info_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR( AND(TEXT(FS_Trainer__c) &lt;&gt;&quot;&quot; , Outlet_Open_Time__c &lt;&gt;&quot;&quot; , FS_Training_Start_Time__c &lt;&gt;&quot;&quot;), 
+CONTAINS(TEXT(FS_Trainer__c), &quot;Not Needed&quot;) 
+), &quot;Complete&quot;,&quot;Not Complete&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Onboarding Info Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

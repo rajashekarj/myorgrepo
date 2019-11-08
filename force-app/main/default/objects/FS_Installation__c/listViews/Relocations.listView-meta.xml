@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relocations</fullName>
+    <columns>NAME</columns>
+    <columns>Overall_Status2__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>Outlet_ACN__c</columns>
+    <columns>FS_New_Outlet__c</columns>
+    <columns>FS_New_Outlet_ACN__c</columns>
+    <columns>Type_of_Dispenser_Platform__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>FS_Installation__c.Relocation</value>
+    </filters>
+    <label>RI4W</label>
+</ListView>

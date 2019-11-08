@@ -1,0 +1,20 @@
+<apex:page controller="FSMassUpdateOutletDispenserController">
+   <style type="text/css">
+    .pbTitle {
+        white-space: nowrap
+    }
+ </style>
+  <apex:form id="formId">
+        <apex:pageBlock title="Workbook Upload for Dispenser Level Mass Update of the Brandset and Consumer Engagement Attributes" id="pbId">
+            <apex:pageMessages />
+            <apex:pageBlockSection rendered="{!ISNULL(batchJobId)}">           
+                <apex:inputFile value="{!csvFileBody}" filename="{!csvFileName}"  accept="csv" contentType="text/csv"/>
+                  
+                <apex:commandbutton value="Upload" action="{!uploadFile}"/>
+            </apex:pageBlockSection>
+              <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Start Update" action="{!callBatch}" onclick="return alert('Mass Update has started. You will receive an email with results after the process is complete.');" rendered="{!AND(ISNULL(batchJobId),NOT(pageHasErrors),NOT(ISNULL(csvFileName)))}"/>              
+              </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

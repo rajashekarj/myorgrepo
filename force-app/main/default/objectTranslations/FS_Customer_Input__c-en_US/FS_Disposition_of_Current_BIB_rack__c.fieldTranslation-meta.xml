@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Disposition_of_Current_BIB_rack__c</name>
+    <picklistValues>
+        <masterLabel>Leave on-site</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>N/A</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return to Bottler warehouse</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Return to KO warehouse</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

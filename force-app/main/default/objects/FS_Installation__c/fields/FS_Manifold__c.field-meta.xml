@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Manifold__c</fullName>
+    <externalId>false</externalId>
+    <label>Manifold</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46098: Brass Manifold</fullName>
+                <default>false</default>
+                <label>46098: Brass Manifold</label>
+            </value>
+            <value>
+                <fullName>46094: Brass Manifold</fullName>
+                <default>false</default>
+                <label>46094: Brass Manifold</label>
+            </value>
+            <value>
+                <fullName>46095: Brass Manifold</fullName>
+                <default>false</default>
+                <label>46095: Brass Manifold</label>
+            </value>
+            <value>
+                <fullName>46096: Brass Manifold</fullName>
+                <default>false</default>
+                <label>46096: Brass Manifold</label>
+            </value>
+            <value>
+                <fullName>46278: Brass Universal Manifold</fullName>
+                <default>false</default>
+                <label>46278: Brass Universal Manifold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

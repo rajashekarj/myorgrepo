@@ -1,0 +1,37 @@
+<!--
+* Date         : 20/06/2019
+* Developer    : Infosys
+* Purpose      : Used in VF Template 'Email to JDE when Escalate to Sales Support'
+				 To Display OD details from From_Account in a table and CaseComments.
+*=================================================================================================================
+*                                 Upate History
+*                                 ---------------
+*   Date        Developer       Tag   Description
+*============+================+=====+=============================================================================
+* 20/06/2019 | Infosys |     | Initial Version                                         
+*===========+=================+=====+=============================================================================
+*/ -->
+<apex:component controller="FS_ODAndCaseCommentsDetails" access="global">
+    <apex:attribute name="CaseId" description="Case Record Id" assignTo="{!caseRecId}" type="Id"/>
+    <apex:attribute name="ToAccountId" description="Case To Account Record Id" assignTo="{!recId}" type="Id"/>
+    
+         
+    <table border="1" style="border-collapse:collapse" cellpadding="4" >
+        <caption style="text-align:left">Dispenser Serial Numbers:</caption>
+        <tr>
+            <th>Serial Number</th>
+            <th>Outlet Dispenser Name</th>
+            <th>Active/Inactive</th>
+            <th>Status</th>
+        </tr>
+        <apex:repeat var="disp" value="{!DispenserList}">
+            <tr>
+            <td align="center">{!disp.FS_Serial_Number__c}</td>
+            <td align="center">{!disp.Name}</td>
+            <td align="center">{!disp.FS_IsActive__c}</td>
+            <td align="center">{!disp.FS_Status__c}</td>
+            </tr>
+        </apex:repeat>
+    </table>    
+    Case Comments: {!CaseComments}
+</apex:component>

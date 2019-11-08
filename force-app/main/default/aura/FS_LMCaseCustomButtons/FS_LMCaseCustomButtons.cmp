@@ -1,0 +1,22 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasSObjectName,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:appHostable,lightning:actionOverride,forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable" controller="FS_LMCaseController" access="global">
+    <lightning:workspaceAPI aura:id="workspace" />
+    <lightning:navigationItemAPI aura:id="navigationItemAPI"/>
+    <aura:attribute type="boolean" default="false" name="navigateToCaseHomePageFlag"></aura:attribute>
+       <aura:attribute name="openLMEditPage" type="Boolean" default="false"/>
+      <aura:attribute name="lmRecordPageId" type="Integer" />
+        <aura:attribute name="nonLMnavigation" type="Boolean" default="false"/>
+    <aura:attribute name="opnLmRecordPageForNonConsoleApp" type="Boolean" default="false"/>
+    <!-- invoking LMCaseCustomButtons LWC component -->
+	<c:fs_LMCaseCustomButtons_LWC recordId="{!v.recordId}" onopenFactCaseCreationForm="{!c.openCreateFactCase}" ondeleteLmCase="{!c.closeFocusedTab}" onopenEditPage="{!c.openEdit}"></c:fs_LMCaseCustomButtons_LWC>
+    <!-- invoking CaseRecordNavigation LWC component for navigation purpose in Lightning Communities -->
+     <aura:if isTrue="{!v.openLMEditPage}">
+  		<c:fs_LMCaseCreateAndEdit_LWC  recordId="{!v.lmRecordPageId}" onopenCaseRecordPage="{!c.openLMCaseRecordPage}"/>  
+    </aura:if>
+        <!-- Invoking CaseRecordNavigation LWC component for navigation purpose in Lightning Communities -->
+    <aura:if isTrue="{!v.nonLMnavigation}">
+        <c:fs_CaseRecordNavigation_LWC  openLmRecordPage="{!v.opnLmRecordPageForNonConsoleApp}" caseRecordId="{!v.lmRecordPageId}"/>
+    </aura:if>
+    <aura:if isTrue="{!v.navigateToCaseHomePageFlag}">
+        <c:fs_CaseRecordNavigation_LWC  navigateToCaseHomePageFlag="{!v.navigateToCaseHomePageFlag}"/>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_HFCS_sweetener_will_go_where__c</fullName>
+    <externalId>false</externalId>
+    <label>HFCS sweetener will go where?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-None-</fullName>
+                <default>true</default>
+                <label>-None-</label>
+            </value>
+            <value>
+                <fullName>FOH -  Underneath dispenser in cabinet</fullName>
+                <default>false</default>
+                <label>FOH -  Underneath dispenser in cabinet</label>
+            </value>
+            <value>
+                <fullName>BOH - Existing legacy BIB rack</fullName>
+                <default>false</default>
+                <label>BOH - Existing legacy BIB rack</label>
+            </value>
+            <value>
+                <fullName>BOH - New BIB rack</fullName>
+                <default>false</default>
+                <label>BOH - New BIB rack</label>
+            </value>
+            <value>
+                <fullName>Unknown â€“ site assessment will determine</fullName>
+                <default>false</default>
+                <label>Unknown â€“ site assessment will determine</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

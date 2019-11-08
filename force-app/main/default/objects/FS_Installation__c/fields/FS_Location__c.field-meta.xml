@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Place of Existing Filter System</fullName>
+                <default>false</default>
+                <label>In Place of Existing Filter System</label>
+            </value>
+            <value>
+                <fullName>Backroom/Wall</fullName>
+                <default>false</default>
+                <label>Backroom/Wall</label>
+            </value>
+            <value>
+                <fullName>Underneath Self-Serve Beverage Counter</fullName>
+                <default>false</default>
+                <label>Underneath Self-Serve Beverage Counter</label>
+            </value>
+            <value>
+                <fullName>Other (Explain in Comments)</fullName>
+                <default>false</default>
+                <label>Other (Explain in Comments)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

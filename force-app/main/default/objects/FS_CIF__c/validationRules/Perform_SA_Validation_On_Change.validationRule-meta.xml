@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Perform_SA_Validation_On_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(TEXT(PRIORVALUE(FS_Perf_Site_Assessment__c)) &lt;&gt; Text(FS_Perf_Site_Assessment__c),
+
+NOT(ISBLANK(TEXT(PRIORVALUE(FS_Perf_Site_Assessment__c)))),
+
+TEXT(PRIORVALUE(FS_What_type_of_Site_Assessment__c))&lt;&gt; &#39;SA Not Required - OSM approval required for local market&#39;,
+
+NOT(ISBLANK(FS_Request_submitted_Date_Time__c)),
+
+NOT(OR($Profile.Name = &#39;System Administrator&#39;, $Profile.Name = &#39;FET System Admin&#39;,CONTAINS($User.FS_Permission_Sets__c, &#39;Additional_Site_Assessment_access&#39;)))
+
+ )</errorConditionFormula>
+    <errorDisplayField>FS_Perf_Site_Assessment__c</errorDisplayField>
+    <errorMessage>You do not have sufficient privileges to modify the Perform Site Assessment field. Please reach out to one of your Site Assessment Vendor Coordinator â€“ Sonya Leary, Jordan Brooks, Gary Curti.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_7000_Series_Brands_Selection_New__c</fullName>
+    <externalId>false</externalId>
+    <label>7000 Series Brands Option Selections.</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2 Static/1 Agitated</fullName>
+                <default>false</default>
+                <label>2 Static/1 Agitated</label>
+            </value>
+            <value>
+                <fullName>0 Static/2 Agitated</fullName>
+                <default>false</default>
+                <label>0 Static/2 Agitated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

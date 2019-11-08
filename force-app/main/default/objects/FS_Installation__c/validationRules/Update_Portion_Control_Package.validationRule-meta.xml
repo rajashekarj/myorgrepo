@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Portion_Control_Package</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(  FS_Execution_Plan_Final_Approval__c = True,   
+$Profile.Name != &quot;FS AC_P&quot;, 
+$Profile.Name != &quot;FS CPO_P&quot;, 
+$Profile.Name != &quot;FS FPRS_P&quot;, 
+$Profile.Name != &quot;FS PIC_P&quot;, 
+$Profile.Name != &quot;FS PM_P&quot;, 
+$Profile.Name != &quot;FS Vendor PIC_P&quot;, 
+$Profile.Name != &quot;FS Admin PM_P&quot;, 
+$Profile.Name != &quot;FET System Admin&quot;, 
+$Profile.Name != &quot;System Administrator&quot;,  
+OR(ISCHANGED( FS_Size_1__c), ISCHANGED(FS_Size_2__c), ISCHANGED(FS_Size_3__c ), ISCHANGED( FS_Size_4__c), ISCHANGED( FS_Size_5__c), ISCHANGED( FS_Cup_Name_1__c), ISCHANGED(FS_Cup_Name_2__c), ISCHANGED(FS_Cup_Name_2__c), ISCHANGED(FS_Cup_Name_4__c),ISCHANGED(FS_Cup_Name_5__c),ISCHANGED(FS_Finished_Ounces_1__c),ISCHANGED(FS_Finished_Ounces_2__c),ISCHANGED(FS_Finished_Ounces_2__c), ISCHANGED(FS_Finished_Ounces_3__c),ISCHANGED(FS_Finished_Ounces_4__c),ISCHANGED(FS_Finished_Ounces_5__c)))</errorConditionFormula>
+    <errorDisplayField>FS_Size_1__c</errorDisplayField>
+    <errorMessage>Portion Control cannot be update after Project Plan has been approved.</errorMessage>
+</ValidationRule>

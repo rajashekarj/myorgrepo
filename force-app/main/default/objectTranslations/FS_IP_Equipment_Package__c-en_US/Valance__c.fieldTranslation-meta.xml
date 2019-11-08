@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>Valance__c</name>
+    <picklistValues>
+        <masterLabel>46433 : FS7000 COCA-COLA VALANCE</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46434 : FS7000 SUBWAY VALANCE</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

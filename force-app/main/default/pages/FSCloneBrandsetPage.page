@@ -1,0 +1,27 @@
+<apex:page standardController="FS_Brandset__c" extensions="FSCloneBrandsetController">
+    <apex:form id="frm" >
+       <apex:pageMessages ></apex:pageMessages>
+    <apex:pageBlock id="clonePage">
+          
+        <apex:pageBlockSection title="Brandset" columns="2" >
+            <apex:inputField label="Brandset#" value="{!FS_Brandset__c.FS_Brandset_Number__c}" />
+            <apex:inputField label="Brandset Name" value="{!FS_Brandset__c.Name}" style="width: 300px" required="true"/>
+            <apex:inputField label="Brandset Description" value="{!FS_Brandset__c.FS_Description__c}" style="width: 360px"/>
+            <apex:inputField label="Available for Commercial Use" value="{!FS_Brandset__c.FS_Available_for_commercial_use__c}" />
+            <apex:inputField label="Effective Start Date" value="{!FS_Brandset__c.FS_Effective_Start_Date__c}" required="true"/>
+            <apex:inputField label="Effective End Date" value="{!FS_Brandset__c.FS_Effective_End_Date__c}" />
+            <apex:inputField label="Platfrom" value="{!FS_Brandset__c.FS_Platform__c}" />
+            <apex:inputField label="Country" value="{!FS_Brandset__c.FS_Country__c}" />
+            <apex:inputField label="SAP Item Proposal Number" value="{!FS_Brandset__c.FS_SAP_Item_Proposal_Number__c}" />
+            <apex:inputField label="Reason for Deactivating" value="{!FS_Brandset__c.FS_Reason_for_Deactivating__c}" />
+            
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+           <apex:commandButton value="Save"  action="{!save}" rerender="frm"/> 
+        <apex:commandButton value="Cancel"  action="{!cancel}"/> 
+            
+        </apex:pageBlockButtons>
+        
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

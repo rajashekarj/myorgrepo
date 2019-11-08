@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Published_Artifact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Dry Run Artifact</description>
+    <externalId>false</externalId>
+    <label>Published Artifact</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>FS_Artifact__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Published</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FS_Artifact__c</referenceTo>
+    <relationshipLabel>Published Artifacts</relationshipLabel>
+    <relationshipName>Published_Artifacts</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

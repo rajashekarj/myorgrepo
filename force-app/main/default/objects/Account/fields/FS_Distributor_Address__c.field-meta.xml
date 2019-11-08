@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Distributor_Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>FS_Distributor__r.ShippingStreet &amp; BR() &amp;
+ FS_Distributor__r.ShippingCity &amp;&quot;, &quot;&amp;  FS_Distributor__r.ShippingState &amp;&quot; &quot;&amp;  FS_Distributor__r.ShippingPostalCode</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Distributor/Bottler Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

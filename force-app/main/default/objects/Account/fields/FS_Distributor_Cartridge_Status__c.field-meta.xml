@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Distributor_Cartridge_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Distributor Cartridge Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A - Distributor understands cartridge pick/pack economics</fullName>
+                <default>false</default>
+                <label>A - Distributor understands cartridge pick/pack economics</label>
+            </value>
+            <value>
+                <fullName>B - Distributor implementing cartridge pick/pack operation</fullName>
+                <default>false</default>
+                <label>B - Distributor implementing cartridge pick/pack operation</label>
+            </value>
+            <value>
+                <fullName>C - Distributor VMO in place</fullName>
+                <default>false</default>
+                <label>C - Distributor VMO in place</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

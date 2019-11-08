@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ignore_Brandset_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>FS_Ignore_Brandset_Check__c</errorConditionFormula>
+    <errorDisplayField>FS_Ignore_brandset_commercial_date__c</errorDisplayField>
+    <errorMessage>Please be aware that the brandset commercial approval date is later than the scheduled date provided. Please change the date or check the &#39;Ignore brandset commercial approval date&#39; to proceed</errorMessage>
+</ValidationRule>

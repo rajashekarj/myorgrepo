@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brandset_7000</fullName>
+    <columns>NAME</columns>
+    <columns>FS_SAP_Item_Proposal_Number__c</columns>
+    <columns>FS_Effective_Start_Date__c</columns>
+    <columns>FS_Effective_End_Date__c</columns>
+    <columns>FS_Brandset_Number__c</columns>
+    <columns>FS_Available_for_commercial_use__c</columns>
+    <columns>FS_Date_Brandset_is_available_for_Select__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Brandset 7000</label>
+</ListView>

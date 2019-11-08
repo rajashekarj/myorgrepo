@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_CCFS_2K_Conversion_Incentive__c</name>
+    <picklistValues>
+        <masterLabel>Not Qualified</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes- 5 store Test Commitment</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes- Commercialization commitment</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes- Region Customer Opportunity</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

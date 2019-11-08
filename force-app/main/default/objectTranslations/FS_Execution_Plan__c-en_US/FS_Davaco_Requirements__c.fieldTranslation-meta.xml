@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Davaco_Requirements__c</name>
+    <picklistValues>
+        <masterLabel>Davaco: New Construction Site Assessment</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Davaco: Site Assessment + Detailed Scope Summary</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Davaco: Site Assessment + GFE</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Davaco: Site Assessment Only</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Site Assessment Required</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Power House</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

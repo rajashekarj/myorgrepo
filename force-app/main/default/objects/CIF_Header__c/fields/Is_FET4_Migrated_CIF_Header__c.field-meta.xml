@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_FET4_Migrated_CIF_Header__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>DM Check for CIF</description>
+    <externalId>false</externalId>
+    <label>Is FET4 Migrated CIF Header</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

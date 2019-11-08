@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Day_AM_or_Night_PM_Installation__c</name>
+    <picklistValues>
+        <masterLabel>Day â€“ typically 8am start time</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Early AM â€“ typically 5am or 6am start time</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Night â€“ typically 10pm start time</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Additional Information Required</fullName>
+                <default>false</default>
+                <label>Additional Information Required</label>
+            </value>
+            <value>
+                <fullName>Recommendation made,Pending additional agent review</fullName>
+                <default>false</default>
+                <label>Recommendation made,Pending additional agent review</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Closed/ Other</fullName>
+                <default>false</default>
+                <label>Closed/ Other</label>
+            </value>
+            <value>
+                <fullName>GC on Hold</fullName>
+                <default>false</default>
+                <label>GC on Hold</label>
+            </value>
+            <value>
+                <fullName>GC In Validation</fullName>
+                <default>false</default>
+                <label>GC In Validation</label>
+            </value>
+            <value>
+                <fullName>GC In Containment</fullName>
+                <default>false</default>
+                <label>GC In Containment</label>
+            </value>
+            <value>
+                <fullName>GC In Progress</fullName>
+                <default>false</default>
+                <label>GC In Progress</label>
+            </value>
+            <value>
+                <fullName>GC Completed</fullName>
+                <default>false</default>
+                <label>GC Completed</label>
+            </value>
+            <value>
+                <fullName>EMT On Hold</fullName>
+                <default>false</default>
+                <label>EMT On Hold</label>
+            </value>
+            <value>
+                <fullName>EMT In Progress</fullName>
+                <default>false</default>
+                <label>EMT In Progress</label>
+            </value>
+            <value>
+                <fullName>EMT Completed</fullName>
+                <default>false</default>
+                <label>EMT Completed</label>
+            </value>
+            <value>
+                <fullName>FACT On Hold</fullName>
+                <default>false</default>
+                <label>FACT On Hold</label>
+            </value>
+            <value>
+                <fullName>FACT In Progress</fullName>
+                <default>false</default>
+                <label>FACT In Progress</label>
+            </value>
+            <value>
+                <fullName>FACT Completed</fullName>
+                <default>false</default>
+                <label>FACT Completed</label>
+            </value>
+            <value>
+                <fullName>JDE Install Base Notified</fullName>
+                <default>false</default>
+                <label>JDE Install Base Notified</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Additional Information Required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On Hold</controllingFieldValue>
+            <valueName>Recommendation made,Pending additional agent review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escalated</controllingFieldValue>
+            <valueName>GC on Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escalated</controllingFieldValue>
+            <valueName>GC In Validation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escalated</controllingFieldValue>
+            <valueName>GC In Containment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escalated</controllingFieldValue>
+            <valueName>GC In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escalated</controllingFieldValue>
+            <valueName>GC Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>EMT On Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>EMT In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>EMT Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>FACT On Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>FACT In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assigned</controllingFieldValue>
+            <valueName>FACT Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Close</controllingFieldValue>
+            <controllingFieldValue>Complete</controllingFieldValue>
+            <valueName>Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Close</controllingFieldValue>
+            <controllingFieldValue>Complete</controllingFieldValue>
+            <valueName>Closed/ Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+.THIS.forcePageHost{
+    width:98% !important;
+    margin:1% !important;
+}
+
+.THIS.slds-theme_default{
+    max-width:48% !important;
+}
+
+.THIS .customWidth{
+    width:20% !important; 
+    margin:1% !important;
+}

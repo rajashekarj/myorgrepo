@@ -1,0 +1,11 @@
+<apex:page standardController="FS_Outlet_Dispenser__c" extensions="ChangeSAPNumberController">
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockSection >                
+        <apex:inputField value="{!newdisp.FS_Outlet__c}"/>
+        <apex:outputField value="{!newdisp.FS_SAP_ID__c}"/>       
+        <apex:commandButton value="Save" action="{!cloneDispenser}"/>
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnforcePumpkitselectionVaccumregulato</fullName>
+    <active>true</active>
+    <errorConditionFormula>And( ISPICKVAL(FS_Vacuum_Regulator__c, &#39;46409 : Regulator Vacuum (Series 7000)&#39;), Not(ISPICKVAL(FS_Pump_Kit__c, &#39;45916 : HFCS Pump Kit&#39;)) )</errorConditionFormula>
+    <errorDisplayField>FS_Vacuum_Regulator__c</errorDisplayField>
+    <errorMessage>Please Enter pumpkit</errorMessage>
+</ValidationRule>

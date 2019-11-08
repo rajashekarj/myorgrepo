@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Flavor_Change_Installation</fullName>
+    <active>true</active>
+    <label>FS Flavor Change Installation</label>
+    <picklistValues>
+        <picklist>FS_FC_Type__c</picklist>
+        <values>
+            <fullName>File Upload Flavor Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workflow Flavor Change</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Flavor_Change_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_NDO_Approval__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Changed to Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pay_Type__c</picklist>
+        <values>
+            <fullName>Account Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA - Water Changes Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Product_Order_handled_By_txt__c</picklist>
+        <values>
+            <fullName>Bottler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA - Water Changes Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pungent_Change_Indicator__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_SP_go_out__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Is_customer_switching_back_to_DirectShip__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes %E2%80%93 Bottler Ordered %2F Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes %E2%80%93 Cokesmart %2F Direct Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes %E2%80%93 Manual Order %2F Direct Ship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

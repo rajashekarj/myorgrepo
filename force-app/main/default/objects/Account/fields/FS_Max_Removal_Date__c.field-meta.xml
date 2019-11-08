@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Max_Removal_Date__c</fullName>
+    <externalId>false</externalId>
+    <label>Max Removal Date</label>
+    <summarizedField>FS_Outlet_Dispenser__c.FS_Date_Removed__c</summarizedField>
+    <summaryForeignKey>FS_Outlet_Dispenser__c.FS_Outlet__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

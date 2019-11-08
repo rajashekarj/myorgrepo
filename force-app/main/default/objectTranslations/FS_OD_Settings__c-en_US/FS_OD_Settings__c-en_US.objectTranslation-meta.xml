@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OD Settings</value>
+    </caseValues>
+    <layouts>
+        <layout>Settings Layout</layout>
+        <sections>
+            <label/>
+            <section>Current Artifact Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Open Setting</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser Profile Setting</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Operations Setting</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>FOT_Check_VerbosityExpiration_Not_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Past_Date_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

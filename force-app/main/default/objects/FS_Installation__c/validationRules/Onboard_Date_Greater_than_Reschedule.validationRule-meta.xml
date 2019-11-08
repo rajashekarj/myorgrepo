@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboard_Date_Greater_than_Reschedule</fullName>
+    <active>true</active>
+    <description>Original Onboarding Date should be greater than Resched Date (Final Entry)</description>
+    <errorConditionFormula>AND( NOT(CONTAINS($Profile.Name, $Label.Exclude_User)),(FS_Original_Onboarding_Date__c &lt; FS_Scheduled_Install_Date__c), 
+(RecordType.Name=&#39;New Install&#39;))</errorConditionFormula>
+    <errorMessage>New Onboarding Date Needs to Be Equal or Greater than Installation Date.</errorMessage>
+</ValidationRule>

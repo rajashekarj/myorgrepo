@@ -1,0 +1,33 @@
+<aura:component implements="lightning:homeTemplate" description="3 column template, not optimised for Mobile Devices yet">
+    <!-- Setup/Attributes -->
+    <aura:attribute name="top" type="Aura.Component[]" />
+    <aura:attribute name="left" type="Aura.Component[]" />
+    <aura:attribute name="right" type="Aura.Component[]" />
+    <aura:attribute name="show" type="string" default="true" />
+    
+    <!-- Layout -->
+    <div>
+        <!-- Header -->
+        <div>
+            <lightning:layout >                
+                <lightning:layoutItem flexibility="grow" class="slds-col slds-size_1-of-1">
+                    {!v.top}
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        <br/>
+        <!-- Main Body -->
+        <div>
+            <lightning:layout horizontalAlign="spread">      
+                <!-- First Column -->
+                <lightning:layoutItem flexibility="grow" class="slds-col slds-size_1-of-3">
+                    {!v.left}
+                </lightning:layoutItem>          
+                <!-- Second Column -->        
+                <lightning:layoutItem flexibility="grow" class="slds-col slds-size_2-of-3">
+                    {!v.right}
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+    </div>
+</aura:component>

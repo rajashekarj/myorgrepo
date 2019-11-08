@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Valid_Fill_req_alid_Fill_eff_dt_not_null</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(ISBlank(Text(FS_Valid_Fill_New__c)),Not(isBlank(FS_Valid_Fill_Settings_Effective_Date__c)),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Valid_Fill_New__c</errorDisplayField>
+    <errorMessage>Valid Fill. is mandatory if we have Valid Fill Settings Effective Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_of_Installs_Complete__c</fullName>
+    <externalId>false</externalId>
+    <label># of Installs Complete</label>
+    <summaryFilterItems>
+        <field>FS_Installation__c.FS_Overall_Status__c</field>
+        <operation>equals</operation>
+        <value>Complete</value>
+    </summaryFilterItems>
+    <summaryForeignKey>FS_Installation__c.FS_Execution_Plan__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

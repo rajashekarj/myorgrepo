@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration_in_Pending_Install__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(FLOOR(Pending_Install_Mins__c/1440))&amp;&#39; D/ &#39;&amp;TEXT(FLOOR(MOD(Pending_Install_Mins__c/1440,1)*24))&amp;&#39; Hr/ &#39;&amp; TEXT(FLOOR(MOD(MOD(Pending_Install_Mins__c/1440,1)*24,1)*60))&amp;&#39; Min&#39;</formula>
+    <label>Duration in Pending Install</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

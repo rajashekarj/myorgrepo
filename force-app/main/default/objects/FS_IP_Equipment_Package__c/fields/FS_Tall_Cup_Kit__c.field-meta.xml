@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Tall_Cup_Kit__c</fullName>
+    <externalId>false</externalId>
+    <label>Drip Tray</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>141959: Tall Cup Kit</fullName>
+                <default>false</default>
+                <label>141959: Tall Cup Kit</label>
+            </value>
+            <value>
+                <fullName>46717: EXTENDED DRIP TRAY FS7000</fullName>
+                <default>false</default>
+                <label>46717: EXTENDED DRIP TRAY FS7000</label>
+            </value>
+            <value>
+                <fullName>XXXXX: 6000 Drip Tray Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: 6000 Drip Tray Kit</label>
+            </value>
+            <value>
+                <fullName>XXXXX: For Future use</fullName>
+                <default>false</default>
+                <label>XXXXX: For Future use</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>141959: Tall Cup Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <valueName>46717: EXTENDED DRIP TRAY FS7000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: 6000 Drip Tray Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>XXXXX: For Future use</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OD_Settings_ReadOnly_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>..</description>
+    <externalId>false</externalId>
+    <label>OD Settings ReadOnly Id</label>
+    <referenceTo>FS_OD_SettingsReadOnly__c</referenceTo>
+    <relationshipLabel>TargetArtifacts</relationshipLabel>
+    <relationshipName>TargetArtifacts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

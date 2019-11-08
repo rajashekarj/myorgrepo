@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FC_7000_Series_Wtr_btn_efdt_Reqrd_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(!ISBlank(Text(FS_7000_New_Hide_Show_Water_Button_del__c)),isBlank(FS_7000_New_Hide_Show_Water_Button_EF_Dt__c))</errorConditionFormula>
+    <errorDisplayField>FS_7000_New_Hide_Show_Water_Button_EF_Dt__c</errorDisplayField>
+    <errorMessage>7000 Series &#39;New Hide/Show Water Button Effect Date&#39; is mandatory if &#39;New Hide/Show Water Button&#39; is Filled</errorMessage>
+</ValidationRule>

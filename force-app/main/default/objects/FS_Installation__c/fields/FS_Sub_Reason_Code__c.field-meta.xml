@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Sub_Reason_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Reason Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Reason_Code__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NA</fullName>
+                <default>true</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Customer Not Maintaining Dispenser</fullName>
+                <default>false</default>
+                <label>Customer Not Maintaining Dispenser</label>
+            </value>
+            <value>
+                <fullName>Ice Dispensing Issues</fullName>
+                <default>false</default>
+                <label>Ice Dispensing Issues</label>
+            </value>
+            <value>
+                <fullName>Multiple Board Failures</fullName>
+                <default>false</default>
+                <label>Multiple Board Failures</label>
+            </value>
+            <value>
+                <fullName>Non-Field Repairable</fullName>
+                <default>false</default>
+                <label>Non-Field Repairable</label>
+            </value>
+            <value>
+                <fullName>Product Issues</fullName>
+                <default>false</default>
+                <label>Product Issues</label>
+            </value>
+            <value>
+                <fullName>Excessive Service</fullName>
+                <default>false</default>
+                <label>Excessive Service</label>
+            </value>
+            <value>
+                <fullName>Too Low Volume</fullName>
+                <default>false</default>
+                <label>Too Low Volume</label>
+            </value>
+            <value>
+                <fullName>7000</fullName>
+                <default>false</default>
+                <label>7000</label>
+            </value>
+            <value>
+                <fullName>8000</fullName>
+                <default>false</default>
+                <label>8000</label>
+            </value>
+            <value>
+                <fullName>9000</fullName>
+                <default>false</default>
+                <label>9000</label>
+            </value>
+            <value>
+                <fullName>9100</fullName>
+                <default>false</default>
+                <label>9100</label>
+            </value>
+            <value>
+                <fullName>Ice Bin Damaged</fullName>
+                <default>false</default>
+                <label>Ice Bin Damaged</label>
+            </value>
+            <value>
+                <fullName>Fire, Smoke Damage</fullName>
+                <default>false</default>
+                <label>Fire, Smoke Damage</label>
+            </value>
+            <value>
+                <fullName>Flood Damage</fullName>
+                <default>false</default>
+                <label>Flood Damage</label>
+            </value>
+            <value>
+                <fullName>Unable To Repair</fullName>
+                <default>false</default>
+                <label>Unable To Repair</label>
+            </value>
+            <value>
+                <fullName>Damaged Cold Plate</fullName>
+                <default>false</default>
+                <label>Damaged Cold Plate</label>
+            </value>
+            <value>
+                <fullName>Condensation/Insulation Issues</fullName>
+                <default>false</default>
+                <label>Condensation/Insulation Issues</label>
+            </value>
+            <value>
+                <fullName>Excessive Service Issues</fullName>
+                <default>false</default>
+                <label>Excessive Service Issues</label>
+            </value>
+            <value>
+                <fullName>Old Outlet Going Out of Business</fullName>
+                <default>false</default>
+                <label>Old Outlet Going Out of Business</label>
+            </value>
+            <value>
+                <fullName>Volume in Old Outlet Too Low</fullName>
+                <default>false</default>
+                <label>Volume in Old Outlet Too Low</label>
+            </value>
+            <value>
+                <fullName>Remodeling of Old Outlet</fullName>
+                <default>false</default>
+                <label>Remodeling of Old Outlet</label>
+            </value>
+            <value>
+                <fullName>Red</fullName>
+                <default>false</default>
+                <label>Red</label>
+            </value>
+            <value>
+                <fullName>Black</fullName>
+                <default>false</default>
+                <label>Black</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+            <value>
+                <fullName>Gray</fullName>
+                <default>false</default>
+                <label>Gray</label>
+            </value>
+            <value>
+                <fullName>Change of Ownership</fullName>
+                <default>false</default>
+                <label>Change of Ownership</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Bridge 9000 To 9100</controllingFieldValue>
+            <controllingFieldValue>Early Replacement 9000 To 9100</controllingFieldValue>
+            <controllingFieldValue>Competitive</controllingFieldValue>
+            <controllingFieldValue>Bottle Can</controllingFieldValue>
+            <controllingFieldValue>Return to Legacy - Commercial Terms (Cost)</controllingFieldValue>
+            <controllingFieldValue>OOB/Ownership Change</controllingFieldValue>
+            <controllingFieldValue>Return to Legacy - End of Market Test</controllingFieldValue>
+            <controllingFieldValue>Too many CCFS equipment placed initially</controllingFieldValue>
+            <controllingFieldValue>Removal - Commercial Terms</controllingFieldValue>
+            <controllingFieldValue>Customer Relationship</controllingFieldValue>
+            <controllingFieldValue>Damaged at Arrival</controllingFieldValue>
+            <controllingFieldValue>Remodeling of Outlet</controllingFieldValue>
+            <controllingFieldValue>Repair of Restaurant</controllingFieldValue>
+            <controllingFieldValue>Repair of Beverage Area</controllingFieldValue>
+            <controllingFieldValue>Customer Request</controllingFieldValue>
+            <valueName>NA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return to Legacy - Dispenser Issue</controllingFieldValue>
+            <controllingFieldValue>Removal - Dispenser Issues</controllingFieldValue>
+            <valueName>Customer Not Maintaining Dispenser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return to Legacy - Dispenser Issue</controllingFieldValue>
+            <controllingFieldValue>Removal - Dispenser Issues</controllingFieldValue>
+            <valueName>Ice Dispensing Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return to Legacy - Dispenser Issue</controllingFieldValue>
+            <controllingFieldValue>Removal - Dispenser Issues</controllingFieldValue>
+            <valueName>Multiple Board Failures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return to Legacy - Dispenser Issue</controllingFieldValue>
+            <controllingFieldValue>Removal - Dispenser Issues</controllingFieldValue>
+            <valueName>Non-Field Repairable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return to Legacy - Dispenser Issue</controllingFieldValue>
+            <controllingFieldValue>Removal - Dispenser Issues</controllingFieldValue>
+            <valueName>Product Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return to Legacy - Dispenser Issue</controllingFieldValue>
+            <controllingFieldValue>Removal - Dispenser Issues</controllingFieldValue>
+            <valueName>Excessive Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Return to Legacy - Dispenser Issue</controllingFieldValue>
+            <controllingFieldValue>Removal - Dispenser Issues</controllingFieldValue>
+            <valueName>Too Low Volume</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change of Color</controllingFieldValue>
+            <valueName>Red</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change of Color</controllingFieldValue>
+            <valueName>Black</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change of Color</controllingFieldValue>
+            <valueName>Silver</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Change of Color</controllingFieldValue>
+            <valueName>Gray</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform Change</controllingFieldValue>
+            <valueName>7000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform Change</controllingFieldValue>
+            <valueName>8000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform Change</controllingFieldValue>
+            <valueName>9000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform Change</controllingFieldValue>
+            <valueName>9100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condemned by Sr. Tech</controllingFieldValue>
+            <valueName>Ice Bin Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condemned by Sr. Tech</controllingFieldValue>
+            <valueName>Fire, Smoke Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condemned by Sr. Tech</controllingFieldValue>
+            <valueName>Flood Damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condemned by Sr. Tech</controllingFieldValue>
+            <valueName>Unable To Repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condemned by Sr. Tech</controllingFieldValue>
+            <valueName>Damaged Cold Plate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condemned by Sr. Tech</controllingFieldValue>
+            <valueName>Condensation/Insulation Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Condemned by Sr. Tech</controllingFieldValue>
+            <valueName>Excessive Service Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relocation Outside of 4 Walls</controllingFieldValue>
+            <valueName>Old Outlet Going Out of Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relocation Outside of 4 Walls</controllingFieldValue>
+            <valueName>Volume in Old Outlet Too Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relocation Outside of 4 Walls</controllingFieldValue>
+            <valueName>Remodeling of Old Outlet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Relocation Outside of 4 Walls</controllingFieldValue>
+            <valueName>Change of Ownership</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

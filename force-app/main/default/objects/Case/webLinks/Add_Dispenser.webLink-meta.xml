@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Dispenser</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Add/delete Dispensers</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>var dispenserid=&#39;{!Case.FS_Outlet_Dispenser__c}&#39;;
+if(dispenserid)
+{
+var child = window.open(&#39;apex/SEMulti_Select_Dispenser?id={!Case.Id}&amp;dispenserid={!Case.FS_Outlet_Dispenser__c}&#39;, &#39;_blank&#39;, &#39;toolbar=0,location=0,menubar=0,width=1000,height=500&#39;);
+var timer = setInterval(checkChild, 500);
+
+function checkChild() {
+    if (child.closed) {
+location.reload();   
+        clearInterval(timer);
+    }
+}
+}
+else
+{
+  alert(&#39;Please select the outlet dispenser associated with the case&#39;);
+}</url>
+</WebLink>

@@ -1,0 +1,28 @@
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!--   Page : FSListHeadquarterAccountsCtrl                                                                               -->
+<!--   Created By   : Mohit Parnami (Appiro)                                                                              -->
+<!--   Created Date : 18 - Oct - 2013                                                                                      -->
+<!-------------------------------------------------------------------------------------------------------------------------->
+<apex:page standardController="Account" extensions="FSListHeadquarterAccountsExt">
+    <apex:pageBlock >
+       
+        <apex:pageBlockTable value="{!lstHeadquarterAccounts}" var="headquaterAcc">
+        <apex:column headerValue="Account Name">
+        <a href="/{!headquaterAcc.Id}"  target="_top" class="actionLink" onclick="redirectToRecord('{!headquaterAcc.Id}' , 'true');return false;">{!headquaterAcc.Name}</a>
+      </apex:column> 
+      
+      <apex:column headerValue="ACN">
+        <apex:outputField value="{!headquaterAcc.FS_ACN__c}"/>
+      </apex:column>
+      <apex:column headerValue="Corporate VS Franchise">
+        <apex:outputField value="{!headquaterAcc.Corporate_VS_Franchise2__c}"/>
+      </apex:column>
+      <apex:column headerValue="Number Installs Complete">
+        <apex:outputField value="{!headquaterAcc.FS_Installs_Complete_HQ__c}"/>
+         </apex:column>
+      <apex:column headerValue="Signed Agreement Received">
+        <apex:outputField value="{!headquaterAcc.FS_Signed_Agreement_Received__c}"/>
+      </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>   
+</apex:page>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Save_and_Send</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send for Pre-Book</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!requireScript(&quot;/soap/ajax/26.0/connection.js&quot;)}
+
+var poNum = &#39;{! Shipping_Form__c.FS_PO_Number__c}&#39;;
+if(!poNum == null || poNum == &#39;&#39;){
+alert(&#39;Please Enter PO Number before sending for Pre-Book&#39;);
+}else{
+var shippingForm = new sforce.SObject(&quot;Shipping_Form__c&quot;);
+shippingForm.id = &#39;{! Shipping_Form__c.Id }&#39;;
+
+shippingForm.FS_Status__c = &#39;Ready for Pre-Book&#39;;
+var res = sforce.connection.update([shippingForm]); 
+//alert(&#39;RESULT :::&#39; + res);
+if(res.toString().indexOf(&#39;FIELD_CUSTOM_VALIDATION_EXCEPTION&#39;) != -1){
+   var startPosition = res.toString().indexOf(&#39;message:&#39;);
+   var endPosition = res.toString().indexOf(&#39;statusCode&#39;);
+   var error = res.toString().slice(startPosition,endPosition);
+   alert(&#39;Error &#39; + error);
+}else{
+   alert(&#39;Pre-Book sent to dispenser coordinator.&#39;);
+   window.location.reload();
+}
+}</url>
+</WebLink>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCR_ACN_RecordType_Id__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>This field is the combination of ACN and Record type ID and the field will get populated through the interface</description>
+    <externalId>true</externalId>
+    <label>ACN + RecordType Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

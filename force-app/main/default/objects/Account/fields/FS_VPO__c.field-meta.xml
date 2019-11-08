@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_VPO__c</fullName>
+    <externalId>false</externalId>
+    <label>12Mth Prior Yr CSD Volume</label>
+    <summarizedField>FS_Outlet_Distributors__c.FS_Prior_Year_CSD_Gallons__c</summarizedField>
+    <summaryForeignKey>FS_Outlet_Distributors__c.FS_Outlet__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

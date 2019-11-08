@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit</fullName>
+    <availability>online</availability>
+    <description>Custom Edit button CIF Header detail page.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Edit</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/{!CIF_Header__c.Id}/e?nooverride=1&amp;retURL={!CIF_Header__c.Id}?nooverride=1</url>
+</WebLink>

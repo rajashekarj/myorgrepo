@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Requirements__c</name>
+    <picklistValues>
+        <masterLabel>Approved WF Shipped Prior to Install</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved WF Shipped Prior to InstallAction Required - Existing WF Does Not Meet CCFS WF Policy</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by COMAction Required - Outlet Not Equipped w/WF</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved by COMNo Action Required - COM Sending WF to Outlet Prior to Install</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Action Required - Existing WF meets CCFS Policy</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

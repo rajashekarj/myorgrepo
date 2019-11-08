@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Must_Provide_atleast_one_Replace_val</fullName>
+    <active>true</active>
+    <description>If the value provided within the &quot;Does Install Involve Replacement?&quot; field = Yes, you must provide a value within Replacement 1. If the value = No, then Replacement 1, 2, &amp; 3 values must be blank.</description>
+    <errorConditionFormula>OR(IF(AND( ISPICKVAL( FS_Does_Install_Involve_a_Replacement__c , &#39;YES&#39;) , ISBLANK( FS_Replacement_1__c )) , true, false), AND(ISPICKVAL( FS_Does_Install_Involve_a_Replacement__c , &#39;NO&#39;), 
+OR(NOT(ISBLANK(FS_Replacement_1__c)),NOT(ISBLANK(FS_Replacement_2__c)),NOT(ISBLANK(FS_Replacement_3__c))))) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorMessage>If the value provided within the &quot;Does Install Involve Replacement?&quot; field = Yes, you must provide a value within Replacement 1. If the value = No, then Replacement 1, 2, &amp; 3 values must be blank.</errorMessage>
+</ValidationRule>

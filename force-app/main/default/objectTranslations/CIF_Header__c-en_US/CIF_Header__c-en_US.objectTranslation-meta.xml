@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CIF Header</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CIF Headers</value>
+    </caseValues>
+    <layouts>
+        <layout>CIF Header Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label/>
+        <name>Edit</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>Go_to_CIF_Page</name>
+    </webLinks>
+</CustomObjectTranslation>

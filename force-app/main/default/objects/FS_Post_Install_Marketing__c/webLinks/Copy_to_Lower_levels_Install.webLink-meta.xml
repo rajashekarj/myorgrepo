@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_to_Lower_levels_Install</fullName>
+    <availability>online</availability>
+    <description>At Installtion level</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Copy to Lower levels</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)}
+
+var ArrayIds={!GETRECORDIDS($ObjectType.FS_Post_Install_Marketing__c)};
+if(ArrayIds.length==0)
+alert(&quot;No Post Install Marketing Record is selected to copy&quot;);
+else if(ArrayIds.length&gt;1)
+alert(&quot;You can&#39;t select more than one Post Install Marketing record&quot;);
+else if(ArrayIds.length==1){
+var r = confirm(&quot;Do you want to Copy this  Post Install Marketing record&quot;);
+if (r == true) {
+var res = sforce.apex.execute(&quot;FSCopyPostInstallActivity&quot;,&quot;ChaintoHqMarketing&quot;,
+                             {recId:&#39;{!FS_Installation__c.Id}&#39;,pmid:ArrayIds[0],Obj:&#39;Installation&#39;});
+alert(res);
+}
+}</url>
+</WebLink>

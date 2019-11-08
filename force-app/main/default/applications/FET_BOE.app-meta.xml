@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>FET BOE</label>
+    <tabs>standard-Account</tabs>
+    <tabs>Shipping_Form__c</tabs>
+    <tabs>FS_Outlet_Dispenser__c</tabs>
+    <tabs>Dispenser_Model__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Chatter</tabs>
+    <tabs>FS_Outlet_Distributors__c</tabs>
+    <tabs>Warehouse_Details__c</tabs>
+    <tabs>FE_Intake_Idea__c</tabs>
+</CustomApplication>

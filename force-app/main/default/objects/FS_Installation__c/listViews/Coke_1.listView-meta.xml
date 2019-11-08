@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coke_1</fullName>
+    <columns>FS_Outlet__c</columns>
+    <columns>FS_Outlet_Information__c</columns>
+    <columns>NAME</columns>
+    <columns>Overall_Status2__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>FS_Original_Install_Date__c</columns>
+    <columns>FS_Outlet_CS_Status__c</columns>
+    <columns>FS_OB_Info_Status__c</columns>
+    <columns>FS_Revenue_Center__c</columns>
+    <columns>FS_Outlet_Address__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/3/2018 12:00 AM</value>
+    </filters>
+    <label>ALL ACTIVE INSTALLATIONS</label>
+</ListView>

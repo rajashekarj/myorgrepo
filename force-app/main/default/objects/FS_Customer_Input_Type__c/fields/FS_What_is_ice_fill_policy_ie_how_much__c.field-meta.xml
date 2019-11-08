@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_What_is_ice_fill_policy_ie_how_much__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>What is ice fill policy, i.e., how much</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

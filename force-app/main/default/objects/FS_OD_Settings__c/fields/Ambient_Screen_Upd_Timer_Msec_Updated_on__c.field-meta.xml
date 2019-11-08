@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ambient_Screen_Upd_Timer_Msec_Updated_on__c</fullName>
+    <externalId>false</externalId>
+    <label>Screen Ambient Update (ms) Updated on</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

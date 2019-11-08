@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMS_LM_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Issue_Name__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>LM_Sub_Status__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>FS_New_Case_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Linkage_Management</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>JDE AMS</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Open AMS LM Cases</label>
+    <sharedTo>
+        <group>CCAST_FACT</group>
+        <group>JDE_AMS</group>
+    </sharedTo>
+</ListView>

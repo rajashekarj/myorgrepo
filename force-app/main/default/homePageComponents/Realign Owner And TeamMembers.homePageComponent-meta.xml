@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Realign_Accounts_Owners_and_Team_Members</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

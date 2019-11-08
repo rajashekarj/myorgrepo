@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TeamMemberRole__c</fullName>
+    <externalId>false</externalId>
+    <label>TeamMemberRole</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>COM</fullName>
+                <default>false</default>
+                <label>COM</label>
+            </value>
+            <value>
+                <fullName>COM Backup</fullName>
+                <default>false</default>
+                <label>COM Backup</label>
+            </value>
+            <value>
+                <fullName>JCOM</fullName>
+                <default>false</default>
+                <label>JCOM</label>
+            </value>
+            <value>
+                <fullName>PIC</fullName>
+                <default>false</default>
+                <label>PIC</label>
+            </value>
+            <value>
+                <fullName>PM</fullName>
+                <default>false</default>
+                <label>PM</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Sales Team Member</fullName>
+                <default>false</default>
+                <label>Sales Team Member</label>
+            </value>
+            <value>
+                <fullName>SME</fullName>
+                <default>false</default>
+                <label>SME</label>
+            </value>
+            <value>
+                <fullName>Sales Leadership</fullName>
+                <default>false</default>
+                <label>Sales Leadership</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Mrkt_Override1__c</fullName>
+    <description>Market Activation Override 1</description>
+    <externalId>false</externalId>
+    <formula>AND(Text(FS_Platform1__c) &lt;&gt;&quot;&quot;,FS_Market_Activation_override__c,OR(FS_Mrkt_ActiveDate1__c &gt; FS_Scheduled_Install_Date__c, ISNULL(FS_Mrkt_ActiveDate1__c) ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Market Activation Override 1</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Equipment_Package</fullName>
+    <active>true</active>
+    <description>Equipment Package</description>
+    <label>Equipment Package</label>
+    <picklistValues>
+        <picklist>Exit_Type__c</picklist>
+        <values>
+            <fullName>46435 %3A FS7000 DRIPTRAY KIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46437 %3A FS7000 EXT SPLASH KIT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Base_Cartridge__c</picklist>
+        <values>
+            <fullName>46118 %3A Base for Cartridge Storage and 20gal Booster</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Boost_Installation_Kit_M_Series__c</picklist>
+        <values>
+            <fullName>XXXX%3A M-Series Boost Installation Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Boost_NNS_Tray_M_Series__c</picklist>
+        <values>
+            <fullName>XXXXX%3A M- Series NNS Tray Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Boost_Tri_CGP_M_Series__c</picklist>
+        <values>
+            <fullName>XXXXX%3A M-Series Tri-CGP Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Booster_Shelf__c</picklist>
+        <values>
+            <fullName>43537 %3A Booster Shelf 4%2E4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Coke_Pump__c</picklist>
+        <values>
+            <fullName>XXXXX%3A Electric Bulk Coke pump Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dispenser_Series_IC_code__c</picklist>
+        <values>
+            <fullName>46099 %3A Freestyle GS1 Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46100 %3A Freestyle GS1 Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46101 %3A Freestyle GS1 Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46102%3A Freestyle GS2 Crew Serve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46130 %3A Freestyle GS1 Red - Cruise Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46294 %3A Freestyle GS1 Silver - Cruise Ship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46401%3A Standard Splashplate with Driptray%2C Cuprest and optional leg kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46403%3A SUBWAY Standard Splashplate with Driptray%2C Cuprest and optional leg kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46667 %3A FS9100 Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46668 %3A FS9100 Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46669 %3A FS9100 Gray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46708R %3A BRIDGE GS1 Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46709R %3A BRIDGE GS1 Silver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46710R %3A BRIDGE GS1 Black</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46731 %3A FS9100 Dark Gray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46749%3A 7100 Red Standard Splashplate with Driptray%2C Cuprest and optional legs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A 7100 Black Standard Splashplate with Driptray%2C Cuprest and optional legs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Freestyle 6000 McDonalds  M-series</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Extended_Splash__c</picklist>
+        <values>
+            <fullName>147368%3A Black Extended Splash Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46719%3A BLACK EXTENDED SPLASH KIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Black Extended Splash Kit%2C 7100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Red Extended Splash Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Red Extended Splash Kit%2C 7100</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_External_Modems__c</picklist>
+        <values>
+            <fullName>46473 %3A 3G Verizon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46475 %3A 3G AT%26T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46475 %3A 4G AT%26T</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46530 %3A 4G Verizon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46537%3A 4G Verizon w%2F Switch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Ice_Maker_Cladding__c</picklist>
+        <values>
+            <fullName>XXXXX%3A Ice Maker Cladding Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_LID_IM_Adapter1__c</picklist>
+        <values>
+            <fullName>46000 %3A FSIB Red Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46001 %3A FSIB Silver Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46002 %3A FSIB Black Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46004 %3A Hoshizaki Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46005 %3A Hoshizaki Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46006 %3A Hoshizaki Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46007 %3A Scotsman E686 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46008 %3A Scotsman E686 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46009 %3A Scotsman E686 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46010 %3A Scotsman 306%2F456%2F954 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46011 %3A Scotsman 306%2F456%2F954 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46012 %3A Scotsman 306%2F456%2F954 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46013 %3A Manitowoc S422 S322 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46014 %3A Manitowoc S422 S322 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46015 %3A Manitowoc S422 S322 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46016 %3A Mani- IB600C IB800C IB1000C Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46017 %3A Mani- IB600C IB800C IB1000C Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46018 %3A Mani- IB600C IB800C IB1000C Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46032 %3A Ice-O-Matic 520 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46033 %3A Ice-O-Matic 520 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46034 %3A Ice-O-Matic 520 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46371 %3A 30%22 Hoshizaki KMD 850%2F901</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46372 %3A 30%22 Manitowoc 450%2F500%2F606%2F800%2F906</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46375 %3A 30%E2%80%9D IK ICE O 30%E2%80%9D 250%2F406%2F1006</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46382 %3A KIT IM ADPT SCOTTS 30%22 C0830%2FC1030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46412%3A Ice Maker Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46413%3A Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46419%3A IK MAN 30%22 DUAL EVAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46465 %3A KIT IM ADPT HOSHIZAKI KMS-1122 SLVR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46466 %3A KIT IM ADPT HOSHIZAKI KMS-1122 RED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46467 %3A KIT IM ADPT HOSHIZAKI KMS-1122 BLK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46632%3A LOW PROFILE IM ADAPTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46670 %3A 9100 Red IK 22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46671 %3A 9100 Black IK 22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46672 %3A 9100 Gray IK 22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46673 %3A 9100 Red Manual Fill Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46674 %3A 9100 Black Manual Fill Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46675 %3A 9100 Gray Manual Fill Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46701%3A LID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46729 %3A Dark Gray Manual Fill Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46730 %3A Dark Gray 22%22 IM Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46750%3A Manual Fill Lid Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46751%3A Follett Manual Fill Lid Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46752%3A Standard Ice Maker Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46753%3A Low Profile IM Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%2310%3A 9100 Red IK Soft Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%2311%3A 9100 Black IK Soft Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%2312%3A 9100 Gray IK Soft Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%237%3A 9100 Red IK 30%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%238%3A 9100 Black IK 30%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%239%3A 9100 Gray IK 30%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%3A M-ABS Ice Maker Adapter Kit including manual fill lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A ED 300 Ice Dispenser%2F IM Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A ED250 Ice Dispenser%2F IM Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_LID_IM_Adapter2__c</picklist>
+        <values>
+            <fullName>46000 %3A FSIB Red Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46001 %3A FSIB Silver Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46002 %3A FSIB Black Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46004 %3A Hoshizaki Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46005 %3A Hoshizaki Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46006 %3A Hoshizaki Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46007 %3A Scotsman E686 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46008 %3A Scotsman E686 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46009 %3A Scotsman E686 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46010 %3A Scotsman 306%2F456%2F954 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46011 %3A Scotsman 306%2F456%2F954 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46012 %3A Scotsman 306%2F456%2F954 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46013 %3A Manitowoc S422 S322 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46014 %3A Manitowoc S422 S322 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46015 %3A Manitowoc S422 S322 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46016 %3A Mani- IB600C IB800C IB1000C Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46017 %3A Mani- IB600C IB800C IB1000C Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46018 %3A Mani- IB600C IB800C IB1000C Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46032 %3A Ice-O-Matic 520 Door%2C Silver Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46033 %3A Ice-O-Matic 520 Door%2C Red Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46034 %3A Ice-O-Matic 520 Door%2C Black Shrouds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46371 %3A 30%22 Hoshizaki KMD 850%2F901</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46372 %3A 30%22 Manitowoc 450%2F500%2F606%2F800%2F906</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46375 %3A 30%E2%80%9D IK ICE O 30%E2%80%9D 250%2F406%2F1006</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46382 %3A KIT IM ADPT SCOTTS 30%22 C0830%2FC1030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46412%3A Ice Maker Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46413%3A Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46419%3A IK MAN 30%22 DUAL EVAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46465 %3A KIT IM ADPT HOSHIZAKI KMS-1122 SLVR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46466 %3A KIT IM ADPT HOSHIZAKI KMS-1122 RED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46467 %3A KIT IM ADPT HOSHIZAKI KMS-1122 BLK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46632%3A LOW PROFILE IM ADAPTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46670 %3A 9100 Red IK 22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46671 %3A 9100 Black IK 22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46672 %3A 9100 Gray IK 22%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46673 %3A 9100 Red Manual Fill Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46674 %3A 9100 Black Manual Fill Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46675 %3A 9100 Gray Manual Fill Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46701%3A LID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46729 %3A Dark Gray Manual Fill Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46730 %3A Dark Gray 22%22 IM Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46750%3A Manual Fill Lid Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46751%3A Follett Manual Fill Lid Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46752%3A Standard Ice Maker Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46753%3A Low Profile IM Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%2310%3A 9100 Red IK Soft Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%2311%3A 9100 Black IK Soft Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%2312%3A 9100 Gray IK Soft Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%237%3A 9100 Red IK 30%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%238%3A 9100 Black IK 30%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%239%3A 9100 Gray IK 30%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%3A M-ABS Ice Maker Adapter Kit including manual fill lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A ED 300 Ice Dispenser%2F IM Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A ED250 Ice Dispenser%2F IM Adapter Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Label_kits__c</picklist>
+        <values>
+            <fullName>141958%3A Barqs%2FDr%2E Pepper label kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Barqs%2FPibb label kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Manifold__c</picklist>
+        <values>
+            <fullName>46094%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46095%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46096%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46098%3A Brass Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46278%3A Brass Universal Manifold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Misc_Kit_M_Series__c</picklist>
+        <values>
+            <fullName>XXXX%3A M-Series Installation Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Platform_Type__c</picklist>
+        <values>
+            <fullName>6000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9100</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Pump_Kit__c</picklist>
+        <values>
+            <fullName>45916 %3A HFCS Pump Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45916%3A Flojet HFCS G55 pump kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46022 %3A High Altitude Pump Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD%3A Flojet G55 M Series DKO-HFCS 2 pump kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Rack1__c</picklist>
+        <values>
+            <fullName>44236%3A 15%E2%80%9D Wide Single BIB Rack under counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44238%3A 28%E2%80%9D Wide Double BIB Rack under counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45897 %3A 15%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45898%3A 28%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45899%3A 41%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46079%3A 28%22 Cartridge%2FHFCS Inclined%2FFlat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46110 %3A 38%22 Rack with Cartridge Storage for 4Gal WB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46111 %3A 38%22 Rack with Cartridge Storage for 20Gal WB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46246%3A 41%E2%80%9D Rack with 2 Flat Pans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46280 %3A 41%E2%80%9D Manitowoc %28Wendy%27s Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46312%3A 4%22 Chase SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46747%3A 15%E2%80%9D Wide under counter rack w%2F1 slanted shelf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46748%3A 28%E2%80%9D Wide under counter rack w%2F1 slanted shelf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Chase Stainless Steel Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Rack2__c</picklist>
+        <values>
+            <fullName>44236%3A 15%E2%80%9D Wide Single BIB Rack under counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44238%3A 28%E2%80%9D Wide Double BIB Rack under counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45897 %3A 15%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45898%3A 28%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45899%3A 41%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46079%3A 28%22 Cartridge%2FHFCS Inclined%2FFlat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46110 %3A 38%22 Rack with Cartridge Storage for 4Gal WB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46111 %3A 38%22 Rack with Cartridge Storage for 20Gal WB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46246%3A 41%E2%80%9D Rack with 2 Flat Pans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46280 %3A 41%E2%80%9D Manitowoc %28Wendy%27s Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46312%3A 4%22 Chase SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46747%3A 15%E2%80%9D Wide under counter rack w%2F1 slanted shelf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46748%3A 28%E2%80%9D Wide under counter rack w%2F1 slanted shelf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Chase Stainless Steel Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Rack3__c</picklist>
+        <values>
+            <fullName>44236%3A 15%E2%80%9D Wide Single BIB Rack under counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44238%3A 28%E2%80%9D Wide Double BIB Rack under counter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45897 %3A 15%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45898%3A 28%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45899%3A 41%22 Wide Inclined Five Shelves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46079%3A 28%22 Cartridge%2FHFCS Inclined%2FFlat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46110 %3A 38%22 Rack with Cartridge Storage for 4Gal WB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46111 %3A 38%22 Rack with Cartridge Storage for 20Gal WB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46246%3A 41%E2%80%9D Rack with 2 Flat Pans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46280 %3A 41%E2%80%9D Manitowoc %28Wendy%27s Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46312%3A 4%22 Chase SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46747%3A 15%E2%80%9D Wide under counter rack w%2F1 slanted shelf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46748%3A 28%E2%80%9D Wide under counter rack w%2F1 slanted shelf</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Chase Stainless Steel Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Regulator__c</picklist>
+        <values>
+            <fullName>45819 %3A CO2 Regulator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Shelf1__c</picklist>
+        <values>
+            <fullName>46063 %3A Slant Shelf 28inch Wide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46064 %3A Slant Shelf 41inch Wide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46065 %3A Slant Shelf 15inch Wide</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Shelf2__c</picklist>
+        <values>
+            <fullName>46063 %3A Slant Shelf 28inch Wide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46064 %3A Slant Shelf 41inch Wide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46065 %3A Slant Shelf 15inch Wide</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Soft_Ice_Misc_Adapter__c</picklist>
+        <values>
+            <fullName>46303 Hoshizaki Funnel Kit for Models%3A KM-280%2C -320%2C -500%2C -501%2C -515%2C -630M%2C -650M %26 -600MAH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46377 %3A Hoshizaki Funnel Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46430%3A KIT FREESTYLE 7000 SOFT ICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46468%3A IM FUNNEL ADAPTER KIT HS-5201</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46487%3A HOSH KM-650 SUPPLEMENTAL KIT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46712%3A KIT FREESTYLE 7000 SOFT ICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46728%3A Kit Freestyle 9100 Soft Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A For Future Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Kit Freestyle 7100 Soft Ice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Stand__c</picklist>
+        <values>
+            <fullName>46449%3A 7000%2F7100 Stand %28Account Pay%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46449%3A 7000%2F7100 Stand %28Customer Pay%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46449%3A FS7000 Stand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46449%3A FS7000 Stand %28Account Pay%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46449%3A FS7000 Stand %28Customer Pay%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Tall_Cup_Kit__c</picklist>
+        <values>
+            <fullName>141959%3A Tall Cup Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46717%3A EXTENDED DRIP TRAY FS7000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A 6000 Drip Tray Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A For Future use</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Tray_Kit__c</picklist>
+        <values>
+            <fullName>46404 %26 46405 %3A Single %26 Double Tray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46404 %3A Single Tray</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Vacuum_Regulator__c</picklist>
+        <values>
+            <fullName>46409 %3A Regulator Vacuum %28Series 7000%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A Water pressure regulator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Valid_Fill__c</picklist>
+        <values>
+            <fullName>00000 - email billing%40validfill%2Ecom to order kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46245 %3A Valid Fill Conversion Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Booster__c</picklist>
+        <values>
+            <fullName>43362 %3A Water Booster 2%2E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46118%3A Water Booster 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46282 %3A Water Booster 4%2E4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter_2__c</picklist>
+        <values>
+            <fullName>45625%3A WF housing%2C 45270%3A WF %26 45624%3A Control Feeder - Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45863%3A WF COMPLETE SYSTEM-IC600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46286%3A WF Cartridge Single Head</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46290%3A WF 20 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46364%3A WF cartridge %26 46248%3A WF connection kit %E2%80%93 3M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46381%3A WF11K16H22W6D-SW260 PLUS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Water_Filter__c</picklist>
+        <values>
+            <fullName>45625%3A WF housing%2C 45270%3A WF %26 45624%3A Control Feeder - Everpure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45863%3A WF COMPLETE SYSTEM-IC600</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46286%3A WF Cartridge Single Head</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46290%3A WF 20 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46364%3A WF cartridge %26 46248%3A WF connection kit %E2%80%93 3M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46381%3A WF11K16H22W6D-SW260 PLUS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_X4LC_NNS_Tray__c</picklist>
+        <values>
+            <fullName>46489 %3A 4LC Tray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A 4LC Tray</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_X4LC_RCGP_Installation_Kit__c</picklist>
+        <values>
+            <fullName>46543 %3A 4LC Install Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A 4LC Install Kit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_X4LC_RCGP_Module_s__c</picklist>
+        <values>
+            <fullName>46536 %3A 4LC RCGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XXXXX%3A 4LC RCGP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Legs__c</picklist>
+        <values>
+            <fullName>46436 %3A FS7000 LEG KIT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Valance__c</picklist>
+        <values>
+            <fullName>46433 %3A FS7000 COCA-COLA VALANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46434 %3A FS7000 SUBWAY VALANCE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X30_Ice_Maker_Shroud__c</picklist>
+        <values>
+            <fullName>46376%3A Shroud for 30in Ice Maker Large 23%E2%80%9D-28%E2%80%9D tall IM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46378%3A Shroud for 30in Ice Maker Small %3C 23%E2%80%9D tall IM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

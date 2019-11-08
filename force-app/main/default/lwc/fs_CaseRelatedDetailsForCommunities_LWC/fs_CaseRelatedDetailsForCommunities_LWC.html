@@ -1,0 +1,34 @@
+<template>
+    <lightning-record-view-form
+            record-id ={recordId}
+            object-api-name="Case">
+            <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-p-left_small slds-p-top_xx-small">
+                        <div class="slds-grid slds-wrap slds-m-top_x-small">
+                            <div class="slds-col slds-size_2-of-2">
+                                <div class="slds-section slds-is-open">
+                                    <lightning-card variant="narrow" icon-name="standard:case" title="Case Information">
+                                    </lightning-card>
+                                    <div class="slds-grid">
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <lightning-output-field field-name="CaseNumber" class="no-outline"></lightning-output-field>
+                                                <lightning-output-field field-name="FS_New_Case_Type__c" class="no-outline"></lightning-output-field>
+                                                <lightning-output-field field-name="Subject" class="no-outline"></lightning-output-field>
+                                                <lightning-output-field field-name="Priority" class="no-outline"></lightning-output-field>
+                                                <lightning-output-field field-name="Status" class="no-outline"></lightning-output-field>
+                                                <lightning-output-field field-name="LM_Sub_Status__c" class="no-outline"></lightning-output-field>
+                                                
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <lightning-output-field field-name="OwnerId" class="no-outline"></lightning-output-field>
+                                                <lightning-output-field field-name="Case_Age_Days__c" class="no-outline"></lightning-output-field>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+           
+    </lightning-record-view-form>
+</template>

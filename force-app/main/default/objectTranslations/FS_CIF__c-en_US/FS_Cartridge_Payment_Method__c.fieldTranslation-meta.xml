@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help/>
+    <label/>
+    <name>FS_Cartridge_Payment_Method__c</name>
+    <picklistValues>
+        <masterLabel>Bank Draft</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Credit Card</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor billing</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice (Payment Terms)</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,44 @@
+.THIS .hideRowNumber td:nth-child(1){ display:none !important; } .THIS .hideRowNumber th:nth-child(1){ display:none !important; }
+.THIS span.slds-row-number {
+    display:none;
+}
+
+.modal-lg {
+    width: 80%;
+    max-width: 100rem;
+}
+.InlineEditMessage{
+    color:red;align-self: center;font-weight: bold;
+    font-size: 15px;
+/* display:-webkit-box;-webkit-box-pack:end;*/
+}
+
+.NonLMCustomButtonsStyle{
+    display:-webkit-box;
+}
+.alertModalHeaderText{
+    float: left;
+    font-weight: bold;
+    font-size: large;
+}
+.alertModalFooter{
+    border-top: none !important;
+    background-color: white;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.alertModalHeader{
+    background-color: #fb5e5e;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.alertModalContainer{
+    max-width: 30% !important;
+}
+.alertMessageText{
+    font-size: medium;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}

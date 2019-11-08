@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Reason_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Removal - Commercial Terms</fullName>
+                <default>false</default>
+                <label>Removal - Commercial Terms</label>
+            </value>
+            <value>
+                <fullName>Removal - Dispenser Issues</fullName>
+                <default>false</default>
+                <label>Removal - Dispenser Issues</label>
+            </value>
+            <value>
+                <fullName>Condemned by Sr. Tech</fullName>
+                <default>false</default>
+                <label>Condemned by Sr. Tech</label>
+            </value>
+            <value>
+                <fullName>Remodeling of Outlet</fullName>
+                <default>false</default>
+                <label>Remodeling of Outlet</label>
+            </value>
+            <value>
+                <fullName>Repair of Restaurant</fullName>
+                <default>false</default>
+                <label>Repair of Restaurant</label>
+            </value>
+            <value>
+                <fullName>Repair of Beverage Area</fullName>
+                <default>false</default>
+                <label>Repair of Beverage Area</label>
+            </value>
+            <value>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+                <label>Customer Request</label>
+            </value>
+            <value>
+                <fullName>Relocation Outside of 4 Walls</fullName>
+                <default>false</default>
+                <label>Relocation Outside of 4 Walls</label>
+            </value>
+            <value>
+                <fullName>Bridge 9000 To 9100</fullName>
+                <default>false</default>
+                <label>Bridge 9000 To 9100</label>
+            </value>
+            <value>
+                <fullName>Early Replacement 9000 To 9100</fullName>
+                <default>false</default>
+                <label>Early Replacement 9000 To 9100</label>
+            </value>
+            <value>
+                <fullName>Competitive</fullName>
+                <default>false</default>
+                <label>Competitive</label>
+            </value>
+            <value>
+                <fullName>Bottle Can</fullName>
+                <default>false</default>
+                <label>Bottle Can</label>
+            </value>
+            <value>
+                <fullName>Return to Legacy - Commercial Terms (Cost)</fullName>
+                <default>false</default>
+                <label>Return to Legacy - Commercial Terms (Cost)</label>
+            </value>
+            <value>
+                <fullName>Return to Legacy - Dispenser Issue</fullName>
+                <default>false</default>
+                <label>Return to Legacy - Dispenser Issue</label>
+            </value>
+            <value>
+                <fullName>OOB/Ownership Change</fullName>
+                <default>false</default>
+                <label>OOB/Ownership Change</label>
+            </value>
+            <value>
+                <fullName>Return to Legacy - End of Market Test</fullName>
+                <default>false</default>
+                <label>Return to Legacy - End of Market Test</label>
+            </value>
+            <value>
+                <fullName>Too many CCFS equipment placed initially</fullName>
+                <default>false</default>
+                <label>Too many CCFS equipment placed initially</label>
+            </value>
+            <value>
+                <fullName>Change of Color</fullName>
+                <default>false</default>
+                <label>Change of Color</label>
+            </value>
+            <value>
+                <fullName>Customer Relationship</fullName>
+                <default>false</default>
+                <label>Customer Relationship</label>
+            </value>
+            <value>
+                <fullName>Damaged at Arrival</fullName>
+                <default>false</default>
+                <label>Damaged at Arrival</label>
+            </value>
+            <value>
+                <fullName>Platform Change</fullName>
+                <default>false</default>
+                <label>Platform Change</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

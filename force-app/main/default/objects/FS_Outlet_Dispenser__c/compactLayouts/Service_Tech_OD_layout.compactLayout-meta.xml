@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Tech_OD_layout</fullName>
+    <fields>FS_Serial_Number2__c</fields>
+    <fields>FS_ACN_NBR__c</fields>
+    <label>Service Tech OD layout</label>
+</CompactLayout>

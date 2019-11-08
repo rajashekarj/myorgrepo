@@ -1,0 +1,263 @@
+<apex:page id="pageId" sidebar="false" standardController="FS_Brandset__c" extensions="FSAddCartridgeToBrandsetController">
+      
+      <style type="text/css">
+        .availableCheckBox{ }
+        .selectedCheckBox{ }
+      </style>
+      
+      <apex:form id="formId">
+        <c:FSActionStatusElement ></c:FSActionStatusElement>
+        <apex:pageblock id="Master" >
+        <apex:pageBlockSection columns="2" >  
+            <apex:pageblock title="Cartridges" tabStyle="FS_Cartridge__c" id="pbId1">
+                 
+                  <apex:variable value="{!FS_Brandset__c.FS_Platform__c}" var="bransetPlatform"/>
+                  
+                  <apex:pageBlockSection columns="3" title="Search Cartridges" >  
+                     <apex:pageBlockSectionItem >
+                          <apex:outputLabel value="Cartridge Name" for="cartName"/>   
+                           <apex:inputText id="cartName" value="{!searchCartridgeName}" onkeypress="return keyPressCall(event);"/>
+                     </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Brand" for="cartBrand"/>
+                        <apex:inputText id="cartBrand" value="{!searchCartridgeBrand}" onkeypress="return keyPressCall(event);"/>
+                    </apex:pageBlockSectionItem>  
+                      <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Flavor" for="cartFlavor"/>
+                        <apex:inputText id="cartFlavor" value="{!searchCartridgeFlavor}" onkeypress="return keyPressCall(event);"/>
+                    </apex:pageBlockSectionItem> 
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Country" for="cartCountry"/>
+                        <apex:outputfield id="cartCountry" value="{!FS_Brandset__c.FS_Country__c}"/>
+                    </apex:pageBlockSectionItem> 
+                    <apex:pageBlockSectionItem >
+                         <apex:outputLabel value="Cartridge Type" for="cartType"/>
+                         <apex:selectList id="cartType" value="{!searchCartridgeType}" size="1" multiselect="false">
+                          <apex:selectOptions value="{!CartridgeTypes}"/>
+                         </apex:selectList>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                       <apex:commandButton value="Search" action="{!search}" status="fetchStatus" reRender="Master"/>
+                     </apex:pageBlockSectionItem> 
+                 </apex:pageBlockSection>
+                 
+                 <apex:pageblockSection title="Available Cartridges" columns="1"> 
+                       <apex:commandButton status="fetchStatus" rendered="{!availableCartridgesList.size!=0}" value="Add Cartridges"  oncomplete="checkIfCartridgeToAddIsSelected();"/>
+                       <apex:outputText rendered="{!availableCartridgesList.size=0}"> No cartridge records to display</apex:outputText>
+                       <apex:pageBlockTable rendered="{!availableCartridgesList.size!=0}" value="{!availableCartridgesList}" var="cartridgewrap" id="cartridgeTable">
+                         <apex:column > 
+                            <apex:facet name="header">
+                               <!--VF Component to select all or no records-->
+                               <c:FSCheckAllOrNone pTagId="MasterChkBox1" />
+                            </apex:facet>     
+                            <apex:inputCheckbox styleClass="availableCheckBox" value="{!cartridgewrap.selected}" onclick="unCheckAllOrNone('MasterChkBox1')" onkeypress="return keyPressCall(event);"/>  
+                            
+                         </apex:column>
+                         <apex:column headervalue="Cartridge Name" value="{!cartridgewrap.cartridge.Name}"/>  
+                         <apex:column headervalue="Platform" value="{!cartridgewrap.cartridge.FS_Platform__c}"/>  
+                         <apex:column headervalue="Country" value="{!cartridgewrap.cartridge.FS_Country__c}"/>
+                         <apex:column headervalue="Brand" value="{!cartridgewrap.cartridge.FS_Brand__c}"/>
+                         <apex:column headervalue="Flavor" value="{!cartridgewrap.cartridge.FS_Flavor__c}"/>
+                         <apex:column headervalue="Cartridge Type" value="{!cartridgewrap.cartridge.FS_Cartridge_type__c}"/>
+                         <apex:column headervalue="RFID-Version" value="{!cartridgewrap.cartridge.FS_RFID_and_Version__c}"/>
+                         
+                       </apex:pageBlockTable>
+                          
+                         <!--Pagination Section Start-->
+                         <apex:panelGrid columns="6" rendered="{!availableCartridgesList.size!=0}"> 
+                           Total Records: {!paginatorAvailable.TotalResultsize}
+                           
+                           <apex:commandButton status="fetchStatus" reRender="pbId1,cartridgeTable" value="First" action="{!availableFirst}" disabled="{!AvailableDisablePrevious}" title="First Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/> 
+                           <apex:commandButton status="fetchStatus" reRender="pbId1,cartridgeTable" value="Previous" action="{!availablePrevious}" disabled="{!AvailableDisablePrevious}" title="Previous Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/>
+                           <apex:commandButton status="fetchStatus" reRender="pbId1,cartridgeTable" value="Next" action="{!availableNext}" disabled="{!AvailableDisableNext}" title="Next Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/> 
+                           <apex:commandButton status="fetchStatus" reRender="pbId1,cartridgeTable" value="Last" action="{!availableEnd}" disabled="{!AvailableDisableNext}" title="Last Page" oncomplete="unCheckAllOrNone('MasterChkBox1')"/>
+                           
+                           <apex:outputText >
+                            Showing Page: {!paginatorAvailable.PageNumber} of {!paginatorAvailable.totalPages} <br></br> 
+                            
+                           </apex:outputText>
+                          
+                        </apex:panelGrid>
+                       
+                        <!--Pagination Section End-->
+                     </apex:pageblockSection>
+                     <apex:actionFunction name="addSelectedCartridgeMethod" action="{!addSelectedCartridges}" status="fetchStatus" reRender="formId,Master" oncomplete="unCheckAllOrNone('MasterChkBox1');unCheckAllOrNone('MasterChkBox2');"/>
+                      
+                     
+            </apex:pageblock>
+            
+            <apex:pageBlock title="" id="pbId2" > 
+                <!--Parent Record Detail Region Start -->
+                <apex:pageblockSection title="Brandset Details" >
+                    <apex:outputField label="Brandset Number" value="{!FS_Brandset__c.FS_Brandset_Number__c}"/>                     
+                    <apex:outputField label="Brandset Name" value="{!FS_Brandset__c.Name}"/>                    
+                    <apex:outputField label="Country" value="{!FS_Brandset__c.FS_Country__c}"/>                  
+                    <apex:outputField label="Platform" value="{!FS_Brandset__c.FS_Platform__c}"/>             
+                               
+                    <apex:outputField label="Description" value="{!FS_Brandset__c.FS_Description__c}"/>                 
+                    <apex:outputField label="Available for commercial use" value="{!FS_Brandset__c.FS_Available_for_commercial_use__c}"/>
+                </apex:pageblockSection>
+                
+                <apex:actionRegion > <br></br>
+                <apex:pageBlockSection title="Selected Cartridges" columns="1">
+                   
+                   <apex:commandButton status="fetchStatus" rendered="{!selectedCartridgesList.size!=0}" value="Remove Cartridges" oncomplete="checkIfCartridgeToRemoveIsSelected();" />
+                   <apex:outputText rendered="{!selectedCartridgesList.size=0}">No selected cartridge records to display</apex:outputText>
+                   
+                  
+                   <apex:pageBlockTable rendered="{!selectedCartridgesList.size!=0}"  value="{!selectedCartridgesList}" var="selectedCartridgewrap" id="selectedCartridgeTable">
+                      <apex:column >
+                        <apex:facet name="header" >
+                            <c:FSCheckAllOrNone pTagId="MasterChkBox2"/>
+                        </apex:facet>
+                        <apex:inputCheckbox styleClass="selectedCheckBox" value="{!selectedCartridgewrap.selected}" onclick="unCheckAllOrNone('MasterChkBox2')" onkeypress="return keyPressCall(event);"/>
+                      </apex:column>
+                      <apex:column headervalue="Cartridge Name" value="{!selectedCartridgewrap.cartridge.Name}"/>
+                      <apex:column headervalue="RFID and Version#" value="{!selectedCartridgewrap.cartridge.FS_RFID_and_Version__c}"/>
+                         
+                   </apex:pageBlockTable>
+                   
+                   <!--Pagination Section Start-->
+                     <apex:panelGrid columns="6" rendered="{!selectedCartridgeRecords.size!=0}"> 
+                       
+                       Total Records: {!paginatorSelected.TotalResultsize}
+                                             
+                       <apex:commandButton status="fetchStatus" reRender="pbId2,selectedCartridgeTable" value="First" action="{!selectedFirst}" disabled="{!SelectedDisablePrevious}" title="First Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/> 
+                       <apex:commandButton status="fetchStatus" reRender="pbId2,selectedCartridgeTable" value="Previous" action="{!selectedPrevious}" disabled="{!SelectedDisablePrevious}" title="Previous Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/>
+                       <apex:commandButton status="fetchStatus" reRender="pbId2,selectedCartridgeTable" value="Next" action="{!selectedNext}" disabled="{!SelectedDisableNext}" title="Next Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/> 
+                       <apex:commandButton status="fetchStatus" reRender="pbId2,selectedCartridgeTable" value="Last" action="{!selectedEnd}" disabled="{!SelectedDisableNext}" title="Last Page" oncomplete="unCheckAllOrNone('MasterChkBox2')"/>
+                       <apex:outputText >
+                        Showing Page: {!paginatorSelected.PageNumber} of {!paginatorSelected.totalPages} <br></br> 
+                        
+                      </apex:outputText>
+                      
+                    </apex:panelGrid>
+                       
+                    <!--Pagination Section End-->
+                        
+                </apex:pageBlockSection>
+                </apex:actionRegion>
+                
+                <apex:actionFunction name="removeBransetCartridgeMethod" action="{!removeCartridges}" status="fetchStatus" reRender="Master" oncomplete="unCheckAllOrNone('MasterChkBox1');unCheckAllOrNone('MasterChkBox2');"/>
+                
+            </apex:pageblock>
+        </apex:pageblockSection>
+        
+        <apex:pageBlockButtons >  
+          <apex:commandButton value="Save" action="{!saveCartridgesToBrandset}"/>
+          <apex:commandButton value="Cancel" action="{!backToDetailPage}"/>
+        </apex:pageBlockButtons>
+        </apex:pageblock>
+        
+         <script>
+           
+           <!--Cartridge Addition Functions Start------------------------------------------->
+            function checkIfCartridgeToAddIsSelected() {
+              <!--get all the checkbox reference from list of selected Cartridge-->
+              var checker=document.getElementsByClassName('availableCheckBox');
+              <!--Counter to track number of checkbox selected-->
+              var countOfSelectedRecords= 0;
+              for (var i = 0; i < checker.length; i++) {
+                if(checker[i].checked){
+                   countOfSelectedRecords++;
+                }
+              };
+              
+              <!--Criteria when selected or not selected-->
+              if(countOfSelectedRecords==0){
+                alert('In order to utilize the "Add" functionality, you should select some Cartridges');
+              }
+              else{
+                 <!--Call action function-->
+                 addSelectedCartridgeMethod();
+              }
+            }
+            
+           <!--Cartridge Addition Functions End-------------------------------------------> 
+           
+           
+           <!--Cartridge Removal Functions Start------------------------------------------->
+            function checkIfCartridgeToRemoveIsSelected() {
+              <!--get all the checkbox reference from list of selected Cartridge-->
+              var checker=document.getElementsByClassName('selectedCheckBox');
+              <!--Counter to track number of checkbox selected-->
+              var countOfSelectedRecords= 0;
+              for (var i = 0; i < checker.length; i++) {
+                if(checker[i].checked){
+                   countOfSelectedRecords++;
+                }
+              };
+              
+              <!--Criteria when selected or not selected-->
+              if(countOfSelectedRecords==0){
+                alert('In order to utilize the "Remove" functionality, you should select some Cartridges');
+              }
+              else{
+                 confirmRemoveBransetCartridge();
+              }
+            }
+            
+            function confirmRemoveBransetCartridge() {
+             
+              var proceed=confirm('Are you sure you would like to remove the selected cartridge/s?');
+                if(proceed) {
+                   <!--Call action function-->
+                   removeBransetCartridgeMethod();
+                }
+                unCheckAllOrNone('MasterChkBox2');
+            }
+           <!--Cartridge Removal Functions End-------------------------------------------> 
+           
+           function unCheckAllOrNone(masterCheckBoxId) {
+              if(masterCheckBoxId=='MasterChkBox1'){
+                 stateOfMasterCheckBox(masterCheckBoxId,'availableCheckBox');
+              }
+              else{
+                 stateOfMasterCheckBox(masterCheckBoxId,'selectedCheckBox');
+              }  
+                
+           }
+            
+            function stateOfMasterCheckBox(masterCheckBoxId,checkBoxType) {
+              // Find parent table
+                var container = document.getElementById(masterCheckBoxId);
+                
+                // Switch all checkboxes
+                var inputs = container.getElementsByTagName("input");
+                for (var i = 0; i < inputs.length; i++) {
+                    var input = inputs.item(i);
+                    var checker=document.getElementsByClassName(checkBoxType);
+                    <!--Counter to track number of checkbox selected-->
+                      var countOfSelectedRecords= 0;
+                      var countOfCheckboxesDisplayed= 0;
+                      for (var i = 0; i < checker.length; i++) {
+                        countOfCheckboxesDisplayed++;
+                        if(checker[i].checked){
+                           countOfSelectedRecords++;
+                        }
+                      };
+                      if(countOfSelectedRecords==countOfCheckboxesDisplayed){
+                        input.checked = true;
+                      }
+                      else{
+                        input.checked = false;
+                      }
+                    
+                }
+            }
+          </script>
+      </apex:form>
+ <!--Javascript to handle onkeypress event for Enter key-->
+    <script type='text/javascript'>
+        function keyPressCall(ev)  {
+            if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+                return false;
+             } else {
+                  return true;
+             }
+         }
+   </script>
+    </apex:page>

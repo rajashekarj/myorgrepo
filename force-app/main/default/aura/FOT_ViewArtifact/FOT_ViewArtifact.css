@@ -1,0 +1,13 @@
+.THIS .slds-spinner_container {  
+    z-index: 10000;
+    position: fixed;   
+}
+
+.THIS.slds-theme_default{
+    max-width:48% !important;
+}
+
+.THIS .customWidth{
+    width:20% !important; 
+    margin:1% !important;
+}

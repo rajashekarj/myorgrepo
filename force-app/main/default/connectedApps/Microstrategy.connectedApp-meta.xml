@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>jille@coca-cola.com</contactEmail>
+    <label>Microstrategy</label>
+    <oauthConfig>
+        <callbackUrl>https://apps.ko.com/mstr-eko/asp/Main.aspx?evt=3172&amp;src=Main.aspx.3172</callbackUrl>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+</ConnectedApp>

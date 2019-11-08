@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Pump_Kit__c</fullName>
+    <externalId>false</externalId>
+    <label>Pump Kit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>45916 : HFCS Pump Kit</fullName>
+                <default>false</default>
+                <label>45916 : HFCS Pump Kit</label>
+            </value>
+            <value>
+                <fullName>46022 : High Altitude Pump Kit</fullName>
+                <default>false</default>
+                <label>46022 : High Altitude Pump Kit</label>
+            </value>
+            <value>
+                <fullName>TBD: Flojet G55 M Series DKO-HFCS 2 pump kit</fullName>
+                <default>false</default>
+                <label>TBD: Flojet G55 M Series DKO-HFCS 2 pump kit</label>
+            </value>
+            <value>
+                <fullName>45916: Flojet HFCS G55 pump kit</fullName>
+                <default>false</default>
+                <label>45916: Flojet HFCS G55 pump kit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>45916 : HFCS Pump Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46022 : High Altitude Pump Kit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>45916: Flojet HFCS G55 pump kit</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

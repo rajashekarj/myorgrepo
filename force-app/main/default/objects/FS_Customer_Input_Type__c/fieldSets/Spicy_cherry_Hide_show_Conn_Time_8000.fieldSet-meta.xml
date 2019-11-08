@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Spicy_cherry_Hide_show_Conn_Time_8000</fullName>
+    <description>Group of fields for 8000 series on page where the user can check/uncheck fields based on their requirement for the form.</description>
+    <displayedFields>
+        <field>FS_Pibb_or_Dr_Pepper__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>FS_Water_Button__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>FS_Dasani_Buttons__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>FS_Other_Special_Request__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Spicy cherry/ Hide-show/Connection Time 8000</label>
+</FieldSet>

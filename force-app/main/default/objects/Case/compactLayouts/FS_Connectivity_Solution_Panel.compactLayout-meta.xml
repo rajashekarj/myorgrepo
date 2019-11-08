@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Connectivity_Solution_Panel</fullName>
+    <fields>CaseNumber</fields>
+    <fields>Priority</fields>
+    <fields>Status</fields>
+    <fields>Sub_Status__c</fields>
+    <fields>OwnerId</fields>
+    <label>Connectivity Solution Panel</label>
+</CompactLayout>

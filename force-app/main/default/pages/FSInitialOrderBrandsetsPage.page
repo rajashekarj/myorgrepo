@@ -1,0 +1,26 @@
+<apex:page standardController="FS_Initial_Order__c" extensions="FSInitialOrderBrandsetsController" >
+    <apex:pageBlock >
+        <apex:variable value="{!FS_Initial_Order__c.FS_Installation__c}" var="Installation"/>
+        <apex:pageBlockTable value="{!AssosiationBrandsets}" var="brandsets">
+            <apex:column headerValue="Platform" value="{!brandsets.FS_Platform__c}"/>
+            <apex:column headerValue="Brandset#" value="{!brandsets.FS_Brandset_Number__c}"/>
+            <apex:column headerValue="Brandset">
+             <apex:outputLink value="/{!brandsets.FS_Brandset__c}" target="_parent"> {!brandsets.FS_Brandset__r.Name}</apex:outputLink>
+            </apex:column>
+            <apex:column headerValue="NonBranded Water" value="{!brandsets.FS_NonBranded_Water__c}"/>
+            <apex:column headerValue="Brandset Desc" value="{!brandsets.FS_Brandset_Desc__c}"/>
+            <apex:column headerValue="SAP Proposal #" value="{!brandsets.FS_Brandset__r.FS_SAP_Item_Proposal_Number__c}"/>
+            <apex:column headerValue="Commercial Start Date" value="{!brandsets.FS_Commercial_Start_Date__c}"/>
+            
+            <apex:column >
+            	<apex:facet name="header">Created By</apex:facet>
+                <apex:outputField value="{!brandsets.CreatedByid}"/>,&nbsp;<apex:outputField value="{!brandsets.CreatedDate}"/>
+            </apex:column>
+            <apex:column >
+            	<apex:facet name="header">Last Modified By</apex:facet>
+                <apex:outputField value="{!brandsets.LastModifiedById}"/>,&nbsp;<apex:outputField value="{!brandsets.LastModifiedDate}"/>
+            </apex:column>
+        </apex:pageBlockTable>
+   </apex:pageBlock>
+
+</apex:page>

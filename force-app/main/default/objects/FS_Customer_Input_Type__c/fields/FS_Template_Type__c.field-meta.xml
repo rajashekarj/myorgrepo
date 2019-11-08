@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Template_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Template Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>7000</fullName>
+                <default>false</default>
+                <label>7000</label>
+            </value>
+            <value>
+                <fullName>8000</fullName>
+                <default>false</default>
+                <label>8000</label>
+            </value>
+            <value>
+                <fullName>9000</fullName>
+                <default>false</default>
+                <label>9000</label>
+            </value>
+            <value>
+                <fullName>8K9K</fullName>
+                <default>false</default>
+                <label>8K9K</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

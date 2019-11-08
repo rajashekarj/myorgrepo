@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Equipment Package</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Equipment Packages</value>
+    </caseValues>
+    <layouts>
+        <layout>Equipment Package Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IP Equipment Package Layout</layout>
+        <sections>
+            <label/>
+            <section>Ancillary Part Details</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>FS_Equipment_Package</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>EnforcePumpkitselectionVaccumregulato</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>EquipmentPackage_Edit_Privileges_IP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Equipment_Quantity_Fields_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Equipment_Value_Fields_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>HFCSPumpKit_TO_RegulatorVacuumDependency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Make_RecordType_Name_NonEditable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>QTY_PumpKit_VacuumRegulator</name>
+    </validationRules>
+</CustomObjectTranslation>

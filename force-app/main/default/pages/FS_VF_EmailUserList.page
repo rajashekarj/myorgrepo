@@ -1,0 +1,44 @@
+<apex:page standardController="Case" extensions="FS_EmailUserListController" sidebar="false" showHeader="false" id="page" applyBodyTag="false" applyHtmlTag="false">
+    <script>
+    	function cancelJS()
+    	{
+            var result = confirm("Are you sure you want to close this window?");
+            if(result == true)
+            {
+                window.close();
+            }
+            else
+            {
+                return result;
+            }
+        }
+    </script>
+    <apex:form id="formId">
+        <apex:pageBlock >
+        	<apex:pageBlockTable value="{!usersInfo}" var="userDetail" style="width:100%;">
+            	<apex:column >
+                    <apex:facet name="header">Select Email</apex:facet>
+                    <apex:inputCheckbox value="{!userDetail.userPresent}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">User Name</apex:facet>
+                    <apex:outputText value="{!userDetail.userName}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">User Role</apex:facet>
+                    <apex:outputText value="{!userDetail.userRole}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Email ID</apex:facet>
+                    <apex:outputText value="{!userDetail.userEmailId}" />
+                </apex:column>
+            </apex:pageBlockTable>
+            
+            <apex:pageBlockButtons >
+                <!--<apex:commandbutton value="Save" disabled="{!selectCaseData.status != 'New' && selectCaseData.status != 'Closed'}" action="{!saveSendEmail}" id="selectButton" />-->
+                <apex:commandbutton value="Save" action="{!saveSendEmail}" id="selectButton" />
+                <apex:commandbutton value="Cancel"  onClick="cancelJS();" rerender="formId" id="cancelButton" />
+            </apex:pageBlockButtons>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

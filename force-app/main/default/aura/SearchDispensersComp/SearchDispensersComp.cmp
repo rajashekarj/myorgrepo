@@ -1,0 +1,86 @@
+<!-- 
+============================================================
+Descripton: Custom Search Dispensers Component
+Class Name: SearchDispensersComp
+Created on: 23rd Aug 2017
+Modified on:
+Author:Infosys
+============================================================ 
+-->
+
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global" controller="ODsearchController" >
+    <aura:attribute name="ODList" type="FS_Outlet_Dispenser__c[]" />
+    <aura:attribute name="listFlag" type="Boolean" default="false"/>
+    <aura:attribute name="listNull" type="Boolean" default="false"/>
+    
+    <aura:handler event="aura:waiting" action="{!c.waiting}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.doneWaiting}"/>
+    
+    
+    <div class="slds-page-header" >
+        <h1 class="slds-page-header__title slds-truncate slds-align_absolute-center" title="Dispenser Serial Number Search">Dispenser Serial Number Search</h1>
+    </div>
+    
+    <!-- <lightning:input type="text"  label="Enter Serial Number" messageWhenValueMissing="Please Enter Serial Number." name="SerialNumber" placeholder="Enter Serial Number"  aura:id="serialNum" required="true" /> -->
+    <!--<ui:inputText label="Enter Serial Number" value="" required="true" aura:id="serialNum"/>-->
+    <div class="slds-p-around_x-small slds-size_5-of-5">
+        <lightning:input type="search" class="slds-p-around_x-small "  label="Serial Number" name="SerialNumber" messageWhenValueMissing="Please Enter Serial Number." placeholder="Enter Serial Number"  aura:id="serialNum" required="true" />
+        <div class="slds-p-bottom_x-small slds-p-around_x-small">
+            <lightning:button variant="neutral" label="Search" onclick="{! c.executeSearch }"  />
+        </div>
+        
+       <div class="exampleHolder">
+            <lightning:spinner aura:id="mySpinner" class="slds-hide" variant="brand" alternativeText="Records are loading.. Please wait" />
+        </div>
+        
+        <!-- <span id="Accspinner" style="display:none"><ui:spinner /></span> -->
+        
+        <aura:if isTrue="{!v.listFlag}">
+            
+            <table class="slds-table slds-table_bordered ">
+                <thead>
+                    <tr class="slds-text-title_caps fontsizestyle">
+                        <th scope="col" class="slds-cell-wrap ">
+                            <div class="slds-truncate slds-cell-wrap" title="Serial Number"><b>Serial #</b></div>
+                        </th>
+                        <th scope="col" class="slds-cell-wrap">
+                            <div class="slds-truncate slds-cell-wrap" title="ACN Number"><b>ACN</b></div>
+                        </th>
+                        <th scope="col" class="slds-cell-wrap">
+                            <div class="slds-truncate slds-cell-wrap" title="Platform"><b>Platform</b></div>
+                        </th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <aura:iteration items="{!v.ODList}" var="odval">
+                        <tr>
+                            <td scope="row" >
+                                <div class="slds-truncate" title="Serial Number"><a href="{!'/one/one.app?#/sObject/'+ odval.Id + '/view'}" target="_self">{!odval.FS_Serial_Number2__c}</a></div>
+                            </td>
+                            <td scope="row" >
+                                <div class="slds-truncate" title="ACN Number">{!odval.FS_ACN_NBR__c}</div>
+                            </td>
+                            <td scope="row" >
+                                <div class="slds-truncate" title="Platform">{!odval.FS_Equip_Type__c}</div>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+            
+        </aura:if>
+        
+        <aura:if isTrue="{!v.listNull}">
+            <!-- Please enter correct serial number. -->            
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                <span class="slds-assistive-text">error</span>
+                <!--<h2>Please check entered serial number, either it is blank or invalid.</h2> -->
+                <h2>{!$Label.c.SearchDispenserWarning}</h2>
+            </div>            
+        </aura:if>
+        
+        
+        
+    </div>
+</aura:component>

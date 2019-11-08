@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalate</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Escalate to GC</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/connection.js&quot;)} 
+if(&quot;{!Case.Escalate_to_Global_Center__c}&quot; == false){ 
+if(( &quot;{!$Profile.Name}&quot; == &quot;Service Escalation Agent&quot; || &quot;{!$Profile.Name}&quot;.includes(&quot;FS SE&quot;) || &quot;{!$Profile.Name}&quot;.includes(&quot;FET SE&quot;) || &quot;{!User.Related_Permission_Set__c}&quot;==&quot;Service_Escalation_Access&quot; )) 
+{ 
+var c = new sforce.SObject(&quot;Case&quot;); 
+c.id = &quot;{!Case.Id}&quot;; 
+c.Escalate_to_Global_Center__c = true; 
+c.status = &quot;Escalated&quot;; 
+c.sub_status__c = &quot;GC on Hold&quot;; 
+c.Service_Escalation_Agent__c = &#39;{!$User.Id}&#39;; 
+sforce.connection.AssignmentRuleHeader = {} 
+sforce.connection.assignmentRuleHeader = {useDefaultRule:true}; 
+sforce.connection.emailHeader = {triggerUserEmail:true}; 
+result = sforce.connection.update([c]); 
+if ( result[0].getBoolean( &quot;success&quot; ) ) 
+{ 
+window.location.reload(); 
+} 
+else 
+{ 
+alert( result[0].errors.message); 
+} 
+} 
+else 
+{ 
+alert(&quot;Cases can only be escalated by Service Escalation Agents&quot;); 
+} 
+} 
+else{ 
+alert(&quot;Cases can be escalated only once&quot;); 
+}</url>
+</WebLink>

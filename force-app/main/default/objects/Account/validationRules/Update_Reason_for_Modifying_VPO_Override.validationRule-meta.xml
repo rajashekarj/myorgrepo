@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Reason_for_Modifying_VPO_Override</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(FS_VPO_Override__c ), NOT( ISCHANGED( Reason_for_modifying_VPO_Override__c)),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>Reason_for_modifying_VPO_Override__c</errorDisplayField>
+    <errorMessage>Please add Reason for modifying VPO Override in case you are adding or updating the override</errorMessage>
+</ValidationRule>

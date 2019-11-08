@@ -1,0 +1,235 @@
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!--   Page : Enter/Edit/View CokeSmart Info                                                                              -->
+<!--   Created By   : Pallavi Sharma (Appiro)                                                                             -->
+<!--   Created Date : 17 - Sep - 2013                                                                                     -->
+<!------------------------------------------------------------------------------------------------------------------------->
+<apex:page Controller="FSEnterEditViewCokeSmartInfoController">
+    <style>
+        .custPopup{
+        background-color: white;
+        border-width: 2px;
+        border-style: solid;
+        z-index: 9997;
+        left: 50%;
+        padding:10px;
+        position: absolute;         
+        width: 700px;
+        margin-left: -320px;
+        top:100px;
+        }
+        .popupBackground{
+        background-color:black;
+        opacity: 0.20;
+        filter: alpha(opacity = 20);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9996;
+        }   
+    </style>
+    <apex:form >
+        
+        <apex:actionstatus id="status">
+            <apex:facet name="start">
+                <div class="waitingSearchDiv" style="background-color: #fbfbfb; height: 100%; opacity: 0.65; width: 100%;">
+                    <div class="waitingHolder" style="top: 74.2px; width: 91px;">
+                        <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                        <span class="waitingDescription">Saving...</span>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionstatus>
+        
+        <apex:actionFunction name="fillDown" action="{!fillDown}" rerender="cokeSmart" status="myStatus">
+            <apex:param name="myParam" value="" assignTo="{!selectedFillDown}"/>
+        </apex:actionFunction>
+        
+        <apex:pageBlock id="cokeSmart">
+            <apex:pageMessages id="showmsg"></apex:pageMessages>
+            <apex:outputpanel id="popup">
+                <apex:outputpanel styleclass="popupBackground" layout="block" rendered="{!displayPopUp}"></apex:outputpanel>
+                <apex:outputpanel styleclass="custPopup" layout="block" rendered="{!displayPopUp}">                            
+                    <apex:pageBlock id="btnBlock">                   
+                        <center>One or More Outlets are not enabled for Invoice (Payment Terms) selection <br/><br/>                                             
+                            <apex:commandButton reRender="popup" value="OK" id="activeIA" styleClass="btn btn-success activeIA " style="margin-right:10px;" html-data-toggle="tooltip" html-data-placement="bottom" html-data-original-title="Please click activate for activating Integration." action="{!closePopup}"/>                        
+                        </center>
+                    </apex:pageBlock>
+                </apex:outputpanel>
+            </apex:outputpanel>
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton id="saveButton" value="Save" action="{!saveOutletInfo}" status="status" rendered="{!listOutletDetails.size > 0}" rerender="showmsg"/>
+                <apex:commandButton id="cancelButton" value="Cancel" reRender="none" action="{!cancel}"/>
+            </apex:pageBlockButtons>            
+            
+            <apex:pageBlockTable style="border-color : #E0E3E5;" value="{!listOutletDetails}" var="outletDetail" rendered="{!listOutletDetails.size > 0}" border="1" >
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down All" onclick="fillDown('All'); return false;" />
+                        <br/><br/>
+                        Status
+                    </apex:facet>
+                    <apex:OutputField value="{!outletDetail.outlet.FS_CS_Status__c}"/>
+                </apex:column>
+                
+                <apex:column headerValue="Outlet Information" style="width:350px; border-color : #E0E3E5;border-right-width=1px; border-right:1px solid #E0E3E5;" >
+                    <div style="width:200px; display:block;"><apex:outputField value="{!outletDetail.outlet.FS_Outlet_Information__c}"/> </div>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('VMS'); return false;" />
+                        <br/><br/>
+                        Requested Order Method
+                    </apex:facet>
+                    <apex:actionRegion >
+                        <apex:InputField value="{!outletDetail.outlet.FS_Requested_Order_Method__c}" />                      
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('Delivery'); return false;" />
+                        <br/><br/>
+                        Requested Delivery Method
+                    </apex:facet>
+                    <apex:actionRegion >
+                        <apex:InputField value="{!outletDetail.outlet.FS_Requested_Delivery_Method__c}" />                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('Channel'); return false;" />
+                        <br/><br/>
+                        Sub-Trade   <br/>Channel 
+                    </apex:facet>
+                    <apex:actionRegion >
+                        <apex:InputField value="{!outletDetail.outlet.FS_CS_Sub_Trade_Channel__c}" />                       
+                    </apex:actionRegion>
+                </apex:column>               
+                
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        
+                        <input type="button" value="Fill Down" onclick="fillDown('PaymentMethod'); return false;" reRender="popup"/>
+                        <br/><br/>                        
+                        Cartridge Fee Payment Method<img src="/s.gif" class="helpIcon" title="{!$Label.FS_Payment_Term_Help_Text}" height="10" width="6"/>                        
+                    </apex:facet>
+                    <apex:actionRegion >
+                        <div class="requiredInput" style="left: 0px;height: inherit;">
+                            <div class="requiredBlock" style="left: -4px;"></div>
+                            <apex:selectList styleClass="paymentMethod_css{!outletDetail.outlet.id}" value="{!outletDetail.outlet.Cokesmart_Payment_Method__c}" size="1">
+                                <apex:selectOptions value="{!outletDetail.cokesmartPaymentMethodValues}"/>
+                            </apex:selectList>
+                        </div>
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        
+                        <input type="button" value="Fill Down" onclick="fillDown('ProgramPaymentMethod'); return false;" reRender="popup"/>
+                        <br/><br/>
+                        Program Fee Payment Method<img src="/s.gif" class="helpIcon" title="{!$Label.FS_Payment_Term_Help_Text}" height="10" width="6"/>                        
+                    </apex:facet>
+                    <apex:actionRegion >
+                        <apex:selectList styleClass="paymentMethod_css{!outletDetail.outlet.id}" value="{!outletDetail.outlet.FS_Payment_Method__c}" size="1">
+                            <apex:selectOptions value="{!outletDetail.programPaymentMethodValues}"/>
+                        </apex:selectList>                  
+                    </apex:actionRegion>
+                </apex:column>       
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('BillToAddress'); return false;" />
+                        <br/><br/>
+                        Bill To<br/>Address 
+                    </apex:facet>
+                    <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:actionRegion >
+                            <apex:InputField value="{!outletDetail.outlet.FS_CS_Bill_To_Address__c}" />                        
+                        </apex:actionRegion>
+                    </div>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('BillToCity'); return false;" />
+                        <br/><br/>
+                        Bill To<br/>City 
+                    </apex:facet>
+                    <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:actionRegion >
+                            <apex:InputField value="{!outletDetail.outlet.FS_CS_Bill_To_City__c}" />                        
+                        </apex:actionRegion>
+                    </div>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('BillToState'); return false;" />
+                        <br/><br/>
+                        Bill To<br/>State 
+                    </apex:facet>
+                    <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:actionRegion >
+                            <apex:InputField value="{!outletDetail.outlet.FS_CS_State__c}" />                        
+                        </apex:actionRegion>
+                    </div>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('BillToZip'); return false;" />
+                        <br/><br/>
+                        Bill To<br/>Zip 
+                    </apex:facet>
+                    <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:actionRegion >
+                            <apex:InputField value="{!outletDetail.outlet.FS_CS_Bill_To_Zip__c}" />                        
+                        </apex:actionRegion>
+                    </div>
+                </apex:column>
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('BillToCountry'); return false;" />
+                        <br/><br/>
+                        Bill To<br/>Country 
+                    </apex:facet>
+                    
+                    <apex:actionRegion >
+                        <apex:InputField value="{!outletDetail.outlet.FS_CS_Bill_To_Country__c}" />                        
+                    </apex:actionRegion>
+                </apex:column>
+                
+                <apex:column style="border-color : #E0E3E5; border-right-width=1px; border-right:1px solid #E0E3E5;">
+                    <apex:facet name="header">
+                        <input type="button" value="Fill Down" onclick="fillDown('RemovingAll'); return false;" />
+                        <br/><br/>
+                        Remove <br/>legacy fountain<br/> equipment  
+                    </apex:facet>
+                    <div class="requiredInput" style="left: 0px;height: inherit;">
+                        <div class="requiredBlock" style="left: -4px;"></div>
+                        <apex:actionRegion >
+                            <apex:InputField value="{!outletDetail.outlet.FS_CS_All_Ftn_Removed__c}" /> 
+                        </apex:actionRegion>
+                    </div>
+                </apex:column>
+                
+            </apex:pageBlockTable>
+            
+            <apex:outputPanel rendered="{!listOutletDetails.size == 0}">
+                <h2><b> No Record Found </b></h2>
+            </apex:outputPanel>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

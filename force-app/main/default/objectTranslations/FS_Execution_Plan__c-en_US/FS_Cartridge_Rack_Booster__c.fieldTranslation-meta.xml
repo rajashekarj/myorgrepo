@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Cartridge_Rack_Booster__c</name>
+    <picklistValues>
+        <masterLabel>46111 : 38&quot; Rack with Cartridge Storage/20gal Booster</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

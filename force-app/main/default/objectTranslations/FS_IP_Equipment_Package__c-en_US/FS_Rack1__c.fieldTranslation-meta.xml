@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Rack1__c</name>
+    <picklistValues>
+        <masterLabel>44236: 15â€� Wide Single BIB Rack under counter</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>44238: 28â€� Wide Double BIB Rack under counter</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45897 : 15&quot; Wide Inclined Five Shelves</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45898: 28&quot; Wide Inclined Five Shelves</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>45899: 41&quot; Wide Inclined Five Shelves</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46079: 28&quot; Cartridge/HFCS Inclined/Flat</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46110 : 38&quot; Rack with Cartridge Storage for 4Gal WB</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46111 : 38&quot; Rack with Cartridge Storage for 20Gal WB</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46246: 41â€� Rack with 2 Flat Pans</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46280 : 41â€� Manitowoc (Wendy&#39;s Only)</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46312: 4&quot; Chase SS</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46747: 15â€� Wide under counter rack w/1 slanted shelf</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46748: 28â€� Wide under counter rack w/1 slanted shelf</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: Chase Stainless Steel Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

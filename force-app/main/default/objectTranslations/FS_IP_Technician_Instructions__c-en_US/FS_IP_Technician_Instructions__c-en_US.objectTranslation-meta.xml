@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Technician Instructions</value>
+    </caseValues>
+    <layouts>
+        <layout>IP Technician Instructions Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Portion Control (Not Applicable for 6000/9000/9100)</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Water Filter Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Technician Instructions Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom History Tracking</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description/>
+        <label/>
+        <name>Technician_Instruction</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>Make_RecordType_Name_NonEditable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>TechnicianInstruction_Edit_Privileges_IP</name>
+    </validationRules>
+</CustomObjectTranslation>

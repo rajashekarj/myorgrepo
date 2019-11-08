@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Status__c</fullName>
+    <description>Status.</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Enroll</fullName>
+                <default>false</default>
+                <label>Pre-Enroll</label>
+            </value>
+            <value>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+                <label>Enrolled</label>
+            </value>
+            <value>
+                <fullName>Hibernate</fullName>
+                <default>false</default>
+                <label>Hibernate</label>
+            </value>
+            <value>
+                <fullName>Wakeup</fullName>
+                <default>false</default>
+                <label>Wakeup</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Booking Complete</fullName>
+                <default>false</default>
+                <label>Booking Complete</label>
+            </value>
+            <value>
+                <fullName>Dispenser Pickup</fullName>
+                <default>false</default>
+                <label>Dispenser Pickup</label>
+            </value>
+            <value>
+                <fullName>Dispenser Delivered</fullName>
+                <default>false</default>
+                <label>Dispenser Delivered</label>
+            </value>
+            <value>
+                <fullName>In Inventory</fullName>
+                <default>false</default>
+                <label>In Inventory</label>
+            </value>
+            <value>
+                <fullName>Assigned to Outlet</fullName>
+                <default>false</default>
+                <label>Assigned to Outlet</label>
+            </value>
+            <value>
+                <fullName>Winterized</fullName>
+                <default>false</default>
+                <label>Winterized</label>
+            </value>
+            <value>
+                <fullName>Rough Stock</fullName>
+                <default>false</default>
+                <label>Rough Stock</label>
+            </value>
+            <value>
+                <fullName>Remaned</fullName>
+                <default>false</default>
+                <label>Remaned</label>
+            </value>
+            <value>
+                <fullName>To be scrapped by Bottler</fullName>
+                <default>false</default>
+                <label>To be scrapped by Bottler</label>
+            </value>
+            <value>
+                <fullName>To be scrapped by CM</fullName>
+                <default>false</default>
+                <label>To be scrapped by CM</label>
+            </value>
+            <value>
+                <fullName>Confirmed Scrapped</fullName>
+                <default>false</default>
+                <label>Confirmed Scrapped</label>
+            </value>
+            <value>
+                <fullName>Sold to Bottler</fullName>
+                <default>false</default>
+                <label>Sold to Bottler</label>
+            </value>
+            <value>
+                <fullName>Purchased from Bottler</fullName>
+                <default>false</default>
+                <label>Purchased from Bottler</label>
+            </value>
+            <value>
+                <fullName>To be Remanufactured</fullName>
+                <default>false</default>
+                <label>To be Remanufactured</label>
+            </value>
+            <value>
+                <fullName>Unenrolled</fullName>
+                <default>false</default>
+                <label>Unenrolled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

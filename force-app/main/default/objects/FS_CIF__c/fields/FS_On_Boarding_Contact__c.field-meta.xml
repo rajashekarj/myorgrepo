@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_On_Boarding_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Select On-Boarding Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Contact.Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Headquarters</value>
+        </filterItems>
+        <filterItems>
+            <field>Contact.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.FS_Headquarters__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Email</field>
+            <operation>notEqual</operation>
+            <value/>
+        </filterItems>
+        <filterItems>
+            <field>Contact.Phone</field>
+            <operation>notEqual</operation>
+            <value/>
+        </filterItems>
+        <filterItems>
+            <field>Contact.FS_Contact_Info_Complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>CIF (On-Boarding Contact)</relationshipLabel>
+    <relationshipName>CIFContact</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

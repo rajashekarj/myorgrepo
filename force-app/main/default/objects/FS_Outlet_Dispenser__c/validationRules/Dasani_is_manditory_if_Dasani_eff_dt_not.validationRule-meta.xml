@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dasani_is_manditory_if_Dasani_eff_dt_not</fullName>
+    <active>true</active>
+    <errorConditionFormula>And(ISBlank(Text(FS_Dasani_New__c)),Not(isBlank(FS_Dasani_Settings_Effective_Date__c)),NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorDisplayField>FS_Dasani_New__c</errorDisplayField>
+    <errorMessage>Dasani. is mandatory if we have  &#39;Hide Dasani Effective Date&#39;</errorMessage>
+</ValidationRule>

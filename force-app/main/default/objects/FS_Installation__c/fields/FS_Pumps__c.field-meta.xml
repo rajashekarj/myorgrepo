@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Pumps__c</fullName>
+    <description>Pumps</description>
+    <externalId>false</externalId>
+    <label>Pumps</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>44221-PUMP BIB INST 1 PUMP KIT</fullName>
+                <default>false</default>
+                <label>44221-PUMP BIB INST 1 PUMP KIT</label>
+            </value>
+            <value>
+                <fullName>44233-PUMP BIB INST 2 PUMP KIT</fullName>
+                <default>false</default>
+                <label>44233-PUMP BIB INST 2 PUMP KIT</label>
+            </value>
+            <value>
+                <fullName>43972-PUMP BIB INST 4 PUMP KIT</fullName>
+                <default>false</default>
+                <label>43972-PUMP BIB INST 4 PUMP KIT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

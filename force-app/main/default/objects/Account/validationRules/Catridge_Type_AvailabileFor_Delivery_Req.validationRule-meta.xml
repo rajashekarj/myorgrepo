@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Catridge_Type_AvailabileFor_Delivery_Req</fullName>
+    <active>true</active>
+    <description>Field Required Catridge_Type_Availabile_For_Delivery rule</description>
+    <errorConditionFormula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR( 
+AND(OR($Profile.Name =&quot;FS NDO_P&quot;,CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;)), 
+AND( 
+OR(ISBLANK(FS_Cartridge_Type_Available_Delivery_For__c),FS_Cartridge_Type_Available_Delivery_For__c=&quot;&quot;	
+), 
+OR(Calculated_Customer_Classification__c=&quot;12&quot;,Calculated_Customer_Classification__c=&quot;08&quot;,Calculated_Customer_Classification__c=&quot;13&quot;) 
+) 
+), 
+AND(CONTAINS( $User.FS_Permission_Sets__c ,&#39;Bottler_Approval_Access&#39;), 
+FS_Final_Delivery_Method__c=&quot;Bottler&quot; ,
+FS_Final_Order_Method__c=&quot;Bottler&quot;,OR(ISBLANK(FS_Cartridge_Type_Available_Delivery_For__c),FS_Cartridge_Type_Available_Delivery_For__c=&quot;&quot;))), NOT(CONTAINS($Profile.Name, $Label.Exclude_User)))</errorConditionFormula>
+    <errorMessage>Please enter a value for mandatory field : &quot;Cartridge Type Available for Delivery&quot; of the &quot;Distributor/Bottler&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Warehouse Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Warehouse_Country__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Chatham</fullName>
+                <default>false</default>
+                <label>Chatham</label>
+            </value>
+            <value>
+                <fullName>Regina</fullName>
+                <default>false</default>
+                <label>Regina</label>
+            </value>
+            <value>
+                <fullName>Lâ€™Assomption</fullName>
+                <default>false</default>
+                <label>Lâ€™Assomption</label>
+            </value>
+            <value>
+                <fullName>Daventry</fullName>
+                <default>false</default>
+                <label>Daventry</label>
+            </value>
+            <value>
+                <fullName>London Colney</fullName>
+                <default>false</default>
+                <label>London Colney</label>
+            </value>
+            <value>
+                <fullName>United Kingdom #3</fullName>
+                <default>false</default>
+                <label>United Kingdom #3</label>
+            </value>
+            <value>
+                <fullName>Hamm</fullName>
+                <default>false</default>
+                <label>Hamm</label>
+            </value>
+            <value>
+                <fullName>Hamburg</fullName>
+                <default>false</default>
+                <label>Hamburg</label>
+            </value>
+            <value>
+                <fullName>Mainz</fullName>
+                <default>false</default>
+                <label>Mainz</label>
+            </value>
+            <value>
+                <fullName>LES ULIS</fullName>
+                <default>false</default>
+                <label>LES ULIS</label>
+            </value>
+            <value>
+                <fullName>France #2</fullName>
+                <default>false</default>
+                <label>France #2</label>
+            </value>
+            <value>
+                <fullName>France #3</fullName>
+                <default>false</default>
+                <label>France #3</label>
+            </value>
+            <value>
+                <fullName>Singapore #1</fullName>
+                <default>false</default>
+                <label>Singapore #1</label>
+            </value>
+            <value>
+                <fullName>Singapore #2</fullName>
+                <default>false</default>
+                <label>Singapore #2</label>
+            </value>
+            <value>
+                <fullName>Singapore #3</fullName>
+                <default>false</default>
+                <label>Singapore #3</label>
+            </value>
+            <value>
+                <fullName>New Zealand #1</fullName>
+                <default>false</default>
+                <label>New Zealand #1</label>
+            </value>
+            <value>
+                <fullName>New Zealand #2</fullName>
+                <default>false</default>
+                <label>New Zealand #2</label>
+            </value>
+            <value>
+                <fullName>New Zealand #3</fullName>
+                <default>false</default>
+                <label>New Zealand #3</label>
+            </value>
+            <value>
+                <fullName>Luxembourg #1</fullName>
+                <default>false</default>
+                <label>Luxembourg #1</label>
+            </value>
+            <value>
+                <fullName>Londerzeel Belgium</fullName>
+                <default>false</default>
+                <label>Londerzeel Belgium</label>
+            </value>
+            <value>
+                <fullName>CBS, Omagh.</fullName>
+                <default>false</default>
+                <label>CBS, Omagh.</label>
+            </value>
+            <value>
+                <fullName>Madrid</fullName>
+                <default>false</default>
+                <label>Madrid</label>
+            </value>
+            <value>
+                <fullName>Spain #2</fullName>
+                <default>false</default>
+                <label>Spain #2</label>
+            </value>
+            <value>
+                <fullName>Spain #3</fullName>
+                <default>false</default>
+                <label>Spain #3</label>
+            </value>
+            <value>
+                <fullName>Denmark #1</fullName>
+                <default>false</default>
+                <label>Denmark #1</label>
+            </value>
+            <value>
+                <fullName>Denmark #2</fullName>
+                <default>false</default>
+                <label>Denmark #2</label>
+            </value>
+            <value>
+                <fullName>Denmark #3</fullName>
+                <default>false</default>
+                <label>Denmark #3</label>
+            </value>
+            <value>
+                <fullName>Jordbro Warehouse</fullName>
+                <default>false</default>
+                <label>Jordbro Warehouse</label>
+            </value>
+            <value>
+                <fullName>SkÃ¤rholmen TVS</fullName>
+                <default>false</default>
+                <label>SkÃ¤rholmen TVS</label>
+            </value>
+            <value>
+                <fullName>Sweden #3</fullName>
+                <default>false</default>
+                <label>Sweden #3</label>
+            </value>
+            <value>
+                <fullName>NL# Londerzeel Belgium</fullName>
+                <default>false</default>
+                <label>NL# Londerzeel Belgium</label>
+            </value>
+            <value>
+                <fullName>Netherlands #2</fullName>
+                <default>false</default>
+                <label>Netherlands #2</label>
+            </value>
+            <value>
+                <fullName>Netherlands #3</fullName>
+                <default>false</default>
+                <label>Netherlands #3</label>
+            </value>
+            <value>
+                <fullName>Dusseldorf #4</fullName>
+                <default>false</default>
+                <label>Dusseldorf #4</label>
+            </value>
+            <value>
+                <fullName>Japan #1</fullName>
+                <default>false</default>
+                <label>Japan #1</label>
+            </value>
+            <value>
+                <fullName>Thailand #1</fullName>
+                <default>false</default>
+                <label>Thailand #1</label>
+            </value>
+            <value>
+                <fullName>Philippines #1</fullName>
+                <default>false</default>
+                <label>Philippines #1</label>
+            </value>
+            <value>
+                <fullName>Australia #1</fullName>
+                <default>false</default>
+                <label>Australia #1</label>
+            </value>
+            <value>
+                <fullName>Switzerland #1</fullName>
+                <default>false</default>
+                <label>Switzerland #1</label>
+            </value>
+            <value>
+                <fullName>Switzerland #2</fullName>
+                <default>false</default>
+                <label>Switzerland #2</label>
+            </value>
+            <value>
+                <fullName>Malaysia</fullName>
+                <default>false</default>
+                <label>Malaysia</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Denmark</controllingFieldValue>
+            <valueName>Denmark #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denmark</controllingFieldValue>
+            <valueName>Denmark #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Denmark</controllingFieldValue>
+            <valueName>Denmark #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sweden</controllingFieldValue>
+            <valueName>Jordbro Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sweden</controllingFieldValue>
+            <valueName>SkÃ¤rholmen TVS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sweden</controllingFieldValue>
+            <valueName>Sweden #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <controllingFieldValue>Belgium</controllingFieldValue>
+            <valueName>Londerzeel Belgium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Netherlands #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Netherlands</controllingFieldValue>
+            <valueName>Netherlands #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Australia</controllingFieldValue>
+            <valueName>Australia #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <valueName>Daventry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <valueName>London Colney</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <valueName>United Kingdom #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Japan</controllingFieldValue>
+            <valueName>Japan #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Philippines</controllingFieldValue>
+            <valueName>Philippines #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Switzerland #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Switzerland #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Chatham</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Regina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Lâ€™Assomption</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>Hamm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>Hamburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>Mainz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>Dusseldorf #4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>France</controllingFieldValue>
+            <valueName>LES ULIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>France</controllingFieldValue>
+            <valueName>France #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>France</controllingFieldValue>
+            <valueName>France #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Zealand</controllingFieldValue>
+            <valueName>New Zealand #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Zealand</controllingFieldValue>
+            <valueName>New Zealand #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Zealand</controllingFieldValue>
+            <valueName>New Zealand #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>Singapore #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>Singapore #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>Singapore #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Luxembourg</controllingFieldValue>
+            <valueName>Luxembourg #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ireland</controllingFieldValue>
+            <valueName>CBS, Omagh.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thailand</controllingFieldValue>
+            <valueName>Thailand #1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spain</controllingFieldValue>
+            <valueName>Madrid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spain</controllingFieldValue>
+            <valueName>Spain #2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Spain</controllingFieldValue>
+            <valueName>Spain #3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Malaysia</controllingFieldValue>
+            <valueName>Malaysia</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

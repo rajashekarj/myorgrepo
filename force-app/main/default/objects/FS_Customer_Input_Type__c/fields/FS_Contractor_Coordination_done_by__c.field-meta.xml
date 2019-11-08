@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Contractor_Coordination_done_by__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>FS Contractor Coordination done by</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

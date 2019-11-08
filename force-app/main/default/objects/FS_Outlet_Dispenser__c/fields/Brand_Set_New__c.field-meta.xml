@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Set_New__c</fullName>
+    <externalId>false</externalId>
+    <label>Brand Set.</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Warehouse_Country_New__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CAN Default Collection</fullName>
+                <default>false</default>
+                <label>CAN Default Collection</label>
+            </value>
+            <value>
+                <fullName>CAN McDonalds Collection</fullName>
+                <default>false</default>
+                <label>CAN McDonalds Collection</label>
+            </value>
+            <value>
+                <fullName>GER Default Collection</fullName>
+                <default>false</default>
+                <label>GER Default Collection</label>
+            </value>
+            <value>
+                <fullName>FRA Default Collection</fullName>
+                <default>false</default>
+                <label>FRA Default Collection</label>
+            </value>
+            <value>
+                <fullName>TUK Defualt Collection</fullName>
+                <default>false</default>
+                <label>TUK Defualt Collection</label>
+            </value>
+            <value>
+                <fullName>NZ Default Collection</fullName>
+                <default>false</default>
+                <label>NZ Default Collection</label>
+            </value>
+            <value>
+                <fullName>SGP Default Collection</fullName>
+                <default>false</default>
+                <label>SGP Default Collection</label>
+            </value>
+            <value>
+                <fullName>Gandalf GER Collection</fullName>
+                <default>false</default>
+                <label>Gandalf GER Collection</label>
+            </value>
+            <value>
+                <fullName>Gandalf JAPAN Collection</fullName>
+                <default>false</default>
+                <label>Gandalf JAPAN Collection</label>
+            </value>
+            <value>
+                <fullName>Bluebird CAN Default</fullName>
+                <default>false</default>
+                <label>Bluebird CAN Default</label>
+            </value>
+            <value>
+                <fullName>GB Default Collection</fullName>
+                <default>false</default>
+                <label>GB Default Collection</label>
+            </value>
+            <value>
+                <fullName>BE Default Collection</fullName>
+                <default>false</default>
+                <label>BE Default Collection</label>
+            </value>
+            <value>
+                <fullName>Ireland Default Collection</fullName>
+                <default>false</default>
+                <label>Ireland Default Collection</label>
+            </value>
+            <value>
+                <fullName>Japan Default Collection</fullName>
+                <default>false</default>
+                <label>Japan Default Collection</label>
+            </value>
+            <value>
+                <fullName>Thailand Default Collection</fullName>
+                <default>false</default>
+                <label>Thailand Default Collection</label>
+            </value>
+            <value>
+                <fullName>Philippines Default Collection</fullName>
+                <default>false</default>
+                <label>Philippines Default Collection</label>
+            </value>
+            <value>
+                <fullName>Australia Default Collection</fullName>
+                <default>false</default>
+                <label>Australia Default Collection</label>
+            </value>
+            <value>
+                <fullName>Switzerland Default Collection</fullName>
+                <default>false</default>
+                <label>Switzerland Default Collection</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Australia</controllingFieldValue>
+            <valueName>Australia Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GB</controllingFieldValue>
+            <valueName>GB Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Japan</controllingFieldValue>
+            <valueName>Japan Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Philippines</controllingFieldValue>
+            <valueName>Philippines Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>CAN Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>CAN McDonalds Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Bluebird CAN Default</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>GER Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Germany</controllingFieldValue>
+            <valueName>Gandalf GER Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>France</controllingFieldValue>
+            <valueName>FRA Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Zealand</controllingFieldValue>
+            <valueName>NZ Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Switzerland</controllingFieldValue>
+            <valueName>Switzerland Default Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thailand</controllingFieldValue>
+            <valueName>Thailand Default Collection</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

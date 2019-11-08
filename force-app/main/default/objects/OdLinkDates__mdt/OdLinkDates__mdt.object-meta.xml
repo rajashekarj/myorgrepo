@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used in ODInstallationLinkBatch to query the records with MDM latest Enrollment Date of last n months</description>
+    <label>OdLinkDate</label>
+    <pluralLabel>OdLinkDate</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

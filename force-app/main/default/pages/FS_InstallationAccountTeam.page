@@ -1,0 +1,37 @@
+<!--*********************************************************************************-->
+<!-- Author       :   Modified by DREED Appirio-->
+<!-- Created Date :   November 25,2013-->
+<!--Description   :   Inline Vf page for Related list of Account Teams Files on Installtion-->
+<!--*********************************************************************************-->
+<apex:page standardController="FS_Installation__c" extensions="InstallationAccountTeam">
+    <apex:form id="frm">
+        <apex:pageBlock id="pb1">
+            <apex:pageMessages />
+            
+            <apex:pageBlockTable id="pbt1" value="{!AccountTeamMembers}" var="atm" rendered="{!AccountTeamMembers.size > 0}">
+                <apex:column headerValue="Team Member">
+                    <a href="/{!atm.userID__c}" class="actionLink" onclick="redirectToRecord('{!atm.userID__c}' , 'true');return false;">{!atm.userID__r.name}</a>
+                </apex:column>
+                <apex:column headerValue="Team Member Role" value="{!atm.TeamMemberRole__c}"/>
+                <apex:column headerValue="Team Member Phone" value="{!atm.UserID__r.phone}"/>
+                <apex:column headerValue="Team Member Email" value="{!atm.UserID__r.email}"/>
+                <apex:column headerValue="Last Modified Date" value="{!lastModifiedDateMap[atm.Id]}"/>
+                
+                <apex:column headerValue="Last Modified By">
+                    <a href="/{!atm.LastModifiedBy.Id}" class="actionLink" onclick="redirectToRecord('{!atm.LastModifiedBy.Id}' , 'true');return false;">{!atm.LastModifiedBy.Name}</a>
+                    
+                    <apex:outputText value="{!lastModifiedMap[atm.Id]}"/>                    
+                </apex:column>              
+                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+    function redirectToRecord(recordId , tempVar){
+        if(tempVar == 'true')
+            window.parent.location.href = '/' + recordId;
+        else
+            window.parent.location.href = '/sfc/#version?selectedDocumentId=' + recordId; 
+    }
+    </script>      
+</apex:page>

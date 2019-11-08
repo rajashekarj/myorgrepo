@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Rack3__c</fullName>
+    <externalId>false</externalId>
+    <label>Rack 3</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>46110 : 38&quot; Rack with Cartridge Storage for 4Gal WB</fullName>
+                <default>false</default>
+                <label>46110 : 38&quot; Rack with Cartridge Storage for 4Gal WB</label>
+            </value>
+            <value>
+                <fullName>46111 : 38&quot; Rack with Cartridge Storage for 20Gal WB</fullName>
+                <default>false</default>
+                <label>46111 : 38&quot; Rack with Cartridge Storage for 20Gal WB</label>
+            </value>
+            <value>
+                <fullName>46079: 28&quot; Cartridge/HFCS Inclined/Flat</fullName>
+                <default>false</default>
+                <label>46079: 28&quot; Cartridge/HFCS Inclined/Flat</label>
+            </value>
+            <value>
+                <fullName>46246: 41â€� Rack with 2 Flat Pans</fullName>
+                <default>false</default>
+                <label>46246: 41â€� Rack with 2 Flat Pans</label>
+            </value>
+            <value>
+                <fullName>46280 : 41â€� Manitowoc (Wendy&#39;s Only)</fullName>
+                <default>false</default>
+                <label>46280 : 41â€� Manitowoc (Wendy&#39;s Only)</label>
+            </value>
+            <value>
+                <fullName>46312: 4&quot; Chase SS</fullName>
+                <default>false</default>
+                <label>46312: 4&quot; Chase SS</label>
+            </value>
+            <value>
+                <fullName>46747: 15â€� Wide under counter rack w/1 slanted shelf</fullName>
+                <default>false</default>
+                <label>46747: 15â€� Wide under counter rack w/1 slanted shelf</label>
+            </value>
+            <value>
+                <fullName>46748: 28â€� Wide under counter rack w/1 slanted shelf</fullName>
+                <default>false</default>
+                <label>46748: 28â€� Wide under counter rack w/1 slanted shelf</label>
+            </value>
+            <value>
+                <fullName>44236: 15â€� Wide Single BIB Rack under counter</fullName>
+                <default>false</default>
+                <label>44236: 15â€� Wide Single BIB Rack under counter</label>
+            </value>
+            <value>
+                <fullName>44238: 28â€� Wide Double BIB Rack under counter</fullName>
+                <default>false</default>
+                <label>44238: 28â€� Wide Double BIB Rack under counter</label>
+            </value>
+            <value>
+                <fullName>45897 : 15&quot; Wide Inclined Five Shelves</fullName>
+                <default>false</default>
+                <label>45897 : 15&quot; Wide Inclined Five Shelves</label>
+            </value>
+            <value>
+                <fullName>45898: 28&quot; Wide Inclined Five Shelves</fullName>
+                <default>false</default>
+                <label>45898: 28&quot; Wide Inclined Five Shelves</label>
+            </value>
+            <value>
+                <fullName>45899: 41&quot; Wide Inclined Five Shelves</fullName>
+                <default>false</default>
+                <label>45899: 41&quot; Wide Inclined Five Shelves</label>
+            </value>
+            <value>
+                <fullName>XXXXX: Chase Stainless Steel Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: Chase Stainless Steel Kit</label>
+            </value>
+            <value>
+                <fullName>44236: 15â€� Wide Single BIB Rack</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>44236: 15â€� Wide Single BIB Rack</label>
+            </value>
+            <value>
+                <fullName>44238: 28â€� Wide Double BIB Rack</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>44238: 28â€� Wide Double BIB Rack</label>
+            </value>
+            <value>
+                <fullName>46110 : 38 Rack with Cartridge Storage for 4Gal WB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46110 : 38 Rack with Cartridge Storage for 4Gal WB</label>
+            </value>
+            <value>
+                <fullName>46312: 4&#39; Chase SS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>46312: 4&#39; Chase SS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46110 : 38&quot; Rack with Cartridge Storage for 4Gal WB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46079: 28&quot; Cartridge/HFCS Inclined/Flat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46246: 41â€� Rack with 2 Flat Pans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46312: 4&quot; Chase SS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46747: 15â€� Wide under counter rack w/1 slanted shelf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>46748: 28â€� Wide under counter rack w/1 slanted shelf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>44236: 15â€� Wide Single BIB Rack under counter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>44238: 28â€� Wide Double BIB Rack under counter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>45897 : 15&quot; Wide Inclined Five Shelves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>45898: 28&quot; Wide Inclined Five Shelves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>45899: 41&quot; Wide Inclined Five Shelves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>46111 : 38&quot; Rack with Cartridge Storage for 20Gal WB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>46280 : 41â€� Manitowoc (Wendy&#39;s Only)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: Chase Stainless Steel Kit</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

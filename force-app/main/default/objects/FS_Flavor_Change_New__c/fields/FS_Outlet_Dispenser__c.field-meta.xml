@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Outlet_Dispenser__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Outlet Dispenser</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>please select only 7000,8000,9000 Outlet Dispenser</errorMessage>
+        <filterItems>
+            <field>FS_Outlet_Dispenser__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>7000, 8000, 9000, CCNA Dispenser</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FS_Outlet_Dispenser__c</referenceTo>
+    <relationshipLabel>Flavor Changes</relationshipLabel>
+    <relationshipName>Flavor_Changes_New</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

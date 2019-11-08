@@ -1,0 +1,19 @@
+<apex:page standardController="FS_Association_Brandset__c" extensions="deleteDefaultBrandSetController" action="{!deleteBrandSet}">
+    <script>
+    var urlvar = '{!$CurrentPage.URL}'
+    var parentcheck = '{!parentrecordChk}';
+    if(parentcheck == 'false') {
+            alert('{!$Label.FS_AB_Delete_Error}');
+            sforce.one.back(true);
+     }
+     else {         
+         var str2 = '/one/one.app?source=aloha#/sObject/{!hqId}/view';
+         if(urlvar.includes("aloha")){
+             sforce.one.navigateToURL(str2,false);
+         }else{
+           sforce.one.navigateToSObject("{!hqId}");
+         }
+     }    
+    //sforce.one.back(true);
+    </script>    
+</apex:page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_What_type_of_beverage_station_is_this__c</fullName>
+    <externalId>false</externalId>
+    <label>What type of beverage station is this?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>-None-</fullName>
+                <default>true</default>
+                <label>-None-</label>
+            </value>
+            <value>
+                <fullName>Self-Serve</fullName>
+                <default>false</default>
+                <label>Self-Serve</label>
+            </value>
+            <value>
+                <fullName>Crew Serve</fullName>
+                <default>false</default>
+                <label>Crew Serve</label>
+            </value>
+            <value>
+                <fullName>Both Self &amp; Crew Serve (multiple units)</fullName>
+                <default>false</default>
+                <label>Both Self &amp; Crew Serve (multiple units)</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

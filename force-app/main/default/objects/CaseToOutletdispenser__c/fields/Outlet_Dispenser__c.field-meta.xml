@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outlet_Dispenser__c</fullName>
+    <externalId>false</externalId>
+    <label>Outlet Dispenser</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>$Source.Customer__c</field>
+            <operation>equals</operation>
+            <valueField>FS_Outlet_Dispenser__c.FS_Outlet__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>FS_Outlet_Dispenser__c.FS_IsActive__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FS_Outlet_Dispenser__c</referenceTo>
+    <relationshipName>CaseToOutletdispensers</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

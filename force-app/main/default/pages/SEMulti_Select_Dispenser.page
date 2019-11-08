@@ -1,0 +1,102 @@
+<!--This Visualforce page displays list of Outlet Dispensers which are associated with Case record along with checkboxes for selection-->
+
+<apex:page standardController="Case" extensions="SEMultiDispensers" showHeader="false" sidebar="false">
+    <html>
+        <apex:form >
+            <apex:outputPanel >
+                <apex:pageBlock title="Dispensers List">
+                    <apex:pageBlockButtons location="top">        
+                        <apex:commandButton value="Select Dispensers" onclick="javascript:getCheckedBoxes()" rerender="none"/>
+                        <apex:commandButton value="Cancel" onclick="javascript:window.close();" rerender="none"/>
+                    </apex:pageBlockButtons>
+                    &nbsp;&nbsp;<input type="checkbox" id="select" name="Select All" onclick="selectAll()"><b>&nbsp;Select All Dispensers</b></input><br></br><br></br>
+                    <div id="chkBxs">
+                        <apex:outputtext rendered="{!if(isRender, true, false)}" style="color:black;" value="There are no Dispensers associated with this Customer"/>
+                        <apex:pageBlockTable value="{!selectDispensersWrapper}" var="dis">
+                            
+                            <apex:column >
+                                <apex:inputCheckbox disabled="{!dis.disableDispenser}" value="{!dis.checked}" title="{!dis.dispenser.FS_Serial_Number2__c }"/>
+                            </apex:column>
+                            
+                            <apex:column value="{!dis.dispenser.Name}"/>
+                            <!--<apex:column value="{!dis.dispenser.FS_IsActive__c }"/>-->
+                            <apex:column value="{!dis.dispenser.FS_Status__c }"/>
+                            <apex:column value="{!dis.dispenser.FS_Date_Status__c}"/>
+                            <apex:column value="{!dis.dispenser.FS_Serial_Number2__c }"/>
+                            <apex:column value="{!dis.dispenser.FS_Equip_Type__c}"/>  
+                            <apex:column value="{!dis.dispenser.FS_IsActive__c}"/>
+                        </apex:pageBlockTable>
+                    </div>
+                    <apex:pageBlockButtons location="bottom">
+                        <apex:commandButton value="Select Dispensers" onclick="javascript:getCheckedBoxes()" rerender="none"/>
+                        <apex:commandButton value="Cancel" onclick="javascript:window.close();" rerender="none"/>
+                    </apex:pageBlockButtons>
+                </apex:pageBlock>
+            </apex:outputPanel>
+        </apex:form>
+
+        <script type="text/javascript">
+        
+            var zpls="";
+            var caseid="{!caseID}";
+			var accid="{!accountID}";
+            
+            // Pass the checkbox name to the function
+            function getCheckedBoxes() {
+                var inputs = document.getElementById("chkBxs").getElementsByTagName("input");
+                //var inputs = document.getElementsByClassName("chkBx");
+                //alert(inputs.length);
+                var checkboxesChecked = [];
+                // loop over them all
+                for (var i=0; i<inputs.length; i++) {
+                    // And stick the checked ones onto an array...
+                    if (inputs[i].checked) {
+                        zpls=zpls+inputs[i].title+",";
+                        
+                    }
+                }
+                if(!zpls)
+                {
+                    alert('Please select atleast one dispenser');
+                    return false;
+                }
+                
+                Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.SEMultiDispensers.setSerialNumber}',
+                    caseid,zpls,accid, 
+                    function(result, event){
+                        if (event.status) {
+                            window.close();
+                        } else if (event.type === 'exception') {
+                            alert("There is some unexpected error occurred. Please try again");
+                        } else {
+                        }
+                    }, 
+                    {escape: true}
+                );
+            }
+            
+            //Method to make all the dispensers selected if select all checkbox is checked
+            function selectAll()
+            {
+                var inputs = document.getElementById("chkBxs").getElementsByTagName("input");
+                var selectAllChecked= document.getElementById("select").checked;
+                var checkboxesChecked = [];
+                // loop over them all
+                for (var i=0; i<inputs.length; i++) {
+                    if(!inputs[i].disabled)
+                    {
+                        if(selectAllChecked)
+                        {
+                            inputs[i].checked=true;
+                        }
+                        else
+                        {
+                            inputs[i].checked=false;
+                        }
+                    }
+                }
+            }
+        </script>
+	</html>
+</apex:page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>International_ODs1</fullName>
+    <columns>NAME</columns>
+    <columns>FS_IsActive__c</columns>
+    <columns>FS_Status__c</columns>
+    <columns>FS_Equip_Type__c</columns>
+    <columns>FS_Serial_Number__c</columns>
+    <columns>FS_SAP_ID__c</columns>
+    <columns>FS_Outlet__c</columns>
+    <columns>FS_ACN_NBR__c</columns>
+    <columns>Warehouse_Country__c</columns>
+    <columns>Outlet_Country__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>FS_Outlet_Dispenser__c.BoE_Dispenser</value>
+    </filters>
+    <filters>
+        <field>FS_Equip_Type__c</field>
+        <operation>equals</operation>
+        <value>3100</value>
+    </filters>
+    <filters>
+        <field>FS_IsActive__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>BOE 3100 ODs</label>
+</ListView>

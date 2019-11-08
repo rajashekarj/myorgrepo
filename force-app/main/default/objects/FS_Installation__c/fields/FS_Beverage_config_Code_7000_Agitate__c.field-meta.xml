@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Beverage_config_Code_7000_Agitate__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Barqs&quot;), 
+       INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Pibb&quot;)), 
+   &quot;C79; C80&quot;, 
+   IF(AND(INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Pibb&quot;), 
+          INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Dr Pepper&quot;)),
+        &quot;C80; C81&quot;,
+        IF(AND(INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Barqs&quot;), 
+               INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Dr Pepper&quot;)),
+			&quot;C79; C81&quot;,
+			IF(INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Barqs&quot;), 
+				&quot;C79&quot;, 
+				IF(INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Pibb&quot;), 
+				   &quot;C80&quot;, 
+					IF(INCLUDES( FS_7000_Series_Agitated_Brands_Selection__c, &quot;Dr Pepper&quot;), 
+					   &quot;C81&quot;, 
+					   NULL)
+				)
+			)
+		)
+	)
+)</formula>
+    <label>7000 Series Agitated Brand Codes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_Soft_Ice_Misc_Adapter__c</name>
+    <picklistValues>
+        <masterLabel>46303 Hoshizaki Funnel Kit for Models: KM-280, -320, -500, -501, -515, -630M, -650M &amp; -600MAH</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46377 : Hoshizaki Funnel Kit</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46430: KIT FREESTYLE 7000 SOFT ICE</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46468: IM FUNNEL ADAPTER KIT HS-5201</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46487: HOSH KM-650 SUPPLEMENTAL KIT</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46712: KIT FREESTYLE 7000 SOFT ICE</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46728: Kit Freestyle 9100 Soft Ice</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: For Future Use</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>XXXXX: Kit Freestyle 7100 Soft Ice</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

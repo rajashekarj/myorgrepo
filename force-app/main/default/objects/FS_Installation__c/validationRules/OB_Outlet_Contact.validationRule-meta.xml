@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OB_Outlet_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>(RecordType.Name=$Label.IP_Relocation_I4W_Rec_Type) &amp;&amp;(ISPICKVAL(FS_Is_Onboarding_Required__c,&#39;Yes&#39;) &amp;&amp; ISBLANK(OB_Outlet_Contact__c)) &amp;&amp; NOT(CONTAINS($Profile.Name, $Label.Exclude_User))</errorConditionFormula>
+    <errorDisplayField>OB_Outlet_Contact__c</errorDisplayField>
+    <errorMessage>&quot;OB Outlet Contact&quot; is a mandatory field.</errorMessage>
+</ValidationRule>

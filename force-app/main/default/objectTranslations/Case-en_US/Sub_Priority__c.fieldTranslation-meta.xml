@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>Sub_Priority__c</name>
+    <picklistValues>
+        <masterLabel>Barely operational</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increase volume of service calls - Operational</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non-Operational</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On-site troubleshooting by service team - Operational</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

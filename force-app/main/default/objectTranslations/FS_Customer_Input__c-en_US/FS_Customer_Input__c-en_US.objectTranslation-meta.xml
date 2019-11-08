@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Input</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Inputs</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Input Layout</layout>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>NFS Customer Input</layout>
+        <sections>
+            <label/>
+            <section>Contractor Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Install Requirements</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Legacy Equipment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Product Ordering</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Site Assessment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirements: Brands/Hide-Show/Connection Time</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirements: On-Boarding In-Outlet Training Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Regions Customer Input</layout>
+        <sections>
+            <label/>
+            <section>Ancillary Equipment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Coke Smart</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Contractor Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Equipment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Install Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>On-Boarding In-Outlet Training Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Outlet Level Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Site Assessment Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>System Requirements: Brands/Hide-Show/Connection Time</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Volume Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label/>
+        <name>FS_NFS_Input_Record</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage/>
+        <name>Invalid_Combination_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>No_7000_Series_Site_Assessment_For_Profi</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>Static_Brand_Vitamin_Water_Pair</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage/>
+        <name>X7000_Series_Agitated_Brands_Rule</name>
+    </validationRules>
+    <webLinks>
+        <label/>
+        <name>Copy_to_outlets</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Create_Input_Form</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>FS_Edit_Customer_Input</name>
+    </webLinks>
+    <webLinks>
+        <label/>
+        <name>View_Outlets</name>
+    </webLinks>
+</CustomObjectTranslation>

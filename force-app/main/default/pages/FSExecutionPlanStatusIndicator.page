@@ -1,0 +1,65 @@
+<apex:page standardController="FS_Execution_Plan__c" extensions="FSExecutionPlanStatusIndicatorExtension" showHeader="false" sidebar="false" >
+    <apex:outputPanel >
+    <table>
+    <tr> <td>
+    <div class="heading">
+      <span>SA Pending</span>
+      <span>SA Scheduled </span>
+      <span>SA Complete</span>
+      <span>EP Approved</span>
+      <span>Scheduled</span>
+      <span>Install <br/>Complete</span>
+      <span>Onboarding Complete</span>
+    </div>
+    </td> </tr>
+    <tr> <td>
+    <div class="progress"> 
+      <span style="background: url({!URLFOR($Resource.ExecutionPlanStatus, colorSAPending + '.png')}) top right no-repeat;"></span>
+      <span style="background: url({!URLFOR($Resource.ExecutionPlanStatus, colorSAScheduled +'.png')}) top right no-repeat;"> </span>
+      <span style="background: url({!URLFOR($Resource.ExecutionPlanStatus, colorSAComplete+'.png')}) top right no-repeat;"></span>
+      <span style="background: url({!URLFOR($Resource.ExecutionPlanStatus, colorEPApproved+'.png')}) top right no-repeat;"></span>
+      <span style="background: url({!URLFOR($Resource.ExecutionPlanStatus, colorScheduled+'.png')}) top right no-repeat;"></span>
+      <span style="background: url({!URLFOR($Resource.ExecutionPlanStatus, colorInstallComplete+'.png')}) top right no-repeat;"></span>
+      <span style="background: url({!URLFOR($Resource.ExecutionPlanStatus, colorOnboardingComplete+'.png')}) top right no-repeat;"></span>
+    </div>
+    </td> </tr>
+    </table>
+  </apex:outputPanel>
+  
+    <style>
+  .progress {
+    margin: 10px 50px;
+  }
+  
+  .progress span {
+    cursor: default;
+    float: left;
+    height: 81px;
+    margin-left: -40px;
+    position: relative;
+    width: 153px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+   
+  .heading {
+    display:block;
+    margin: 10px 20px;
+   }
+   
+   .heading span {
+    padding-top: 10px;
+    margin-right:1px;
+    cursor: default;
+    float: left;
+    height: 50px;
+    background-color:lightblue;
+    position: relative;
+    width: 113px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }  
+  </style>
+</apex:page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Date_Removed__c</fullName>
+    <description>Original field used by FET domestic. Updating the label to Actual removal date</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Last Removal Date 
+[Enter the date format in mm/dd/yyyy]</inlineHelpText>
+    <label>MDM Deleted Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

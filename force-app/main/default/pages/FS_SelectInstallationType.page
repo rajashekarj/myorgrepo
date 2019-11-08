@@ -1,0 +1,42 @@
+<!--VF Page on new replacement button to show pop up message --->
+<apex:page controller="FS_SelectInstallationTypeExtension">
+    <style type="text/css">
+        .popupBackground{
+        background-color:White;
+        opacity: 0.20;
+        filter: alpha(opacity = 20);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+        }
+        .custPopup{
+        background-color: white;
+        border-width: 2px;
+        border-style: solid;
+        z-index: 9999;
+        left: 40%;
+        padding:10px;
+        position: absolute;         
+        width: 800px;
+        margin-left: -320px;
+        top:100px;
+        }
+        
+    </style>
+    <apex:form >           
+        <apex:outputpanel styleclass="popupBackground" layout="block" rendered="{!displayPopUp}"></apex:outputpanel>
+        <apex:outputpanel styleclass="custPopup" layout="block" rendered="{!displayPopUp}">
+            <div class="loader"></div>
+            <apex:pageblock >
+                <center>
+                    <b>This process is for the replacement of a dispenser of the same platform type.  If you wish to replace a dispenser with a different platform type, please use the removal form to remove the unit and then follow the new install process. Do you want to proceed with this form?</b><br/><br/>
+                    <apex:commandButton value="Yes" id="activeIA" action="{!proceedAction}" styleClass="btn btn-success activeIA "  style="margin-right:10px;" html-data-toggle="tooltip" html-data-placement="bottom" html-data-original-title="Please click activate for activating Integration."  />
+                    <apex:commandButton value="No" action="{!cancelAction}" />
+                </center>
+            </apex:pageblock>
+        </apex:outputpanel>       
+    </apex:form>   
+</apex:page>

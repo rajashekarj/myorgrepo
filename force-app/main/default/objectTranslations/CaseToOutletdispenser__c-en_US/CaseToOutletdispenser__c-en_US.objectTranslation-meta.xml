@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case To OD</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Case To Outlet Dispensers</value>
+    </caseValues>
+    <layouts>
+        <layout>Case To Outlet Dispenser Layout</layout>
+        <sections>
+            <label/>
+            <section>Airwatch and Connectivity Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Dispenser and FET Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>JDE Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Modem Information</section>
+        </sections>
+        <sections>
+            <label/>
+            <section>Outlet Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label/>
+        <name>Add_Outlet_Dispensers</name>
+    </webLinks>
+</CustomObjectTranslation>

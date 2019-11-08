@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Sec_Site_Assessment_Cnct_Title__c</fullName>
+    <externalId>false</externalId>
+    <label>Second SA Contact Title</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Construction Manager</fullName>
+                <default>false</default>
+                <label>Construction Manager</label>
+            </value>
+            <value>
+                <fullName>Director Ops</fullName>
+                <default>false</default>
+                <label>Director Ops</label>
+            </value>
+            <value>
+                <fullName>DM</fullName>
+                <default>false</default>
+                <label>DM</label>
+            </value>
+            <value>
+                <fullName>General Contractor</fullName>
+                <default>false</default>
+                <label>General Contractor</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Store Employee</fullName>
+                <default>false</default>
+                <label>Store Employee</label>
+            </value>
+            <value>
+                <fullName>Store Manager</fullName>
+                <default>false</default>
+                <label>Store Manager</label>
+            </value>
+            <value>
+                <fullName>Store Owner</fullName>
+                <default>false</default>
+                <label>Store Owner</label>
+            </value>
+            <value>
+                <fullName>VP Ops</fullName>
+                <default>false</default>
+                <label>VP Ops</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

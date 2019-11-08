@@ -1,0 +1,447 @@
+<!--
+/**************************************************************************************
+LWC JS File         : fs_LMCaseCreateAndEdit_LWC
+Function            : This HTML is created to display New LM case popup and Edit LM case popup.
+Author              : Infosys
+Modification Log    :
+* Developer         : Date             Description
+* ----------------------------------------------------------------------------                 
+* Sai            9/25/2019         Creating a custom LM case creation popup by using lightning record edit form.     
+                                   It will act as edit LM case form when user clicks on 'Edit' button on LM case record page.
+                                   This LWC component included in 'FS_NewCaseButtonOverride' and 'FS_LMCaseCreateAndEdit' Aura
+                                   components
+*************************************************************************************/-->
+
+<template>
+    <!-- LM Case modal popup starts here-->
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container modal-lg">
+            <!--Record form starts here-->
+            <!--Lightning form used to display LM case fields on the popup. On loading
+    the form it will call 'onLoadFillToFromAccnODDetails' to retrieve respective account details and Outlet dispensers details in case of Edit LM case.-->
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={redirectBack}>
+                    <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small">
+                    </lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Linkage
+                    Management Case
+                </h2>
+            </header>
+            <lightning-record-edit-form object-api-name="Case" record-type-id={LM_Record_Type}
+                onsuccess={handleFormSuccess} record-id={recordId} onsubmit={handleLMCaseSubmit}>
+                <!--header starts here-->
+                <!--header ends here-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="height: 400px;">
+                    <div style="background-color: white">
+                        <lightning-messages></lightning-messages>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-p-left_small slds-p-top_xx-small">
+                                <div class="slds-grid slds-wrap slds-m-top_x-small">
+                                    <div class="slds-col slds-size_2-of-2">
+                                        <div class="slds-section slds-is-open">
+                                            <h3 class="slds-section__title slds-theme_shade">
+                                                <span class="slds-truncate slds-p-horizontal_small" title="Section">Case
+                                                    Information </span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-1">
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                                <div class="slds-col slds-size_1-of-8"></div>
+                                <div class="slds-col slds-size_5-of-8">
+                                    <lightning-output-field field-name="CaseNumber"></lightning-output-field>
+                                    <lightning-input-field field-name="FS_New_Case_Type__c" data-id="csType" required>
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="Issue_Name__c" required></lightning-input-field>
+                                    <lightning-input-field field-name="Priority"></lightning-input-field>
+                                    <lightning-input-field field-name="Status" data-id="statusField">
+                                    </lightning-input-field>
+                                    <lightning-input-field field-name="LM_Sub_Status__c" data-id="subStatusField">
+                                    </lightning-input-field>
+                                </div>
+                                <div class="slds-col slds-size_1-of-8"></div>
+                            </div>
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                                <div class="slds-col slds-size_1-of-8"></div>
+                                <div class="slds-col slds-size_6-of-8">
+                                    <div class="slds-grid caseOwnerFieldGrid">
+                                        <label for="CaseOwner" class="marginleft1 slds-form-element__label">Case
+                                            Owner</label>
+                                        <lightning-output-field data:id="CaseOwner" field-name="OwnerId"
+                                            variant="label-hidden" class="marginleft13"></lightning-output-field>
+                                    </div>
+                                    <lightning-output-field field-name="FS_LM_Case_Record_Type__c">
+                                    </lightning-output-field>
+                                    <lightning-output-field field-name="Case_Age_Days__c"></lightning-output-field>
+                                </div>
+                                <div class="slds-col slds-size_1-of-8"></div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-p-left_small slds-p-top_xx-small">
+                                <div class="slds-grid slds-wrap slds-m-top_x-small">
+                                    <div class="slds-col slds-size_2-of-2">
+                                        <div class="slds-section slds-is-open">
+                                            <h3 class="slds-section__title slds-theme_shade">
+                                                <span class="slds-truncate slds-p-horizontal_small"
+                                                    title="Section">Account
+                                                    Information</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-col slds-size_1-of-1">
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                                <div class="slds-col slds-size_1-of-8"></div>
+                                <div class="slds-col slds-size_5-of-8">
+                                    <lightning-Input-field field-name="To_Account__c" onchange={filToAcnDetails}
+                                        data-id="toAccountField" required></lightning-Input-field>
+                                    <!--Table for displaying To Account outlet dispensers starts here-->
+                                    <table class="slds-table slds-table--bordered slds-table--striped">
+                                        <thead>
+                                            <th>Serial Number</th>
+                                            <th>Outlet Dispenser</th>
+                                            <th>Platform Type</th>
+                                            <th>Active/Inactive</th>
+                                            <th>Status</th>
+                                        </thead>
+                                        <tbody>
+                                            <template if:true={ToAccountODDetails}>
+                                                <template for:each={ToAccountODDetails} for:item="ToAcnOD">
+                                                    <tr key={ToAcnOD.Id}>
+                                                        <td>
+                                                            <lightning-formatted-text
+                                                                value={ToAcnOD.FS_Serial_Number__c}>
+                                                            </lightning-formatted-text>
+                                                        </td>
+                                                        <td>
+                                                            <a onclick={openOutletDispenserPage} data-id={ToAcnOD.Id}>
+                                                                <lightning-formatted-text value={ToAcnOD.Name}>
+                                                                </lightning-formatted-text>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <lightning-formatted-text
+                                                                value={ToAcnOD.FS_Equip_Type__c}>
+                                                            </lightning-formatted-text>
+                                                        </td>
+                                                        <td>
+                                                            <div if:true={ToAcnOD.FS_IsActive__c}>
+                                                                <lightning-input type="Checkbox"
+                                                                    value={ToAcnOD.FS_IsActive__c} checked disabled>
+                                                                </lightning-input>
+                                                            </div>
+                                                            <div if:false={ToAcnOD.FS_IsActive__c}>
+                                                                <lightning-input type="Checkbox"
+                                                                    value={ToAcnOD.FS_IsActive__c} disabled>
+                                                                </lightning-input>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <lightning-formatted-text value={ToAcnOD.FS_Status__c}>
+                                                            </lightning-formatted-text>
+                                                        </td>
+                                                    </tr>
+                                                </template>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                    <!--Table for displaying To Account outlet dispensers ends here-->
+                                </div>
+                                <div class="slds-col slds-size_1-of-8"></div>
+                            </div>
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                                <div class="slds-col slds-size_1-of-8"></div>
+                                <div class="slds-col slds-size_2-of-8">
+                                    <!--Table for displaying To Account details starts here-->
+                                    <table class="AccountTableHeaders">
+                                        <tbody>
+                                            <tr>
+                                                <th>Account Name</th>
+                                            </tr>
+                                            <tr>
+                                                <th> <span>ACN</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>Address</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>City</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>State</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>Country</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>Zip</span></th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="slds-col slds-size_5-of-8">
+                                    <table>
+                                        <tbody>
+                                            <template for:each={ToAccountDetails} for:item="ToAcn">
+                                                <tr key={ToAcn.Id}>
+
+                                                    <td class="padding1per">{ToAcn.Name}</td>
+                                                </tr>
+                                                <tr key={ToAcn.Id}>
+
+                                                    <td class="padding1per">{ToAcn.Outlet_ACN__c}</td>
+                                                </tr>
+                                                <tr key={ToAcn.Id}>
+
+                                                    <td class="padding1per">{ToAcn.ShippingStreet}</td>
+                                                </tr>
+                                                <tr key={ToAcn.Id}>
+
+                                                    <td class="padding1per">{ToAcn.ShippingCity}</td>
+                                                </tr>
+                                                <tr key={ToAcn.Id}>
+
+                                                    <td class="padding1per">{ToAcn.ShippingState}</td>
+                                                </tr>
+                                                <tr key={ToAcn.Id}>
+
+                                                    <td class="padding1per">{ToAcn.ShippingCountry}</td>
+                                                </tr>
+                                                <tr key={ToAcn.Id}>
+
+                                                    <td class="padding1per">{ToAcn.ShippingPostalCode}</td>
+                                                </tr>
+
+                                            </template>
+
+                                        </tbody>
+                                    </table>
+                                    <!--Table for displaying To Account details ends here-->
+                                </div>
+                                <div class="slds-col slds-size_1-of-8"></div>
+                            </div>
+                        </div>
+                        <br></br>
+                        <div class="slds-grid slds-col slds-size_1-of-1">
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                            </div>
+                            <div class="slds-grid slds-col slds-size_2-of-2 AccountNote">
+                                {TO_ACCOUNT_NOTE}
+                            </div>
+                        </div>
+                        <br>
+                        <div class="slds-grid slds-col slds-size_1-of-1">
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                                <div class="slds-col slds-size_1-of-8"></div>
+                                <div class="slds-col slds-size_5-of-8">
+                                    <lightning-Input-field field-name="From_Account__c" onchange={filFromAcnDetails}
+                                        data-id="fromAccountField"></lightning-Input-field>
+                                    <!--Table for displaying From Account outlet dispensers starts here-->
+                                    <table class="slds-table slds-table--bordered slds-table--striped">
+                                        <thead>
+                                            <th></th>
+                                            <th>Serial Number</th>
+                                            <th>Outlet Dispenser</th>
+                                            <th>Platform Type</th>
+                                            <th>Active/<br>Inactive</th>
+                                            <th>Status</th>
+                                        </thead>
+                                        <tbody>
+                                            <template if:true={FromAccountODDetailsCheck}>
+                                                <template for:each={FromAccountODDetails} for:item="FromAcnOD">
+                                                    <tr key={FromAcnOD.od.Id}>
+                                                        <td>
+                                                            <div if:true={FromAcnOD.selected}>
+                                                                <lightning-input type="Checkbox"
+                                                                    data-item={FromAcnOD.od.Id}
+                                                                    value={FromAcnOD.selected} data-id="selectedOd"
+                                                                    checked></lightning-input>
+                                                            </div>
+                                                            <div if:false={FromAcnOD.selected}>
+                                                                <lightning-input type="Checkbox"
+                                                                    data-item={FromAcnOD.od.Id}
+                                                                    value={FromAcnOD.selected} data-id="selectedOd">
+                                                                </lightning-input>
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <lightning-formatted-text
+                                                                value={FromAcnOD.od.FS_Serial_Number__c}>
+                                                            </lightning-formatted-text>
+                                                        </td>
+                                                        <td>
+                                                            <a onclick={openOutletDispenserPage}
+                                                                data-id={FromAcnOD.od.Id}>
+                                                                <lightning-formatted-text value={FromAcnOD.od.Name}>
+                                                                </lightning-formatted-text>
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <lightning-formatted-text
+                                                                value={FromAcnOD.od.FS_Equip_Type__c}>
+                                                            </lightning-formatted-text>
+                                                        </td>
+                                                        <td>
+                                                            <div if:true={FromAcnOD.od.FS_IsActive__c}>
+                                                                <lightning-input type="Checkbox"
+                                                                    value={FromAcnOD.od.FS_IsActive__c} checked
+                                                                    disabled></lightning-input>
+                                                            </div>
+                                                            <div if:false={FromAcnOD.od.FS_IsActive__c}>
+                                                                <lightning-input type="Checkbox"
+                                                                    value={FromAcnOD.od.FS_IsActive__c} disabled>
+                                                                </lightning-input>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <lightning-formatted-text value={FromAcnOD.od.FS_Status__c}>
+                                                            </lightning-formatted-text>
+                                                        </td>
+                                                    </tr>
+                                                </template>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                    <!--Table for displaying From Account outlet dispensers ends here-->
+                                </div>
+                                <div class="slds-col slds-size_1-of-8"></div>
+                            </div>
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                                <div class="slds-col slds-size_1-of-8"></div>
+                                <div class="slds-col slds-size_2-of-8">
+                                    <!--Table for displaying From Account details starts here-->
+                                    <table class="AccountTableHeaders">
+                                        <tbody>
+                                            <tr>
+                                                <th><span>Account Name</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th> <span>ACN</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>Address</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>City</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>State</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>Country</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th><span>Zip</span></th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="slds-col slds-size_5-of-8">
+                                    <table>
+                                        <tbody>
+                                            <template for:each={FromAccountDetails} for:item="FromAcn">
+                                                <tr key={FromAcn.Id}>
+
+                                                    <td class="padding1per">{FromAcn.Name}</td>
+                                                </tr>
+                                                <tr key={FromAcn.Id}>
+
+                                                    <td class="padding1per">{FromAcn.Outlet_ACN__c}</td>
+                                                </tr>
+                                                <tr key={FromAcn.Id}>
+
+                                                    <td class="padding1per">{FromAcn.ShippingStreet}</td>
+                                                </tr>
+                                                <tr key={FromAcn.Id}>
+
+                                                    <td class="padding1per">{FromAcn.ShippingCity}</td>
+                                                </tr>
+                                                <tr key={FromAcn.Id}>
+
+                                                    <td class="padding1per">{FromAcn.ShippingState}</td>
+                                                </tr>
+                                                <tr key={FromAcn.Id}>
+
+                                                    <td class="padding1per">{FromAcn.ShippingCountry}</td>
+                                                </tr>
+                                                <tr key={FromAcn.Id}>
+
+                                                    <td class="padding1per">{FromAcn.ShippingPostalCode}</td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                    <!--Table for displaying From Account details ends here-->
+                                </div>
+                                <div class="slds-col slds-size_1-of-8"></div>
+                            </div>
+                        </div>
+                        <br></br>
+                        <div class="slds-grid slds-col slds-size_1-of-1">
+                            <div class="slds-grid slds-col slds-size_1-of-2">
+                            </div>
+                            <div class="slds-grid slds-col slds-size_2-of-2 AccountNote">
+                                {FROM_ACCOUNT_NOTE}
+                            </div>
+                        </div>
+                        <br></br>
+                    </div>
+                </div>
+                <!--footer starts here-->
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Cancel" name="Cancel" onclick={redirectBack}>Cancel</lightning-button>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="slds-button slds-button--neutral" type="submit" onclick={saveNewButtonFlag}
+                        disabled={isPopupSubmitButtonDisabled}>Save &
+                        New</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="slds-button slds-button_brand" type="submit"
+                        disabled={isPopupSubmitButtonDisabled}>Save</button>
+                </footer>
+                <!--footer ends here-->
+            </lightning-record-edit-form>
+            <!--Record form ends here-->
+        </div>
+    </section>
+    <!-- LM Case modal popup ends here-->
+    <div class="slds-backdrop slds-backdrop_open"></div>
+
+
+<!--Modal for custom alert messages starts here -->
+<template if:true={openAlertModal}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-02" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container alertModalContainer">
+            <!-- modal header start -->
+            <header class="slds-modal__header alertModalHeader">
+                <h2 id="modal-heading-02" class="alertModalHeaderText">Error</h2>
+            </header>
+            <!-- modal header ends -->
+            <!-- modal body start -->
+            <div class="slds-modal__content slds-p-around_medium alertMessageText" id="modal-content-id-2">
+                {alertMesssage}
+            </div>
+              <!-- modal body ends -->
+            <!-- modal footer start-->
+            <footer class="slds-modal__footer alertModalFooter">
+                <button class="slds-button slds-button_neutral" onclick={closeAlertModalMethod}>Close</button>
+            </footer>
+             <!-- modal footer ends-->
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>
+<!--Modal for custom alert messages starts here -->
+</template>

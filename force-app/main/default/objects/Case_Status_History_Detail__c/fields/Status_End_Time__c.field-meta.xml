@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_End_Time__c</fullName>
+    <description>Date/Time field for capturing End time of Case status when Case status is changed.</description>
+    <externalId>false</externalId>
+    <label>Status End Time</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

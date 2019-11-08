@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_customer_switching_back_to_DirectShip__c</fullName>
+    <description>in the Distributor delivered workflow, if NDO disapproves the request because distributor is not able to fulfill, and if the customer agrees to switch to direct ship, NDO will check a box called &#39;Is customer switching back to Direct Ship&#39;</description>
+    <externalId>false</externalId>
+    <label>Customer switching to DirectShip?</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_NDO_Approval__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes â€“ Cokesmart / Direct Ship</fullName>
+                <default>false</default>
+                <label>Yes â€“ Cokesmart / Direct Ship</label>
+            </value>
+            <value>
+                <fullName>Yes â€“ Manual Order / Direct Ship</fullName>
+                <default>false</default>
+                <label>Yes â€“ Manual Order / Direct Ship</label>
+            </value>
+            <value>
+                <fullName>Yes â€“ Bottler Ordered / Direct Ship</fullName>
+                <default>false</default>
+                <label>Yes â€“ Bottler Ordered / Direct Ship</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Yes â€“ Cokesmart / Direct Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Yes â€“ Manual Order / Direct Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>Yes â€“ Bottler Ordered / Direct Ship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rejected</controllingFieldValue>
+            <valueName>No</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

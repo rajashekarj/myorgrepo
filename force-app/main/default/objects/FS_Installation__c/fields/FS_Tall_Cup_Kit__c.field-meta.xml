@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Tall_Cup_Kit__c</fullName>
+    <externalId>false</externalId>
+    <label>Tall Cup Kit</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>141959: Tall Cup Kit</fullName>
+                <default>false</default>
+                <label>141959: Tall Cup Kit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

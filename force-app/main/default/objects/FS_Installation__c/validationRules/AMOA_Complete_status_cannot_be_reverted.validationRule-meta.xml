@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AMOA_Complete_status_cannot_be_reverted</fullName>
+    <active>true</active>
+    <description>AMOA Complete status cannot be reverted to another status. Please contact FET Help</description>
+    <errorConditionFormula>AND(ISCHANGED(FS_Asset_Tracking_Form_AMOA_Status__c),  Text(PRIORVALUE(FS_Asset_Tracking_Form_AMOA_Status__c)) = &#39;Complete&#39;,NOT(CONTAINS($Label.Exclude_User,$Profile.Name)), OR($Profile.Name!=&#39;System Administrator&#39;,$Profile.Name!=&#39;FET System Admin&#39;))</errorConditionFormula>
+    <errorDisplayField>FS_Asset_Tracking_Form_AMOA_Status__c</errorDisplayField>
+    <errorMessage>AMOA Complete status cannot be reverted to another status. Please contact FET Help</errorMessage>
+</ValidationRule>

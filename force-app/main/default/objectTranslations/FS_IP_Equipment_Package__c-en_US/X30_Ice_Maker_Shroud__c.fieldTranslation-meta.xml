@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>X30_Ice_Maker_Shroud__c</name>
+    <picklistValues>
+        <masterLabel>46376: Shroud for 30in Ice Maker Large 23â€�-28â€� tall IM</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>46378: Shroud for 30in Ice Maker Small &lt; 23â€� tall IM</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

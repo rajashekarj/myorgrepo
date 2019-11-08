@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IP_Association_Brandset</fullName>
+    <active>true</active>
+    <label>IP Association Brandset</label>
+    <picklistValues>
+        <picklist>FS_NonBranded_Water__c</picklist>
+        <values>
+            <fullName>Hide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Platform__c</picklist>
+        <values>
+            <fullName>6000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9100</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

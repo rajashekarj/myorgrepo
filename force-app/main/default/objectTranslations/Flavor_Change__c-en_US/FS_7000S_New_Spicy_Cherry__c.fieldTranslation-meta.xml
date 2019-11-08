@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label/>
+    <name>FS_7000S_New_Spicy_Cherry__c</name>
+    <picklistValues>
+        <masterLabel>Dr Pepper/Diet Dr Pepper</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dr Pepper/Diet Dr Pepper/Add FUZE/Remove Dasani</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dr Pepper/Diet Dr Pepper/Add FUZE/Remove Powerade</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dr Pepper/Diet Dr Pepper/Add FUZE/Remove Vitaminwater</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pibb/Pibb Zero</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pibb/Pibb Zero/Add FUZE/Remove Dasani</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pibb/Pibb Zero/Add FUZE/Remove Powerade</masterLabel>
+        <translation/>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pibb/Pibb Zero/Add FUZE/Remove Vitaminwater</masterLabel>
+        <translation/>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Update_Customer_Support_Notes</fullName>
+    <active>true</active>
+    <errorConditionFormula>FS_Order_Processed__c =false &amp;&amp; ISCHANGED(FS_VPO_Override__c )   &amp;&amp;  NOT(  ISCHANGED( FS_Add_new_Customer_Support_Notes__c ))</errorConditionFormula>
+    <errorDisplayField>FS_Add_new_Customer_Support_Notes__c</errorDisplayField>
+    <errorMessage>Please add customer support notes in case you are adding or updating the override</errorMessage>
+</ValidationRule>

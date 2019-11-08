@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Dispenser_Type__c</fullName>
+    <description>Dispenser Type</description>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.Name=&#39;BoE Dispenser&#39;, TEXT(FS_Model__c), FS_Equip_Type__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dispenser Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

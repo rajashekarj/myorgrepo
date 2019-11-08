@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View_Outlets</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>View Outlets</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+
+var resultOutlet = sforce.connection.query(&quot;Select Id From Account where FS_Headquarters__c = &#39;{!Account.Id}&#39;&quot;);
+var recordsOutlet = resultOutlet.getArray(&quot;records&quot;);
+
+
+if (recordsOutlet.length &gt; 0){
+	//var outletIds = &#39;&#39;; 
+	//for(var rc in  recordsOutlet ){
+	//	outletIds +=  &#39;\&#39;&#39; + recordsOutlet[rc].Id + &#39;\&#39;,&#39;; 
+	//}
+    
+	//outletIds = outletIds.substring(0, outletIds.length - 1);
+	
+	//var resultCI = sforce.connection.query(&quot;Select Id From FS_Customer_Input__c Where FS_Account__c IN (&quot; + outletIds  + &quot;)&quot;);
+	var resultCI = sforce.connection.query(&quot;Select Id From FS_Customer_Input__c Where FS_Account__c = &#39;{!Account.Id}&#39;&quot;);
+	var recordsCI = resultCI.getArray(&quot;records&quot;);
+    
+	if(recordsCI.length &gt; 0 ){
+	  window.location.href = &quot;/apex/FSCopyHQCustomerInputToOutlet?view=true&amp;accId={!Account.Id}&quot;;
+	}
+	else{
+	  alert(&#39;Please create Customer Input to Outlets before this process&#39;);
+	}
+}
+else{
+	alert(&#39;Please create Outlets before this process&#39;);
+}</url>
+</WebLink>

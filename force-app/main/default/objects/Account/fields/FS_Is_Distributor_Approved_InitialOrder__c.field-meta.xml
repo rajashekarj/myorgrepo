@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Is_Distributor_Approved_InitialOrder__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Is Distributor Approved for Initial Order Processing?</inlineHelpText>
+    <label>Distributor Approved for Initial Order?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Not Approved</fullName>
+                <default>false</default>
+                <label>Not Approved</label>
+            </value>
+            <value>
+                <fullName>Not Applicable (Bottler)</fullName>
+                <default>false</default>
+                <label>Not Applicable (Bottler)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

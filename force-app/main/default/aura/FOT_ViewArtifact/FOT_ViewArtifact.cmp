@@ -1,0 +1,114 @@
+<!-- FOT_ViewArtifact -->
+<!-- Artifact view custom lightning component
+	Owner : Anwesh - Infosys
+-->
+
+<aura:component implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global"  controller="FOT_EditArtifactController">
+    
+    <aura:attribute name="arti" type="FS_Artifact__c" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="pubRecordId" type="Id" />
+    <aura:attribute name="isPubArtifact" type="Boolean"/>
+    <aura:attribute name="artifactRT" type="String" />
+    <aura:attribute name="profile" type="String" />
+    <aura:attribute name="prevURL" type="string" />
+    <aura:attribute name="editClick" type="boolean" />
+    <aura:attribute name="editsaveClick" type="boolean" />
+    <aura:attribute name="isDelete" type="boolean" />
+    <aura:handler name="onEditSave" event="c:selectedsObjectRecordEvent" action="{!c.handleEditSave}" />
+    <aura:attribute name="recordError" type="String" access="private"/>
+    <force:recordData aura:id="recordHandler"
+                      recordId="{!v.recordId}"
+                      fields="Id"
+                      targetError="{!v.recordError}" />
+    <aura:attribute name="isDeleteArt" type="boolean" />
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordError))}">
+        <div class="recordError">
+            <ui:message title="Error" severity="error" closable="true">
+                {!v.recordError}
+            </ui:message>
+        </div>
+    </aura:if>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:handler name="onSaveSuccess" event="force:recordSaveSuccess" action="{!c.handleSaveSuccess}"/>
+    
+    <div class="slds-grid slds-grid_pull-padded-medium" style="width:100%">
+        <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth" >
+            <div class="slds-grid slds-grid_pull-padded-medium" style="width:100%">
+                <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth" >
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_Published}">  
+                        <force:recordView recordId="{!v.pubRecordId}"/> 
+                        <div class="slds-align_absolute-center slds-m-top_small">
+                            <button class="slds-button slds-button--neutral" onclick="{!c.clickCancel}" >Cancel</button>
+                            <button class="slds-button slds-button--brand" onclick="{!c.navigateToEdit}">Edit</button>
+                            <lightning:button class="slds-button slds-button--neutral" aura:id="viewRuleBtn" label="View Rule File" onclick="{!c.viewRuleFileFromAWS}" />
+                            <lightning:button class="slds-button slds-button--neutral" aura:id="viewOverRideRuleBtn" label="View Orverride Rule File" onclick="{!c.viewOverrideRuleFileAWS}" />
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_DryRun}">
+                        <force:recordView recordId="{!v.recordId}"/>
+                        <div class="slds-align_absolute-center slds-m-top_small">
+                            <button class="slds-button slds-button--neutral" onclick="{!c.clickCancel}" >Cancel</button>
+                            <button class="slds-button slds-button--brand" onclick="{!c.navigateToEdit}">Edit</button>
+                            <aura:if isTrue="{!v.isDelete}">
+                          <!--  <aura:if isTrue="{!or(and(!v.arti.FS_Enabled__c,v.profile=='Operations Admin'),v.profile=='System Administrator')}">  -->
+                                <aura:if isTrue="{!or((v.profile==$Label.c.FOT_Operations_Admin),(v.profile==$Label.c.FOT_System_Administrator))}">  
+                                <button class="slds-button slds-button--brand" onclick="{!c.setDeleteModal}">Delete</button>
+                            </aura:if>
+                            </aura:if> 
+                            <lightning:button class="slds-button slds-button--neutral" aura:id="viewRuleBtn" label="View Rule File" onclick="{!c.viewRuleFileFromAWS}" />
+                            <lightning:button class="slds-button slds-button--neutral" aura:id="viewOverRideRuleBtn" label="View Orverride Rule File" onclick="{!c.viewOverrideRuleFileAWS}" />
+                        </div>                        
+                    </aura:if>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth" >
+            <div class="slds-grid slds-grid_pull-padded-medium" style="width:100%">
+                <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth">
+                    
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_Published}">
+                        <force:recordView recordId="{!v.recordId}"/>
+                    </aura:if>
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_DryRun}">
+                        <aura:if isTrue="{!v.pubRecordId != null}">
+                            <force:recordView recordId="{!v.pubRecordId}"/>
+                            <aura:set attribute="else">
+                                <span>No Published Artifact Associated</span>
+                            </aura:set>
+                        </aura:if>
+                    </aura:if>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <aura:if isTrue="{!v.isDeleteArt}">
+        <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open ">
+            <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModalEdit}">
+                        X
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="header99" class="slds-text-heading--medium">Delete Artifact Warning</h2>
+                </div>
+                
+                <div class="slds-modal__content slds-p-around--medium">
+                    <p>Are you sure you want to delete Artifact .Click <b>Continue</b> to proceed or <b>Cancel</b>
+                    </p>
+                </div>
+                
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button--neutral" onclick="{!c.closeModalEdit}" >Cancel</button>
+                    <button class="slds-button slds-button--brand" onclick="{!c.handleDeleteRecord}">Continue</button>
+                </div> 
+            </div>
+        </div>
+        <div class="slds-backdrop slds-backdrop--open"></div>    
+    </aura:if>
+</aura:component>

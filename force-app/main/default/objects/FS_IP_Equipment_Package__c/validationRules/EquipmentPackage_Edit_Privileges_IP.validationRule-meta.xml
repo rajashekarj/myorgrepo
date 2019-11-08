@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EquipmentPackage_Edit_Privileges_IP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(FS_Installation__r.FS_Execution_Plan_Final_Approval_PM__c,&#39;Approved&#39;),
+$Profile.Name != &quot;FS AC_P&quot;, 
+$Profile.Name != &quot;FS PM_P&quot;, 
+$Profile.Name != &quot;FS Admin PM_P&quot;, 
+$Profile.Name != &quot;FET System Admin&quot;, 
+$Profile.Name != &quot;System Administrator&quot;)</errorConditionFormula>
+    <errorMessage>Equipment Package cannot be updated after Execution Plan has been approved. Please Contact your  PM for any necessary edits.</errorMessage>
+</ValidationRule>

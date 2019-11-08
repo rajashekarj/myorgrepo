@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>North_American_Case</fullName>
+    <active>true</active>
+    <businessProcess>Freestyle</businessProcess>
+    <compactLayoutAssignment>FS_Connectivity_Solution_Panel</compactLayoutAssignment>
+    <description>Case Records for NA Customers/outlets</description>
+    <label>North American Case</label>
+    <picklistValues>
+        <picklist>Case_Category__c</picklist>
+        <values>
+            <fullName>Connectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operations SW%2FElectrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Case_Sub_Category__c</picklist>
+        <values>
+            <fullName>Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW %26 Electronics Field Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Categories__c</picklist>
+        <values>
+            <fullName>ADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backroom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carbonator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cladding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flavor Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow Control - Water%2FSoda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice Bin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice Dispense</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ice%2FDrink Dispense Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Lock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leak - Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leak - Syrup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leak - Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macro Board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Board - Static%2FAgitated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Micro Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modem%2FConnectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NNS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NNS Tray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nozzle Assembly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pour Button</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCGP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFID Antenna Static%2FAgit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recirculator Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refrigeration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shelf Board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Carb</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soda Solenoid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweetener Solenoid Value</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TTP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Touchscreen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Solenoid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puerto Rico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Active_Inactive_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Case_Type__c</picklist>
+        <values>
+            <fullName>Alignment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brand Selection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connectivity Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumption Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enrollment Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Dispenser_Category__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Modem_Type__c</picklist>
+        <values>
+            <fullName>Ethernet Connected Modem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USB Connected Modem</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FACT_Valid_FIll__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_Dispenser_Type__c</picklist>
+        <values>
+            <fullName>3100 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6000 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7000 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7100 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8000 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9000 Series</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9100 Series</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FS_New_Case_Type__c</picklist>
+        <values>
+            <fullName>JDE Initiated AMOA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JDE Linkage Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Global_Center_Esca__c</picklist>
+        <values>
+            <fullName>Non Field Repairable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Valid Escalation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parts Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quality %26 Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trending Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_Type__c</picklist>
+        <values>
+            <fullName>Agent Proactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connectivity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FA Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FSGC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HIO</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Questions%2FInquires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STA Request</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Knowledge_Base_Status__c</picklist>
+        <values>
+            <fullName>Added to Knowledge base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eligible - pending creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Eligible</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LM_Sub_Status__c</picklist>
+        <values>
+            <fullName>Account Team on Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance on Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JDE AMS on Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JDE Install Base Notified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Install</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Chatter Answers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical - Quality%2FSafety Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High - Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low - Operational but Excessive Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium - Decreased Functionality</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SW_Issue_Categories__c</picklist>
+        <values>
+            <fullName>CMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Requirements%2FEnhancements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW Embedded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW HMI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SW NMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Priority__c</picklist>
+        <values>
+            <fullName>Barely operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Increase volume of service calls - Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On-site troubleshooting by service team - Operational</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Status__c</picklist>
+        <values>
+            <fullName>Additional Information Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed%2F Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACT Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACT In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACT On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC In Containment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC In Validation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC on Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommendation made%2CPending additional agent review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Sample Cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

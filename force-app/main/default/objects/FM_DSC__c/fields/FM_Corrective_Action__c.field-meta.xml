@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Corrective_Action__c</fullName>
+    <externalId>false</externalId>
+    <label>Corrective Action</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adjust</fullName>
+                <default>false</default>
+                <label>Adjust</label>
+            </value>
+            <value>
+                <fullName>Adjusted Sensor</fullName>
+                <default>false</default>
+                <label>Adjusted Sensor</label>
+            </value>
+            <value>
+                <fullName>Calibrate</fullName>
+                <default>false</default>
+                <label>Calibrate</label>
+            </value>
+            <value>
+                <fullName>Change Fuse</fullName>
+                <default>false</default>
+                <label>Change Fuse</label>
+            </value>
+            <value>
+                <fullName>Clean</fullName>
+                <default>false</default>
+                <label>Clean</label>
+            </value>
+            <value>
+                <fullName>Clean/Reset</fullName>
+                <default>false</default>
+                <label>Clean/Reset</label>
+            </value>
+            <value>
+                <fullName>Disconnect Sensor</fullName>
+                <default>false</default>
+                <label>Disconnect Sensor</label>
+            </value>
+            <value>
+                <fullName>Educate/ Advise</fullName>
+                <default>false</default>
+                <label>Educate/ Advise</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Primed</fullName>
+                <default>false</default>
+                <label>Primed</label>
+            </value>
+            <value>
+                <fullName>Primed/Purged</fullName>
+                <default>false</default>
+                <label>Primed/Purged</label>
+            </value>
+            <value>
+                <fullName>Repair</fullName>
+                <default>false</default>
+                <label>Repair</label>
+            </value>
+            <value>
+                <fullName>Replace</fullName>
+                <default>false</default>
+                <label>Replace</label>
+            </value>
+            <value>
+                <fullName>Replace Componenet</fullName>
+                <default>false</default>
+                <label>Replace Componenet</label>
+            </value>
+            <value>
+                <fullName>Replace O-ring</fullName>
+                <default>false</default>
+                <label>Replace O-ring</label>
+            </value>
+            <value>
+                <fullName>Replace Tubing</fullName>
+                <default>false</default>
+                <label>Replace Tubing</label>
+            </value>
+            <value>
+                <fullName>Reposition/Adjust</fullName>
+                <default>false</default>
+                <label>Reposition/Adjust</label>
+            </value>
+            <value>
+                <fullName>Reset</fullName>
+                <default>false</default>
+                <label>Reset</label>
+            </value>
+            <value>
+                <fullName>Reset/Purge</fullName>
+                <default>false</default>
+                <label>Reset/Purge</label>
+            </value>
+            <value>
+                <fullName>Reset/ Reconnect</fullName>
+                <default>false</default>
+                <label>Reset/ Reconnect</label>
+            </value>
+            <value>
+                <fullName>Sanitize Performed</fullName>
+                <default>false</default>
+                <label>Sanitize Performed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

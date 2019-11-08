@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Dist_Cartridge_Delivery_Auth_Outlet__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(FS_Distributor__r.FS_Dist_Cartridge_Delivery_Authorized__c)
+
+
+
+/*TEXT( FS_Dist_Cartridge_Delivery_Authorized__c )*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Dist Cartridge Delivery Authorized</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Boost_NNS_Tray_M_Series__c</fullName>
+    <externalId>false</externalId>
+    <label>Boost NNS Tray (M-Series)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FS_Platform_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>XXXXX: M- Series NNS Tray Kit</fullName>
+                <default>false</default>
+                <label>XXXXX: M- Series NNS Tray Kit</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <valueName>XXXXX: M- Series NNS Tray Kit</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

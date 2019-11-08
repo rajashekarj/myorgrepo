@@ -1,0 +1,168 @@
+<!-- FOT_CreateArtifact -->
+<!-- Artifact creation custom lightning component
+	Owner : Anwesh - Infosys
+-->
+
+<aura:component implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="FOT_CreateArtifactController" >
+    <!-- Including Jquery -->
+    <ltng:require scripts="{!$Resource.jquerymin}" />
+    
+     <aura:attribute name="fromSave" type="Boolean" default="false"/>   <!-- added for defect-FFET-716 --> 
+    
+    <aura:attribute name="artRank" type="Boolean" />    
+    <aura:attribute name="artifact" type="Object"/>
+    <aura:attribute name="artifactError" type="String"/>
+    <aura:attribute name="artifactTypeList" type="List" />
+    <aura:attribute name="dependArtifactTypeList" type="List" />
+    <aura:attribute name="secDependArtifactTypeList" type="List" />
+    <aura:attribute name="isOpen" type="boolean" default="false"/>
+    <aura:attribute name="responseMsg" type="String"/>    
+    <aura:attribute name="spinner" type="Boolean" default="false"/>
+  	<aura:attribute name="artifactType" type="String"/>
+    <aura:attribute name="atType" type="Boolean"/>
+    <aura:attribute name="label" type="String"/>
+    <aura:attribute name="rankNumber" type="Decimal"/>
+    <aura:attribute name="selectedLookUpRecord" type="sObject" default="{}"/>
+    <aura:attribute name="newArtifact" type="Object" access="private"/>
+    <aura:attribute name="simpleNewArtifact" type="FS_Artifact__c"  default="{}"/>
+    <aura:attribute name="newArtifactError" type="String" access="private"/>
+    <aura:attribute name="artVersion" type="Boolean"/>
+    <aura:attribute name="verErrMsg" type="String" default=""/>
+    <aura:attribute name="arttypeErrMsg" type="String" default=""/>
+    
+    <aura:attribute name="ruleSetFileName" type="String"/>
+    <aura:attribute name="ruleSetFileContent" type="String"/>
+    <aura:attribute name="showLoadingSpinner" type="boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <force:recordData aura:id="artifactRecordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Name,BillingCity,BillingState"
+                      targetRecord="{!v.artifact}"
+                      targetError="{!v.artifactError}"
+                      />
+    
+    <!-- Artifact creation form header -->
+    <div class="slds-page-header customwidth" role="banner">
+        <h1 class="slds-page-header__title slds-m-right_small
+                   slds-truncate slds-align-left">Create New Artifact Under Ruleset : {!v.selectedLookUpRecord.Name}</h1>
+    </div>
+    <!-- End Artifact creation form header -->
+    
+    <!-- Start of new artifact form -->
+    <div class="slds-theme_default slds-page-header customwidth" aura:id="createinfo-tab">
+        <!-- Spinner start -->
+        <aura:if isTrue="{!v.spinner}">
+            <div class="slds-spinner_container">
+                <lightning:spinner aura:id="spinner" variant="brand" size="medium"/>
+            </div>
+        </aura:if>
+        <!-- Spinner End -->
+        
+        <!-- Start of create from fields -->        
+        <ui:inputCheckbox aura:id="artifactField"  label="Enabled"
+                          value="{!v.simpleNewArtifact.FS_Enabled__c}" />
+        
+        <ui:inputText aura:id="artifactName" label="Name"
+                      value="{!v.simpleNewArtifact.Name}" maxlength="80" required="true"/>
+        
+        <ui:inputNumber aura:id="artifactRank" label="Rank" maxlength="10"
+                        value="{!v.simpleNewArtifact.FS_Rank__c}" required="true" change="{!c.validateRank}" />
+        <!-- <input type="number" aura:id="artifactRank" name="Rank" min="1" maxlength="10" class="slds-input" labelClass="slds-form-element__label" value="{! v.simpleNewArtifact.FS_Rank__c}"/> -->
+        
+        <ui:inputText aura:id="artifactVersion"  label="Version" change="{!c.checkVersion}"                    
+                      value="{!v.simpleNewArtifact.FS_Version__c}" required="true" maxlength="15" />
+        
+       <!-- <c:customLookup objectAPIName="FS_Artifact_Ruleset__c" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Rule Set" required="true"/> -->
+        <div id="artifactRuleset" class="slds-hide">            
+            <ul class="has-error uiInputDefaultError uiInput uiInputSelect uiInput--default uiInput--select" id="ruleseterrorul" ><li class="form-element__help" >{!$Label.c.FOT_RuleSet_Value_Error_Message}</li></ul>
+        </div>        
+        
+        <ui:inputSelect change="{!c.checkValue}" label="Artifact Type" required="true" value="{!v.simpleNewArtifact.FS_Artifact_Type__c}" aura:id="artifactType">                                        
+            <aura:iteration items="{!v.artifactTypeList}" var="artType" indexVar="index">                                                
+                <ui:inputSelectOption text="{!artType}" label="" value="{!v.simpleNewArtifact.FS_Artifact_Type__c == artType}"/>
+            </aura:iteration>
+        </ui:inputSelect> 
+        
+        <ui:inputSelect label="Dependency Artifact Type" value="{!v.simpleNewArtifact.FS_Dependency_Artifact_Type__c}" aura:id="depArtifactType">                                        
+            <aura:iteration items="{!v.dependArtifactTypeList}" var="dArtType" indexVar="index">                                                
+                <ui:inputSelectOption text="{!dArtType}" label="" value="{!v.simpleNewArtifact.FS_Dependency_Artifact_Type__c == dArtType}"/>
+            </aura:iteration>
+        </ui:inputSelect>
+        
+        <ui:inputText aura:id="artifactDepMinVersion"  label="Dependency Minimum Version"  change="{!c.checkVersion}"                   
+                      value="{!v.simpleNewArtifact.FS_Dependency_M_in_Version__c}" maxlength="15" />
+        
+        <ui:inputText aura:id="artifactDepBrkVersion"  label="Dependency Break Version" change="{!c.checkVersion}"                   
+                      value="{!v.simpleNewArtifact.DependancyBreakVersion__c}" maxlength="15"  />
+        
+         <ui:inputText aura:id="context"  label="Running Context" value="{!v.simpleNewArtifact.Context__c}" maxlength="255" />
+        
+        <ui:inputSelect label="Second Dependency Artifact Type" value="{!v.simpleNewArtifact.Second_Dependency_Artifact_Type__c}" aura:id="secDepArtifactType">                                        
+            <aura:iteration items="{!v.secDependArtifactTypeList}" var="secDArtType" indexVar="index">                                                
+                <ui:inputSelectOption text="{!secDArtType}" label="" value="{!v.simpleNewArtifact.Second_Dependency_Artifact_Type__c == secDArtType}"/>
+            </aura:iteration>
+        </ui:inputSelect>
+        
+        <ui:inputText aura:id="secArtifactDepMinVersion"  label="Second Dependency Min Version"  change="{!c.checkVersion}"                   
+                      value="{!v.simpleNewArtifact.Second_Dependency_Min_Version__c}" maxlength="10" />
+        
+        <ui:inputText aura:id="secArtifactDepBrkVersion"  label="Second Dependency Break Version" change="{!c.checkVersion}"                   
+                      value="{!v.simpleNewArtifact.Second_Dependency_Break_Version__c}" maxlength="10"  />
+        
+        <lightning:inputField fieldName="{!v.FS_Deployment_Group_Rule__c}" />
+        
+        <ui:inputTextArea aura:id="artifactDepGroupRule" label="Deployment Group Rule" value="{!v.simpleNewArtifact.FS_Deployment_Group_Rule__c}" rows="3" maxlength="4048"  required="true" />
+        <ui:inputTextArea aura:id="artifactRule" disabled="false" label="Rule" value="{!v.simpleNewArtifact.FS_Rule__c}" rows="3" required="true" maxlength="4048" />
+
+        
+        <ui:inputTextArea aura:id="artifactOvrGroupRule" label="Override Rule" value="{!v.simpleNewArtifact.FS_Overide_Group_Rule__c}" rows="3" maxlength="4048"  />
+        <ui:inputText aura:id="artifactS3Path" label="S3 Path" value="{!v.simpleNewArtifact.FS_S3Path__c}" required="false" maxlength="256" />
+        <!-- <aura:if isTrue="{!v.artifactType != $Label.c.FOT_Settings}"> -->
+            <ui:inputText aura:id="artifactUUID" label="UUID" value="{!v.simpleNewArtifact.FS_UUID__c}" disabled="true" maxlength="64" />
+        <!-- </aura:if> -->
+        
+        <ui:outputText value="{!v.simpleNewArtifact.unknown_custom_field}"  />
+        <ui:inputTextArea aura:id="artifactSetting" label="Settings Update" value="{!v.simpleNewArtifact.Settings_Update__c}" rows="3" maxlength="5000" required="false" />
+        
+        <lightning:notificationsLibrary aura:id="notifLib"/><!-- to show the error msg-->
+        
+        
+        <div class="slds-align_absolute-center">
+            <lightning:button label="{!$Label.c.Close}" onclick="{!c.handleCancel}" variant="neutral"/>
+            <lightning:button label="Save" onclick="{!c.handleSaveArtifact}" variant="brand"/>
+        </div>
+        <!-- End of create from fields -->
+        
+        <!-- Artifact Validation Success modal popup-->
+        <aura:if isTrue="{!v.isOpen}">
+            
+            <div role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open ">
+                <div class="slds-modal__container">
+                    <div class="slds-modal__header">
+                        <button class="slds-button slds-modal__close slds-button--icon-inverse" title="Close" onclick="{!c.closeModal}">
+                            X
+                            <span class="slds-assistive-text">{!$Label.c.Close}</span>
+                        </button>
+                        <h2 id="header99" class="slds-text-heading--medium">{!$Label.c.FOT_Artifact_Validation_Success_Header}</h2>
+                    </div>
+                    
+                    <div class="slds-modal__content slds-p-around--medium">
+                        <p><aura:unescapedHtml value="{!v.responseMsg}" />.<b> Click Yes to save the record. </b>
+                        </p>
+                    </div>
+                    <!-- Popup footer -->
+                    <div class="slds-modal__footer">
+                        <button class="slds-button slds-button--neutral" onclick="{!c.closeModal}" >No</button>
+                        <button class="slds-button slds-button--brand" onclick="{!c.toSave}">Yes</button>
+                    </div>
+                    <!-- Footer End -->
+                </div>
+            </div>
+            <div class="slds-backdrop slds-backdrop--open"></div>
+            
+        </aura:if>
+        <!-- End of Artifact Validation Success modal popup -->
+        
+    </div>
+    <!-- End of new artifact form --> 
+</aura:component>

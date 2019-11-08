@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCR_Go_to_Landing_Page</fullName>
+    <availability>online</availability>
+    <description>This button is only for PE Accounts to take the control to Landing page of the Account.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Go to Landing Page</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/CCRLandingPageNew?id={!Account.Id}</url>
+</WebLink>

@@ -1,0 +1,47 @@
+<apex:page ></apex:page>
+<!-- Commenting Initial Order SAP Data Object related lines of code bcoz of deleting Initial Order SAP Data Object in FET 5.0 
+<apex:page StandardController="FS_Initial_Order__c" action="{!populatelstInitialOrderWrp}" extensions="FSInitialOrdSapMaterialExtensions">
+    <apex:pageBlock >
+      <apex:pageBlockTable value="{!lstInitialOrderWrp}" var="io" rendered="{!!show7000Section}">
+      
+         <apex:column headerValue="SAP Material#  :  Cartridge Box" >
+           {!io.sapMaterial}
+         </apex:column>
+         
+         <apex:column headerValue="Total Ordered">
+             {!io.totalOrdered}
+         </apex:column>
+         
+         <apex:column headerValue="Cost/Unit" >
+           {!io.costUnit}
+         </apex:column>
+         
+         <apex:column headerValue="Customer Cost">
+            {! io.customerCost}
+         </apex:column>
+
+      
+        
+        </apex:pageBlockTable>
+        
+        <apex:pageBlockTable value="{!lstInitialOrderWrp}" var="io" rendered="{!show7000Section}">
+      
+           <apex:column headerValue="SAP Material#  :  Cartridge Box">
+            {!io.sapMaterial}
+           </apex:column>
+           
+           <apex:column headerValue="Total Ordered" >          
+           {!io.totalOrdered}
+           </apex:column>
+           
+           <apex:column headerValue="Cost/Unit" >
+           {!io.costUnit}
+           </apex:column>
+           
+          <apex:column headerValue="Customer Cost">
+           {!io.customerCost}
+          </apex:column>
+          
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page> -->

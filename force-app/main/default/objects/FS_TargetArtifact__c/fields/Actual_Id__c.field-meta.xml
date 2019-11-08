@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Id__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>..</description>
+    <externalId>false</externalId>
+    <label>Actual Id</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>FS_TargetArtifact__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Actual</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>FS_TargetArtifact__c</referenceTo>
+    <relationshipLabel>TargetArtifacts (Actual Id)</relationshipLabel>
+    <relationshipName>ActualArtifacts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

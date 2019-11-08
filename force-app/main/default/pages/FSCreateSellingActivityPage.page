@@ -1,0 +1,265 @@
+<apex:page standardController="Selling_Activity__c" sideBar="false" extensions="FSCreateSellingActivityExtension" tabStyle="Selling_Activity__c">
+    <style>
+<!--        .customnotabBlock{-->
+<!--            width: 74% !important;-->
+<!--        }-->
+<!--        .brandPrimaryBrd{-->
+<!--            width: 75% !important;-->
+<!--        }-->
+        .dateFormat{
+            display: none;
+        }
+        .btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9) !important;
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9) !important;
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9) !important;
+  background-image: -o-linear-gradient(top, #3498db, #2980b9) !important;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9) !important;
+  -webkit-border-radius: 28 !important;
+  -moz-border-radius: 28 !important;
+  border-radius: 28px !important;
+  font-family: Georgia !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  padding: 2px 10px 4px 10px !important;
+  text-decoration: none !important;
+}
+
+.btn:hover {
+  background: rgba(65, 188, 219, 0.89);
+  /*background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db) !important;
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db) !important;
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db) !important;
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db) !important;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db) !important;*/
+  text-decoration: none !important;
+  background-position: right !important;
+}
+
+  .textbox {
+    border: 1px solid #c4c4c4;
+    height: 15px;
+    width: 175px;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+    -moz-box-shadow: 0px 0px 8px #d9d9d9;
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+.textbox:focus {
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+    -moz-box-shadow: 0px 0px 8px #7bc1f7;
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7;
+}
+
+    table tr th {
+        white-space: pre-wrap !important;
+    }
+    .sellingStatusCss {
+        width:15% !important;
+    }
+
+    .commentWidth {
+        width:180px !important;
+    }
+    </style>
+
+    <script type="text/javascript">
+      function doSearch(nameVar) {
+        if(nameVar == 'market') {
+            var searchStr = document.getElementById("firstName").value;
+            if(searchStr != null && searchStr != '' && searchStr.length >= 2) {
+                    searchServer( document.getElementById("firstName").value);
+            }
+        }else {
+           searchServer('');
+        }
+      }
+
+    function limitComment(comment) {
+      if(comment.value.length >= 250){
+        return false;
+      }
+      return true;
+    }
+
+
+    </script>
+
+    <apex:sectionHeader id="mainSec" title="Selling Activity Edit" subtitle="New Selling Activity"/>
+    <apex:form id="frm">
+
+<!--        <apex:actionFunction name="searchServer" action="{!runSearch}" rerender="resultBlock" focus="firstName" > -->
+            <apex:actionFunction name="searchServer" action="{!runSearch}" rerender="resultBlock, pgBlock" Status="statusC" >
+          <apex:param name="firstName" value="" />
+      </apex:actionFunction>
+
+<!--       <apex:pageBlock title="Debug - SOQL" id="debug"> -->
+<!--                          <apex:outputText value="{!debugSoql}" /> -->
+<!--                      </apex:pageBlock> -->
+
+        <apex:pageBlock id="pgBlock">
+            <apex:pageMessages />
+
+            <apex:outputPanel >
+                <div>
+                    <br/>
+                    <b><apex:outputText value="Dispenser Model"  /><font style="color:red;">*</font></b>&nbsp;
+<!--                     <apex:selectList value="{!dispenserVal}" size="1" onChange="populateMarketVal();"> -->
+                                                <apex:selectList value="{!dispenserVal}" size="1" onChange="doSearch('model');">
+                        <apex:selectOptions value="{!dispenserOptions}" />
+                    </apex:selectList>
+                </div> <br/>
+               <b><apex:outputText value="Search Market" /> &nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" id="firstName" onkeyup="doSearch('market');"/>
+
+                <br/>
+
+<!--                    <apex:outputText value="Available Market" /><font style="color:red;"><b>*</b></font>&nbsp;-->
+<!--                    <apex:selectList value="{!marketVal}" size="1" onChange="">-->
+<!--                        <apex:selectOptions value="{!marketOptions}"/>-->
+<!--                    </apex:selectList>&nbsp;&nbsp;-->
+                <apex:pageBlockSection >
+                        <apex:outputPanel id="resultBlock">
+                    <apex:pageBlockSectionItem >
+                        <c:MultiselectPicklist leftLabel="Available Markets" leftOptions1="{!avaliableFields}" Alldata="{!null}"
+                            rightLabel="Selected Markets" rightOptions1="{!selectedFields}" size="5" width="200px"/>
+                    </apex:pageBlockSectionItem>
+                    </apex:outputPanel>
+<!--                    <div class="headerSearchContainer" id="phSearchContainer">-->
+<!--                    <div class="headerSearchLeftRoundedCorner">-->
+<!--                    <div class="searchBoxClearContainer">-->
+<!--                        <input autocomplete="off" id="phSearchInput" maxlength="100" name="str" placeholder="Search..." size="20" title="Search..." type="text" value="" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"/><a class="headerSearchClearButton" href="javascript: void(0);" id="phSearchClearButton" name="phSearchClearButton" style="visibility:hidden" title="Clear search terms"/>                 </div>-->
+<!--                        <div class="headerSearchRightRoundedCorner" id="searchButtonContainer">-->
+<!--                            <input value="Search" id="phSearchButton" type="button"/>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    </div>-->
+                </apex:pageBlockSection>
+
+                <center><div>
+                    <apex:commandButton value="Go" action="{!addMarket}" reRender="frm" id="goMarketButton" Status="statusC" style="background : #3498db !important;"/>
+                </div></center><br />
+                <hr /><br />
+            </apex:outputPanel>
+            <apex:variable var="index" value="{!0}" />
+            <div style="overflow-x: scroll;" >
+
+                <apex:pageBlockTable value="{!sellingActivityList}" var="sellingItem" style="table-layout:fixed;width: 150%;" id="table1">
+                <apex:column headerValue="" >
+<!--                    I-144983 - rendered condition added-->
+                    <apex:commandLink value="Del" action="{!deleteRecord}" reRender="frm" style="color: #015ba7;" rendered="{!ISBlank(sellingItem.sellingActivity.id)}">
+                        <apex:param assignTo="{!recordIndex}" name="indexNumber" value="{!index}" />
+                    </apex:commandLink>
+                </apex:column>
+
+                <apex:column headerValue="Market Name">
+                    <apex:variable var="index" value="{!index+1}" />
+                    <apex:outputField value="{!sellingItem.sellingActivity.Market_Name__c}" />
+                </apex:column>
+
+                 <apex:column headerValue="Market Activation Date">
+                    <apex:facet name="header">Market Activation<br/>Date<font style="color:red;"><b>*</b></font>
+                    </apex:facet>
+                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                        <apex:param value="{!sellingItem.marketActDate}" />
+                    </apex:outputText>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">Request Accelerated<br/>Market Activation Date
+                    </apex:facet>
+                    <apex:inputField id="demo" styleClass="textbox" value="{!sellingItem.sellingActivity.Requested_Accelerated_Market_Activation__c}" rendered="{!IsBlank(sellingItem.sellingActivity.id)}"/>
+                    <apex:outputField value="{!sellingItem.sellingActivity.Requested_Accelerated_Market_Activation__c}" rendered="{!!IsBlank(sellingItem.sellingActivity.id)}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header"># Of Outlets<br/>For Launch<font style="color:red;"><b>*</b></font>
+                    </apex:facet>
+                    <apex:inputField styleClass="textbox" style="width:80% !important;" value="{!sellingItem.sellingActivity.FS_Of_Outlets_For_Launch__c}" rendered="{!!sellingItem.isLocked}"/>
+                    <apex:outputField value="{!sellingItem.sellingActivity.FS_Of_Outlets_For_Launch__c}" rendered="{!sellingItem.isLocked}"/>
+                </apex:column>
+                <apex:column headerClass="sellingStatusCss">
+                    <apex:facet name="header">Disp. Configuration<font style="color:red;"><b>*</b></font>
+                    </apex:facet>
+                    <apex:inputField value="{!sellingItem.sellingActivity.Disp_Configuration__c}" rendered="{!!sellingItem.isLocked}"/>
+                    <apex:outputField value="{!sellingItem.sellingActivity.Disp_Configuration__c}" rendered="{!sellingItem.isLocked}"/>
+                </apex:column>
+                <apex:column headerClass="sellingStatusCss">
+                    <apex:facet name="header">Selling Status<font style="color:red;"><b>*</b></font>
+                    </apex:facet>
+                    <apex:inputField value="{!sellingItem.sellingActivity.Selling_Status__c}" rendered="{!!sellingItem.isLocked}"/>
+                    <apex:outputField value="{!sellingItem.sellingActivity.Selling_Status__c}" rendered="{!sellingItem.isLocked}"/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Average<br/>Dispenser #<font style="color:red;"><b>*</b></font>
+                    </apex:facet>
+                    <apex:outputField value="{!sellingItem.sellingActivity.Average_Dispenser__c}" rendered="{!sellingItem.isLocked}"/>
+                    <apex:inputField styleClass="textbox" style="width:80% !important;" rendered="{!!sellingItem.isLocked}"
+                            value="{!sellingItem.sellingActivity.Average_Dispenser__c}" />
+                </apex:column>
+               <apex:column >
+                   <apex:facet name="header"># Of Dispensers Sub<br/>Total/Per Market
+                   </apex:facet>
+                   <apex:outputField value="{!sellingItem.sellingActivity.FS_Of_Dispensers_Sub_Total_Per_Market__c}" />
+               </apex:column>
+                <apex:column headerValue="Comments" headerClass="commentWidth">
+                    <apex:inputTextArea styleClass="textbox"  onKeyPress="return limitComment(this)" cols="25" rows="3"   value="{!sellingItem.sellingActivity.Comment__c}"  rendered="{!NOT(OR(sellingItem.isLocked, sellingItem.isUpdate))}" />
+                    <apex:inputTextArea value="{!sellingItem.sellingActivity.Comment__c}" cols="26" rows="3"  readOnly="true" rendered="{!OR(sellingItem.isLocked, sellingItem.isUpdate)}" disabled="true"/>
+                </apex:column>
+                <apex:column headerValue="Created On" >
+                    <apex:outputField value="{!sellingItem.sellingActivity.Created_On__c}" />
+                </apex:column>
+                <apex:column headerValue="Created By" >
+                    <apex:outputField value="{!sellingItem.sellingActivity.Created_By__c}" />
+                </apex:column>
+                <apex:column headerValue="Changed On" >
+                    <apex:outputPanel id="changedOnOP">
+                        <apex:outputField value="{!sellingItem.sellingActivity.Changed_On__c}" />
+                    </apex:outputPanel>
+                </apex:column>
+                <apex:column headerValue="Changed By">
+                    <apex:outputField value="{!sellingItem.sellingActivity.Changed_By__c}" />
+                </apex:column>
+                  <apex:facet name="footer">
+
+                </apex:facet>
+            </apex:pageBlockTable>
+            </div>
+
+            <apex:pageBlockSection columns="3">
+                <apex:outputText label="Market Total" value="{!totalValue.totalMarket}" />
+                <apex:outputText label="Total Market For Launch" value="{!totalValue.totalLaunch}" />
+                <apex:outputText label="Grand Total Dispensers" value="{!totalValue.totalDispenser}" />
+            </apex:pageBlockSection>
+
+            <br/>
+            <center><apex:outputPanel >
+                <apex:commandButton value="Save" action="{!saveRecord}" reRender="frm" id="saveBtn" Status="statusC"/>
+<!--                 I-144960; oncomplete="location.reload()" added instead of reRender="frm"; to refresh the page; to show trigger updated fields -->
+                <apex:commandButton value="Save and Close" action="{!saveCloseRecord}" reRender="frm" id="saveCloseBtn" Status="statusC"/>
+                <apex:commandButton value="Cancel" action="{!cancelRecord}" reRender="frm" id="cancelBtn" />
+            </apex:outputPanel></center>
+        </apex:pageBlock>
+
+        <apex:actionFunction name="populateMarketVal" action="{!populateMarket}" rerender="frm" />
+        <apex:outputpanel >
+             <apex:actionstatus id="statusC">
+               <apex:facet name="start">
+                 <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb;
+                        height: 100%;opacity:0.65;width:100%;">
+                    <div class="waitingHolder" style="top: 100px; width: 100px;">
+                        <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." />
+                        <span class="waitingDescription">Please Wait...</span>
+                    </div>
+                 </div>
+               </apex:facet>
+             </apex:actionstatus>
+       </apex:outputpanel>
+    </apex:form>
+</apex:page>

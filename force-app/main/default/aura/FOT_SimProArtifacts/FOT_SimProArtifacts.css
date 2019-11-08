@@ -1,0 +1,47 @@
+.THIS.row-main {
+    background:rgba(176, 196, 223, 1.0) !important;
+}
+.THIS #popuptext{
+    color:t(colorTextLinkDisabled);
+    background:t(colorBackgroundScrollbarTrack);    
+    border:1px solid t(colorBorderSeparatorInverse);
+    border-radius:t(borderRadiusLarge);
+    
+}
+.THIS.scrollerSize {
+    height: 300px;
+}
+
+.THIS#simProStatusNote{
+   /* background : t(colorBackgroundInputError);*/
+    font-size : .875rem;
+	color:t(colorTextIconDefaultActive);
+}
+
+.THIS.marquee p {
+ /* Apply animation to this element */	
+ -moz-animation: marquee 5s linear infinite alternate;
+ -webkit-animation: marquee 5s linear infinite alternate;
+ animation: marquee 5s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes marquee {
+ 0%   { -moz-transform: translateX(20%); }
+ 100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes marquee {
+ 0%   { -webkit-transform: translateX(20%); }
+ 100% { -webkit-transform: translateX(0%); }
+}
+@keyframes marquee {
+ 0%   { 
+ -moz-transform: translateX(20%); /* Firefox bug fix */
+ -webkit-transform: translateX(20%); /* Firefox bug fix */
+ transform: translateX(20%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(0%); /* Firefox bug fix */
+ -webkit-transform: translateX(0%); /* Firefox bug fix */
+ transform: translateX(0%); 
+ }
+}

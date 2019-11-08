@@ -1,0 +1,64 @@
+<apex:page StandardController="FS_Execution_Plan__c" Extensions="FSEquipmentPlacementQuestionsCTRL" showHeader="False" sidebar="False" applyHtmlTag="false">
+<script>
+
+function closeWindow(isClose) {   
+   if(isClose=='No'){ 
+      window.close();
+ 
+    }
+    else{       
+        showError();         
+    }
+}
+
+
+
+</script>
+
+<apex:form style="border-style: solid;border-color:#a62264;border-width: 2.5px;">
+<apex:actionFunction name="showError" action="{!Save}" /> 
+
+ 
+<apex:pageBlock >
+ <apex:pageMessage severity="error" strength="1" rendered="{!displayErrorMessage}"  summary="{!errorMessage}" id="msg"/>
+
+<p style="font-family:sans-serif;font-Size:12px;color:#f40009"><b>Attention:</b> Install requirements may vary significantly based on the complexity and number of outlets within a particular execution plan. If your execution plan includes a large number of outlets, or requires communication of complex information during the site assessment and install process, we strongly encourage attachment of a detailed Equipment Placement Diagram to help inform all downstream stakeholders</p>
+<BR/>
+<apex:outputLabel for="theNotApplicableCheckbox" 
+                    style="text-align:right;color: #4a4a56;font-family:Arial,Helvetica,sans-serif;font-Size:91%; font-weight: bold;background-color: transparent !important;"  
+                    value="Check here, if attaching an equipment placement diagram"
+                    rendered="{!OR(displaySave, displaySaveandClose)}"/>
+<apex:inputCheckbox id="theNotApplicableCheckbox" rendered="{!OR(displaySave, displaySaveandClose)}" value="{!isSetAllNotApplicable}">
+<apex:actionSupport event="onchange" action="{!setAllNotApplicable}" reRender="idQuestionnaireInputSection"/>
+</apex:inputCheckbox>
+<BR/>
+<BR/>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!Save}" rendered="{!displaySave}"/>
+<apex:commandButton value="Save and Close" action="{!Save}"  rendered="{!displaySaveandClose}" onComplete="closeWindow('{!displaysaveCloseExep}');"/>
+
+<apex:commandButton value="Cancel" action="{!Cancel}" rendered="{!!displayOutputfield}"/>
+<apex:commandButton value="Edit" action="{!Edit}" rendered="{!displayEditButton}"/>
+</apex:pageBlockButtons>
+
+<apex:pageBlockSection columns="2" rendered="{!displayOutputfield}">
+
+<apex:repeat value="{!sequenceList}" var="sequence">
+
+   <apex:OutputField label="{!fsEquipmentMap[sequence].Question_Label__c}" value="{!fsExecObj[fsEquipmentMap[sequence].Field_API_Mapping__c]}" style="width:100px" rendered="{!displayOutputfield}">
+         <!-- <apex:inlineEditSupport showOnEdit="saveButton" event="ondblclick"/>-->
+   </apex:OutputField>
+
+</apex:repeat>
+</apex:pageBlockSection>
+
+<apex:pageBlockSection id="idQuestionnaireInputSection" columns="2" rendered="{!displayInputfield}">
+    <apex:repeat value="{!sequenceList}" var="sequence">
+    <apex:inputField label="{!fsEquipmentMap[sequence].Question_Label__c}" value="{!fsExecObj[fsEquipmentMap[sequence].Field_API_Mapping__c]}"  style="width:100px" required="true">
+  
+       </apex:inputField>
+    </apex:repeat>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

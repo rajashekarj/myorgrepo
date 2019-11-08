@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_FinalCustomLastModifiedby__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(isblank(FS_CustomLastModifiedBy__c), LastModifiedBy.FirstName &amp;&quot; &quot;&amp; LastModifiedBy.LastName , FS_CustomLastModifiedBy__r.FirstName &amp;&quot; &quot;&amp; FS_CustomLastModifiedBy__r.LastName )</formula>
+    <label>FS FinalCustomLastModifiedby</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,49 @@
+<!-- FOT_ViewEditArtifact -->
+<!-- Artifact Edit view custom lightning component
+	Owner : Anwesh - Infosys
+-->
+<aura:component implements="lightning:actionOverride,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global"  controller="FOT_EditArtifactController">
+    
+    <aura:attribute name="arti" type="FS_Artifact__c" />
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="pubRecordId" type="Id" />
+    <aura:attribute name="isPubArtifact" type="Boolean"/>
+    <aura:attribute name="artifactRT" type="String" />
+    <aura:attribute name="viewEdit" type="boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:handler name="onSaveSuccess" event="force:recordSaveSuccess" action="{!c.handleSaveSuccess}"/>
+    
+    
+    
+    <div class="slds-grid slds-grid_pull-padded-medium" style="width:100%">
+        <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth" >
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_Published}">
+                        <c:FOT_EditArtifact recordId="{!v.pubRecordId}" profileAccess="{!v.profileAccess}" />
+                    </aura:if>
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_DryRun}">
+                        <c:FOT_EditArtifact recordId="{!v.recordId}" profileAccess="{!v.profileAccess}" />
+                    </aura:if>
+        </div>
+        
+        
+        <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth" >
+            <div class="slds-grid slds-grid_pull-padded-medium" style="width:100%">
+                <div class="slds-theme_default slds-page-header slds-col slds-p-horizontal_medium customWidth">
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_Published}">
+                        <force:recordView recordId="{!v.recordId}"/>
+                    </aura:if>
+                    <aura:if isTrue="{!v.artifactRT == $Label.c.FOT_DryRun}">
+                        <aura:if isTrue="{!v.pubRecordId != null}">
+                            <force:recordView recordId="{!v.pubRecordId}"/>
+                            <aura:set attribute="else">
+                                <!-- <div class="slds-theme_default slds-page-header">No Published Artifact Associated</div> -->
+                                <span>No Published Artifact Associated</span>
+                            </aura:set>
+                        </aura:if>
+                    </aura:if>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>
