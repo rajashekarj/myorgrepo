@@ -1,0 +1,19 @@
+{!FS_Flavor_Change_Head__c.LastModifiedBy}  has requested your action for the following item : <a href={!FS_Flavor_Change_Head__c.Link} > {!FS_Flavor_Change_Head__c.Name}</a></br></br>
+ 
+
+This outlet is currently distributor delivered. The requested flavor change was rejected due to the distributor not carrying the requested product in inventory. </br> 
+The outlet has requested to switch to direct ship.</br></br>
+ 
+ 
+<b>Outlet ACN Information</b>: {!FS_Flavor_Change_Head__c.FS_Entity_ACN__c}</br>
+
+{!FS_Flavor_Change_Head__c.FS_Entity_Address__c}</br></br>
+
+ 
+<b>Outlet Distributor Information</b>: {!FS_Flavor_Change_Head__c.FS_Entity_Distributor_ACN__c}</br>
+
+{!FS_Flavor_Change_Head__c.FS_Entity_Distributor_Address__c}</br><br>
+
+<b>Activation Lead :</b> {!FS_Flavor_Change_Head__c.Activation_Lead__c} </br></br>
+
+Please click on this <a href="{!FS_Flavor_Change_Head__c.Org_Id__c}{!FS_Flavor_Change_Head__c.FS_HQ_ChainId__c}">Link</a> to switch the outlet to direct ship.

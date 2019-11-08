@@ -1,0 +1,18 @@
+Hi, </br>
+</br>
+Platform Change Notification:</br> </br>
+Installation {!FS_Installation__c.Name} requires your review.</br>
+Please click on link to navigate to Outlet record.</br>
+<a href="{!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.FS_Outlet_Id__c}">{!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.FS_Outlet_Id__c}</a>
+</br></br>
+ACN: {!FS_Installation__c.Outlet_ACN__c} </br>
+Outlet Name: {!FS_Installation__c.FS_Outlet_Name__c}</br>
+Distributor Name: {!FS_Installation__c.FS_Distributor_Name__c}</br>
+Calculated Customer Classification:
+ {!FS_Installation__c.FS_Calculated_Customer_Classification__c}</br>
+Activation Lead: {!FS_Installation__c.FS_Activation_Lead__c}</br>
+Prior Platform/s: {!FS_Installation__c.Prior_Platform_Type_Value__c} </br>
+New Platform/s: {!FS_Installation__c.Type_of_Dispenser_Platform__c} </br>
+</br>
+Thank you,</br>
+FET

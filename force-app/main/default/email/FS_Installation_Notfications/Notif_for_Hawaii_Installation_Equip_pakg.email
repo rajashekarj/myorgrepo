@@ -1,0 +1,65 @@
+<messaging:emailTemplate subject=" RUSH - FS Install Rush Request: ACN {!relatedTo.FS_Installation__r.Outlet_ACN__c} - {!relatedTo.FS_Installation__r.FS_Outlet__r.Name}" recipientType="User" relatedToType="FS_IP_Equipment_Package__c">
+<messaging:htmlEmailBody >
+<Script>
+fucntion outletInfo(){
+var str = "{!relatedTo.FS_Installation__r.FS_Outlet_Information__c}";
+var res = str.replace("<br>", /n);
+
+}
+</script>
+<p>Hello Freestyle Team,</p>
+
+<B><u>Rush Requested </u></b>
+
+<p><b>FET Execution Plan </b> : {!relatedTo.FS_Installation__r.FS_Execution_Plan__r.Name}</p>
+<b>Outlet Information: </b><br></br>
+<apex:outputText value="{!relatedTo.FS_Installation__r.FS_Outlet_Information__c}" escape="false"/>
+<br><br></br></br>
+
+<b>Requested Date :</b> {!relatedTo.FS_Installation__r.FS_Requested_Install_Date__c}<br></br>
+<b>Requested Install Time :</b>{!relatedTo.FS_Installation__r.FS_Install_Time__c}<br></br>
+<b>Expected Assigned SP :</b> {!relatedTo.FS_Installation__r.FS_SP_Code__c}<br></br>
+<b>Market Name :</b> {!relatedTo.FS_Installation__r.FS_Market__c}<br></br>
+<b>Market Activation Date :</b> {!relatedTo.FS_Installation__r.FS_Market_Activation_Date_old__c}<br><br></br></br>
+
+<p>
+<table border="1">
+<tr>
+<th> Expected FS Equipment</th>
+<th> Quantity</th>
+</tr>
+<tr>
+<td>9000 Series Dispenser:  {!relatedTo.FS_9000_Series_Dispenser__c}</td>
+<td>{!relatedTo.FS_9000_Series_Dispenser_QTY__c}</td>
+</tr>
+<tr>
+<td>IM Adapter/Lid : {!relatedTo.FS_Lid_IM_Adapter__c}</td>
+<td>{!relatedTo.FS_Lid_IM_Adapter_QTY__c}</td>
+</tr>
+<tr>
+<td>Pump Kit : {!relatedTo.FS_Pump_Kit__c}</td>
+<td>{!relatedTo.FS_Pump_Kit_QTY__c}</td>
+</tr>
+<tr>
+<td>Rack A : {!relatedTo.FS_Rack_A__c}</td>
+<td>{!relatedTo.FS_Rack_A_QTY__c}</td>
+</tr>
+<tr>
+<td>Regulator : {!relatedTo.FS_Regulator__c}</td>
+<td>{!relatedTo.FS_Regulator_QTY__c}</td>
+</tr>
+<tr>
+<td>Water Booster : {!relatedTo.FS_Water_Booster__c}</td>
+<td>{!relatedTo.FS_Water_Booster_QTY__c}</td>
+</tr>
+</table>
+</p>
+<br></br>
+
+
+<b>Reason for the rush :</b> {!relatedTo.FS_Installation__r.FS_Rush_Install_Reason__c}
+
+
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

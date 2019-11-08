@@ -1,0 +1,10 @@
+{!User.Name} modified the HQ: <br/><br/>
+
+HQ Name: {!Account.Name}<br/>
+HQ #: {!Account.FS_ACN__c}<br/>
+Region Customer: {!Account.00Ne0000000YCcA}<br/>
+HQ Sales: {!Account.OwnerFullName}<br/>
+FSM Approval: {!Account.FS_FSM_Review__c}<br/><br/>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!Account.Link} to be directed to the specific record referenced above.

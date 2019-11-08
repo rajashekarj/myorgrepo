@@ -1,0 +1,279 @@
+a {
+	outline: none;
+}
+.timbasurvey_list{
+	width:100%;
+	border-collapse: collapse; 
+	color:#8A8A8A;
+	margin:5px auto;
+	clear:both;
+}
+/* Table Header */
+.timbasurvey_list tr.header{
+	height: 30px;
+	background:#53C6E7 url(../img/shared/thbackground.png) repeat-x;
+	color: #FFF;	
+}
+.timbasurvey_list tr.header th{
+	padding:5px;
+}
+
+.timbasurvey_list tr.header th.first{
+	background:url(../img/shared/tcornerleft.png) left top no-repeat;
+}
+.timbasurvey_list tr.header th.last{
+	background:url(../img/shared/tcornerright.png) right top no-repeat;
+}
+
+/* Table Content */
+.timbasurvey_list tbody{
+	border:#ACC6CF 1px solid;
+	border:none;
+	padding:0 2px;
+}
+.timbasurvey_list tr{
+	border-bottom:1px solid #D2E9EE;
+	background:#FFF;
+	height:39px;
+}
+.timbasurvey_list tr.hover td{
+	background:#EAF7FB;
+}
+.timbasurvey_list tr td.tableName a{
+	text-decoration:none;
+	color:inherit;
+}
+.timbasurvey_list tr.hover td.tableName a{
+	border-bottom:#7F7F7F 1px solid;
+}
+.timbasurvey_list tr.selected td{
+	background:#6DD3EC 				    					url(../img/list/cellhover.png)repeat-x;
+	color:#FFF;
+}
+.timbasurvey_list tr td span.description{
+	color:#CCCCCC;
+	display:block;
+	font-size:12px;
+	font-weight:normal;
+	
+}
+.timbasurvey_list tr.selected td span.description{
+	color:#2684A9;
+	font-weight:bold;
+}
+/* Table footer */
+.timbasurvey_list tfoot tr{
+	height:5px;
+}
+.timbasurvey_list tfoot tr td.first{
+	background:#FFFFFF url(../img/shared/tfcornerleft.png) no-repeat left bottom;
+}
+.timbasurvey_list tfoot tr td.last{
+	background:#FFFFFF url(../img/shared/tfcornerright.png) no-repeat right bottom;
+}
+/* Shared Styles */
+.timbasurvey_list tr td,
+.timbasurvey_list tr th{
+	text-align:center;
+}
+.timbasurvey_list tr td.tableName,
+.timbasurvey_list tr th.tableName{
+	text-align:left;
+	min-width:30%;
+}
+.timbasurvey_list tr td.tableName{
+	font-weight:bold;
+}
+/* List navigation Panel */
+.listnavigator{
+	clear:both;
+	height:20px;
+	margin:0 auto;
+	width:184px;
+}
+.listnavigator div{
+	width:26px;
+	height:24px;
+	float: left;
+	margin:0 2px;
+}
+/* Pagination */
+.listnavigator .next{
+	background: url(../img/shared/next.png) no-repeat transparent;
+}
+.listnavigator .prev{
+	background: url(../img/shared/previous.png) no-repeat transparent;	
+}
+.listnavigator .end{
+	background: url(../img/shared/last.png) no-repeat transparent;
+}
+.listnavigator .begin{
+	background: url(../img/shared/first.png) no-repeat transparent;
+}
+/* Hover */
+.listnavigator div.hover{
+	background-position: left center;
+}
+/* Disabled */
+.listnavigator div.disabled{
+	background-position: left bottom;
+}
+/*			*/
+.listnavigator .count{
+	width: 42px;
+	height: 21px;
+	border: 1px #aac9d3 solid;
+	background:#FFF url(../img/surveylist/pagination_picklist.png) no-repeat 90% 7px;i
+	padding:0 5px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+}
+.listnavigator .selectList{
+	display:none;
+	position:absolute;
+	bottom:100%;
+	width:37px;
+	text-align:center;
+	list-style:none;
+
+	margin:0 2px;
+	background:#FFF;
+	border:#ACC6CF 1px solid;
+	border-bottom:none;
+	
+	padding:0 2px;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.listnavigator  .selectList li{
+	margin:0;
+	padding:0;
+}
+.listnavigator .selectContainer{
+	background:none;
+	position:relative;
+	
+	width:auto;	
+	text-align:center;
+	font-weight:bold;
+	color:#1D7FA3;
+}
+/* SurveyList - ActionPanel */
+tr td .actionPanel{
+	height:32px;
+	margin:0 auto;
+	width:160px;
+}
+tr td .actionPanel a{
+	float:left;
+	height:32px;
+	width:32px;
+	text-decoration:none;
+	text-indent:9999px;
+	white-space:nowrap;
+	overflow:hidden;
+	
+	background-image:url(../img/surveylist/actioniconset.png);	
+}
+/* Inactive icons */
+tr td .actionPanel a.collect{
+	background-position:0px top;
+}
+tr td .actionPanel a.preview{
+	background-position:128px top;
+}
+tr td .actionPanel a.edit{
+	background-position:96px top;
+}
+tr td .actionPanel a.analyze{
+	background-position:64px top;
+}
+tr td .actionPanel a.fill{
+	background-position:32px top;
+}
+/* Disable icons */
+tr.selected td .actionPanel a.collect.disable,
+tr.hover td .actionPanel a.collect.disable{
+	background-position:0px top!important;
+}
+tr.selected td .actionPanel a.preview.disable,
+tr.hover td .actionPanel a.preview.disable{
+	background-position:128px top!important;
+}
+tr.selected td .actionPanel a.edit.disable,
+tr.hover td .actionPanel a.edit.disable{
+	background-position:96px top!important;
+}
+tr.selected td .actionPanel a.analyze.disable,
+tr.hover td .actionPanel a.analyze.disable{
+	background-position:64px top!important;
+}
+tr.selected td .actionPanel a.fill.disable,
+tr.hover td .actionPanel a.fill.disable{
+	background-position:32px top!important;
+}
+/* Active icons */
+tr.selected td .actionPanel a.collect,
+tr.hover td .actionPanel a.collect{
+	background-position:0px 64px;
+}
+tr.selected td .actionPanel a.preview,
+tr.hover td .actionPanel a.preview{
+	background-position:128px 64px;
+}
+tr.selected td .actionPanel a.edit,
+tr.hover td .actionPanel a.edit{
+	background-position:96px 64px;
+}
+tr.selected td .actionPanel a.analyze,
+tr.hover td .actionPanel a.analyze{
+	background-position:64px 64px;
+}
+tr.selected td .actionPanel a.fill,
+tr.hover td .actionPanel a.fill{
+	background-position:32px 64px;
+}
+/* Hover icons */
+tr.selected td .actionPanel a.collect.hover,
+tr.hover td .actionPanel a.collect.hover{
+	background-position:0px 32px;
+}
+tr.selected td .actionPanel a.preview.hover,
+tr.hover td .actionPanel a.preview.hover{
+	background-position:128px 32px;
+}
+tr.selected td .actionPanel a.edit.hover,
+tr.hover td .actionPanel a.edit.hover{
+	background-position:96px 32px;
+}
+tr.selected td .actionPanel a.analyze.hover,
+tr.hover td .actionPanel a.analyze.hover{
+	background-position:64px 32px;
+}
+tr.selected td .actionPanel a.fill.hover,
+tr.hover td .actionPanel a.fill.hover{
+	background-position:32px 32px;
+}
+/* Status Icons */
+span.status{
+	text-indent:9999px;
+	white-space:nowrap;
+	display:block;
+	width:14px;
+	height:14px;
+	margin:0 auto;
+	overflow:hidden;
+}
+span.status.on{
+	background:url(../img/surveylist/collection_on.png) no-repeat;
+}
+span.status.off{
+	background:url(../img/surveylist/collection_off.png) no-repeat;
+}

@@ -1,0 +1,58 @@
+#bodyTable {
+padding:0!important;
+}
+
+.customDijitLinks,.customDijitLinks:hover {
+text-decoration:none;
+padding:3px 10px!important;
+}
+
+.sectionHeader {
+background:#F8F8F7 url(../../imgs/headers/headerbg.jpg) repeat-x bottom left;
+border-bottom:3px solid #8BA0BD;
+height:47px;
+}
+
+.sectionHeader h1 {
+display:block;
+font-family:Arial;
+font-size:23px;
+font-weight:700;
+height:35px;
+margin-left:10px;
+padding-left:59px;
+padding-top:12px;
+}
+
+h1.List {
+background:url('../../imgs/headers/listHeader.jpg') no-repeat bottom left;
+}
+
+h1.Collect {
+background:url('../../imgs/headers/collectHeader.jpg') no-repeat bottom left;
+}
+
+h1.Design {
+background:url('../../imgs/headers/designHeader.jpg') no-repeat bottom left;
+}
+
+h1.Analyze {
+background:url('../../imgs/headers/analizeHeader.jpg') no-repeat bottom left;
+}
+
+.hr {
+border-top:1px solid #657C9C;
+height:5px;
+margin-top:5px;
+clear:both;
+overflow:hidden;
+position:relative;
+}
+
+.margin {
+margin:10px 0;
+}
+
+.clear {
+clear:both;
+}

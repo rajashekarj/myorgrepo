@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_To_AMS_Team_Informing_About_Cancelled_RO4W</fullName>
+        <description>Email To AMS Team Informing About Cancelled RO4W</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_RO4W_AMOA_Receipents</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>freestylecustomerservice@coca-cola.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Send_Mail_To_AMS_Team</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Email_alert_to_Footprint</fullName>
+        <ccEmails>fetprod1@gmail.com</ccEmails>
+        <description>Email alert to Footprint</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gcurti@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jbrooks@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>palbrecht@coca-cola.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sleary@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Email_Notification_for_FootPrint_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Install_On_Hold</fullName>
+        <description>Install On-Hold</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>AC</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>COM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>PIC</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>PM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Install_On_Hold</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Install_Rescheduled</fullName>
+        <description>Install Rescheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Install_Rescheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Install_Rescheduled_with_Order_Processed</fullName>
+        <description>Install Rescheduled with Order Processed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anirudh.madhusudan@infosys.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>julmejia@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lasimmons@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lsample@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lywilliams@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sjohnson1@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vethomas@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Install_Rescheduled_with_Order_Processed</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Install_Scheduled_Regular</fullName>
+        <description>Install Scheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Flavor_Change_Request_at_4_Install_Scheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Notify_CDM_Team_to_Remove_Relocate_the_OD</fullName>
+        <description>Notify CDM Team to Remove/Relocate the OD</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/FS_CDM_Team_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Pending_Reschedule</fullName>
+        <description>Pending Reschedule</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>COM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_Footprint</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Pending_Reschedule</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Reschedule_Rush</fullName>
+        <description>Reschedule Rush</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>COM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Reschedule_Rush_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Valid_Not_Approved</fullName>
+        <description>Valid Not Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>COM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Valid_Not_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Full_Relocation_Completed_alert</fullName>
+        <description>Full Relocation Completed alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Sales Team Member</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>ccastfreestylesupport@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>FS_Entering_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM_Execution__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Full_Relocation_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>Full_Removal_Completed_alert</fullName>
+        <description>Full Removal Completed alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Sales Team Member</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>PIA_Complete_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>ccastfreestylesupport@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>FS_Entering_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM_Execution__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Full_Removal_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>Install_On_Hold_Cancelled_Steve_w_SME</fullName>
+        <description>Install On Hold/Cancelled (Steve w/ SME)</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_SME_Name__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Install_On_Hold_Cancelled_Steve_w_SME</template>
+    </alerts>
+    <alerts>
+        <fullName>Install_On_Hold_with_Install_Date</fullName>
+        <description>Install On-Hold with Install Date</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>AC</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>COM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>PIC</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>PM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_Davaco</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_Footprint</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Install_On_Hold_with_Install_Date</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_CDM_user_platform_change</fullName>
+        <description>Notify CDM user platform change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kfrancisgreen@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Notify_CDM_user_of_platform_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_COM_PM_Users_on_PIA_Record_Creation</fullName>
+        <description>Notify COM &amp; PM Users on PIA Record Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_COM_Regular__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_Entering_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM_Execution__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Notification_to_COM_PM_Users_on_PIA_Record_Creation</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_COM_user_platform_change</fullName>
+        <description>Notify COM user platform change</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_COM_Regular__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_Entering_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM_Regular__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Platform_Change_notification_COM_Users</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_NDO_user_platform_change</fullName>
+        <description>Notify NDO user platform change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>pamcmanus@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sandippatel@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Platform_change_Notification_for_NDO_Users</template>
+    </alerts>
+    <alerts>
+        <fullName>Pending_Reschedule_SME</fullName>
+        <description>Pending Reschedule - SME</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_SME_Name__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Pending_Reschedule</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_AMOA_Complete_Email_to_PM</fullName>
+        <description>Send AMOA Complete Email to PM</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_PM_Execution__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/AMOA_Complete</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Append_Market_activation_override_reason</fullName>
+        <field>FS_Market_Activation_Override_Reasons__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE( FS_Market_Activation_Override_Reasons__c))), 
+&#39;[&#39; + FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Market_Activation_Override_Reason__c + BR() + BR() +PRIORVALUE( FS_Market_Activation_Override_Reasons__c ) + BR(), 
+&#39;[&#39; +FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Market_Activation_Override_Reason__c + BR() )</formula>
+        <name>Append Market activation override reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Date_whn_changed_from_4_install_Sheduled</fullName>
+        <field>FSDate_whn_chagd_from_4_install_Sheduled__c</field>
+        <formula>today()</formula>
+        <name>Date whn changed from 4 install Sheduled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Market_Activation_Override_update</fullName>
+        <description>FS Market Activation Override update</description>
+        <field>FS_Market_Activation_override__c</field>
+        <literalValue>0</literalValue>
+        <name>FS Market Activation Override update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Overall_Status</fullName>
+        <field>Overall_Status2__c</field>
+        <formula>&#39;5 Install Complete&#39;</formula>
+        <name>Overall Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Upda_Installation_in_new_outlet_comp</fullName>
+        <field>FS_InstallationNew_outlet_Complete_date__c</field>
+        <formula>Now()</formula>
+        <name>Updating Installation in new outlet comp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Updat_PostInstal_Act_Completd_Date</fullName>
+        <field>FS_PostInstal_Activity_Completed_Date__c</field>
+        <formula>Now()</formula>
+        <name>UpdatingPostInstal Act Completd Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Updat_Removal_frm_old_Oultet_SP_Date</fullName>
+        <field>FS_Removal_from_old_Outlet_to_SP_Date__c</field>
+        <formula>Now()</formula>
+        <name>Updating Removal frm old Oultet SP Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_No_SP_Storage_Completed_date</fullName>
+        <field>FS_No_SP_Storage_Completed_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update No SP Storage Completed date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Updating_AMOA_Completed_Date_Time</fullName>
+        <field>FS_AMOA_Completed_Date_Time__c</field>
+        <formula>Now()</formula>
+        <name>Updating AMOA Completed Date/Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Updating_AMOA_Submitted_Date_Time</fullName>
+        <field>FS_AMOA_Submitted_Date_Time__c</field>
+        <formula>Now()</formula>
+        <name>Updating_AMOA Submitted Date/Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_confirm_Install_Date_to_false</fullName>
+        <field>FS_Confirm_Install_Date__c</field>
+        <literalValue>0</literalValue>
+        <name>confirm Install Date to false</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_up_Date_when_it_is_4_install_Sheduled</fullName>
+        <field>FS_Date_when_it_is_4_install_Sheduled__c</field>
+        <formula>today()</formula>
+        <name>updateDate when it is 4 install Sheduled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Install_OB_Status_Not_Footprint</fullName>
+        <description>If anyone else besides Footprint is selected as the Trainer then the OB Status should default to Cancelled when the installation record is created.</description>
+        <field>FS_OB_Status__c</field>
+        <literalValue>Cancelled</literalValue>
+        <name>Install OB-Status Not Footprint</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Install_OB_Status_for_Footprint</fullName>
+        <description>OB Status default to new order when the installation record is created and Footprint is listed as the Trainer</description>
+        <field>FS_OB_Status__c</field>
+        <literalValue>New Order</literalValue>
+        <name>Install OB-Status for Footprint</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Updated_Date_Time</fullName>
+        <field>FS_Last_Updated_DateTime__c</field>
+        <formula>FS_Local_Time__c+ &#39; EST&#39;</formula>
+        <name>last Updated Date Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Updated_by</fullName>
+        <field>FS_Last_Updated_By__c</field>
+        <formula>$User.FirstName &amp;&quot; &quot;&amp;$User.LastName</formula>
+        <name>Last Updated by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Market_activation_Reason_blan</fullName>
+        <description>Market activation Reason blan</description>
+        <field>FS_Market_Activation_Override_Reason__c</field>
+        <name>Market activation Reason blan</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Planned_7000_Series_FS_field_update</fullName>
+        <field>FS_Planned_7000_Freestyle_Disp__c</field>
+        <formula>FS_of_7000_Series_Units_being_relocated__c</formula>
+        <name>Planned 7000 Series FS field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Planned_8000_Series_FS_Field_update</fullName>
+        <field>FS_Planned_CrewServe_Freestyle_Disp__c</field>
+        <formula>FS_of_8000_Series_units_being_relocated__c</formula>
+        <name>Planned 8000 Series FS Field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Planned_9000_Series_FS_field_update</fullName>
+        <field>FS_PlannedSelfServeFreestyleDisp__c</field>
+        <formula>FS_of_9000_Series_units_being_relocated__c</formula>
+        <name>Planned 9000 Series FS field update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Recalc_Overall_Status</fullName>
+        <field>Blank_Overall_Status__c</field>
+        <formula>&#39;Yes&#39;</formula>
+        <name>Recalc Overall Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Closeout_Notes_Comments</fullName>
+        <field>FS_Closeout_Notes_Comments__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_Closeout_Notes_Comments__c))), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Closeout_Notes_CommentsTimestamp__c + BR() + BR() +PRIORVALUE(FS_Closeout_Notes_Comments__c) + BR(), 
+&#39;[&#39; + FS_Local_Time__c  + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Closeout_Notes_CommentsTimestamp__c + BR() )</formula>
+        <name>Update Closeout Notes/Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Customer_Support_Notes</fullName>
+        <description>Update Customer Support Notes</description>
+        <field>FS_Customer_Support_Notes__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_Customer_Support_Notes__c))), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Add_new_Customer_Support_Notes__c + BR() + BR() +PRIORVALUE(FS_Customer_Support_Notes__c) + BR(), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Add_new_Customer_Support_Notes__c + BR() )</formula>
+        <name>Update Customer Support Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Davaco_Enter_By</fullName>
+        <field>FS_Davaco_Order_Entered_By__c</field>
+        <formula>$User.FirstName + &quot; &quot; + $User.LastName</formula>
+        <name>Update Davaco Enter By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Davaco_Entry_Date</fullName>
+        <field>FS_DavacoOrderEnteredDateTime__c</field>
+        <formula>Now()</formula>
+        <name>Update Davaco Entry Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_InstallNotesComments</fullName>
+        <field>FS_Install_Notes_Comments__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_Install_Notes_Comments__c))), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Install_Notes_Comments_Timestamp_Text__c + BR() + BR() +PRIORVALUE(FS_Install_Notes_Comments__c) + BR(), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Install_Notes_Comments_Timestamp_Text__c + BR() )</formula>
+        <name>update Install Notes/Comments Timestamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NDO_Notes_Comments</fullName>
+        <field>FS_NDO_Notes_Comments__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_NDO_Notes_Comments__c))), 
+&#39;[&#39; + FS_Local_Time__c+ &#39; EST, &#39;+ $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_NDO_Notes_CommentsTimestamp__c + BR() + BR() +PRIORVALUE(FS_NDO_Notes_Comments__c) + BR(), 
+&#39;[&#39; + FS_Local_Time__c+ &#39; EST, &#39; +$User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_NDO_Notes_CommentsTimestamp__c + BR() )</formula>
+        <name>Update NDO Notes/Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Post_install_completed_date</fullName>
+        <field>FS_PostInstal_Activity_Completed_Date__c</field>
+        <formula>Now()</formula>
+        <name>Update Post install completed date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_ReadinessNotes</fullName>
+        <field>FS_Readiness_Notes__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_Readiness_Notes__c))), 
+&#39;[&#39; +FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Readiness_NotesTimestamp__c + BR() + BR() +PRIORVALUE(FS_Readiness_Notes__c) + BR(), 
+&#39;[&#39; +FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Readiness_NotesTimestamp__c + BR() )</formula>
+        <name>Update ReadinessNotes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updating_CCAST_Request_Completed_Date_Ti</fullName>
+        <field>FS_CCAST_Request_Complet_DateTime_Stamp__c</field>
+        <formula>NOW()</formula>
+        <name>Updating CCAST Request Completed Date/Ti</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updating_CCAST_Request_Submitted_Date_ti</fullName>
+        <field>FS_CCAST_Request_Submit_Date_Time_Stamp__c</field>
+        <formula>NOW()</formula>
+        <name>Updating CCAST Request Submitted Date/ti</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>XClear_add_market_activation_reason</fullName>
+        <field>FS_Market_Activation_Override_Reason__c</field>
+        <name>Clear add market activation reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Xclear_Add_New_Closeout_Notes</fullName>
+        <field>FS_Closeout_Notes_CommentsTimestamp__c</field>
+        <name>Xclear Add New Closeout Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Xclear_Add_New_NDO_Notes</fullName>
+        <field>FS_NDO_Notes_CommentsTimestamp__c</field>
+        <name>Xclear Add New NDO Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Xclear_Add_New_Readiness_Notes</fullName>
+        <field>FS_Readiness_NotesTimestamp__c</field>
+        <name>Xclear Add New Readiness Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Xclear_Add_new_Customer_Support_Notes</fullName>
+        <description>clear Add new Customer Support Notes</description>
+        <field>FS_Add_new_Customer_Support_Notes__c</field>
+        <name>Xclear Add new Customer Support Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Xclear_the_Add_new_Install_notesComments</fullName>
+        <field>FS_Install_Notes_Comments_Timestamp_Text__c</field>
+        <name>Xclear the Add new Install notesComments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_scheduled_install_date_field</fullName>
+        <field>FS_Scheduled_Install_Date__c</field>
+        <formula>FS_Original_Install_Date__c</formula>
+        <name>update scheduled install date field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Auto Fill Overall Status For Installation</fullName>
+        <actions>
+            <name>FS_Overall_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W),Relocation (I4W),Removal,Replacement</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Checkbox Of Install date Confirm</fullName>
+        <actions>
+            <name>FS_confirm_Install_Date_to_false</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>IF(AND(NOT(ISCHANGED(FS_Scheduled_Install_Date__c)),FS_Confirm_Install_Date__c), true, false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Date when it is 4 install Sheduled</fullName>
+        <actions>
+            <name>FS_up_Date_when_it_is_4_install_Sheduled</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(PRIORVALUE( Overall_Status2__c)!=&quot;Scheduled&quot;,Overall_Status2__c==&quot;Scheduled&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Date whn changed from 4 install Sheduled</fullName>
+        <actions>
+            <name>Date_whn_changed_from_4_install_Sheduled</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>Overall_Status2__c==&quot;Complete&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Market_Activation_Recordtype_update</fullName>
+        <actions>
+            <name>FS_Market_Activation_Override_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Market_activation_Reason_blan</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(iSChanged(RecordTypeId),AND( RecordType.Name==$Label.IP_Relocation_I4W_Rec_Type,  iSChanged(Type_of_Dispenser_Platform__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Post_Install Activity Completed Date</fullName>
+        <actions>
+            <name>FS_Updat_PostInstal_Act_Completd_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Activity_Complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W),Relocation (I4W),Removal,Replacement</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Updating CCAST Request Completed Date%2Ftime Stamp</fullName>
+        <actions>
+            <name>Updating_CCAST_Request_Completed_Date_Ti</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_CCAST_Request_Completed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Updating CCAST Request Completed time stamp when CCAST Request Completed is checked</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Updating_AMOA Completed Date%2FTime</fullName>
+        <actions>
+            <name>FS_Updating_AMOA_Completed_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Asset_Tracking_Form_AMOA_Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W)</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Updating_AMOA Submitted Date%2FTime</fullName>
+        <actions>
+            <name>FS_Updating_AMOA_Submitted_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Asset_Tracking_Form_AMOA_Status__c</field>
+            <operation>equals</operation>
+            <value>Removal Done - AMOA Pending,Submitted</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W)</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Updating_Installation in new outlet complete Date</fullName>
+        <actions>
+            <name>FS_Upda_Installation_in_new_outlet_comp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_relocation_new_outlet_Complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W),Relocation (I4W),Removal,Replacement</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Updating_No SP Storage Completed Date</fullName>
+        <actions>
+            <name>FS_Update_No_SP_Storage_Completed_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_No_SP_Storage_Relocation_complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W),Relocation (I4W),Removal,Replacement</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Updating_Removal_Old to new_date</fullName>
+        <actions>
+            <name>FS_Updat_Removal_frm_old_Oultet_SP_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Relocation_from_old_outlet_to_SP_is__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W),Relocation (I4W),Removal,Replacement</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Full Relocation Completed</fullName>
+        <actions>
+            <name>Full_Relocation_Completed_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>Full Relocation Completed</description>
+        <formula>AND(OR(RecordType.Name =$Label.IP_Relocation_I4W_Rec_Type,RecordType.Name =$Label.IP_Relocation_O4W_Rec_Type), FS_Activity_Complete__c=TRUE )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Full Removal Completed</fullName>
+        <actions>
+            <name>Full_Removal_Completed_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(OR(OR(RecordType.Name = $Label.IP_Removal_Rec_Type,RecordType.Name =$Label.IP_Relocation_O4W_Rec_Type,RecordType.Name = $Label.IP_Replacement_Rec_Type)), FS_Activity_Complete__c=TRUE )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Install Notes%2FComments Timestamp</fullName>
+        <actions>
+            <name>Update_InstallNotesComments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Xclear_the_Add_new_Install_notesComments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISCHANGED(FS_Install_Notes_Comments_Timestamp_Text__c),!IsBlank(FS_Install_Notes_Comments_Timestamp_Text__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Install OB-Status Not Footprint</fullName>
+        <actions>
+            <name>Install_OB_Status_Not_Footprint</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Trainer__c</field>
+            <operation>equals</operation>
+            <value>COM,Not needed(used for 2nd disp in loc),Customer</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_OB_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>If anyone else besides Footprint is selected as the Trainer then the OB Status should default to Cancelled when the installation record is created.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Install OB-Status for Footprint</fullName>
+        <actions>
+            <name>Install_OB_Status_for_Footprint</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Trainer__c</field>
+            <operation>equals</operation>
+            <value>EcoSure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_OB_Status__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>OB Status default to new order when the installation record is created and Footprint is listed as the Trainer</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Install On-Hold - No Install Date</fullName>
+        <actions>
+            <name>FS_Install_On_Hold</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Overall_Status__c</field>
+            <operation>equals</operation>
+            <value>On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Scheduled_Install_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Pending_for_Reschedule__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Install On-Hold - with Install Date</fullName>
+        <actions>
+            <name>Install_On_Hold_with_Install_Date</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Overall_Status__c</field>
+            <operation>equals</operation>
+            <value>On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Scheduled_Install_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Installation On Hold%2FCancelled %28Steve w%2F SME%29</fullName>
+        <actions>
+            <name>Install_On_Hold_Cancelled_Steve_w_SME</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Overall_Status__c</field>
+            <operation>equals</operation>
+            <value>On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_SME_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Overall_Status__c</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Market activation override Reason</fullName>
+        <actions>
+            <name>Append_Market_activation_override_reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>XClear_add_market_activation_reason</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Market activation override Reason</description>
+        <formula>OR(ISCHANGED( FS_Market_Activation_Override_Reason__c ),!IsBlank( FS_Market_Activation_Override_Reason__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify CDM Team about Relocation%2FRemoval</fullName>
+        <actions>
+            <name>FS_Notify_CDM_Team_to_Remove_Relocate_the_OD</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Total_Number_of_Disp_frm_outlet__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Activity_Complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify CDM user on platform change</fullName>
+        <actions>
+            <name>Notify_CDM_user_platform_change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(RecordType.Name = &#39;New Install&#39;, OR(PRIORVALUE(Overall_Status2__c)= &#39;Scheduled&#39;, PRIORVALUE(Overall_Status2__c )= &#39;Pending Reschedule&#39;),  ISCHANGED( Type_of_Dispenser_Platform__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify COM %26 PM Users on PIA Record Creation</fullName>
+        <actions>
+            <name>Notify_COM_PM_Users_on_PIA_Record_Creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W),Relocation (I4W),Removal,Replacement</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify COM User on Platform Change</fullName>
+        <actions>
+            <name>Notify_COM_user_platform_change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(RecordType.Name = &#39;New Install&#39;, ISCHANGED(FS_Platform_Type_Approve_Check__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify NDO user platform change</fullName>
+        <actions>
+            <name>Notify_NDO_user_platform_change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISNEW()), RecordType.Name = &#39;New Install&#39;, FS_Order_Delivery_method_check__c,  ISCHANGED(Type_of_Dispenser_Platform__c), OR(PRIORVALUE(Overall_Status2__c)= &#39;Scheduled&#39;,  PRIORVALUE(Overall_Status2__c )= &#39;Pending Reschedule&#39;, PRIORVALUE(Overall_Status2__c)= &#39;Ready for Scheduling&#39;)  )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>NotoficationtoCDM_for_Brand_Flavor_ChangesRegInstall</fullName>
+        <actions>
+            <name>FS_Install_Scheduled_Regular</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Regualr Installation</description>
+        <formula>ISCHANGED(Notify_NDO__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pending Reschedule</fullName>
+        <actions>
+            <name>FS_Pending_Reschedule</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.Overall_Status2__c</field>
+            <operation>contains</operation>
+            <value>Pending Reschedule</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Pending Reschedule - SME</fullName>
+        <actions>
+            <name>Pending_Reschedule_SME</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.Overall_Status2__c</field>
+            <operation>contains</operation>
+            <value>Pending Reschedule</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_SME_Name__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Planned 7000 Series Freestyle Dispenser Rule</fullName>
+        <actions>
+            <name>Planned_7000_Series_FS_field_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(FS_of_7000_Series_Units_being_relocated__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Planned 9000 Series Freestyle Dispenser Rule</fullName>
+        <actions>
+            <name>Planned_9000_Series_FS_field_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(FS_of_9000_Series_units_being_relocated__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Post Install date complete update</fullName>
+        <actions>
+            <name>Update_Post_install_completed_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.Overall_Status2__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Relocation (O4W),Relocation (I4W),Removal,Replacement</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Recalculate Overall Status</fullName>
+        <actions>
+            <name>Recalc_Overall_Status</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.Overall_Status2__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Reschedule Rush</fullName>
+        <actions>
+            <name>FS_Reschedule_Rush</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Overall_Status__c</field>
+            <operation>contains</operation>
+            <value>4</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Rush_Reschedule_Days__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Rush_Reschedule_Days__c</field>
+            <operation>lessThan</operation>
+            <value>16</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send AMOA Completed Email to PM</fullName>
+        <actions>
+            <name>Send_AMOA_Complete_Email_to_PM</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Asset_Tracking_Form_AMOA_Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Email If RO4W is Cancelled</fullName>
+        <actions>
+            <name>Email_To_AMS_Team_Informing_About_Cancelled_RO4W</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Asset_Tracking_Form_AMOA_Status__c</field>
+            <operation>equals</operation>
+            <value>Submitted,Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Cancelled_oH__c</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <description>its sends email alert to AMS team member informing him for a cancelled RO4W.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>To Send email to Footprint</fullName>
+        <actions>
+            <name>FS_Email_alert_to_Footprint</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Send email to Footprint when its checked</description>
+        <formula>PRIORVALUE(FS_Send_email_to_footprint__c)==false &amp;&amp; !ISNEW() &amp;&amp; FS_Send_email_to_footprint__c == true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Closeout Notes%2FComments</fullName>
+        <actions>
+            <name>Update_Closeout_Notes_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Xclear_Add_New_Closeout_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISCHANGED(FS_Closeout_Notes_CommentsTimestamp__c),!IsBlank(FS_Closeout_Notes_CommentsTimestamp__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Customer Support Notes</fullName>
+        <actions>
+            <name>Update_Customer_Support_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Xclear_Add_new_Customer_Support_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Customer Support Notes on replacment</description>
+        <formula>OR(ISCHANGED(FS_Add_new_Customer_Support_Notes__c),!IsBlank(FS_Add_new_Customer_Support_Notes__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update NDO Notes%2FComments</fullName>
+        <actions>
+            <name>Update_NDO_Notes_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Xclear_Add_New_NDO_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISCHANGED(FS_NDO_Notes_CommentsTimestamp__c),!ISBlank(FS_NDO_Notes_CommentsTimestamp__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update scheduled Install Date</fullName>
+        <actions>
+            <name>update_scheduled_install_date_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Scheduled_Install_Date__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Pending_for_Reschedule__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Original_Install_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Updated Last updated by and Date</fullName>
+        <actions>
+            <name>Last_Updated_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Last_Updated_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ischanged( FS_Market_Activation_override__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Valid Not Approved</fullName>
+        <actions>
+            <name>FS_Valid_Not_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Valid_fill_required__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>update Readiness Notes</fullName>
+        <actions>
+            <name>Update_ReadinessNotes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Xclear_Add_New_Readiness_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISCHANGED(FS_Readiness_NotesTimestamp__c),!IsBlank(FS_Readiness_NotesTimestamp__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

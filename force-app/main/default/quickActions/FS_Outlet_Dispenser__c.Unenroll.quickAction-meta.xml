@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Unenroll a dispenser from FET</description>
+    <fieldOverrides>
+        <field>FS_IsActive__c</field>
+        <formula>False</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>FS_Status__c</field>
+        <literalValue>Unenrolled</literalValue>
+    </fieldOverrides>
+    <label>Unenroll</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>FS_Outlet__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Status has been updated to Unenroll</successMessage>
+    <type>Update</type>
+</QuickAction>

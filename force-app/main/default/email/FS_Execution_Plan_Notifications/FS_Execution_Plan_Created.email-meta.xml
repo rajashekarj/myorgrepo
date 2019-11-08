@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Execution Plan Created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Execution Plan Created</name>
+    <style>none</style>
+    <subject>Please complete Execution Plan details {!FS_Execution_Plan__c.Name}</subject>
+    <textOnly>Please complete Execution Plan details for ACN {!Account.FS_ACN__c} and {!FS_Execution_Plan__c.FS_Headquarters__c}&lt;br&gt;
+{!FS_Execution_Plan__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

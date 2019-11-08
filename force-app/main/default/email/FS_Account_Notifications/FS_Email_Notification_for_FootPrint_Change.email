@@ -1,0 +1,23 @@
+Hello, <br/> <br/> 
+
+This serves as a notification to inform you that the scheduled Onboarding training date has changed and the trainer should be advised.  Please reschedule according to the dates and times indicated below: <br/> <br/> 
+
+•	Installation Name: {!FS_Installation__c.Name} <br/> 
+•	Outlet Name : {!FS_Installation__c.FS_Outlet__c} <br/> 
+•	Outlet ACN: {!FS_Installation__c.Outlet_ACN__c} <br/>
+•	Outlet Address: {!FS_Installation__c.FS_Outlet_Address__c} <br/>
+•	Outlet Phone: {!FS_Installation__c.Outlet_Phone__c} <br/>
+•	Onboarding Training Contact : {!FS_Installation__c.Onboarding_Training_Contact__c} <br/>
+•	Onboarding Training Contact Phone# : {!FS_Installation__c.Onboarding_Contact_Phone__c} <br/>
+•	Previous Onboarding Training Date:{!FS_Installation__c.FS_Previous_original_onboarding_date__c} <br/>
+•	New Onboarding Training Date and Time : {!FS_Installation__c.FS_Original_Onboarding_Date__c}  {!FS_Installation__c.FS_Training_Start_Time__c} <br/> <br/>
+
+
+Note that if a 12/31/2020 date is reflected in the “Original Onboarding Date” field above, then the request for Onboarding Training should be placed “On Hold” until further notice. You will be notified once a new Onboarding training date has been determined. <br/><br/>
+
+If you cannot accommodate this request or if you have questions or concerns please email  vendorsupport@coca-cola.com <br/><br/>
+
+Thank you and have a classic day! <br/><br/>
+
+Regards, <br/>
+FET Team

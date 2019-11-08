@@ -1,0 +1,1 @@
+The AMOA form attached to the Case <a href={!LEFT(Case.Link, LEN(Case.Link) - 15)}{!Case.Id}>{!Case.CaseNumber}</a> has been deleted. Please contact Sales Support in case of any questions.

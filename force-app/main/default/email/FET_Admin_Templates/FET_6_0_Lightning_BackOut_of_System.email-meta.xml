@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Deployment Alert</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Registration_Email_Admin_User</letterhead>
+    <name>FET 6.0 Lightning BackOut of System</name>
+    <style>freeForm</style>
+    <subject>Alert! FET system will be down from 4/5/19 through 4/7/19</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

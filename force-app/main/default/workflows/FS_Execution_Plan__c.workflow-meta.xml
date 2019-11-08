@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CDM_JT_Indicator_setup_alert</fullName>
+        <description>CDM - JT Indicator setup alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kfrancisgreen@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/CDM_JT_Indicator_setup_email</template>
+    </alerts>
+    <alerts>
+        <fullName>Damaged_Defective_Replacement_Completed_alert</fullName>
+        <description>Damaged/Defective Replacement Completed alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/Damaged_Defective_Replacement_Completed_template</template>
+    </alerts>
+    <alerts>
+        <fullName>Execution_Plan_20_Outlets_Alert</fullName>
+        <description>For Execution Plan 20+ Outlets - Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>palbrecht@coca-cola.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/Execution_Plan_20_Outlets</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Conversion_to_Legacy_Replacement_Completed</fullName>
+        <description>Conversion to Legacy Replacement Completed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_BAST</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Conversion_to_Legacy_Replacement_Completed</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Conversion_to_Legacy_Replacement_Initiated</fullName>
+        <description>Conversion to Legacy Replacement Initiated</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_BAST</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Conversion_to_Legacy_Replacement_Initiated</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Conversion_to_Legacy_Replacement_Scheduled</fullName>
+        <description>Conversion to Legacy Replacement Scheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_BAST</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Conversion_to_Legacy_Replacement_Scheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Damaged_Defective_Approval</fullName>
+        <description>Damaged/Defective Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_ENG</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Damaged_Defective_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Damaged_Defective_Replacement_Initiated</fullName>
+        <description>Damaged/Defective Replacement Initiated</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_ENG</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Damaged_Defective_Replacement_Initiatedal</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Damaged_Defective_Replacement_Scheduled</fullName>
+        <description>Damaged/Defective Replacement Scheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Damaged_Defective_Replacement_Scheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Execution_Plan_Approved</fullName>
+        <description>Execution Plan Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/FS_Execution_Plan_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Execution_Plan_Cancelled</fullName>
+        <description>Execution Plan Cancelled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>AC</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PIC__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/FS_Execution_Plan_Cancelled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Execution_Plan_Created</fullName>
+        <description>Execution Plan Created Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>PM</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <recipient>Sales Team Member</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/FS_Execution_Plan_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Execution_Plan_On_Hold</fullName>
+        <description>Execution Plan On-Hold</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>AC</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PIC__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/FS_Execution_Plan_On_Hold</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Full_Removal_Scheduled</fullName>
+        <description>Full Removal Scheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Full_Removal_Scheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Full_Removal_Started</fullName>
+        <description>Full Removal Started</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_FSM_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Full_Removal_Started</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_New_Address_Relo_Scheduled</fullName>
+        <description>New Address Relo Scheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_NDO</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_New_Address_Relo_Scheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_New_Address_Relo_Started</fullName>
+        <description>New Address Relo Started</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_BAST</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_NDO</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_New_Address_Relo_Started</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_New_Same_Position_Relo_Scheduled</fullName>
+        <description>New/Same Position Relo Scheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_New_Same_Position_Relo_Scheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_New_Same_Position_Relo_Started</fullName>
+        <description>New/Same Position Relo Started</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_New_Same_Position_Relo_Started</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Partial_Removal_Scheduled</fullName>
+        <description>Partial Removal Scheduled</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_BAST</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_FSSS</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_FSM_Approver__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Partial_Removal_Scheduled</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Partial_Removal_Started</fullName>
+        <description>Partial Removal Started</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_BAST</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Post_Install_Notifications/FS_Partial_Removal_Started</template>
+    </alerts>
+    <alerts>
+        <fullName>JCOM_Notification_alert</fullName>
+        <description>JCOM Notification alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/JCOM_Notification_email</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Address_Relo_Completed_alert</fullName>
+        <description>New Address Relo Completed alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_NDO</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/New_Address_Relo_Scheduled_template</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Same_Position_Relo_Completed</fullName>
+        <description>New/Same Position Relo Completed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/New_Same_Position_Relo_Completed</template>
+    </alerts>
+    <alerts>
+        <fullName>Partial_Removal_alert</fullName>
+        <description>Partial Removal alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_BAST</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>FS_WHSE</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <field>FS_Back_up_COM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <recipients>
+            <field>FS_PM__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Execution_Plan_Notifications/Partial_Removal_template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approval_submitter_update</fullName>
+        <field>FS_Submit_For_Approval__c</field>
+        <formula>LastModifiedBy.FirstName &amp;&quot; &quot;&amp; LastModifiedBy.LastName</formula>
+        <name>Approval submitter update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approvers_Name_Update</fullName>
+        <field>FS_Approvers_Name__c</field>
+        <formula>$User.FirstName +&#39; &#39;+  $User.LastName</formula>
+        <name>Approvers Name Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FSEquipment_Placement_Questionnaire_Link</fullName>
+        <field>FS_Equipment_Placement_Questionnaire_rt__c</field>
+        <formula>&#39;&lt;a href=&quot;/apex/FSEquipmentPlacementQuestions?id=&#39;+Id+&#39;&amp;DisplaySaveandClose=true&quot; target=&quot;_blank&quot; style=&quot;color: blue;font-size: 120%;font-style: italic;&quot;&gt;&lt;b&gt;Equipment Placement Survey&lt;/b&gt;&lt;/a&gt;&#39;</formula>
+        <name>Equipment Placement Questionnaire Link</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FSUpdate_Post_Installation_Activity_Text</fullName>
+        <field>FS_Post_Installation_Activity_Text__c</field>
+        <formula>TEXT( FS_Post_Installation_Activity__c )</formula>
+        <name>Update Post Installation Activity Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_All_Comments</fullName>
+        <field>FS_All_Comments__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_All_Comments__c))), 
+&#39;[&#39; +FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_JCOM_COM_Comments__c + BR() + BR() +PRIORVALUE(FS_All_Comments__c) + BR(), 
+&#39;[&#39; +FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_JCOM_COM_Comments__c + BR() )</formula>
+        <name>All Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Comments</fullName>
+        <field>FS_JCOM_COM_Comments__c</field>
+        <name>Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_EP_Final_Approval_Checked_Date</fullName>
+        <field>FS_Execution_Plan_Final_Approval_PM_Date__c</field>
+        <formula>Now()</formula>
+        <name>EP Final Approval Checked Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_EP_Final_Approval_Checked_Date_Null</fullName>
+        <field>FS_Execution_Plan_Final_Approval_PM_Date__c</field>
+        <name>EP Final Approval Checked Date Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Equipment_Package_Insert_Check</fullName>
+        <field>FS_Equipment_Package_Insert_Check__c</field>
+        <literalValue>1</literalValue>
+        <name>FS_Equipment_Package_Insert_Check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Final_Approval_Date</fullName>
+        <field>FS_ExecutionPlan_Final_Approval_DateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Final Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Ready_for_PM_Approval_Checked_Date</fullName>
+        <field>FS_Ready_for_PM_approval_Checked_Date__c</field>
+        <formula>Now()</formula>
+        <name>Ready for PM Approval Checked Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Ready_for_PM_Approval_Date_Null</fullName>
+        <field>FS_Ready_for_PM_approval_Checked_Date__c</field>
+        <name>Ready for PM Approval Date Null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_New_Address_Relo_Schedule_Text</fullName>
+        <field>FS_Type_of_Relocation_Text__c</field>
+        <formula>TEXT( FS_Type_of_Relocation__c )</formula>
+        <name>Update New Address Relo Scheduled Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_Replacement_Approval_Text</fullName>
+        <field>FS_Replacement_Approval_Status_Text__c</field>
+        <formula>TEXT(FS_Replacement_Approval_Status__c)</formula>
+        <name>Update Replacement Approval Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_Type_of_Removal_Text</fullName>
+        <field>FS_Type_of_Removal_Text__c</field>
+        <formula>TEXT(FS_Type_of_Removal__c)</formula>
+        <name>Update Type of Removal Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_Type_of_Replacement_Text</fullName>
+        <field>FS_Type_of_Replacement_Text__c</field>
+        <formula>TEXT( FS_Type_of_Replacement__c )</formula>
+        <name>Update Type of Replacement Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Preliminary_Date_Update</fullName>
+        <field>FS_EP_Preliminary_Approval_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Preliminary Date Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_PP_Preliminary_Approval</fullName>
+        <field>FS_EP_Preliminary_Approval_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Update PP Preliminary Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Approval submitter field update</fullName>
+        <actions>
+            <name>Approval_submitter_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>This workflow rule updates the user submitted for approval name field when the Ready for approval checkbox is checked.</description>
+        <formula>FS_Execution_Plan_Preliminary_Approval__c = true</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CDM - JT Indicator setup</fullName>
+        <actions>
+            <name>CDM_JT_Indicator_setup_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND((FS_Send_to_Davaco__c = true),(FS_Bypass_functions_Company_Locations__c = false))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conversion to Legacy Replacement Completed</fullName>
+        <actions>
+            <name>FS_Conversion_to_Legacy_Replacement_Completed</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ), ISCHANGED( FS_Activity_Complete__c ), ISCHANGED( FS_Replacement_Approval_Status__c ) , ISCHANGED( FS_Scheduled_Activity_Date__c )  ),  FS_Post_Installation_Activity_Text__c = &quot;Replacment&quot;, FS_Type_of_Replacement_Text__c = &quot;Conversion Back to Legacy&quot;, NOT(ISBLANK(FS_Scheduled_Activity_Date__c)),  FS_Activity_Complete__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conversion to Legacy Replacement Initiated</fullName>
+        <actions>
+            <name>FS_Conversion_to_Legacy_Replacement_Initiated</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ),  ISCHANGED( FS_Replacement_Approval_Status__c ) , ISCHANGED(  FS_Type_of_Replacement__c  )  ),  FS_Post_Installation_Activity_Text__c = &quot;Replacement&quot;, FS_Type_of_Replacement_Text__c = &quot;Conversion Back to Legacy&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Conversion to Legacy Replacement Scheduled</fullName>
+        <actions>
+            <name>FS_Conversion_to_Legacy_Replacement_Scheduled</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ),  ISCHANGED( FS_Replacement_Approval_Status__c ) , ISCHANGED(  FS_Type_of_Replacement__c  ) , ISCHANGED( FS_Scheduled_Activity_Date__c ) ),  FS_Post_Installation_Activity_Text__c = &quot;Replacement&quot;, FS_Type_of_Replacement_Text__c = &quot;Conversion Back to Legacy&quot;, NOT(ISBLANK(FS_Scheduled_Activity_Date__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Create Equipment Placement Questionnaire Link</fullName>
+        <actions>
+            <name>FSEquipment_Placement_Questionnaire_Link</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Equipment_Package_Insert_Check</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>Id!=null</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Damaged%2FDefective Approval</fullName>
+        <actions>
+            <name>FS_Damaged_Defective_Approval</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ),  ISCHANGED( FS_Replacement_Approval_Status__c ) , ISCHANGED(  FS_Type_of_Replacement__c  ) , ISCHANGED(  FS_Reason_for_Replacement_of_Damaged__c ) ),  OR(FS_Type_of_Replacement_Text__c = &quot;Damaged Freesytle Unit(s)&quot;,FS_Type_of_Replacement_Text__c = &quot;Defective Freesytle Unit(s)&quot;),  FS_Post_Installation_Activity_Text__c = &quot;Replacement&quot;, NOT(ISBLANK(FS_Reason_for_Replacement_of_Damaged__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Damaged%2FDefective Replacement Completed</fullName>
+        <actions>
+            <name>Damaged_Defective_Replacement_Completed_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ), ISCHANGED( FS_Replacement_Approval_Status__c ) , ISCHANGED( FS_Type_of_Replacement__c ), ISCHANGED( FS_Scheduled_Activity_Date__c ) ), OR(FS_Type_of_Replacement_Text__c = &quot;Damaged Freestyle Unit(s)&quot;,FS_Type_of_Replacement_Text__c = &quot;Defective Freestyle Unit(s)&quot;), FS_Post_Installation_Activity_Text__c = &quot;Replacement&quot;, FS_Replacement_Approval_Status_Text__c = &quot;Approved&quot;, NOT(ISBLANK(FS_Scheduled_Activity_Date__c )), FS_Activity_Complete__c = true)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Damaged%2FDefective Replacement Initiated</fullName>
+        <actions>
+            <name>FS_Damaged_Defective_Replacement_Initiated</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ),  ISCHANGED( FS_Replacement_Approval_Status__c ) , ISCHANGED(  FS_Type_of_Replacement__c  ) ),  OR(FS_Type_of_Replacement_Text__c = &quot;Damaged Freestyle Unit(s)&quot;,FS_Type_of_Replacement_Text__c = &quot;Defective Freestyle Unit(s)&quot;),  FS_Post_Installation_Activity_Text__c = &quot;Replacement&quot;, FS_Replacement_Approval_Status_Text__c = &quot;Approved&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Damaged%2FDefective Replacement Scheduled</fullName>
+        <actions>
+            <name>FS_Damaged_Defective_Replacement_Scheduled</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ),  ISCHANGED( FS_Replacement_Approval_Status__c ) , ISCHANGED(  FS_Type_of_Replacement__c  ), ISCHANGED( FS_Scheduled_Activity_Date__c ) ),  OR(FS_Type_of_Replacement_Text__c = &quot;Damaged Freestyle Unit(s)&quot;,FS_Type_of_Replacement_Text__c = &quot;Defective Freestyle Unit(s)&quot;),  FS_Post_Installation_Activity_Text__c = &quot;Replacement&quot;, FS_Replacement_Approval_Status_Text__c = &quot;Approved&quot;, NOT(ISBLANK(FS_Scheduled_Activity_Date__c )))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>EP Final Approval Checked Date Null</fullName>
+        <actions>
+            <name>FS_EP_Final_Approval_Checked_Date_Null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>if(AND(ISCHANGED(FS_Execution_Plan_Final_Approval_PMCheck__c),Not(FS_Execution_Plan_Final_Approval_PMCheck__c)),true,false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan 20%2B Outlets</fullName>
+        <actions>
+            <name>Execution_Plan_20_Outlets_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Consists_of_20_Outlets__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan Add Comments</fullName>
+        <actions>
+            <name>FS_All_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISCHANGED(FS_JCOM_COM_Comments__c),!IsBlank(FS_JCOM_COM_Comments__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan Approval Date</fullName>
+        <actions>
+            <name>Update_PP_Preliminary_Approval</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Submitted_to_JCOM_COM__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan Approved</fullName>
+        <actions>
+            <name>FS_Execution_Plan_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Final_Approval_PM__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan Cancelled</fullName>
+        <actions>
+            <name>FS_Execution_Plan_Cancelled</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Status__c</field>
+            <operation>equals</operation>
+            <value>Cancelled</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan Created</fullName>
+        <actions>
+            <name>FS_Execution_Plan_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan Final Approval Checked date</fullName>
+        <actions>
+            <name>FS_EP_Final_Approval_Checked_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>if(AND( ISCHANGED(FS_Execution_Plan_Final_Approval_PMCheck__c),FS_Execution_Plan_Final_Approval_PMCheck__c ),true,false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan On-Hold</fullName>
+        <actions>
+            <name>FS_Execution_Plan_On_Hold</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Status__c</field>
+            <operation>equals</operation>
+            <value>On-Hold</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Execution Plan Preliminary Approval Notification</fullName>
+        <actions>
+            <name>JCOM_Notification_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Submitted_to_JCOM_COM__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Preliminary_Approval__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>ExecutionPlan Update Approvers Name</fullName>
+        <actions>
+            <name>Approvers_Name_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Workflow Rule to update Approver&#39;s Name in Execution plan</description>
+        <formula>FS_Execution_Plan_Final_Approval_PM__c  = true</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Final Approval Date</fullName>
+        <actions>
+            <name>FS_Final_Approval_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Final_Approval_PM__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Full Removal Scheduled</fullName>
+        <actions>
+            <name>FS_Full_Removal_Scheduled</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Scheduled_Activity_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Removal Layout</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Type_of_Removal__c</field>
+            <operation>equals</operation>
+            <value>OOB,Competitive,Re-install Legacy,Store Remodel,BK ITP Remodel</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Full Removal Started</fullName>
+        <actions>
+            <name>FS_Full_Removal_Started</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Removal Layout</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Type_of_Removal__c</field>
+            <operation>equals</operation>
+            <value>OOB,Competitive,Re-install Legacy,Change of Ownership (New ACN),Store Remodel,BK ITP Remodel</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Address Relo Completed</fullName>
+        <actions>
+            <name>New_Address_Relo_Completed_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Activity_Complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Post_Installation_Activity__c</field>
+            <operation>equals</operation>
+            <value>Relocation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Type_of_Relocation__c</field>
+            <operation>equals</operation>
+            <value>New Address</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Address Relo Scheduled</fullName>
+        <actions>
+            <name>FS_New_Address_Relo_Scheduled</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ), ISCHANGED(  FS_Type_of_Relocation__c ), ISCHANGED( FS_Scheduled_Activity_Date__c  )),  FS_Type_of_Relocation_Text__c = &quot;New Address&quot; , CONTAINS(FS_Post_Installation_Activity_Text__c , &quot;Relocation&quot;), NOT(ISBLANK(FS_Scheduled_Activity_Date__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Address Relo Started</fullName>
+        <actions>
+            <name>FS_New_Address_Relo_Started</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED( FS_Post_Installation_Activity__c ), ISCHANGED(  FS_Type_of_Relocation__c )),  FS_Type_of_Relocation_Text__c = &quot;New Address&quot; , CONTAINS(FS_Post_Installation_Activity_Text__c , &quot;Relocation&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New%2FSame Position Relo Completed</fullName>
+        <actions>
+            <name>New_Same_Position_Relo_Completed</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(ISCHANGED( FS_Type_of_Relocation__c ),  OR(FS_Type_of_Relocation_Text__c = &quot;New Position in Outlet&quot;, FS_Type_of_Relocation_Text__c = &quot;Same Position in Outlet&quot;),  FS_Post_Installation_Activity_Text__c = &quot;Relocation (incl disconnect/reconnect)&quot;,  FS_Activity_Complete__c = true)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New%2FSame Position Relo Scheduled</fullName>
+        <actions>
+            <name>FS_New_Same_Position_Relo_Scheduled</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED(  FS_Scheduled_Activity_Date__c  ), ISCHANGED(  FS_Post_Installation_Activity__c   ), ISCHANGED(  FS_Type_of_Relocation__c )),  OR(FS_Type_of_Relocation_Text__c = &quot;New Position in Outlet&quot;, FS_Type_of_Relocation_Text__c = &quot;Same Position in Outlet&quot;),  FS_Post_Installation_Activity_Text__c = &quot;Relocation (incl disconnect/reconnect)&quot;, NOT(ISBLANK( FS_Scheduled_Installation_Date__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New%2FSame Position Relo Started</fullName>
+        <actions>
+            <name>FS_New_Same_Position_Relo_Started</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND( ISCHANGED(  FS_Type_of_Relocation__c ),  OR(FS_Type_of_Relocation_Text__c = &quot;New Position in Outlet&quot;, FS_Type_of_Relocation_Text__c = &quot;Same Position in Outlet&quot;),  FS_Post_Installation_Activity_Text__c = &quot;Relocation (incl disconnect/reconnect)&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Partial Removal Completed</fullName>
+        <actions>
+            <name>Partial_Removal_alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Activity_Complete__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Type_of_Removal__c</field>
+            <operation>equals</operation>
+            <value>Partial Removal (not replacing with legacy)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Post_Installation_Activity__c</field>
+            <operation>equals</operation>
+            <value>Removal</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Partial Removal Scheduled</fullName>
+        <actions>
+            <name>FS_Partial_Removal_Scheduled</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Removal Layout</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Type_of_Removal__c</field>
+            <operation>equals</operation>
+            <value>Partial Removal (not replacing with legacy)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Scheduled_Activity_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Partial Removal Started</fullName>
+        <actions>
+            <name>FS_Partial_Removal_Started</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <formula>AND(OR(ISCHANGED(   FS_Type_of_Removal__c ), ISCHANGED(  FS_Post_Installation_Activity__c   )),  FS_Type_of_Removal_Text__c = &quot;Partial Removal&quot;, FS_Post_Installation_Activity_Text__c = &quot;Removal&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Peliminary Approval Date</fullName>
+        <actions>
+            <name>Preliminary_Date_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Execution_Plan__c.FS_Execution_Plan_Preliminary_Approval__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ready for PM Approval Checked Date</fullName>
+        <actions>
+            <name>FS_Ready_for_PM_Approval_Checked_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>if( AND(ISCHANGED(FS_AllInstallation_Ready_for_PM_approval__c),FS_AllInstallation_Ready_for_PM_approval__c) ,true,false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ready for PM Approval Checked Date Null</fullName>
+        <actions>
+            <name>FS_Ready_for_PM_Approval_Date_Null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>if(AND(ISCHANGED(FS_AllInstallation_Ready_for_PM_approval__c),NOT(FS_AllInstallation_Ready_for_PM_approval__c)) ,true,false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

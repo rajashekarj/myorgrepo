@@ -1,0 +1,17 @@
+A Freestyle Outlet Dispenser has been confirmed removed for outlet : 
+<a href="{!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.FS_Outlet_Id__c}">{!FS_Installation__c.FS_Outlet_Name__c}</a>
+<BR>
+{!FS_Installation__c.FS_Outlet_Information__c}.
+<BR>
+
+using the following Post Install Transaction :<a href=" {!FS_Installation__c.Link}">{!FS_Installation__c.Name} </a>
+<BR>
+Transaction Type : {!FS_Installation__c.RecordType} 
+<BR>
+Platform Type/s : {!FS_Installation__c.Type_of_Dispenser_Platform__c} 
+<BR>  
+Reason Code : {!FS_Installation__c.FS_Reason_Code__c} 
+<BR> 
+Sub-Reason Code : {!FS_Installation__c.FS_Sub_Reason_Code__c}
+<BR> 
+Please disable any Cartridge Product Information, Jet Indicator, Outlet to Dispenser Linkages, or any other setup configuration that may no longer be needed.

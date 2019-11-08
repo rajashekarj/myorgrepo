@@ -1,0 +1,22 @@
+<messaging:emailTemplate subject="A Change Has Been Made to an Order Containing Valid-Fill: {!relatedTo.FS_Installation__r.FS_Outlet__r.name} - {!relatedTo.FS_Installation__r.Outlet_ACN__c}" recipientType="User" relatedToType="FS_IP_Equipment_Package__c">
+<messaging:htmlEmailBody >
+<p>
+Outlet Information: <br></br>
+<apex:outputText value="{!relatedTo.FS_Installation__r.FS_Outlet_Information__c}" escape="false"/>
+</p>
+
+<p>
+Transaction Status:  {!relatedTo.FS_Installation__r.Overall_Status2__c}<br></br>
+Scheduled Date: {!relatedTo.FS_Installation__r.FS_Scheduled_Install_Date__c}<br></br>
+Pending Reschedule?: {!relatedTo.FS_Installation__r.FS_Pending_for_Reschedule__c}<br></br>
+Reschedule Instance:  {!relatedTo.FS_Installation__r.FS_Install_Date_Reschedule_Instance__c}<br></br></p>
+
+<p>PM: {!relatedTo.FS_Installation__r.FS_PM_Regular__c}<br></br>
+PIC: {!relatedTo.FS_Installation__r.FS_Installation_PC_AC_1__c}<br></br></p>
+
+<p>Valid-Fill QTY:  {!relatedTo.FS_Valid_Fill_QTY__c}<br></br></p>
+
+<p>Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click <apex:outputLink value="{!LEFT($Api.Partner_Server_URL_250, FIND('.com/',$Api.Partner_Server_URL_250)+3)}/{!relatedTo.FS_Installation__c}" id="theLink"> {!relatedTo.FS_Installation__r.name} </apex:outputLink> to be directed to the specific record referenced above.</p>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

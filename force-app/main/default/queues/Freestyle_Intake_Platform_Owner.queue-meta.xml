@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Freestyle Intake Platform Owner</name>
+    <queueMembers>
+        <users>
+            <user>mparsons@coca-cola.com.fet</user>
+            <user>mguymon@coca-cola.com.fet</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>FE_Intake_Idea__c</sobjectType>
+    </queueSobject>
+</Queue>

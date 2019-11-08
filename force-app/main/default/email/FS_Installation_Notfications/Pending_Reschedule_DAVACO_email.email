@@ -1,0 +1,12 @@
+Pending Reschedule: {!FS_Installation__c.FS_Pending_for_Reschedule__c} 
+Reschedule Instance:{!FS_Installation__c.FS_Install_Date_Reschedule_Instance__c} 
+Scheduled Date: {!FS_Installation__c.FS_Scheduled_Install_Date__c} 
+Davaco Requirements: {!FS_Installation__c.FS_Davaco_Requirements__c} 
+Davaco Status: {!FS_Installation__c.FS_Davaco_SA_Status__c} 
+Transaction Status: {!FS_Installation__c.Overall_Status2__c} 
+
+Record ID: {!FS_Installation__c.FS_Record_ID__c} 
+Related Outlet: {!FS_Installation__c.FS_Related_Vendor__c} 
+
+{!FS_Installation__c.FS_Outlet__c} 
+{!FS_Installation__c.FS_Outlet_Information__c}

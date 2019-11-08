@@ -1,0 +1,32 @@
+Shipper,  {!Shipping_Form__c.FS_Shipper_Name__c} has created the following shipping form:
+
+Shipper Name : {!Shipping_Form__c.FS_Shipper_Name__c}
+Shipper Contact Name : {!Shipping_Form__c.FS_Shipper_Contact_Name__c}
+Shipper Address : {!Shipping_Form__c.FS_Shipper_Address__c}
+Shipper City : {!Shipping_Form__c.FS_Shipper_City__c}
+Shipper State/Province : {!Shipping_Form__c.FS_Shipper_State_Province__c}
+Shipper Postal Code : {!Shipping_Form__c.FS_Shipper_Postal_Code__c}
+Shipper Country : {!Shipping_Form__c.FS_Shipper_Country__c}
+Shipper Phone :  {!Shipping_Form__c.FS_Shipper_Phone__c}
+Shipper Email : {!Shipping_Form__c.Shipper_Email__c}
+Shipper Notes : {!Shipping_Form__c.Shipper_Notes__c}
+
+Consignee Name : {!Shipping_Form__c.FS_Consignee_name__c}
+Consignee Contact Name : {!Shipping_Form__c.FS_Consignee_Contact_Name__c}
+Consignee Street Address :  {!Shipping_Form__c.FS_Consignee_Street_address__c}
+Consignee City : {!Shipping_Form__c.FS_Consignee_City__c}
+Consignee State/Province : {!Shipping_Form__c.FS_Consignee_State_Province__c}
+Consignee Postal Code : {!Shipping_Form__c.FS_Consignee_Postal_Code__c}
+Consignee Country : {!Shipping_Form__c.FS_Consignee_Country__c}
+Consignee Phone :  {!Shipping_Form__c.FS_Consignee_Phone__c}
+Consignee Email :  {!Shipping_Form__c.FS_Consignee_Email__c}
+
+Date Ready : {!Shipping_Form__c.FS_date_ready__c}
+Number of dispensers ready : {!Shipping_Form__c.FS_Number_of_dispensers_ready__c}
+PO Number : {!Shipping_Form__c.FS_PO_Number__c}
+Status :  {!Shipping_Form__c.FS_Status__c}
+Delivery Deadline :  {!Shipping_Form__c.FS_Delivery_Deadline__c}
+Inco Terms :  {!Shipping_Form__c.FS_IncoTerms__c}
+Delivery Method :  {!Shipping_Form__c.FS_Delivery_Method__c}
+
+Shipping Form link : {!Shipping_Form__c.Form_URL__c}

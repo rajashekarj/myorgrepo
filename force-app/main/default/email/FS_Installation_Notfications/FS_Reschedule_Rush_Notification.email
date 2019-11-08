@@ -1,0 +1,14 @@
+<p>The following location {!FS_Installation__c.FS_Outlet__c} is pending a Rush Reschedule. Please submit your approval to your Project Manager.<p>
+
+<p>Outlet Information: <br>
+{!FS_Installation__c.FS_Outlet_Information__c}</p>
+
+<p>
+Scheduled Date:  {!FS_Installation__c.FS_Scheduled_Install_Date__c}<br>
+</p>
+
+<p>PM: {!FS_Installation__c.FS_PM_Regular__c}<br>
+PIC: {!FS_Installation__c.FS_Installation_PC_AC_1__c}<br></p>
+
+<p>Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Installation__c.Link} to be directed to the specific record referenced above.</p>

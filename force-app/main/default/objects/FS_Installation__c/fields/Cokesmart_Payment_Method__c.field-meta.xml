@@ -3,9 +3,9 @@
     <fullName>Cokesmart_Payment_Method__c</fullName>
     <description>Cartridge Fee Payment Method picklist</description>
     <externalId>false</externalId>
-    <inlineHelpText>â€œ&quot;Payment Term&quot; Invoicing requires Finance Approval from S. Curtis Marshall &amp; Mark Westenfelder.
+    <inlineHelpText>Ã¢â‚¬Å“&quot;Payment Term&quot; Invoicing requires Finance Approval from S. Curtis Marshall &amp; Mark Westenfelder.
 
-Warning: When Payment Term eligibility is changed from â€œYesâ€� to â€œNoâ€�, existing â€œPayment Termâ€� methods will need to be updated.â€�</inlineHelpText>
+Warning: When Payment Term eligibility is changed from Ã¢â‚¬Å“YesÃ¢â‚¬ï¿½ to Ã¢â‚¬Å“NoÃ¢â‚¬ï¿½, existing Ã¢â‚¬Å“Payment TermÃ¢â‚¬ï¿½ methods will need to be updated.Ã¢â‚¬ï¿½</inlineHelpText>
     <label>Cartridge Fee Payment Method</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

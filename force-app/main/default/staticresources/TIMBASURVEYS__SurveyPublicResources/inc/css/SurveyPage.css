@@ -1,0 +1,118 @@
+
+		
+		* html .navbuttonsContainer .btnWrapper {
+			width:150px;
+			float:left;
+			overflow:hidden;
+			position:relative;
+		}
+		
+		.overlay {
+			position:fixed !important;
+			top:0;
+			left:0;
+			z-index:88;
+			width:100%;
+			height:100%;
+			background:#fff;
+			opacity: .85; /* Standard: FF gt 1.5, Opera, Safari */
+			filter: alpha(opacity=85); /* IE lt 8 */
+			-ms-filter: "alpha(opacity=85)"; /* IE 8 */
+			-khtml-opacity: .85; /* Safari 1.x */
+			-moz-opacity: .85; /* FF lt 1.5, Netscape */
+						
+		}
+		
+		* html .overlay {
+			position:absolute !important;
+		}
+		
+		.overlay .preloader {
+			width:200px;
+			text-align:center;
+			height:100px;
+			position:absolute;
+			top:50%;
+			left:50%;
+			margin-left:-100px;
+			margin-top:-50px;
+			padding:4px;	
+			z-index:999;		
+		}
+		.overlay .preloader img {
+			clear:both;
+		}
+		
+		.formContainer {
+			overflow:hidden;
+			position:relative;
+			clear:both;			
+		}
+		
+		a.step_btn {
+			background: url('../../img/btn_sprites.gif') no-repeat ;
+			display:block;
+			float:left;
+			height:28px;
+			overflow:hidden;
+			position:relative;
+			background-position:0px -28px;
+			margin:0 10px;
+			cursor:pointer;
+		}
+		
+		a.step_btn span {
+			background: url('../../img/btn_sprites.gif') no-repeat;
+			background-position:top right;
+			color:#FFFFFF;
+			display:block;
+			font-weight:bold;
+			height:28px;
+			overflow:hidden;
+			padding:5px 10px;
+			position:relative;
+			cursor:pointer;
+		}
+		
+		.messageBox {
+			
+			border:3px solid gray;
+			clear:both;
+			height:320px;
+			left:50%;
+			margin-left:-350px;
+			margin-top:-175px;
+			overflow:hidden;
+			padding-top:30px;
+			position:absolute;
+			text-align:center;
+			top:50%;
+			width:700px;
+			-moz-border-radius: 9px;
+			-webkit-border-radius: 9px;
+			-webkit-box-shadow:5px 5px 5px #888;
+			
+		}
+		
+		#survey_saved {
+			background:#fff;
+			-moz-border-radius: 0px;
+		}
+		
+		.jqTransformSelectWrapper ul {
+			height:auto !important;
+		}
+		
+		.jqTransformSelectWrapper {
+			margin:10px;
+		}
+		
+		form.jqtransformdone div.overflow_visible {
+			overflow:visible !important;
+			z-index:87;
+		}
+		
+		.requiredItemShow{
+			float:none;
+		}
+	

@@ -1,0 +1,37 @@
+<messaging:emailTemplate subject="JDE Install Base Notified #{!relatedTo.CaseNumber}# has been assigned to JDE Equipment Control for Install Base processing" recipientType="Contact" replyTo="{!$Label.Routing_Email_Address}" relatedToType="Case">
+<messaging:htmlEmailBody >
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head>
+<body style="margin: 0; padding: 0;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr >
+<td>
+<b>IMPORTANT
+You must 'REPLY TO ALL' for this email when processing has been completed to ensure case processing advances correctly.</b><br/><br/>
+
+The following case has been assigned to the JDE Equipment Control group for Install Base processing.<br/><br/>
+
+Case #: {!relatedTo.CaseNumber} <br/><br/>
+To Outlet Name: {!relatedTo.To_Account__r.Name} <br/><br/>
+To ACN: {!relatedTo.LM_ACN__c}<br/><br/>
+To Outlet Address:{!relatedTo.To_Account__r.CCR_Address__c} <br/><br/>
+Dispenser Serial Numbers: {!relatedTo.Dispenser_serial_number__c}<br/><br/>
+Case Type: {!relatedTo.FS_New_Case_Type__c} <br/><br/>
+Case Issue: {!relatedTo.Issue_Name__c} <br/><br/>
+
+
+See email attachments for processing.<br/><br/>
+
+Note: Please do not change the subject with the reference number when sending further e-mails in connection with this query.<br/><br/>
+
+</td>
+</tr>
+<tr>
+<td >
+{!relatedTo.FACT_Thread_ID__c}
+</td>
+</tr>
+</table>
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

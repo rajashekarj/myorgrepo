@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the default email alert template invitation to the Survey: HIO Survey 2016</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>HIO Survey 2016</name>
+    <style>none</style>
+    <subject>Case # {!Case.CaseNumber}: {!Case.Subject} has been closed</subject>
+    <textOnly>*** CASE CLOSED NOTIFICATION ***&lt;br/&gt;
+
+Hi {!Contact.FirstName}  {!Contact.LastName},&lt;br/&gt;
+
+The following case has been CLOSED.&lt;br/&gt;&lt;br/&gt;
+
+Case #: {!Case.CaseNumber}&lt;br/&gt;
+Issue Description:{!Case.Description_of_issue__c}&lt;br/&gt;
+
+Click on the link to access the case: {!Case.Link}&lt;br/&gt;&lt;br/&gt;
+
+
+
+Please fill the survey for Case:&lt;br/&gt;
+
+Complete survey at:  :&lt;br/&gt;{!IF(Contact.Id != null,IF(Case.Id != null,&#39;https://freestyle--fetassembl--timbasurveys.cs59.visual.force.com/apex/timbasurveys__survey?id=a1Y2C000000Chg3UAC&amp;cId=&#39;+Contact.Id+&#39;&amp;case_id=&#39;+Case.Id+&#39;&amp;wf=yes&#39;,&#39;https://freestyle--fetassembl--timbasurveys.cs59.visual.force.com/apex/timbasurveys__survey?id=a1Y2C000000Chg3UAC&amp;cId=&#39;+Contact.Id+&#39;&amp;wf=yes&#39;),&#39;&#39;)}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

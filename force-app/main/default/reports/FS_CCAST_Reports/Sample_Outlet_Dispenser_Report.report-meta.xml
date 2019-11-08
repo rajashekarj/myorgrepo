@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Account.CCR_ACN__c</field>
+    </columns>
+    <columns>
+        <field>FS_Outlet_Dispenser__c.FS_Serial_Number2__c</field>
+    </columns>
+    <columns>
+        <field>FS_Outlet_Dispenser__c.FS_IsActive__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ADDRESS2_COUNTRY</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>US</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Sample Outlet Dispenser Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$FS_Outlet_Dispenser__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

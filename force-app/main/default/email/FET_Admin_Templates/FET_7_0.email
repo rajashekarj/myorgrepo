@@ -1,0 +1,328 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; margin: 0px;"><img src="https://freestyle--c.na130.content.force.com/servlet/servlet.ImageServer?id=01561000002i32W&amp;oid=00D61000000aNH9" border="0" align="left" alt=""><br></p>
+
+<p style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; margin: 0px;"><font face="Calibri"><br></font></p><p style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; margin: 0px;"><font face="Calibri"><br></font></p><p style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; margin: 0px;"><span style="font-size: 12pt; text-align: justify; font-family: &quot;Calibri Light&quot;, sans-serif;"><br></span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0px;"><span style="text-align: justify; font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4"><br></font></span></p><p style="color: rgb(0, 0, 0); font-family: arial; margin: 0px;"><font size="4"><span style="text-align: justify; font-family: &quot;Calibri Light&quot;, sans-serif;">Hi&nbsp;</span><span style="text-align: justify; background-color: rgb(255, 255, 255); font-family: &quot;Calibri Light&quot;, sans-serif;">{!Receiving_User.FirstName}</span><span style="text-align: justify; font-family: &quot;Calibri Light&quot;, sans-serif;">,</span></font></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">The
+Freestyle Execution Tool (FET) leadership team is excited to announce our next
+release, FET 7.0! In this deployment you will see improvements tailored to fit the
+needs of our evolving Freestyle customer. As a result, you can expect to see enhancements
+designed around the following:</font></span></p><ul style="color: rgb(0, 0, 0); font-family: arial; margin-top: 0in;" type="disc">
+ <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l1 level1 lfo2;vertical-align:middle"><b><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">FET integration with the
+     Freestyle Support Tool<o:p></o:p></font></span></b></li>
+ <ul style="margin-top:0in" type="circle">
+  <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+      text-align:justify;line-height:normal;mso-list:l1 level2 lfo2;vertical-align:
+      middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Relocation
+      Outside 4 Walls<o:p></o:p></font></span></li>
+  <ul style="margin-top:0in" type="square">
+   <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+       text-align:justify;line-height:normal;mso-list:l1 level3 lfo2;
+       vertical-align:middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Streamline <u>A</u>dministrative <u style="">M</u>ove
+       <u style="">o</u>f <u style="">A</u>ssets from submission to completion with traceability&nbsp;
+       <o:p></o:p></font></span></li>
+  </ul>
+ </ul>
+ <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l1 level1 lfo2;vertical-align:middle"><b><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Post Install Activity<o:p></o:p></font></span></b></li>
+ <ul style="margin-top:0in" type="circle"><li><span style="font-family: &quot;Calibri Light&quot;, sans-serif; text-align: justify;"><font size="4">Outlet
+      Dispensers Identification</font></span></li>
+  <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+      text-align:justify;line-height:normal;mso-list:l1 level2 lfo2;vertical-align:
+      middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Enhanced
+      Service Provider Email Notification<o:p></o:p></font></span></li>
+  <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+      text-align:justify;line-height:normal;mso-list:l1 level2 lfo2;vertical-align:
+      middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">New
+      Reason Codes <o:p></o:p></font></span></li>
+  <ul style="margin-top:0in" type="square">
+   <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+       text-align:justify;line-height:normal;mso-list:l1 level3 lfo2;
+       vertical-align:middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Removal
+       <o:p></o:p></font></span></li>
+   <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+       text-align:justify;line-height:normal;mso-list:l1 level3 lfo2;
+       vertical-align:middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Replacement<o:p></o:p></font></span></li>
+  </ul>
+  <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+      text-align:justify;line-height:normal;mso-list:l1 level2 lfo2;vertical-align:
+      middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Replacement<o:p></o:p></font></span></li>
+  <ul style="margin-top:0in" type="square">
+   <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+       text-align:justify;line-height:normal;mso-list:l1 level3 lfo2;
+       vertical-align:middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">New “Like”
+       for “Unlike” Platform Request<o:p></o:p></font></span></li>
+  </ul>
+ </ul>
+ <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+     justify;line-height:normal;mso-list:l1 level1 lfo2;vertical-align:middle"><b><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Customer Input Form<o:p></o:p></font></span></b></li>
+ <ul style="margin-top:0in" type="circle">
+  <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+      text-align:justify;line-height:normal;mso-list:l1 level2 lfo2;vertical-align:
+      middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Upload
+      up to 75 outlets - <i>Freestyle
+      Projects</i><o:p></o:p></font></span></li>
+  <li class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;
+      text-align:justify;line-height:normal;mso-list:l1 level2 lfo2;vertical-align:
+      middle"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Does New
+      Install Involve Replacement? -&nbsp;<i>Flag</i></font></span></li></ul></ul><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><b><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: red;"><font size="4">What
+You Need to Know?<o:p></o:p></font></span></b></p><ul style="margin-top: 0in;" type="disc">
+ <li class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Go Live is
+     Monday August 26<sup>th</sup>, 2019 <o:p></o:p></font></span></li>
+ <li class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><font face="Calibri Light, sans-serif" size="4">FET 7.0 in-person
+     and Bluejeans&nbsp;sessions will be provided. It will be important for FET
+     users to attend these sessions to make the transition a smooth one. Please download and save one of four or all scheduled demo sessions.</font><table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="margin-left:-54.25pt;border-collapse:collapse;mso-yfti-tbllook:1184;
+ mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:18.8pt">
+  <td valign="bottom" style="border:solid windowtext 1.0pt;background:#BFBFBF;
+  padding:0in 5.4pt 0in 5.4pt;height:18.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#203864">Day<o:p></o:p></span></b></p>
+  </td>
+  <td valign="bottom" style="border:solid windowtext 1.0pt;border-left:none;
+  background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt;height:18.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#203864">Date<o:p></o:p></span></b></p>
+  </td>
+  <td valign="bottom" style="border:solid windowtext 1.0pt;border-left:none;
+  background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt;height:18.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#203864">Training <o:p></o:p></span></b></p>
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#203864">Time<o:p></o:p></span></b></p>
+  </td>
+  <td width="75" valign="bottom" style="width:55.95pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt;height:18.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#203864">Site / Location<o:p></o:p></span></b></p>
+  </td>
+  <td width="102" valign="bottom" style="width:76.5pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt;height:18.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#203864">Training&nbsp;<o:p></o:p></span></b></p>
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><b><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin;color:#203864">Room<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;height:13.55pt">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">Monday<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">8/19/2019<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;background:white;mso-background-themecolor:
+  background1;padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">1pm to 3pm<o:p></o:p></span></p>
+  </td>
+  <td width="75" valign="top" style="width:55.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">AOC<o:p></o:p></span></p>
+  </td>
+  <td width="102" valign="top" style="width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">USA Share B<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2;height:13.55pt">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">Tuesday<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">8/20/2019<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;background:white;mso-background-themecolor:
+  background1;padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">2pm to 4pm<o:p></o:p></span></p>
+  </td>
+  <td width="75" valign="top" style="width:55.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">AOC<o:p></o:p></span></p>
+  </td>
+  <td width="102" valign="top" style="width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">NAT Live B<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3;height:12.8pt">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  padding:0in 5.4pt 0in 5.4pt;height:12.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">Wednesday<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:12.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">8/21/2019<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;background:white;mso-background-themecolor:
+  background1;padding:0in 5.4pt 0in 5.4pt;height:12.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">9:30am to 11:30am<o:p></o:p></span></p>
+  </td>
+  <td width="75" valign="top" style="width:55.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:12.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">AOC<o:p></o:p></span></p>
+  </td>
+  <td width="102" valign="top" style="width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:12.8pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">TCP Explore A<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:13.55pt">
+  <td valign="top" style="border:solid windowtext 1.0pt;border-top:none;
+  padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">Wednesday<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">8/21/2019<o:p></o:p></span></p>
+  </td>
+  <td valign="top" style="border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;background:white;mso-background-themecolor:
+  background1;padding:0in 5.4pt 0in 5.4pt;height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">1pm to 3pm<o:p></o:p></span></p>
+  </td>
+  <td width="75" valign="top" style="width:55.95pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">AOC<o:p></o:p></span></p>
+  </td>
+  <td width="102" valign="top" style="width:76.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:white;mso-background-themecolor:background1;padding:0in 5.4pt 0in 5.4pt;
+  height:13.55pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+  text-align:center;line-height:normal"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;
+  mso-ascii-theme-font:major-latin;mso-hansi-theme-font:major-latin;mso-bidi-theme-font:
+  major-latin">NAT Move<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table></li>
+ <li class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Training
+     content showcasing the enhancements will be available on Box Monday August
+     26<sup>th</sup>, 2019.<o:p></o:p></font></span></li>
+ <li class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">There
+     will be scheduled downtime starting Friday August 23<sup>rd</sup> until
+     End of Day Sunday, August 25<sup>th&nbsp;</sup>. During this time, FET
+     will either be in read-only mode or unavailable. Further details regarding
+     this outage will be communicated as we get closer to August 23<sup>rd</sup>.<o:p></o:p></font></span></li>
+ <li class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">Additional
+     communications will be sent over the next few weeks as a reminder.</font></span></li></ul><p style="color: rgb(0, 0, 0); font-family: arial; margin-right: 0px; margin-left: 0px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="4">In
+the meantime, if you have any questions or concerns please reach out to us
+at&nbsp;FETHelp@coca-cola.com.&nbsp;</font></span></p><p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font style="" size="4">Thank you for your continued support!</font></span></p><p class="MsoNormal" style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; margin-bottom: 0.0001pt; text-align: justify; line-height: normal;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif;"><font size="5" style=""><br></font></span></p>
+
+<p style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; margin: 0px; line-height: 12pt;"><font style=""><b style=""><span lang="EN-GB" style="margin: 0px; color: red;">FET
+Support Team</span></b><b style=""><span lang="EN-GB" style="margin: 0px; color: rgb(89, 89, 89);"> | E-mail: </span></b><b style=""><u><span lang="EN-GB" style="margin: 0px; color: blue;"><a><span style="margin: 0px; color: blue;">FETHelp@coca-cola.com</span></a></span></u></b></font></p>
+
+<p style="font-size: 12pt; color: rgb(0, 0, 0); font-family: arial; margin: 0px; line-height: 12pt;"><span lang="ES-MX" style="margin: 0px; color: rgb(127, 127, 127);"><font style="" size="2">Coca-Cola
+North America, 1150 Sanctuary Parkway, Alpharetta GA 30009 </font></span></p>]]></td>
+</tr>
+</table>

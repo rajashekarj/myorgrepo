@@ -1,0 +1,6 @@
+Hi, </br>
+</br>
+A Post Install {!FS_Installation__c.RecordType} <a href=" {!FS_Installation__c.Link}">{!FS_Installation__c.Name}</a> for Outlet <a href="{!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.FS_Outlet_Id__c}">{!FS_Installation__c.FS_Outlet_Name__c}</a> has been created and may require you to take action.</br>
+</br>
+Thank You,</br>
+FET

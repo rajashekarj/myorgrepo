@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <inlineHelpText>1.  US Phone: Enter 10 digits number without any spaces/characters (e.g. 1234567890)
 
-2.  International Phone: You must enter a â€œ+â€� sign before the number. Then enter the country code and the phone number. Do not use spaces. (e.g. +441234567890).</inlineHelpText>
+2.  International Phone: You must enter a Ã¢â‚¬Å“+Ã¢â‚¬ï¿½ sign before the number. Then enter the country code and the phone number. Do not use spaces. (e.g. +441234567890).</inlineHelpText>
     <label>Shipper Phone</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

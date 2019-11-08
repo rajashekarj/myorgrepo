@@ -1,0 +1,8 @@
+Flavor Change Notification:<br/><br/>
+
+Please be advised that a Flavor Change has be completed for the customer below.
+<br>
+Customer ACN :{!Flavor_Change__c.FS_ACN__c} <br/><br/>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!Flavor_Change__c.Link} to be directed to the specific record referenced above.

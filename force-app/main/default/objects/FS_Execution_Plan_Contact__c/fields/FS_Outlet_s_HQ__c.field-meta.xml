@@ -3,7 +3,7 @@
     <fullName>FS_Outlet_s_HQ__c</fullName>
     <externalId>false</externalId>
     <formula>HYPERLINK(&quot;/&quot; &amp;Outlet__r.FS_Headquarters__r.Id, Outlet__r.FS_Headquarters__r.Name)</formula>
-    <label>Outletâ€™s HQ</label>
+    <label>OutletÃ¢â‚¬â„¢s HQ</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

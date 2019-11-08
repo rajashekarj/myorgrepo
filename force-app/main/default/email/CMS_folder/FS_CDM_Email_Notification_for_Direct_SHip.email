@@ -1,0 +1,13 @@
+Hi, 
+<br/>
+<br/>
+Flavor Change {!FS_Flavor_Change_Head__c.Name} is pending for your action to complete the setup. To complete the setup please go to {!FS_Flavor_Change_Head__c.Link} . 
+<br/>
+ACN - {!FS_Flavor_Change_Head__c.FS_Entity_ACN__c}
+<br/>
+Calculated Customer Classification  - {!FS_Flavor_Change_Head__c.Calculated_Customer_Classficiation__c}
+<br/>
+<br/>
+Thanks, 
+<br/>
+FET

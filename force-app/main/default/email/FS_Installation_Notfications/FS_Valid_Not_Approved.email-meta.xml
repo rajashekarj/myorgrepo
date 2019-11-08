@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Valid Not Approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Valid Not Approved</name>
+    <style>none</style>
+    <subject>Valid Fill Was Not Approved for {!FS_Installation__c.FS_Outlet__c}</subject>
+    <textOnly>Contact Ed Teller if you have questions regarding the denial for Valid Fill in this location.  
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Installation__c.Link} to be directed to the specific Installation record.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

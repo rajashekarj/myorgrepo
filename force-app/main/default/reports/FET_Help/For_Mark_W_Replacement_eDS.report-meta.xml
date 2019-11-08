@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FS_Installation__c$Name</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c.Outlet_Dispensers1__r$Name</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$Overall_Status2__c</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$FS_Reason_Code__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FS_Installation__c$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FS_Installation__c.Replacement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FS_Installation__c$FS_Reason_Code__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Switched to Competition,Switched to Bottle/Can,Back to Legacy - Commercial Terms,Back to Legacy - Dispenser Issue,Back to Legacy - Other,Freestyle Platform Change,Dispenser Color Change,Out of Business,Ownership Change,End of Market Test,Removal - Commercial Terms,Removal - Dispenser Issues,Removal - Other,Customer Relationship Mgt,Unit Damaged at Arrival,Condemned by Sr. Tech,Remodeling of Outlet,Repair of Restaurant,Repair of Beverage Area,Customer Request,Relocation Outside of 4 Walls,Bridge 9000 To 9100,Early Replacement 9000 To 9100</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>For Mark W - Replacement</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Installations_with_relocated_dispensers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FS_Installation__c$X2nd_SA_Completed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

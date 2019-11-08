@@ -1,0 +1,22 @@
+The following case has been assigned to the JDE AMS group after JDEEQUIP maintenance has been completed by the RSS group.
+
+Case: {!Case.CaseNumber} 
+
+To Outlet Name: {!Case.To_Account__c} 
+
+To ACN: {!Case.LM_ACN__c} 
+
+To Outlet Address:{!Case.LM_Address__c} 
+
+Dispenser Serial Numbers: {!Case.Dispenser_serial_number__c} 
+
+Case Type: {!Case.FS_New_Case_Type__c} 
+
+Case Issue: {!Case.Issue_Name__c} 
+
+Response from RSS: {!Case.FS_Response_Email_Body__c } 
+
+Click on the link to access the case: 
+{!Case.Link}
+
+{!Case.FACT_Thread_ID__c}

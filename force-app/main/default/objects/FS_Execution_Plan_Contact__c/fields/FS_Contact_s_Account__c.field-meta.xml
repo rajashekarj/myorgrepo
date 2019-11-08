@@ -3,7 +3,7 @@
     <fullName>FS_Contact_s_Account__c</fullName>
     <externalId>false</externalId>
     <formula>HYPERLINK(&quot;/&quot; &amp;FS_Execution_Plan_Contact__r.Account.Id, FS_Execution_Plan_Contact__r.Account.Name)</formula>
-    <label>Contactâ€™s Account</label>
+    <label>ContactÃ¢â‚¬â„¢s Account</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

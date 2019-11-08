@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>DurationFieldUpdate</fullName>
+        <description>Duartion field in CaseHistoryDetail gets updated which is used for Rollupcalculation</description>
+        <field>Duration__c</field>
+        <formula>Status_Duration_Minutes__c</formula>
+        <name>DurationFieldUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>UpdateCaseHistoryDetailDuration</fullName>
+        <actions>
+            <name>DurationFieldUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Captures Duration of current status which is used in RollupSummary calculation</description>
+        <formula>NOT(ISBLANK( Status_Start_Time__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

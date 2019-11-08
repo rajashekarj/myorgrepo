@@ -1,0 +1,9 @@
+The following shipping form has begun processing:
+
+Number of dispensers ready :  {!Shipping_Form__c.FS_Number_of_dispensers_ready__c}
+Date Ready :   {!Shipping_Form__c.FS_date_ready__c}
+PO Number :  {!Shipping_Form__c.FS_PO_Number__c}
+Status :  {!Shipping_Form__c.FS_Status__c}
+Shipper Notes : {!Shipping_Form__c.Shipper_Notes__c}
+
+Shipping Form Link : {!Shipping_Form__c.Form_URL__c}

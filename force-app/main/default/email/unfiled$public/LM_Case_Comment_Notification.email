@@ -1,0 +1,16 @@
+Dear {!Case.CreatedBy}, <br/><br/>
+
+The following Case Comment has been created for the Case. <br/><br/>
+
+Case #: {!Case.CaseNumber} <br/><br/>
+Outlet Name: {!Case.To_Account__c} <br/><br/>
+Outlet A C N: {!Case.LM_ACN__c} <br/><br/>
+Outlet Address: {!Case.LM_Address__c} <br/><br/>
+Dispenser Serial Number(s): {!Case.Dispenser_serial_number__c} <br/><br/>
+Case Type: {!Case.FS_New_Case_Type__c} <br/><br/>
+Case Issue Name: {!Case.Issue_Name__c} <br/><br/>
+Case Comment Created By: {!Case.FS_Comment_Created_By_Username__c} <br/><br/>
+Case Comment : {!Case.Last_Case_Comment__c} <br/><br/>
+
+Click on the link to access the case: <br/><br/>
+{!Case.Link}

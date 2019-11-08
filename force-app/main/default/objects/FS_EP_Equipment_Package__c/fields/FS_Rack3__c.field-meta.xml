@@ -28,14 +28,14 @@
                 <label>46079: 28&quot; Cartridge/HFCS Inclined/Flat</label>
             </value>
             <value>
-                <fullName>46246: 41â€� Rack with 2 Flat Pans</fullName>
+                <fullName>46246: 41Ã¢â‚¬ï¿½ Rack with 2 Flat Pans</fullName>
                 <default>false</default>
-                <label>46246: 41â€� Rack with 2 Flat Pans</label>
+                <label>46246: 41Ã¢â‚¬ï¿½ Rack with 2 Flat Pans</label>
             </value>
             <value>
-                <fullName>46280 : 41â€� Manitowoc (Wendy&#39;s Only)</fullName>
+                <fullName>46280 : 41Ã¢â‚¬ï¿½ Manitowoc (Wendy&#39;s Only)</fullName>
                 <default>false</default>
-                <label>46280 : 41â€� Manitowoc (Wendy&#39;s Only)</label>
+                <label>46280 : 41Ã¢â‚¬ï¿½ Manitowoc (Wendy&#39;s Only)</label>
             </value>
             <value>
                 <fullName>46312: 4&quot; Chase SS</fullName>
@@ -43,24 +43,24 @@
                 <label>46312: 4&quot; Chase SS</label>
             </value>
             <value>
-                <fullName>46747: 15â€� Wide under counter rack w/1 slanted shelf</fullName>
+                <fullName>46747: 15Ã¢â‚¬ï¿½ Wide under counter rack w/1 slanted shelf</fullName>
                 <default>false</default>
-                <label>46747: 15â€� Wide under counter rack w/1 slanted shelf</label>
+                <label>46747: 15Ã¢â‚¬ï¿½ Wide under counter rack w/1 slanted shelf</label>
             </value>
             <value>
-                <fullName>46748: 28â€� Wide under counter rack w/1 slanted shelf</fullName>
+                <fullName>46748: 28Ã¢â‚¬ï¿½ Wide under counter rack w/1 slanted shelf</fullName>
                 <default>false</default>
-                <label>46748: 28â€� Wide under counter rack w/1 slanted shelf</label>
+                <label>46748: 28Ã¢â‚¬ï¿½ Wide under counter rack w/1 slanted shelf</label>
             </value>
             <value>
-                <fullName>44236: 15â€� Wide Single BIB Rack under counter</fullName>
+                <fullName>44236: 15Ã¢â‚¬ï¿½ Wide Single BIB Rack under counter</fullName>
                 <default>false</default>
-                <label>44236: 15â€� Wide Single BIB Rack under counter</label>
+                <label>44236: 15Ã¢â‚¬ï¿½ Wide Single BIB Rack under counter</label>
             </value>
             <value>
-                <fullName>44238: 28â€� Wide Double BIB Rack under counter</fullName>
+                <fullName>44238: 28Ã¢â‚¬ï¿½ Wide Double BIB Rack under counter</fullName>
                 <default>false</default>
-                <label>44238: 28â€� Wide Double BIB Rack under counter</label>
+                <label>44238: 28Ã¢â‚¬ï¿½ Wide Double BIB Rack under counter</label>
             </value>
             <value>
                 <fullName>45897 : 15&quot; Wide Inclined Five Shelves</fullName>
@@ -83,16 +83,16 @@
                 <label>XXXXX: Chase Stainless Steel Kit</label>
             </value>
             <value>
-                <fullName>44236: 15â€� Wide Single BIB Rack</fullName>
+                <fullName>44236: 15Ã¢â‚¬ï¿½ Wide Single BIB Rack</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
-                <label>44236: 15â€� Wide Single BIB Rack</label>
+                <label>44236: 15Ã¢â‚¬ï¿½ Wide Single BIB Rack</label>
             </value>
             <value>
-                <fullName>44238: 28â€� Wide Double BIB Rack</fullName>
+                <fullName>44238: 28Ã¢â‚¬ï¿½ Wide Double BIB Rack</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
-                <label>44238: 28â€� Wide Double BIB Rack</label>
+                <label>44238: 28Ã¢â‚¬ï¿½ Wide Double BIB Rack</label>
             </value>
             <value>
                 <fullName>46110 : 38 Rack with Cartridge Storage for 4Gal WB</fullName>
@@ -132,7 +132,7 @@
             <controllingFieldValue>9100</controllingFieldValue>
             <controllingFieldValue>6000</controllingFieldValue>
             <controllingFieldValue>7100</controllingFieldValue>
-            <valueName>46246: 41â€� Rack with 2 Flat Pans</valueName>
+            <valueName>46246: 41Ã¢â‚¬ï¿½ Rack with 2 Flat Pans</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>7000</controllingFieldValue>
@@ -148,23 +148,14 @@
             <controllingFieldValue>9000</controllingFieldValue>
             <controllingFieldValue>9100</controllingFieldValue>
             <controllingFieldValue>7100</controllingFieldValue>
-            <valueName>46747: 15â€� Wide under counter rack w/1 slanted shelf</valueName>
+            <valueName>46747: 15Ã¢â‚¬ï¿½ Wide under counter rack w/1 slanted shelf</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>7000</controllingFieldValue>
             <controllingFieldValue>9000</controllingFieldValue>
             <controllingFieldValue>9100</controllingFieldValue>
             <controllingFieldValue>7100</controllingFieldValue>
-            <valueName>46748: 28â€� Wide under counter rack w/1 slanted shelf</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>7000</controllingFieldValue>
-            <controllingFieldValue>8000</controllingFieldValue>
-            <controllingFieldValue>9000</controllingFieldValue>
-            <controllingFieldValue>9100</controllingFieldValue>
-            <controllingFieldValue>6000</controllingFieldValue>
-            <controllingFieldValue>7100</controllingFieldValue>
-            <valueName>44236: 15â€� Wide Single BIB Rack under counter</valueName>
+            <valueName>46748: 28Ã¢â‚¬ï¿½ Wide under counter rack w/1 slanted shelf</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>7000</controllingFieldValue>
@@ -173,7 +164,16 @@
             <controllingFieldValue>9100</controllingFieldValue>
             <controllingFieldValue>6000</controllingFieldValue>
             <controllingFieldValue>7100</controllingFieldValue>
-            <valueName>44238: 28â€� Wide Double BIB Rack under counter</valueName>
+            <valueName>44236: 15Ã¢â‚¬ï¿½ Wide Single BIB Rack under counter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>7000</controllingFieldValue>
+            <controllingFieldValue>8000</controllingFieldValue>
+            <controllingFieldValue>9000</controllingFieldValue>
+            <controllingFieldValue>9100</controllingFieldValue>
+            <controllingFieldValue>6000</controllingFieldValue>
+            <controllingFieldValue>7100</controllingFieldValue>
+            <valueName>44238: 28Ã¢â‚¬ï¿½ Wide Double BIB Rack under counter</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>7000</controllingFieldValue>
@@ -214,7 +214,7 @@
             <controllingFieldValue>9000</controllingFieldValue>
             <controllingFieldValue>9100</controllingFieldValue>
             <controllingFieldValue>6000</controllingFieldValue>
-            <valueName>46280 : 41â€� Manitowoc (Wendy&#39;s Only)</valueName>
+            <valueName>46280 : 41Ã¢â‚¬ï¿½ Manitowoc (Wendy&#39;s Only)</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>6000</controllingFieldValue>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>NDO rejection email notification for Direct Ship</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NDO rejection email notification for Direct Ship</name>
+    <style>none</style>
+    <subject>Outlet request to switch to Direct Ship: {!FS_Flavor_Change_Head__c.FS_HQ_Chain__c}: Distributor - {!FS_Flavor_Change_Head__c.Entity_Distributor_Name__c}</subject>
+    <textOnly>{!FS_Flavor_Change_Head__c.LastModifiedBy}  has requested your action for the following item :  {!FS_Flavor_Change_Head__c.Name} This outlet is currently distributor delivered. The requested flavor change was rejected due to the distributor not carrying the requested product in inventory.  The outlet has requested to switch to direct ship. Outlet ACN Information: {!FS_Flavor_Change_Head__c.FS_Entity_ACN__c} {!FS_Flavor_Change_Head__c.FS_Entity_Address__c} Outlet Distributor Information: {!FS_Flavor_Change_Head__c.FS_Entity_Distributor_ACN__c} {!FS_Flavor_Change_Head__c.FS_Entity_Distributor_Address__c} Please click this  Link to switch the outlet to direct ship.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

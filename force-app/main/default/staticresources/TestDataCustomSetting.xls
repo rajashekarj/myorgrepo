@@ -1,0 +1,32 @@
+NAME,SAP_MATERIAL_NAME__C,CARTRIDGE_NAME__C,OVERRIDEFIELD__C
+1,1442200,MML / MMLL,FS_7_Override__c
+2,1445012,Dasani / Dasani Sensations,FS_14_Override__c
+3,1445014,Pibb,FS_11_Override__c
+4,1445014,Pibb Xtra / Pibb Xtra Zero,FS_11_Override__c
+5,1452928,Barq's / Barq's Zero,FS_8_Override__c
+6,1452929,Diet Coke,FS_3_Override__c
+7,1452930,Caffeine Free Diet Coke,FS_9_Override__c
+8,1452931,Coke Zero,FS_2_Override__c
+9,1454306,Sprite/Sprite Zero,FS_4_Override__c
+10,1454307,Orange,FS_15_Override__c
+11,1454308,Cherry,FS_16_Override__c
+12,1454309,Lime,FS_17_Override__c
+13,1454310,Raspberry,FS_20_Override__c
+14,1454311,Lemon,FS_18_Override__c
+15,1454312,Vanilla,FS_19_Override__c
+16,1454313,Fruit Punch,FS_21_Override__c
+17,1457121,Coca-Cola Classic,FS_1_Override__c
+18,1473530,Strawberry,FS_22_Override__c
+19,1473531,Grape,FS_23_Override__c
+20,1473533,Peach,FS_24_Override__c
+21,1473972,Vault / Vault Zero,FS_10_Override__c
+22,1488596,Powerade,FS_12_Override__c
+23,171081,Fanta,FS_5_Override__c
+24,171185,Hi-C,FS_6_Override__c
+25,183677,HFCS 5 Gallon BIB,FS_26_Override__c
+26,183678,Non-Nutritive Sweetener 2.5 Gallon BIB,FS_25_Override__c
+27,205082,Dr. Pepper / Diet Dr. Pepper,FS_11_Override__c
+28,222878,Black Cherry,FS_13_Override__c
+29,241078,Mello Yello,FS_10_Override__c
+30,241378,Powerade,FS_12_Override__c
+31,247578,Seagram's Gingerale,FS_13_Override__c

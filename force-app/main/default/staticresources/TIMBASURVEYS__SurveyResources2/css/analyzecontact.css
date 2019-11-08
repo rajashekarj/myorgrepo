@@ -1,0 +1,130 @@
+a {
+outline: none;
+}
+
+.marginout{
+    display: block;
+    margin: 25px;
+    width: 960px;
+}
+
+.containerleft{
+    width: 24%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    margin-right: 20px;
+    margin-left: 10px;
+
+    font-family: arial;
+    font-size: 13px;
+    color: #737373;
+
+}
+
+
+.containerleft .textin{
+    font-size: 17px;
+    clear: both;
+}
+
+.containerleft .textout{
+    color: #2C98C5;
+}
+
+
+.containerright{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 640px;
+}
+
+.containerright .textleft{
+    text-align:left;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.questionnumber{
+    background-image: url('../img/analyzecontact/circle.png');
+    background-repeat: no-repeat;
+    margin-right: 6px;
+    display: block;
+    float: left;
+    width: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 23px;
+}
+
+.questiontype{
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    float: right;
+
+    line-height: 24px;
+    color: #69BDE0;
+    font-family: arial;
+    font-size: 12px;
+    width: 24%;
+}
+
+.containersingle{
+    background: #E4F0FC;
+    border: solid 1px #E4F0FC;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+
+    text-align: center;
+    padding: 20px 14px 10px 14px;
+
+}
+
+.userdata{
+    margin: 10px 0;
+    padding: 15px;
+
+    background: #FFFFFF;
+    border: solid 1px #E4F0FC;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+
+.useranswer{
+    padding: 10px;
+    background: #FFFFFF;
+    border: solid 1px #E4F0FC;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+
+    -moz-box-shadow: inset 0 0 4px #666666;
+    box-shadow: inset 0 0 4px #666666;
+
+    font-family: arial;
+    font-size: 13px;
+    color: #737373;
+    clear: both;
+}
+
+.titlemain{
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C98C5;
+}
+
+.titlemainquestions{
+    margin-bottom: 8px;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C98C5;
+    float: left;
+    width: 73%;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>High</fullName>
+        <default>false</default>
+        <label>High</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medium</fullName>
+        <default>true</default>
+        <label>Medium</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Low</fullName>
+        <default>false</default>
+        <label>Low</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Critical - Quality/Safety Issue</fullName>
+        <default>false</default>
+        <label>Critical - Quality/Safety Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>High - Non Operational</fullName>
+        <default>false</default>
+        <label>High - Non Operational</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medium - Decreased Functionality</fullName>
+        <default>false</default>
+        <label>Medium - Decreased Functionality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Low - Operational but Excessive Service</fullName>
+        <default>false</default>
+        <label>Low - Operational but Excessive Service</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>FS_CIF_DateDACompleted_blank</fullName>
+        <field>FS_SA_Completed_Date__c</field>
+        <name>FS_CIF_DateDACompleted_blank</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Date_site_assessment_completed</fullName>
+        <field>FS_SA_Completed_Date__c</field>
+        <formula>today()</formula>
+        <name>Date site assessment completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Davaco_Order_Entered_By</fullName>
+        <field>FS_Davaco_Order_Entered_By__c</field>
+        <formula>$User.FirstName  &amp; &quot; &quot; &amp;  $User.LastName</formula>
+        <name>Davaco Order Entered By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Davaco_Order_Entered_Date_Time</fullName>
+        <field>FS_Davaco_Order_Entered_Date_Time__c</field>
+        <formula>now()</formula>
+        <name>Davaco Order Entered Date/Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Second_Davaco_Order_Entered_Date</fullName>
+        <field>FS_Second_Davaco_Order_Entered_Date_Time__c</field>
+        <formula>now()</formula>
+        <name>Second Davaco Order Entered Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Second_Davaco_Order_Entered_Date_NO</fullName>
+        <field>FS_Second_Davaco_Order_Entered_Date_Time__c</field>
+        <formula>now()</formula>
+        <name>Second Davaco Order Entered Date when NO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Second_Davaco_Order_Entered_by</fullName>
+        <field>FS_Second_Davaco_Order_Entered_By__c</field>
+        <formula>$User.FirstName &amp; &quot; &quot; &amp; $User.LastName</formula>
+        <name>Second Davaco Order Entered by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Second_Davaco_Order_Entered_by_NO</fullName>
+        <field>FS_Second_Davaco_Order_Entered_By__c</field>
+        <formula>$User.FirstName &amp; &quot; &quot; &amp; $User.LastName</formula>
+        <name>Second Davaco Order Entered by when NO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_Customer_Disposition_Date</fullName>
+        <field>FS_Customer_disposition_Submit_DateTime__c</field>
+        <formula>now()</formula>
+        <name>Update Customer Disposition Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_Customer_Disposition_Submit_by</fullName>
+        <field>FS_Customer_s_Disposition_Submitted_by__c</field>
+        <formula>$User.FirstName  &amp;&quot; &quot;&amp;  $User.LastName</formula>
+        <name>Update Customer Disposition Submitted by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_IceFillmethod</fullName>
+        <field>FS_Ice_Fill_Method__c</field>
+        <literalValue>Top Mounted</literalValue>
+        <name>FS_Update_IceFillmethod</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_IceFillmethod_Manual</fullName>
+        <field>FS_Ice_Fill_Method__c</field>
+        <literalValue>Manual</literalValue>
+        <name>FS_Update_IceFillmethod_Manual</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Request_submitted_Date_Time</fullName>
+        <field>FS_Request_submitted_Date_Time__c</field>
+        <formula>now()</formula>
+        <name>Request submitted Date/Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Second_Request_submitted_Date_Time</fullName>
+        <field>FS_SecondSiteAssessment_req_submitted_DT__c</field>
+        <formula>now()</formula>
+        <name>Second Request submitted Date/Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Second_Site_request_submitted_by</fullName>
+        <field>FS_SecondSiteassessmentrqst_submitted_by__c</field>
+        <formula>$User.FirstName &amp;&quot; &quot;&amp; $User.LastName</formula>
+        <name>Update Second  Site request submitted by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Site_request_submitted_by</fullName>
+        <field>FS_Site_assessment_request_submitted_by__c</field>
+        <formula>$User.FirstName &amp;&quot; &quot;&amp; $User.LastName</formula>
+        <name>Update Site request submitted by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>FS Perform Second site Assessment</fullName>
+        <actions>
+            <name>Second_Request_submitted_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Second_Site_request_submitted_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow used to capture the user and DATE/TIME stamp when the Perf site assessment field is set to yes</description>
+        <formula>AND(ISCHANGED(FS_Perform_Second_Site_Assessment__c ), ISPICKVAL(FS_Perform_Second_Site_Assessment__c,&quot;Yes&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS Perform Second site Assessment No</fullName>
+        <actions>
+            <name>Second_Request_submitted_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Second_Site_request_submitted_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow used to capture the user and DATE/TIME stamp when the Perf site assessment field is set to yes</description>
+        <formula>AND(ISCHANGED(FS_Perform_Second_Site_Assessment__c ), ISPICKVAL(FS_Perform_Second_Site_Assessment__c,&quot;No&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS Perform site Assessment</fullName>
+        <actions>
+            <name>Request_submitted_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Site_request_submitted_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow used to capture the user and DATE/TIME stamp when the Perf site assessment field is set to yes</description>
+        <formula>AND(ISCHANGED( FS_Perf_Site_Assessment__c ), ISPICKVAL(FS_Perf_Site_Assessment__c,&quot;Yes&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS Perform site Assessment No</fullName>
+        <actions>
+            <name>Request_submitted_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Site_request_submitted_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow used to capture the user and DATE/TIME stamp when the Perf site assessment field is set to No from Yes</description>
+        <formula>AND(ISCHANGED( FS_Perf_Site_Assessment__c ), ISPICKVAL(FS_Perf_Site_Assessment__c,&quot;No&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_DateSiteAssessmentCompleted</fullName>
+        <actions>
+            <name>FS_Date_site_assessment_completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow rule to update Date Site Assessment completed Date</description>
+        <formula>IF( ISCHANGED(FS_What_type_of_Site_Assessment__c ) ,  IF( ISPICKVAL(FS_What_type_of_Site_Assessment__c , &#39;SA Not Required - OSM approval required for local market&#39;) , true, false) , false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_DateSiteAssessmentCompleted_blank</fullName>
+        <actions>
+            <name>FS_CIF_DateDACompleted_blank</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>When What type of site assessment is modified from SA not required to SA required, Date SA completed will be blank</description>
+        <formula>AND(ISCHANGED( FS_What_type_of_Site_Assessment__c ), ISPICKVAL(PRIORVALUE(FS_What_type_of_Site_Assessment__c),&#39;SA Not Required - OSM approval required for local market&#39;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_Ice_Fill_Method</fullName>
+        <actions>
+            <name>FS_Update_IceFillmethod</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If Number of Top mounted ice maker is equal to zero, the ice fill method is &#39;manual&#39; else it is &#39;Top Mounted</description>
+        <formula>if(AND(ISNEW(),FS_Number_of_Top_Mount_Ice_Makers__c &gt; 0),true, if(AND( ISCHANGED(FS_Number_of_Top_Mount_Ice_Makers__c),FS_Number_of_Top_Mount_Ice_Makers__c &gt; 0),true,false))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_Ice_Fill_Method_Manual</fullName>
+        <actions>
+            <name>FS_Update_IceFillmethod_Manual</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_CIF__c.FS_Number_of_Top_Mount_Ice_Makers__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>If Number of Top mounted ice maker is equal to zero, the ice fill method is &#39;manual&#39; else it is &#39;Top Mounted</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_SiteSurveyResult_Davaco_Date_by</fullName>
+        <actions>
+            <name>FS_Davaco_Order_Entered_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Davaco_Order_Entered_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED( FS_Davaco_Order_Entered__c ),FS_Davaco_Order_Entered__c  = true )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_SiteSurveyResult_Davaco_Date_by_No</fullName>
+        <actions>
+            <name>FS_Davaco_Order_Entered_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Davaco_Order_Entered_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED( FS_Davaco_Order_Entered__c ),FS_Davaco_Order_Entered__c  = false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_SiteSurveyResult_Dispositon_submit_Date_by</fullName>
+        <actions>
+            <name>FS_Update_Customer_Disposition_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Update_Customer_Disposition_Submit_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(ISCHANGED( FS_Customer_s_disposition_after_review__c ),TEXT(FS_Customer_s_disposition_after_review__c)  &lt;&gt; null)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_SiteSurveyResult_SecDavaco_Date_by</fullName>
+        <actions>
+            <name>FS_Second_Davaco_Order_Entered_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Second_Davaco_Order_Entered_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow used to capture the user and DATE/TIME stamp when the Second Davaco Order Entered field is set to No from Yes</description>
+        <formula>AND(ISCHANGED(FS_Second_Davaco_Order_Entered__c),FS_Second_Davaco_Order_Entered__c = true)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_CIF_SiteSurveyResult_SecDavaco_Date_by_NO</fullName>
+        <actions>
+            <name>FS_Second_Davaco_Order_Entered_Date_NO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Second_Davaco_Order_Entered_by_NO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Workflow used to capture the user and DATE/TIME stamp when the Second Davaco Order Entered field is set to No from Yes</description>
+        <formula>AND(ISCHANGED(FS_Second_Davaco_Order_Entered__c),FS_Second_Davaco_Order_Entered__c = false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

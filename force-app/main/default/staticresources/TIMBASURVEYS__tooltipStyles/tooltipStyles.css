@@ -1,0 +1,232 @@
+/****************** Tooltip styles **************************/
+/*#tooltip {
+	display: none;
+	padding-bottom: 15px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 200px;
+	/* fix for max width in IE */
+	/*width: expression(document.body.clientWidth > 200? "200px": "auto" );
+}
+
+#tooltip .tip {
+	background-color: #111111;
+	
+	/* border radius */
+	/*-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	
+	/* shadow */
+	/*-moz-box-shadow: 1px 1px 6px #000000;
+	-webkit-box-shadow: 1px 1px 6px #000000;
+	box-shadow: 1px 1px 6px #000000;
+	
+	color: #FFFFFF;
+	padding: 8px 10px;
+	width: 100%;
+	text-align: left;
+}
+
+#tooltip .arrow
+{
+	bottom: 0;
+	height: 15px;
+	left: 20px;
+	position: absolute;
+	width: 15px;			
+}
+
+#tooltip .line10 {
+	background-color: #111111;
+	display: block;
+	font-size: 0;
+	height: 1px;
+	margin: 0 auto;
+	width: 15px;
+}
+
+#tooltip .line9 {
+	background-color: #111111;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 13px;
+}
+
+#tooltip .line8 {
+	background-color: #111111;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 11px;
+}
+
+#tooltip .line7 {
+	background-color: #111111;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 9px;
+}
+
+#tooltip .line6 {
+	background-color: #111111;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 7px;
+}
+
+#tooltip .line5 {
+	background-color: #111111;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 5px;
+}
+
+#tooltip .line4 {
+	background-color: #111111;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 3px;
+}
+
+#tooltip .line3 {
+	background-color: #111111;
+	display: block;
+	height: 1px;
+	margin: 0 auto;
+	width: 1px;
+}
+
+#tooltip .arrow div
+{
+	-moz-box-shadow: 1px 4px 5px #000000;
+	font-size: 0;
+}
+/************ End tooltip styles ********************/
+
+
+
+
+/**** Ohter styles for tooltips (this is for the tooltips than appear in the right of the question title and dont move with the mouse) *****************************/
+#tooltip {
+	display: none;
+	padding: 0 10px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 230px;
+	/* fix for max width in IE */
+	width: expression(document.body.clientWidth > 230? "230px": "auto" );
+}
+
+#tooltip #tip {
+	background: none repeat scroll 0 0 #111111;
+	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	
+	-moz-box-shadow: 4px 4px 5px #000000;
+	-webkit-box-shadow: 4px 4px 5px #000000;
+	box-shadow: 4px 4px 5px #000000;
+	
+	color: #FFFFFF;
+	font-weigth: normal;
+	padding: 8px 10px;
+	width: 90%;
+	text-align: left;
+}
+
+#tooltip .arrow
+{
+	left: 0;
+	width: 10px;
+	/*top: 10px;*/
+	position: absolute;
+	height: 15px;			
+}
+
+#tooltip .line10 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	font-size: 0;
+	width: 1px;
+	margin: 0 auto;
+	height: 15px;
+	float: right;
+}
+
+#tooltip .line9 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	width: 1px;
+	margin: 1px auto 0;
+	height: 13px;
+	float: right;
+}
+
+#tooltip .line8 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	width: 1px;
+	margin: 2px auto 0;
+	height: 11px;
+	float: right;
+}
+
+#tooltip .line7 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	width: 1px;
+	margin: 3px auto 0;
+	height: 9px;
+	float: right;
+}
+
+#tooltip .line6 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	width: 1px;
+	margin: 4px auto 0;
+	height: 7px;
+	float: right;
+}
+
+#tooltip .line5 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	width: 1px;
+	margin: 5px auto 0;
+	height: 5px;
+	float: right;
+}
+
+#tooltip .line4 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	width: 1px;
+	margin: 6px auto 0;
+	height: 3px;
+	float: right;
+}
+
+#tooltip .line3 {
+	background: none repeat scroll 0 0 #111111;
+	display: block;
+	width: 1px;
+	margin: 7px auto 0;
+	height: 1px;
+	float: right;
+}
+
+#tooltip .arrow div
+{
+	/*-moz-box-shadow: 1px 4px 5px #000000;*/
+	font-size: 0;
+}
+
+/********************** End other styles for tooltips ******************************/

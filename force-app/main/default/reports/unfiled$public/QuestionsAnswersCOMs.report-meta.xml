@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Execution_Plans3__r$Name</field>
+    </columns>
+    <columns>
+        <field>User.Execution_Plans3__r$FS_Back_up_COM__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User.Execution_Plans3__r$FS_CustomLastModifiedDate__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>10/1/2015 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>QuestionsAnswersCOMs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>QuestionnaireCOM__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>User$ChatterAdoptionStageModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

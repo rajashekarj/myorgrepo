@@ -1,0 +1,38 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p style="font-size: 12pt; margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-size:13.5pt;font-family:&quot;Calibri Light&quot;,sans-serif;color:black;
+background:white"><img src="https://freestyle--c.na34.content.force.com/servlet/servlet.ImageServer?id=01561000002i32W&amp;oid=00D61000000aNH9" border="0" align="left" alt=""><br></span></p><p style="font-size: 12pt; margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-size:13.5pt;font-family:&quot;Calibri Light&quot;,sans-serif;color:black;
+background:white"><br></span></p><p style="font-size: 12pt; margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-size:13.5pt;font-family:&quot;Calibri Light&quot;,sans-serif;color:black;
+background:white"><br></span></p><p style="font-size: 12pt; margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-size:13.5pt;font-family:&quot;Calibri Light&quot;,sans-serif;color:black;
+background:white"><br></span></p><p style="font-size: 12pt; margin: 0in 0in 0.0001pt; text-align: justify;"><br></p><p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black; background: white;">Attention FET user,</span><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black;"><o:p></o:p></span></p><p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black; background: white;"><br></span></p>
+
+<p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black;">We have
+identified an issue whereby several new &amp; existing customer account
+records/updates are not flowing down to FET from SAP. This includes all account
+record types.<o:p></o:p></span></p><p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black;"><br></span></p>
+
+<p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black;">An
+incident ticket has been escalated with middleware Global I.T. Teams, which
+have identified a problem with the MuleSoft integration layer. The teams are
+still trying to identify the root cause. We will communicate the expected
+timeline for resolution once we know more. In the meantime, we are asking for
+you to help us identify all ACN records that have not made it over to FET, so
+that we can have the SAP IT teams reprocess each of those records once the
+issue has been resolved. <o:p></o:p></span></p><p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black;"><br></span></p>
+
+<p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black;">Until
+this issue is completely resolved you will need to manage all Site Assessment
+and Installation activities outside of FET, but then be required to go back to
+FET to capture all activities so there is proper traceability of your actions. <o:p></o:p></span></p><p style="margin: 0in 0in 0.0001pt; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; color: black;"><br></span></p><p style="margin: 0in; font-family: &quot;Calibri Light&quot;;">We
+apologize for the inconvenience, but thank you for your continued support!</p><p style="font-size: 12pt; margin: 0in;"><img src="https://freestyle--c.na34.content.force.com/servlet/servlet.ImageServer?id=015610000011a8x&amp;oid=00D61000000aNH9" border="0" align="left" alt=""><br></p><p style="font-size: 12pt; margin: 0in; font-family: &quot;Calibri Light&quot;;"><span style="font-weight:bold;color:red"><br></span></p><p style="font-size: 12pt; margin: 0in; font-family: &quot;Calibri Light&quot;;"><span style="font-weight:bold;color:red">FET</span><span style="color:red">&nbsp;</span><span style="font-weight:bold;color:red">Support Team</span>&nbsp;|
+E-mail:&nbsp;<a href="mailto:fethelp@coca-cola.com"><span style="font-weight:bold">fethelp@coca-cola.com</span></a></p><p style="font-size: 12pt; margin: 0in 0in 0.0001pt; text-align: justify;">
+
+
+
+
+
+</p><p style="font-size: 12pt; margin: 0in; font-family: &quot;Calibri Light&quot;;">Coca-Cola
+North America, 1150 Sanctuary Pkwy, Alpharetta GA 30009</p><br>]]></td>
+</tr>
+</table>

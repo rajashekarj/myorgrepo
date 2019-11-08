@@ -12,19 +12,19 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Day â€“ typically 8am start time</fullName>
+                <fullName>Day Ã¢â‚¬â€œ typically 8am start time</fullName>
                 <default>false</default>
-                <label>Day â€“ typically 8am start time</label>
+                <label>Day Ã¢â‚¬â€œ typically 8am start time</label>
             </value>
             <value>
-                <fullName>Night â€“ typically 10pm start time</fullName>
+                <fullName>Night Ã¢â‚¬â€œ typically 10pm start time</fullName>
                 <default>false</default>
-                <label>Night â€“ typically 10pm start time</label>
+                <label>Night Ã¢â‚¬â€œ typically 10pm start time</label>
             </value>
             <value>
-                <fullName>Early AM â€“ typically 5am or 6am start time</fullName>
+                <fullName>Early AM Ã¢â‚¬â€œ typically 5am or 6am start time</fullName>
                 <default>false</default>
-                <label>Early AM â€“ typically 5am or 6am start time</label>
+                <label>Early AM Ã¢â‚¬â€œ typically 5am or 6am start time</label>
             </value>
             <value>
                 <fullName>Day</fullName>

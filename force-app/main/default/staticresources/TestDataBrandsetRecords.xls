@@ -1,0 +1,38 @@
+NAME,FS_COUNTRY__C,FS_Date_Brandset_is_available_for_Select__c,FS_Effective_Start_Date__c,FS_PLATFORM__C
+Brandset A - Pepper1,US,2016-12-31,2016-12-31,8000;9000
+Brandset B - Pibb1,US,2016-12-31,2016-12-31,8000;9000
+"Brandset C - Pepper, FUZE, No Pade1",US,2016-12-31,2016-12-31,8000;9000
+"Brandset D - Pibb, FUZE, No Pade1",US,2016-12-31,2016-12-31,8000;9000
+"Brandset E - Pepper, FUZE, No vw1",US,2016-12-31,2016-12-31,8000;9000
+"Brandset F - Pibb, FUZE, No vw1",US,2016-12-31,2016-12-31,8000;9000
+"Brandset G - Pepper, FUZE, No Dasani1",US,2016-12-31,2016-12-31,8000;9000
+"Brandset H - Pibb, FUZE, No Dasani1",US,2016-12-31,2016-12-31,8000;9000
+Brandset I - FHS1,US,2016-12-31,2016-12-31,8000;9000
+Brandset 1 - Pepper/Hi-C/Pade1,US,2016-12-31,2016-12-31,7000
+Brandset 3 - Pepper/Barq's1,US,2016-12-31,2016-12-31,7000
+Brandset 4 - Pepper/Hi-C/Rasp1,US,2016-12-31,2016-12-31,7000
+Brandset 5 - Pibb/Hi-C/Rasp1,US,2016-12-31,2016-12-31,7000
+Brandset 6 - Barqs/Hi-C/Rasp1,US,2016-12-31,2016-12-31,7000
+Brandset 7 - Pibb/Hi-C/Pade1,US,2016-12-31,2016-12-31,7000
+Brandset 8 - Barqs/Hi-C/Pade1,US,2016-12-31,2016-12-31,7000
+Brandset 9 - Pepper/Pade/Rasp1,US,2016-12-31,2016-12-31,7000
+Brandset 10 - Pibb/Pade/Rasp1,US,2016-12-31,2016-12-31,7000
+Brandset 11 - Barqs/Pade/Rasp1,US,2016-12-31,2016-12-31,7000
+Brandset 15 - Pepper/Hi-C/vw1,US,2016-12-31,2016-12-31,7000
+Brandset 16 - Pibb/Hi-C/vw1,US,2016-12-31,2016-12-31,7000
+Brandset 17 - Barqs/Hi-C/vw1,US,2016-12-31,2016-12-31,7000
+Brandset 18 - Pepper/vw/Raspberry1,US,2016-12-31,2016-12-31,7000
+Brandset 19 - Pibb/vw/Raspberry1,US,2016-12-31,2016-12-31,7000
+Brandset 20 - Barqs/vw/Raspberry1,US,2016-12-31,2016-12-31,7000
+Brandset 21 - Pibb/Hi-C/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 22 - Pibb/Pade/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 23 - Pibb/vw/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 24 - Barqs/Hi-C/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 25 - Barqs/Pade/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 26 -Barqs/vw/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 27 - Pepper/Rasp/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 28 - Pibb/Rasp/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 29 - Barqs/Rasp/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 30 - Pepper/Hi-C/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 31 - Pepper/Pade/FUZE1,US,2016-12-31,2016-12-31,7000
+Brandset 32 - Pepper/vw/FUZE1,US;CA,2016-12-31,2016-12-31,7000

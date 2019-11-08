@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Valid_Fill_Notification_alert_Equipment_Pkg</fullName>
+        <description>Valid-Fill Notification alert Equipment Pkg</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>hbashuk@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Valid_Fill_Notification_alert_Equip_pkg</template>
+    </alerts>
+    <alerts>
+        <fullName>Valid_Fill_Request</fullName>
+        <description>Valid Fill Request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>saikrishnateja.r@fet.fetprod.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Valid_Fill_Request_Equp_pckg</template>
+    </alerts>
+    <alerts>
+        <fullName>hwai_notifiaction</fullName>
+        <description>Notification for Hawaii Installation Equip package</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>vicesposito@fs.coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Notif_for_Hawaii_Installation_Equip_pakg</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FS_Hawaii_Notification_update</fullName>
+        <field>FS_Notification_for_Hawaii_Install_fla__c</field>
+        <literalValue>0</literalValue>
+        <name>Hawaii Notification flag update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Notification for Hawaii Installation Equipment package</fullName>
+        <actions>
+            <name>hwai_notifiaction</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>FS_Hawaii_Notification_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_IP_Equipment_Package__c.FS_Notification_for_Hawaii_Install_fla__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Valid Fill Request Equipment Package</fullName>
+        <actions>
+            <name>Valid_Fill_Request</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_IP_Equipment_Package__c.FS_Valid_Fill_QTY__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Valid-Fill Notification Equipment Package</fullName>
+        <actions>
+            <name>Valid_Fill_Notification_alert_Equipment_Pkg</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( FS_Valid_Fill_Notification_Flag__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

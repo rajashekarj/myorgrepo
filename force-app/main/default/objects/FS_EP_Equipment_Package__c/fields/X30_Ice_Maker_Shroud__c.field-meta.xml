@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>X30_Ice_Maker_Shroud__c</fullName>
     <externalId>false</externalId>
-    <label>30â€� Ice Maker Shroud</label>
+    <label>30Ã¢â‚¬ï¿½ Ice Maker Shroud</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
@@ -12,25 +12,25 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>46376: Shroud for 30in Ice Maker Large 23â€�-28â€� tall IM</fullName>
+                <fullName>46376: Shroud for 30in Ice Maker Large 23Ã¢â‚¬ï¿½-28Ã¢â‚¬ï¿½ tall IM</fullName>
                 <default>false</default>
-                <label>46376: Shroud for 30in Ice Maker Large 23â€�-28â€� tall IM</label>
+                <label>46376: Shroud for 30in Ice Maker Large 23Ã¢â‚¬ï¿½-28Ã¢â‚¬ï¿½ tall IM</label>
             </value>
             <value>
-                <fullName>46378: Shroud for 30in Ice Maker Small &lt; 23â€� tall IM</fullName>
+                <fullName>46378: Shroud for 30in Ice Maker Small &lt; 23Ã¢â‚¬ï¿½ tall IM</fullName>
                 <default>false</default>
-                <label>46378: Shroud for 30in Ice Maker Small &lt; 23â€� tall IM</label>
+                <label>46378: Shroud for 30in Ice Maker Small &lt; 23Ã¢â‚¬ï¿½ tall IM</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>9000</controllingFieldValue>
             <controllingFieldValue>9100</controllingFieldValue>
-            <valueName>46376: Shroud for 30in Ice Maker Large 23â€�-28â€� tall IM</valueName>
+            <valueName>46376: Shroud for 30in Ice Maker Large 23Ã¢â‚¬ï¿½-28Ã¢â‚¬ï¿½ tall IM</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>9000</controllingFieldValue>
             <controllingFieldValue>9100</controllingFieldValue>
-            <valueName>46378: Shroud for 30in Ice Maker Small &lt; 23â€� tall IM</valueName>
+            <valueName>46378: Shroud for 30in Ice Maker Small &lt; 23Ã¢â‚¬ï¿½ tall IM</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

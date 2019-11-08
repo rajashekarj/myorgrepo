@@ -1,0 +1,5 @@
+The below AMOA case was closed but failed to update the 'Asset Tracking Form (AMOA) Status' to Complete.<br></br>
+Please update the 'Asset Tracking Form (AMOA) Status' to Complete against the related RO4W record.<br></br>
+Case # : <a href={!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.FS_related_case_id__c}>{!FS_Installation__c.FS_Freestyle_Support_Tool_Case__c}</a><Br></Br>
+Case Status : Closed<Br></Br>
+RO4W :  <a href={!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.Id}>{!FS_Installation__c.Name}</a>

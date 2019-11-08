@@ -1,0 +1,23 @@
+*** CASE CLOSED NOTIFICATION *** <br/><br/>
+
+Hi {!Contact.FirstName}&nbsp; {!Contact.LastName},<br/><br/>
+
+The following case has been CLOSED. <br/><br/>
+
+Case #: {!Case.CaseNumber} <br/>
+Issue Description: {!Case.Subject} <br/> 
+Customer: {!Case.Customer_Name__c} <br/> 
+Customer ACN: {!Case.Customer_ACN__c} <br/> 
+Customer SAP ID: {!Case.Customer_SAP_ID__c} <br/> 
+Customer Phone: {!Case.Customer_Phone__c} <br/> 
+Customer Address: {!Case.Customer_Address__c} <br/> 
+Contact Name: {!Contact.Name} <br/> 
+Contact Email: {!Contact.Email} <br/> 
+Case Category: {!Case.Case_Category__c} <br/> <br/>
+
+Click on the link to access the case: {!Case.Link}<br/><br/><br/><br/>
+
+
+Please fill the survey for Case:<br/><br/>
+ 
+Complete this survey at:&nbsp;&nbsp;{!IF(Contact.Id != null,IF(Case.Id != null,'<a href="https://freestyle--timbasurveys.na34.visual.force.com/apex/timbasurveys__survey?id=a1Y61000001tIP0EAM&cId='+Contact.Id+'&case_id='+Case.Id+'&wf=yes">HIO Survey 2016</a>','<a href="https://freestyle--timbasurveys.na34.visual.force.com/apex/timbasurveys__survey?id=a1Y61000001tIP0EAM&cId='+Contact.Id+'&wf=yes">HIO Survey 2016</a>'),'<a href="https://freestyle--timbasurveys.na34.visual.force.com/apex/timbasurveys__survey?id=a1Y61000001tIP0EAM&wf=yes&oppty='+Opportunity.Id+'">HIO Survey 2016</a>')} <br /> <br />

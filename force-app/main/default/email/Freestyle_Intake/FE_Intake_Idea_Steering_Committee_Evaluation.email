@@ -1,0 +1,15 @@
+Dear Steering Committee Member,
+ 
+A new Freestyle Dispenser Idea has been approved by {!User.Name} and has been sent to you for review; a final approval will be provided by the platform owner. 
+
+Idea # - {!FE_Intake_Idea__c.Name}
+Originator - {!FE_Intake_Idea__c.CreatedBy}
+Platform - {!FE_Intake_Idea__c.FE_Platform__c}
+Category - {!FE_Intake_Idea__c.FE_Category__c}
+
+Please review the idea at the following link and reply to {!User.Name} with your approval or rejection. 
+
+{!FE_Intake_Idea__c.Link} 
+
+Thank You!
+Freestyle Sustaining Idea Tool

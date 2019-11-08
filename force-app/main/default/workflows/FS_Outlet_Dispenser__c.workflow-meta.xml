@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Blank_out_remove_returned_date</fullName>
+        <field>Removed_Returned_Date__c</field>
+        <name>Blank out remove/returned date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Blank_out_warehouse</fullName>
+        <field>Warehouse_Name__c</field>
+        <name>Blank out warehouse</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Equipment_type</fullName>
+        <field>FS_Equip_Type__c</field>
+        <formula>FSInt_Dispenser_Type__r.Dispenser_Type__c</formula>
+        <name>Equipment type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Install_Date_Missed_Update</fullName>
+        <description>Set install date missed to true 7 days after planned install date has passed and status is not Installed at outlet</description>
+        <field>Install_Date_Missed__c</field>
+        <literalValue>1</literalValue>
+        <name>Install Date Missed Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Populate_ACN_Text</fullName>
+        <field>FS_ACN_TEXT__c</field>
+        <formula>FS_ACN_NBR__c</formula>
+        <name>Populate ACN Text</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Serial_SAPID_Field_Update</fullName>
+        <field>Serial_SAP_ID__c</field>
+        <formula>FS_Serial_Number2__c+ &#39; &#39;+&#39;-&#39;+&#39; &#39;+FS_Outlet__r.FS_SAP_ID__c</formula>
+        <name>Serial#-SAPID Field Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Inactive_Flag_True</fullName>
+        <field>FS_IsActive__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Inactive Flag True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Install_Missed_Date</fullName>
+        <description>Sets install missed date on outlet dispenser when status &lt;&gt; installed &amp; planned install date + 7 &gt; today</description>
+        <field>Install_Date_Missed__c</field>
+        <literalValue>1</literalValue>
+        <name>Set Install Missed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>StatusDateToday</fullName>
+        <field>FS_Date_Status__c</field>
+        <formula>Today()</formula>
+        <name>StatusDateToday</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Track_Assigned_to_outlet</fullName>
+        <field>FS_Date_Status__c</field>
+        <formula>FS_Last_Updated_Date_Time_to_NMS__c</formula>
+        <name>Track Assigned to outlet</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Remanufactured</fullName>
+        <description>Update â€œRe-manufacturedâ€� check-box to true when setting the &quot;removed/returned date&quot;</description>
+        <field>Re_Manufactured__c</field>
+        <literalValue>1</literalValue>
+        <name>Update_Remanufactured</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>External Id Update on OD Records</fullName>
+        <actions>
+            <name>Serial_SAPID_Field_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>FS_Outlet_Dispenser__c.FS_Serial_Number__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Outlet_Dispenser__c.FS_SAP_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>To update serail# - SAPID and Serial#-Active(A)/Inactive(I)</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Install Date Missed Rule</fullName>
+        <active>true</active>
+        <formula>AND( TODAY() - FS_Planned_Install_Date__c &gt; 7    ,  NOT(ISPICKVAL(FS_Status__c , &#39;Enrolled&#39;)))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Install_Date_Missed_Update</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>FS_Outlet_Dispenser__c.FS_Planned_Install_Date__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Populate_ACN_text</fullName>
+        <actions>
+            <name>Populate_ACN_Text</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>To populate Customer ACN Text field in Outlet Dispenser object.</description>
+        <formula>NOT(ISBLANK(FS_ACN_NBR__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Status Assigned to outlet</fullName>
+        <actions>
+            <name>Blank_out_remove_returned_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Blank_out_warehouse</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Outlet_Dispenser__c.FS_Status__c</field>
+            <operation>equals</operation>
+            <value>Assigned to Outlet</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Track assigned to outlet</fullName>
+        <actions>
+            <name>Track_Assigned_to_outlet</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>FET INT - To track the registration date of the dispenser with Air Watch</description>
+        <formula>AND(ISPICKVAL(FS_Status__c, &#39;Assigned to Outlet&#39;) , BEGINS(FS_NMS_Response__c   ,&#39;200&#39;),  FS_IsActive__c  = True,ISBLANK(FS_Date_Status__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update_Remanufactured</fullName>
+        <actions>
+            <name>Set_Inactive_Flag_True</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Remanufactured</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update â€œRe-manufacturedâ€� check-box to true when setting the &quot;removed/returned date&quot;. If manually unchecked at any time and has a &quot;removed/returned date&quot;, do not run through workflow to check the field to true.</description>
+        <formula>NOT(ISBLANK(Removed_Returned_Date__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

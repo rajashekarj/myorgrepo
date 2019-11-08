@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is an email template sent out when a Non-North American case is closed</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>SE Case Close Notification</name>
+    <style>none</style>
+    <subject>Case # {!Case.CaseNumber} has been closed</subject>
+    <textOnly>*** CASE CLOSED NOTIFICATION ***&lt;br/&gt;
+
+Hi {!Contact.FirstName}  {!Contact.LastName},&lt;br/&gt;
+
+The following case has been CLOSED.&lt;br/&gt;&lt;br/&gt;
+
+Case #: {!Case.CaseNumber}&lt;br/&gt;
+Issue Description: {!Case.Subject} &lt;br/&gt;
+Customer: {!Case.Customer_Name__c} &lt;br/&gt;
+Customer ACN: {!Case.Customer_ACN__c} &lt;br/&gt;
+Customer SAP ID: {!Case.Customer_SAP_ID__c} &lt;br/&gt;
+Customer Phone: {!Case.Customer_Phone__c} &lt;br/&gt;
+Customer Address: {!Case.Customer_Address__c} &lt;br/&gt;
+Contact Name: {!Contact.Name} &lt;br/&gt;
+Contact Email: {!Contact.Email} &lt;br/&gt;
+Case Category: {!Case.Case_Category__c} &lt;br/&gt;
+
+Click on the link to access the case: {!Case.Link}&lt;br/&gt;&lt;br/&gt;</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

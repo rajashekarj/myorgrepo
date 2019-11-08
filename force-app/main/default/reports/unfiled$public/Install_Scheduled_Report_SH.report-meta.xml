@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FS_Outlet_Dispenser__c.FS_SAP_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>FS_Outlet_Dispenser__c.FS_Planned_Install_Date__c</field>
+    </columns>
+    <columns>
+        <field>FS_Outlet_Dispenser__c.FS_Date_Installed__c</field>
+    </columns>
+    <columns>
+        <field>FK_$FS_Installation__c.Overall_Status2__c</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <description>Outlet Install Scheduled Report</description>
+    <filter>
+        <criteriaItems>
+            <column>FK_$FS_Installation__c.Overall_Status2__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>4 Install Scheduled</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Install Scheduled Report - SH</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$FS_Outlet_Dispenser__c@FS_Outlet_Dispenser__c.Installation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

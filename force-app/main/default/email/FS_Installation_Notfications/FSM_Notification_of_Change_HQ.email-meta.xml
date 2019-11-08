@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FSM Notification of Change - HQ</name>
+    <style>none</style>
+    <subject>Freestyle Tracker -  HQ - FSM Approval Needed: {!Account.Name} - {!Account.FS_ACN__c}</subject>
+    <textOnly>{!User.Name} modified the HQ:
+
+HQ Name: {!Account.Name}
+HQ #: {!Account.FS_ACN__c}
+Region Customer: {!Account.00Ne0000000YCcA}
+HQ Sales: {!Account.OwnerFullName}
+FSM Approval: {!Account.FS_FSM_Review__c}
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click {!Account.Link} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

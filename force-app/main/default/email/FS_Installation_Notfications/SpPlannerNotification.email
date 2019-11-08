@@ -1,0 +1,883 @@
+<messaging:emailTemplate recipientType="Contact"
+    relatedToType="FS_Installation__c"
+    subject="{!relatedTo.FS_SP_Code__c} - {!relatedTo.FS_SP__r.name} - Freestyle {!IF(relatedTo.recordType.Name='New Install','Installation','Transaction')} Details for ACN : {!relatedTo.Outlet_ACN__c}, {!relatedTo.FS_Outlet_Name__c}, {!relatedTo.Outlet_City_and_State__c}"   
+    replyTo="support@acme.com">
+
+    <messaging:htmlEmailBody >
+        <html>
+            <body style="{font-family: calibari; size: 12pt;}">
+                <p>Installation Details {!relatedTo.name},</p>  
+                    <apex:variable var="size" value="{!0}" />
+                    <apex:variable var="isNewInstall" value="{!IF(relatedTo.recordType.Name='New Install',true,false)}"/>
+                    <apex:variable var="isReplaceAndRelocI4w" value="{!IF((relatedTo.recordType.Name='Replacement' || relatedTo.recordType.Name='Relocation (I4W)'),true,false)}"/>
+                    <apex:variable var="isRemovAndRelocO4w" value="{!IF((relatedTo.recordType.Name='Removal' || relatedTo.recordType.Name='Relocation (O4W)'),true,false)}"/>
+                    <!--<apex:repeat value="{!relatedTo.Equipment_Packages__r}">
+                        <apex:variable value="{!size+1}" var="size"/>
+                    </apex:repeat>-->
+                    <apex:variable value="{!IF(relatedTo.FS_Platform1__c!=NULL,size+1,size)}" var="size"/>
+                    <apex:variable value="{!IF(relatedTo.FS_Platform2__c!=NULL,size+1,size)}" var="size"/>
+                    <apex:variable value="{!IF(relatedTo.FS_Platform3__c!=NULL,size+1,size)}" var="size"/>
+                    <apex:variable var="EquiPcks" value="{!relatedTo.Equipment_Packages__r}" />
+                    <apex:variable var="TechIns" value="{!relatedTo.IP_Technician_Instructions__r}" /> 
+                    <apex:variable var="AssocBrand" value="{!relatedTo.Account_Brandsets__r}" />                  
+                <table style="width:100%;border-collapse: collapse; font-family: Calibri,Candara,Optima,Arial,sans-serif;border: 1px solid black;" cellpadding="5">  
+                <!--*********************Display Record Type Name FNF 973*********************************************-->
+                <apex:outputPanel >
+                    <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;text-align: center;">
+                            <td style="border: 1px solid black;font-size: 40px;" colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> {!relatedTo.recordType.Name} </td>
+                    </tr>
+                </apex:outputPanel>
+                <!--*********************Reminder Message for New Install FNF 788*********************************************-->
+                <apex:outputPanel rendered="{!IF(isNewInstall,true,false)}">
+                    <tr style="background-color:white;color: red;border: 1px solid black;text-align: center;">
+                            <td style="border: 1px solid black;font-size: 25px;" colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> {!$Label.FS_Reminder_message_on_SP_Planner_for_New_Install}</td>
+                    </tr>
+                </apex:outputPanel>
+                
+                <!--*********************Reminder Message for PIA FNF 788 ***************************************************-->
+                <apex:outputPanel rendered="{!IF(!isNewInstall,true,false)}">
+                    <tr style="background-color:white;color: red;border: 1px solid black;text-align: center;">
+                            <td style="border: 1px solid black;font-size: 25px;" colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> {!$Label.FS_Reminder_message_on_SP_Planner_for_PIA}</td>
+                    </tr>
+                </apex:outputPanel>
+                 
+                
+                <!--**************************Installation Information*************************************************-->          
+                    <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;">
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Installation Information</b></td>
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b> Outlet</b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Outlet__r.name} </td>
+                    </tr>
+                    <apex:outputPanel >
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b> Outlet Information</b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> <apex:outputText value="{!relatedTo.FS_Outlet_Information__c}" escape="false"></apex:outputText>  </td>
+                    </tr>
+                    </apex:outputPanel>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Service Provider Code </b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_SP_Code__c} </td>
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>SP Name </b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_SP_Name_IP__c} </td>
+                    </tr>
+                    <apex:outputPanel rendered="{!IF(isNewInstall,true,false)}">
+                        <tr style="{!IF(isNewInstall,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>COM </b></td> 
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_COM_Regular__r.name} </td>
+                        </tr>   
+                    </apex:outputPanel> 
+                    <apex:outputPanel rendered="{!IF(isNewInstall,false,true)}">                
+                        <tr style="{!IF(!isNewInstall,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>COM </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Entering_COM__r.name} </td>
+                        </tr>
+                    </apex:outputPanel> 
+                    <apex:outputPanel rendered="{!IF(isNewInstall,true,false)}">
+                        <tr style="{!IF(isNewInstall,'border: 1px solid black;','display:none;')}">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Installation PM</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_PM_Regular__r.name} </td>
+                        </tr>
+                    </apex:outputPanel> 
+                    <apex:outputPanel rendered="{!IF(isNewInstall,false,true)}">                
+                        <tr style="{!IF(!isNewInstall,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>PIA PM</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_PM_Execution__r.name} </td>
+                        </tr>                     
+                        <tr style="{!IF(!isNewInstall,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>PIA PC/AC</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_PIC__r.name} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!IF(isNewInstall,true,false)}">
+                        <tr style="{!IF(isNewInstall,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Installation PC/AC 1</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Installation_PC_AC_1__r.name} </td>
+                        </tr>
+                        <tr style="{!IF(isNewInstall,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Installation PC/AC 2</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Installation_PC_AC_2__r.name} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <!--**************************Important Dates*************************************************-->
+                    <apex:outputPanel rendered="{!IF((isReplaceAndRelocI4w || isNewInstall),true,false)}">
+                        <tr style="{!IF((isReplaceAndRelocI4w || isNewInstall),'background-color:#ff3d3d;color: white;border: 1px solid black;','display: none;')}">
+                            <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"><b>Important Dates</b></td>
+                        </tr>
+                    </apex:outputPanel>   
+                    <apex:outputPanel rendered="{!IF(isRemovAndRelocO4w,true,false)}">                 
+                        <tr style="{!IF(isRemovAndRelocO4w,'background-color:#ff3d3d;color: white;border: 1px solid black;','display: none;')}">
+                            <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Important Dates and Dispenser Information</b></td>
+                        </tr>
+                    </apex:outputPanel>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b> Scheduled Date </b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Scheduled_Install_Date__c} </td>
+                    </tr>
+                    <apex:outputPanel rendered="{!IF((isReplaceAndRelocI4w || isRemovAndRelocO4w),true,false)}"> 
+                        <tr style="{!IF((isReplaceAndRelocI4w || isRemovAndRelocO4w),'border: 1px solid black;','display:none;')}">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b> Scope of Work </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Scope_of_Work__c} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!IF((isReplaceAndRelocI4w),true,false)}">
+                        <tr style="{!IF(isReplaceAndRelocI4w ,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Is ancillary equipment getting relocated </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_backroom_ancillary_equipment_getting__c} </td>
+                        </tr>                   
+                        <tr style="{!IF(isReplaceAndRelocI4w ,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Are cabinets getting relocated? </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Are_cabinets_getting_relocated__c} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!IF(isNewInstall,true,false)}">
+                        <tr style="{!IF(isNewInstall,'border: 1px solid black;','display:none;')}">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Install time </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Install_Time__c} </td>
+                        </tr>
+                        <tr style="{!IF(isNewInstall,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Projected Fire-Up Date</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_NewRemodelOutletOnlyProjectedFireUp__c} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!IF(isReplaceAndRelocI4w,true,false)}">
+                        <tr style="{!IF(isReplaceAndRelocI4w ,'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Fire-Up Date </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Fire_Up_Date__c} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!IF((isNewInstall || isReplaceAndRelocI4w ),true,false)}">
+                        <tr style="{!IF((isNewInstall || isReplaceAndRelocI4w ),'border: 1px solid black;','display:none;')}"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Projected Fire-Up Time </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_FireUp_Time__c} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!IF(isRemovAndRelocO4w,true,false)}">
+                        <tr style="{!IF((isRemovAndRelocO4w),'border: 1px solid black;','display:none;')}">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b> Ancillary Part to Be Removed </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Ancillary_part_to_be_removed__c} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <!--**************************Selected Brandsets*************************************************-->
+                    <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;"> 
+                        <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Selected Brandsets</b></td>
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Platform </b></td>
+                        <apex:repeat var="ab" value="{!AssocBrand}">
+                            <td style="border: 1px solid black;" colspan = "2">{!ab.FS_Platform__c}</td>
+                        </apex:repeat> 
+                    </tr>
+                    <apex:outputPanel rendered="{!IF(!isNewInstall,true,false)}">
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Dispenser Serial#</b></td>
+                        <apex:repeat var="ab" value="{!AssocBrand}">
+                            <c:FS_SPPlannerEmailHelperComponent PlatformType="{!ab.FS_Platform__c}" InstallationRec="{!relatedTo.id}" IPRecordType="{!relatedTo.recordType.name}" />
+                        </apex:repeat> 
+                    </tr>
+                    </apex:outputPanel>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>NonBranded Water </b></td>
+                        <apex:repeat var="ab" value="{!AssocBrand}">
+                            <td style="border: 1px solid black;" colspan = "2">{!ab.FS_NonBranded_Water__c}</td>
+                        </apex:repeat> 
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Brandset</b></td>
+                        <apex:repeat var="ab" value="{!AssocBrand}">
+                            <td style="border: 1px solid black;" colspan = "2">{!ab.Brandset_Name__c}</td>
+                        </apex:repeat> 
+                    </tr>
+                    <!--**************************Equipment Package*************************************************-->
+                    <apex:outputPanel id="EquipSection" rendered="{!IF((isReplaceAndRelocI4w || isNewInstall),true,false)}">
+                        <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;">
+                            <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Equipment Package</b></td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Platform Type</b></td>
+                            <apex:repeat var="ep" value="{!relatedTo.Equipment_Packages__r}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ep.FS_Platform_Type__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <apex:outputPanel id="PlannedTop" rendered="{!IF(isReplaceAndRelocI4w,true,false)}">
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b># Planned Top Mount Ice Maker</b></td>
+                            <apex:repeat var="ep" value="{!relatedTo.Equipment_Packages__r}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ep.FS_Planned_Topmount_Icemakers__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        </apex:outputPanel>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;"></td>
+                                <td style="border: 1px solid black;">QTY</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Dispenser Series IC Code</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Dispenser_Series_IC_code__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Dispenser_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>LID/IM Adapter 1</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_LID_IM_Adapter1__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_LID_IM_Adapter1_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>LID/IM Adapter 2</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_LID_IM_Adapter2__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_LID_IM_Adapter2_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <!--**************************FET 7.1 New Fields*************************************************-->
+                         <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Ice Maker Cladding</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Ice_Maker_Cladding__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Ice_Maker_Cladding_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <!--**************************FET 7.1 New Fields*************************************************-->
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Drip Tray</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Tall_Cup_Kit__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Tall_Cup_Kit_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                      
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Soft Ice / Misc Adapter</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Soft_Ice_Misc_Adapter__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Soft_Ice_Misc_Adapter_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Label Kits</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Label_kits__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Label_kits_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Pump Kit</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Pump_Kit__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Pump_Kit_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <!--**************************FET 7.1 New Fields*************************************************-->
+                          <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Coke Pump</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Coke_Pump__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Coke_Pump_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <!--**************************FET 7.1 New Fields*************************************************-->
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Vacuum Regulator</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Vacuum_Regulator__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Vacuum_Regulator_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>External Modems</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_External_Modems__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_External_Modems_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Rack 1</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Rack1__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Rack1_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Rack 2</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Rack2__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Rack2_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                         <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Rack 3</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Rack3__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Rack3_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Stand</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Stand__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Stand_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                         <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Shelf 1</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Shelf1__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Shelf1_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Shelf 2</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Shelf2__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Shelf2_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                         <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Water Filter 1</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Water_Filter__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Water_Filter_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Water Filter 2</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Water_Filter_2__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Water_Filter_2_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Regulator</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Regulator__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Regulator_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Water Booster</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Water_Booster__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Water_Booster_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Booster Shelf</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Booster_Shelf__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Booster_Shelf_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Manifold</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Manifold__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Manifold_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Valid Fill?</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Valid_Fill__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Valid_Fill_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>30” Ice Maker Shroud</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.X30_Ice_Maker_Shroud__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.X30_Ice_Maker_Shroud_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Extended Splash </b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Extended_Splash__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Extended_Splash_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Boost (4LC) NNS Tray</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_X4LC_NNS_Tray__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_X4LC_NNS_Tray_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Boost (4LC) RCGP Module/s</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_X4LC_RCGP_Module_s__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_X4LC_RCGP_Module_s_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Boost (4LC) RCGP Installation Kit</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_X4LC_RCGP_Installation_Kit__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_X4LC_RCGP_Installation_Kit_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <!--**************************FET 7.1 New Fields*************************************************-->
+                          <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Boost Tri-CGP (M-Series)</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Boost_Tri_CGP_M_Series__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Boost_Tri_CGP_M_Series_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                         
+                          <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Boost NNS Tray (M-Series)</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Boost_NNS_Tray_M_Series__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Boost_NNS_Tray_M_Series_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Boost Installation Kit (M-Series)</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Boost_Installation_Kit_M_Series__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Boost_Installation_Kit_M_Series_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                   
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Misc Kit (M-Series)</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;">{!ep.FS_Misc_Kit_M_Series__c}</td>
+                                <td style="border: 1px solid black;">{!ROUND(ep.FS_Misc_Kit_M_Series_QTY__c, 0)}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <!--**************************FET 7.1 New Fields*************************************************-->
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Legacy Equip during install</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ep.FS_Legacy_Equip_during_install__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Legacy Equip (IC Code/Desc/Qty)</b></td>
+                            <apex:repeat var="ep" value="{!EquiPcks}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ep.FS_Legacy_Equip_IC_Code_Desc_Qty__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                    
+                        <!--**************************Standard Water Filter Option Per Outlet*************************************************-->
+                        <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;"> 
+                            <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Standard Water Filter Option Per Outlet</b></td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Platform Type</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Platform_Type__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Requirements (WF)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Requirements__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Installer</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Installer__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Location</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Location__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Supplier</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Water_Filter_Supplier__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Special Instructions (Water Filter)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Special_Instructions_Water_Filter__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <!--**************************Technician Instruction*************************************************-->
+                        <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;"> 
+                            <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Technician Instruction</b></td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Platform Type</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Platform_Type__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Dispenser Placement</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_7000_Series_Dispenser_Placement__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Equipment Placement Notes</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Equipment_Placement__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Type of Line</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Type_of_Line__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Protocol for Existing Lines</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Protocol_for_Existing_Lines__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Path</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Path__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Special Instructions (Line Run)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Special_Instructions_Line_Run__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Protocol for Existing Rack</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Protocol_for_Existing_Rack__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Location of Syrup Rack</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Location_of_Syrup_Rack__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Special Instructions (Syrup Rack)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Special_Instructions_Syrup_Rack__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Booster Location</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Water_Booster_Location__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Special Instructions (Water Booster)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Special_Instructions_Water_Booster__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Requirements (IM)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Requirements_IM__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>IM Dispense Soft Ice?</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_IM_Dispense_Soft_Ice__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>IM Make</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_IM_Make__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>IM Model</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_IM_Model_SS__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Is Coordination by Coca-Cola Req?</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Is_Coordination_by_Coca_Cola_Req__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Special Instructions (Ice Maker)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Special_Instructions_Ice_Maker__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>KO or DOE/Disposition of Removed Equip</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_KO_DOE_Disposition_of_Removed_Equipme__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Special Instructions (KO/DOE)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Special_Instructions_KO_DOE__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Special Instructions (Other)</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Special_Instructions_Other__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Parts SP Needs to Order</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Parts_SP_Needs_to_Order__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <!--**************************Water Filter settings*************************************************-->
+                        <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;"> 
+                            <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Water Filter settings </b></td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Platform Type</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Platform_Type__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Outlet Contact Name</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Water_Filter_Contact_Name__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Outlet Contact Email</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Water_Filter_Contact_Email__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Outlet Contact Phone</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Water_Filter_Contact_Phone__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Provide Water Filter Mfg</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Water_Filter_MFG__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Provide Water Filter Model#</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Water_Filter_Model_no__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Installer Contact Name</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.Water_Filter_Installer_Name__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Installer Contact Email</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.Water_Filter_Installer_Email__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Installer Contact Phone</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.Water_Filter_Installer_Phone__c}</td>
+                            </apex:repeat>
+                        </tr>
+                         <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Water Filter Installer</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Who_will_install_Water_Filter__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <!--**************************Crew Serve Portion Control*************************************************-->
+                        <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;"> 
+                            <td colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Crew Serve Portion Control </b></td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Platform Type</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Platform_Type__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Cup Name 1</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Cup_Name_1__c}</td>
+                            </apex:repeat> 
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Cup Name 2</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Cup_Name_2__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Cup Name 3</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Cup_Name_3__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Cup Name 4</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Cup_Name_4__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Cup Name 5</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Cup_Name_5__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Cup Name 6</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Cup_Name_6__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Size 1</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Size_1__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Size 2</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Size_2__c}</td>
+                            </apex:repeat>
+                        </tr>
+                         <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Size 3</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Size_3__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Size 4</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Size_4__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Size 5</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Size_5__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Size 6</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Size_6__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Finished Ounces 1</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Finished_Ounces_1__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Finished Ounces 2</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Finished_Ounces_2__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Finished Ounces 3</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Finished_Ounces_3__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Finished Ounces 4</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Finished_Ounces_4__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Finished Ounces 5</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Finished_Ounces_5__c}</td>
+                            </apex:repeat>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Finished Ounces 6</b></td>
+                            <apex:repeat var="ti" value="{!TechIns}">
+                                <td style="border: 1px solid black;" colspan = "2">{!ti.FS_Finished_Ounces_6__c}</td>
+                            </apex:repeat>
+                        </tr>
+                    </apex:outputPanel>
+                    <!--**************************General Contractor*************************************************-->
+                    <apex:outputPanel id="GCSection" rendered="{!IF(isNewInstall,true,false)}">
+                        <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;">
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>General Contractor</b></td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b> GC - Coordination to be done by?</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_GC_Coordination_to_be_done_by__c} </td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Related Vendor</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Related_Vendor__r.name} </td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Contractor work to be done </b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_Work_to_be_done__c} </td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>General Contractor Contact Name</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_General_Contractor_Contact_Name__c} </td>
+                        </tr>
+                        <tr style="border: 1px solid black;"> 
+                            <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Notes</b></td>
+                            <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_IM_Confirmation_Notes__c} </td>
+                        </tr>
+                    </apex:outputPanel>
+                    <!--**************************Specific Project Requirements*************************************************-->
+                    <tr style="background-color:#ff3d3d;color: white;border: 1px solid black;">
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+2,IF(size==2,size+3,Size+4))}"> <b>Specific Project Requirements</b></td>
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b> Free Form Text Field 1</b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_PIC_AC__c} </td>
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Free Form Text Field 2</b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_General_Contractor_Notes__c} </td>
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"> <b>Free Form Text Field 3 </b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_FreeTextField3__c} </td>
+                    </tr>
+                    <tr style="border: 1px solid black;"> 
+                        <td style="width:20%;background-color:#E0E0E0;border: 1px solid black;"><b>Free Form Text Field 4</b></td>
+                        <td style="border: 1px solid black;" colspan="{!IF(size==1,size+1,IF(size==2,size+2,Size+3))}"> {!relatedTo.FS_FreeTextField4__c} </td>
+                    </tr>
+                </table>
+            </body>
+        </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

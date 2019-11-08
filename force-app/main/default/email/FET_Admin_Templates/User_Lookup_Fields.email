@@ -1,0 +1,26 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="background-color: rgb(255, 255, 255);"><font style="" size="4" face="Times New Roman, Times, serif">Attention FET user,</font></span><div style=""><font size="4" face="Times New Roman, Times, serif"><br></font></div><div style=""><div style=""><p class="MsoNormal" style=""><font size="4" face="Times New Roman, Times, serif">We have received several inquiries regarding the PC/AC1 name not
+reflecting on the Installation Page when present on the Execution Plan.<o:p></o:p></font></p>
+
+<p class="MsoNormal" style=""><font face="Times New Roman, Times, serif" size="4">Reminder:
+A change was made to the functionality of how the names appear for (COM, PM,
+PC/AC 1 and PC/AC 2). During our December 2017 OCR &amp; EDO release, we
+converted these same fields from either a free form text field or mirrored
+field into a look-up field. What does this mean to you?</font></p>
+
+<p class="MsoNormal" style=""><font face="Times New Roman, Times, serif" size="4">Below
+are several ways in which to reflect these name values within the Execution
+Plan and Installation Plan:</font></p><p class="MsoNormal" style=""></p><ol style=""><li><font face="Times New Roman, Times, serif" size="4">Some
+of these name values will cascade from the CIF to the Execution Plan and
+Installation Plan, when the CIF is converted to an EP.</font></li><li><font face="Times New Roman, Times, serif" size="4">These
+name values can be left the same or edited on the Execution Plan. However, in
+order for any value changes to cascade to the Installation Plan, the COM or PM
+user will need to click on the “Copy to Installation Plan” button located on
+either the related Equipment Package or Technician Instructions of the
+Execution Plan.</font></li><li><font face="Times New Roman, Times, serif" size="4">Users
+can also edit these name values directly on the Installation Plan</font></li></ol><font size="4" style="" face="Times New Roman, Times, serif">Please
+review the attached document for additional context and print screen shots.&nbsp;</font><p style=""></p><p class="MsoNormal" style=""><font style="" size="4" face="Times New Roman, Times, serif"><br></font></p><div style=""><font face="Times New Roman, Times, serif" style="" size="4">We thank you for your continued support.</font></div><div style="font-size: 12pt; font-family: arial;"><font face="Times New Roman, Times, serif" style="" size="4"><br></font></div><div style="font-size: 12pt; font-family: arial;"><font face="Times New Roman, Times, serif" style="" size="4"><img src="https://freestyle--c.na34.content.force.com/servlet/servlet.ImageServer?id=015610000011a8x&amp;oid=00D61000000aNH9" border="0" align="left" alt=""><br></font></div><div style="font-size: 12pt; font-family: arial;"><font face="Times New Roman, Times, serif" style="" size="4"><br></font></div><div style=""><div style="font-size: 16px; font-family: arial;"><font color="#ff0000"><b style="font-size: 12pt;">FET</b><span style="font-size: 12pt;">&nbsp;<b>S</b></span><span style="font-size: 12pt;"><b>upport Te</b></span></font><span style="font-size: 12pt;"><b><font color="#ff0000">am</font></b>&nbsp;| E-mail:&nbsp;<b><font color="#3366ff">fethelp@coca-cola.com</font></b></span></div><div style=""><font style="" face="Times New Roman, Times, serif">Coca-Cola North America, 1150 Sanctuary Pkwy, Alpharetta GA 30009</font></div></div></div></div>]]></td>
+</tr>
+</table>

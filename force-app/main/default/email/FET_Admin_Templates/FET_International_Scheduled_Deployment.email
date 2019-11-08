@@ -1,0 +1,42 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p style="font-family: arial; margin: 0in 0in 0.0001pt; text-align: justify; background: white;"><span style="font-family:&quot;Calibri Light&quot;,sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin;color:black"><img src="https://freestyle--c.na130.content.force.com/servlet/servlet.ImageServer?id=01561000002i32W&amp;oid=00D61000000aNH9" border="0" align="left" alt=""><br></span></p><p style="margin: 0in 0in 0.0001pt; text-align: justify; background: white;"><font face="Calibri Light, sans-serif"><br></font></p><p style="margin: 0in 0in 0.0001pt; text-align: justify; background: white;"><br></p><p style="margin: 0in 0in 0.0001pt; text-align: justify; background: white;"><br></p><p style="margin: 0in 0in 0.0001pt; text-align: justify; background: white;"><br></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;background:white"><span style="font-size: 12pt; font-family: Arial, sans-serif;">&nbsp;</span></p><p class="MsoNormal" align="center" style="margin-bottom:0in;margin-bottom:.0001pt;
+text-align:center;line-height:normal"><b><span style="font-size:12.0pt;font-family:&quot;Calibri Light&quot;,sans-serif;mso-ascii-theme-font:
+major-latin;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-hansi-theme-font:
+major-latin;mso-bidi-theme-font:major-latin;color:red">Salesforce Reminder!<o:p></o:p></span></b></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;background:white"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif;">&nbsp;</span><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">Hi {!Receiving_User.FirstName},</span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal;background:white"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">This is a friendly reminder that
+FET International has an upcoming deployment starting today at 10:00 pm EST until
+11:59 pm EST Sunday June 9</span><sup style="font-family: &quot;Calibri Light&quot;, sans-serif;">th</sup><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">, 2019 &nbsp;to migrate from Salesforce Classic to the new Lightning
+Experience.&nbsp;</span></p><p class="MsoNoSpacing" style="text-align:justify"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif;">&nbsp;</span></p><p class="MsoNoSpacing" style="text-align:justify"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif;">In addition, FET Domestic will
+seize this opportunity to improve the Mass Upload functionality within the Customer
+Input Form (CIF)</span><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+font-family:&quot;Calibri Light&quot;,sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin">. Allowing for
+an increase in efficiency as it relates to Project Freestyle Conversion placements.</span></p><p class="MsoNoSpacing" style="text-align:justify"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;
+font-family:&quot;Calibri Light&quot;,sans-serif;mso-ascii-theme-font:major-latin;
+mso-hansi-theme-font:major-latin;mso-bidi-theme-font:major-latin"><br></span></p><p class="MsoNoSpacing" style="text-align:justify"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif;">During
+this time all triggers, workflows and systematic email notifications will be
+disabled.&nbsp;A</span><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif;">s users will
+have&nbsp;Read Only access during the migration effort. You will not be able to
+make&nbsp;any modification as any changes made during this timeframe will not
+be saved.&nbsp;<b>If you plan to view data
+in FET to perform some of your work in other systems, please be sure to pull a
+report of the data you need prior to 9:00 pm EST Friday, June 7th, 2019.</b>&nbsp;</span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">Once we confirm all
+deployment activities have completed successfully an email will go out letting
+you know when it is safe to resume normal business activities.</span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:normal"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">As
+always, thank you for your continued support.</span></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:12.0pt"><b><span lang="EN-GB" style="font-size:10.5pt;
+font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:red;mso-ansi-language:EN-GB">FET Support Team</span></b><b><span lang="EN-GB" style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:#595959;mso-ansi-language:EN-GB">&nbsp;| E-mail:&nbsp;</span></b><b><span lang="EN-GB" style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:blue;mso-ansi-language:EN-GB"><span style="color:blue"><a href="mailto:FETHelp@coca-cola.com">FETHelp@coca-cola.com</a></span></span></b></p><p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;text-align:
+justify;line-height:12.0pt"><span style="color: rgb(127, 127, 127); font-family: Arial, sans-serif; font-size: 10.5pt;">Coca-Cola North
+America, 1150 Sanctuary Parkway, Alpharetta GA 30009</span></p><p class="MsoNormal" style="font-family: arial;"><o:p></o:p></p>]]></td>
+</tr>
+</table>

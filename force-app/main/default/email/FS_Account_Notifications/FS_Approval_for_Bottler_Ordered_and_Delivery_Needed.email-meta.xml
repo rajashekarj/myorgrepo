@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Approval for Bottler Ordered and Delivery Needed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Approval for Bottler Ordered and Delivery Needed</name>
+    <style>none</style>
+    <subject>New Bottler Customer Freestyle Install</subject>
+    <textOnly>Dear {!Account.Name}
+{!Account.ShippingAddress}
+Outlet Information:
+ACN:{!Account.FS_ACN__c}
+Outlet SAP ID: {!Account.FS_SAP_ID__c}
+Food Service Description:{!Account.FS_Distributor_Foodservice_Desc__c}
+
+Bottler is selected for this Outlet .. Please Review.
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click {!Account.Link} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

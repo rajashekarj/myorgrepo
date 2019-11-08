@@ -1,0 +1,22 @@
+#contactCollectionContainer {
+margin:10px;
+}
+
+#success {
+text-align:center;
+margin:80px 10px;
+}
+
+.listwrapper {
+height:300px;
+width:500px;
+border:1px solid #000;
+overflow-y:scroll;
+margin:10px;
+}
+
+.listwrapper ul,.listwrapper ul li {
+list-style:none;
+margin:0;
+padding:0;
+}

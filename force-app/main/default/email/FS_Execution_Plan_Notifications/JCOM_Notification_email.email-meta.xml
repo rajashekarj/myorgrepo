@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>JCOM Notification email</name>
+    <style>none</style>
+    <subject>{!FS_Execution_Plan__c.FS_Execution_Plan_Name__c} - {!FS_Execution_Plan__c.FS_Execution__c} project plan - Requires JCOM Approval</subject>
+    <textOnly>{!User.Name} updated {!FS_Execution_Plan__c.FS_Execution_Plan_Name__c} project plan
+
+Click this link https://fed.ko.com/freestyle to open the FET site. 
+Then click {!FS_Execution_Plan__c.Link} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

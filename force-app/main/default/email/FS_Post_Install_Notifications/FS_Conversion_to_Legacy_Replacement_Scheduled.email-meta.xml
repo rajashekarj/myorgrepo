@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Conversion to Legacy Replacement Scheduled</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Conversion to Legacy Replacement Scheduled</name>
+    <style>none</style>
+    <subject>The request to replace {!FS_Execution_Plan__c.FS_Type_of_Replacement__c} has been scheduled</subject>
+    <textOnly>The request to replace {!FS_Execution_Plan__c.FS_Type_of_Replacement__c} has been scheduled.
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click {!FS_Execution_Plan__c.Link} to be directed to the specific Installation record.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

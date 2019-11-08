@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Freestyle Agents US</name>
+    <queueMembers>
+        <users>
+            <user>aogle@coca-cola.com.fet</user>
+            <user>chcaesar@coca-cola.com.fet</user>
+            <user>dmaples@fs.coca-cola.com.fet</user>
+            <user>dustincsaylor@fs.coca-cola.com.fet</user>
+            <user>euburkhart@fs.coca-cola.com.fet</user>
+            <user>jbuergelin@fs.coca-cola.com.fet</user>
+            <user>rkosicki@fs.coca-cola.com.fet</user>
+            <user>saikrishnateja.r@fet.fetprod.com</user>
+            <user>williamiller@coca-cola.com.fet</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

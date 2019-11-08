@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Flavor Change Request at Status 4 Install Scheduled</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Flavor Change Request at 4 Install Scheduled</name>
+    <style>none</style>
+    <subject>Brand Selection Flavor Change Request for ACN # {!FS_Installation__c.Outlet_ACN__c} - Customer :  {!FS_Installation__c.FS_Outlet__c}</subject>
+    <textOnly>Flavor Change Notification:  Please be advised that a Flavor Change has been completed for the Customer below.
+Customer: {!Flavor_Change__c.FS_Outlet_HQ_Chain__c} 
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!Flavor_Change__c.Link} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

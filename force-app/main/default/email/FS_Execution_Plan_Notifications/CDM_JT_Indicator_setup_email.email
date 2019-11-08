@@ -1,0 +1,6 @@
+<p>The following locations {!FS_Execution_Plan__c.FS_Execution_Plan_Name__c} require JT Indicator Setup in SAP.<br>
+Start Date: {!FS_Execution_Plan__c.FS_Execution_Start_Date__c}<br>
+Number of Installations: {!FS_Execution_Plan__c.FS_of_Installations__c}<br></p>
+
+<p>Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Execution_Plan__c.Link} to be directed to the specific record referenced above.</p>

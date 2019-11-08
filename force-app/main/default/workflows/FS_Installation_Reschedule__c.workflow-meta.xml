@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Install_Reschedule</fullName>
+        <description>Install Reschedule</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Install_Reschedule</template>
+    </alerts>
+    <alerts>
+        <fullName>Install_Reschedule_with_Order_Processed</fullName>
+        <description>Install Reschedule with Order Processed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>julmejia@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lasimmons@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lsample@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lywilliams@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sjohnson1@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vethomas@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Install_Rescheduled_with_Order_Processed</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Install_Date</fullName>
+        <field>FS_Scheduled_Install_Date__c</field>
+        <formula>FS_Reschedule_Install_Date__c</formula>
+        <name>Update Install Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>FS_Installation__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_pending_for_rescedule</fullName>
+        <field>FS_Pending_for_Reschedule__c</field>
+        <literalValue>0</literalValue>
+        <name>Update pending for rescedule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>FS_Installation__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>install_date_to_null</fullName>
+        <field>FS_Scheduled_Install_Date__c</field>
+        <name>install date to null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <targetObject>FS_Installation__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>pending_resched_to_true</fullName>
+        <field>FS_Pending_for_Reschedule__c</field>
+        <literalValue>1</literalValue>
+        <name>pending resched to true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>FS_Installation__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Install Reschedule with Order Processed</fullName>
+        <actions>
+            <name>Install_Reschedule_with_Order_Processed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <field>FS_Installation_Reschedule__c.FS_Reschedule_Install_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Order_Processed_By__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>FS_Installation__c.FS_Order_Processed_Data_Time__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Installation Rescheduled</fullName>
+        <actions>
+            <name>Install_Reschedule</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Installation_Reschedule__c.FS_Reschedule_Install_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Install Date</fullName>
+        <actions>
+            <name>Update_Install_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_pending_for_rescedule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>FS_Installation_Reschedule__c.FS_Reschedule_Install_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Pending for Resched Date</fullName>
+        <actions>
+            <name>install_date_to_null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>pending_resched_to_true</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>IF(AND( FS_Pending_for_Reschedule__c= true , ISNULL(FS_Reschedule_Install_Date__c)),true,false)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

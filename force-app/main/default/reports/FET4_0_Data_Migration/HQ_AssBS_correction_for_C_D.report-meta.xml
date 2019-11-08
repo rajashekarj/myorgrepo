@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FS_Association_Brandset__c$Id</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$Name</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Platform__c</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Brandset__c.Id</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Brandset__c</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Headquarters__c</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Headquarters__c.Id</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Headquarters__c.FS_7000_Series_Agitated_Brands_Selection__c</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Headquarters__c.FS_Spicy_Cherry_Agreement_for_this_HQ__c</field>
+    </columns>
+    <columns>
+        <field>FS_Association_Brandset__c$FS_Headquarters__c.FS_7000_Series_Statics_Brands_Selection__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>FS_Association_Brandset__c$FS_Headquarters__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value/>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FS_Association_Brandset__c$FS_Brandset__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brandset C - Pepper/FUZE/No Pade</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FS_Association_Brandset__c$FS_Brandset__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Brandset D - Pibb/FUZE/No Pade</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>HQ AssBS correction for C/D</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Association_Brandset__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FS_Association_Brandset__c$FS_CreatedDate__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

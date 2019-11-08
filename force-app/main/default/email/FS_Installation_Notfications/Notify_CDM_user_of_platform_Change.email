@@ -1,0 +1,39 @@
+<messaging:emailTemplate subject="The Platform has changed on an Install - Outlet ACN: {!relatedTo.Outlet_ACN__c} " recipientType="User" relatedToType="FS_Installation__c">
+<messaging:htmlEmailBody >
+<html>
+<body>
+<apex:variable var="AssocBrand" value="{!relatedTo.Account_Brandsets__r}" />
+
+Hi, <br></br>
+<br></br>
+The platform has changed on a Scheduled/Pending Reschedule install, which may require you to update/remove JET Indicators in SAP or Update the Related Brandset. Please update SAP accordingly.<br></br>
+<br></br>
+Installation Name -  <apex:outputLink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">  {!relatedTo.Name}</apex:outputLink><br></br>
+Outlet Name: {!relatedTo.FS_Outlet_Name__c}<br></br>
+ACN: {!relatedTo.Outlet_ACN__c} <br></br>
+SAP ID: {!relatedTo.FS_Outlet_SAP_ID__c} <br></br>
+Address: {!relatedTo.FS_Outlet_Address__c}<br></br>
+Prior Platforms: {!relatedTo.Prior_Platform_Type_Value__c} <br></br>
+New Platforms: {!relatedTo.Type_of_Dispenser_Platform__c}<br></br>
+ 
+<tabel border="0">
+    <tr>
+        <th> Current Brandsets: </th><br></br>
+    </tr>
+    <tr>
+    <apex:repeat var="ab" value="{!AssocBrand}">
+                
+        <td>  {!ab.FS_Platform__c}: {!ab.Brandset_Name__c} </td><br></br>
+     
+    </apex:repeat> 
+    </tr>    
+</tabel>
+
+<br>
+</br>
+Thanks,<br></br>
+FET
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

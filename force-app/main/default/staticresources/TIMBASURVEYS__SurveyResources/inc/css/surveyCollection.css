@@ -1,0 +1,56 @@
+.accordionTab {
+color:#000!important;
+font-family:Myriad, Tahoma , Arial!important;
+text-align:left;
+font-size:13px!important;
+}
+
+#generalContainer {
+margin:10px;
+}
+
+.dr-pnlbar-ext {
+border:none!important;
+}
+
+p {
+margin:0;
+}
+
+.recipientContainer {
+clear:both;
+height:97px;
+position:relative;
+overflow:auto;
+background:#FFF;
+border:1px solid #657C9C;
+margin:10px 0;
+}
+
+.emailRecipient {
+background:#8EA3B2 none repeat scroll 0 0;
+color:#FFF;
+font-weight:700;
+display:block;
+float:left;
+font-size:11px;
+height:20px;
+margin:4px;
+padding:2px;
+}
+
+.emailRecipient .emailcontainer {
+float:left;
+margin:4px;
+}
+
+.emailRecipient .deletelink {
+float:left;
+width:14px;
+height:14px;
+padding:3px;
+}
+
+#generalContainer,#generalContainer h2,#generalContainer a {
+font-family:Myriad,Helvetica,Tahoma,Arial,clean,sans-serif!important;
+}

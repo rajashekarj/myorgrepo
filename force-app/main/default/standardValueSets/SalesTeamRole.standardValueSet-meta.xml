@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Manager</fullName>
+        <default>false</default>
+        <label>Account Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Channel Manager</fullName>
+        <default>false</default>
+        <label>Channel Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Sponsor</fullName>
+        <default>false</default>
+        <label>Executive Sponsor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Qualifier</fullName>
+        <default>false</default>
+        <label>Lead Qualifier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Sales Consultant</fullName>
+        <default>false</default>
+        <label>Pre-Sales Consultant</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Manager</fullName>
+        <default>false</default>
+        <label>Sales Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Rep</fullName>
+        <default>false</default>
+        <label>Sales Rep</label>
+    </standardValue>
+    <standardValue>
+        <fullName>COM</fullName>
+        <default>false</default>
+        <label>COM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>COM Backup</fullName>
+        <default>false</default>
+        <label>COM Backup</label>
+    </standardValue>
+    <standardValue>
+        <fullName>JCOM</fullName>
+        <default>false</default>
+        <label>JCOM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>AC</fullName>
+        <default>false</default>
+        <label>AC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PM</fullName>
+        <default>false</default>
+        <label>PM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PIC</fullName>
+        <default>false</default>
+        <label>PIC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Support</fullName>
+        <default>false</default>
+        <label>Sales Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Team Member</fullName>
+        <default>false</default>
+        <label>Sales Team Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>SME</fullName>
+        <default>false</default>
+        <label>SME</label>
+    </standardValue>
+</StandardValueSet>

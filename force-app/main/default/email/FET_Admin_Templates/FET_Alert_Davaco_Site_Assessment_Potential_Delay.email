@@ -1,0 +1,31 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<p class="MsoNormal" style="font-family: arial;"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif; background: white;"><img src="https://freestyle--c.na130.content.force.com/servlet/servlet.ImageServer?id=01561000002i32W&amp;oid=00D61000000aNH9" border="0" align="left" alt=""><br></span></p><p class="MsoNormal" style="font-family: arial;"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif; background: white;"><br></span></p><p class="MsoNormal" style="font-family: arial;"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif; background: white;"><br></span></p><p class="MsoNormal" style="font-family: arial;"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif; background: white;"><br></span></p><p class="MsoNormal" style="font-family: arial;"><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif; background: white;">Hi&nbsp;{!Receiving_User.FirstName},<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt; text-align: justify;">If you are receiving this email
+it is because you have been identified as a potential impacted user.</span></p>
+
+<p class="MsoNormal" style="font-family: arial; text-align: justify;"><b style="font-size: 12pt;"><span style="font-size:12.0pt;
+font-family:&quot;Calibri Light&quot;,sans-serif">What you need to know:</span></b><span style="font-size: 12pt; font-family: &quot;Calibri Light&quot;, sans-serif;">&nbsp;</span></p><p class="MsoNormal" style="font-family: arial; text-align: justify;"><span style="font-size:12.0pt;font-family:&quot;Calibri Light&quot;,sans-serif">In an effort
+to support business needs, we implemented Mseries platforms and related objects
+to FET &nbsp;April 2019. However, have disabled the features from the user
+interface until the platforms are ready for commercialization rollout. <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="font-family: arial; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">This enhancement will impact the way we
+conduct site surveys as a business. In preparation of this transition, Davaco
+implemented the Mseries changes prematurely resulting in a disruption to their
+query used to notify them of new site assessment requests.&nbsp; Consequently,
+if you have requested and/or submitted a site assessment on or after Thursday
+May 30</span><sup style="font-family: &quot;Calibri Light&quot;, sans-serif;">th</sup><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">, you may see a delay in the SA Completed by Date initially
+indicated.</span></p>
+
+<p class="MsoNormal" style="font-family: arial; text-align: justify;"><span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">The root cause is not internal, and we
+are working with Davaco for resolution. Please continue to enter and submit
+requests using the normal CIF submission process. We will be sure to keep you
+informed of resolution.</span></p>
+
+<span style="font-family: &quot;Calibri Light&quot;, sans-serif; font-size: 12pt;">We apologize for the
+inconvenience but thank you for your continued support!</span><div style=""><font face="Calibri Light, sans-serif"><br></font><div style="font-family: arial;"><div style="font-family: arial;"><p style="margin: 0in; font-size: 12pt;"><span style="font-family: &quot;Calibri Light&quot;; font-size: 12pt; font-weight: bold; color: red;">FET</span><span style="font-family: &quot;Calibri Light&quot;; font-size: 12pt; color: red;">&nbsp;</span><span style="font-family: &quot;Calibri Light&quot;; font-size: 12pt; font-weight: bold; color: red;">Support Team</span><span style="font-family: &quot;Calibri Light&quot;; font-size: 12pt;">&nbsp;| E-mail:&nbsp;</span><a href="mailto:fethelp@coca-cola.com" style="font-family: &quot;Calibri Light&quot;; font-size: 12pt;"><span style="font-weight: bold;">fethelp@coca-cola.com</span></a></p><p style="margin: 0in 0in 0.0001pt; font-size: 12pt; text-align: justify;"></p><p style="margin: 0in; font-size: 12pt; font-family: &quot;Calibri Light&quot;;">Coca-Cola North America, 1150 Sanctuary Pkwy, Alpharetta GA 30009</p></div></div></div>]]></td>
+</tr>
+</table>

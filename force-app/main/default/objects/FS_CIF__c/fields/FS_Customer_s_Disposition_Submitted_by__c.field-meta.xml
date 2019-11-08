@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FS_Customer_s_Disposition_Submitted_by__c</fullName>
-    <description>Customerâ€™s disposition Captured by</description>
+    <description>CustomerÃ¢â‚¬â„¢s disposition Captured by</description>
     <externalId>false</externalId>
-    <label>Customerâ€™s disposition Captured by</label>
+    <label>CustomerÃ¢â‚¬â„¢s disposition Captured by</label>
     <length>255</length>
     <required>false</required>
     <trackHistory>true</trackHistory>

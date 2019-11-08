@@ -1,0 +1,154 @@
+a {
+	outline: none;
+}
+
+.timbaSurveys .dijitDialog {
+overflow: hidden;
+outline: none;
+}
+.timbaSurveys .dijitDialog .dijitDialogTitle {
+	font-weight: bold;
+	padding: 0px 4px;
+	font-size: 0.9em;
+	color: #FFF;
+}
+.timbaSurveys .dijitDialog .dijitDialogPaneContent {
+	overflow:hidden;
+	border: 1px solid #b1badf; 
+	padding:10px;
+	background:#FFF;
+	
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.timbaSurveys .dijitDialogTitleBar {
+	
+	background: #258BBE url(../img/overlay/titlebckgrnd.png);
+	padding: 5px 6px 3px 6px;
+	cursor: move;
+	outline:0; 
+	
+	border:#2793C2 1px solid;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.timbaSurveys .dijitDialogCloseIcon {
+	background-image: url(../img/shared/close.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	vertical-align: middle;
+	right: 6px;
+	top: 10px;
+	height: 15px;
+	width: 15px;
+	cursor: pointer;
+	text-indent:999px;
+}
+.dj_ie6 .timbaSurveys .dijitDialogCloseIcon {
+	background-image: url(../img/shared/close.png);
+}
+.timbaSurveys .dijitDialogCloseIcon-hover {
+	
+}
+.timbaSurveys .dijitTooltip,
+.timbaSurveys .dijitTooltipDialog {
+	
+	background: transparent;	
+}
+.dijitTooltipBelow {
+	
+	padding-top: 10px;
+}
+.dijitTooltipAbove {
+	
+	padding-bottom: 10px;
+}
+.timbaSurveys .dijitTooltipContainer {
+	
+	background-color: #fff;
+	border:1px solid #cbcbcb;
+	padding:0.45em;
+	
+}
+.timbaSurveys .dijitTooltipConnector {
+	
+	border:0px;
+	z-index: 2;
+}
+.timbaSurveys .dijitTooltipABRight .dijitTooltipConnector {
+	
+	left: auto !important;
+	right: 6px;
+}
+.timbaSurveys .dijitTooltipBelow .dijitTooltipConnector {
+	
+	top: 0px;
+	left: 6px;
+	background:url("images/tooltipConnectorUp.png") no-repeat top left;
+	width:17px;
+	height:11px;
+}
+.dj_ie .timbaSurveys .dijitTooltipBelow .dijitTooltipConnector {
+	background-image: url("images/tooltipConnectorUp.gif");
+}
+.timbaSurveys .dijitTooltipAbove .dijitTooltipConnector {
+	
+	bottom: 0px;
+	left: 6px;
+	background:url("images/tooltipConnectorDown.png") no-repeat top left;
+	width:17px;
+	height:11px;
+}
+.dj_ie .timbaSurveys .dijitTooltipAbove .dijitTooltipConnector {
+	background-image: url("images/tooltipConnectorDown.gif");
+}
+.dj_ie .timbaSurveys .dijitTooltipAbove .dijitTooltipConnector {
+	background-image: url("images/tooltipConnectorDown.gif");
+}
+.dj_ie6 .timbaSurveys .dijitTooltipAbove .dijitTooltipConnector {
+	bottom: -5px;
+}
+.timbaSurveys .dijitTooltipLeft {
+	padding-right: 10px;
+}
+.dj_ie6 .timbaSurveys .dijitTooltipLeft {
+	padding-left: 11px;
+}
+.timbaSurveys .dijitTooltipLeft .dijitTooltipConnector {
+	
+	right: 0px;
+	bottom: 3px;
+	background:url("images/tooltipConnectorRight.png") no-repeat top left;
+	width:11px;
+	height:17px;
+}
+.dj_ie .timbaSurveys .dijitTooltipLeft .dijitTooltipConnector {
+	background-image: url("images/tooltipConnectorRight.gif");
+}
+.timbaSurveys .dijitTooltipRight {
+	padding-left: 10px;
+}
+.timbaSurveys .dijitTooltipRight .dijitTooltipConnector {
+	
+	left: 0px;
+	bottom: 3px;
+	background:url("images/tooltipConnectorLeft.png") no-repeat top left;
+	width:11px;
+	height:17px;
+}
+.dj_ie .timbaSurveys .dijitTooltipRight .dijitTooltipConnector {
+	background-image: url("images/tooltipConnectorLeft.gif");
+}
+/* Custom Styles */
+.timbaSurveys .surveyButton img{
+	vertical-align:middle;	
+}

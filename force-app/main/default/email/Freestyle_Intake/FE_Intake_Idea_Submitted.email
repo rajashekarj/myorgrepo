@@ -1,0 +1,9 @@
+Hi {!FE_Intake_Idea__c.CreatedBy},
+                             
+Thank you for your recent Freestyle Dispenser Idea submission. Please know that it has been received and is being evaluated. You will receive a reply when your idea has been rejected or approved for further review. 
+
+You can view details at the following link
+{!FE_Intake_Idea__c.Link} 
+
+Thank You!
+Freestyle Sustaining Idea Team

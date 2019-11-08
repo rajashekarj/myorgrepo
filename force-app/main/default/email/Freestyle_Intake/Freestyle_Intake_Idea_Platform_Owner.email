@@ -1,0 +1,15 @@
+Dear Platform Owner, 
+
+A new Freestyle Dispenser Idea has been approved by {!User.Name} and has been sent to you for final approval. 
+
+Idea # - {!FE_Intake_Idea__c.Name} 
+Originator - {!FE_Intake_Idea__c.CreatedBy} 
+Platform - {!FE_Intake_Idea__c.FE_Platform__c} 
+Category - {!FE_Intake_Idea__c.FE_Category__c} 
+
+Please review the idea at the following link and reply to {!User.Name} with a final approval or a rejection. 
+
+{!FE_Intake_Idea__c.Link} 
+
+Thank You! 
+Freestyle Sustaining Idea Tool

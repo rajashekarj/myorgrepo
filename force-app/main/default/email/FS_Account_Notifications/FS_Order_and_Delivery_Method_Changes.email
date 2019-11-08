@@ -1,0 +1,24 @@
+<br>
+Outlet Information: <br>
+ACN {!Account.FS_ACN__c}  | Store#: {!Account.FS_Store_Number__c}<br>
+{!Account.ShippingStreet}<br>
+{!Account.ShippingCity}, {!Account.ShippingState} {!Account.ShippingCountry} {!Account.ShippingPostalCode}<br>
+{!Account.Phone} <br><br>
+Outlet SAP ID: {!Account.FS_SAP_ID__c}<br><br>
+
+Bottler # (OLET):   {!Account.FS_OLET_ID__c}<br>
+Bottler SAP #: {!Account.Distributor_SAP_ID__c}<br>
+Outlet Delivery Days:  {!Account.FS_Outlet_Delivery_Days__c}<br>
+Final Order Method:  {!Account.FS_Final_Order_Method__c}<br>
+Final Delivery Method: {!Account.FS_Final_Delivery_Method__c}<br>
+Cartridge Type Available for Delivery:{!Account.FS_Cartridge_Type_Available_Delivery_For__c}<br>
+Is Bottler Approved Initial Order:{!Account.FS_Distributor_Approved_InitialOrder__c}<br>
+Bottler YD Number:{!Account.FS_Bottler_YD_Number_formula__c}<br>
+Is the Distributor/Bottler handling the initial order: {!Account.FS_Dist_Bottler_Handling_Initial_Order__c}
+<br>
+Customer Classification:  {!Account.Calculated_Customer_Classification__c}<br>
+Null Set Material Listing: Update to C30, when applicable (CC type 13) <br>
+Last Updated By: {!Account.LastModifiedBy} <br><br>
+
+
+Click this link {!Account.Link} to be directed to the specific record referenced above.

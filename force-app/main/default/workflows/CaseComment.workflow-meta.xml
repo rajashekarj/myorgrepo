@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Case_Comment_Added</fullName>
+        <description>Update field FS_CommentBodyUpdate for related Case Object.</description>
+        <field>FS_CommentBodyUpdate__c</field>
+        <literalValue>1</literalValue>
+        <name>Case Comment Added</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Comment_Creator</fullName>
+        <description>Update the FS_CommentCreatedBy for related case Object.</description>
+        <field>FS_CommentCreatedBy__c</field>
+        <formula>CreatedById</formula>
+        <name>Case Comment Creator</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Comment_Creator_Username</fullName>
+        <description>Stores the Username of the Case creator on Case object field &quot;Comment Created By Username&quot;</description>
+        <field>FS_Comment_Created_By_Username__c</field>
+        <formula>CreatedBy.FirstName + &quot; &quot; +  CreatedBy.LastName</formula>
+        <name>Case Comment Creator Username</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Case_Comment_Latest</fullName>
+        <field>FS_LatestCommentBody__c</field>
+        <formula>CommentBody</formula>
+        <name>Case Comment Latest</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_Case_Comment_Public</fullName>
+        <field>IsPublished</field>
+        <literalValue>1</literalValue>
+        <name>FS Update Case Comment Public</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IsPublicTrue</fullName>
+        <field>IsPublic__c</field>
+        <literalValue>1</literalValue>
+        <name>IsPublicTrue</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SE_checkbox_case_comment</fullName>
+        <field>New_Case_Comment__c</field>
+        <literalValue>1</literalValue>
+        <name>SE checkbox case comment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SE_checkbox_case_comment_Global_Center</fullName>
+        <field>New_Case_Comment_Global_Center__c</field>
+        <literalValue>1</literalValue>
+        <name>SE checkbox case comment Global Center</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_last_case_comment</fullName>
+        <field>Last_Case_Comment__c</field>
+        <formula>CommentBody</formula>
+        <name>Update last case comment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Check Case Comment</fullName>
+        <actions>
+            <name>Case_Comment_Added</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Comment_Creator</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Comment_Creator_Username</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Case_Comment_Latest</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>It is used to update the field FS_CommentCreatedBy and FS_CommentBodyUpdate in Case object.</description>
+        <formula>AND(NOT(ISBLANK( CommentBody)), NOT(ISPICKVAL(Parent.Status,&#39;Closed&#39;)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Update_Case_Comment_Public</fullName>
+        <actions>
+            <name>FS_Update_Case_Comment_Public</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>CaseComment.IsPublished</field>
+            <operation>notEqual</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Last case comment update</fullName>
+        <actions>
+            <name>Update_last_case_comment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>CaseComment.CommentBody</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>SE Case Comment</fullName>
+        <active>false</active>
+        <formula>Parent.ContactId &lt;&gt;  CreatedById</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SE_Case_Comment</fullName>
+        <actions>
+            <name>SE_checkbox_case_comment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>CreatedBy.Email = Parent.Contact_Email__c  || CreatedBy.Email =  Parent.Service_Escalation_Agent__r.Email</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>SE_Case_Comment_Global_Center</fullName>
+        <actions>
+            <name>SE_checkbox_case_comment_Global_Center</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>CreatedBy.Email !=  Parent.Service_Escalation_Agent__r.Email</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update case is Public</fullName>
+        <actions>
+            <name>IsPublicTrue</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>CaseComment.IsPublished</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

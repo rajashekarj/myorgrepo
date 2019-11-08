@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To send notification when Case Comment is added for Fact Cases</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Fact Case Comment Notification</name>
+    <style>none</style>
+    <subject>Case # {!Case.CaseNumber} of Dispenser : {!Case.FS_Serial_Number__c} – Case Comments have been added</subject>
+    <textOnly>Dear {!Case.CreatedBy},
+
+The following Case Comment has been created for the Case.
+
+Case #: {!Case.CaseNumber}
+Outlet Name: {!Case.FS_Outlet_Name__c}
+Outlet A C N: {!Case.FS_ACN__c}
+Outlet SAP ID: {!Case.FS_SAP__c}
+Outlet Address: {!Case.FS_Address__c}
+Dispenser Serial Number(s): {!Case.Dispenser_serial_number__c}
+Case Type: {!Case.FACT_Case_Type__c}
+Case Issue Name: {!Case.Subject}
+Case Comment Created by : {!Case.FS_Comment_Created_By_Username__c}
+
+Case Comment : {!Case.FS_LatestCommentBody__c}
+
+Click on the link to access the case:
+{!Case.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

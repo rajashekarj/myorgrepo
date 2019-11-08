@@ -21,9 +21,9 @@
                 <label>No water booster required</label>
             </value>
             <value>
-                <fullName>FOH â€“ Near Freestyle unit</fullName>
+                <fullName>FOH Ã¢â‚¬â€œ Near Freestyle unit</fullName>
                 <default>false</default>
-                <label>FOH â€“ Near Freestyle unit</label>
+                <label>FOH Ã¢â‚¬â€œ Near Freestyle unit</label>
             </value>
             <value>
                 <fullName>BOH- Near water filter system</fullName>
@@ -41,9 +41,9 @@
                 <label>No change - Current location</label>
             </value>
             <value>
-                <fullName>Unknown â€“ site assessment will determine</fullName>
+                <fullName>Unknown Ã¢â‚¬â€œ site assessment will determine</fullName>
                 <default>false</default>
-                <label>Unknown â€“ site assessment will determine</label>
+                <label>Unknown Ã¢â‚¬â€œ site assessment will determine</label>
             </value>
             <value>
                 <fullName>Not Applicable</fullName>

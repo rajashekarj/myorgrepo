@@ -1,0 +1,16 @@
+Dear {!Case.CreatedBy}, <br/><br/>
+
+The following case has been created. <br/><br/>
+
+Case #: {!Case.CaseNumber}<br/>
+Outlet Name: {!Case.FS_Outlet_Name__c}<br/>
+Outlet A C N: {!Case.FS_ACN__c} <br/>
+Outlet SAP ID: {!Case.FS_SAP__c} <br/>
+Outlet Address: {!Case.FS_Address__c}<br/>
+Dispenser Serial Number(s): {!Case.Dispenser_serial_number__c}<br/>
+Case Type: {!Case.FACT_Case_Type__c} <br/>
+Case Issue Name: {!Case.Subject}<br/>
+<br/>
+
+Click on the link to access the case: <br/>
+{!Case.Link}

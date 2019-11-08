@@ -1,0 +1,16 @@
+A request to change the final order and delivery method which requires your approval has been submitted for: <br>
+
+Outlet Information: <br>
+Outlet Name : {!Account.Name}<br>
+Outlet ACN :{!Account.FS_ACN__c}<br>
+Outlet SAP ID :{!Account.FS_SAP_ID__c}<br>
+Outlet Address : {!Account.ShippingAddress}<br>
+
+Distributor Information: </br>
+Distributor Name :{!Account.FS_Distributor__c}<br>
+Distributor Address : {!Account.FS_Distributor_Address__c}<br>
+Activation lead: {!Account.FS_Outlet_Activation_Lead__c}<br>
+
+Distributor is selected for this Outlet. Please Review. <br><br>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click {!Account.Link} to be directed to the specific record referenced above.

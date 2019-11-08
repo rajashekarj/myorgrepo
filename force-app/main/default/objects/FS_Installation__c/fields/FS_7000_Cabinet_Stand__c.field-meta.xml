@@ -12,14 +12,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>46449-Series 7000 Cabinet Stand â€“ MUST ENTER SALES ORDER (US Doc) â€“ Account Team Pay</fullName>
+                <fullName>46449-Series 7000 Cabinet Stand Ã¢â‚¬â€œ MUST ENTER SALES ORDER (US Doc) Ã¢â‚¬â€œ Account Team Pay</fullName>
                 <default>false</default>
-                <label>46449-Series 7000 Cabinet Stand â€“ MUST ENTER SALES ORDER (US Doc) â€“ Account Team Pay</label>
+                <label>46449-Series 7000 Cabinet Stand Ã¢â‚¬â€œ MUST ENTER SALES ORDER (US Doc) Ã¢â‚¬â€œ Account Team Pay</label>
             </value>
             <value>
-                <fullName>46449-Series 7000 Cabinet Stand â€“ MUST ENTER SALES ORDER (US Doc) â€“ Customer Pay</fullName>
+                <fullName>46449-Series 7000 Cabinet Stand Ã¢â‚¬â€œ MUST ENTER SALES ORDER (US Doc) Ã¢â‚¬â€œ Customer Pay</fullName>
                 <default>false</default>
-                <label>46449-Series 7000 Cabinet Stand â€“ MUST ENTER SALES ORDER (US Doc) â€“ Customer Pay</label>
+                <label>46449-Series 7000 Cabinet Stand Ã¢â‚¬â€œ MUST ENTER SALES ORDER (US Doc) Ã¢â‚¬â€œ Customer Pay</label>
             </value>
         </valueSetDefinition>
     </valueSet>

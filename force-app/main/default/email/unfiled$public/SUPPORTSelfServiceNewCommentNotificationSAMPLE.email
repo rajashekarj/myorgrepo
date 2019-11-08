@@ -1,0 +1,16 @@
+Your case # {!Case.CaseNumber}: {!Case.Subject} has been updated.
+
+Case #: {!Case.CaseNumber} 
+Customer: {!Case.Customer_Name__c} 
+Customer ACN: {!Case.Customer_ACN__c} 
+Customer SAP ID: {!Case.Customer_SAP_ID__c} 
+Customer Phone: {!Case.Customer_Phone__c} 
+Customer Address: {!Case.Customer_Address__c} 
+Contact Name: {!Contact.Name} 
+Contact Email: {!Contact.Email} 
+Case Category: {!Case.Case_Category__c} 
+Issue Description: {!Case.Subject}
+ 
+Please click on the link below to view this case on the Self-Service portal.
+https://freestyle.force.com/{!Case.Id}
+{!Organization.Name} Customer Support

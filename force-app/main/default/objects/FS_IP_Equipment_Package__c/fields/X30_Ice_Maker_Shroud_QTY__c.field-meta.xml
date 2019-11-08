@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>X30_Ice_Maker_Shroud_QTY__c</fullName>
-    <description>30â€� Ice Maker Shroud</description>
+    <description>30Ã¢â‚¬ï¿½ Ice Maker Shroud</description>
     <externalId>false</externalId>
-    <label>30â€� Ice Maker Shroud QTY</label>
+    <label>30Ã¢â‚¬ï¿½ Ice Maker Shroud QTY</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

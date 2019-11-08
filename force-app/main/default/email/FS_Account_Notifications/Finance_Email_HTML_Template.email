@@ -1,0 +1,9 @@
+A new outlet has been setup for Freestyle, please confirm the Tax Exemption Certificate has been received for proper customer setup:<br><br>
+
+Outlet Name : {! FS_Initial_Order__c.FS_Outlet_Name__c } <br><br>
+
+Outlet Store #: {! FS_Initial_Order__c.FS_Outlet_Store__c} <br><br>
+
+Outlet Address: {! FS_Initial_Order__c.FS_Outlet_Address__c} <br><br>
+
+Thank you

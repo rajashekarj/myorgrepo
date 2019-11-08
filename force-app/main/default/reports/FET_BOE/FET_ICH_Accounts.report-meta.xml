@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ADDRESS2_COUNTRY</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>US</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.FS_Chain_ACN__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ICH</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>FET ICH Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$FS_Outlet_Dispenser__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

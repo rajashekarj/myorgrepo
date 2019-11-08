@@ -1,0 +1,11 @@
+NAME,FS_ERROR_MESSAGE__C
+EffWaterButtonDateRequired,Effective Hide/Show Water Button Date is required if we have value in Hide/Show Water Button
+EarlyDateError,Date values should not be earlier than today
+NewBrandsetRequired,New Brandset is required if we have Effective Brandset
+WaterButtonRequired,Hide/Show Water Button is required if we have Effectvie Hide/Show Water Button
+DasaniRequired,Hide/Sow Dasani is required if we have Hide/Show Dasani Effective Date
+EffDasainiDateRequired,Effective Hide/Show Dasani Date is required if we have value in Hide/Show Dasani'
+EffBrandsetRequired,Effective Brandset Date is required if we have New Brandset
+PungentChangeRequired,The Pungent Change Indicator value is required whenever a new brand set has been selected
+SpNeedsToGoOutRequired,The SP needs to go out? value is required whenever a new brand set has been selected
+ValueChangeRequired,A value change with an effective date needs to be provided in order to proceed to the next step

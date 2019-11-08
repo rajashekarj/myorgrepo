@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_in_progress</fullName>
+        <description>Case in progress</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/FS_CASE_IN_PROGRESS</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_CCAST_after_processing_completed_by_JDE_AMS_group</fullName>
+        <ccEmails>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</ccEmails>
+        <description>Email to CCAST after processing completed by JDE AMS group</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>ccastfreestylesupport@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_CCAST_after_processing_completed_by_JDE_AMS_group</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_CCAST_when_JDE_AMS_escalates_case_to_RSS_group</fullName>
+        <ccEmails>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</ccEmails>
+        <description>Email to CCAST when JDE AMS escalates case to RSS group</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_CCAST_when_JDE_AMS_escalates_case_to_RSS_group</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_CCAST_when_JDE_AMS_escalates_to_Install_Base</fullName>
+        <ccEmails>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</ccEmails>
+        <description>Email to CCAST when JDE AMS escalates to Install Base</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_CCAST_for_notification_purposes_when_JDE_AMS_escalates_case_t</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Freestyle_Support_when_JDE_AMS_escalates_to_Install_Base</fullName>
+        <ccEmails>ccastfreestylesupport@2w6kilde640j0ttb07qq2no0a1q4kcmi3ejzwsy4kfsqhm4lqd.61-anh9eam.na34.case.salesforce.com</ccEmails>
+        <description>Email to Freestyle Support when JDE AMS escalates to Install Base</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccastfreestylesupport@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_CCAST_for_notification_purposes_when_JDE_AMS_escalates_case_t</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_JDE_AMS_CCAST_when_RSS_processes_email_request</fullName>
+        <ccEmails>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</ccEmails>
+        <description>Email to JDE AMS &amp; CCAST when RSS processes email request.</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>JDE_AMS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_JDE_AMS_CCAST_when_RSS_processes_email_request</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_JDE_AMS_when_RSS_processes_email_request</fullName>
+        <ccEmails>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</ccEmails>
+        <description>Email to JDE AMS when RSS processes email request.</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>JDE_AMS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_JDE_AMS_CCAST_when_RSS_processes_email_request</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_JDE_AMS_when_case_escalated_to_them_I_E_Jay</fullName>
+        <ccEmails>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</ccEmails>
+        <description>Email to JDE AMS when case escalated to them (I.E. Jay)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>JDE_AMS</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Email_to_JDE_AMS_when_case_escalated_to_them_I_E_Jay</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_case_creator_on_new_comment</fullName>
+        <description>Email to case creator on new comment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/LM_Case_Comment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_RO4W_created_Case</fullName>
+        <ccEmails>vikas.patel01@f-2zisxc8qynb6aqtkpxpz70006zqaqqa3kl2d1udz5s6sugx5x4.0m-1x5leae.cs65.case.sandbox.salesforce.com</ccEmails>
+        <description>Email to AMS team informing RO4W created Case</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_RO4W_AMOA_Receipents</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/FS_RO4W_created_Case</template>
+    </alerts>
+    <alerts>
+        <fullName>NotifyCaseOwner</fullName>
+        <description>NotifyCaseOwner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Fact_Case_Comment_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Case_Owner_about_Status_Change</fullName>
+        <description>Notify Case Owner about Status Change</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Fact_Case_Closed_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>SE_Case_Closure_Notify_Case_Contact</fullName>
+        <description>SE Case Closure - Notify Case Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SE_Case_Close_Notification</template>
+    </alerts>
+    <alerts>
+        <fullName>SE_Case_Updated_by_Community_User_Notify_Agent</fullName>
+        <description>SE Case Updated by Community User - Notify Owner</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/FS_CASE_UPDATE_BY_CONTACT</template>
+    </alerts>
+    <alerts>
+        <fullName>SE_New_Case_Comment_Notify_Case_Contact</fullName>
+        <description>SE New Case Comment - Notify Case Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORT_new_case_comment</template>
+    </alerts>
+    <alerts>
+        <fullName>SE_New_Case_Comment_by_Global_Center_Notify_Agent</fullName>
+        <description>SE New Case Comment by Global Center - Notify Agent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Service_Escalation_Agent__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORT_new_case_comment</template>
+    </alerts>
+    <alerts>
+        <fullName>Survey_Email_when_case_is_closed</fullName>
+        <description>Survey Email when case is closed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SURVEY_EAT_a1Y3C000000CcvqUAC</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ACN_workflow</fullName>
+        <description>to allow for global search t pull relevant cases</description>
+        <field>ACN_workflow__c</field>
+        <formula>Customer_ACN__c</formula>
+        <name>ACN workflow</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Escalate_to_global_center_true</fullName>
+        <description>Make Escalate to global center to true</description>
+        <field>Escalate_to_Global_Center__c</field>
+        <literalValue>1</literalValue>
+        <name>Escalate to global center true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FACT_Update_RT</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>FACT_Connectivity_Solution</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>FACT Update RT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_was_escalated</fullName>
+        <field>wasEscalated__c</field>
+        <literalValue>1</literalValue>
+        <name>FS was escalated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Insert_Case_Owner</fullName>
+        <field>Original_Owner__c</field>
+        <formula>Owner:Queue.QueueName</formula>
+        <name>Insert Case Owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SE_Undo_Case_Comment</fullName>
+        <field>New_Case_Comment__c</field>
+        <literalValue>0</literalValue>
+        <name>SE Undo Case Comment</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SE_undo_Case_Comment_Global_Center</fullName>
+        <field>New_Case_Comment_Global_Center__c</field>
+        <literalValue>0</literalValue>
+        <name>SE undo Case Comment Global Center</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SetCommentupdateFalse</fullName>
+        <description>Set Commentupdate to False</description>
+        <field>FS_CommentBodyUpdate__c</field>
+        <literalValue>0</literalValue>
+        <name>SetCommentupdateFalse</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UncheckIsPublic</fullName>
+        <field>IsPublic__c</field>
+        <literalValue>0</literalValue>
+        <name>UncheckIsPublic</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_stamp_Of_escalation</fullName>
+        <field>FACT_Time_of_Escalation__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time stamp Of escalation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updatelaststatuschange</fullName>
+        <field>Last_Status_Change__c</field>
+        <formula>NOW()</formula>
+        <name>Updatelaststatuschange</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_time_stamp_of_GC_Complete</fullName>
+        <field>FACT_Time_of_GC_Complete__c</field>
+        <formula>NOW()</formula>
+        <name>update time stamp of GC Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>ACN search</fullName>
+        <actions>
+            <name>ACN_workflow</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Customer_ACN__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Case updated by Community user</fullName>
+        <actions>
+            <name>SE_Case_Updated_by_Community_User_Notify_Agent</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>LastModifiedBy.Email  =  Contact.Email</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Copy Case Owner</fullName>
+        <actions>
+            <name>Insert_Case_Owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email Notification on New Case Comment</fullName>
+        <actions>
+            <name>Email_to_case_creator_on_new_comment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>UncheckIsPublic</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED(Last_Case_Comment__c), RecordType.Name = &quot;Linkage Management&quot; , IsPublic__c = True, NOT(ISPICKVAL(Status,&#39;Closed&#39;)), CreatedById &lt;&gt; FS_CommentCreatedBy__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FACT Case Closure Check</fullName>
+        <actions>
+            <name>Notify_Case_Owner_about_Status_Change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(RecordType.DeveloperName=&#39;FACT_Connectivity_Solution&#39;, ISPICKVAL(Status,&#39;Closed&#39;), CreatedById  &lt;&gt;  LastModifiedById )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FACT Update Record Type</fullName>
+        <actions>
+            <name>FACT_Update_RT</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.CaseNumber</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Dispenser Selection</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS CASE PROGRESS</fullName>
+        <actions>
+            <name>Case_in_progress</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS Case was escalated</fullName>
+        <actions>
+            <name>FS_was_escalated</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Escalate_to_Global_Center__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS GC complete</fullName>
+        <actions>
+            <name>update_time_stamp_of_GC_Complete</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Sub_Status__c</field>
+            <operation>equals</operation>
+            <value>GC Completed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS RO4W created Case</fullName>
+        <actions>
+            <name>FS_RO4W_created_Case</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Linkage Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.FS_New_Case_Type__c</field>
+            <operation>equals</operation>
+            <value>Account Team Initiated AMOA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Related_Installation_ID__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>RO4W created Case</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LastStatusChangeonCase</fullName>
+        <actions>
+            <name>Updatelaststatuschange</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>field gets update when case status changes on case object</description>
+        <formula>AND(  (RecordType.Name==&#39;Non - North American Case&#39;||RecordType.Name==&#39;North American Case&#39; ||RecordType.Name==&#39;Linkage Management&#39;),  OR( (ISCHANGED( Status )), TEXT(Status)=&#39;New&#39; ,  AND(TEXT(Status)= &#39;Escalated&#39;,TEXT(PRIORVALUE(Sub_Status__c))!= TEXT(Sub_Status__c) ),  AND(TEXT(Status)= &#39;Assigned&#39;,TEXT(PRIORVALUE(Sub_Status__c))!= TEXT(Sub_Status__c) ),    AND(TEXT(Status)= &#39;Assigned&#39;,TEXT(PRIORVALUE(LM_Sub_Status__c))!= TEXT(LM_Sub_Status__c) ),  AND(TEXT(Status)= &#39;On Hold&#39;,TEXT(PRIORVALUE(Sub_Status__c))!= TEXT(Sub_Status__c) ) ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Case Comment</fullName>
+        <actions>
+            <name>SE_New_Case_Comment_Notify_Case_Contact</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>SE_Undo_Case_Comment</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.New_Case_Comment__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>New Case Comment Global Center</fullName>
+        <actions>
+            <name>SE_New_Case_Comment_by_Global_Center_Notify_Agent</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>SE_undo_Case_Comment_Global_Center</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.New_Case_Comment_Global_Center__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notify Case Owner</fullName>
+        <actions>
+            <name>NotifyCaseOwner</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>SetCommentupdateFalse</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Notify Case Creator about the new comments on his case.</description>
+        <formula>AND(RecordType.DeveloperName=&#39;FACT_Connectivity_Solution&#39;, FS_CommentBodyUpdate__c, NOT(ISPICKVAL(Status,&#39;Closed&#39;)), CreatedById  &lt;&gt;  FS_CommentCreatedBy__c)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SE Update case fields when escalated</fullName>
+        <actions>
+            <name>Escalate_to_global_center_true</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Time_stamp_Of_escalation</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Escalated</value>
+        </criteriaItems>
+        <description>This rule is created to update values of Escalate_to_Global_Center__c</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>SE send notification on Case closure</fullName>
+        <actions>
+            <name>SE_Case_Closure_Notify_Case_Contact</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Close,Closed,Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Non - North American Case,North American Case</value>
+        </criteriaItems>
+        <description>This workflow rule contains an email alert which will be sent out on case closure  for SE Cases</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Send Survey when Case is closed</fullName>
+        <actions>
+            <name>Survey_Email_when_case_is_closed</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Close,Closed,Complete</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>North American Case</value>
+        </criteriaItems>
+        <description>Send Survey to the contact when Case is closed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

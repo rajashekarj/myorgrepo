@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>FS_Bank_Draft_Notification</fullName>
+        <description>Bank Draft Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Email_Bank_Draft_Form</template>
+    </alerts>
+    <alerts>
+        <fullName>Notification_for_Contact_Creation</fullName>
+        <ccEmails>rssfinancialonboarding@coca-cola.com</ccEmails>
+        <description>Notification for Contact availability having &#39;Accounts Payable Contact&#39; as one of its Contact Role.</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Contact_availability_of_Role_Accounts_Payable_Contact</template>
+    </alerts>
+    <rules>
+        <fullName>Email Bank Draft Form</fullName>
+        <actions>
+            <name>FS_Bank_Draft_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.FS_Payment_Method__c</field>
+            <operation>equals</operation>
+            <value>ACH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Headquarters</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Contact.FS_Execution_Plan_Role__c</field>
+            <operation>includes</operation>
+            <value>Primary Contact</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Notification for Contact availability having  %27Accounts Payable Contact%27  as one of its Contact Role%2E</fullName>
+        <actions>
+            <name>Notification_for_Contact_Creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notification for Contact availability having  &#39;Accounts Payable Contact&#39;  as one of its Contact Role.</description>
+        <formula>INCLUDES(FS_Execution_Plan_Role__c  , &#39;Accounts Payable Contact&#39;)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

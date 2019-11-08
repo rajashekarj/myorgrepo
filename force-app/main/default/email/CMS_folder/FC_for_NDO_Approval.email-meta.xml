@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>NDO Notification Email Template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FC for NDO Approval</name>
+    <style>none</style>
+    <subject>Flavor change {!FS_Flavor_Change_Head__c.Name}: Outlet ACN -  {!FS_Flavor_Change_Head__c.FS_Entity_ACN__c}: Distributor - {!FS_Flavor_Change_Head__c.Entity_Distributor_Name__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

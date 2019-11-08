@@ -1,0 +1,197 @@
+.collected {
+background:green;
+}
+
+.invitation_sent {
+background:#93C56E;
+color:#fff;
+}
+
+.waiting .deletelink,.collected .deletelink {
+display:none;
+}
+
+.waiting {
+background:orange;
+}
+
+.contactRecipientList,.multiSelectContainer {
+position:relative;
+float:left;
+width:270px;
+margin:0 15px 10px 0;
+}
+
+.listTitle {
+font-weight:700;
+display:block;
+clear:both;
+position:relative;
+overflow:hidden;
+margin-bottom:10px;
+}
+
+.options {
+clear:both;
+overflow:hidden;
+position:relative;
+margin:10px 0;
+}
+
+.options input {
+float:left;
+margin:2px;
+}
+
+.options label {
+float:left;
+margin:2px 2px 2px 9px;
+}
+
+.emaillegend {
+position:relative;
+width:380px;
+float:right;
+text-align:right;
+clear:both;
+}
+
+.emaillegend p {
+font-weight:700;
+}
+
+.emaillegend .emailRecipient {
+height:15px;
+padding:0 5px;
+}
+
+.contactRecipientBrowser {
+float:left;
+overflow:hidden;
+position:relative;
+width:100%;
+}
+
+.contactsSelected {
+width:50%;
+position:relative;
+overflow:hidden;
+float:left;
+}
+
+div.successMessageContainer p {
+margin:5px 0;
+}
+
+div.successMessageContainer h2.success {
+font-size:16px;
+color:green;
+font-weight:700;
+margin:10px 0;
+}
+
+div.successMessageContainer .surveyLink a {
+text-decoration:none;
+color:green;
+font-size:24px;
+margin:15px;
+}
+
+div.successMessageContainer p.gray {
+color:#666;
+}
+
+.helpdialogButton {
+height:22px;
+position:absolute;
+right:5px;
+top:0;
+width:50px;
+}
+
+.helpdialogButton a {
+background:url('../../imgs/icons/help.png') no-repeat center left;
+padding-left:20px;
+padding-top:3px;
+height:20px;
+text-decoration:none;
+display:block;
+}
+
+.helpdialogButton a:hover {
+text-decoration:underline;
+}
+
+#helpDialog {
+width:825px;
+height:480px!important;
+}
+
+#helpDialog .dijitDialogPaneContent {
+height:437px!important;
+}
+
+#helpDialog iframe {
+border:none;
+width:100%;
+height:100%;
+}
+
+.dr-pnlbar {
+border:none!important;
+}
+
+#contactCollectionContainer,#success {
+overflow:hidden;
+position:relative;
+clear:both;
+padding:20px;
+}
+
+#success {
+text-align:center;
+}
+
+ul.letterSearch li {
+width:20px;
+height:20px;
+text-align:center;
+float:left;
+list-style:none;
+cursor:pointer;
+margin:0;
+padding:0;
+}
+
+div.loader {
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+opacity:.75;
+filter:alpha(opacity=75);
+-ms-filter:"alpha(opacity=75)";
+-khtml-opacity:.75;
+-moz-opacity:.75;
+background:#FFF;
+z-index:10000;
+}
+
+div.loader img {
+position:absolute;
+left:50%;
+top:50%;
+margin-top:-10px;
+margin-left:-60px;
+}
+
+div.leftFloatRecipientList {
+float:left;
+width:60%;
+}
+
+div.rightFloatRecipientList {
+float:left;
+width:40%;
+}

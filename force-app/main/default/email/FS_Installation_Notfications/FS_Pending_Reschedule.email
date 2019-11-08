@@ -1,0 +1,12 @@
+Installation Pending Recheduled Notification:
+<br>
+<br>
+Please be advised that the  installation (Outlet information below) is Pending Recheduled.
+<br>
+<br>
+Outlet: {!FS_Installation__c.FS_Outlet_Information__c}<br>
+<br>
+Reschedule Instance: {!FS_Installation__c.FS_Install_Date_Reschedule_Instance__c}<br>
+<br>
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Installation__c.Link} to be directed to the specific record referenced above.

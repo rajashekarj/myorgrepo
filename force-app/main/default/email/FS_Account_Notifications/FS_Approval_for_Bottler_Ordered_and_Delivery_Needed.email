@@ -1,0 +1,18 @@
+Dear {!Account.Name}<br>
+
+{!Account.ShippingAddress}<br>
+
+Outlet Information:<br>
+
+ ACN:{!Account.FS_ACN__c}<br>
+
+Outlet SAP ID: {!Account.FS_SAP_ID__c} <br>
+Food Service Description:{!Account.FS_Distributor_Foodservice_Desc__c}<br><br>
+
+
+
+
+
+Bottler is selected for this Outlet .. Please Review. <br><br>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click {!Account.Link} to be directed to the specific record referenced above.

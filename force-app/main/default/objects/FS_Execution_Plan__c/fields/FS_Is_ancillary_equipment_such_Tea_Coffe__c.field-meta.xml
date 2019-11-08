@@ -16,19 +16,19 @@
                 <label>-None-</label>
             </value>
             <value>
-                <fullName>No â€“ Does not apply to this install</fullName>
+                <fullName>No Ã¢â‚¬â€œ Does not apply to this install</fullName>
                 <default>false</default>
-                <label>No â€“ Does not apply to this install</label>
+                <label>No Ã¢â‚¬â€œ Does not apply to this install</label>
             </value>
             <value>
-                <fullName>Yes â€“ Existing Tea &amp; Coffee dispenser(s) will remain in same locations</fullName>
+                <fullName>Yes Ã¢â‚¬â€œ Existing Tea &amp; Coffee dispenser(s) will remain in same locations</fullName>
                 <default>false</default>
-                <label>Yes â€“ Existing Tea &amp; Coffee dispenser(s) will remain in same locations</label>
+                <label>Yes Ã¢â‚¬â€œ Existing Tea &amp; Coffee dispenser(s) will remain in same locations</label>
             </value>
             <value>
-                <fullName>Yes â€“ New Tea &amp; Coffee dispensers will be added, details provided in project plan</fullName>
+                <fullName>Yes Ã¢â‚¬â€œ New Tea &amp; Coffee dispensers will be added, details provided in project plan</fullName>
                 <default>false</default>
-                <label>Yes â€“ New Tea &amp; Coffee dispensers will be added, details provided in project plan</label>
+                <label>Yes Ã¢â‚¬â€œ New Tea &amp; Coffee dispensers will be added, details provided in project plan</label>
             </value>
             <value>
                 <fullName>Not Applicable</fullName>

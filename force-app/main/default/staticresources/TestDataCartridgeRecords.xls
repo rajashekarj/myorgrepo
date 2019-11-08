@@ -1,0 +1,34 @@
+NAME,FS_CARTRIDGE_NAME__C,FS_PLATFORM__C,FS_COUNTRY__C,FS_BRAND__C,FS_FLAVOR__C,FS_RFID__C,FS_RFID_AND_VERSION__C,FS_CARTRIDGE_TYPE__C,FS_EFFECTIVE_DATE__C,FS_Ready_for_Selection__c
+"Powerade(PoweradeA,v1,EUR)","Powerade(PoweradeA,v1,EUR)",7000,DE;ES;FR;GB;IE,POWERade,,378,378-1,,2016-12-31,2016-12-31
+"Cherry(Cherry,v1,NA)","Cherry(Cherry,v1,NA)",7000;8000;9000,CA;US,Red,Cherry,33,33-1,Core,2016-12-31,2016-12-31
+"Fuze Tea(FuzeTeaA,v1,NA,CA,FuzeTeaB,v1,NA,CA)","Fuze Tea(FuzeTeaA,v1,NA,CA,FuzeTeaB,v1,NA,CA)",8000;9000,CA,Fuze,,226,226-1,,2016-12-31,2016-12-31
+"Raspberry(Raspberry,v1,EUR)","Raspberry(Raspberry,v1,EUR)",7000;8000;9000;2000,BE;DE;ES;FR;GB;IE,Raspberry,Raspberry,506,506-1,,2016-12-31,2016-12-31
+"Dr Pepper(DrPepperA,v1,NA,US,DrPepperB,v1,NA,US)","Dr Pepper(DrPepperA,v1,NA,US,DrPepperB,v1,NA,US)",8000;9000,US,Dr Pepper,,122,122-1,,2016-12-31,2016-12-31
+Thums Up(Part_1),Thums Up(Part_1),9000,US,Black,,691,691-1,,2016-12-31,2016-12-31
+"Powerade(PoweradeA,v1,US,PoweradeB,v1,US)","Powerade(PoweradeA,v1,US,PoweradeB,v1,US)",8000;9000,US,POWERade,,176,176-1,,2016-12-31,2016-12-31
+"Powerade(PoweradeA,v1,NA,CA,PoweradeB,v1,NA,CA)","Powerade(PoweradeA,v1,NA,CA,PoweradeB,v1,NA,CA)",8000;9000,CA,POWERade,,181,181-1,,2016-12-31,2016-12-31
+"Fuze Tea(FuzeTeaA,v1,EUR,ES,FR)","Fuze Tea(FuzeTeaA,v1,EUR,ES,FR)",8000;9000,BE;ES;FR,Fuze,,633,633-1,,2016-12-31,2016-12-31
+"Dr Pepper(DrPepperA,v1,NA,US)","Dr Pepper(DrPepperA,v1,NA,US)",7000;2000,US,Dr Pepper,,609,609-1,,2016-12-31,2016-12-31
+"Cherry(Cherry,v1,EUR,NZ)","Cherry(Cherry,v1,EUR,NZ)",8000,BE;DE;ES;FR;GB;IE;NZ,Pibb/Pibb Zero,Pibb/Pibb Zero,510,510-1,,2016-12-31,2016-12-31
+"Cherry(Cherry,v1,ASEAN)","Cherry(Cherry,v1,ASEAN)",8000;9000,SG,Red,Cherry,480,480-1,,2016-12-31,2016-12-31
+"Pibb Xtra(PibbB,v1,NA)","Pibb Xtra(PibbB,v1,NA)",8000,CA;US,Pibb/Pibb Zero,,612,612-1,,2016-12-31,2016-12-31
+"Pibb Xtra(PibbA,v1,NA,PibbB,v1,NA)","Pibb Xtra(PibbA,v1,NA,PibbB,v1,NA)",8000,CA;US,Pibb/Pibb Zero,,113,113-1,,2016-12-31,2016-12-31
+"Diet Coke(DietCokeA,v1,EUR,ASEAN,GB,NZ)","Diet Coke(DietCokeA,v1,EUR,ASEAN,GB,NZ)",7000;8000;9000;2000,GB;IE;NZ,Share a Coke,,322,322-1,,2016-12-31,2016-12-31
+"Vitaminwater(Vitaminwater,v1,NA,US)","Vitaminwater(Vitaminwater,v1,NA,US)",8000,US,Pibb/Pibb Zero,,83,83-1,,2016-12-31,2016-12-31
+"Pibb Xtra(PibbA,v1,NA)","Pibb Xtra(PibbA,v1,NA)",8000,CA;US,Pibb/Pibb Zero,,611,611-1,,2016-12-31,2016-12-31
+"Hi-C(HiC,v1,NA,ASEAN)","Hi-C(HiC,v1,NA,ASEAN)",7000;8000;9000;2000,CA;SG;US,Hi-C,,616,616-1,,2016-12-31,2016-12-31
+"Dr Pepper(DrPepperB,v1,NA,US)","Dr Pepper(DrPepperB,v1,NA,US)",7000;2000,US,Dr Pepper,,610,610-1,,2016-12-31,2016-12-31
+"Dr Pepper(DrPepperA,v1,EUR,GB)","Dr Pepper(DrPepperA,v1,EUR,GB)",7000;8000;9000;2000,GB;IE,Dr Pepper,,352,352-1,,2016-12-31,2016-12-31
+"Dr Pepper(DrPepperB,v1,EUR,GB)","Dr Pepper(DrPepperB,v1,EUR,GB)",7000;8000;9000;2000,GB;IE,Dr Pepper,,353,353-1,,2016-12-31,2016-12-31
+"Barqs(BarqsA,v1,NA)","Barqs(BarqsA,v1,NA)",7000,CA;US,Barqs,,613,613-1,,2016-12-31,2016-12-31
+"Fuze Tea(FuzeTeaB,v1,NA,NZ)","Fuze Tea(FuzeTeaB,v1,NA,NZ)",7000;8000;9000,NZ;US,Fuze,,228,228-1,,2016-12-31,2016-12-31
+"Raspberry(Raspberry,v1,ASEAN,NZ)","Raspberry(Raspberry,v1,ASEAN,NZ)",8000;9000,NZ;SG,Raspberry,Raspberry,486,486-1,,2016-12-31,2016-12-31
+"Fuze Tea(FuzeTeaB,v1,EUR,ES,FR)","Fuze Tea(FuzeTeaB,v1,EUR,ES,FR)",8000;9000,BE;ES;FR;NL,Fuze,,634,634-1,,2016-12-31,2016-12-31
+"Powerade(Powerade,v1,US)","Powerade(Powerade,v1,US)",7000;8000;9000;2000,US,POWERade,,617,617-1,,2016-12-31,2016-12-31
+"Fuze Tea(FuzeTea,v1,NA,CA)","Fuze Tea(FuzeTea,v1,NA,CA)",7000;2000,CA,Fuze,,624,624-1,,2016-12-31,2016-12-31
+"Barqs(BarqsA,v1,NA,BarqsB,v1,NA)","Barqs(BarqsA,v1,NA,BarqsB,v1,NA)",7000,CA;US,Barqs,,98,98-1,,2016-12-31,2016-12-31
+"Powerade(PoweradeC,v1,EUR)","Powerade(PoweradeC,v1,EUR)",7000;8000;9000;2000,DE;ES;FR;GB;IE,POWERade,,381,381-1,,2016-12-31,2016-12-31
+"Raspberry(Raspberry,v1,NA)","Raspberry(Raspberry,v1,NA)",7000;8000;9000,CA;US,Raspberry,Raspberry,38,38-1,,2016-12-31,2016-12-31
+"Powerade(PoweradeB,v1,EUR)","Powerade(PoweradeB,v1,EUR)",7000;8000;9000;2000,DE;ES;FR;GB;IE,POWERade,,379,379-1,,2016-12-31,2016-12-31
+"Fuze Tea(FuzeTeaA,v1,NA,NZ)","Fuze Tea(FuzeTeaA,v1,NA,NZ)",8000;9000,NZ,Fuze,,227,227-1,,2016-12-31,2016-12-31
+"Hi-C(HiCA,v1,NA,HiCB,v1,NA)","Hi-C(HiCA,v1,NA,HiCB,v1,NA)",8000;9000,CA;US,Hi-C,,160,160-1,,2016-12-31,2016-12-31

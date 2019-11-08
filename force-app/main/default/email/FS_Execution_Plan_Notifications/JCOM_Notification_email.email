@@ -1,0 +1,6 @@
+<p>{!User.Name} updated {!FS_Execution_Plan__c.FS_Execution_Plan_Name__c} project plan<br>
+Start Date: {!FS_Execution_Plan__c.FS_Execution_Start_Date__c}<br>
+Number of Installations: {!FS_Execution_Plan__c.FS_of_Installations__c}</p>
+
+Click this link https://fed.ko.com/freestyle to open the FET site. 
+Then click {!FS_Execution_Plan__c.Link} to be directed to the specific record referenced above.

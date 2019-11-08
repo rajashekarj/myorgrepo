@@ -1,0 +1,4 @@
+The purposes of the email notification is to gain Engineering's (Sam Orr; sorr@coca-cola.com) approval to replace the {!FS_Execution_Plan__c.FS_Type_of_Replacement__c} .  This message has been sent to the COM ([COM]; [COM Email]), JCOM ([JCOM Name]; [JCOM Email Address]), COM Director ([COM Director Name]; [COM Director Email Address]) and Jim Sanders.   If replacement is approved, COM will indicate in QB (Post-Installation Database) to begin replacement process.<br><br>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Execution_Plan__c.Link} to be directed to the specific record referenced above.

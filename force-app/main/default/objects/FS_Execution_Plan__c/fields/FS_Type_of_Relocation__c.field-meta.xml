@@ -11,24 +11,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ SP to Store)</fullName>
+                <fullName>RO4Ws (Dispenser to be moved within Primary SP Territory Ã¢â‚¬â€œ SP to Store)</fullName>
                 <default>false</default>
-                <label>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ SP to Store)</label>
+                <label>RO4Ws (Dispenser to be moved within Primary SP Territory Ã¢â‚¬â€œ SP to Store)</label>
             </value>
             <value>
-                <fullName>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ SP to Store)</fullName>
+                <fullName>RO4Ws (Dispenser to be moved outside of Primary SP Territory Ã¢â‚¬â€œ SP to Store)</fullName>
                 <default>false</default>
-                <label>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ SP to Store)</label>
+                <label>RO4Ws (Dispenser to be moved outside of Primary SP Territory Ã¢â‚¬â€œ SP to Store)</label>
             </value>
             <value>
-                <fullName>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ Same Day)</fullName>
+                <fullName>RO4Ws (Dispenser to be moved within Primary SP Territory Ã¢â‚¬â€œ Same Day)</fullName>
                 <default>false</default>
-                <label>RO4Ws (Dispenser to be moved within Primary SP Territory â€“ Same Day)</label>
+                <label>RO4Ws (Dispenser to be moved within Primary SP Territory Ã¢â‚¬â€œ Same Day)</label>
             </value>
             <value>
-                <fullName>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ Same day)</fullName>
+                <fullName>RO4Ws (Dispenser to be moved outside of Primary SP Territory Ã¢â‚¬â€œ Same day)</fullName>
                 <default>false</default>
-                <label>RO4Ws (Dispenser to be moved outside of Primary SP Territory â€“ Same day)</label>
+                <label>RO4Ws (Dispenser to be moved outside of Primary SP Territory Ã¢â‚¬â€œ Same day)</label>
             </value>
             <value>
                 <fullName>Relocation within four walls (Store dispenser(s) on site) - 2 work orders</fullName>
@@ -41,9 +41,9 @@
                 <label>Relocation within four walls (Stored off-site at SP) - 2 work orders</label>
             </value>
             <value>
-                <fullName>Relocation within four walls (Same day for on-site work) â€“ 1 work order</fullName>
+                <fullName>Relocation within four walls (Same day for on-site work) Ã¢â‚¬â€œ 1 work order</fullName>
                 <default>false</default>
-                <label>Relocation within four walls (Same day for on-site work) â€“ 1 work order</label>
+                <label>Relocation within four walls (Same day for on-site work) Ã¢â‚¬â€œ 1 work order</label>
             </value>
             <value>
                 <fullName>Disconnect Reconnect (Store dispenser(s) on site) - 2 work orders</fullName>
@@ -56,9 +56,9 @@
                 <label>Disconnect Reconnect (Stored off-site at SP) - 2 work orders</label>
             </value>
             <value>
-                <fullName>Disconnect Reconnect (Same day for on-site work) â€“ 1 work order</fullName>
+                <fullName>Disconnect Reconnect (Same day for on-site work) Ã¢â‚¬â€œ 1 work order</fullName>
                 <default>false</default>
-                <label>Disconnect Reconnect (Same day for on-site work) â€“ 1 work order</label>
+                <label>Disconnect Reconnect (Same day for on-site work) Ã¢â‚¬â€œ 1 work order</label>
             </value>
             <value>
                 <fullName>New Address</fullName>

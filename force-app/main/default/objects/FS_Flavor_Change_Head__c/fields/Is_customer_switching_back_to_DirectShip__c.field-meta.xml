@@ -13,19 +13,19 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Yes â€“ Cokesmart / Direct Ship</fullName>
+                <fullName>Yes Ã¢â‚¬â€œ Cokesmart / Direct Ship</fullName>
                 <default>false</default>
-                <label>Yes â€“ Cokesmart / Direct Ship</label>
+                <label>Yes Ã¢â‚¬â€œ Cokesmart / Direct Ship</label>
             </value>
             <value>
-                <fullName>Yes â€“ Manual Order / Direct Ship</fullName>
+                <fullName>Yes Ã¢â‚¬â€œ Manual Order / Direct Ship</fullName>
                 <default>false</default>
-                <label>Yes â€“ Manual Order / Direct Ship</label>
+                <label>Yes Ã¢â‚¬â€œ Manual Order / Direct Ship</label>
             </value>
             <value>
-                <fullName>Yes â€“ Bottler Ordered / Direct Ship</fullName>
+                <fullName>Yes Ã¢â‚¬â€œ Bottler Ordered / Direct Ship</fullName>
                 <default>false</default>
-                <label>Yes â€“ Bottler Ordered / Direct Ship</label>
+                <label>Yes Ã¢â‚¬â€œ Bottler Ordered / Direct Ship</label>
             </value>
             <value>
                 <fullName>No</fullName>
@@ -35,15 +35,15 @@
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Rejected</controllingFieldValue>
-            <valueName>Yes â€“ Cokesmart / Direct Ship</valueName>
+            <valueName>Yes Ã¢â‚¬â€œ Cokesmart / Direct Ship</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Rejected</controllingFieldValue>
-            <valueName>Yes â€“ Manual Order / Direct Ship</valueName>
+            <valueName>Yes Ã¢â‚¬â€œ Manual Order / Direct Ship</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Rejected</controllingFieldValue>
-            <valueName>Yes â€“ Bottler Ordered / Direct Ship</valueName>
+            <valueName>Yes Ã¢â‚¬â€œ Bottler Ordered / Direct Ship</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Rejected</controllingFieldValue>

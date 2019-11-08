@@ -1,0 +1,10 @@
+Hi,</br>
+</br>
+The dispenser platform has been updated for {!FS_Installation__c.Name} & <a href="{!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.FS_EP_Name__c}">{!FS_Installation__c.FS_Execution_Plan__c}</a>, please take necessary action to resubmit EP for PM approval. </br>
+
+Outlet Information : </br>
+{!FS_Installation__c.FS_Outlet_Name__c} </br>
+{!FS_Installation__c.FS_Outlet_Information__c} </br>
+</br>
+Thank You,</br>
+FET

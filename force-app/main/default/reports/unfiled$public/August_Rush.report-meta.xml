@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Installations1__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Outlet_Information__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_HQ_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Headquarters__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Chain_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Chain__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>August Rush</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$FS_Customer_Registered_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

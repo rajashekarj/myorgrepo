@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Contact availability of Role &#39;Accounts Payable Contact&#39;</name>
+    <style>none</style>
+    <subject>A new Freestyle Accounts Payable contact is available for SAP Ship-To # {!Account.FS_SAP_ID__c}</subject>
+    <textOnly>Please follow the link below for more details.
+{!Contact.Link}
+Thank You</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>hbashuk@coca-cola.com.fet</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>jille@fs.coca-cola.com.fet</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>nsjoshi@coca-cola.com.fet</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <name>Daily Missing HQ</name>
+</ReportFolder>

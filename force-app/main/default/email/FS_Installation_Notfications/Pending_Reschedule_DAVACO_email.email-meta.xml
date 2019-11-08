@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pending Reschedule DAVACO_email</name>
+    <style>none</style>
+    <subject>{!FS_Installation__c.FS_Outlet__c} at {!FS_Installation__c.FS_Outlet_Address__c} has been updated</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

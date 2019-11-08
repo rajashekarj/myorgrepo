@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CDM_Setup_Change_Notification</fullName>
+        <description>CDM Setup Change Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kfrancisgreen@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CMS_folder/FS_CDM_Email_Notification_for_Direct_SHip</template>
+    </alerts>
+    <alerts>
+        <fullName>NDO_Notification_for_Confirmed_Commercially_Approved</fullName>
+        <description>NDO Notification for Confirmed Commercially Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CMS_folder/FC_for_NDO_Approval</template>
+    </alerts>
+    <alerts>
+        <fullName>NDO_Notification_for_Direct_Ship</fullName>
+        <description>NDO Notification for Direct Ship</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FS_NDO_Group</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CMS_folder/NDO_rejection_email_notification_for_Direct_Ship</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Clear_CDM_Complete_Date_and_Time</fullName>
+        <field>FS_CDM_Setup_Complete_Date_Time__c</field>
+        <name>clear CDM Setup Complete Date and Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Order_Processed_By</fullName>
+        <field>FS_Order_Processed_By__c</field>
+        <name>Clear Order Processed By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_Order_Processed_Date</fullName>
+        <field>Order_Processed_Date__c</field>
+        <name>Clear Order Processed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_POM_Action_Complete_By</fullName>
+        <field>FS_POM_Action_Completed_by__c</field>
+        <name>Clear POM Action Complete By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_SP_readiness_Completed_by</fullName>
+        <field>FS_SP_Readiness_Completed_By__c</field>
+        <name>Clear SP readiness Completed by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_SP_readiness_completed_time_stamp</fullName>
+        <field>FS_SP_Readiness_Completed_DateTime__c</field>
+        <name>Clear SP readiness completed time stamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Copy_comments</fullName>
+        <field>Copy_of_ADD_flavor_Change__c</field>
+        <formula>FS_Add_Flavor_Change_Notes_Comments__c</formula>
+        <name>Copy comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Check_Readiness_Alert_CHeck</fullName>
+        <description>Check the readiness alert checkbox on header</description>
+        <field>FS_SS_Readiness_Alert__c</field>
+        <literalValue>1</literalValue>
+        <name>FS Check Readiness Alert CHeck</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Project_Description_Inheritance</fullName>
+        <field>FS_Project_Name__c</field>
+        <formula>FS_Project_Name__c</formula>
+        <name>Project Description Inheritance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Project_ID_inheritance</fullName>
+        <field>FS_Project_Id__c</field>
+        <formula>FS_Parent_Flavor_Change__r.FS_Project_Id__c</formula>
+        <name>Project ID inheritance</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_ReadinessAlert_check</fullName>
+        <description>Check the readiness alert checkbox</description>
+        <field>FS_SS_Readiness_Alert__c</field>
+        <literalValue>1</literalValue>
+        <name>FS ReadinessAlert check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_User_Id_who_approved</fullName>
+        <description>Update User Id who approved Commercially</description>
+        <field>FS_Commercially_Approved_By__c</field>
+        <formula>$User.Id</formula>
+        <name>Update User Id who approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_uncheck_isbatch_check</fullName>
+        <description>uncheck the isBatch checkbox on header</description>
+        <field>FS_isBatch__c</field>
+        <literalValue>0</literalValue>
+        <name>FS uncheck isbatch check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_update_CDM_Setup_Complete_By</fullName>
+        <field>FS_CDM_Setup_Completed_by__c</field>
+        <formula>$User.FirstName+&#39; &#39;+$User.LastName</formula>
+        <name>update CDM Setup Complete By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Fs_Update_SSAlert_checkbox</fullName>
+        <field>FS_SS_Alert_Status__c</field>
+        <literalValue>1</literalValue>
+        <name>Fs Update SSAlert checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Order_Processed_By</fullName>
+        <field>FS_Order_Processed_By__c</field>
+        <formula>$User.FirstName+&#39; &#39;+$User.LastName</formula>
+        <name>Order Processed By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Order_Processed_Date</fullName>
+        <field>Order_Processed_Date__c</field>
+        <formula>now()</formula>
+        <name>Order Processed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>POM_action_Complete_Date_and_Time</fullName>
+        <field>FS_POM_Action_Complete_Date_Time__c</field>
+        <formula>now()</formula>
+        <name>POM action Complete Date and Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>POM_action_Complete_Date_and_Time_null</fullName>
+        <field>FS_POM_Action_Complete_Date_Time__c</field>
+        <name>POM action Complete Date and Time null</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Flavor_Change_Comments</fullName>
+        <description>Update Flavor Change Comments</description>
+        <field>FS_Flavor_Change_Notes_Comments__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_Flavor_Change_Notes_Comments__c))), 
+&#39;[&#39; + FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39; +&#39; &#39;+FS_Add_Flavor_Change_Notes_Comments__c+ BR() + BR() + PRIORVALUE(FS_Flavor_Change_Notes_Comments__c) + BR(), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Add_Flavor_Change_Notes_Comments__c + BR() )</formula>
+        <name>Update Flavor Change Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NDO_Approved_Rejected_By</fullName>
+        <description>Update NDO Approved/ Rejected By</description>
+        <field>FS_NDO_Action_Completed_by__c</field>
+        <formula>$User.FirstName &amp; &#39; &#39; &amp;  $User.LastName</formula>
+        <name>Update NDO Approved/ Rejected By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NDO_Approved_Rejected_Date_Time</fullName>
+        <description>Update  NDO Approved/ Rejected Date/ Time</description>
+        <field>FS_NDO_Approval_Date_Time__c</field>
+        <formula>NOW()</formula>
+        <name>Update NDO Approved/ Rejected Date/ Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_NDO_Notes_Comments</fullName>
+        <description>Update NDO Notes/Comments</description>
+        <field>FS_NDO_Notes_Comments__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_NDO_Notes_Comments__c))), 
+&#39;[&#39; + FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Add_New_NDO_Notes_Comments__c+ BR() + BR() +PRIORVALUE(FS_NDO_Notes_Comments__c) + BR(), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Add_New_NDO_Notes_Comments__c+ BR() )</formula>
+        <name>Update NDO Notes/Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_POM_action_Complete_by</fullName>
+        <field>FS_POM_Action_Completed_by__c</field>
+        <formula>$User.FirstName+&#39; &#39;+$User.LastName</formula>
+        <name>Update POM action Complete by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SS_Alert_Status_0Days</fullName>
+        <field>FS_SS_Alert_Status__c</field>
+        <literalValue>1</literalValue>
+        <name>Update SS Alert Status 0Days</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Stamp_of_the_Customer_Readin</fullName>
+        <description>Update Time Stamp of the Customer Readiness</description>
+        <field>FS_Customer_Readiness_Completed_DateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time Stamp of the Customer Readin</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Stamp_of_the_change</fullName>
+        <description>Update Time Stamp of the change of status</description>
+        <field>FS_Flavor_Change_Status_Modified_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time Stamp of the change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_User_Name</fullName>
+        <description>Update User Name  who modified the status</description>
+        <field>FS_Flavor_Change_Status_Modified_By__c</field>
+        <formula>$User.FirstName +&#39; &#39; + $User.LastName</formula>
+        <name>Update User Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_User_Name_for_Customer_Readiness</fullName>
+        <description>Update User Name for Customer Readiness</description>
+        <field>FS_Customer_Readiness_Completed_By__c</field>
+        <formula>$User.FirstName +&#39; &#39;+ $User.LastName</formula>
+        <name>Update User Name for Customer Readiness</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_User_Name_for_SP_Readiness</fullName>
+        <field>FS_SP_Readiness_Completed_By__c</field>
+        <formula>$User.FirstName +&#39; &#39;+$User.LastName</formula>
+        <name>Update User Name for SP Readiness</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_time_stamp_for_SP_readiness</fullName>
+        <field>FS_SP_Readiness_Completed_DateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Update time stamp for SP readiness</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>XClear_Add_NDO_comments</fullName>
+        <description>Clear Add NDO comments</description>
+        <field>FS_Add_New_NDO_Notes_Comments__c</field>
+        <name>XClear Add NDO comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>clear_CDM_Setup_Complete_By</fullName>
+        <field>FS_CDM_Setup_Completed_by__c</field>
+        <name>clear CDM Setup Complete By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_CDM_Setup_Complete_Date_and_Time</fullName>
+        <field>FS_CDM_Setup_Complete_Date_Time__c</field>
+        <formula>Now()</formula>
+        <name>update CDM Setup Complete Date and Time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>xclear_Add_flavor_change_comments</fullName>
+        <field>FS_Add_Flavor_Change_Notes_Comments__c</field>
+        <name>xclear Add flavor change comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>CDM Notification for Direct Ship</fullName>
+        <actions>
+            <name>CDM_Setup_Change_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>CDM Notification for Direct Ship</description>
+        <formula>AND(OR(RecordType.Name==&#39;FS Flavor Change Outlet&#39;,RecordType.Name==&#39;FS Flavor Change Installation&#39;) ,      FS_Delivery_method__c==&#39;Direct Ship&#39;, AND(TEXT(FS_FC_Type__c)==&#39;Workflow Flavor Change&#39; ,FS_Approved__c,ISCHANGED(FS_Approved__c), isWaterDasani__c==0 ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CDM Notification for Distributor</fullName>
+        <actions>
+            <name>CDM_Setup_Change_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Whenever NDO Approves and enter &#39;Date Product available at DC&#39;</description>
+        <formula>AND(OR(RecordType.Name==&#39;FS Flavor Change Outlet&#39;,RecordType.Name==&#39;FS Flavor Change Installation&#39;), AND(TEXT(FS_FC_Type__c)==&#39;Workflow Flavor Change&#39;,FS_Approved__c),FS_Delivery_method__c=&#39;Distributor&#39;,isWaterDasani__c==0, OR(FS_Order_method__c=&#39;VMS&#39;,FS_Order_method__c=&#39;CokeSmart&#39;),TEXT(FS_NDO_Approval__c)=&#39;Approved&#39;,ISCHANGED(FS_NDO_Approval__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>CDM Setup Complete</fullName>
+        <actions>
+            <name>FS_update_CDM_Setup_Complete_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>update_CDM_Setup_Complete_Date_and_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( OR(RecordType.Name=&#39;FS Flavor Change Outlet&#39; , RecordType.Name=&#39;FS Flavor Change Installation&#39;) , ISCHANGED(FS_CDM_Setup_Complete__c),FS_CDM_Setup_Complete__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Clear SP readiness tracking fields FC Header</fullName>
+        <actions>
+            <name>Clear_SP_readiness_Completed_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_SP_readiness_completed_time_stamp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED( FS_SP_Readiness__c ), PRIORVALUE(FS_SP_Readiness__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Confirmed Commercially Approved</fullName>
+        <actions>
+            <name>NDO_Notification_for_Confirmed_Commercially_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Once the workflow is triggered, at either HQ/Chain or outlet/ Installation level the system should trigger an email notification to the NDO group, requesting their approval</description>
+        <formula>AND(OR(RecordType.Name==&#39;FS Flavor Change Outlet&#39;,RecordType.Name==&#39;FS Flavor Change Installation&#39;),  TEXT(FS_FC_Type__c)==&#39;Workflow Flavor Change&#39; , FS_Approved__c,isWaterDasani__c==0,  AND(NOT(FS_Delivery_method__c==&#39;Direct Ship&#39;),NOT(ISBLANK(FS_Delivery_method__c)), NOT(ISBLANK(FS_Order_method__c))))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Customer switched back to Direct Ship to CDM</fullName>
+        <actions>
+            <name>CDM_Setup_Change_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(OR(RecordType.Name==&#39;FS Flavor Change Outlet&#39;,RecordType.Name==&#39;FS Flavor Change Installation&#39;) , FS_Delivery_method__c==&#39;Direct Ship&#39;,isWaterDasani__c==0, AND(TEXT(FS_FC_Type__c)==&#39;Workflow Flavor Change&#39; , ISPICKVAL(FS_NDO_Approval__c,&#39;Changed to Direct Ship&#39;), ISCHANGED(FS_NDO_Approval__c)  ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS Alerts for Scheduled Date</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Flavor_Change_Head__c.FS_SP_Scheduled_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>Send alert to ss user 4 days prior to scheduled date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Update_SS_Alert_Status_0Days</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>FS_Flavor_Change_Head__c.FS_SP_Scheduled_Date__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>FS Readiness time alert</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Flavor_Change_Head__c.FS_SP_Scheduled_Alert_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <description>This workflow sends the readiness alert if the scheduled alert date is greater than today</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>FS_ReadinessAlert_check</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>FS_Flavor_Change_Head__c.FS_SP_Scheduled_Alert_Date__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>FS SS readiness immediate alert</fullName>
+        <actions>
+            <name>FS_Check_Readiness_Alert_CHeck</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Send immediate readiness alert</description>
+        <formula>FS_SP_Scheduled_Alert_Date__c &lt;= TODAY() &amp;&amp;  (ISCHANGED(FS_SP_Scheduled_Alert_Date__c )|| (ISPICKVAL(FS_FC_Type__c , &#39;File Upload Flavor Change&#39;) &amp;&amp;  ISNEW()) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS uncheck isBatch</fullName>
+        <actions>
+            <name>FS_uncheck_isbatch_check</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Flavor_Change_Head__c.FS_isBatch__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>this is to uncheck the isBatch checkbox on header to stop users from editing the file upload headers, but enable the edit using apex</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Flavor change Order Processed</fullName>
+        <actions>
+            <name>Order_Processed_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Order_Processed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Flavor_Change_Head__c.FS_Order_Processed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Fs Alert if Scheduled DateToday</fullName>
+        <actions>
+            <name>Fs_Update_SSAlert_checkbox</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Triggering Home page alert for readiness and closeout if the scheduled date is today.</description>
+        <formula>FS_SP_Scheduled_Date__c &lt;= TODAY() &amp;&amp;  ((ISCHANGED(FS_AC__c) ||ISCHANGED(FS_SP_Scheduled_Date__c)) || (ISPICKVAL(FS_FC_Type__c , &#39;File Upload Flavor Change&#39;) &amp;&amp; ISNEW()) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>NDO Approval for Flavor Change Header</fullName>
+        <actions>
+            <name>Update_NDO_Approved_Rejected_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_NDO_Approved_Rejected_Date_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>NDO Approval for Flavor Change Header</description>
+        <formula>NOT(ISBLANK(TEXT(FS_NDO_Approval__c) ))&amp;&amp;   TEXT(PRIORVALUE(FS_NDO_Approval__c)) &lt;&gt; TEXT(FS_NDO_Approval__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>NDO Notification for Direct Ship</fullName>
+        <actions>
+            <name>NDO_Notification_for_Direct_Ship</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>NDO Notification for Direct Ship</description>
+        <formula>AND(OR(RecordType.Name==&#39;FS Flavor Change Outlet&#39;,RecordType.Name==&#39;FS Flavor Change Installation&#39;) , NOT(OR( ISPICKVAL(Is_customer_switching_back_to_DirectShip__c, &#39;No&#39;),ISPICKVAL(Is_customer_switching_back_to_DirectShip__c, &#39;None&#39;)) ),  TEXT(FS_FC_Type__c)==&#39;Workflow Flavor Change&#39; , ISPICKVAL(FS_NDO_Approval__c ,&#39;Rejected&#39;),TEXT(PRIORVALUE(Is_customer_switching_back_to_DirectShip__c)) &lt;&gt; TEXT(Is_customer_switching_back_to_DirectShip__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>POM action Complete</fullName>
+        <actions>
+            <name>POM_action_Complete_Date_and_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_POM_action_Complete_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( OR(RecordType.Name=&#39;FS Flavor Change Outlet&#39; , RecordType.Name=&#39;FS Flavor Change Installation&#39;) , ISCHANGED(FS_POM_Action_Complete__c),FS_POM_Action_Complete__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Track Changes to Customer Readiness on Flavor Change Header</fullName>
+        <actions>
+            <name>Update_Time_Stamp_of_the_Customer_Readin</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_User_Name_for_Customer_Readiness</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Track Changes to Customer Readiness on Flavor Change Header</description>
+        <formula>ISCHANGED(FS_Customer_Readiness__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Track Changes to Flavor Change Status on Flavor Change Header</fullName>
+        <actions>
+            <name>Update_Time_Stamp_of_the_change</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_User_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Track Changes to Flavor Change Status</description>
+        <formula>ISCHANGED(FS_Flavor_Change_Status__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Track SP readiness FC Header</fullName>
+        <actions>
+            <name>Update_User_Name_for_SP_Readiness</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_time_stamp_for_SP_readiness</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(ISCHANGED( FS_SP_Readiness__c ), NOT(PRIORVALUE(FS_SP_Readiness__c ) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Uncheck CDM Setup complete</fullName>
+        <actions>
+            <name>Clear_CDM_Complete_Date_and_Time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>clear_CDM_Setup_Complete_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( OR(RecordType.Name=&#39;FS Flavor Change Outlet&#39; , RecordType.Name=&#39;FS Flavor Change Installation&#39;) , ISCHANGED(FS_CDM_Setup_Complete__c),NOT(FS_CDM_Setup_Complete__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Uncheck Order Processed</fullName>
+        <actions>
+            <name>Clear_Order_Processed_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_Order_Processed_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Flavor_Change_Head__c.FS_Order_Processed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Flavor Change Notes%2F Comments</fullName>
+        <actions>
+            <name>Copy_comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_Flavor_Change_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>xclear_Add_flavor_change_comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Flavor Change Notes/ Comments</description>
+        <formula>AND(ISCHANGED(FS_Add_Flavor_Change_Notes_Comments__c),!ISBLANK(FS_Add_Flavor_Change_Notes_Comments__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update NDO Notes%2FComments</fullName>
+        <actions>
+            <name>Update_NDO_Notes_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>XClear_Add_NDO_comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update NDO Notes/Comments</description>
+        <formula>AND(ISCHANGED(FS_Add_New_NDO_Notes_Comments__c),!ISBLANK(FS_Add_New_NDO_Notes_Comments__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>User who commercially approved the header</fullName>
+        <actions>
+            <name>FS_Update_User_Id_who_approved</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>User who commercially approved the header</description>
+        <formula>ISCHANGED(FS_Approved__c) &amp;&amp; FS_Approved__c=true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>uncheck POM action Complete Date and Time</fullName>
+        <actions>
+            <name>Clear_POM_Action_Complete_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>POM_action_Complete_Date_and_Time_null</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(RecordType.Name=&#39;FS Flavor Change Outlet&#39; , FS_POM_Action_Complete__c=false)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

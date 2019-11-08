@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Clear_SP_readiness_Completed_by</fullName>
+        <field>FS_SP_Readiness_Completed_By__c</field>
+        <name>Clear SP readiness Completed by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Clear_SP_readiness_completed_time_stamp</fullName>
+        <field>FS_SP_Readiness_Completed_DateTime__c</field>
+        <name>Clear SP readiness completed time stamp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Stamp_for_Customer_Readiness</fullName>
+        <description>Update Time Stamp for Customer Readiness</description>
+        <field>FS_Customer_Readiness_Completed_DateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time Stamp for Customer Readiness</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Stamp_for_SP_Readiness</fullName>
+        <description>Update Time Stamp for SP Readiness</description>
+        <field>FS_SP_Readiness_Completed_DateTime__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time Stamp for SP Readiness</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Time_Stamp_of_the_change</fullName>
+        <description>Update Time Stamp of the change when the Flavor Change Status was changed.</description>
+        <field>FS_Flavor_Change_Status_Modified_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Update Time Stamp of the change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_User_Name</fullName>
+        <description>Update user name who modified the flavor change status</description>
+        <field>FS_Flavor_Change_Status_Modified_By__c</field>
+        <formula>$User.FirstName +&#39; &#39;+$User.LastName</formula>
+        <name>Update User Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_User_Name_for_Customer_Readiness</fullName>
+        <description>Update User Name for Customer Readiness</description>
+        <field>FS_Customer_Readiness_Completed_By__c</field>
+        <formula>$User.FirstName +&#39; &#39;+ $User.LastName</formula>
+        <name>Update User Name for Customer Readiness</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_User_Name_for_SP_Readiness</fullName>
+        <description>Update User Name for SP Readiness</description>
+        <field>FS_SP_Readiness_Completed_By__c</field>
+        <formula>$User.FirstName +&#39; &#39;+$User.LastName</formula>
+        <name>Update User Name for SP Readiness</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_Time_Stamp_of_SP_Override</fullName>
+        <field>SP_Override_Complete_Date_and_Time__c</field>
+        <formula>NOW()</formula>
+        <name>update Time Stamp of SP Override</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_User_of_SP_Override</fullName>
+        <field>Service_Provider_override_Completed_By__c</field>
+        <formula>$User.FirstName +&#39; &#39;+$User.LastName</formula>
+        <name>update User Name of SP Override</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>xclearAdd_Service_Order_Notes_Comments</fullName>
+        <field>FS_Add_Service_Order_Change_NotesComment__c</field>
+        <name>xclearAdd Service Order Notes/Comments</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>xclear_customer_readiness_by</fullName>
+        <field>FS_Customer_Readiness_Completed_By__c</field>
+        <name>xclear customer readiness by</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>xclear_customer_readiness_time</fullName>
+        <field>FS_Customer_Readiness_Completed_DateTime__c</field>
+        <name>xclear customer readiness time</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Clear SP readiness tracking fields Service Order</fullName>
+        <actions>
+            <name>Clear_SP_readiness_Completed_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Clear_SP_readiness_completed_time_stamp</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED( FS_SP_Readiness__c ), PRIORVALUE(FS_SP_Readiness__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Clear Service order add comments</fullName>
+        <actions>
+            <name>xclearAdd_Service_Order_Notes_Comments</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED( FS_Service_Order_Notes_Comments__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Service Provider override</fullName>
+        <actions>
+            <name>update_Time_Stamp_of_SP_Override</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>update_User_of_SP_Override</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>FS_Service_Provider_override__c =true &amp;&amp;  ISCHANGED(FS_Service_Provider_override__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Track Changes to Customer Readiness</fullName>
+        <actions>
+            <name>Update_Time_Stamp_for_Customer_Readiness</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_User_Name_for_Customer_Readiness</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Track Changes to Customer Readiness</description>
+        <formula>ISCHANGED(FS_Customer_Readiness__c)&amp;&amp; FS_Customer_Readiness__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Track Changes to Flavor Change Status</fullName>
+        <actions>
+            <name>Update_Time_Stamp_of_the_change</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_User_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Track Changes to Flavor Change Status</description>
+        <formula>ISCHANGED( FS_Flavor_Change_Status__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Track Changes to SP Readiness</fullName>
+        <actions>
+            <name>Update_Time_Stamp_for_SP_Readiness</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_User_Name_for_SP_Readiness</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Track Changes to SP Readiness</description>
+        <formula>AND(ISCHANGED( FS_SP_Readiness__c ), NOT(PRIORVALUE(FS_SP_Readiness__c ) ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>xclear Customer Readiness in Service Order</fullName>
+        <actions>
+            <name>xclear_customer_readiness_by</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>xclear_customer_readiness_time</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND( ISCHANGED(FS_Customer_Readiness__c ), PRIORVALUE(FS_Customer_Readiness__c ) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

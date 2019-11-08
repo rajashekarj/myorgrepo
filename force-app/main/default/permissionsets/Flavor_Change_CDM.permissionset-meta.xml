@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow CDM users to edit Flavor change records</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Flavor Change CDM</label>
+    <license>Salesforce Platform</license>
+</PermissionSet>

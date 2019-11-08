@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Vailid_Fill__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Vailid_Fill__r$Valid_Fill_Request_Approval_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.FS_Outlet</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Pending Valid Fill Setup</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Valid_Fill__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

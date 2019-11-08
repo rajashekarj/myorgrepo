@@ -1,0 +1,11 @@
+Installation Rescheduled Notification:
+<br>
+<br>
+Please be advised that the  installation (Outlet information below) has been Rescheduled.
+<br>
+<br>
+Outlet: {!FS_Installation_Reschedule__c.Outlet_Info__c}<br>
+<br>
+<br>
+Click this link https://fed.ko.com/freestyle to open the FET site. 
+Then click <a href="{!LEFT(FS_Installation_Reschedule__c.Link, LEN(FS_Installation_Reschedule__c.Link) - 15)}{!FS_Installation_Reschedule__c.FS_Installation_Id__c}">{!LEFT(FS_Installation_Reschedule__c.Link, LEN(FS_Installation_Reschedule__c.Link) - 15)}{!FS_Installation_Reschedule__c.FS_Installation_Id__c}</a> to be directed to the specific record referenced above.

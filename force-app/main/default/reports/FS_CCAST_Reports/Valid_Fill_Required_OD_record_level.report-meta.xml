@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Outlet_Dispensers__r$FS_Serial_Number2__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account.Outlet_Dispensers__r$FS_Valid_Fill__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Outlet_Dispensers__r$FS_IsActive__c</field>
+    </columns>
+    <columns>
+        <field>Account.Outlet_Dispensers__r$Name</field>
+    </columns>
+    <description>Report to find Valid fill selection on OD record</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Outlet_Dispensers__r$FS_IsActive__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Valid Fill Required - OD record level</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Outlets_with_outlet_dispenser__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Created__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

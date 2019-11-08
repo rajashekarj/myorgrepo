@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>FET International Deployment will Impact FET Domestic Triggers/Emails</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Registration_Email_Admin_User</letterhead>
+    <name>FET International 3/28/18</name>
+    <style>freeForm</style>
+    <subject>FET System Will be Down 3/28/18 Between 11pm EST &amp; 3/29/18 5am</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

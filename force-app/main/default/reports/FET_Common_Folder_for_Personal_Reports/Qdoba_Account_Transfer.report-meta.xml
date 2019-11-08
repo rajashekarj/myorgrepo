@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$FS_HQ_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Store_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$FS_Outlet_Address__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$FS_HQ_ACN__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>0001348264</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Qdoba Account Transfer</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$FS_Approval_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

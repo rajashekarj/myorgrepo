@@ -3,7 +3,7 @@
     <fullName>FS_Contact_s_Account_RecordType__c</fullName>
     <externalId>false</externalId>
     <formula>FS_Execution_Plan_Contact__r.Account.RecordType.DeveloperName</formula>
-    <label>Contactâ€™s Account RecordType</label>
+    <label>ContactÃ¢â‚¬â„¢s Account RecordType</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Text</type>

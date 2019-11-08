@@ -1,0 +1,6 @@
+A {!FS_Execution_Plan__c.FS_Type_of_Removal__c} removal request to remove Freestyle dispenser(s) has been initiated.  Please take appropriate action to ensure product, linkage, indicator setup, removal execution and asset management procedures are adhered to.
+
+<br><br>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Execution_Plan__c.Link} to be directed to the specific record referenced above.

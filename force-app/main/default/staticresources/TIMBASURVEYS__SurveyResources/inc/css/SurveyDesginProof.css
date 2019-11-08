@@ -1,0 +1,304 @@
+.questionProperties input,.questionProperties button {
+float:left;
+}
+
+.questionProperties ul li,.questionProperties ul li ul, {
+clear:both;
+overflow:hidden;
+position:relative;
+margin:0;
+padding:0;
+}
+
+.questionProperties ul li ul li {
+overflow:hidden;
+position:relative;
+clear:both;
+padding:0;
+}
+
+.formRails .rightRail .questionProperties {
+width:230px;
+}
+
+.topCornersEditionBlue {
+width:100%!important;
+}
+
+div.additionalEditionTools,div.additionalEditionTools ul li {
+clear:both;
+}
+
+div.bottomCornersEditionBlue,.editorBody {
+clear:both;
+position:relative;
+overflow:hidden;
+background-color:#A6CAE4;
+}
+
+.questionProperties h2 {
+clear:both;
+position:relative;
+overflow:hidden;
+margin:0;
+padding:0;
+}
+
+.helpdialogButton {
+height:22px;
+position:absolute;
+right:5px;
+top:0;
+width:50px;
+}
+
+.helpdialogButton a {
+background:url('../../imgs/icons/help.png') no-repeat center left;
+padding-left:20px;
+padding-top:3px;
+height:20px;
+text-decoration:none;
+display:block;
+}
+
+.helpdialogButton a:hover {
+text-decoration:underline;
+}
+
+#helpDialog {
+width:825px;
+height:480px!important;
+}
+
+#helpDialog .dijitDialogPaneContent {
+height:437px!important;
+}
+
+#helpDialog iframe {
+border:none;
+width:100%;
+height:100%;
+}
+
+.surveyInfo .innerItemContainer {
+border-right:2px solid #657C9C;
+border-left:2px solid #657C9C;
+border-top:none;
+border-bottom:none;
+background:#F2F2F2;
+clear:both;
+}
+
+.surveyInfo .innerItemContainer .header {
+clear:both;
+position:relative;
+overflow:hidden;
+height:25px;
+}
+
+.surveyInfo .innerItemContainer .header h2 {
+margin-left:5px;
+padding:0!important;
+}
+
+.surveyInfo .innerItemContainer .header h2,.surveyInfo .innerItemContainer .header .additionalData {
+overflow:hidden;
+position:relative;
+float:left;
+}
+
+.surveyInfo div.topCorners {
+height:8px;
+clear:both;
+position:relative;
+background:url('../../imgs/surveylist/crnr_8x8_topright.gif') repeat-x top right;
+margin-top:10px;
+}
+
+.surveyInfo div.topCorners span.leftCorner {
+display:block;
+position:relative;
+background:url('../../imgs/surveylist/crnr_8x8_topleft.gif') repeat-x top left;
+height:8px;
+width:8px;
+}
+
+.surveyInfo div.bottomCorners {
+height:8px;
+clear:both;
+position:relative;
+background:url('../../imgs/surveylist/crnr_8x8_bottomright.gif') repeat-x bottom right;
+margin-bottom:10px;
+}
+
+.surveyInfo div.bottomCorners span.leftCorner {
+display:block;
+position:relative;
+background:url('../../imgs/surveylist/crnr_8x8_bottomleft.gif') repeat-x bottom left;
+height:8px;
+width:8px;
+}
+
+.surveyInfo .bottomCorners span.leftCorner,.surveyInfo .topCorners span.leftCorner {
+display:block;
+overflow:hidden;
+position:relative;
+}
+
+.surveyInfo .bottomCorners span.leftCorner {
+height:3px;
+clear:both;
+background-position:0 0!important;
+width:8px;
+}
+
+.surveyInfo {
+background:none!important;
+border:none!important;
+clear:both;
+overflow:hidden;
+position:relative;
+margin:4px;
+padding:none!important;
+}
+
+.innerItemContainer .title,.innerItemContainer .hr,.innerItemContainer .data {
+margin:0 4px;
+}
+
+.middleRail {
+background:url('../../imgs/common/drag_question.gif') no-repeat top center;
+}
+
+* html .editorBody ul li,* html .editorBody ul li ul,* html ul#listOfChildQuestions li,* html ul.answerOptions li,* html .editorBody ul li ul li,* html .editorBody li.suboption {
+display:block;
+clear:both;
+overflow:visible;
+position:relative;
+}
+
+* html .editorBody ul li,* html .editorBody .addButtonpanelOption {
+clear:both!important;
+position:relative;
+}
+
+* html ul#listOfChildQuestions li input,* html ul.answerOptions li input,* html .editorBody li.suboption input {
+float:left!important;
+clear:none!important;
+margin:3px!important;
+padding:0!important;
+}
+
+* html .editorBody ul * html .editorBody li {
+margin:0!important;
+padding:0!important;
+}
+
+* html .editorBody li.suboption input,* html .editorBody li.suboption a,* html .editorBody li.suboption span a,* html .editorBody li.suboption span {
+position:relative;
+z-index:99;
+}
+
+* html .editorBody li.suboption {
+height:20px;
+}
+
+* html ul#listOfChildQuestions li .removeLink,* html ul.answerOptions li .removeLink,* html .editorBody li.suboption .removeLink {
+float:left;
+clear:none;
+display:block;
+width:10px;
+height:10px;
+z-index:999;
+}
+
+* html .editorBody input {
+display:block;
+overflow:hidden;
+}
+
+* html .formRails .middlerail {
+background:red;
+border:blue;
+}
+
+* html .formRails .middleRail #surveyFormContainer .dojoDndItem {
+overflow:hidden;
+position:relative;
+cursor:pointer;
+}
+
+* html .formRails .middleRail #surveyFormContainer .dojoDndItem input {
+cursor:pointer;
+}
+
+* html .bottomCornersEditionBlue span,* html .topCornersEditionBlue span {
+display:block;
+position:relative;
+}
+
+* html .bottomCornersEditionBlue {
+background-position-y:top!important;
+}
+
+#testfixedIE6 {
+width:80%;
+height:30px;
+position:absolute;
+top:expression(100-((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px');
+left:expression(0+((e=document.documentElement.scrollLeft)?e:document.body.scrollLeft)+'px');
+}
+
+* html div.bottomCornersLightBlue,* html div.topCornersLightBlue {
+overflow:hidden;
+}
+
+div.dsgnPagination {
+overflow:hidden;
+clear:both;
+position:relative;
+margin:10px;
+}
+
+div.innerContentLightBlue {
+background:#ECF0F3;
+clear:both;
+overflow:hidden;
+position:relative;
+padding:5px;
+}
+
+* html #footer {
+width:100%;
+height:45px;
+overflow:hidden;
+position:absolute!important;
+left:expression( ( 0 -footer.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) 0 ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) 0 'px' );
+top:expression( ( 0 - footer.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) 0 ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) 0 'px' );
+padding:0!important;
+}
+
+* html #footer .navigation,* html #footer .commands {
+margin:10px;
+padding:0!important;
+}
+
+* html #surveyFormContainer {
+height:400px!important;
+overflow:visible!important;
+}
+
+.questionProperties,* html .formRails .rightRail .questionProperties,* html .formRails .rightRail .questionProperties .editorBody,#surveyDesignerBody {
+overflow:hidden;
+position:relative;
+}
+
+html,body,div#surveyFormContainer,.middleRail {
+height:100%;
+min-height:100%;
+}
+
+* html .editorBody ul li input,* html ul.answerOptions li input,* html ul#listOfChildQuestions li input,* html .editorBody ul li ul li input,* html .topCornersEditionBlue {
+position:relative;
+overflow:hidden;
+}

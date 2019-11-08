@@ -1,0 +1,9 @@
+Ecomm Indicator Complete Notification:<br><br>
+
+Please be advised the Ecomm setup for (Outlet information below) has been completed.
+<br><br>
+Outlet: {!Account.Name}<br>
+ACN: {!Account.Name}<br>
+SAP ID: {!Account.FS_SAP_ID__c}<br><br>
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click  {!Account.Link} to be directed to the specific record referenced above.

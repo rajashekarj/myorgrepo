@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>cdm emailss</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CDM Email Notification for Direct Ship</name>
+    <style>none</style>
+    <subject>Flavor change {!FS_Flavor_Change_Head__c.Name} is pending for your action : ACN - {!FS_Flavor_Change_Head__c.FS_Entity_ACN__c}  : CCC - {!FS_Flavor_Change_Head__c.Calculated_Customer_Classficiation__c}</subject>
+    <textOnly>Hi,
+
+Flavor Change {!FS_Flavor_Change_Head__c.Name} is pending for your action to complete the setup. To complete the setup please go to {!FS_Flavor_Change_Head__c.Link} .
+ACN - {!FS_Flavor_Change_Head__c.FS_Entity_ACN__c}
+Calculated Customer Classification  - {!FS_Flavor_Change_Head__c.Calculated_Customer_Classficiation__c}
+
+Thanks,
+FET</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

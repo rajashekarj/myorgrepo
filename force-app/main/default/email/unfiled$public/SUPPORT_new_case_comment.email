@@ -1,0 +1,18 @@
+A new Comment has been added to case: {!Case.Subject} 
+
+{!Case.Last_Case_Comment} 
+
+Case #: {!Case.CaseNumber} 
+Customer: {!Case.Customer_Name__c} 
+Customer ACN: {!Case.Customer_ACN__c} 
+Customer SAP ID: {!Case.Customer_SAP_ID__c} 
+Customer Phone: {!Case.Customer_Phone__c} 
+Customer Address: {!Case.Customer_Address__c} 
+Contact Name: {!Contact.Name} 
+Contact Email: {!Contact.Email} 
+Case Category: {!Case.Case_Category__c} 
+Issue Description: {!Case.Subject} 
+
+Click on the link to access the case: {!Case.Link} 
+
+{!Organization.Name} Customer Support

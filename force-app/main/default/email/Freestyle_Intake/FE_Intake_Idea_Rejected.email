@@ -1,0 +1,9 @@
+Hi {!FE_Intake_Idea__c.CreatedBy},
+                             
+Your recent Freestyle Dispenser Idea - {!FE_Intake_Idea__c.Name} has been rejected.
+
+You can view details at the following link
+{!FE_Intake_Idea__c.Link} 
+
+Thank You!
+Freestyle Sustaining Idea Team

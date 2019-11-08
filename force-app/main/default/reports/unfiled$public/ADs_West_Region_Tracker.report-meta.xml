@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingCity</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingState</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$FS_Execution_Plan__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$CreatedDate</field>
+    </columns>
+    <format>Tabular</format>
+    <name>ADs West Region Tracker</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

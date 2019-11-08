@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Installations1__r$FS_Overall_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Outlet_Information__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$FS_Install_Complete__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Installations1__r$FS_Overall_Status__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>**Cancelled</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Soft Ice Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$FS_Approval_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

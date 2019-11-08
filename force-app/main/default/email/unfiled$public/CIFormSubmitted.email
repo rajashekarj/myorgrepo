@@ -1,0 +1,14 @@
+Hello,
+<br/><br/>
+
+
+Customer Input form for {!Account.Name} outlets have been submitted .<br/><br/>
+
+Please click
+<a href=" {!Account.URLforCopyCItoOutlets__c}apex/FSCopyHQCustomerInputToOutlet?currentCIFId={!FS_Customer_Input__c.Id}&view=true&updateCIF=true&accId={!Account.Id}"
+>
+Here
+</a> to review.
+<br/><br/>
+
+Thanks

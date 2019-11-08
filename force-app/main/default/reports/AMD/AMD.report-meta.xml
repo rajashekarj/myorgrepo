@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Distributor_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Distributor__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Distr_ACN_Ship_City__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Distr_ACN_Ship_State__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$Overall_Status2__c</field>
+    </columns>
+    <description>Report to correct the DC lookup tab in the analysis file</description>
+    <format>Tabular</format>
+    <name>AMD</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

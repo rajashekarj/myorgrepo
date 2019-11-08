@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FSM Notification of Change - Chain</name>
+    <style>none</style>
+    <subject>Freestyle Tracker - HQ - FSM Approval Needed: {!Account.Name} - {!Account.FS_ACN__c}</subject>
+    <textOnly>{!User.Name} modified the chain:
+
+Chain Name: {!Account.Name}
+Chain #: {!Account.FS_ACN__c}
+Region Customer?: {!Account.00Ne0000000YCcA}
+Chain Sales: {!Account.OwnerFullName}
+
+Click on the link below to see this chain in Salesforce.com: {!Account.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

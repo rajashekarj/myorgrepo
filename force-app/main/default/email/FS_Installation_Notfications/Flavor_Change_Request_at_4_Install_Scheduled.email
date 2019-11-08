@@ -1,0 +1,8 @@
+Flavor Change Notification:<br/><br/>
+
+Please be advised that a Flavor Change has been completed for the customer below.
+<br>
+Customer: {!FS_Installation__c.FS_Outlet__c}<br/><br/>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Installation__c.Link} to be directed to the specific record referenced above.

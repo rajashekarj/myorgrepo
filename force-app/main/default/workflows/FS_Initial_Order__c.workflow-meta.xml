@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>IO_Disp_QTY_Changed</fullName>
+        <description>IO_Disp_QTY_Changed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>julmejia@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lasimmons@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lsample@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lywilliams@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sjohnson1@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>timlarson@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vethomas@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>freestylecustomerservice@coca-cola.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Initial_Order_Disp_Qty_Changed</template>
+    </alerts>
+    <alerts>
+        <fullName>confirmed_that_the_customer_s_tax_exemption_certificate_was_obtained_and_submitt</fullName>
+        <description>confirmed that the customerâ€™s tax exemption certificate was obtained and submitted intial order</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>saikrishnateja.r@fet.fetprod.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/Finance_Email_HTML_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FS_Initial_Order_Complete</fullName>
+        <field>FS_Order_Processed_DataTime__c</field>
+        <formula>NOW()</formula>
+        <name>Initial Order Complete</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Order_Processed_By</fullName>
+        <description>Who processed the order</description>
+        <field>FS_Order_Processed_By_form__c</field>
+        <formula>$User.FirstName &amp;&quot; &quot;&amp;$User.LastName</formula>
+        <name>Order Processed By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Order_Processed_date</fullName>
+        <description>Set order processed date</description>
+        <field>FS_Order_Processed_DataTime__c</field>
+        <formula>NOW()</formula>
+        <name>Set Order Processed date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateReadinessNotesfromIPtoIP</fullName>
+        <field>FS_Readiness_Notes__c</field>
+        <formula>FS_Installation__r.FS_Readiness_Notes__c</formula>
+        <name>UpdateReadinessNotesfromIPtoIP</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Customer_support_Notes</fullName>
+        <field>FS_CPO_Notes__c</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(FS_CPO_Notes__c))), 
+&#39;[&#39; + FS_Local_Time__c+ &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Add_new_Customer_Support_Notes__c + BR() + BR() +PRIORVALUE(FS_CPO_Notes__c) + BR(), 
+&#39;[&#39; + FS_Local_Time__c + &#39; EST, &#39; + $User.FirstName + &#39; &#39; +$User.LastName + &#39;]&#39;+ BR() + FS_Add_new_Customer_Support_Notes__c + BR() )</formula>
+        <name>Update Customer support Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Order_Processed_Date</fullName>
+        <field>FS_Order_Processed_DataTime__c</field>
+        <formula>Now()</formula>
+        <name>Update Order Processed Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>VPO_Override</fullName>
+        <description>Updates value on initial order VPO Override to that of Outlets VPO Override</description>
+        <field>FS_VPO_Override__c</field>
+        <formula>IF(CONTAINS(RecordType.DeveloperName, &#39;Relocation&#39;),
+FS_Installation__r.FS_New_Outlet__r.FS_VPO_Override__c,
+FS_Installation__r.FS_Outlet__r.FS_VPO_Override__c
+)</formula>
+        <name>VPO Override</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Xclear_Add_New_Customer_Support_Notes</fullName>
+        <field>FS_Add_new_Customer_Support_Notes__c</field>
+        <name>Xclear Add new Customer Support notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>FSCopyReadinessNotesIOCreation</fullName>
+        <actions>
+            <name>UpdateReadinessNotesfromIPtoIP</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>To copy Readiness Notes</description>
+        <formula>FS_Readiness_Notes__c==NULL</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Confirm Tax Exemption Email on Intial order</fullName>
+        <actions>
+            <name>confirmed_that_the_customer_s_tax_exemption_certificate_was_obtained_and_submitt</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Initial_Order__c.FS_Order_Processed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_IO_DispQTY</fullName>
+        <actions>
+            <name>IO_Disp_QTY_Changed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>email notification that needs to be triggered each and every time the quantity/count of dispenser changes on the &quot;# of Dispensers To Ship to Outlet&quot; field within the Installation Initial Order Object and only when the &quot;Order Processed&quot; check box has been</description>
+        <formula>IF(AND(ISCHANGED(FS_of_dispensers_to_ship_to_outlet__c),FS_Order_Processed__c),TRUE,FALSE)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Order Processed</fullName>
+        <actions>
+            <name>Order_Processed_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Set_Order_Processed_date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>FS_Initial_Order__c.FS_Order_Processed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>When was the order processed and by whom was it processed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Customer support Notes</fullName>
+        <actions>
+            <name>Update_Customer_support_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Xclear_Add_New_Customer_Support_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(ISCHANGED(FS_Add_new_Customer_Support_Notes__c),!ISBLANK(FS_Add_new_Customer_Support_Notes__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>VPO Override</fullName>
+        <actions>
+            <name>VPO_Override</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>if Outlet VPO Override is not blank sets value of Initial Order VPO Override</description>
+        <formula>IF(CONTAINS(RecordType.DeveloperName, &#39;Relocation&#39;), NOT(ISBLANK(FS_Installation__r.FS_New_Outlet__r.FS_VPO_Override__c)), NOT(ISBLANK(FS_Installation__r.FS_Outlet__r.FS_VPO_Override__c)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

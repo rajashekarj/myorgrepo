@@ -2,9 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FS_Status__c</fullName>
     <externalId>false</externalId>
-    <inlineHelpText>In Progress â€“ CIF is still open or a site assessment is still opens
-Closed â€“ Cancelled or Not Approved â€“ All outlets are either cancelled or not approved to move forward
-Closed â€“ Converted to EP. The CIF has been converted to an EP and closed</inlineHelpText>
+    <inlineHelpText>In Progress Ã¢â‚¬â€œ CIF is still open or a site assessment is still opens
+Closed Ã¢â‚¬â€œ Cancelled or Not Approved Ã¢â‚¬â€œ All outlets are either cancelled or not approved to move forward
+Closed Ã¢â‚¬â€œ Converted to EP. The CIF has been converted to an EP and closed</inlineHelpText>
     <label>Status</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
@@ -50,24 +50,24 @@ Closed â€“ Converted to EP. The CIF has been converted to an EP and closed<
                 <label>EP Created</label>
             </value>
             <value>
-                <fullName>Closed â€“ Cancelled</fullName>
+                <fullName>Closed Ã¢â‚¬â€œ Cancelled</fullName>
                 <default>false</default>
-                <label>Closed â€“ Cancelled</label>
+                <label>Closed Ã¢â‚¬â€œ Cancelled</label>
             </value>
             <value>
-                <fullName>Closed â€“ Converted to EP</fullName>
+                <fullName>Closed Ã¢â‚¬â€œ Converted to EP</fullName>
                 <default>false</default>
-                <label>Closed â€“ Converted to EP</label>
+                <label>Closed Ã¢â‚¬â€œ Converted to EP</label>
             </value>
             <value>
-                <fullName>Closed â€“ Cancelled or Not Approved</fullName>
+                <fullName>Closed Ã¢â‚¬â€œ Cancelled or Not Approved</fullName>
                 <default>false</default>
-                <label>Closed â€“ Cancelled or Not Approved</label>
+                <label>Closed Ã¢â‚¬â€œ Cancelled or Not Approved</label>
             </value>
             <value>
-                <fullName>Closed â€“Not Approved</fullName>
+                <fullName>Closed Ã¢â‚¬â€œNot Approved</fullName>
                 <default>false</default>
-                <label>Closed â€“Not Approved</label>
+                <label>Closed Ã¢â‚¬â€œNot Approved</label>
             </value>
             <value>
                 <fullName>Cancelled</fullName>

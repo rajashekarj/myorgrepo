@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the default email invitation template for survey: FET 5.0 &amp; 5.1 Enhancement and Training Survey</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>[Send using Workflow User] FET 5.0 &amp; 5.1 Enhancement and Training Survey</name>
+    <style>none</style>
+    <subject>Please complete this survey: FET 5.0 &amp; 5.1 Enhancement and Training Survey</subject>
+    <textOnly>Please complete this survey at:&lt;br/&gt;{!IF(User.Id != null,IF(Case.Id != null,&#39;https://freestyle--timbasurveys.na34.visual.force.com/apex/timbasurveys__survey?id=a1Y61000004nCiEEAU&amp;uId=&#39; + User.Id + &#39;&amp;case_id=&#39; + Case.Id + &#39;&amp;wf=yes&#39;,&#39;https://freestyle--timbasurveys.na34.visual.force.com/apex/timbasurveys__survey?id=a1Y61000004nCiEEAU&amp;uId=&#39; + User.Id + &#39;&amp;wf=yes&#39;),&#39;&#39;)}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

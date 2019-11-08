@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>send mail to AMS team when RO4W status is Cancelled</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Send Mail To AMS Team</name>
+    <style>none</style>
+    <subject>RO4W cancelled in FET</subject>
+    <textOnly>The RO4W {!FS_Installation__c.Name} linked to Case {!FS_Installation__c.Related_Case__c} has been cancelled.  Please review the case and take appropriate actions.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

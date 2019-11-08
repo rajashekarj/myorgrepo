@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Installations1__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Market_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_SAP_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingAddress</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingCity</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingState</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingPostalCode</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Store_Number__c</field>
+    </columns>
+    <description>Weekly FS7000 Report detailing all 7000 installs</description>
+    <format>Tabular</format>
+    <name>Weekly FS7000 Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

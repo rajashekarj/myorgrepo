@@ -1,0 +1,10 @@
+Hi, 
+
+Flavor Change {!FS_Flavor_Change_Head__c.Name} requires your review and approval to complete setup. Please click on link to navigate to Flavor Change record. 
+{!FS_Flavor_Change_Head__c.Link} . 
+ACN -  {!FS_Flavor_Change_Head__c.FS_Entity_ACN__c}
+Calculated Customer Classification - {!FS_Flavor_Change_Head__c.Calculated_Customer_Classficiation__c}
+Activation Lead - {!FS_Flavor_Change_Head__c.Activation_Lead__c}
+
+Thanks, 
+FET

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$FS_JDE_Doc__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingCity</field>
+    </columns>
+    <columns>
+        <field>Account$ShippingState</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$FS_Execution_Plan__c.FS_Back_up_COM__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_COM__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$FS_Fire_Up_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Installations1__r$FS_Installation_PIC_AC__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 3 AND (2 OR 4) AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Account.Installations1__r$Overall_Status2__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>**Cancelled,*On Hold,0 SA Complete,0 SA**Pending,1 PP Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Installations1__r$FS_PM__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>contains</operator>
+            <value>Andraes Hubbard,Faith Bridges,Faith Bridgs</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Installations1__r$FS_Fire_Up_Date__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>6/16/2014</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Installations1__r$FS_Installation_PIC_AC__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Ashley McCarthy,Cornell Williams,Charlene Underwood,Vanessa Baldwin</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Example regional closeout</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Outlets_with_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$FS_Approval_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

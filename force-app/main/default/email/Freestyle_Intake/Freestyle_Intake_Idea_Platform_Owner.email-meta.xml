@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request notification for final approval by Platform Owner</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Freestyle Intake Idea Platform Owner</name>
+    <style>none</style>
+    <subject>Freestyle Dispenser Idea | Final Approval for: {!FE_Intake_Idea__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

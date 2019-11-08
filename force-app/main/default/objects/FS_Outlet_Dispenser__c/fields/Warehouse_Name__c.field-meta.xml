@@ -22,9 +22,9 @@
                 <label>Regina</label>
             </value>
             <value>
-                <fullName>Lâ€™Assomption</fullName>
+                <fullName>LÃ¢â‚¬â„¢Assomption</fullName>
                 <default>false</default>
-                <label>Lâ€™Assomption</label>
+                <label>LÃ¢â‚¬â„¢Assomption</label>
             </value>
             <value>
                 <fullName>Daventry</fullName>
@@ -152,9 +152,9 @@
                 <label>Jordbro Warehouse</label>
             </value>
             <value>
-                <fullName>SkÃ¤rholmen TVS</fullName>
+                <fullName>SkÃƒÂ¤rholmen TVS</fullName>
                 <default>false</default>
-                <label>SkÃ¤rholmen TVS</label>
+                <label>SkÃƒÂ¤rholmen TVS</label>
             </value>
             <value>
                 <fullName>Sweden #3</fullName>
@@ -235,7 +235,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sweden</controllingFieldValue>
-            <valueName>SkÃ¤rholmen TVS</valueName>
+            <valueName>SkÃƒÂ¤rholmen TVS</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Sweden</controllingFieldValue>
@@ -296,7 +296,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Canada</controllingFieldValue>
-            <valueName>Lâ€™Assomption</valueName>
+            <valueName>LÃ¢â‚¬â„¢Assomption</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Germany</controllingFieldValue>

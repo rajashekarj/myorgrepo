@@ -1,0 +1,4 @@
+"NAME","END_POINT__C","HEADERPARAMNAME__C","HEADERPARAMVALUE__C"
+"MasterDataChange","https://api.devko.com/freestyle/v3/master/asset/change","Authorization","Basic R3lHMFNGWWdnSklnQVhtSUkxTmJ2dHgzZk5HQWtFbTc6eXIzZktMQ1ZSWUNjakdDRw=="
+"MasterDataCreate","https://api.devko.com/freestyle/v3/master/asset/create","Authorization","Basic R3lHMFNGWWdnSklnQVhtSUkxTmJ2dHgzZk5HQWtFbTc6eXIzZktMQ1ZSWUNjakdDRw=="
+"MasterDataDelete","https://api.devko.com/freestyle/v3/master/asset/delete","Authorization","Basic R3lHMFNGWWdnSklnQVhtSUkxTmJ2dHgzZk5HQWtFbTc6eXIzZktMQ1ZSWUNjakdDRw=="

@@ -1,0 +1,7 @@
+Execution Plan Approved Notification:<br><br>
+
+Please be advised that the following Execution Plan has been Approved.<br>
+<br>
+Headquarters: {!FS_Execution_Plan__c.FS_Headquarters__c}<br><br>
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Execution_Plan__c.Link} to be directed to the specific record referenced above.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Xclear_Reason_for_Deactivating</fullName>
+        <field>FS_Reason_for_Deactivating__c</field>
+        <name>Xclear Reason for Deactivating Brandset</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Reason for Deactivating Brandset</fullName>
+        <actions>
+            <name>Xclear_Reason_for_Deactivating</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISBLANK(FS_Effective_End_Date__c) &amp;&amp; !ISNEW()</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

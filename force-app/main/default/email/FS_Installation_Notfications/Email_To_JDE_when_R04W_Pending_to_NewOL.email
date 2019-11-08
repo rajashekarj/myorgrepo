@@ -1,0 +1,13 @@
+<messaging:emailTemplate subject="Case {!relatedTo.FS_Freestyle_Support_Tool_Case__c} has been assigned to JDE Asset Management Specialist." recipientType="User" relatedToType="FS_Installation__c" >
+<messaging:HtmlEmailBody >
+<p>
+The below dispenser/s have been removed from &nbsp;<apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.FS_Outlet__c}">{!relatedTo.FS_Outlet_Name__c}</apex:outputlink> as part of Relocation - &nbsp;<apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Name}</apex:outputlink>.<br/><br/> 
+
+Case &nbsp;<apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.FS_related_case_id__c}">{!relatedTo.FS_Freestyle_Support_Tool_Case__c}</apex:outputlink> has been created in Freestyle Support tool.<br/><br/>
+
+Please review the AMOA form attached to the case and proceed with the further steps.(Please get in touch with Sale Support in case of changes to the AMOA form)<br/><br/>
+
+<c:FS_ODDetailsForEmailTmpJDE RO4WIpRecID="{!relatedTo.Id}"/><br/>
+</p>
+</messaging:HtmlEmailBody>
+</messaging:emailTemplate>

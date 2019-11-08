@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Ecomm Indicator Complete</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ecomm Indicator Complete</name>
+    <style>none</style>
+    <subject>Ecomm Indicator Complete {!FS_Installation__c.FS_Outlet__c}</subject>
+    <textOnly>Ecomm Indicator Complete Notification:
+
+Please be advised the Ecomm setup for (Outlet information below) has been completed.
+
+Outlet: {!Account.Name}
+ACN: {!Account.Name}
+SAP ID: {!Account.FS_SAP_ID__c}
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click  {!Account.Link} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

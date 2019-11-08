@@ -1,0 +1,107 @@
+a {
+	outline: none;
+}
+
+.container{
+
+}
+
+.container .tab{
+    cursor: pointer;
+    background-color: #F7F9FF;
+    padding-left:10px;
+    height:45px;
+    border: 1px solid #C4D9E7;
+    clear: both;
+    overflow:hidden;
+    position: relative;
+
+}
+
+.tabtitle{
+    background-image: url('../img/icons/arrows_grayclose.png');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0;
+    overflow: hidden;
+    padding-left: 15px;
+    text-decoration: none;
+    
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2791C1;
+    line-height: 40px;
+
+}
+
+.tabtitleopen{
+    background-image: url('../img/icons/arrows_grayopen.png');
+}
+
+.container .hideborderb{
+    border-bottom-width: 0px;
+}
+
+
+.container .mainfield{
+    background-color: #F7F9FF;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C4D9E7;
+    border-top-style: none;    
+    overflow:hidden;
+    position: relative;
+    clear: both;
+}
+
+.container .hide{
+    display: none;
+}
+
+.titlesimple{
+    color: #5A5A5A;
+    font-family: arial;
+    font-size: 13px;
+    width: 100%;
+}
+
+
+
+.data{
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.shadow{
+    padding: 10px;
+    background: solid #FFFFFF;
+    -moz-box-shadow: inset 0 0 10px #666666;
+    box-shadow: inset 0 0 10px #666666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.clear {
+    clear:both;
+    height:1px;
+    overflow: hidden;
+    position:relative;
+}
+
+.datab{
+    width: 100%;
+    border-width: 0px;
+    border-color: #FFFFFF;
+}
+
+
+
+
+
+

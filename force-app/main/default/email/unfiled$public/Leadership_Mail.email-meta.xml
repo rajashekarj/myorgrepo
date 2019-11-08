@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Leadership_Mail</name>
+    <style>none</style>
+    <subject>CCFS Equipment Removal &amp; Replacement Reporting</subject>
+    <textOnly>Hi All,  You have been identified as a key business user to receive weekly CCFS Equipment Reporting.  This report will be systematically distributed each Friday to your email address.  The report will include information on both CCFS Equipment Removals &amp; Replacement Activities inclusive of :  •	Type of Reason for the Removal or Replacement Activity •	The date of the activity (you will also be able to see historical removal/replacement data) •	It Can be sorted by Revenue Center, Market ID, or Customer Name. •	Lastly, you will be able to see more detailed information on the scope of work completed for each removal or replacement activity.  The intention is that this level of reporting will help keep this group be better informed about customer removal activities so you can take appropriate action with revenue center sales/operations teams to identify and address any trends or concerns.  As you become comfortable with the report, please feel free to provide feedback to Rick Jordan and Bryan Foley on how we can continue to improve this reporting to better serve the needs of the business.  Please click here to download the Report  Thanks, FET Support Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

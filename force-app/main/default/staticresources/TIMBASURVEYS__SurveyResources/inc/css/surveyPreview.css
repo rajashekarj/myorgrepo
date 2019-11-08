@@ -1,0 +1,81 @@
+#bodyTable #breadCrumb a.close {
+	overflow: hidden;
+}
+
+.theme_previewer {
+	margin: 0 !important;
+}
+.themes_dropdown {
+	width: 157px;
+}
+.divColorPickerContainer {
+	height: 40px;
+	z-index: 2;
+}
+.marginout {
+	width: 785px;
+}
+
+#colorPickerOnBlurClose{
+	width: 825px;
+	height: 500px;
+	position: absolute;
+	z-index: 1;
+}
+
+.displaynone{
+	display: none;
+}
+
+.divColorPickerContainer{
+	*height: auto !important;
+}
+#colorpickerselectorfont, #colorpickerselectorfore,
+#colorpickerselectorback{
+	*position: relative !important;
+}
+
+.surveyButton.themePanelBtn{
+	padding: 0;
+}
+
+
+#theme_creator_div .surveyButton {
+	float:left;
+	display:block;
+	overflow:hidden;
+	position:relative;
+}
+
+.confirmTheme {
+	height: 35px;
+	weight: 88px;
+	outline: medium none;
+	position: relative;
+}
+
+#cancelTheme {
+	float: left; margin-left: 11px;
+	color: #A8211B;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	border: 1px solid #3797C2;
+	padding: 6px 8px;
+}
+
+#saveTheme {
+	float: right !important;
+	margin-right: 11px;
+}
+
+#theme_creator_theme_success_msg {
+	color:#737373;
+	float:left;
+	font-family:arial;
+	font-size:14px;
+	width:157px;
+}
+
+#theme_creator_div .labels{
+	width:130px;
+}

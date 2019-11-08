@@ -1,0 +1,16 @@
+Hi,
+
+We were unable to sync dispenser data with Device management (AirWatch, DataV). Please find details as follows-
+
+Dispenser Serial Number- {!Service_Message_Error_Log__c.FS_Serial_Number_Asset_Tag__c}
+Outlet Name- {!Service_Message_Error_Log__c.Outlet_Name__c}
+Outlet ACN-  {!Service_Message_Error_Log__c.Outlet_ACN__c}
+
+Error Code- {!Service_Message_Error_Log__c.Error_Code__c}
+Error Message- {!Service_Message_Error_Log__c.Error_Message__c}
+
+Request - 
+ {!Service_Message_Error_Log__c.Request_Message__c}
+
+Regards,
+Technical support

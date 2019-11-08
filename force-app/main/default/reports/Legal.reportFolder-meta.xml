@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>NEW_No_Signed_Agreement_Report</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>No_Signed_Agreement_Report</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>Legal</name>
+</ReportFolder>

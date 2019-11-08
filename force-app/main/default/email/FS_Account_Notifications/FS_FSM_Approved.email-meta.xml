@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>FSM Approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FSM Approved</name>
+    <style>none</style>
+    <subject>Freestyle Tracker - Customer is FSM Approve - {!Account.Name}</subject>
+    <textOnly>Hello,
+
+The following customer has been approved
+Click here to view the record:  {!Account.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

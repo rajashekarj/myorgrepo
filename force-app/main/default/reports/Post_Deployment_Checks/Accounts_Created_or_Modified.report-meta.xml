@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Id</field>
+    </columns>
+    <columns>
+        <field>Account$FS_SAP_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_Chain_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$FS_HQ_ACN__c</field>
+    </columns>
+    <columns>
+        <field>Account$Created__c</field>
+    </columns>
+    <columns>
+        <field>Account$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Account$LastModifiedBy</field>
+    </columns>
+    <description>During deployment accounts created or modified - Check the data and update</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Account$LastModifiedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>9/10/2016 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$CreatedDate</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>9/10/2016 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Accounts Created or Modified</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Chain_HQ_Outlet__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Platform change Notification for NDO Users</name>
+    <style>none</style>
+    <subject>Platform change from {!FS_Installation__c.Prior_Platform_Type_Value__c} to {!FS_Installation__c.Type_of_Dispenser_Platform__c} {!FS_Installation__c.FS_Distributor_Name__c}</subject>
+    <textOnly>Hi,   Platform Change Notification:  Installation {!FS_Installation__c.Name} requires your review. Please click on link to navigate to Outlet record. {!LEFT(FS_Installation__c.Link, LEN(FS_Installation__c.Link) - 15)}{!FS_Installation__c.FS_Outlet_Id__c}  ACN: {!FS_Installation__c.Outlet_ACN__c}  Outlet Name: {!FS_Installation__c.FS_Outlet_Name__c} Distributor Name: {!FS_Installation__c.FS_Distributor_Name__c} Calculated Customer Classification: {!FS_Installation__c.FS_Calculated_Customer_Classification__c} Activation Lead: {!FS_Installation__c.FS_Activation_Lead__c} Prior Platform/s: {!FS_Installation__c.Prior_Platform_Type_Value__c}  New Platform/s: {!FS_Installation__c.Type_of_Dispenser_Platform__c}   Thank you, FET</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

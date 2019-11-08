@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FS_IP_Equipment_Package__c$Name</field>
+    </columns>
+    <columns>
+        <field>FS_IP_Equipment_Package__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>FS_IP_Equipment_Package__c$FS_EP_Equipment_Package__c</field>
+    </columns>
+    <columns>
+        <field>FS_IP_Equipment_Package__c$FS_EP_Equipment_Package__c.RecordType</field>
+    </columns>
+    <columns>
+        <field>FS_IP_Equipment_Package__c$FS_Installation__c</field>
+    </columns>
+    <columns>
+        <field>FS_IP_Equipment_Package__c$FS_Installation__c.FS_Execution_Plan__c.Name</field>
+    </columns>
+    <columns>
+        <field>FS_IP_Equipment_Package__c$FS_EP_Equipment_Package__c.FS_Execution_Plan__c.Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>FS_IP_Equipment_Package__c$RecordType</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>01261000000SEOy,01261000000SEP0,01261000000SEP1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Equipment Package IP before Link</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Equipment_Package_of_Installation__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FS_IP_Equipment_Package__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

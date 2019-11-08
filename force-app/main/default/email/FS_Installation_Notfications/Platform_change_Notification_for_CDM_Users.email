@@ -1,0 +1,17 @@
+Hi,
+<br>
+<br>
+
+The platform has changed on a Scheduled/Pending Reschedule install, which may require you to update/remove JET Indicators in SAP or Update the Related Brandset. Please update SAP accordingly.
+<br>
+Installation Name - <a href="{!FS_Installation__c.Link}">{!FS_Installation__c.Name}</a> <br>
+Outlet Name: {!FS_Installation__c.FS_Outlet_Name__c}<br>
+ACN: {!FS_Installation__c.Outlet_ACN__c} <br>
+SAP Id: {!FS_Installation__c.FS_Outlet_SAP_ID__c}<br>
+Address: {!FS_Installation__c.FS_Outlet_Address__c} <br>
+Prior Platforms: {!FS_Installation__c.Prior_Platform_Type_Value__c} <br>
+New Platforms: {!FS_Installation__c.Type_of_Dispenser_Platform__c}<br>
+<br>
+
+Thank you,<br>
+FET

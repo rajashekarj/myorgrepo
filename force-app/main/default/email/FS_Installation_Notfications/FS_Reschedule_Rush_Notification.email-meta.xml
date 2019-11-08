@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Reschedule Rush Notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Reschedule Rush Notification</name>
+    <style>none</style>
+    <subject>Initial Rush Notification for: {!FS_Installation__c.FS_Outlet__c} - {!FS_Installation__c.Outlet_ACN__c}</subject>
+    <textOnly>The following location {!FS_Installation__c.FS_Outlet__c} is pending a Rush Reschedule. Please submit your approval to your Project Manager.
+
+
+Outlet Information:
+{!FS_Installation__c.FS_Outlet_Information__c}
+
+Scheduled Date:  {!FS_Installation__c.FS_Scheduled_Install_Date__c}
+
+PM: {!FS_Installation__c.FS_PM_Regular__c}
+PIC: {!FS_Installation__c.FS_Installation_PC_AC_1__c}
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click {!FS_Installation__c.Link} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

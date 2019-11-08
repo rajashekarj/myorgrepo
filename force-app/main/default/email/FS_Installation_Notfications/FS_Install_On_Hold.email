@@ -1,0 +1,7 @@
+Please be advised that the installation (Outlet information below) has been placed On-Hold.
+<br>
+Outlet: {!FS_Installation__c.FS_Outlet_Information__c}<br/>
+Reason: {!FS_Installation__c.00Ni000000CLNUl}<br/><br/>
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Installation__c.Link} to be directed to the specific record referenced above.

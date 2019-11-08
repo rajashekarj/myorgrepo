@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Install Rescheduled</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Install Reschedule</name>
+    <style>none</style>
+    <subject>Installation Rescheduled for {!FS_Installation_Reschedule__c.Install_Outlet__c}</subject>
+    <textOnly>Installation Rescheduled Notification:
+
+Please be advised that the  installation (Outlet information below) has been Rescheduled.
+
+Outlet: {!FS_Installation_Reschedule__c.Outlet_Info__c}
+
+
+Click this link https://fed.ko.com/freestyle to open the FET site. Then click {!LEFT(FS_Installation_Reschedule__c.Link, LEN(FS_Installation_Reschedule__c.Link) - 15)}{!FS_Installation_Reschedule__c.FS_Installation_Id__c} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

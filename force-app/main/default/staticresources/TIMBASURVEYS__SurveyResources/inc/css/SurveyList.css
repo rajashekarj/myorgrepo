@@ -1,0 +1,191 @@
+        
+        .setup_container {
+            margin:10px;
+            padding:10px;
+            border:3px solid #8BA0BD;
+            overflow:hidden;
+            position:relative;
+            clear:both;
+            font-size:12px;
+        }
+        
+        .setup_container h1 {
+        	font-weight:bold;
+        	font-size:16px;
+        }
+        
+        .setup_container input {
+            width:390px;
+        }
+        
+        .setup_container input.radio {
+        	margin:0 5px;
+        	width:auto;        	
+        }
+        
+        .setup_container div.tip {
+            color:#666;
+            xfloat:left;
+            display:inline;
+            
+        }
+        
+        .standbyUnderlayNode {
+			display: none;
+			opacity: 0;
+			z-index: 9999;
+			position: absolute;
+			cursor:wait;
+		}
+		.standbyImageNode {
+			opacity: 0;
+		        display: none;
+			z-index: -10000;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			cursor:wait;
+		}
+		        
+        
+        /* Help */
+        
+        .helpdialogButton {
+        	height:22px;
+			position:absolute;
+			right:5px;
+			top:0;
+			width:50px;   	
+        }
+        
+        .helpdialogButton a {
+        	background:url('../../imgs/icons/help.png') no-repeat center left;
+        	padding-left:20px;
+			padding-top:3px;
+        	height:20px;
+        	text-decoration:none;
+        	display:block;        	
+        }
+        
+        .helpdialogButton a:hover {
+        	text-decoration:underline;
+       	}
+
+        #helpDialog {
+        	width:825px;
+        	height:480px !important;        	
+        }
+        
+        #helpDialog .dijitDialogPaneContent {
+        	height:437px !important;       
+       	}      
+        
+        
+        #helpDialog iframe { 
+        	border:none;
+        	width:100%;
+        	border-style:none;
+        	height:100%; 
+        }
+        
+        
+    	.buttonsWrapper {
+    		overflow:hidden;
+    		position:relative;
+    		
+    		margin:10px;
+    	}
+    	.buttonsWrapper .half {
+    		overflow:hidden;
+    		position:relative;
+    		float:left;
+    		width:40%;
+    	}
+    	.buttonsWrapper .half.right {
+    		float:right;
+    		text-align:right;
+    	}
+    	
+    	.autoexpanded {
+    		overflow:hidden;
+    		position:relative;
+    	}
+    	
+    	.surveyItem {
+    		margin:0 !important;
+			padding:0 !important;
+			border:none !important;
+    	}
+    	
+    	.surveyItem .innerItemContainer {
+    		border-right:2px solid #657C9C;
+    		border-left:2px solid #657C9C;
+    		border-top:none;
+    		border-bottom:none;
+			background:#F2F2F2;	
+			clear:both;			
+    	}
+    	
+    	.surveyItem .innerItemContainer .header {
+    		clear:both;
+    		position:relative;
+    		overflow:hidden;
+    		height:25px;
+    	}
+    	
+    	.surveyItem .innerItemContainer .header h2 {
+    		padding:0 !important;
+    		margin-left: 5px;
+    	}
+    	
+    	.surveyItem .innerItemContainer .header h2,
+    	.surveyItem .innerItemContainer .header .additionalData {
+    		overflow:hidden;
+    		position:relative;
+    		float:left;   		
+    	}
+    	
+    	.bottomCorners span.leftCorner ,
+    	.topCorners span.leftCorner {
+    		display:block;
+    		overflow:hidden;
+    		position:relative;
+    	}    	
+    
+    	.bottomCorners span.leftCorner {
+    		height:3px;
+    		clear:both;
+    		background-position:0px 0px !important;
+    		width:8px;
+    	}
+    	
+    	.surveyItem .actions {
+    		padding-left:15px;
+    	}
+    	
+    	.hiddendiv {
+    		display:none;
+    	}
+    	
+   	/* Survey Collection  */
+        
+        div.collectionswitch  {
+        	height:18px;
+			overflow-x:hidden;
+			overflow-y:hidden;
+			position:relative;
+			width:63px;
+			cursor:pointer;
+        }
+        
+        div.collectionswitch.on {
+        	background: url('../../imgs/common/switch.png')}') no-repeat top left;
+        }
+        
+        div.collectionswitch.off {
+        	background: url('../../imgs/common/switch.png') no-repeat top right;
+        }
+        
+       .bPageBlock {
+       		margin-top:20px;
+       }

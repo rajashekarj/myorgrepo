@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FS_Installation__c$Name</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c.Outlet_Dispensers1__r$FS_Outlet__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Post Installations with Dispensers Info</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Installations_with_Dispensers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FS_Installation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

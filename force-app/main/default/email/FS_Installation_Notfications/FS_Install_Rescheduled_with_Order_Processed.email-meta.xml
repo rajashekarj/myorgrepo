@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Install Rescheduled with Order Processed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Install Rescheduled with order processed</name>
+    <style>none</style>
+    <subject>Installation Rescheduled, placed on hold or Cancelled for {!FS_Installation_Reschedule__c.Install_Outlet__c}</subject>
+    <textOnly>Please be advised that the installation (Outlet information below) has been Rescheduled, placed on hold/Cancelled after Initial Order has been processed.
+
+Outlet: {!FS_Installation_Reschedule__c.Outlet_Info__c}
+
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. Then click {!LEFT(FS_Installation_Reschedule__c.Link, LEN(FS_Installation_Reschedule__c.Link) - 15)}{!FS_Installation_Reschedule__c.FS_Installation_Id__c} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

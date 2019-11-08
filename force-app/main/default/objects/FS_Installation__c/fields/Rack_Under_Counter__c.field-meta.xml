@@ -13,14 +13,14 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>44236: 15â€� Wide Single BIB Rack</fullName>
+                <fullName>44236: 15Ã¢â‚¬ï¿½ Wide Single BIB Rack</fullName>
                 <default>false</default>
-                <label>44236: 15â€� Wide Single BIB Rack</label>
+                <label>44236: 15Ã¢â‚¬ï¿½ Wide Single BIB Rack</label>
             </value>
             <value>
-                <fullName>44238: 28â€� Wide Double BIB Rack</fullName>
+                <fullName>44238: 28Ã¢â‚¬ï¿½ Wide Double BIB Rack</fullName>
                 <default>false</default>
-                <label>44238: 28â€� Wide Double BIB Rack</label>
+                <label>44238: 28Ã¢â‚¬ï¿½ Wide Double BIB Rack</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -1,0 +1,6 @@
+Dispenser Flavor Configuration Complete:<br/><br/>
+
+Please be advised that a Flavor Change is complete for the customer below.
+<br>
+Customer: {!Flavor_Change__c.FS_Outlet_HQ_Chain__c}<br/>
+Click here to view Flavor record:  {!Flavor_Change__c.Link}<br/>

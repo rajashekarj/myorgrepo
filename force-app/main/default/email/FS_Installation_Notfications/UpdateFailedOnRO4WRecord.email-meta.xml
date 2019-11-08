@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>UpdateFailedOnRO4WRecord</name>
+    <style>none</style>
+    <subject>Action Needed - Freestyle Support Tool AMOA Closed status failed to update FET AMOA status to Complete against RO4W</subject>
+    <textOnly>The below AMOA case was closed but failed to update the &#39;Asset Tracking Form (AMOA) Status&#39; to Complete.
+
+Please update the &#39;Asset Tracking Form (AMOA) Status&#39; to Complete against the related RO4W record.
+
+Case # : {!FS_Installation__c.FS_Freestyle_Support_Tool_Case__c}
+
+Case Status : Closed
+
+RO4W : {!FS_Installation__c.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

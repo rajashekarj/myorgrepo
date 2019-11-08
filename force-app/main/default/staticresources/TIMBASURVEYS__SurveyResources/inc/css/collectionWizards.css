@@ -1,0 +1,308 @@
+.collected {
+background:green;
+}
+
+.waiting {
+background:orange;
+}
+
+.invitation_sent {
+background:#93C56E;
+color:#fff;
+}
+
+.contactRecipientList,.multiSelectContainer {
+position:relative;
+float:left;
+width:270px;
+margin:0 15px 10px 0;
+}
+
+.listTitle {
+font-weight:700;
+display:block;
+clear:both;
+position:relative;
+overflow:hidden;
+margin-bottom:10px;
+}
+
+.options {
+clear:both;
+overflow:hidden;
+position:relative;
+margin:10px 0;
+}
+
+.options input {
+float:left;
+margin:2px;
+}
+
+.options label {
+float:left;
+margin:2px 2px 2px 9px;
+}
+
+.emaillegend {
+width:583px !important;
+position:relative;
+float:right;
+text-align:right;
+clear:both;
+}
+
+.emaillegend p {
+font-weight:700;
+}
+
+.emaillegend .emailRecipient {
+float:right;
+height:15px;
+padding:0 5px;
+}
+
+.contactRecipientBrowser {
+float:left;
+overflow:hidden;
+position:relative;
+width:100%;
+}
+
+.contactsSelected {
+width:50%;
+position:relative;
+overflow:hidden;
+float:left;
+}
+
+div.successMessageContainer p {
+margin:5px 0;
+}
+
+div.successMessageContainer h2.success {
+font-size:16px;
+color:green;
+font-weight:700;
+margin:10px 0;
+}
+
+div.successMessageContainer .surveyLink a {
+text-decoration:none;
+color:green;
+font-size:24px;
+margin:15px;
+}
+
+div.successMessageContainer p.gray {
+color:#666;
+}
+
+.helpdialogButton {
+height:22px;
+position:absolute;
+right:5px;
+top:0;
+width:50px;
+}
+
+.helpdialogButton a {
+background:url(../../imgs/icons/help.png') no-repeat top left;
+padding-left:20px;
+padding-top:3px;
+height:20px;
+text-decoration:none;
+display:block;
+}
+
+.dojoxWizard {
+position:relative;
+}
+
+.dojoxWizardButtons {
+position:absolute;
+bottom:5px;
+right:5px;
+}
+
+.tundra .dojoxWizard {
+background:#eee;
+border:#b7b7b7 1px solid;
+-moz-border-radius:3pt;
+-webkit-border-radius:4pt;
+padding:2px;
+}
+
+.soria .dojoxWizard {
+border:1px solid #b7b7b7;
+padding:2px;
+}
+
+.recipient-list {
+background:#ECF0F3;
+overflow:hidden;
+position:relative;
+}
+
+.recipient-list .inner-content {
+overflow:hidden;
+position:relative;
+margin:0 5px;
+}
+
+.new-recipient-list {
+height:420px;
+overflow-y:auto;
+border:1px solid #657C9C;
+padding:4px;
+}
+
+.FixedFooter {
+background:#F2F2F2 none repeat scroll 0 0;
+border-top:2px solid #657C9C;
+bottom:0;
+height:27px;
+left:0;
+position:fixed;
+width:100%;
+padding:10px;
+}
+
+.FixedFooter .half {
+width:50%;
+float:left;
+overflow:hidden;
+position:relative;
+}
+
+.recipientlistActions {
+overflow:hidden;
+position:relative;
+margin:3px;
+}
+
+.recipientlistActions .innerContent {
+background:#fff;
+overflow:hidden;
+position:relative;
+padding:3px;
+}
+
+.recipientlistActions .innerDarkBlue {
+background:#7790B4;
+overflow:hidden;
+text-align:center;
+position:relative;
+padding:0 3px;
+}
+
+.recipientlistActions .half {
+width:auto;
+float:left;
+position:relative;
+overflow:hidden;
+}
+
+.recipientlistActions .pagination {
+position:relative;
+overflow:hidden;
+float:right;
+text-align:right;
+}
+
+.recipientlistActions .searchContainer {
+overflow:hidden;
+position:relative;
+}
+
+tr.header td {
+font-weight:700;
+border-bottom:1px #ECF0F3 solid;
+}
+
+ul.letterSearch {
+margin:0;
+padding:0;
+}
+
+.emaillegend .invitation_sent {
+background:#93C56E;
+color:#FFF;
+}
+
+.helpdialogButton a:hover {
+text-decoration:underline;
+}
+
+#helpDialog {
+width:825px;
+height:480px !important;
+}
+
+#helpDialog .dijitDialogPaneContent {
+height:437px !important;
+}
+
+#helpDialog iframe {
+border:none;
+width:100%;
+height:100%;
+}
+
+.dr-pnlbar {
+border:none !important;
+}
+
+#success {
+text-align:center;
+}
+
+.checkbox-margin {
+overflow:hidden;
+margin:0 3px;
+}
+
+ul.letterSearch li {
+width:20px;
+height:20px;
+text-align:center;
+float:left;
+list-style:none;
+cursor:pointer;
+margin:0;
+padding:0;
+}
+
+div.loader {
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+opacity:.75;
+filter:alpha(opacity=75);
+-ms-filter:"alpha(opacity=75)";
+-khtml-opacity:.75;
+-moz-opacity:.75;
+background:#FFF;
+z-index:10000;
+}
+
+div.loader img {
+position:absolute;
+left:50%;
+top:50%;
+margin-top:-10px;
+margin-left:-60px;
+}
+
+.waiting .deletelink,.collected .deletelink,.invitation_sent .deletelink {
+display:none;
+}
+
+#emailCollectorContainer,#success,#contactCollectionContainer,#success {
+overflow:hidden;
+position:relative;
+clear:both;
+padding:20px;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Platform change Notification for CDM Users</name>
+    <style>none</style>
+    <subject>The Platform has changed on an Install - Outlet ACN: {!FS_Installation__c.Outlet_ACN__c}</subject>
+    <textOnly>Hi,
+
+The platform has changed on a Scheduled/Pending Reschedule install, which may require you to update/remove JET Indicators in SAP or Update the Related Brandset. Please update SAP accordingly.
+Installation Name - {!FS_Installation__c.Name}
+Outlet Name: {!FS_Installation__c.FS_Outlet_Name__c}
+ACN: {!FS_Installation__c.Outlet_ACN__c}
+SAP Id: {!FS_Installation__c.FS_Outlet_SAP_ID__c}
+Address: {!FS_Installation__c.FS_Outlet_Address__c}
+Prior Platforms: {!FS_Installation__c.Prior_Platform_Type_Value__c}
+New Platforms: {!FS_Installation__c.Type_of_Dispenser_Platform__c}
+
+Thank you,
+FET</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

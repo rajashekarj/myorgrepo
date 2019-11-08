@@ -1,0 +1,27 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" style="font-family: arial;"><span style="font-size: 12pt; background-color: rgb(255, 255, 255);">Hi&nbsp;</span><span style="background-color: rgb(255, 255, 255);">{!Receiving_User.FirstName} ,</span></font><div><br></div><div><span style="font-family: Arial, sans-serif; background-color: rgb(255, 255, 255);">If you are receiving this email, it is because you have been identified as a PM or AC that performs Flavor Change File Uploads in FET. This email is being sent to a large group and isn't identifying any specific transaction you may be currently working on. If this is not work you currently do, please ignore the information below:&nbsp;</span><div style=""><div style="font-family: arial;"><span style="font-family: Arial, sans-serif; font-size: 12pt;">When
+creating/performing a Flavor Change File Upload, please consider whether the outlets included are
+within the Header level selected (i.e., Chain, HDQ), because if you create a Flavor Change at
+the HDQ level, but include Outlets that are not part of that HDQ (but are part of the Chain), those
+additional outlets will not receive the flavor changes you have requested.</span></div><div style="font-family: arial;">
+
+<p class="MsoNormal" style=""><span style="font-family: Arial, sans-serif; font-size: 12pt;">It is also imperative when providing the brand set naming
+convention, that the naming convention read exactly the way it does in FET (i.e., Brandset 01 -
+Pepper/Hi-C/Pade)</span><span style="font-family: Arial, sans-serif; font-size: 12pt; color: rgb(31, 73, 125);">. </span><span style="font-family: Arial, sans-serif; font-size: 12pt;">Please</span><span style="font-family: Arial, sans-serif; font-size: 12pt; color: rgb(31, 73, 125);"> </span><span style="font-family: Arial, sans-serif; font-size: 12pt;">do not abbreviate any portion of the naming convention;
+otherwise, the file upload will not properly map and will eventually fail.</span></p><p class="MsoNormal" style=""><img src="https://freestyle--c.na34.content.force.com/servlet/servlet.ImageServer?id=015610000011a8x&amp;oid=00D61000000aNH9" border="0" align="left" alt="" style="font-family: Arial, sans-serif; font-size: 12pt;"></p><p class="MsoNormal" style=""><br></p><p class="MsoNormal" style="line-height:12.0pt;text-autospace:none"><a name="_MailAutoSig"><b><span lang="EN-GB" style="font-size:10.5pt;mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:red;mso-ansi-language:EN-GB;
+mso-no-proof:yes">FET Support Team</span></b></a><b><span lang="EN-GB" style="font-size:10.5pt;mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#595959;mso-themecolor:text1;
+mso-themetint:166;mso-ansi-language:EN-GB;mso-no-proof:yes"> | E-mail:</span></b><b><span lang="EN-GB" style="font-size:10.5pt;
+mso-ascii-font-family:Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:
+Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#595959;mso-ansi-language:
+EN-GB;mso-no-proof:yes"> </span></b><b><span lang="EN-GB" style="font-size:10.5pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:blue;mso-ansi-language:EN-GB;mso-no-proof:yes"><a href="mailto:FETHelp@coca-cola.com">FETHelp@coca-cola.com</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></b></p><p class="MsoNormal" style="line-height:12.0pt;text-autospace:none"><span style="color: rgb(127, 127, 127); font-size: 10.5pt;">Coca-Cola North America, 1150 Sanctuary Parkway,
+Alpharetta GA 30009&nbsp;</span></p></div></div></div>]]></td>
+</tr>
+</table>

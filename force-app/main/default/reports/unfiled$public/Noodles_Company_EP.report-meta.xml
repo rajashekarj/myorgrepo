@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FS_Execution_Plan__c$Name</field>
+    </columns>
+    <columns>
+        <field>FS_Execution_Plan__c.Customer_Inputs__r$Name</field>
+    </columns>
+    <description>David Leek</description>
+    <format>Tabular</format>
+    <name>Noodles &amp; Company EP</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Execution_Plans_with_Customer_Inputs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FS_Execution_Plan__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

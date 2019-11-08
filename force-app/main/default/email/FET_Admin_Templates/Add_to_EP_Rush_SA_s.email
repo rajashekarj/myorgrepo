@@ -1,0 +1,37 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<font face="Arial, sans-serif" style="font-family: arial; color: rgb(0, 0, 0);"><span style="font-size: 12pt; background-color: rgb(255, 255, 255);">Hi&nbsp;</span><span style="background-color: rgb(255, 255, 255);">{!Receiving_User.FirstName} ,</span></font><div><br><div style=""><font face="Arial, sans-serif">If you recently received this email, it is because you either have a profile of a COM, FPS (Admin PM), AC, or Vendor Coordinator potentially working with CIF's in FET. This email is being sent to a large group and is not referencing any specific transaction you may be currently working. The below information is a notice of changes identified during a recent release that you should be made aware of. If you do not work in a CIF, please ignore the information below:&nbsp;</font></div><div style=""><div style="font-family: arial; color: rgb(0, 0, 0);"><span style="font-family: Arial, sans-serif; font-size: 12pt;">While
+converting a CIF and adding it to an existing EP, please ensure you are
+selecting an EP that is within the same headquarter. We are making you aware of
+this, because current functionality will display all EP’s within a Chain and
+Outlets should always be grouped within the same Headquarter.&nbsp;</span></div><div style="font-family: arial;"><p class="MsoNormal" style="color: rgb(0, 0, 0);"><font face="Arial, sans-serif" style="font-size: 12pt;">By
+now you should have noticed<span style="color:#1F497D"> </span>new “Rush” CIF pick-list
+options under the “What type of Site Assessment” field.&nbsp;</font><span style="font-size: 12pt; font-family: Arial, sans-serif;">These
+pick-list options should be selected at the discretion of an FPS for the purpose
+of triggering an email notification to the vendor coordinators (i.e., Giuliana
+Mendenhall, Jordan Brooks, Gary Curti).&nbsp;</span></p><p class="MsoNormal" style="color: rgb(0, 0, 0);"><span style="font-family: Arial, sans-serif; font-size: 12pt;">The email will request for the vendor coordinators
+to go into the CIF and provide the JDE DOC# and Work Order# (Which are now
+mandatory fields) within 24hours so the CIF can be converted to an EP sooner than
+what is considered standard.&nbsp;</span></p><p class="MsoNormal" style="color: rgb(0, 0, 0);"><span style="font-family: Arial, sans-serif; font-size: 12pt;">This request is typically made so the COM can get
+started on the EP on a Rush Install; however, this does not mean the Site
+Assessment Vendor will rush their site assessment SLA. Due to the volume of
+work the vendor coordinator normally takes 3-5
+business days to provide this information.&nbsp;</span></p><p class="MsoNormal" style="color: rgb(0, 0, 0);"><span style="color: rgb(204, 0, 0); font-family: Arial, sans-serif; font-size: 12pt;">This is an exception that will be monitored and should
+not be abused.</span></p><p class="MsoNormal" style=""><img src="https://freestyle--c.na34.content.force.com/servlet/servlet.ImageServer?id=015610000011a8x&amp;oid=00D61000000aNH9" border="0" align="left" alt="" style="color: rgb(204, 0, 0); font-family: Arial, sans-serif; font-size: 12pt;"></p><p class="MsoNormal" style=""><span style="font-family: Arial, sans-serif; font-size: 12pt;"><font color="#cc0000"><br></font></span></p><p class="MsoNormal" style="font-family: arial;">
+
+</p><p class="MsoNormal" style="font-family: arial;"><span style="font-family: &quot;Century Gothic&quot;, sans-serif;"><font color="#cc0000">&nbsp;</font></span><a name="_MailAutoSig" style="font-size: 12pt;"><b><span lang="EN-GB" style="font-size:10.5pt;mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:red;mso-ansi-language:EN-GB;
+mso-no-proof:yes">FET Support Team</span></b></a><b style="font-size: 12pt;"><span lang="EN-GB" style="font-size:10.5pt;mso-ascii-font-family:
+Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;
+mso-bidi-font-family:&quot;Times New Roman&quot;;color:#595959;mso-themecolor:text1;
+mso-themetint:166;mso-ansi-language:EN-GB;mso-no-proof:yes"> | E-mail:</span></b><b style="font-size: 12pt;"><span lang="EN-GB" style="font-size:10.5pt;
+mso-ascii-font-family:Calibri;mso-fareast-font-family:Calibri;mso-hansi-font-family:
+Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#595959;mso-ansi-language:
+EN-GB;mso-no-proof:yes"> </span></b><b style="font-size: 12pt;"><span lang="EN-GB" style="font-size:10.5pt;mso-ascii-font-family:Calibri;mso-fareast-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:blue;mso-ansi-language:EN-GB;mso-no-proof:yes"><a href="mailto:FETHelp@coca-cola.com">FETHelp@coca-cola.com</a></span></b></p><p class="MsoNormal" style="font-family: arial;"><span style="color: rgb(127, 127, 127); font-size: 10.5pt;">Coca-Cola North America, 1150 Sanctuary Parkway,
+Alpharetta GA 30009&nbsp;</span></p></div></div></div>]]></td>
+</tr>
+</table>

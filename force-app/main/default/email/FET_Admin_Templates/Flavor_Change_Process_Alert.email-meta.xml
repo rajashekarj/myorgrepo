@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Creating a FC through a File Upload required brandset naming convention to be exact</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Registration_Email_Admin_User</letterhead>
+    <name>Flavor Change Process Alert</name>
+    <style>freeForm</style>
+    <subject>FET Flavor Change Process Alert!</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

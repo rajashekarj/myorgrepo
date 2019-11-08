@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email invitation template for survey: FET 5.0 &amp; 5.1 Enhancement and Training Survey</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>[Send using Timba Surveys] FET 5.0 &amp; 5.1 Training Survey</name>
+    <style>none</style>
+    <subject>FET 5.0 &amp; 5.1 Enhancement and Training Survey</subject>
+    <textOnly>Hi FET User,
+
+Your experience at the training is very important to us as we continue to look for ways to improve Freestyle productivity leveraging the Freestyle Execution Tool. 
+
+The purpose of this survey is to help us determine the extent to which the training met its goals and to identify ways to improve future training events. 
+
+We invite you take a few minutes to complete this short survey and provide your feedback. The survey should take less than 5 minutes to complete. 
+
+
+We will use the findings to improve future training&#39;s. 
+
+Thank you,
+FET Support Team
+
+
+
+Please complete this survey at: %SURVEY_URL%</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

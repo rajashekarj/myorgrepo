@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Freestyle Intake Steering Committee</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>FE_Intake_Steering_Comt_Grp</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>FE_Intake_Idea__c</sobjectType>
+    </queueSobject>
+</Queue>

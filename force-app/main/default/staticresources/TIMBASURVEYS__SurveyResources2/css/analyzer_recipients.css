@@ -1,0 +1,271 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.bordeado {
+
+	width: 964px;
+	height: 432px;
+
+	
+	border-right: #6393a3 1px solid;
+	border-bottom: #6393a3 1px solid;
+	border-left: #6393a3 1px soli
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+
+.bordeado .banner{
+	width: 100%;
+	height: 36px;
+	background-image: url(../img/analyze_recipients/bg_banner.png);
+	background-repeat: repeat-x;
+	color: white;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-top: 13px;
+}
+
+.bordeado .banner .surveyStat{
+	float: left;
+	font-size: 20px;
+	/*font-weight: bold;*/
+	padding-top: 0px;
+	padding-left: 14px;
+}
+.bordeado .banner .browseBy{
+	float: left;
+	font-size: 13px;
+	padding-top: 6px;
+	padding-left: 20px;
+}
+.bordeado .banner .questions{
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 6px;
+	padding-left: 16px;
+	padding-right: 9px;
+}
+
+.bordeado .banner .corrector{
+	padding-top: 4px;
+}
+.bordeado .banner .corrector .recipients{
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #1b6687;
+	width: 75px;
+	height: 20px;
+	text-align: center;
+	padding-top: 2px;
+	
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+	
+	
+}
+
+.bordeado .cont2{
+	width: 100%;
+	height: 100%;
+	padding-top: 2%;
+}
+
+.bordeado .cont2 .pageCon{
+	width: 200px;
+	height: 25px;
+	display: block;
+	overflow: hidden;
+	margin: 12px auto;
+}
+
+.bordeado .cont2 .pageCon .next{
+	float: left;
+	height: 23px;
+	width: 25px;
+	background-repeat: no-repeat;
+	background-image: url(../img/icons/pagination_arrows.png);
+	background-position: -53px 0px;
+	margin-right: 9px;
+	margin-left: 9px;
+	outline: none;
+	
+}
+.bordeado .cont2 .pageCon .prev{
+	float: left;
+	height: 23px;
+	width: 25px;
+	background-repeat: no-repeat;
+	background-image: url(../img/icons/pagination_arrows.png);
+	background-position: -28px 0px ;
+	margin-right: 9px;
+	outline: none;
+	
+}
+.bordeado .cont2 .pageCon .count{
+	float: left;
+	width: 52px;
+	height: 18px;
+	padding-top: 3px;
+	
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	
+	border: 1px #aac9d3 solid;
+	background-color: white;
+	
+	color: #25a8d8;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+}
+.bordeado .cont2 .pageCon .end{
+	float: left;
+	width: 28px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-image: url(../img/icons/pagination_arrows.png);
+	background-position: -78px 0px;
+	outline: none;
+	
+}
+.bordeado .cont2 .pageCon .begin{
+	float: left;
+	width: 28px;
+	height: 25px;
+	background-repeat: no-repeat;
+	background-image: url(../img/icons/pagination_arrows.png);
+	background-position: 0px 0px;
+	margin-right: 9px;
+	outline: none;
+}
+
+.bordeado .container{
+	width: 96%;
+	height: 317px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0px auto;
+}
+
+.bordeado .container .conteinerHeader{
+	height: 30px;
+	width: 100%;
+	padding-left:1px;
+	padding-right:1px;
+	background-image: url(../img/analyze_recipients/bg_blue.png);
+	background-repeat: repeat-x;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+.bordeado .container .conteinerHeader .headerContent{
+	color: #ffffff;
+	width: 100%;
+	font-size: 17px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-left: 9px;
+	padding-right: 9px;
+	padding-top: 4px;
+}
+
+.bordeado .container .datos .datosContent .type,
+.bordeado .container .conteinerHeader .headerContent .type{
+	width: 5%;
+}
+.bordeado .container .datos .datosContent .name,
+.bordeado .container .conteinerHeader .headerContent .name{
+	width: 20%;
+}
+.bordeado .container .datos .datosContent .company,
+.bordeado .container .conteinerHeader .headerContent .company{
+	width: 27%;
+}
+.bordeado .container .datos .datosContent .email,
+.bordeado .container .conteinerHeader .headerContent .email{
+	width: 19%;
+}
+.bordeado .container .datos .datosContent .campaign,
+.bordeado .container .conteinerHeader .headerContent .campaign{
+	width: 12%;
+}
+.bordeado .container .datos .datosContent .account,
+.bordeado .container .conteinerHeader .headerContent .account{
+	width: 11%;
+}
+.bordeado .container .datos .datosContent .weight,
+.bordeado .container .conteinerHeader .headerContent .weight{
+	width: 10%;
+}
+.bordeado .container .datos .datosContent .viewReport,
+.bordeado .container .conteinerHeader .headerContent .viewReport{
+	width: 8%;
+}
+
+.bordeado .container .datos .datosContent{
+	width: 100%;
+	font-size: 15px;
+	font-family: Arial,Helvetica,sans-serif;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.bordeado .container .datos {
+	width: 100%;
+	height: 288px;
+	overflow: auto;
+	border-right: #bebebe 1px solid;
+	border-bottom: #bebebe 1px solid;
+	border-left: #bebebe 1px solid;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.bordeado .container .datos .datosContent td{
+border-bottom: #c7e3ea 1px solid;
+} 

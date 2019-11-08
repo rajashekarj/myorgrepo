@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>McDonlads 2 COM</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>McDonlads 2 COM</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>McDonlads_2_COM_Director</parentRole>
+</Role>

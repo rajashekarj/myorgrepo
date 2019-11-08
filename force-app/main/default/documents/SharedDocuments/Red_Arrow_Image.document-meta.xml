@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Red Arrow Image used in email templates</description>
+    <internalUseOnly>false</internalUseOnly>
+    <keywords>Red Arrow</keywords>
+    <name>Red Arrow Image</name>
+    <public>true</public>
+</Document>

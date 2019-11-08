@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FS_Customer_disposition_Submit_DateTime__c</fullName>
-    <description>Customerâ€™s disposition Provided Date/Tim</description>
+    <description>CustomerÃ¢â‚¬â„¢s disposition Provided Date/Tim</description>
     <externalId>false</externalId>
-    <label>Customerâ€™s disposition Provided Date/Tim</label>
+    <label>CustomerÃ¢â‚¬â„¢s disposition Provided Date/Tim</label>
     <required>false</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>

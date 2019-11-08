@@ -5,7 +5,7 @@
     <formula>MAX( FS_Approval_request_submitted_date_time__c- 
 IF( ISNULL(FS_Customer_disposition_Provide_DateTime__c) , CreatedDate, FS_Customer_disposition_Provide_DateTime__c) , 0)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <inlineHelpText>This is the difference between when the CIF disposition was converted to â€œapproved by customerâ€� and when the COM submitted for approval</inlineHelpText>
+    <inlineHelpText>This is the difference between when the CIF disposition was converted to Ã¢â‚¬Å“approved by customerÃ¢â‚¬ï¿½ and when the COM submitted for approval</inlineHelpText>
     <label># of Days to EP Submission</label>
     <precision>18</precision>
     <required>false</required>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Dispenser Flavor Configuration Complete Template</name>
+    <style>none</style>
+    <subject>Dispenser Flavor Configuration Complete: {!Flavor_Change__c.FS_Outlet_HQ_Chain__c}</subject>
+    <textOnly>Dispenser Flavor Configuration Complete:
+
+Please be advised that a Flavor Change is complete for the customer below.
+Customer: {!Flavor_Change__c.FS_Outlet_HQ_Chain__c}
+Click here to view Flavor record:  {!Flavor_Change__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

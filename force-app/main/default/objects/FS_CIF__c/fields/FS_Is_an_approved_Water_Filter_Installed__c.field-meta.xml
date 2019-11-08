@@ -13,9 +13,9 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Yes â€“ approved water filter is installed</fullName>
+                <fullName>Yes Ã¢â‚¬â€œ approved water filter is installed</fullName>
                 <default>false</default>
-                <label>Yes â€“ approved water filter is installed</label>
+                <label>Yes Ã¢â‚¬â€œ approved water filter is installed</label>
             </value>
             <value>
                 <fullName>No - approved make/model to be installed</fullName>

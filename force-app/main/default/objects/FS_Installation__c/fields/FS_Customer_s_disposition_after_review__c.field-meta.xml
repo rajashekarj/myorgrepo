@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FS_Customer_s_disposition_after_review__c</fullName>
-    <description>Customerâ€™s disposition after review</description>
+    <description>CustomerÃ¢â‚¬â„¢s disposition after review</description>
     <externalId>false</externalId>
-    <inlineHelpText>Customerâ€™s disposition after review  value gettting copied from CIF</inlineHelpText>
-    <label>Customerâ€™s disposition after review</label>
+    <inlineHelpText>CustomerÃ¢â‚¬â„¢s disposition after review  value gettting copied from CIF</inlineHelpText>
+    <label>CustomerÃ¢â‚¬â„¢s disposition after review</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

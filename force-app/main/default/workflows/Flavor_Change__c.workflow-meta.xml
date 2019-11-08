@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>CDM_Initial_Notification_for_7000_Series_Flavor_Change</fullName>
+        <description>CDM Initial Notification for 7000 Series Flavor Change</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kfrancisgreen@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/Brand_Selection_Flavor_Change_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>Dispenser_Flavor_Configuration_Complete_Alert</fullName>
+        <description>Dispenser Flavor Configuration Complete Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>kfrancisgreen@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Dispenser_Flavor_Configuration_Complete_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_CDM_Initial_Notification</fullName>
+        <description>CDM Initial Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kfrancisgreen@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FS_Spicy_Cherry_Flavor_Change_Request</template>
+    </alerts>
+    <rules>
+        <fullName>CDM Initial Notification</fullName>
+        <actions>
+            <name>FS_CDM_Initial_Notification</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Flavor_Change__c.FS_Spicy_Cherry_Change__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Flavor_Change__c.FS_Flavor_Collection_Request_Completed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>CDM Initial Notification for 8000/9000 Series Flavor Change . Earlier it was Spicy Cherry Flavor Change</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>CDM Initial Notification for 7000 Series</fullName>
+        <actions>
+            <name>CDM_Initial_Notification_for_7000_Series_Flavor_Change</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Flavor_Change__c.FS_7000_Brand_Selection_Change__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Flavor_Change__c.FS_Flavor_Collection_Request_Completed__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>CDM Initial Notification for 7000 Series Flavor Change</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Dispenser Flavor Configuration Complete</fullName>
+        <actions>
+            <name>Dispenser_Flavor_Configuration_Complete_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Flavor_Change__c.FS_Flavor_Collection_Request_Completed__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,5 @@
+Hello,<br/><br/>
+
+The following customer has been approved<br/>
+
+Click here to view the record:  {!Account.Link}

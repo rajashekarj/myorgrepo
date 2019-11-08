@@ -1,0 +1,9 @@
+Relocation - <a href={!LEFT(Case.Link, LEN(Case.Link) - 15)}{!Case.Related_Installation_ID__c}>
+{!Case.Related_Installation_Name__c}</a> has been created in the Freestyle Execution Tool by Sales Support against <a href={!LEFT(Case.Link, LEN(Case.Link) - 15)}{!Case.From_AccountId__c}>
+{!Case.From_Account__c}</a>. 
+<br/><br/>
+As a result, the Freestyle Support Tool now reflects Case <a href={!LEFT(Case.Link, LEN(Case.Link) - 15)}{!Case.Id}>{!Case.CaseNumber}</a> which also includes the AMOA form for your review.  
+<br/><br/>
+Please reach out to Sales Support for any additional questions if required.
+<br/><br/>
+{!Case.FACT_Thread_ID__c}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Error_Log_Created</fullName>
+        <description>Error Log Created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>sramakrishnaiah@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Service_Message_Failure</template>
+    </alerts>
+    <rules>
+        <fullName>Error Connecting AIRWatch</fullName>
+        <actions>
+            <name>Error_Log_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Service_Message_Error_Log__c.Resend__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

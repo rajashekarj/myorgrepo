@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FS_Installation__c$Name</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$Id</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>FS_Installation__c$LastModifiedDate</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FS_Installation__c$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Installations w/ No Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>FS_Installations__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>FS_Installation__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

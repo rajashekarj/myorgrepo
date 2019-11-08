@@ -1,0 +1,14 @@
+*** CASE ESCALATION ALERT ***
+
+The following case has been escalated:
+
+Customer: {!Case.Customer_Name__c}
+Case: {!Case.CaseNumber}: {!Case.Subject}
+Owner: {!Case.OwnerFullName}
+Priority: {!Case.Priority}
+Status: {!Case.Status}
+Dispenser type: {!Case.FS_Dispenser_Type__c}
+Case Category: {!Case.Case_Category__c}
+Issue Description: {!Case.Subject}
+
+Click on the link to access the case: {!Case.Link}

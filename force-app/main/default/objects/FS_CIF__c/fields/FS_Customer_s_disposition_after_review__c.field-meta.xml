@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>FS_Customer_s_disposition_after_review__c</fullName>
-    <description>Picklist values for Customerâ€™s Disposition after review</description>
+    <description>Picklist values for CustomerÃ¢â‚¬â„¢s Disposition after review</description>
     <externalId>false</externalId>
-    <label>Customerâ€™s disposition after review</label>
+    <label>CustomerÃ¢â‚¬â„¢s disposition after review</label>
     <required>false</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>

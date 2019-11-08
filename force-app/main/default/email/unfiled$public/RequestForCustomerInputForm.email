@@ -1,0 +1,18 @@
+Dear Valued Customer {!Contact.FirstName} ,
+<br/><br/>
+We are excited {!FS_Customer_Input__c.FS_Account__c} has chosen to install Coca-Cola Freestyle in your establishment. In order to begin the process of installing Coca-Cola Freestyle in your outlet(s), we need additional information from you. The requested information consists of contact information (names, phone numbers, and email addresses), preferred mode of communication, billing and payment methods, as well as, equipment requirements. Please submit the requested information to Coca-Cola within five (5) business days.
+
+<br/><br/>
+
+Please click
+<a href=" {!Account.URLforCopyCItoOutlets__c}apex/FSCopyHQCustomerInputToOutlet?currentCIFId={!FS_Customer_Input__c.Id}&view=true&updateCIF=true&accId={!Account.Id}">
+Here
+</a> to open the form.
+<br/><br/>
+
+If you have questions or need assistance with completing the form, contact your Sales Representative or a Freestyle Data Coordinator @ 1-800-531-2238 ext. 1303, Monday through Friday from 8:00 AM to 6:00 PM EST for immediate assistance. 
+
+<br/><br/>
+
+
+Thank you for serving the products of the Coca-Cola Company

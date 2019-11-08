@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>FE_Dispenser_Idea_email_to_manager_for_evaluation</fullName>
+        <description>Freestyle Dispenser Idea email to manager for evaluation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mguymon@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mparsons@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Freestyle_Intake/FE_Intake_Idea_Manager_Evaluation</template>
+    </alerts>
+    <alerts>
+        <fullName>FE_Dispenser_Idea_email_to_steering_committee_for_evaluation</fullName>
+        <description>Freestyle Dispenser Idea email to steering committee for evaluation</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>FE_Intake_Steering_Comt_Grp</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Freestyle_Intake/FE_Intake_Idea_Steering_Committee_Evaluation</template>
+    </alerts>
+    <alerts>
+        <fullName>FE_Dispenser_Idea_email_to_user_upon_idea_approval</fullName>
+        <description>Freestyle Dispenser Idea email to user upon idea approval</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Freestyle_Intake/FE_Freestyle_Intake_Idea_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>FE_Dispenser_Idea_email_to_user_upon_idea_rejection</fullName>
+        <description>Freestyle Dispenser Idea email to user upon idea rejection</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Freestyle_Intake/FE_Intake_Idea_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>FE_Dispenser_Idea_email_to_user_upon_idea_submission</fullName>
+        <description>Freestyle Dispenser Idea email to user upon idea submission</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Freestyle_Intake/FE_Intake_Idea_Submitted</template>
+    </alerts>
+    <alerts>
+        <fullName>Freestyle_Dispenser_Idea_email_to_Platform_Owner_for_Final_Approval</fullName>
+        <description>Freestyle Dispenser Idea email to Platform Owner for Final Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Freestyle_Intake_Platform_Owner</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Freestyle_Intake/Freestyle_Intake_Idea_Platform_Owner</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>FE_Final_Approval</fullName>
+        <field>FE_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Final Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FE_Final_Reject</fullName>
+        <field>FE_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Final Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FE_Idea_Submission</fullName>
+        <field>FE_Status__c</field>
+        <literalValue>Submitted</literalValue>
+        <name>Idea Submission</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FE_Intake_Idea_Recalled</fullName>
+        <field>FE_Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Freestyle Intake Idea Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FE_Manager_Approved</fullName>
+        <field>FE_Status__c</field>
+        <literalValue>Accepted for further review</literalValue>
+        <name>Manager Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Steering_Co_Approval</fullName>
+        <field>FE_Status__c</field>
+        <literalValue>Reviewed by Steering Committee</literalValue>
+        <name>Steering Co Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

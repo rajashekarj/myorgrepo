@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Platform Change notification - COM Users</name>
+    <style>none</style>
+    <subject>Previously approved EP {!FS_Installation__c.FS_Execution_Plan__c} for {!FS_Installation__c.Outlet_ACN__c}/{!FS_Installation__c.FS_Outlet_Name__c} had its platform type updated please resubmit for approval</subject>
+    <textOnly>Hi,  The dispenser platform has been updated for {!FS_Installation__c.Name} &amp; {!FS_Installation__c.FS_Execution_Plan__c}, please take necessary action to resubmit EP for PM approval.  Outlet Information :  {!FS_Installation__c.FS_Outlet_Name__c}  {!FS_Installation__c.FS_Outlet_Information__c}   Thank You, FET</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

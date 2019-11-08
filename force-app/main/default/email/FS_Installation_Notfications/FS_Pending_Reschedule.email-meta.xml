@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Pending Reschedule</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pending Reschedule</name>
+    <style>none</style>
+    <subject>Installation Pending Recheduled for {!FS_Installation__c.FS_Outlet__c}</subject>
+    <textOnly>Installation Pending Recheduled Notification:
+
+Please be advised that the  installation (Outlet information below) is Pending Recheduled.
+
+Outlet: {!FS_Installation__c.FS_Outlet_Information__c}
+
+Click this link https://freestyle.my.salesforce.com to open the FET site. 
+Then click {!FS_Installation__c.Link} to be directed to the specific record referenced above.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

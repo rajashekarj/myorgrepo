@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_for_Bottler_Ordered_and_Delivery_Needed</fullName>
+        <description>Approval for Bottler Ordered and Delivery Needed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Bottler_Users</recipient>
+            <type>group</type>
+        </recipients>
+        <senderAddress>freestylecustomerservice@coca-cola.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>FS_Account_Notifications/FS_Approval_for_Bottler_Ordered_and_Delivery_Needed</template>
+    </alerts>
+    <alerts>
+        <fullName>Approval_for_Distributor_Ordered_and_Delivery_Needed</fullName>
+        <description>Approval for Distributor Ordered and Delivery Needed</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anhubbard@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dmillerbishop@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sandippatel@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Approval_for_Distributor_Ordered_and_Delivery_Needed</template>
+    </alerts>
+    <alerts>
+        <fullName>FSM_Email_Alert</fullName>
+        <description>FSM Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_FSM_Reviewer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/FSM_Notification_of_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>FSM_Email_Alert_HQ</fullName>
+        <description>FSM Email Alert HQ</description>
+        <protected>false</protected>
+        <recipients>
+            <field>FS_FSM_Reviewer__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Installation_Notfications/FSM_Notification_of_Change_HQ</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Ecomm_Indicator_Complete</fullName>
+        <description>Ecomm Indicator Complete</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>saikrishnateja.r@fet.fetprod.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Ecomm_Indicator_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_FSM_Approved</fullName>
+        <description>FSM Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Sales Team Member</recipient>
+            <type>accountTeam</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_FSM_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Manual_Order_Approval_Request</fullName>
+        <description>Manual Order Approval Request.</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>vicesposito@fs.coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Manual_Order_Approval_Request</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Order_and_Delivery_Method_Changes</fullName>
+        <description>Order and Delivery Method Changes to Bottler</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anhubbard@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dmillerbishop@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>julmejia@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kbaden@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sandippatel@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vbaldwin@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>vicesposito@fs.coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Order_and_Delivery_Method_Changes</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Order_and_Delivery_Method_Changes_Non_Bottler</fullName>
+        <description>Order and Delivery Method Changes Non Bottler</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anhubbard@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dearkwright@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dmillerbishop@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jjarrett@nstk.coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sandippatel@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Order_and_Delivery_Method_Changes_Non_Bottler</template>
+    </alerts>
+    <alerts>
+        <fullName>FS_Order_and_Delivery_Method_Changes_Non_Bottler_MODM</fullName>
+        <description>Order and Delivery Method Changes Manual Order-DirectShip</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>kfrancisgreen@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/FS_Order_and_Delivery_Method_Changes_Non_Bottler</template>
+    </alerts>
+    <alerts>
+        <fullName>OLET_Changed_in_Distributor</fullName>
+        <description>Distributor Customer OLET Change Notification for Non Bottler</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>anhubbard@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>ccrc@na.ko.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>dearkwright@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jjarrett@nstk.coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jodouglas@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rfielden@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>tgiadrosich@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>tontaylor@coca-cola.com.fet</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>FS_Account_Notifications/Distributor_Customer_OLET_Change_Notification_for_Non_Bottler</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Autogenereated_ACN</fullName>
+        <field>FS_ACN__c</field>
+        <formula>Autogenerated_SAP__c + UPPER(ShippingCountry)</formula>
+        <name>Autogenereated ACN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Blank_the_Approved_for_Distributor_order</fullName>
+        <field>FS_Approved_for_Distributor_Ordering__c</field>
+        <name>Blank the Approved for Distributor order</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Bottler_field_capture</fullName>
+        <description>Field update to capture the Bottler detail on BoE outlet for record share..</description>
+        <field>FS_Bottlers_Name_text__c</field>
+        <formula>Bottlers_Name__r.Name</formula>
+        <name>Bottler field capture</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ConfirmTaxExemptionEmailSenderID</fullName>
+        <field>Confirm_Tax_Exemption_Email_Sender_ID__c</field>
+        <formula>IF( ISCHANGED(FS_Confirm_Tax_Exemption_Obtain__c),$User.FirstName  +  $User.LastName ,Confirm_Tax_Exemption_Email_Sender_ID__c)</formula>
+        <name>ConfirmTaxExemptionEmailSenderID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Customer_CCR_Trained_DateTimestamp_field</fullName>
+        <field>FS_Customer_CCR_Trained_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Customer CCR Trained DateTimestamp field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Customer_Registered_DateTimestamp_field</fullName>
+        <field>FS_Customer_Registered_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Customer Registered DateTimestamp field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Customer_Self_Trained_DateTimestamp_fiel</fullName>
+        <field>Customer_Self_Trained_Date__c</field>
+        <formula>NOW()</formula>
+        <name>Customer Self Trained DateTimestamp fiel</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Default_Favorite_Mix_to_Yes</fullName>
+        <field>FS_FAV_MIX__c</field>
+        <literalValue>Yes</literalValue>
+        <name>Default Favorite Mix to Yes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Default_Invoice_Customer_to_No</fullName>
+        <field>Invoice_Customer__c</field>
+        <literalValue>No</literalValue>
+        <name>Default Invoice Customer to No</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FSCustomer_Self_Trained_Modified_By_Upda</fullName>
+        <field>FS_Customer_Self_Trained_Modified_By__c</field>
+        <formula>$User.FirstName + &#39; &#39; + &#39; &#39; + $User.LastName</formula>
+        <name>Customer Self Trained - Modified By Upda</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Don_t_HQ_Payment_Type_Flag</fullName>
+        <field>FS_Don_t_Use_Chain_Pmt_Type__c</field>
+        <literalValue>1</literalValue>
+        <name>Don&#39;t HQ Payment Type Flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Final_Delivery_value_c</fullName>
+        <field>FS_Final_Delivery_text_value__c</field>
+        <formula>FS_Final_Delivery_Method__c</formula>
+        <name>Update Final Delivery Text value</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Final_Order_text_value</fullName>
+        <field>FS_Final_Order_Text_value__c</field>
+        <formula>FS_Final_Order_Method__c</formula>
+        <name>Update Final Order text value</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>FS_Update_Approval_for_Bottler_Ordering</fullName>
+        <field>FS_Approved_Bottler_Order_Delivery__c</field>
+        <literalValue>0</literalValue>
+        <name>Update Approval for Bottler Ordering</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>KO_Record_Type</fullName>
+        <description>KO Record Type 55 for FS International Outlet</description>
+        <field>CCR_KO_Record_Type__c</field>
+        <formula>55</formula>
+        <name>KO Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approved_Modified_Date</fullName>
+        <field>FS_Last_approved_modified_Date_Time__c</field>
+        <formula>Now()</formula>
+        <name>Last Approved/Modified Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Last_Approved_Modified_Distributor_Order</fullName>
+        <field>FS_Last_approved_modified_by__c</field>
+        <formula>$User.FirstName + &quot; &quot;+ &quot; &quot; +$User.LastName</formula>
+        <name>Last Approved/Modified Distributor Order</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateConfirmTaxExemptionTime</fullName>
+        <description>UpdateConfirmTaxExemptionTime</description>
+        <field>Confirm_Tax_Exemption_Obtained_Time__c</field>
+        <formula>IF( ISCHANGED(FS_Confirm_Tax_Exemption_Obtain__c), NOW(), Confirm_Tax_Exemption_Obtained_Time__c )</formula>
+        <name>UpdateConfirmTaxExemptionTime</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Customer_CCR_Trained_By</fullName>
+        <field>FS_Customer_CCR_Trained_By__c</field>
+        <formula>$User.FirstName + &#39; &#39; + &#39; &#39; + $User.LastName</formula>
+        <name>Update Customer CCR Trained By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Customer_Registered_By</fullName>
+        <field>FS_Customer_Registered_By__c</field>
+        <formula>$User.FirstName  + &#39; &#39;  + &#39; &#39;  +  $User.LastName</formula>
+        <name>Update Customer Registered By</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Modify_Time_User_VPO_Override</fullName>
+        <field>VPO_Override_Modified_Time__c</field>
+        <formula>IF( ISCHANGED(FS_VPO_Override__c), NOW(), VPO_Override_Modified_Time__c)</formula>
+        <name>Update Modify Time VPO Override</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_SAPID</fullName>
+        <field>FS_SAP_ID__c</field>
+        <formula>Autogenerated_SAP__c + UPPER(ShippingCountry)</formula>
+        <name>Update SAPID</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_VPO_Override_Modifying_User</fullName>
+        <field>VPO_Override_Modified_By__c</field>
+        <formula>IF( ISCHANGED(FS_VPO_Override__c), $User.FirstName + &#39;  &#39; + $User.LastName , VPO_Override_Modified_By__c)</formula>
+        <name>Update VPO Override Modifying User</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updated_Calculated_customer_value</fullName>
+        <field>Calculated_Customer_Classification_Text__c</field>
+        <formula>Calculated_Customer_Classification__c</formula>
+        <name>Updated Calculated customer value</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1ACN_RecordTypeId</fullName>
+        <field>CCR_ACN_RecordType_Id__c</field>
+        <formula>FS_ACN__c +&#39; - &#39; + RecordTypeId</formula>
+        <name>1ACN + RecordTypeId</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>deselectNotifyCOM</fullName>
+        <field>NotifyCOM__c</field>
+        <literalValue>0</literalValue>
+        <name>deselectNotifyCOM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>Approval Cartridge Ordering Method for Bottler</fullName>
+        <actions>
+            <name>Approval_for_Bottler_Ordered_and_Delivery_Needed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR($UserRole.Name = &#39;NDO&#39;, $Profile.Name = &#39;FS NDO_P&#39;,$User.FS_Permission_Sets__c =&#39;Bottler_Approval_Access&#39;), ISCHANGED(FS_VMS_Customer__c),text(FS_VMS_Customer__c)=&#39;Bottler&#39;,!OR(ISCHANGED(FS_Requested_Order_Method__c),ISCHANGED(FS_Requested_Delivery_Method__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Approval for Bottler Ordered and Delivery</fullName>
+        <actions>
+            <name>Approval_for_Bottler_Ordered_and_Delivery_Needed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Approval for Bottler Ordered andDelivery</description>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR($UserRole.Name = &#39;NDO&#39;, $Profile.Name = &#39;FS NDO_P&#39;,$User.FS_Permission_Sets__c =&#39;Bottler_Approval_Access&#39;,$Profile.Name = &#39;FS FPS_P&#39;,$Profile.Name = &#39;FS COM_P&#39;,$Profile.Name = &#39;FS Sales_P&#39;,$Profile.Name = &#39;FS CPO_P&#39;,$Profile.Name = &#39;FS AC_P&#39;,$Profile.Name = &#39;FS PM_P&#39;,$Profile.Name = &#39;FS Admin PM_P&#39;), AND((OR( ISPICKVAL(FS_Requested_Delivery_Method__c,&#39;Bottler&#39;), ISPICKVAL(FS_Requested_Delivery_Method__c,&#39;Direct Ship&#39;))), ISPICKVAL(FS_Requested_Order_Method__c,&#39;Bottler&#39;)), PRIORVALUE(FS_Approved_Bottler_Order_Delivery__c)&lt;&gt;true , OR(isChanged(FS_Requested_Delivery_Method__c), isChanged(FS_Requested_Order_Method__c)),  FS_Approved_Bottler_Order_Delivery__c =false)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Approval for Distributor Ordered and Delivery</fullName>
+        <actions>
+            <name>Approval_for_Distributor_Ordered_and_Delivery_Needed</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Approval for Distributor Ordered and Delivery</description>
+        <formula>AND(  RecordType.Name = &quot;FS Outlet&quot;,$UserRole.Name&lt;&gt;&#39;NDO&#39;, OR(isChanged(FS_Requested_Delivery_Method__c), isChanged(FS_Requested_Order_Method__c)),  OR(  AND(ISPICKVAL(FS_Requested_Delivery_Method__c,&#39;Distributor&#39;),  NOT(OR(ISBLANK(FS_Final_Order_Text_value__c),ISBLANK(FS_Final_Delivery_text_value__c)))),   AND(OR(FS_Final_Order_Text_value__c=&#39;Distributor&#39;,FS_Final_Order_Text_value__c=&#39;VMS&#39;,FS_Final_Order_Text_value__c=&#39;CokeSmart&#39;),FS_Final_Delivery_text_value__c=&#39;Distributor&#39;,  NOT(AND(OR(ISPICKVAL(FS_Requested_Order_Method__c,&#39;Distributor&#39;),ISPICKVAL(FS_Requested_Order_Method__c,&#39;VMS&#39;),ISPICKVAL(FS_Requested_Order_Method__c,&#39;CokeSmart&#39;) ),ISPICKVAL(FS_Requested_Delivery_Method__c,&#39;Distributor&#39;)))  )  ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Auto SAP</fullName>
+        <actions>
+            <name>KO_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update KO record type for International Outlet...</description>
+        <formula>AND(RecordType.Name = &quot;BoE Outlet&quot;,Autogenerated_SAP__c  &lt;&gt; &#39;&#39; ,   ISNEW() )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Bottler Account name capture on BoE Outlet</fullName>
+        <actions>
+            <name>Bottler_field_capture</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Bottler Account name capture on BoE Outlet</description>
+        <formula>IF(RecordType.Name==&#39;BoE Outlet&#39;, True, False)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Default Favorite Mix to Yes on record creation for Account of FS Chain Record Type</fullName>
+        <actions>
+            <name>Default_Favorite_Mix_to_Yes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.FS_CE_Enabled__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Chain</value>
+        </criteriaItems>
+        <description>Default Favorite Mix to Yes on record creation for Account of FS Chain Record Type</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Default Invoice Customer to No</fullName>
+        <actions>
+            <name>Default_Invoice_Customer_to_No</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>FS Headquarters,FS Outlet</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Invoice_Customer__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Distributor Customer OLET Change Notification for Non Bottler</fullName>
+        <actions>
+            <name>OLET_Changed_in_Distributor</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>when an OLET# (FS_Distributor_Customer_ID__c ) is changed</description>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,ISCHANGED(FS_Distributor_Customer_ID__c),PRIORVALUE(FS_Distributor_Customer_ID__c)!=&#39;&#39;,  NOT(AND(OR( ISPICKVAL(FS_Requested_Delivery_Method__c,&#39;Bottler&#39;),ISPICKVAL(FS_Requested_Delivery_Method__c,&#39;Direct Ship&#39; )), ISPICKVAL(FS_Requested_Order_Method__c, &#39;Bottler&#39;))))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Distributor ordering Approved details</fullName>
+        <actions>
+            <name>Last_Approved_Modified_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Last_Approved_Modified_Distributor_Order</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>ISCHANGED(FS_Approved_for_Distributor_Ordering__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Ecomm Indicator Complete</fullName>
+        <actions>
+            <name>FS_Ecomm_Indicator_Complete</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.FS_Indicator_Ecomm_Chk__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FSM Approved</fullName>
+        <actions>
+            <name>FS_FSM_Approved</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.FS_FSM_Review__c</field>
+            <operation>equals</operation>
+            <value>Reviewed</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FSM Chain Notification</fullName>
+        <actions>
+            <name>FSM_Email_Alert</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify FSM Reviewer when they are assigned to chain</description>
+        <formula>AND(ISCHANGED( FS_FSM_Reviewer__c ), NOT(ISBLANK(FS_FSM_Reviewer__c)), (RecordType.Name = &quot;FS Chain&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FSM HQ Notification</fullName>
+        <actions>
+            <name>FSM_Email_Alert_HQ</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify FSM Reviewer when they are assigned to HQ</description>
+        <formula>AND(ISCHANGED(FS_FSM_Reviewer__c ), NOT( ISBLANK(FS_FSM_Reviewer__c)), (RecordType.Name = &quot;FS Headquarters&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Confirm Tax Exemption Obtained Time</fullName>
+        <actions>
+            <name>ConfirmTaxExemptionEmailSenderID</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>UpdateConfirmTaxExemptionTime</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.FS_Confirm_Tax_Exemption_Obtain__c</field>
+            <operation>equals</operation>
+            <value>Yes,No</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Update Customer Self Trained DateTimestamp</fullName>
+        <actions>
+            <name>Customer_Self_Trained_DateTimestamp_fiel</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FSCustomer_Self_Trained_Modified_By_Upda</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>isChanged(FS_Customer_Self_Trained__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>FS_Update_Customer_CCR_Trained_DateTimestamp</fullName>
+        <actions>
+            <name>Customer_CCR_Trained_DateTimestamp_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Used to Update Customer CCR Trained DateTimestamp field when we checked the Customer CCR Trained field checkbox.</description>
+        <formula>isChanged(FS_Customer_Trained__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Manual Order Approval Request</fullName>
+        <actions>
+            <name>FS_Manual_Order_Approval_Request</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Manual Order Approval Request</description>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,  ISPICKVAL(FS_Requested_Order_Method__c,&#39;Manual Order&#39;),ISPICKVAL(FS_Manual_Order_Approval_Status__c ,&#39;&#39;) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Order and Delivery Method Changes Non Bottler</fullName>
+        <actions>
+            <name>FS_Order_and_Delivery_Method_Changes_Non_Bottler</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Order and delivery for NonBottler</description>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR($UserRole.Name = &#39;NDO&#39;, $Profile.Name = &#39;FS NDO_P&#39;,$Profile.Name = &#39;FS CPO_P&#39;),  ISCHANGED(Calculated_Customer_Classification__c), NOT(AND(OR( ISPICKVAL(FS_Requested_Delivery_Method__c, &#39;Bottler&#39;),ISPICKVAL(FS_Requested_Delivery_Method__c,&#39;Direct Ship&#39;) ), ISPICKVAL(FS_Requested_Order_Method__c,&#39;Bottler&#39;) )),!OR(ISPICKVAL(FS_Requested_Delivery_Method__c, &#39;Bottler&#39;),ISPICKVAL(FS_Requested_Order_Method__c, &#39;Bottler&#39;),ISPICKVAL(FS_Requested_Order_Method__c, &#39;Manual Order&#39;)) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Order and Delivery Method Changes to Bottler</fullName>
+        <actions>
+            <name>FS_Order_and_Delivery_Method_Changes</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>for order and delivery method changes toBottler</description>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR($UserRole.Name = &#39;NDO&#39;, $Profile.Name = &#39;FS NDO_P&#39;,$Profile.Name =&#39;FS CPO_P&#39;),   OR(ISCHANGED( FS_Final_Delivery_Method__c), ISCHANGED( FS_Final_Order_Method__c)), AND(OR( FS_Final_Delivery_Method__c =&#39;Bottler&#39;,  FS_Final_Delivery_Method__c=&#39;Direct Ship&#39; ),FS_Final_Order_Method__c =&#39;Bottler&#39; ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Order and Delivery method Changes-Manual Order%2F DirectShip</fullName>
+        <actions>
+            <name>FS_Order_and_Delivery_Method_Changes_Non_Bottler_MODM</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notify CDM whenever NDO changes combinations to MO/DS</description>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR($UserRole.Name = &#39;NDO&#39;, $Profile.Name = &#39;FS NDO_P&#39;,$Profile.Name =&#39;FS CPO_P&#39;),OR(ISCHANGED( FS_Final_Delivery_Method__c), ISCHANGED( FS_Final_Order_Method__c)),FS_Final_Delivery_Method__c=&#39;Direct Ship&#39;,FS_Final_Order_Method__c=&#39;Manual Order&#39;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Uncheck Approved for Bottler Ordering</fullName>
+        <actions>
+            <name>FS_Update_Approval_for_Bottler_Ordering</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR(isChanged(FS_Requested_Delivery_Method__c),isChanged(FS_Requested_Order_Method__c)),! OR(AND(Text(FS_Requested_Order_Method__c)=&quot;Bottler&quot;,Text(FS_Requested_Delivery_Method__c)=&quot;Bottler&quot;),AND(Text(FS_Requested_Delivery_Method__c)=&quot;Direct Ship&quot;,Text(FS_Requested_Order_Method__c)=&quot;Bottler&quot;),Text(FS_Requested_Order_Method__c)=&quot;Bottler&quot;,Text(FS_Requested_Delivery_Method__c)=&quot;Bottler&quot;),FS_Approved_Bottler_Order_Delivery__c=true)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Uncheck Approved for Distributor Ordering</fullName>
+        <actions>
+            <name>Blank_the_Approved_for_Distributor_order</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(RecordType.Name = &quot;FS Outlet&quot;,OR(isChanged(FS_Final_Order_Text_value__c),isChanged(FS_Final_Delivery_text_value__c)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Customer CCR Trained By Field</fullName>
+        <actions>
+            <name>Update_Customer_CCR_Trained_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>isChanged(FS_Customer_Trained__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Customer Registered By Field</fullName>
+        <actions>
+            <name>Update_Customer_Registered_By</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>IsChanged(FS_Customer_Registration__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Final Order and Delivery Text values</fullName>
+        <actions>
+            <name>FS_Final_Delivery_value_c</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>FS_Final_Order_text_value</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Updated_Calculated_customer_value</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Time%2FUser VPO Override</fullName>
+        <actions>
+            <name>Update_Modify_Time_User_VPO_Override</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Update_VPO_Override_Modifying_User</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.FS_VPO_Override__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.FS_VPO_Override__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

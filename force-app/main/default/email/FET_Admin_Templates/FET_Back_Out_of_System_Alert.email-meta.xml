@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>FET Scheduled System Back Out Notice</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Registration_Email_Admin_User</letterhead>
+    <name>FET Back Out of System Alert</name>
+    <style>freeForm</style>
+    <subject>Reminder! FET system will be down from 8/23/19 through 8/25/19</subject>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

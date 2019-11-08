@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Full Removal Completed</name>
+    <style>none</style>
+    <subject>A dispenser has been removed through  {!FS_Installation__c.Name} for ACN  {!FS_Installation__c.Outlet_ACN__c}</subject>
+    <textOnly>A Freestyle Outlet Dispenser has been confirmed removed for outlet : {!FS_Installation__c.FS_Outlet_Name__c}
+{!FS_Installation__c.FS_Outlet_Information__c}.
+using the following Post Install Transaction :{!FS_Installation__c.Name}
+Transaction Type : {!FS_Installation__c.RecordType}
+Platform Type/s : {!FS_Installation__c.Type_of_Dispenser_Platform__c}
+Reason Code : {!FS_Installation__c.FS_Reason_Code__c}
+Sub-Reason Code : {!FS_Installation__c.FS_Sub_Reason_Code__c}
+Please disable any Cartridge Product Information, Jet Indicator, Outlet to Dispenser Linkages, or any other setup configuration that may no longer be needed.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
