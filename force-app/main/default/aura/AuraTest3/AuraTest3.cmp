@@ -1,3 +1,3 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-    //test the componet succesfully changes added exrta new
+    //test the componet succesfully changes added exrta new added new
 </aura:component>
